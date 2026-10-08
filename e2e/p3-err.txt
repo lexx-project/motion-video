@@ -1,0 +1,12 @@
+[sceneGeneration] project=proj_p3_demo: LLM produced invalid structured output after 2 attempts: [
+  {
+    "code": "custom",
+    "path": [
+      "scenes",
+      0,
+      "headline",
+      "text"
+    ],
+    "message": "headline renders ~5 lines at the \"left\" anchor (max 4). Shorten the copy and do not use line breaks (\\n) - the renderer wraps itself."
+  }
+]

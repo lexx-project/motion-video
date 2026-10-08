@@ -1,0 +1,168 @@
+{
+  "beatId": "b5",
+  "spokenMeaning": "No matter what you do, someone will disapprove — the negative verdict isn't a response to your action, it's already there before you act.",
+  "viewerTakeaway": "Approval-seeking is a rigged game: since the verdict arrives before the action, changing what you do can never change whether you're criticized.",
+  "visualMechanism": "decisionConsequence",
+  "visualNarrative": [
+    {
+      "order": 1,
+      "action": "Left text block (headline + supporting lines) fades in; right side shows only a bare outlined stage rectangle on the dark bg.",
+      "meaning": "Nothing has been done yet — the space of action is empty and unjudged.",
+      "visualEvidence": "Empty 1px outlined rectangle sits right of the text block, interior completely blank."
+    },
+    {
+      "order": 2,
+      "action": "A red verdict stamp drops hard onto the EMPTY stage interior first, before any action exists, landing slightly rotated.",
+      "meaning": "The judgment is issued before any behavior occurs — the disapproval is not a response, it is the starting condition.",
+      "visualEvidence": "Red stamp badge with white 'VONIS' hits blank stage floor while no line is drawn anywhere in frame."
+    },
+    {
+      "order": 3,
+      "action": "A teal action line draws itself from the stage's left edge, runs right, and is pressed flat where it passes beneath the red stamp, stopping at it.",
+      "meaning": "Whatever you actually do arrives second and enters the frame already under the verdict.",
+      "visualEvidence": "Teal stroke draws left→right and flattens/clips exactly at the stamp's footprint, stamp sitting above it unchanged."
+    },
+    {
+      "order": 4,
+      "action": "A second, dimmer teal line draws on a different route (rises, curves around) but still terminates underneath the same unmoved stamp; stamp holds and the frame exits by fade.",
+      "meaning": "Changing the action does not move the verdict — no path escapes, so the whole approval-seeking strategy is rigged.",
+      "visualEvidence": "Two different teal paths both end under one identical red stamp that never shifts, lifts, or re-evaluates."
+    }
+  ],
+  "semanticObjects": [
+    {
+      "objectType": "Badge",
+      "semanticRole": "The disapproval itself — a 'someone won't like it' verdict that exists before any behavior.",
+      "relationship": "Lands on the empty stage first, then occludes/presses down every action line drawn afterward.",
+      "importance": 5
+    },
+    {
+      "objectType": "Line",
+      "semanticRole": "The viewer's actual deeds (kind, silent, successful, failing) — varied attempts to earn approval.",
+      "relationship": "Draws in after the stamp and is flattened/stopped where it passes under the stamp.",
+      "importance": 5
+    },
+    {
+      "objectType": "Line",
+      "semanticRole": "A different strategy — proof that changing the action does not change the outcome.",
+      "relationship": "Takes an alternate route yet still terminates beneath the same unmoved stamp.",
+      "importance": 4
+    },
+    {
+      "objectType": "Frame",
+      "semanticRole": "The field where 'mau lu ngapain juga' happens — an open arena the verdict already occupies.",
+      "relationship": "Frames and contains the stamp and both action lines.",
+      "importance": 3
+    },
+    {
+      "objectType": "Label",
+      "semanticRole": "Names the mechanism so the image reads as a verdict, not decoration.",
+      "relationship": "Sits inside the stamp as its printed text.",
+      "importance": 3
+    },
+    {
+      "objectType": "Headline",
+      "semanticRole": "States the reversed causality in words on the left.",
+      "relationship": "Leads the eye left→right into the stage sequence.",
+      "importance": 4
+    },
+    {
+      "objectType": "Subheadline",
+      "semanticRole": "Plain-language grounding of the claim in the viewer's own life.",
+      "relationship": "Sits directly beneath the headline as one quiet block.",
+      "importance": 2
+    }
+  ],
+  "relationships": [
+    {
+      "from": "RedVerdictStamp",
+      "to": "StageOutline",
+      "relationship": "lands_on_before_anything_exists"
+    },
+    {
+      "from": "ActionLineTeal",
+      "to": "RedVerdictStamp",
+      "relationship": "draws_in_and_is_pressed_flat_underneath"
+    },
+    {
+      "from": "SecondActionLineDim",
+      "to": "RedVerdictStamp",
+      "relationship": "reroutes_but_still_terminates_under"
+    },
+    {
+      "from": "StageOutline",
+      "to": "ActionLineTeal",
+      "relationship": "frames_and_clips"
+    }
+  ],
+  "typographyPlan": {
+    "headline": "VONIS DATANG LEBIH DULU",
+    "emphasisWords": [
+      "VONIS",
+      "DULU"
+    ],
+    "supportingText": [
+      "Mau lu ngapain juga,",
+      "hasilnya tetap sama.",
+      "Vonisnya keluar duluan —",
+      "baru lu jalan."
+    ]
+  },
+  "subtitlePlan": {
+    "enabled": true,
+    "text": "Padahal… mau lu ngapain juga, pasti ada aja yang nggak suka.",
+    "timing": "58.7–61.2s, held while stamp lands and line draws",
+    "role": "spoken line"
+  },
+  "motionBeats": [
+    {
+      "order": 1,
+      "action": "Headline reveals line-by-line left, then supporting lines fade in beneath.",
+      "purpose": "Establish the claim calmly before the reversal lands."
+    },
+    {
+      "order": 2,
+      "action": "Stage outline wipes open on the right, interior empty.",
+      "purpose": "Give the verdict a blank field to violate."
+    },
+    {
+      "order": 3,
+      "action": "Red stamp drops with a short scale-down impact and 4° tilt onto the empty stage.",
+      "purpose": "Makes the verdict the first event — causality visibly reversed."
+    },
+    {
+      "order": 4,
+      "action": "Teal line draws left→right and flattens where the stamp sits above it.",
+      "purpose": "Shows the action arriving second and entering already condemned."
+    },
+    {
+      "order": 5,
+      "action": "Second dim teal path draws on a different curve, ending under the same stamp; stamp does not move.",
+      "purpose": "Proves no variation of action escapes the pre-issued judgment."
+    },
+    {
+      "order": 6,
+      "action": "One subtle scale pulse on the stamp, then whole frame fades out.",
+      "purpose": "Leaves the fixed verdict as the lasting impression."
+    }
+  ],
+  "compositionIntent": "leftTextRightObject: headline + supporting lines occupy the left ~38% with 8% margins, the right ~48% holds a single outlined stage. Red stamp is the only saturated mass, upper area of the stage; teal lines are thin strokes entering from lower-left of the stage. Roughly 60% negative space, no third cluster.",
+  "visualEvidence": [
+    "Red stamp lands on a completely blank stage before any line exists in frame.",
+    "Teal action line flattens and stops exactly beneath the stamp's footprint.",
+    "Second teal path curves differently yet ends under the identical unmoved stamp.",
+    "'VONIS' and 'DULU' carry the only red type; all other text stays off-white."
+  ],
+  "forbiddenInterpretations": [
+    "Two people arguing or a crowd of critic speech bubbles",
+    "A balance scale weighing praise versus criticism",
+    "A checklist or grid of different criticisms",
+    "Action arrows bouncing off a shield or dodging the stamp",
+    "Camera shake, impact particles or glitch on the stamp landing"
+  ],
+  "noveltyIntent": "Unlike memory's drift, bending and moving-target mechanisms, this reverses time itself: the red verdict stamps an empty stage before any action line is drawn, so unfairness reads as reversed causality rather than comparison.",
+  "elementBudget": {
+    "min": 6,
+    "max": 8
+  }
+}

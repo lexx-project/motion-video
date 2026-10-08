@@ -1,0 +1,1 @@
+You do not need more motivation. You need fewer excuses. The people who win are not smarter. They just keep showing up when it is boring. Stop measuring your week one against someone else year five. Small disciplines repeated in silence build loud results. Your turn.

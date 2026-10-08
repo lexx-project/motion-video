@@ -1,0 +1,148 @@
+{
+  "beats": [
+    {
+      "id": "b1",
+      "text": "Every time you try to make everyone happy, you get more tired.",
+      "why": "Sets the core cost of people-pleasing: exhaustion as the first symptom the viewer will recognize.",
+      "emotion": "exhaustion, quiet resentment",
+      "metaphorHints": [
+        "battery draining with each added face",
+        "figure stretched toward many directions at once",
+        "weight stacking on shoulders"
+      ],
+      "abstractMeaning": "Approval-seeking consumes energy faster than it returns anything",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "more tired",
+      "timing": {
+        "id": "b1",
+        "text": "Every time you try to make everyone happy, you get more tired.",
+        "start": 0,
+        "end": 5.9,
+        "duration": 5.9,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b2",
+      "text": "You change your answer to match whoever asked.",
+      "why": "Names the behavior itself — shape-shifting speech — so the viewer sees their own habit clearly.",
+      "emotion": "self-betrayal, unease",
+      "metaphorHints": [
+        "answer mutating like liquid to fit each mold",
+        "mirror reflecting a different face per viewer",
+        "figure bending like a hinge"
+      ],
+      "abstractMeaning": "Identity bends to whichever audience is present",
+      "visualPriority": "high",
+      "typographyPriority": "medium",
+      "important": true,
+      "emphasisPhrase": "match whoever asked",
+      "timing": {
+        "id": "b2",
+        "text": "You change your answer to match whoever asked.",
+        "start": 5.9,
+        "end": 10.11,
+        "duration": 4.21,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b3",
+      "text": "Your yes stops meaning anything.",
+      "why": "The consequence: credibility decays into noise — the emotional low point of the setup.",
+      "emotion": "hollowness, disillusionment",
+      "metaphorHints": [
+        "rubber stamp imprint fading with each press",
+        "coin worn smooth",
+        "word YES dimming to gray"
+      ],
+      "abstractMeaning": "Conditional agreement loses all value and trust",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "stops meaning anything",
+      "timing": {
+        "id": "b3",
+        "text": "Your yes stops meaning anything.",
+        "start": 10.11,
+        "end": 12.74,
+        "duration": 2.63,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b4",
+      "text": "Meanwhile the people who never change their mind are the ones others remember.",
+      "why": "The contrast beat — conviction is what earns memory and recognition.",
+      "emotion": "envy turning into aspiration",
+      "metaphorHints": [
+        "straight arrow amid swaying reeds",
+        "lighthouse beam vs. drifting fog",
+        "plumb line standing rigid"
+      ],
+      "abstractMeaning": "Consistency produces recognition; compliance produces invisibility",
+      "visualPriority": "high",
+      "typographyPriority": "medium",
+      "important": true,
+      "emphasisPhrase": "the ones others remember",
+      "timing": {
+        "id": "b4",
+        "text": "Meanwhile the people who never change their mind are the ones others remember.",
+        "start": 12.74,
+        "end": 16.95,
+        "duration": 4.21,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b5",
+      "text": "Stop editing yourself for an audience that will not applaud anyway.",
+      "why": "The reframe — the audience you perform for gives nothing, so the performance is pointless.",
+      "emotion": "defiance, disillusionment clearing into resolve",
+      "metaphorHints": [
+        "torn-up draft with crossed-out edits",
+        "empty theater seats, hands that never clap",
+        "red pen striking through a self-portrait"
+      ],
+      "abstractMeaning": "Unrewarded approval-seeking is a performance without an audience",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "will not applaud anyway",
+      "timing": {
+        "id": "b5",
+        "text": "Stop editing yourself for an audience that will not applaud anyway.",
+        "start": 16.95,
+        "end": 21.15,
+        "duration": 4.2,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b6",
+      "text": "Your turn: choose one direction and stay with it.",
+      "why": "The call to action — commit to a single bearing and hold, closing the arc from drift to resolve.",
+      "emotion": "resolve, determination",
+      "metaphorHints": [
+        "compass locking onto one bearing",
+        "forked path collapsing into a single straight line",
+        "arrow striking a target"
+      ],
+      "abstractMeaning": "Commitment and self-alignment as the way out",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "one direction",
+      "timing": {
+        "id": "b6",
+        "text": "Your turn: choose one direction and stay with it.",
+        "start": 21.15,
+        "end": 24.94,
+        "duration": 3.79,
+        "source": "phrase"
+      }
+    }
+  ]
+}

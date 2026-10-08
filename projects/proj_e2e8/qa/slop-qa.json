@@ -1,0 +1,36 @@
+{
+  "projectSeverity": 6,
+  "verdict": "needs_repair",
+  "findings": [
+    {
+      "sceneId": "scene_02",
+      "type": "weak-metaphor",
+      "evidence": "The two repeated TOMORROW words are shown plain — the strikethrough Lines from the spec are missing in the rendered frame, so the 'already crossed / struck again' mechanism never reads; only the arrow carries meaning",
+      "severity": 6
+    },
+    {
+      "sceneId": "scene_04",
+      "type": "weak-metaphor",
+      "evidence": "No bridge span, planks, or void appear in the frame — the metaphor is carried entirely by the caption 'ONE PLANK AT A TIME' narration instead of the visual",
+      "severity": 6
+    },
+    {
+      "sceneId": "scene_05",
+      "type": "weak-metaphor",
+      "evidence": "Two circles float disconnected with only a faint short hairline at top; the tilted-beam weighing relationship (want-most outranks want-now) is not legible in the composition",
+      "severity": 6
+    },
+    {
+      "sceneId": "scene_07",
+      "type": "generic-ai-aesthetics",
+      "evidence": "The dot and its background glow switch to a saturated mint green, introducing a hue outside the project's amber/orange-on-dark palette while the headline accent stays amber",
+      "severity": 6
+    },
+    {
+      "sceneId": "scene_03",
+      "type": "repetitive-layouts",
+      "evidence": "Same centered stacked two-block typography composition as scene_02 (large word block top, element in middle gap, large word block bottom) reused for another gap metaphor",
+      "severity": 5
+    }
+  ]
+}

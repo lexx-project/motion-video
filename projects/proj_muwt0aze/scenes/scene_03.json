@@ -1,0 +1,48 @@
+{
+  "sceneId": "scene_03",
+  "duration": 3.61,
+  "purpose": "Disadari bahwa penilaian negatif selalu muncul kembali berapa pun usaha menghindarinya — bukan salah kita, struktural.",
+  "visualConcept": "SPOT THAT RETURNS AFTER EVERY WIPE",
+  "composition": "centered",
+  "headline": {
+    "text": "PASTI ADA AJA YANG NGGAK SUKA",
+    "accentWords": [],
+    "align": "center"
+  },
+  "elements": [
+    {
+      "primitive": "Circle",
+      "variant": "filled",
+      "diameterPct": 12,
+      "position": "center",
+      "offsetX": 0,
+      "offsetY": -18,
+      "accent": "gold",
+      "delay": 0.2,
+      "entrance": "scale",
+      "emphasis": "controlledReveal",
+      "exit": "fade",
+      "emphasisAt": 1.6
+    },
+    {
+      "primitive": "Label",
+      "text": "BINTIK SELALU SISA — BUKAN SALAH LU",
+      "position": "bottom",
+      "offsetY": -2,
+      "align": "center",
+      "accent": "none",
+      "delay": 0.6,
+      "entrance": "reveal",
+      "exit": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "fade",
+    "emphasis": "controlledReveal",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.6
+  }
+}

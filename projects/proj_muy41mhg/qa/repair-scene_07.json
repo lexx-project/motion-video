@@ -1,0 +1,20 @@
+{
+  "sceneId": "scene_07",
+  "issue": "Two floating vertical line stubs read as artifacts with no flow into the circle, the aperture metaphor is invisible, the 'HIDUP LU' label renders far below spec, and the headline overlapped every object.",
+  "rootCause": "Objects were placed mid-frame against a top-anchored headline, and the stub Lines had no semantic direction while the Circle had no inner gap to enact 'the gap you set'.",
+  "scope": "minimal",
+  "changesMade": [
+    "Moved headline to the top band (center) and all objects to the bottom band so no overlap remains",
+    "Replaced both anonymous vertical Line stubs with 2 Arrows entering from lower-left, aimed at the circle, documented as incoming opinion voices",
+    "Added a thin inner ring Circle (aperture) inside the outer circle with scale entrance and subtleScale emphasis at 1.6",
+    "Set 'HIDUP LU' as a proper Label at size lg (34px w700 uppercase) under the circle",
+    "Added 'SUARA ORANG LAIN' label in the lower-left to anchor the arrows; added role/purpose to every element; teal remains the single accent"
+  ],
+  "preserve": [
+    "WordReveal headline text 'SEBESAR PENGARUH YANG LU IZINKAN' with single teal accent word",
+    "Split composition family and dark background color discipline",
+    "Duration 3.61s with entranceAt 0 / emphasisAt 1.6 / exitAt 3.11 and fade exit",
+    "VO band untouched; no caption-like elements added"
+  ],
+  "expectedEffect": "Voices visibly travel as arrows into a circle whose inner ring makes the permitted gap literal and adjustable, with a spec-sized label naming the protected space — the beat is enacted, and the frame reads cleanly in two separated bands."
+}

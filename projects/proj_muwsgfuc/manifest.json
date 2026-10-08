@@ -1,0 +1,73 @@
+{
+  "projectId": "proj_muwsgfuc",
+  "createdAt": "2026-10-06T14:43:14.106Z",
+  "updatedAt": "2026-10-06T16:01:46.999Z",
+  "status": "failed",
+  "scriptPreview": "**“Lu tau nggak…\nsalah satu hal yang paling bikin capek?”**\n\nBerusaha…\n\nbiar semua orang suka sama kita.\n\nCara ngomong dijaga.\n\nCara berpakaian dipikirin.\n\nPosting sesuatu…\n\nhapus lagi.\n\nTakut ada yang ngejudge.\n\nTakut ada yang ngomongin.\n\n",
+  "hasAudio": true,
+  "sceneIds": [
+    "scene_01",
+    "scene_02",
+    "scene_03",
+    "scene_04",
+    "scene_05",
+    "scene_06",
+    "scene_07",
+    "scene_08"
+  ],
+  "stages": {
+    "analysis": {
+      "status": "done",
+      "startedAt": "2026-10-06T14:58:10.508Z",
+      "finishedAt": "2026-10-06T14:58:35.840Z"
+    },
+    "beats": {
+      "status": "done",
+      "startedAt": "2026-10-06T14:58:35.844Z",
+      "finishedAt": "2026-10-06T15:01:38.066Z"
+    },
+    "timing": {
+      "status": "done",
+      "startedAt": "2026-10-06T15:01:38.067Z",
+      "finishedAt": "2026-10-06T15:01:39.930Z"
+    },
+    "concepts": {
+      "status": "done",
+      "startedAt": "2026-10-06T15:01:39.931Z",
+      "finishedAt": "2026-10-06T15:45:56.950Z"
+    },
+    "sceneGeneration": {
+      "status": "done",
+      "startedAt": "2026-10-06T15:45:56.953Z",
+      "finishedAt": "2026-10-06T15:59:37.806Z"
+    },
+    "validation": {
+      "status": "done",
+      "finishedAt": "2026-10-06T15:59:37.807Z"
+    },
+    "novelty": {
+      "status": "done",
+      "startedAt": "2026-10-06T15:59:37.808Z",
+      "finishedAt": "2026-10-06T15:59:37.822Z"
+    },
+    "render": {
+      "status": "done",
+      "startedAt": "2026-10-06T15:59:37.824Z",
+      "finishedAt": "2026-10-06T16:01:24.734Z"
+    },
+    "conformance": {
+      "status": "done",
+      "startedAt": "2026-10-06T16:01:32.212Z",
+      "finishedAt": "2026-10-06T16:01:33.549Z"
+    },
+    "visionQa": {
+      "status": "failed",
+      "startedAt": "2026-10-06T16:01:33.551Z",
+      "finishedAt": "2026-10-06T16:01:46.998Z",
+      "error": "StudioError: [qa]: Vision provider reported VISION_UNAVAILABLE - image attachments not accepted. Cannot fake vision scores; fix provider image support and retry."
+    }
+  },
+  "audioDurationSec": 55.066063,
+  "timingSource": "phrase",
+  "lastError": "[qa]: Vision provider reported VISION_UNAVAILABLE - image attachments not accepted. Cannot fake vision scores; fix provider image support and retry."
+}

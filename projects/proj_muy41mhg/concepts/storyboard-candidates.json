@@ -1,0 +1,85 @@
+{
+  "perBeat": [
+    {
+      "beatId": "b9",
+      "candidates": [
+        {
+          "id": "c1",
+          "visualMechanism": "separation",
+          "concept": "TWO TRAILS SPLIT, ONE GOES HOME",
+          "compositionSketch": "split: left — a dim trail curves back to a small cluster of house-blocks; right — a gold trail runs from the same origin past the cluster to the frame edge. One label under each.",
+          "objects": [
+            "Line",
+            "Line",
+            "Stack (house blocks)",
+            "Label",
+            "Label"
+          ],
+          "whyDifferent": "Other candidates act on opinions or boundaries; this one literally enacts 'mereka pulang' as diverging geometry — separation, not filtering.",
+          "strength": "Two lines leaving one point and never rejoining tells 'your life is yours' with no narration; the cluster reads instantly as 'their home'.",
+          "complexity": "low"
+        },
+        {
+          "id": "c2",
+          "visualMechanism": "expectationReality",
+          "concept": "APPROVAL COUNTER WHOSE DENOMINATOR GROWS",
+          "compositionSketch": "typographyDominant: counter reads 'DISUKAI 12.481 / 12.482'; each time the numerator ticks up, the denominator ticks up too and the thin fill bar stays stuck at 99.9%.",
+          "objects": [
+            "Counter",
+            "Counter",
+            "ProgressBar",
+            "Label"
+          ],
+          "whyDifferent": "Instead of separating paths or walls, it proves impossibility arithmetically — the goal moves away as fast as you approach it.",
+          "strength": "Watching the numerator win and still lose is self-evident; the stuck bar makes universal approval visibly unreachable.",
+          "complexity": "medium"
+        },
+        {
+          "id": "c3",
+          "visualMechanism": "barrier",
+          "concept": "OPINIONS HALT AT THE LINE, LIFE CONTINUES",
+          "compositionSketch": "leftTextRightObject: left text; right — short dim opinion ticks fly in and stop dead at a vertical teal boundary, piling up; through it one gold line continues unbroken to the edge.",
+          "objects": [
+            "Label",
+            "Line (boundary)",
+            "Line (your path)",
+            "Ticks x5"
+          ],
+          "whyDifferent": "Enacts the control-boundary as physics (blocked vs passing) rather than as a dial, a door, or reformatting of text.",
+          "strength": "Ticks piling uselessly while your line keeps going shows 'their judgment stops here, your life doesn't' without explanation.",
+          "complexity": "medium"
+        },
+        {
+          "id": "c4",
+          "visualMechanism": "reduction",
+          "concept": "JUDGMENT MARKS SHED FROM THE CIRCLE",
+          "compositionSketch": "centered: a circle carries dim ticks stuck to its rim (labels: CARA NGOMONG, POSTINGAN, KEBAIKAN); ticks detach and fall away one by one — the circle settles larger with a teal rim.",
+          "objects": [
+            "Circle",
+            "Ticks x5",
+            "Label"
+          ],
+          "whyDifferent": "Where c1 splits and c3 blocks, this removes weight already attached — self-compassion shown as unloading rather than defending.",
+          "strength": "Physical shedding of stuck-on marks reads as relief; the circle growing after each drop makes the benefit of letting go visible.",
+          "complexity": "medium"
+        },
+        {
+          "id": "c5",
+          "visualMechanism": "cycle",
+          "concept": "THE PLEASING RING OPENS AND YOU WALK OUT",
+          "compositionSketch": "objectDominant: a teal ring draws itself nearly full around center (fading labels: MEREKA, PENILAIAN, SUKA), then the final arc refuses to close — a gap opens in gold and the held dot exits.",
+          "objects": [
+            "Line (arc)",
+            "Line (arc)",
+            "Circle",
+            "GradientGlow",
+            "Label"
+          ],
+          "whyDifferent": "Treats the problem as a self-reinforcing loop that gets broken, not as a wall, a counter, or a diverging path.",
+          "strength": "A ring that almost closes but won't, plus one object exiting through the gap, states the release: the cycle ends because you stop completing it.",
+          "complexity": "medium"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "sceneId": "scene_07",
+  "duration": 2.12,
+  "purpose": "Final imperative: the held dot breaks into an extending line, making 'start' the visible action that closes the gap.",
+  "visualConcept": "Dot breaks into a line",
+  "composition": "typographyDominant",
+  "headline": {
+    "text": "BUT START.",
+    "accentWords": [
+      "START"
+    ],
+    "align": "center"
+  },
+  "elements": [
+    {
+      "primitive": "Circle",
+      "variant": "filled",
+      "diameterPct": 7,
+      "position": "center",
+      "offsetX": -30,
+      "offsetY": 6,
+      "accent": "none",
+      "delay": 0,
+      "entrance": "scale",
+      "emphasis": "subtleScale",
+      "emphasisAt": 0.95
+    },
+    {
+      "primitive": "Line",
+      "orientation": "horizontal",
+      "lengthPct": 58,
+      "thicknessPx": 8,
+      "position": "center",
+      "offsetX": 2,
+      "offsetY": 6,
+      "accent": "teal",
+      "delay": 0.4,
+      "entrance": "draw",
+      "emphasis": "controlledReveal",
+      "emphasisAt": 1
+    },
+    {
+      "primitive": "GradientGlow",
+      "intensity": 0.32,
+      "diameterPct": 70,
+      "position": "center",
+      "offsetX": -30,
+      "offsetY": 6,
+      "accent": "none",
+      "delay": 0.45,
+      "entrance": "fade",
+      "emphasis": "glow",
+      "emphasisAt": 1
+    },
+    {
+      "primitive": "Caption",
+      "text": "THE GAP CLOSES THE MOMENT YOU MOVE",
+      "position": "bottom",
+      "align": "center",
+      "accent": "none",
+      "delay": 1.05,
+      "entrance": "fade",
+      "emphasis": "highlight",
+      "emphasisAt": 1.5
+    }
+  ],
+  "motion": {
+    "entrance": "scale",
+    "emphasis": "controlledReveal",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1,
+    "exitAt": 1.72
+  }
+}

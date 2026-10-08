@@ -1,0 +1,20 @@
+{
+  "sceneId": "scene_02",
+  "issue": "The frame's middle is empty, so expressive words never reach the gate — 'hapus lagi' is only stated by labels, while three accents, undersized flow pills, a floating red rule, and seven stacked elements fragment the frame.",
+  "rootCause": "The Flow primitive renders as small detached pills outside the action zone and the red Line sits at the right edge unanchored to any text path, so the clip moment has no visible subject; extra Indicator/Label/Flow overlap inflates element count and adds a third accent.",
+  "scope": "minimal",
+  "changesMade": [
+    "Replaced bottom Flow pills with two lg-size (34px) word chips on the gate's horizontal path: expressive 'JUJUR · KERAS · LIAR' slides into the gate and exits dissolve at 1.6, bland 'AMAN AJA' fades in beyond it — enacting the clip.",
+    "Re-anchored the gate Line to the chip path (center, same midline as chips), recolored red to teal; removed the JUDGMENT GATE Indicator.",
+    "Accent discipline restored: teal for gate and chips, gold kept only on 'DIJUDGE'; HAPUS LAGI kept accent none with highlight emphasis at 1.6.",
+    "Element count reduced from 7 to 5, preserving split composition and reveal/highlight/dissolve motion family."
+  ],
+  "preserve": [
+    "Headline text 'TAKUT DIJUDGE' with gold accent on 'DIJUDGE', left aligned",
+    "Split composition family and dark background with 60-70% negative space",
+    "Duration 3.61 and timing: entrance 0, emphasis 1.6, exit 3.1",
+    "Bold grotesque typography with label at 34px w700 uppercase",
+    "Reveal/highlight/dissolve motion family and restrained pacing"
+  ],
+  "expectedEffect": "A visible word-chip path crossing the teal gate shows expressive language sliding in and being erased at the judgment line while only the bland version passes — 'hapus lagi' is enacted, with exactly two accents, spec-size type, and a clean 5-element frame."
+}

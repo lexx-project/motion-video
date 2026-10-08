@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build and output
+dist/
+dist-ui/
+out/
+build/
+
+# Logs and debug
+*.log
+install.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Rendered output & project temp files
+projects/*/renders/
+projects/*/qa/frames/
+projects/*/renders-preview/
+public/proj_*/
+referenceanalysisall-scores.txt
+
+# Media renders except reference video
+*.mp4
+!reference/reference.mp4
+
+# Environment & local credentials
+.env
+.env.*
+!.env.example
+*.local
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

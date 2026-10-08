@@ -1,0 +1,70 @@
+{
+  "sceneId": "scene_08",
+  "duration": 9,
+  "purpose": "Pembebasan: satu bentuk utuh tetap utuh di antara sel-sel seragam yang menekannya — beda itu struktur, bukan cacat.",
+  "visualConcept": "ONE SHAPE DECLINES THE MOULD",
+  "composition": "objectDominant",
+  "headline": {
+    "text": "LU NGGAK DICIPTAIN BUAT DISUKAI SEMUA ORANG",
+    "accentWords": [
+      "DICIPTAIN"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "Grid",
+      "position": "bottom",
+      "offsetX": 0,
+      "offsetY": -6,
+      "accent": "none",
+      "cols": 6,
+      "rows": 4,
+      "activeCells": [],
+      "variant": "cells",
+      "opacity": 0.95,
+      "scale": 1.1,
+      "density": 0.85,
+      "entrance": "stagger",
+      "delay": 0
+    },
+    {
+      "primitive": "Circle",
+      "position": "bottom",
+      "offsetX": 4,
+      "offsetY": -14,
+      "accent": "gold",
+      "variant": "outline",
+      "diameterPct": 40,
+      "label": "",
+      "scale": 1,
+      "opacity": 1,
+      "entrance": "scale",
+      "emphasis": "subtleScale",
+      "emphasisAt": 4.05,
+      "delay": 0.5
+    },
+    {
+      "primitive": "Label",
+      "text": "TETAP UTUH — TANPA DIPAKSA",
+      "position": "topRight",
+      "align": "right",
+      "accent": "none",
+      "size": "md",
+      "offsetX": 0,
+      "offsetY": 0,
+      "entrance": "fade",
+      "delay": 1.2
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "subtleScale",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 4.05,
+    "exitAt": 8.2
+  }
+}

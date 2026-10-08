@@ -1,0 +1,83 @@
+{
+  "sceneId": "scene_04",
+  "duration": 5.42,
+  "purpose": "Four contradictory verdicts slammed over one unbroken red stroke show judgment is the track itself, not a reaction to any behavior.",
+  "visualConcept": "THE RED LINE NEVER LIFTS",
+  "composition": "bottomTextTopObject",
+  "headline": {
+    "text": "LU GAGAL DITERTAWAIN",
+    "accentWords": [
+      "DITERTAWAIN"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "Sequence",
+      "items": [
+        {
+          "label": "BAIK",
+          "state": "done"
+        },
+        {
+          "label": "DIEM",
+          "state": "done"
+        },
+        {
+          "label": "SUKSES",
+          "state": "done"
+        },
+        {
+          "label": "GAGAL",
+          "state": "done"
+        }
+      ],
+      "numbered": true,
+      "position": "top",
+      "offsetY": 4,
+      "accent": "none",
+      "delay": 0.3,
+      "entrance": "stagger",
+      "emphasis": "highlight",
+      "exit": "fade",
+      "emphasisAt": 1.2
+    },
+    {
+      "primitive": "Line",
+      "orientation": "horizontal",
+      "lengthPct": 100,
+      "thicknessPx": 8,
+      "position": "top",
+      "offsetY": 8,
+      "accent": "red",
+      "delay": 0.7,
+      "entrance": "draw",
+      "emphasis": "controlledReveal",
+      "exit": "fade",
+      "emphasisAt": 2.6
+    },
+    {
+      "primitive": "Subheadline",
+      "text": "Satu garis, semua keadaan dihukum",
+      "align": "left",
+      "position": "bottom",
+      "offsetY": -8,
+      "accent": "none",
+      "delay": 1.1,
+      "entrance": "fade",
+      "emphasis": "positionShift",
+      "exit": "fade",
+      "emphasisAt": 3.6
+    }
+  ],
+  "motion": {
+    "entrance": "draw",
+    "emphasis": "controlledReveal",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 2.6,
+    "exitAt": 4.92
+  }
+}

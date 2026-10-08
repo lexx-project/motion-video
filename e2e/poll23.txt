@@ -1,0 +1,8 @@
+logLast=10/06/2026 15:21:55
+finalWrite=10/06/2026 14:43:50
+[08:15:23] novelty: novelty gate (pre-render)
+[08:15:23] rendering: rendering preview
+[08:16:15] qa: technical QA + frame extraction
+[08:16:15] qa: vision QA
+[08:20:35] qa: slop critic
+[08:21:55] repairing: repair round 1: overall quality 6.8 < 8 | slop severity 7 > 6 | scene_02: technical correctness fail | scene_02: severe relevance/clarity issue | scene_02: severe readability - No strike-through is visible on the lower gold 'TOMORROW' although the concept is a struck-out repeat; the only mark is a ~1px vertical hairline floating mid-frame, so the 'same promise crossed out again' mechanism is unreadable. | scene_04: technical correctness fail

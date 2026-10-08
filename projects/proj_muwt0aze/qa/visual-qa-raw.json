@@ -1,0 +1,375 @@
+{
+  "evaluators": [
+    {
+      "id": "A",
+      "lens": "script-communication: does each frame express its story beat visually, without relying on the narration?",
+      "temperature": 0.2
+    },
+    {
+      "id": "B",
+      "lens": "design-craft: typography quality, composition, hierarchy, and consistency with the Master Design Bible",
+      "temperature": 0.4
+    },
+    {
+      "id": "C",
+      "lens": "cold-viewer skeptic: first-impression clarity, phone-size readability, and sensitivity to AI-slop aesthetics",
+      "temperature": 0.6
+    }
+  ],
+  "rawResults": [
+    {
+      "scenes": [
+        {
+          "sceneId": "scene_01",
+          "scores": {
+            "scriptRelevance": 7,
+            "visualClarity": 6,
+            "designConsistency": 7,
+            "typography": 6,
+            "composition": 6,
+            "motionQuality": 7,
+            "novelty": 6,
+            "aiSlopSeverity": 3
+          }
+        },
+        {
+          "sceneId": "scene_02",
+          "scores": {
+            "scriptRelevance": 8,
+            "visualClarity": 7,
+            "designConsistency": 6,
+            "typography": 7,
+            "composition": 7,
+            "motionQuality": 7,
+            "novelty": 7,
+            "aiSlopSeverity": 3
+          }
+        },
+        {
+          "sceneId": "scene_03",
+          "scores": {
+            "scriptRelevance": 5,
+            "visualClarity": 6,
+            "designConsistency": 7,
+            "typography": 7,
+            "composition": 7,
+            "motionQuality": 6,
+            "novelty": 4,
+            "aiSlopSeverity": 4
+          }
+        },
+        {
+          "sceneId": "scene_04",
+          "scores": {
+            "scriptRelevance": 6,
+            "visualClarity": 6,
+            "designConsistency": 7,
+            "typography": 7,
+            "composition": 7,
+            "motionQuality": 6,
+            "novelty": 5,
+            "aiSlopSeverity": 3
+          }
+        },
+        {
+          "sceneId": "scene_05",
+          "scores": {
+            "scriptRelevance": 7,
+            "visualClarity": 6,
+            "designConsistency": 6,
+            "typography": 7,
+            "composition": 6,
+            "motionQuality": 7,
+            "novelty": 6,
+            "aiSlopSeverity": 3
+          }
+        },
+        {
+          "sceneId": "scene_06",
+          "scores": {
+            "scriptRelevance": 7,
+            "visualClarity": 6,
+            "designConsistency": 7,
+            "typography": 6,
+            "composition": 6,
+            "motionQuality": 7,
+            "novelty": 5,
+            "aiSlopSeverity": 3
+          }
+        },
+        {
+          "sceneId": "scene_07",
+          "scores": {
+            "scriptRelevance": 9,
+            "visualClarity": 8,
+            "designConsistency": 7,
+            "typography": 8,
+            "composition": 8,
+            "motionQuality": 7,
+            "novelty": 7,
+            "aiSlopSeverity": 2
+          }
+        },
+        {
+          "sceneId": "scene_08",
+          "scores": {
+            "scriptRelevance": 7,
+            "visualClarity": 6,
+            "designConsistency": 6,
+            "typography": 5,
+            "composition": 6,
+            "motionQuality": 7,
+            "novelty": 6,
+            "aiSlopSeverity": 3
+          }
+        }
+      ],
+      "overall": {
+        "scriptRelevance": 7,
+        "visualClarity": 6,
+        "designConsistency": 7,
+        "typography": 7,
+        "composition": 7,
+        "motionQuality": 7,
+        "novelty": 6,
+        "aiSlopSeverity": 3
+      }
+    },
+    {
+      "scenes": [
+        {
+          "sceneId": "scene_01",
+          "scores": {
+            "scriptRelevance": 8,
+            "visualClarity": 7,
+            "designConsistency": 8,
+            "typography": 7,
+            "composition": 7,
+            "motionQuality": 7,
+            "novelty": 7,
+            "aiSlopSeverity": 3
+          }
+        },
+        {
+          "sceneId": "scene_02",
+          "scores": {
+            "scriptRelevance": 8,
+            "visualClarity": 7,
+            "designConsistency": 6,
+            "typography": 8,
+            "composition": 7,
+            "motionQuality": 7,
+            "novelty": 7,
+            "aiSlopSeverity": 3
+          }
+        },
+        {
+          "sceneId": "scene_03",
+          "scores": {
+            "scriptRelevance": 7,
+            "visualClarity": 8,
+            "designConsistency": 8,
+            "typography": 8,
+            "composition": 7,
+            "motionQuality": 7,
+            "novelty": 5,
+            "aiSlopSeverity": 3
+          }
+        },
+        {
+          "sceneId": "scene_04",
+          "scores": {
+            "scriptRelevance": 7,
+            "visualClarity": 7,
+            "designConsistency": 8,
+            "typography": 8,
+            "composition": 7,
+            "motionQuality": 6,
+            "novelty": 5,
+            "aiSlopSeverity": 4
+          }
+        },
+        {
+          "sceneId": "scene_05",
+          "scores": {
+            "scriptRelevance": 7,
+            "visualClarity": 7,
+            "designConsistency": 6,
+            "typography": 8,
+            "composition": 7,
+            "motionQuality": 6,
+            "novelty": 6,
+            "aiSlopSeverity": 4
+          }
+        },
+        {
+          "sceneId": "scene_06",
+          "scores": {
+            "scriptRelevance": 8,
+            "visualClarity": 7,
+            "designConsistency": 7,
+            "typography": 7,
+            "composition": 8,
+            "motionQuality": 7,
+            "novelty": 7,
+            "aiSlopSeverity": 3
+          }
+        },
+        {
+          "sceneId": "scene_07",
+          "scores": {
+            "scriptRelevance": 9,
+            "visualClarity": 9,
+            "designConsistency": 8,
+            "typography": 8,
+            "composition": 9,
+            "motionQuality": 8,
+            "novelty": 8,
+            "aiSlopSeverity": 2
+          }
+        },
+        {
+          "sceneId": "scene_08",
+          "scores": {
+            "scriptRelevance": 8,
+            "visualClarity": 6,
+            "designConsistency": 6,
+            "typography": 5,
+            "composition": 6,
+            "motionQuality": 7,
+            "novelty": 7,
+            "aiSlopSeverity": 4
+          }
+        }
+      ],
+      "overall": {
+        "scriptRelevance": 8,
+        "visualClarity": 7,
+        "designConsistency": 7,
+        "typography": 7,
+        "composition": 7,
+        "motionQuality": 7,
+        "novelty": 6,
+        "aiSlopSeverity": 3
+      }
+    },
+    {
+      "scenes": [
+        {
+          "sceneId": "scene_01",
+          "scores": {
+            "scriptRelevance": 7,
+            "visualClarity": 7,
+            "designConsistency": 8,
+            "typography": 7,
+            "composition": 7,
+            "motionQuality": 7,
+            "novelty": 6,
+            "aiSlopSeverity": 2
+          }
+        },
+        {
+          "sceneId": "scene_02",
+          "scores": {
+            "scriptRelevance": 8,
+            "visualClarity": 8,
+            "designConsistency": 7,
+            "typography": 8,
+            "composition": 7,
+            "motionQuality": 7,
+            "novelty": 7,
+            "aiSlopSeverity": 2
+          }
+        },
+        {
+          "sceneId": "scene_03",
+          "scores": {
+            "scriptRelevance": 6,
+            "visualClarity": 7,
+            "designConsistency": 8,
+            "typography": 8,
+            "composition": 6,
+            "motionQuality": 6,
+            "novelty": 5,
+            "aiSlopSeverity": 3
+          }
+        },
+        {
+          "sceneId": "scene_04",
+          "scores": {
+            "scriptRelevance": 7,
+            "visualClarity": 7,
+            "designConsistency": 8,
+            "typography": 8,
+            "composition": 7,
+            "motionQuality": 7,
+            "novelty": 6,
+            "aiSlopSeverity": 2
+          }
+        },
+        {
+          "sceneId": "scene_05",
+          "scores": {
+            "scriptRelevance": 6,
+            "visualClarity": 6,
+            "designConsistency": 7,
+            "typography": 8,
+            "composition": 7,
+            "motionQuality": 6,
+            "novelty": 6,
+            "aiSlopSeverity": 2
+          }
+        },
+        {
+          "sceneId": "scene_06",
+          "scores": {
+            "scriptRelevance": 8,
+            "visualClarity": 7,
+            "designConsistency": 8,
+            "typography": 7,
+            "composition": 7,
+            "motionQuality": 7,
+            "novelty": 7,
+            "aiSlopSeverity": 2
+          }
+        },
+        {
+          "sceneId": "scene_07",
+          "scores": {
+            "scriptRelevance": 8,
+            "visualClarity": 8,
+            "designConsistency": 8,
+            "typography": 8,
+            "composition": 8,
+            "motionQuality": 7,
+            "novelty": 7,
+            "aiSlopSeverity": 2
+          }
+        },
+        {
+          "sceneId": "scene_08",
+          "scores": {
+            "scriptRelevance": 7,
+            "visualClarity": 6,
+            "designConsistency": 7,
+            "typography": 5,
+            "composition": 6,
+            "motionQuality": 7,
+            "novelty": 6,
+            "aiSlopSeverity": 4
+          }
+        }
+      ],
+      "overall": {
+        "scriptRelevance": 7,
+        "visualClarity": 7,
+        "designConsistency": 7,
+        "typography": 7,
+        "composition": 7,
+        "motionQuality": 7,
+        "novelty": 6,
+        "aiSlopSeverity": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+status=needs_repair overall=7.03 conf=1 conformance=9 slop=8
+scene_01: q=7.29 rel=8 clar=7 typo=7 comp=7 tech=pass
+scene_02: q=7.00 rel=8 clar=7 typo=7 comp=7 tech=pass
+scene_03: q=7.43 rel=7 clar=8 typo=8 comp=8 tech=pass
+scene_04: q=7.71 rel=8 clar=8 typo=8 comp=8 tech=pass
+scene_05: q=6.43 rel=7 clar=6 typo=7 comp=6 tech=pass
+scene_06: q=6.71 rel=8 clar=6 typo=6 comp=6 tech=pass
+scene_07: q=7.71 rel=8 clar=8 typo=8 comp=8 tech=pass
+scene_08: q=6.43 rel=7 clar=7 typo=5 comp=6 tech=pass
+reasons:
+  - overall quality 7.0 < 8
+  - slop severity 8 > 6
+  - scene_06: severe readability - Gold ring overlaps the headline, cutting through 'PENGARUHNYA' GÇö object collides with text.

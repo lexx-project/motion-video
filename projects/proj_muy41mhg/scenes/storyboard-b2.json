@@ -1,0 +1,145 @@
+{
+  "beatId": "b2",
+  "spokenMeaning": "The monologue names the exhausting behavior: bending yourself so everyone will like you.",
+  "viewerTakeaway": "Trying to please everyone costs real pieces of yourself and never buys the approval back.",
+  "visualMechanism": "depletion — the teal self-disc loses material that converts into gold approva...",
+  "visualNarrative": [
+    {
+      "order": 1,
+      "action": "A solid teal circle labelled DIRI LU fades in intact, slightly left of center.",
+      "meaning": "Establishes the whole self before the eroding begins.",
+      "visualEvidence": "Unbroken teal disc with a full ring stroke, label 'DIRI LU' beneath it."
+    },
+    {
+      "order": 2,
+      "action": "Small gold notches break off the disc's right edge one by one, each becoming a gold coin token.",
+      "meaning": "Each attempt to please spends a real piece of the self.",
+      "visualEvidence": "Disc edge visibly dented where notches detached; coins emerge only from those notches."
+    },
+    {
+      "order": 3,
+      "action": "The gold coins drift along a thin arc toward three dim hollow face dots on the right.",
+      "meaning": "Self-material is converted into approval offerings sent outward.",
+      "visualEvidence": "Coin arc ends at a row of dim outlined faces, never curving back."
+    },
+    {
+      "order": 4,
+      "action": "Coins land; the faces stay dim and unresponsive while the teal disc is left as a thin hollow ring.",
+      "meaning": "Approval never returns — the effort depletes the giver permanently.",
+      "visualEvidence": "Hollow ring with wide empty center, label now dimmed, faces unchanged."
+    }
+  ],
+  "semanticObjects": [
+    {
+      "objectType": "Circle",
+      "semanticRole": "The person being hollowed — value physically leaves this core",
+      "relationship": "source of every gold token, eroded by them",
+      "importance": 5
+    },
+    {
+      "objectType": "Badge",
+      "semanticRole": "A slice of self converted into an offering of likability",
+      "relationship": "chips off the circle and travels to the audience",
+      "importance": 4
+    },
+    {
+      "objectType": "Circle",
+      "semanticRole": "The everyone whose approval can never be satisfied",
+      "relationship": "receives tokens but never brightens or gives back",
+      "importance": 4
+    },
+    {
+      "objectType": "Indicator",
+      "semanticRole": "One-way direction of giving: self to others, no return path",
+      "relationship": "connects circle edge to face dots unidirectionally",
+      "importance": 3
+    },
+    {
+      "objectType": "Label",
+      "semanticRole": "Names the behavior while the image proves its cost",
+      "relationship": "sits above the mechanism as its caption",
+      "importance": 3
+    }
+  ],
+  "relationships": [
+    {
+      "from": "Teal self circle",
+      "to": "Gold approval token",
+      "relationship": "material source — each token is carved from the disc's edge"
+    },
+    {
+      "from": "Gold approval token",
+      "to": "Dim face dots (audience)",
+      "relationship": "delivered offering that receives no response or return"
+    },
+    {
+      "from": "Arc indicator",
+      "to": "Teal self circle",
+      "relationship": "shows depletion drains one-way outward, never refills"
+    }
+  ],
+  "typographyPlan": {
+    "headline": "BERUSAHA BIAR DISUKAI SEMUA ORANG",
+    "emphasisWords": [
+      "SEMUA",
+      "ORANG"
+    ],
+    "supportingText": [
+      "SETIAP POTONGAN KELUAR",
+      "GA PERNAH BALIK LAGI",
+      "YANG DIBERI: DIRI LU"
+    ]
+  },
+  "subtitlePlan": {
+    "enabled": true,
+    "text": "Berusaha… biar semua orang suka sama kita.",
+    "timing": "spoken over the intact teal circle, before chipping begins",
+    "role": "spoken line"
+  },
+  "motionBeats": [
+    {
+      "order": 1,
+      "action": "Fade-in and slight scale-up of the intact teal disc with its label",
+      "purpose": "Present the whole self so its later loss is measurable"
+    },
+    {
+      "order": 2,
+      "action": "Staggered chipping: three notches detach at 0.5s intervals, each morphing into a coin",
+      "purpose": "Show depletion as accumulated discrete acts, not a single event"
+    },
+    {
+      "order": 3,
+      "action": "Coins slide along the arc with soft ease-out toward the faces",
+      "purpose": "Trace where the self-material actually goes"
+    },
+    {
+      "order": 4,
+      "action": "Coin arrival leaves faces static while the disc contracts to a hollow ring",
+      "purpose": "Prove the exchange is one-way — effort converts to loss, not approval"
+    },
+    {
+      "order": 5,
+      "action": "Dim the DIRI LU label color as the ring hollows",
+      "purpose": "Mark the identity cost as the scene's closing beat"
+    }
+  ],
+  "compositionIntent": "Centered mechanism on a dark radial stage: hollowing teal disc at ~35% x, three dim face dots at ~72% x, one thin gold arc connecting them, headline top-left in the upper third. Roughly 60% negative space, one text block plus one dominant object.",
+  "visualEvidence": [
+    "Disc edge shows visible notches exactly where coins were removed, proving material left the self",
+    "Arc terminates at the audience with no return line, proving the giving is one-way",
+    "Faces remain the same dim outline after receiving three coins, proving approval never arrives",
+    "Final thin ring versus initial solid disc shows the core was consumed, not decorated"
+  ],
+  "forbiddenInterpretations": [
+    "generic circle-and-arrow diagram with no visible damage",
+    "a person figure literally handing over gifts",
+    "smiling crowd or applause rewarding the effort",
+    "multiple accents competing — coins and arc share one gold accent, disc holds the teal",
+    "a mask or costume being added — this mechanism removes material, never covers it"
+  ],
+  "noveltyIntent": "Where prior beats added layers or tilted lines, this one removes mass: the protagonist's own color physically becomes the currency spent, so the audience watches the self get smaller rather than the situation get bigger.",
+  "elementBudget": {
+    "min": 7,
+    "max": 9
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "beatId": "b1",
+  "spokenMeaning": "Opening hook asking which single thing is most exhausting — the fatigue of performing for other people's approval.",
+  "viewerTakeaway": "Capek isn't vague: my own energy is a finite reserve, and spending it to be liked visibly empties it.",
+  "visualMechanism": "depletion",
+  "visualNarrative": [
+    {
+      "order": 1,
+      "action": "Caption line fades in at bottom-left, then the question headline staggers in word by word: SALAH SATU HAL YANG PALING BIKIN CAPEK",
+      "meaning": "Direct question pulls the listener in and names exhaustion as the subject before any argument",
+      "visualEvidence": "Four word groups appear left-to-right at the 8% margin; gold lands only on CAPEK"
+    },
+    {
+      "order": 2,
+      "action": "A tall empty gauge track appears on the right and fills to the top in teal, counter reads 100%",
+      "meaning": "The self is established as a measurable, finite capacity that starts full",
+      "visualEvidence": "One vertical column right side fills completely; label ENERGI DIRI LU sits under it"
+    },
+    {
+      "order": 3,
+      "action": "The teal fill drains downward while the counter drops 100% -> 76% -> 52% -> 34%",
+      "meaning": "Effort to be liked visibly depletes the person; fatigue is quantity leaving, not pressure arriving",
+      "visualEvidence": "Fill level retreats inside the hollow track and the percentage beside it falls in exact sync"
+    },
+    {
+      "order": 4,
+      "action": "Drain halts on a low stub; the 34% counter and the word CAPEK pulse gold once",
+      "meaning": "The question lands: this measurable loss is exactly why it feels tiring",
+      "visualEvidence": "Short teal stub remains at the bottom of a mostly-empty track; one gold pulse, no other motion"
+    }
+  ],
+  "semanticObjects": [
+    {
+      "objectType": "WordReveal",
+      "semanticRole": "The spoken hook made visible: names the exhaustion instead of illustrating it",
+      "relationship": "its gold CAPEK sits level with the emptied gauge, so word and loss point at each other",
+      "importance": 5
+    },
+    {
+      "objectType": "ProgressBar",
+      "semanticRole": "Self-energy as a finite teal column; the depletion metaphor of this beat",
+      "relationship": "drains downward inside EnergyTrack while PercentCounter mirrors it",
+      "importance": 5
+    },
+    {
+      "objectType": "Track",
+      "semanticRole": "Hollow frame = the capacity that was full and is now mostly lost",
+      "relationship": "contains EnergyGauge, making the empty remainder readable",
+      "importance": 4
+    },
+    {
+      "objectType": "Label",
+      "semanticRole": "Quantifies tiredness so capek needs no explanation",
+      "relationship": "reads EnergyGauge fill level in real time and drops with it",
+      "importance": 4
+    },
+    {
+      "objectType": "Indicator",
+      "semanticRole": "Single semantic accent word CAPEK — the only emphasis in the frame",
+      "relationship": "pulses only when the drain stops",
+      "importance": 3
+    },
+    {
+      "objectType": "Caption",
+      "semanticRole": "Verbatim VO grounding for the hook",
+      "relationship": "supports QuestionHeadline from below",
+      "importance": 2
+    }
+  ],
+  "relationships": [
+    {
+      "from": "PercentCounter",
+      "to": "EnergyGauge",
+      "relationship": "reads: percentage value mirrors gauge fill level every frame"
+    },
+    {
+      "from": "EnergyGauge",
+      "to": "EnergyTrack",
+      "relationship": "drains inside: fill retreats downward within the empty frame"
+    },
+    {
+      "from": "QuestionHeadline",
+      "to": "EnergyGauge",
+      "relationship": "aligns with: gold CAPEK sits level with the low teal stub"
+    },
+    {
+      "from": "Caption",
+      "to": "QuestionHeadline",
+      "relationship": "grounds: caption carries the same spoken words under the headline"
+    }
+  ],
+  "typographyPlan": {
+    "headline": "SALAH SATU HAL YANG PALING BIKIN CAPEK",
+    "emphasisWords": [
+      "CAPEK"
+    ],
+    "supportingText": [
+      "ENERGI DIRI LU",
+      "34% TERSISA"
+    ]
+  },
+  "subtitlePlan": {
+    "enabled": true,
+    "text": "Lu tau nggak… salah satu hal yang paling bikin capek?",
+    "timing": "whole beat, 0.00s-3.61s",
+    "role": "spoken line"
+  },
+  "motionBeats": [
+    {
+      "order": 1,
+      "action": "Caption fades in bottom-left as speech begins",
+      "purpose": "Ground the hook in the exact spoken words"
+    },
+    {
+      "order": 2,
+      "action": "Headline words stagger in left-to-right, 0.12s apart, ease-out",
+      "purpose": "Staged question builds anticipation toward the gold word"
+    },
+    {
+      "order": 3,
+      "action": "Gauge track fades in, teal fill rises to 100% over 0.6s",
+      "purpose": "Establish the capacity as full before anything is lost"
+    },
+    {
+      "order": 4,
+      "action": "Fill drains top-down while counter steps 100->34",
+      "purpose": "Depletion is the mechanism of fatigue; counter change proves it is measurable"
+    },
+    {
+      "order": 5,
+      "action": "Single gold pulse on 34% and on CAPEK, then hold still",
+      "purpose": "Punch the answer to the question without adding motion"
+    }
+  ],
+  "compositionIntent": "leftTextRightObject: two-line question block top-left at 8% margin, one tall vertical gauge with counter in the right ~30%, caption bottom-left, ~60% negative space between. Static camera, soft vignette, nothing centered, nothing decorative in the gap.",
+  "visualEvidence": [
+    "Gold CAPEK is the only accented word; everything else is off-white text",
+    "Teal fill visibly drops inside a hollow track while the number beside it falls 100%->34%",
+    "Low teal stub sits across from CAPEK, empty track above it proves the loss",
+    "Frame holds 60% empty dark space; only 6 elements total"
+  ],
+  "forbiddenInterpretations": [
+    "No battery/lightning-bolt clipart or emoji of a tired face",
+    "No arrows, bolts or critic figures attacking the gauge — energy leaves from within",
+    "No counter drifting independently of the fill level",
+    "No particles, sparks or glow emitted by the draining fill",
+    "No centered gauge crowding the headline, no extra accent colors beyond teal and gold CAPEK"
+  ],
+  "noveltyIntent": "Fatigue is measured instead of depicted: a teal capacity column empties in sync with a percentage counter while the question's gold CAPEK sits level with the low stub — depletion, not incoming pressure.",
+  "elementBudget": {
+    "min": 6,
+    "max": 8
+  }
+}

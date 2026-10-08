@@ -1,0 +1,129 @@
+{
+  "motion": {
+    "globalMeanDiff": 0.0112,
+    "perScene": [
+      {
+        "sceneIndex": 0,
+        "meanDiff": 0.0218,
+        "entryDiff": 0.0235,
+        "exitDiff": 0.0157,
+        "samples": 4
+      },
+      {
+        "sceneIndex": 4,
+        "meanDiff": 0.005,
+        "entryDiff": 0.0117,
+        "exitDiff": 0.0011,
+        "samples": 4
+      },
+      {
+        "sceneIndex": 8,
+        "meanDiff": 0.0037,
+        "entryDiff": 0.0111,
+        "exitDiff": 0.001,
+        "samples": 4
+      },
+      {
+        "sceneIndex": 12,
+        "meanDiff": 0.0057,
+        "entryDiff": 0.0036,
+        "exitDiff": 0.0021,
+        "samples": 4
+      },
+      {
+        "sceneIndex": 16,
+        "meanDiff": 0.0143,
+        "entryDiff": 0.0073,
+        "exitDiff": 0.0056,
+        "samples": 4
+      },
+      {
+        "sceneIndex": 20,
+        "meanDiff": 0.0241,
+        "entryDiff": 0.0121,
+        "exitDiff": 0.0071,
+        "samples": 4
+      },
+      {
+        "sceneIndex": 24,
+        "meanDiff": 0.0036,
+        "entryDiff": 0.0066,
+        "exitDiff": 0.0002,
+        "samples": 4
+      }
+    ],
+    "method": "mean abs RGB diff on 5 evenly spaced frames per scene, 64x36 downscale (deterministic)"
+  },
+  "sequences": [
+    {
+      "sceneIndex": 0,
+      "files": [
+        "analysis/motion-samples/scene_00_0.jpg",
+        "analysis/motion-samples/scene_00_1.jpg",
+        "analysis/motion-samples/scene_00_2.jpg",
+        "analysis/motion-samples/scene_00_3.jpg",
+        "analysis/motion-samples/scene_00_4.jpg"
+      ]
+    },
+    {
+      "sceneIndex": 4,
+      "files": [
+        "analysis/motion-samples/scene_04_0.jpg",
+        "analysis/motion-samples/scene_04_1.jpg",
+        "analysis/motion-samples/scene_04_2.jpg",
+        "analysis/motion-samples/scene_04_3.jpg",
+        "analysis/motion-samples/scene_04_4.jpg"
+      ]
+    },
+    {
+      "sceneIndex": 8,
+      "files": [
+        "analysis/motion-samples/scene_08_0.jpg",
+        "analysis/motion-samples/scene_08_1.jpg",
+        "analysis/motion-samples/scene_08_2.jpg",
+        "analysis/motion-samples/scene_08_3.jpg",
+        "analysis/motion-samples/scene_08_4.jpg"
+      ]
+    },
+    {
+      "sceneIndex": 12,
+      "files": [
+        "analysis/motion-samples/scene_12_0.jpg",
+        "analysis/motion-samples/scene_12_1.jpg",
+        "analysis/motion-samples/scene_12_2.jpg",
+        "analysis/motion-samples/scene_12_3.jpg",
+        "analysis/motion-samples/scene_12_4.jpg"
+      ]
+    },
+    {
+      "sceneIndex": 16,
+      "files": [
+        "analysis/motion-samples/scene_16_0.jpg",
+        "analysis/motion-samples/scene_16_1.jpg",
+        "analysis/motion-samples/scene_16_2.jpg",
+        "analysis/motion-samples/scene_16_3.jpg",
+        "analysis/motion-samples/scene_16_4.jpg"
+      ]
+    },
+    {
+      "sceneIndex": 20,
+      "files": [
+        "analysis/motion-samples/scene_20_0.jpg",
+        "analysis/motion-samples/scene_20_1.jpg",
+        "analysis/motion-samples/scene_20_2.jpg",
+        "analysis/motion-samples/scene_20_3.jpg",
+        "analysis/motion-samples/scene_20_4.jpg"
+      ]
+    },
+    {
+      "sceneIndex": 24,
+      "files": [
+        "analysis/motion-samples/scene_24_0.jpg",
+        "analysis/motion-samples/scene_24_1.jpg",
+        "analysis/motion-samples/scene_24_2.jpg",
+        "analysis/motion-samples/scene_24_3.jpg",
+        "analysis/motion-samples/scene_24_4.jpg"
+      ]
+    }
+  ]
+}

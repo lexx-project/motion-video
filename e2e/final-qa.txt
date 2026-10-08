@@ -1,0 +1,15 @@
+status=fail overall=6.80 confidence=1 variance=0.005
+conformance=8.7 slop=7(severe) evaluators=3
+per-scene (median across 3 evaluators):
+  scene_01: q=7.00 rel=8 clar=7 typo=7 comp=6 slop=3 | med=7 var=0.059 conf=0.99 tech=pass issues=0
+  scene_02: q=7.71 rel=8 clar=8 typo=8 comp=8 slop=3 | med=7.57 var=0.095 conf=0.98 tech=pass issues=0
+  scene_03: q=6.43 rel=4 clar=7 typo=8 comp=7 slop=3 | med=6.14 var=0.821 conf=0.86 tech=fail issues=4
+  scene_04: q=5.43 rel=4 clar=4 typo=7 comp=5 slop=4 | med=5.43 var=1.651 conf=0.72 tech=pass issues=5
+  scene_05: q=6.57 rel=7 clar=6 typo=7 comp=6 slop=3 | med=6.71 var=0.054 conf=0.99 tech=pass issues=5
+  scene_06: q=7.57 rel=8 clar=8 typo=8 comp=8 slop=3 | med=7.57 var=0.032 conf=0.99 tech=pass issues=0
+reasons:
+  - overall quality 6.8 < 8
+  - slop severity 7 > 6
+  - scene_03: technical correctness fail
+  - scene_03: severe relevance/clarity issue (median relevance 4, clarity 7)
+  - scene_04: severe relevance/clarity issue (median relevance 4, clarity 4)

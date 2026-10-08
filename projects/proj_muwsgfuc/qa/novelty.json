@@ -1,0 +1,78 @@
+{
+  "results": [
+    {
+      "sceneId": "scene_01",
+      "similarity": 15,
+      "matchedDimensions": [
+        "sameMotionPattern"
+      ],
+      "verdict": "accept",
+      "against": "proj_ref_demo/scene_04"
+    },
+    {
+      "sceneId": "scene_02",
+      "similarity": 10,
+      "matchedDimensions": [
+        "sameComposition"
+      ],
+      "verdict": "accept",
+      "against": "proj_e2e8/scene_05"
+    },
+    {
+      "sceneId": "scene_03",
+      "similarity": 15,
+      "matchedDimensions": [
+        "sameMotionPattern"
+      ],
+      "verdict": "accept",
+      "against": "proj_e2e8/scene_01"
+    },
+    {
+      "sceneId": "scene_04",
+      "similarity": 15,
+      "matchedDimensions": [
+        "sameDominantObject"
+      ],
+      "verdict": "accept",
+      "against": "proj_e2e8/scene_02"
+    },
+    {
+      "sceneId": "scene_05",
+      "similarity": 15,
+      "matchedDimensions": [
+        "sameMotionPattern"
+      ],
+      "verdict": "accept",
+      "against": "proj_ref_demo/scene_05"
+    },
+    {
+      "sceneId": "scene_06",
+      "similarity": 15,
+      "matchedDimensions": [
+        "sameDominantObject"
+      ],
+      "verdict": "accept",
+      "against": "proj_e2e8/scene_05"
+    },
+    {
+      "sceneId": "scene_07",
+      "similarity": 15,
+      "matchedDimensions": [
+        "sameDominantObject"
+      ],
+      "verdict": "accept",
+      "against": "proj_ref_demo/scene_06"
+    },
+    {
+      "sceneId": "scene_08",
+      "similarity": 15,
+      "matchedDimensions": [
+        "sameMotionPattern"
+      ],
+      "verdict": "accept",
+      "against": "proj_ref_demo/scene_02"
+    }
+  ],
+  "rejectedSceneIds": [],
+  "status": "pass"
+}

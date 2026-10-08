@@ -1,0 +1,20 @@
+{
+  "sceneId": "scene_03",
+  "issue": "The red spot is drawn on top of the headline occluding the 'GG' of 'NGGAK', it uses an off-palette salmon-red reserved for warnings, and the caption says 'KAMU' while the script voice is 'lu'.",
+  "rootCause": "The Circle is centered at offsetY 20, the same vertical band as the centered headline, so object and glyphs overlap; accent was set to red as a generic negative mark, and caption copy drifted from the established 'lu' register.",
+  "scope": "minimal",
+  "changesMade": [
+    "Moved Circle out of the text bounding box into the gap above the headline: offsetY 20 → -18, still centered",
+    "Changed Circle accent red → gold: in-palette project system and correct semantic emphasis instead of warning red",
+    "Changed caption copy 'BUKAN SALAH KAMU' → 'BUKAN SALAH LU' to match script register",
+    "Left headline text/align, Label position, delays, duration and motion chain untouched"
+  ],
+  "preserve": [
+    "Headline copy 'PASTI ADA AJA YANG NGGAK SUKA' and center alignment",
+    "Centered composition family",
+    "3.61s duration, delays and emphasisAt 1.6 timing",
+    "Entrance scale → controlledReveal → fade motion system",
+    "Label bottom position, neutral accent; one accent per scene (gold only)"
+  ],
+  "expectedEffect": "The spot floats fully clear of all glyphs in clean negative space above the type so the headline reads 100%, gold keeps it inside the project palette with correct semantic weight, and the caption now speaks in the same 'lu' voice as the rest of the script."
+}

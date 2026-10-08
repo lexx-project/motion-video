@@ -1,0 +1,77 @@
+{
+  "sceneId": "scene_03",
+  "duration": 3.61,
+  "purpose": "First hard truth: approval is structurally impossible — one subject is stamped BAIK and SOMBONG at the same instant.",
+  "visualConcept": "ONE SELF, TWO OPPOSITE VERDICTS",
+  "composition": "split",
+  "headline": {
+    "text": "MAU NGAPAIN AJA, PASTI NGGAK SUKA",
+    "accentWords": [
+      "NGGAK SUKA"
+    ],
+    "align": "center"
+  },
+  "elements": [
+    {
+      "primitive": "Circle",
+      "position": "center",
+      "scale": 0.7,
+      "opacity": 1,
+      "accent": "none",
+      "entrance": "scale",
+      "emphasis": "highlight",
+      "exit": "fade",
+      "delay": 0,
+      "emphasisAt": 1.62,
+      "size": "md",
+      "variant": "filled"
+    },
+    {
+      "primitive": "Comparison",
+      "position": "center",
+      "offsetY": 6,
+      "scale": 1,
+      "opacity": 1,
+      "accent": "red",
+      "leftLabel": "BAIK",
+      "rightLabel": "SOMBONG",
+      "leftItems": [
+        "jujur",
+        "tepat",
+        "keras"
+      ],
+      "rightItems": [
+        "pamer",
+        "lebay",
+        "sok"
+      ],
+      "accentSide": "right",
+      "entrance": "stagger",
+      "emphasis": "positionShift",
+      "exit": "fade",
+      "delay": 0.25,
+      "emphasisAt": 1.62
+    },
+    {
+      "primitive": "Label",
+      "text": "SATU ORANG, DUA vonIS",
+      "position": "bottom",
+      "align": "center",
+      "accent": "none",
+      "entrance": "fade",
+      "emphasis": "subtleScale",
+      "exit": "fade",
+      "delay": 0.7
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "highlight",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.62,
+    "exitAt": 3.01
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "sceneId": "scene_06",
+  "duration": 9,
+  "purpose": "Split uncontrollable opinion from controllable influence: input noise stays constant while the dial turns down how much of it reaches your life.",
+  "visualConcept": "DIAL TURNS DOWN THEIR NOISE",
+  "composition": "leftTextRightObject",
+  "headline": {
+    "text": "LU BISA NGONTROL",
+    "accentWords": [
+      "NGONTROL"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "WordReveal",
+      "text": "seberapa besar pendapat mereka ngaruh ke hidup lu",
+      "accentWords": [
+        "seberapa",
+        "besar"
+      ],
+      "align": "left",
+      "position": "bottomLeft",
+      "delay": 0.7,
+      "staggerStep": 0.1,
+      "entrance": "stagger",
+      "emphasis": "highlight",
+      "emphasisAt": 4.05,
+      "accent": "gold"
+    },
+    {
+      "primitive": "Line",
+      "orientation": "horizontal",
+      "lengthPct": 48,
+      "thicknessPx": 10,
+      "position": "right",
+      "offsetX": -14,
+      "offsetY": -20,
+      "entrance": "draw",
+      "delay": 0.4,
+      "opacity": 0.75,
+      "accent": "none"
+    },
+    {
+      "primitive": "Circle",
+      "variant": "ring",
+      "diameterPct": 42,
+      "label": "VOLUME PENGARUH",
+      "position": "right",
+      "offsetX": 2,
+      "rotation": -48,
+      "entrance": "scale",
+      "delay": 1,
+      "emphasis": "positionShift",
+      "emphasisAt": 4,
+      "accent": "gold"
+    },
+    {
+      "primitive": "Line",
+      "orientation": "horizontal",
+      "lengthPct": 30,
+      "thicknessPx": 2,
+      "position": "right",
+      "offsetX": 24,
+      "offsetY": 16,
+      "entrance": "draw",
+      "delay": 1.1,
+      "emphasis": "controlledReveal",
+      "emphasisAt": 4.4,
+      "accent": "none"
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "positionShift",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 4,
+    "exitAt": 8.4
+  }
+}

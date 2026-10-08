@@ -1,0 +1,70 @@
+src\agents\concepts.ts (203 lines)
+src\agents\context.ts (182 lines)
+src\agents\llm.ts (395 lines)
+src\agents\motionPlanner.ts (190 lines)
+src\agents\novelty.ts (181 lines)
+src\agents\pipeline.ts (398 lines)
+src\agents\qa.ts (489 lines)
+src\agents\repair.ts (226 lines)
+src\agents\schemas.ts (312 lines)
+src\agents\scriptAnalyst.ts (81 lines)
+src\agents\voTiming.ts (208 lines)
+src\cli\generate.ts (34 lines)
+src\cli\reference-analyze.ts (30 lines)
+src\cli\reference.ts (30 lines)
+src\cli\render.ts (42 lines)
+src\core\config.ts (16 lines)
+src\core\designSystem.ts (69 lines)
+src\core\errors.ts (79 lines)
+src\core\output.ts (25 lines)
+src\core\projectStore.ts (215 lines)
+src\core\timing.ts (116 lines)
+src\primitives\atmospheric.tsx (157 lines)
+src\primitives\diagrams.tsx (566 lines)
+src\primitives\motion.ts (178 lines)
+src\primitives\objects.tsx (696 lines)
+src\primitives\registry.ts (117 lines)
+src\primitives\sceneClock.tsx (14 lines)
+src\primitives\types.ts (33 lines)
+src\primitives\typography.tsx (316 lines)
+src\reference\analyze.ts (346 lines)
+src\reference\conformance.ts (507 lines)
+src\reference\extract.ts (421 lines)
+src\render\renderProject.ts (219 lines)
+src\render\Root.tsx (33 lines)
+src\render\testProject.ts (59 lines)
+src\scenes\layout.ts (169 lines)
+src\scenes\ProjectRenderer.tsx (97 lines)
+src\scenes\SceneRenderer.tsx (180 lines)
+src\server\server.ts (321 lines)
+src\validation\schema.ts (288 lines)
+src\validation\validate.ts (89 lines)
+src\index.ts (4 lines)
+--- tests ---
+golden.test.ts (186 lines)
+novelty.test.ts (111 lines)
+phase2.test.ts (193 lines)
+project.test.ts (50 lines)
+qa.test.ts (158 lines)
+registry.test.ts (61 lines)
+render.test.ts (42 lines)
+schema.test.ts (156 lines)
+timing.test.ts (77 lines)
+--- reference/analysis ---
+all-scores.txt 234.1KB
+contact-sheet.jpg 61.8KB
+findings-color.json 1.8KB
+findings-composition.json 2.1KB
+findings-identity.json 3.1KB
+findings-motion.json 3.3KB
+findings-typography.json 1.1KB
+findings.json 11.9KB
+frames-index.json 16.5KB
+metadata.json 0.2KB
+sampled-colors.json 26.1KB
+scenes.json 2.7KB
+[23:03:14] rendering: re-rendering preview after repair round 1
+[23:09:59] repairing: repair round 2 (median-driven): overall quality 7.0 < 8 | slop severity 7 > 6 | scene_06: severe readability - The yellow circle outline collides with the headline, cutting through 'PENGARUHNYA' — object and text block overlap. | scene_08: severe readability - Headline's last line 'ORANG' sits directly on top of the grid tiles, overlapping the object with no clear separation.
+[23:20:35] repairing: scene scene_08 repair skipped: [llm]: LLM call failed after retries: HTTP 524: <!DOCTYPE html>
+[23:20:35] rendering: re-rendering preview after repair round 2
+generate-procs=3

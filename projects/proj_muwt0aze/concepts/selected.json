@@ -1,0 +1,116 @@
+{
+  "selections": [
+    {
+      "beatId": "b1",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 7,
+        "emotionalFit": 9,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "All arrows aim at one center, so external opinions physically converge on a single person, and the circle's dimmed accent plus reduced scale performs the exhaustion as absorbed pressure rather than naming it. It reads in one glance, keeps a single gold accent, and uses only registered primitives with two motion systems (staggered arrows + subtleScale down)."
+    },
+    {
+      "beatId": "b2",
+      "selectedCandidateId": "c3",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 8,
+        "designConsistency": 8,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 8
+      },
+      "selectionRationale": "The gate clips expressive words while bland ones pass, physically performing self-censorship so any viewer decodes it instantly. It also avoids memory's strike-loop and checklist metaphors using only supported primitives."
+    },
+    {
+      "beatId": "b3",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The wipe-then-regrow cycle performs the beat physically: the dark surface stays perfectly clean, yet the red spot returns by itself in a new position — the semanticMechanism that loss here is structural, not the surface's fault. It keeps red as the single semantic accent for 'nggak suka', needs only WordReveal plus a dissolving/regrowing spot, and reads at a glance without narration."
+    },
+    {
+      "beatId": "b4",
+      "selectedCandidateId": "c2",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 9,
+        "motionPotential": 9,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "Its semanticMechanism — one unchanging needle flipped 180° by every input — makes the built-in opposition visible as rhythm, so a cold viewer reads the always-inverted verdict without narration. Centered Circle+Arrow stays within element limits and maps cleanly to positionShift/subtleScale."
+    },
+    {
+      "beatId": "b5",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 8,
+        "designConsistency": 9,
+        "novelty": 7,
+        "emotionalFit": 9,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "Its semanticMechanism makes control physical: threads visibly slide beyond an open palm's reach while one short line stays anchored to the center, so the viewer reads 'let go of others, keep hold of yourself' without narration. It directly enacts both halves of the beat in one image and fits the system's hairline-and-node vocabulary."
+    },
+    {
+      "beatId": "b6",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 8,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 8
+      },
+      "selectionRationale": "c1's semanticMechanism performs gain reduction, not removal: marks enter the gold dial and re-emerge smaller yet present, so 'seberapa besar' is controlled amplitude. A cold viewer decodes the size change without narration, and the motion stays within two bounded systems."
+    },
+    {
+      "beatId": "b7",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 8,
+        "novelty": 7,
+        "emotionalFit": 9,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The semanticMechanism — one door physically swinging shut removes that party from the shared frame while the open, lit door keeps the viewer anchored — enacts 'they return to their space, you remain in yours' as an irreversible spatial event, so the relief beat lands visually before any text is read."
+    },
+    {
+      "beatId": "b8",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 8,
+        "novelty": 7,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The grid's shared stamped shape is the mould of social template; the one intact form that never deforms makes non-acceptance read as structural difference, not defect. It literally enacts 'tak dipaksa muat cetakan' using only registered primitives."
+    }
+  ]
+}

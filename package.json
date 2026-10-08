@@ -1,0 +1,47 @@
+{
+  "name": "motion-video-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-driven motion design studio: SCRIPT -> MASTER DESIGN BIBLE -> SCENE JSON -> deterministic Remotion primitives -> rendered video",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:composition": "remotion render",
+    "generate": "tsx src/cli/generate.ts",
+    "render": "tsx src/cli/render.ts",
+    "reference:extract": "tsx src/cli/reference.ts",
+    "reference:analyze": "tsx src/cli/reference-analyze.ts",
+    "serve": "tsx src/server/server.ts",
+    "ui": "vite --config ui/vite.config.ts",
+    "ui:build": "vite build --config ui/vite.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "verify": "npm run typecheck && npm run test"
+  },
+  "dependencies": {
+    "@fontsource/archivo": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@remotion/bundler": "^4.0.393",
+    "@remotion/cli": "^4.0.393",
+    "@remotion/player": "^4.0.393",
+    "@remotion/renderer": "^4.0.393",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.393",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "esbuild@0.21.5": true
+  }
+}

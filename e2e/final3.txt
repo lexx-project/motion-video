@@ -1,0 +1,15 @@
+status=needs_repair overall=6.88 conf=0.99 conformance=9 slop=8
+scene_01: q=6.71 rel=7 clar=7 typo=6 comp=6 tech=pass
+scene_02: q=7.14 rel=8 clar=7 typo=8 comp=7 tech=pass
+scene_03: q=7.43 rel=7 clar=8 typo=8 comp=8 tech=pass
+scene_04: q=6.57 rel=7 clar=6 typo=7 comp=7 tech=pass
+scene_05: q=7.00 rel=8 clar=7 typo=8 comp=7 tech=pass
+scene_06: q=6.71 rel=8 clar=6 typo=6 comp=6 tech=pass
+scene_07: q=7.43 rel=8 clar=8 typo=8 comp=7 tech=pass
+scene_08: q=6.29 rel=8 clar=6 typo=5 comp=5 tech=pass
+reasons:
+  - overall quality 6.9 < 8
+  - slop severity 8 > 6
+  - scene_01: severe readability - Circle outline crosses directly through 'YANG PALING' GÇö headline and primitive overlap, breaking legibility of both.
+  - scene_06: severe readability - Ring overlaps the word 'PENGARUHNYA' GÇö object crosses the headline's right edge and clips the letterforms.
+  - scene_08: severe readability - Caption 'TETAP UTUH TANPA DIPAKSA' overlaps the gold circle's arc; text and object occupy the same pixels.

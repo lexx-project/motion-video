@@ -1,0 +1,490 @@
+{
+  "perBeat": [
+    {
+      "beatId": "b1",
+      "candidates": [
+        {
+          "id": "c1",
+          "visualMechanism": "depletion",
+          "concept": "PATIENCE VESSEL DROPS A NOTCH PER YES",
+          "compositionSketch": "leftTextRightObject: headline left; tall notched vessel right; each landed 'YES' label drops the level one notch",
+          "objects": [
+            "Headline",
+            "Vessel notches (Line)",
+            "Label('YES')",
+            "Label('PATIENCE')"
+          ],
+          "whyDifferent": "Pure subtractive drain measured notch-by-notch; no stacking, looping, or fragmentation — the resource simply leaves",
+          "strength": "Level falls 1:1 with each 'yes' — viewer counts the loss without narration",
+          "complexity": "low"
+        },
+        {
+          "id": "c2",
+          "visualMechanism": "accumulation",
+          "concept": "APPROVAL TOKENS BEND THE BEAM",
+          "compositionSketch": "centered: beam on fulcrum under top label; each approval token lands, beam tilts further, 'SELF' marker sinks below baseline",
+          "objects": [
+            "Line(beam+fulcrum)",
+            "Token stack",
+            "Indicator(marker)",
+            "Line(baseline)"
+          ],
+          "whyDifferent": "Physical loading rather than draining — fatigue accrues as weight on the askers' side, causing visible sag",
+          "strength": "Tilt angle and sinking marker grow per token: cause and cost read instantly",
+          "complexity": "medium"
+        },
+        {
+          "id": "c3",
+          "visualMechanism": "repetition",
+          "concept": "NOD LOOP EATS THE OUTLINE",
+          "compositionSketch": "centered: circle with rotating arc-arrow ring; each revolution erases one arc of the circle's own outline; counter 01 to 06",
+          "objects": [
+            "Circle(figure)",
+            "Arc ring+arrow",
+            "Label(counter)"
+          ],
+          "whyDifferent": "Exhaustion as erosion from cycles, not drain of a quantity — the self is what disappears frame by frame",
+          "strength": "Outline thinning each revolution performs 'get more tired' as material loss",
+          "complexity": "medium"
+        },
+        {
+          "id": "c4",
+          "visualMechanism": "progression",
+          "concept": "STRIDES RISE, DISTANCE STAYS ZERO",
+          "compositionSketch": "split: text left; right a track where marker advances then slides back — STEP counter climbs while DISTANCE stays 00",
+          "objects": [
+            "Line(track)",
+            "Indicator(marker)",
+            "Label(steps)",
+            "Label(distance 00)"
+          ],
+          "whyDifferent": "Futility via decoupled counters — effort accumulates but displacement doesn't; not draining or weighting",
+          "strength": "Two numbers moving apart state the wasted-energy claim wordlessly",
+          "complexity": "medium"
+        },
+        {
+          "id": "c5",
+          "visualMechanism": "separation",
+          "concept": "ONE ANSWER SHATTERS INTO MATCHING SLIVERS",
+          "compositionSketch": "typographyDominant: solid 'ANSWER' splits into four slivers flying to four edge asker-labels, leaving its hollow outline",
+          "objects": [
+            "Solid block word",
+            "Line(slivers)",
+            "Label(askers)",
+            "Hollow outline"
+          ],
+          "whyDifferent": "Fragmentation of a single identity object, not time-based drain — cost is shape and mass, not energy",
+          "strength": "A solid thing going hollow while pieces scatter enacts self-reshaping literally",
+          "complexity": "medium"
+        }
+      ]
+    },
+    {
+      "beatId": "b2",
+      "candidates": [
+        {
+          "id": "c1",
+          "visualMechanism": "transformation",
+          "concept": "YES RESHAPES TO FIT EACH SLOT",
+          "compositionSketch": "leftTextRightObject: label 'YOUR ANSWER' left; right a solid block labeled YES re-forming into three different outline slots arriving in sequence",
+          "objects": [
+            "Label",
+            "Block",
+            "Outline",
+            "Outline",
+            "Outline"
+          ],
+          "whyDifferent": "The answer itself is the actor and physically changes shape to fit incoming requests — morphing is the mechanism, not crossing out or shrinking",
+          "strength": "Viewer watches one word lose its own form three times; the re-forming reads as self-betrayal without narration",
+          "complexity": "medium"
+        },
+        {
+          "id": "c2",
+          "visualMechanism": "repetition",
+          "concept": "FIVE TAKES, FIVE DIFFERENT YES",
+          "compositionSketch": "asymmetric: stacked revision lines, each a version of the same answer labeled TAKE 1–TAKE 5, earlier takes fading as later ones overwrite",
+          "objects": [
+            "Line",
+            "Line",
+            "Line",
+            "Label"
+          ],
+          "whyDifferent": "Uses sequential overwriting/re-editing rather than shape morphing — history of the same answer changing per asker",
+          "strength": "Seeing five contradictory versions of one stance makes the editing habit undeniable and unease-producing",
+          "complexity": "low"
+        },
+        {
+          "id": "c3",
+          "visualMechanism": "socialPressure",
+          "concept": "ANSWER TILTS TOWARD EACH ASKER",
+          "compositionSketch": "centered: a single upright statement bar; asking pointers arrive from alternating sides and the bar tilts toward each one in turn",
+          "objects": [
+            "Line",
+            "Arrow",
+            "Arrow",
+            "Label"
+          ],
+          "whyDifferent": "The answer stays one object but its orientation is bent by external pressure — direction, not shape or content, changes",
+          "strength": "The tilt is a physical confession of yielding; each re-tilt visibly costs the bar its upright position",
+          "complexity": "low"
+        },
+        {
+          "id": "c4",
+          "visualMechanism": "contrast",
+          "concept": "FLIPPING ANSWER VS FIXED ANSWER",
+          "compositionSketch": "split: left answer flips orientation each time a question marker appears; right answer holds the same orientation through identical markers",
+          "objects": [
+            "Line",
+            "Line",
+            "Marker",
+            "Marker"
+          ],
+          "whyDifferent": "Contrast of two behaviors side by side instead of following one answer through change",
+          "strength": "The fixed line's stillness next to the flapping one shows the self-betrayal purely through differential motion",
+          "complexity": "medium"
+        },
+        {
+          "id": "c5",
+          "visualMechanism": "depletion",
+          "concept": "EVERY MATCH COSTS THE YES ITS WEIGHT",
+          "compositionSketch": "topTextBottomObject: headline 'YOUR YES' above; below a solid block depletes to outline to hairline with each shape-shift event",
+          "objects": [
+            "Block",
+            "Outline",
+            "Line",
+            "Indicator"
+          ],
+          "whyDifferent": "Measures consequence — substance drains with each change — rather than showing the change itself",
+          "strength": "Diminishing mass makes 'stops meaning anything' tangible; the final hairline is the emotional endpoint",
+          "complexity": "medium"
+        }
+      ]
+    },
+    {
+      "beatId": "b3",
+      "candidates": [
+        {
+          "id": "c1",
+          "visualMechanism": "repetition satiation",
+          "concept": "YES repeated until it is noise",
+          "compositionSketch": "typographyDominant: three stacked YES lines, crisp → tight → blurred smear; one hairline underline",
+          "objects": [
+            "WordReveal",
+            "WordReveal",
+            "WordReveal",
+            "Line"
+          ],
+          "whyDifferent": "Uses repetition itself as the decay engine — meaning destroyed by quantity, not weight or erosion",
+          "strength": "Viewer watches a legible word become unreadable texture — semantic satiation performed",
+          "complexity": "low"
+        },
+        {
+          "id": "c2",
+          "visualMechanism": "depletion drain",
+          "concept": "Value meter drains each time YES is given",
+          "compositionSketch": "leftTextRightObject: left label 'VALUE OF ONE YES'; right vertical meter empties from near-full gold to a hairline",
+          "objects": [
+            "ProgressBar",
+            "Label",
+            "Line"
+          ],
+          "whyDifferent": "Frames credibility as a spendable stock that depletes per transaction — a resource account",
+          "strength": "A full bar falling to zero reads instantly as 'being used up'",
+          "complexity": "low"
+        },
+        {
+          "id": "c3",
+          "visualMechanism": "shape morph match",
+          "concept": "The answer reshapes itself to every asker",
+          "compositionSketch": "rightTextLeftObject: one answer-arrow pivots to three faint asker ticks, ending pointing sideways at nothing",
+          "objects": [
+            "Arrow",
+            "Indicator",
+            "Line",
+            "Label"
+          ],
+          "whyDifferent": "Morphing pivot instead of decay — shows 'bend to match' as an identity never holding one direction",
+          "strength": "A shape that keeps re-aiming and ends aimed nowhere physically shows the lost stance",
+          "complexity": "medium"
+        },
+        {
+          "id": "c4",
+          "visualMechanism": "expectation reality",
+          "concept": "YES count climbs, applause stays at zero",
+          "compositionSketch": "topTextBottomObject: top label 'TIMES YOU SAID YES' rising counter; bottom applause meter pinned flat at 00",
+          "objects": [
+            "Label",
+            "Counter",
+            "ProgressBar",
+            "Line"
+          ],
+          "whyDifferent": "Plays two counters against each other instead of degrading one object — irony lives in the gap",
+          "strength": "Rising number vs dead one delivers hollowness without narration",
+          "complexity": "medium"
+        },
+        {
+          "id": "c5",
+          "visualMechanism": "erosion reduction",
+          "concept": "One YES thins to a hairline and dissolves",
+          "compositionSketch": "asymmetric: single gold YES losing stroke weight stage by stage — solid, outline, thread, gone; faint hairline left",
+          "objects": [
+            "WordReveal",
+            "Line",
+            "GradientGlow"
+          ],
+          "whyDifferent": "Physical erosion of one single instance — no repetition, no meter, no counter",
+          "strength": "Subtractive change on one hero object makes 'stops meaning anything' literal",
+          "complexity": "low"
+        }
+      ]
+    },
+    {
+      "beatId": "b4",
+      "candidates": [
+        {
+          "id": "c1",
+          "visualMechanism": "contrast",
+          "concept": "BLURRED SHIFTERS, ONE CRISP MARK",
+          "compositionSketch": "split: left half a stack of 4-5 smeared offset outline copies, each slightly rotated and low opacity; right half one solid crisp teal mark; thin divider hairline",
+          "objects": [
+            "Outline",
+            "Outline",
+            "Outline",
+            "SolidMark",
+            "Hairline"
+          ],
+          "whyDifferent": "Unlike the twin-silhouette gold-tag comparison, this contrasts instability itself — self-copies multiplied by re-editing blur — against a single undiluted form; the difference is clarity, not labeling.",
+          "strength": "The blur visually IS indecision accumulated; the crisp mark reads as conviction before any word is processed — the viewer sees who gets remembered instantly.",
+          "complexity": "low"
+        },
+        {
+          "id": "c2",
+          "visualMechanism": "choice",
+          "concept": "DIAL SPINS, THEN LOCKS",
+          "compositionSketch": "leftTextRightObject: label and subheadline left; right a circular dial whose arrow needle sweeps several ticks, settles hard on one tick that gains a lock notch while other ticks dim",
+          "objects": [
+            "Circle",
+            "Arrow",
+            "TickMarks",
+            "Label"
+          ],
+          "whyDifferent": "A decision mechanism, not a contrast of states: the scene performs the act of choosing a direction and holding it (verbs: choose, stay) rather than comparing two people.",
+          "strength": "The physical stop of the needle — motion ending in a fixed position — enacts 'hold one direction' with no narration; the lock notch confirms permanence.",
+          "complexity": "medium"
+        },
+        {
+          "id": "c3",
+          "visualMechanism": "repetition",
+          "concept": "ONE ANSWER, STAMPED AND REMEMBERED",
+          "compositionSketch": "topTextBottomObject: subheadline top; below, a 6-slot timeline where identical teal marks stamp in one by one into an unbroken line, while a second row of varied shapes stays mostly empty",
+          "objects": [
+            "Timeline",
+            "Mark",
+            "Mark",
+            "Mark",
+            "Label"
+          ],
+          "whyDifferent": "Uses accumulated identical repetition over time (consistency as memory-building) rather than side-by-side contrast or a single locking gesture.",
+          "strength": "The unbroken row literally becomes the thing the eye remembers in-frame, mirroring how a consistent person becomes memorable in reality.",
+          "complexity": "medium"
+        },
+        {
+          "id": "c4",
+          "visualMechanism": "triggerResponse",
+          "concept": "HELD ANSWER ECHOES, BENT ANSWER DIES",
+          "compositionSketch": "asymmetric: lower-left a small solid dot emitting 3 expanding concentric arcs across the negative space; upper-right a soft irregular line that emits nothing and dissolves",
+          "objects": [
+            "Circle",
+            "Arc",
+            "Arc",
+            "Arc",
+            "Line"
+          ],
+          "whyDifferent": "Causal propagation instead of comparison: it shows WHY consistency is remembered — a fixed stance produces lasting ripples, while re-shaped answers produce no follow-through signal.",
+          "strength": "Expanding arcs read as influence and recall spreading outward; the silent dissolving line makes 'stops meaning anything' visible without words.",
+          "complexity": "medium"
+        },
+        {
+          "id": "c5",
+          "visualMechanism": "transformation",
+          "concept": "THE ANSWER THAT STOPS EDITING",
+          "compositionSketch": "typographyDominant: a large text line visibly rewrites itself with flickering word swaps and a blinking caret for a beat, then the final version locks, caret vanishes, line settles and lifts",
+          "objects": [
+            "WordReveal",
+            "Caret",
+            "Line"
+          ],
+          "whyDifferent": "Text-object self-modification, not shapes or dials: the headline itself performs 'stop editing' and 'yes stops meaning anything', making typography the actor.",
+          "strength": "Anyone who has re-written a reply recognizes the flickering swap instantly; the moment the caret vanishes delivers finality as a felt event.",
+          "complexity": "medium"
+        }
+      ]
+    },
+    {
+      "beatId": "b5",
+      "candidates": [
+        {
+          "id": "c1",
+          "visualMechanism": "inputOutput",
+          "concept": "APPLAUSE COUNTER STAYS AT ZERO",
+          "compositionSketch": "leftTextRightObject — headline block left at 8% margin; right side a tall counter '00' above a vertical stack of edit ticks that accumulate",
+          "objects": [
+            "Headline",
+            "Counter",
+            "TickStack",
+            "Label"
+          ],
+          "whyDifferent": "Measures the transaction directly: repeated edit inputs are logged while the output counter never moves — the only candidate quantifying payoff instead of showing identity change or motion of objects toward an audience.",
+          "strength": "A counter that visibly refuses to increment after each added tick makes 'unpaid approval' readable in one glance without narration.",
+          "complexity": "medium"
+        },
+        {
+          "id": "c2",
+          "visualMechanism": "depletion",
+          "concept": "EACH MATCH CHIPS THE SHAPE",
+          "compositionSketch": "centered — one solid form center-frame loses a facet with each beat until only a faint sliver remains; small label beneath reads 'KEEP MATCHING'",
+          "objects": [
+            "Form",
+            "Facet",
+            "Facet",
+            "Sliver",
+            "Label"
+          ],
+          "whyDifferent": "Enacts identity erosion as physical material loss over time, rather than counting, looping, or throwing — the object itself is what changes.",
+          "strength": "Watching a whole form get whittled to a sliver makes the cost of self-editing viscerally clear; no explanation needed.",
+          "complexity": "medium"
+        },
+        {
+          "id": "c3",
+          "visualMechanism": "loop",
+          "concept": "REWRITE LOOP RETURNS TO START",
+          "compositionSketch": "typographyDominant — three stacked answer lines, each struck through and rewritten, the third landing pixel-identical to the first; hairline loop arc connects line three back to line one",
+          "objects": [
+            "WordReveal",
+            "Line",
+            "WordReveal",
+            "Line",
+            "LoopArc"
+          ],
+          "whyDifferent": "Uses temporal repetition of text itself (with a closing loop arc) instead of object depletion or counters — the meaning lives in the words returning unchanged.",
+          "strength": "Seeing the third answer land exactly where the first began proves change produces nothing; the loop arc seals the argument visually.",
+          "complexity": "medium"
+        },
+        {
+          "id": "c4",
+          "visualMechanism": "comparison",
+          "concept": "ONE HELD MARK, MANY GHOSTS",
+          "compositionSketch": "split — left: a single crisp form anchored on one gold baseline; right: a fan of dim translucent former versions dissolving upward",
+          "objects": [
+            "Form",
+            "Baseline",
+            "GhostVersion",
+            "GhostVersion",
+            "GhostVersion"
+          ],
+          "whyDifferent": "Contrasts consistency against accumulated alternatives side-by-side, where the held version is the only one that stays solid — comparison, not sequence or measurement.",
+          "strength": "The solidity-vs-ghost split states the reframe instantly: one fixed stance survives, all the edits are already fading.",
+          "complexity": "low"
+        },
+        {
+          "id": "c5",
+          "visualMechanism": "barrier",
+          "concept": "ANSWERS DIE AT THE FOURTH WALL",
+          "compositionSketch": "topTextBottomObject — headline top; below, answer cards travel right toward a single vertical hairline and dissolve on contact, never crossing it",
+          "objects": [
+            "WordReveal",
+            "AnswerCard",
+            "AnswerCard",
+            "Wall",
+            "Dissolve"
+          ],
+          "whyDifferent": "Shows the audience as an unreachable boundary — effort expended toward a target that terminates it, distinct from counting, looping, depleting, or juxtaposing versions.",
+          "strength": "Cards visibly expiring at an invisible line dramatizes effort wasted before it can ever be received — the performance has nowhere to land.",
+          "complexity": "medium"
+        }
+      ]
+    },
+    {
+      "beatId": "b6",
+      "candidates": [
+        {
+          "id": "c1",
+          "visualMechanism": "choice",
+          "concept": "FIVE BEARINGS, ONE COMMITTED",
+          "compositionSketch": "typographyDominant: headline top-left; below, 5 bearing lines from one origin — 4 dim teal stubs, 1 gold line extends to frame edge and locks with a tick",
+          "objects": [
+            "Line",
+            "Line",
+            "Line",
+            "Line",
+            "Line",
+            "Indicator"
+          ],
+          "whyDifferent": "Makes the choosing act literal — several directions exist, one is picked and extended; others remain as unchosen potential.",
+          "strength": "The extending gold line reads as commitment without words: one path travels far, the rest never start.",
+          "complexity": "low"
+        },
+        {
+          "id": "c2",
+          "visualMechanism": "control",
+          "concept": "NEEDLE SETTLES AND LOCKS",
+          "compositionSketch": "leftTextRightObject: label left; right, an arc gauge needle sweeps erratically, decelerates onto one gold tick, then a lock bracket closes and it stops",
+          "objects": [
+            "Circle",
+            "Indicator",
+            "Line",
+            "Label"
+          ],
+          "whyDifferent": "Uses mechanical locking rather than selection — the drama is the stopping of wobble, matching 'stay with it'.",
+          "strength": "Erratic-then-still motion is felt physically; the bracket clamping shut reads as a decision made final.",
+          "complexity": "medium"
+        },
+        {
+          "id": "c3",
+          "visualMechanism": "contrast",
+          "concept": "WIGGLE TRACK VS STRAIGHT RULE",
+          "compositionSketch": "split: left, a jagged path wanders and fades unresolved; right, a single straight gold rule draws edge to edge under subheadline 'STOP EDITING'",
+          "objects": [
+            "Line",
+            "Line",
+            "Label"
+          ],
+          "whyDifferent": "Contrast mechanism — juxtaposes the cost of drift against a fixed line, closing the arc from earlier bending-answer scenes.",
+          "strength": "The jagged line dying versus the straight line completing itself argues the point before any narration.",
+          "complexity": "low"
+        },
+        {
+          "id": "c4",
+          "visualMechanism": "repetition",
+          "concept": "IDENTICAL ANSWERS REPEAT ON ONE AXIS",
+          "compositionSketch": "topTextBottomObject: subheadline 'SAME YES, EVERY TIME'; below, identical gold ticks stamp at even intervals along one axis, marching right",
+          "objects": [
+            "Line",
+            "Indicator",
+            "Indicator",
+            "Indicator",
+            "Indicator"
+          ],
+          "whyDifferent": "Consistency as repetition — commitment proven by unvarying recurrence rather than a single decisive moment.",
+          "strength": "Perfect alignment of repeated marks visually equals integrity; viewers read evenness as trustworthiness.",
+          "complexity": "medium"
+        },
+        {
+          "id": "c5",
+          "visualMechanism": "pressure",
+          "concept": "SIDE FORCE CANNOT BEND THE LINE",
+          "compositionSketch": "asymmetric: gold vertical line at center; dim teal arrows strike from both sides, deflect away, line stays plumb; headline left 'AND HOLD IT'",
+          "objects": [
+            "Line",
+            "Arrow",
+            "Arrow",
+            "Indicator"
+          ],
+          "whyDifferent": "Tests the chosen direction against opposition instead of showing the choosing — resolve proven under load.",
+          "strength": "Deflected arrows physically demonstrate principled stubbornness; nothing needs explaining.",
+          "complexity": "medium"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "sceneId": "scene_07",
+  "duration": 7.22,
+  "purpose": "Pemisahan ruang hidup: pintu mereka meredup dan tertutup sementara pintu lu tetap terbuka dan menyala — lu bertahan di hidup lu sendiri.",
+  "visualConcept": "TWO DOORS, ONE CLOSES",
+  "composition": "dualObject",
+  "headline": {
+    "text": "MEREKA PULANG. LU TETAP HIDUP.",
+    "accentWords": [
+      "HIDUP"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "Circle",
+      "position": "left",
+      "variant": "outline",
+      "diameterPct": 26,
+      "label": "RUANG MEREKA",
+      "opacity": 0.3,
+      "accent": "none",
+      "offsetY": 8,
+      "delay": 0.1,
+      "entrance": "slide",
+      "exit": "dissolve"
+    },
+    {
+      "primitive": "Circle",
+      "position": "right",
+      "variant": "ring",
+      "diameterPct": 34,
+      "label": "RUANG LU",
+      "opacity": 1,
+      "accent": "gold",
+      "offsetY": 8,
+      "delay": 0.1,
+      "entrance": "slide",
+      "emphasis": "subtleScale",
+      "emphasisAt": 3.25
+    },
+    {
+      "primitive": "GradientGlow",
+      "position": "right",
+      "intensity": 0.35,
+      "diameterPct": 60,
+      "accent": "gold",
+      "offsetY": 8,
+      "delay": 0.5,
+      "entrance": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "slide",
+    "emphasis": "subtleScale",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 3.25,
+    "exitAt": 6.5
+  }
+}

@@ -1,0 +1,550 @@
+{
+  "technical": {
+    "file": "C:\\Users\\Administrator\\Documents\\project\\motion-video\\projects\\proj_p3_demo\\renders\\preview.mp4",
+    "durationSec": 24.939,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "hasAudio": true,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "errors": []
+  },
+  "visual": {
+    "evaluatorCount": 3,
+    "projectStatus": "needs_repair",
+    "overall": {
+      "scriptRelevance": 6,
+      "visualClarity": 5,
+      "designConsistency": 6,
+      "typography": 7,
+      "composition": 6,
+      "motionQuality": 6,
+      "novelty": 5,
+      "aiSlopSeverity": 4,
+      "technicalCorrectness": "fail",
+      "stats": {
+        "mean": 5.81,
+        "median": 5.71,
+        "variance": 0.059,
+        "confidence": 0.99
+      }
+    },
+    "scenes": [
+      {
+        "sceneId": "scene_01",
+        "scores": {
+          "scriptRelevance": 6,
+          "visualClarity": 6,
+          "designConsistency": 7,
+          "typography": 8,
+          "composition": 7,
+          "motionQuality": 6,
+          "novelty": 6,
+          "aiSlopSeverity": 3
+        },
+        "stats": {
+          "mean": 6.62,
+          "median": 6.57,
+          "variance": 0.032,
+          "confidence": 0.99
+        },
+        "technicalCorrectness": "pass",
+        "issues": [
+          "Spec's rotating answer line and gold drift arc are absent; three YES badges float unconnected, so the 'tilt off heading' metaphor never reads.",
+          "Stray top-right text 'IT NEVER COMES BACK' sits far from headline, unrelated to beat, reading as leftover decoration.",
+          "Two accents in one frame: gold 'TIRES' plus three teal YES badges; bible allows one dominant accent.",
+          "'ORIGINAL ANSWER' label sits directly above badges with no line to reference, so its meaning is unclear."
+        ],
+        "recommendedRepair": [
+          "Draw the original heading as a faint dashed line with the badge line rotated ~15° below it, connected.",
+          "Remove 'IT NEVER COMES BACK' top-right text; keep only headline, label, badges, caption.",
+          "Make YES badges gold-outline or recolor headline accent to teal so only one accent dominates.",
+          "Anchor 'ORIGINAL ANSWER' to a visible straight reference line; badges tilt relative to it."
+        ]
+      },
+      {
+        "sceneId": "scene_02",
+        "scores": {
+          "scriptRelevance": 6,
+          "visualClarity": 5,
+          "designConsistency": 6,
+          "typography": 7,
+          "composition": 5,
+          "motionQuality": 6,
+          "novelty": 5,
+          "aiSlopSeverity": 5
+        },
+        "stats": {
+          "mean": 5.57,
+          "median": 5.86,
+          "variance": 0.163,
+          "confidence": 0.97
+        },
+        "technicalCorrectness": "pass",
+        "issues": [
+          "Top two circles overlap into an illegible blob; spec's single rail Line is missing, so 'one YES stretched on a rail' doesn't read.",
+          "YES labels are tiny and misaligned: two cramped at one circle, third floating far below with no alignment to its circle.",
+          "Gold 'CHANGE' plus teal circles = two accents; bible caps one dominant accent per scene."
+        ],
+        "recommendedRepair": [
+          "Space the three circles evenly on a horizontal teal rail line; no overlap.",
+          "Align each YES label to its circle's center-right at consistent 34px label size.",
+          "Recolor circles to neutral/secondary gray so gold 'CHANGE' is the sole accent."
+        ]
+      },
+      {
+        "sceneId": "scene_03",
+        "scores": {
+          "scriptRelevance": 7,
+          "visualClarity": 5,
+          "designConsistency": 6,
+          "typography": 7,
+          "composition": 5,
+          "motionQuality": 6,
+          "novelty": 6,
+          "aiSlopSeverity": 4
+        },
+        "stats": {
+          "mean": 6.1,
+          "median": 6,
+          "variance": 0.059,
+          "confidence": 0.99
+        },
+        "technicalCorrectness": "fail",
+        "issues": [
+          "Giant 'YES' word is clipped hard at the right frame edge — only 'YEs' partially visible, unreadable overflow.",
+          "Credibility line reduces to a 2px teal dot at bottom-right, too small to register as a retracting line.",
+          "Three white 'YES' lines plus clipped giant 'YES' duplicate four times with no dim-grid hierarchy.",
+          "Gold cell in grid plus gold 'YES/NOTHING' plus stray teal dot = three competing accent marks."
+        ],
+        "recommendedRepair": [
+          "Pull the giant YES fully inside the 8% safe margin or remove it in favor of the grid.",
+          "Render credibility line as a visible 120px teal bar retracting to ~30px stub.",
+          "Dim echo-grid YES copies to #B5B1A7 so only the hero word is bright."
+        ]
+      },
+      {
+        "sceneId": "scene_04",
+        "scores": {
+          "scriptRelevance": 3,
+          "visualClarity": 3,
+          "designConsistency": 5,
+          "typography": 7,
+          "composition": 4,
+          "motionQuality": 5,
+          "novelty": 3,
+          "aiSlopSeverity": 6
+        },
+        "stats": {
+          "mean": 4.33,
+          "median": 4.29,
+          "variance": 0.168,
+          "confidence": 0.97
+        },
+        "technicalCorrectness": "fail",
+        "issues": [
+          "Seven of nine primitives (struck answer lines) are missing; frame is ~85% empty black with only a tiny 'HELD' label.",
+          "The 'one teal line locks flush' payoff has no visible line, so scene conveys nothing about beat b4.",
+          "Label 'HELD' at 34px floats mid-frame with no object to attach to, reading as orphan text."
+        ],
+        "recommendedRepair": [
+          "Render four gray struck-through answer lines dissolving plus one solid teal line at the shared baseline.",
+          "Place 'HELD' directly above the teal baseline line as its caption."
+        ]
+      },
+      {
+        "sceneId": "scene_05",
+        "scores": {
+          "scriptRelevance": 5,
+          "visualClarity": 6,
+          "designConsistency": 7,
+          "typography": 7,
+          "composition": 7,
+          "motionQuality": 6,
+          "novelty": 6,
+          "aiSlopSeverity": 4
+        },
+        "stats": {
+          "mean": 6.38,
+          "median": 6.43,
+          "variance": 0.086,
+          "confidence": 0.99
+        },
+        "technicalCorrectness": "fail",
+        "issues": [
+          "Four bent Lines and the straight gold stroke primitives are missing; only hollow circle + label remain, losing the entire 'bends die, straight passes' proof.",
+          "Gold label 'RETURN SIGNAL — NONE' uses gold for a defeat/negation phrase, which bible reserves for red or leaves neutral.",
+          "Spec's audience circle should read as hollow audience but has no arriving signals or dead-end path to justify it."
+        ],
+        "recommendedRepair": [
+          "Add three short bent lines stopping at the circle edge and one long gold straight line passing beyond it.",
+          "Recolor 'RETURN SIGNAL — NONE' to #B5B1A7 secondary, keep gold only on the straight stroke."
+        ]
+      },
+      {
+        "sceneId": "scene_06",
+        "scores": {
+          "scriptRelevance": 6,
+          "visualClarity": 5,
+          "designConsistency": 6,
+          "typography": 7,
+          "composition": 5,
+          "motionQuality": 6,
+          "novelty": 6,
+          "aiSlopSeverity": 5
+        },
+        "stats": {
+          "mean": 5.9,
+          "median": 6,
+          "variance": 0.059,
+          "confidence": 0.99
+        },
+        "technicalCorrectness": "pass",
+        "issues": [
+          "Headline 'HOLD ONE LINE' overlaps the teal ring's right edge, violating text/object separation and crowding the object.",
+          "Orphan arrow at bottom-left points out of frame toward nothing, disconnected from ring or needle.",
+          "Stray gold dot beside 'ONE BEARING' reads as a rendering artifact rather than an indicator.",
+          "Subheadline 'CHOOSE ONE DIRECTION' competes with headline block; three text blocks crowd the right side."
+        ],
+        "recommendedRepair": [
+          "Shift headline right by ~40px so it clears the ring; keep 8% safe margin.",
+          "Delete the stray bottom-left arrow; keep only arrows sweeping the ring.",
+          "Remove the orphan dot or attach it visibly to the needle tip.",
+          "Merge 'CHOOSE ONE DIRECTION' into one smaller label below the headline, or drop it."
+        ]
+      }
+    ]
+  },
+  "slop": {
+    "projectSeverity": 7,
+    "verdict": "severe",
+    "findings": [
+      {
+        "sceneId": "scene_03",
+        "type": "visual-clutter",
+        "evidence": "frame carries a clipped oversized YES, a three-line YES stack, a 3x3 grid, a stray teal indicator dot, headline and subtitle — six-plus competing elements with no clear negative space",
+        "severity": 7
+      },
+      {
+        "sceneId": "scene_06",
+        "type": "visual-clutter",
+        "evidence": "ring, two arrows, bearing needle, separate 'ONE BEARING' and 'CHOOSE ONE DIRECTION' labels, indicator dot, headline and subtitle stack to eight elements across three corners",
+        "severity": 7
+      },
+      {
+        "sceneId": "scene_04",
+        "type": "weak-metaphor",
+        "evidence": "only the headline, a lone 'HELD' label and the subtitle are present; the struck answer versions and the locked teal baseline line are not visible, so the 'strikes dissolve, one line held' metaphor cannot be read without narration",
+        "severity": 6
+      }
+    ]
+  },
+  "novelty": {
+    "results": [
+      {
+        "sceneId": "scene_01",
+        "similarity": 10,
+        "matchedDimensions": [
+          "sameComposition"
+        ],
+        "verdict": "accept",
+        "against": "proj_ref_demo/scene_01"
+      },
+      {
+        "sceneId": "scene_02",
+        "similarity": 35,
+        "matchedDimensions": [
+          "sameComposition",
+          "sameMotionPattern",
+          "sameStorytellingStructure"
+        ],
+        "verdict": "accept",
+        "against": "proj_muwt0aze/scene_06"
+      },
+      {
+        "sceneId": "scene_03",
+        "similarity": 10,
+        "matchedDimensions": [
+          "sameComposition"
+        ],
+        "verdict": "accept",
+        "against": "proj_ref_demo/scene_01"
+      },
+      {
+        "sceneId": "scene_04",
+        "similarity": 25,
+        "matchedDimensions": [
+          "sameDominantObject",
+          "samePrimitiveCombination"
+        ],
+        "verdict": "accept",
+        "against": "proj_ref_demo/scene_03"
+      },
+      {
+        "sceneId": "scene_05",
+        "similarity": 35,
+        "matchedDimensions": [
+          "sameDominantObject",
+          "sameComposition",
+          "samePrimitiveCombination"
+        ],
+        "verdict": "accept",
+        "against": "same-project/scene_02"
+      },
+      {
+        "sceneId": "scene_06",
+        "similarity": 15,
+        "matchedDimensions": [
+          "sameMotionPattern"
+        ],
+        "verdict": "accept",
+        "against": "proj_e2e8/scene_04"
+      }
+    ],
+    "rejectedSceneIds": [],
+    "status": "pass"
+  },
+  "conformance": {
+    "scenes": [
+      {
+        "sceneId": "scene_01",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 10,
+          "motion": 5,
+          "density": 7,
+          "negativeSpace": 7
+        },
+        "overall": 8.4,
+        "evidence": [
+          "motion \"positionShift\" outside reference-preferred set",
+          "4 element delay > 1.4s (reference staggers quickly)",
+          "9 elements exceeds guideline 8 (readability pressure; hard max 10)"
+        ]
+      },
+      {
+        "sceneId": "scene_02",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 6,
+          "motion": 8,
+          "density": 10,
+          "negativeSpace": 8.5
+        },
+        "overall": 8.9,
+        "evidence": [
+          "COLLISION: Label[4](\"YES...\") overlaps Label[6](\"YES...\") (est. 35% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor",
+          "2 element delay > 1.4s (reference staggers quickly)"
+        ]
+      },
+      {
+        "sceneId": "scene_03",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 10,
+          "motion": 10,
+          "density": 10,
+          "negativeSpace": 8.5
+        },
+        "overall": 9.8,
+        "evidence": [
+          "structure conforms to reference-derived language"
+        ]
+      },
+      {
+        "sceneId": "scene_04",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 9,
+          "motion": 7,
+          "density": 7,
+          "negativeSpace": 7
+        },
+        "overall": 8.6,
+        "evidence": [
+          "3 element delay > 1.4s (reference staggers quickly)",
+          "10 elements exceeds guideline 8 (readability pressure; hard max 10)"
+        ]
+      },
+      {
+        "sceneId": "scene_05",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 10,
+          "motion": 6,
+          "density": 10,
+          "negativeSpace": 8.5
+        },
+        "overall": 9.2,
+        "evidence": [
+          "4 element delay > 1.4s (reference staggers quickly)"
+        ]
+      },
+      {
+        "sceneId": "scene_06",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 0,
+          "motion": 6,
+          "density": 7,
+          "negativeSpace": 7
+        },
+        "overall": 7.1,
+        "evidence": [
+          "grammar \"rightTextLeftObject\" absent from reference shares (allowed by spec, off-language)",
+          "COLLISION: scene.headline(\"HOLD ONE LINE...\") overlaps Circle[1] (est. 24% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor",
+          "COLLISION: scene.headline(\"HOLD ONE LINE...\") overlaps Arrow[4] (est. 100% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor",
+          "4 element delay > 1.4s (reference staggers quickly)",
+          "10 elements exceeds guideline 8 (readability pressure; hard max 10)",
+          "SUBTITLE_COLLISION: subtitle band overlaps Indicator[7] (37%) - move content out of the bottom band when subtitles are enabled"
+        ]
+      }
+    ],
+    "overall": 8.7,
+    "method": "structural checks against reference-derived design tokens + rendered-frame luma/text/accent stats (no pixel similarity)"
+  },
+  "semantic": {
+    "scenes": [
+      {
+        "sceneId": "scene_01",
+        "semanticRelevance": 5,
+        "visualStorytelling": 3,
+        "evidenceCoverage": 2.2,
+        "subtitleCoverage": 10,
+        "richness": 10,
+        "source": "vision-judge",
+        "evidenceGaps": [
+          "missing: the answer line itself — no tilted line vs untouched gold ORIGINAL ANSWER hairline, so bearing drift is invisible",
+          "missing: gold angle-arc quantifying divergence",
+          "YES badges are static stacked pills; no per-badge tilt/reveal causality readable",
+          "three accents present (gold headline word + gold labels + teal badges) instead of single-accent drift diagram",
+          "headline reads as text-only claim; drift mechanism exists only in label text"
+        ]
+      },
+      {
+        "sceneId": "scene_02",
+        "semanticRelevance": 5.5,
+        "visualStorytelling": 4,
+        "evidenceCoverage": 1.9,
+        "subtitleCoverage": 10,
+        "richness": 10,
+        "source": "vision-judge",
+        "evidenceGaps": [
+          "circles overlap vertically instead of sitting aligned on one rail with even spacing",
+          "no single readable YES seen deforming into the three molds — deformation is implied, not shown",
+          "third YES label is orphaned far below its circle, breaking the slot pairing",
+          "deformed YES ghosts not readable as words; shapes read as abstract rings",
+          "no countable conforming record visible in final frame"
+        ]
+      },
+      {
+        "sceneId": "scene_03",
+        "semanticRelevance": 6.5,
+        "visualStorytelling": 5,
+        "evidenceCoverage": 3.9,
+        "subtitleCoverage": 10,
+        "richness": 10,
+        "source": "vision-judge",
+        "evidenceGaps": [
+          "hero YES is cropped off the right frame edge — reads as layout error, not privilege",
+          "teal value line reduced to a faint dot; retraction from full line to stub is not measurable",
+          "two gold words (YES + NOTHING) exceed the single-emphasis rule",
+          "grid's lone gold cell highlights one copy instead of uniform dim copies diluting the hero",
+          "audience applause pulse not visible in this frame"
+        ]
+      },
+      {
+        "sceneId": "scene_04",
+        "semanticRelevance": 4.5,
+        "visualStorytelling": 2,
+        "evidenceCoverage": 4.2,
+        "subtitleCoverage": 10,
+        "richness": 10,
+        "source": "vision-judge",
+        "evidenceGaps": [
+          "struck answer hairlines, baseline and surviving teal line all absent — frame is nearly empty",
+          "no decay-vs-conviction comparison; only a tiny 'HELD' label floats in negative space",
+          "REMEMBERED rendered gold instead of teal; no single consistent accent",
+          "caption is the orphan fragment 'mind are the ones', not the full sentence",
+          "typography-only frame; nothing performs the meaning"
+        ]
+      },
+      {
+        "sceneId": "scene_05",
+        "semanticRelevance": 5.5,
+        "visualStorytelling": 3,
+        "evidenceCoverage": 4.4,
+        "subtitleCoverage": 10,
+        "richness": 10,
+        "source": "vision-judge",
+        "evidenceGaps": [
+          "the two bent lines dying at the audience rim are missing",
+          "dashed return stub (extend-stall-retract) not present",
+          "final straight gold stroke passing beyond the circle is missing — payoff of the mechanism absent",
+          "only hollow teal circle + label remain; scene reads as static text+shape",
+          "two accents used (teal circle + gold NONE) against the single-accent rule"
+        ]
+      },
+      {
+        "sceneId": "scene_06",
+        "semanticRelevance": 6.5,
+        "visualStorytelling": 5,
+        "evidenceCoverage": 3.3,
+        "subtitleCoverage": 10,
+        "richness": 10,
+        "source": "vision-judge",
+        "evidenceGaps": [
+          "no rotating rim of asks/tick-arrows sweeping a full turn — rotation is not depicted in the frame",
+          "needle not clearly opposed to a moving ring; fixed-vs-rotating relationship unreadable",
+          "arrows scattered (one entering top, one bottom-left) without a coherent ring",
+          "three text labels (HOLD ONE LINE, ONE BEARING, CHOOSE ONE DIRECTION) dilute the single proof label",
+          "caption truncated to 'choose one direction and'"
+        ]
+      }
+    ],
+    "overall": {
+      "semanticRelevance": 5.6,
+      "visualStorytelling": 3.7,
+      "evidenceCoverage": 3.3,
+      "subtitleCoverage": 10,
+      "richness": 10
+    },
+    "notes": []
+  },
+  "overallQuality": 6.164285714285714,
+  "confidence": 0.99,
+  "variance": 0.059,
+  "status": "fail",
+  "reasons": [
+    "overall quality 6.2 < 8",
+    "slop severity 7 > 6",
+    "semantic relevance 5.6 < 6.5 (visuals not carrying the narration's meaning)",
+    "visual storytelling 3.7 < 6.5 (scenes display instead of demonstrate)",
+    "evidence coverage 3.3 < 5 (important narration concepts missing visual evidence)",
+    "scene_04: semantic relevance 4.5 - struck answer hairlines, baseline and surviving teal line all absent — frame is nearly empty; no decay-vs-conviction comparison; only a tiny 'HELD' label floats in negative space",
+    "scene_02: severe relevance/clarity issue (median relevance 6, clarity 5, scene median 5.86)",
+    "scene_02: severe readability - Top two circles overlap into an illegible blob; spec's single rail Line is missing, so 'one YES stretched on a rail' doesn't read.",
+    "scene_03: technical correctness fail",
+    "scene_03: severe relevance/clarity issue (median relevance 7, clarity 5, scene median 6)",
+    "scene_03: severe readability - Giant 'YES' word is clipped hard at the right frame edge — only 'YEs' partially visible, unreadable overflow.",
+    "scene_04: technical correctness fail",
+    "scene_04: severe relevance/clarity issue (median relevance 3, clarity 3, scene median 4.29)",
+    "scene_05: technical correctness fail",
+    "scene_05: severe relevance/clarity issue (median relevance 5, clarity 6, scene median 6.43)",
+    "scene_06: severe relevance/clarity issue (median relevance 6, clarity 5, scene median 6)",
+    "scene_06: severe readability - Headline 'HOLD ONE LINE' overlaps the teal ring's right edge, violating text/object separation and crowding the object."
+  ]
+}

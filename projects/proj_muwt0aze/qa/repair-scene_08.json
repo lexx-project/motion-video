@@ -1,0 +1,21 @@
+{
+  "sceneId": "scene_08",
+  "issue": "Headline overlaps the Grid (23%) because both defaulted into the same center band, so the 'mould' cluster and the type collide.",
+  "rootCause": "Grid and Circle were placed at position center, which is the band the renderer gives the headline; the caption also sat at bottomLeft, leaving no separate band for the object cluster.",
+  "scope": "minimal",
+  "changesMade": [
+    "Moved Grid to the bottom band (offsetY -6) so it sits entirely below the headline block.",
+    "Moved the gold Circle to the same bottom anchor (offsetY -14, offsetX 4) so it shares the grid's anchor and reads as breaking out of it.",
+    "Moved the caption Label to topRight (align right) to free the bottom band from a second text object.",
+    "Kept headline typography, accent word, grid contrast lift (opacity 0.95, density 0.85), delays and timing unchanged."
+  ],
+  "preserve": [
+    "Typography style: 96px w900 uppercase headline, left align, single accent word DICIPTAIN",
+    "objectDominant composition family: type block above, grid+circle cluster as dominant object",
+    "Motion family: stagger entrance, subtleScale emphasis at 4.05, fade exit",
+    "Color discipline: single gold accent, no added glow, #0B1313 background",
+    "VO timing and 9s duration (entranceAt 0, emphasisAt 4.05, exitAt 8.2)",
+    "Caption text TETAP UTUH — TANPA DIPAKSA"
+  ],
+  "expectedEffect": "The type block and the grid cluster now occupy separate bands, eliminating the collision while the gold circle punching through a high-contrast grid carries the 'intact shape versus uniform mould' beat."
+}

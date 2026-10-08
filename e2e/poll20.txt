@@ -1,0 +1,10 @@
+STATUS=complete
+logLast=10/06/2026 15:20:35
+[08:15:23] concepts: using stored candidates + selections
+[08:15:23] sceneGeneration: writing scene JSON
+[08:15:23] sceneGeneration: using stored scene JSON (validated)
+[08:15:23] novelty: novelty gate (pre-render)
+[08:15:23] rendering: rendering preview
+[08:16:15] qa: technical QA + frame extraction
+[08:16:15] qa: vision QA
+[08:20:35] qa: slop critic

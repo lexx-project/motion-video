@@ -1,0 +1,285 @@
+{
+  "sceneId": "scene_05",
+  "duration": 4.2,
+  "purpose": "Prove self-editing is unrewarded: compliance is sent to a hollow audience that returns zero signal and zero applause.",
+  "visualConcept": "Compliance sent to a hollow audience node returning zero signal",
+  "composition": "leftTextRightObject",
+  "headline": {
+    "text": "STOP EDITING FOR THEM",
+    "accentWords": [
+      "STOP EDITING"
+    ],
+    "align": "left",
+    "position": "topLeft"
+  },
+  "elements": [
+    {
+      "primitive": "Circle",
+      "position": "right",
+      "offsetX": -6,
+      "scale": 1.3,
+      "accent": "teal",
+      "role": "semantic",
+      "purpose": "the audience node: absorbs compliance and stays hollow",
+      "entrance": "scale",
+      "delay": 0.2
+    },
+    {
+      "primitive": "Label",
+      "text": "AUDIENCE",
+      "position": "right",
+      "offsetX": -6,
+      "offsetY": -16,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "labels the inert crowd node",
+      "entrance": "fade",
+      "delay": 0.4
+    },
+    {
+      "primitive": "Arrow",
+      "position": "right",
+      "offsetX": -16,
+      "offsetY": 0,
+      "scale": 0.85,
+      "accent": "teal",
+      "role": "semantic",
+      "purpose": "compliance signal sent into the audience",
+      "entrance": "draw",
+      "delay": 0.7
+    },
+    {
+      "primitive": "Label",
+      "text": "RETURN SIGNAL — NONE",
+      "position": "bottomRight",
+      "offsetX": -6,
+      "offsetY": -6,
+      "accent": "gold",
+      "role": "semantic",
+      "purpose": "names the silence as unpaid: gold marks NONE",
+      "entrance": "fade",
+      "delay": 1.1
+    },
+    {
+      "primitive": "Badge",
+      "text": "0 APPLAUSE",
+      "position": "bottomRight",
+      "offsetX": -6,
+      "offsetY": 0,
+      "scale": 0.85,
+      "accent": "gold",
+      "role": "semantic",
+      "purpose": "confirms zero validation returned from the crowd",
+      "entrance": "fade",
+      "delay": 1.4
+    },
+    {
+      "primitive": "Label",
+      "text": "THEY WILL NOT APPLAUD",
+      "position": "bottomLeft",
+      "offsetY": -6,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "reinforces the futility of pleasing the crowd",
+      "entrance": "fade",
+      "delay": 1.6
+    }
+  ],
+  "motion": {
+    "entrance": "reveal",
+    "emphasis": "highlight",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.4,
+    "exitAt": 4
+  },
+  "storyboard": {
+    "beatId": "b5",
+    "spokenMeaning": "You keep reshaping your answers for an audience that gives nothing back, so the performance is pointless and you should stop.",
+    "viewerTakeaway": "Every self-edit cuts you down to a stub at the crowd's gates — drop the gates, hold one full-length direction, and it is what gets remembered.",
+    "visualMechanism": "apertureGatesClipLineBypass",
+    "visualNarrative": [
+      {
+        "order": 1,
+        "action": "Headline reveals line-by-line upper-left; below it a taut line draws from the left margin tagged 'YOUR MIND', with one aperture gate labeled 'EVERYONE' waiting ahead.",
+        "meaning": "The answer starts whole and comes from the self; the crowd is staged as a gate your line must pass through.",
+        "visualEvidence": "Headline at 8% left margin, upper-left third; one horizontal line in the lower corridor with origin tick and 34px tag 'YOUR MIND'; one hairline aperture gate; ~55% empty dark field."
+      },
+      {
+        "order": 2,
+        "action": "The line slides through gate 1 and emerges shorter, a dim fragment dropping off its tail; gate 2 'PEOPLE' fades in ahead and clips a second fragment the same way.",
+        "meaning": "Matching the asker is subtraction: each accommodation removes part of the answer rather than refining it.",
+        "visualEvidence": "Line loses ~25% length per pass; two grey fragments scale to zero and dissolve; gates reveal with staggered fade; no glow, no counters."
+      },
+      {
+        "order": 3,
+        "action": "At gate 3 'APPLAUSE' only a short stub emerges; it dims toward black and sags off-axis while the label stamps: 'EVERYONE FED — NOTHING LEFT', gold on 'NOTHING'.",
+        "meaning": "Disillusionment clears into fatigue: the crowd is fed and what remains of you no longer means anything.",
+        "visualEvidence": "Stub at ~15% length, luminance ~30%; 34px uppercase label under the track above the subtitle band; gold only on 'NOTHING'."
+      },
+      {
+        "order": 4,
+        "action": "The gates hold empty a beat, then a fresh full-length stroke draws at constant height from the left margin, ignoring every aperture and passing through the row uncut.",
+        "meaning": "The imperative made visible: stop entering their gates — one unedited direction held at full length.",
+        "visualEvidence": "Straight gold-tinted line crossing the whole gate row; gates dim to hairline; fragments gone; empty bands above and below."
+      },
+      {
+        "order": 5,
+        "action": "The stroke exits frame right; hold on dimmed gates with the line 'HOLD ONE DIRECTION — THIS IS WHAT GETS REMEMBERED', gold on 'REMEMBERED'.",
+        "meaning": "Resolve: what you refuse to cut for them is the only version anyone retains.",
+        "visualEvidence": "Gates and stub at low luminance; one 34px uppercase label; large negative space preserved."
+      }
+    ],
+    "semanticObjects": [
+      {
+        "objectType": "Headline",
+        "semanticRole": "States the defiant imperative the frame must prove.",
+        "relationship": "asserted against the GateRow; the clipped line is its evidence",
+        "importance": 5
+      },
+      {
+        "objectType": "AnswerLine",
+        "semanticRole": "Your answer leaving the mind — whole at origin, cut shorter by every gate it passes through.",
+        "relationship": "draws from the left margin, clips at each gate, ends as a dim stub",
+        "importance": 5
+      },
+      {
+        "objectType": "GateRow",
+        "semanticRole": "The audience as three apertures — EVERYONE, PEOPLE, APPLAUSE — that only let a shaped version through.",
+        "relationship": "receives AnswerLine and subtracts length; dimmed by BypassLine",
+        "importance": 5
+      },
+      {
+        "objectType": "CutFragment",
+        "semanticRole": "The discarded versions of yourself — edits no one sees or thanks you for.",
+        "relationship": "breaks off AnswerLine at each gate, scales down and dissolves",
+        "importance": 4
+      },
+      {
+        "objectType": "BypassLine",
+        "semanticRole": "The held direction: one full-length unedited stroke that never enters the gates.",
+        "relationship": "crosses GateRow uncut and exits frame right",
+        "importance": 5
+      },
+      {
+        "objectType": "Label",
+        "semanticRole": "Names the outcome so the zero reads as unpaid, not broken.",
+        "relationship": "anchored beneath the gate track; gold on a single word",
+        "importance": 3
+      }
+    ],
+    "relationships": [
+      {
+        "from": "AnswerLine",
+        "to": "GateRow",
+        "relationship": "passes each aperture and loses length — the gates do not stop it, they consume it"
+      },
+      {
+        "from": "CutFragment",
+        "to": "AnswerLine",
+        "relationship": "breaks away from the tail, proving the edit is subtraction not improvement"
+      },
+      {
+        "from": "GateRow",
+        "to": "Label",
+        "relationship": "anchors the label, giving the emptied track the meaning 'NOTHING LEFT'"
+      },
+      {
+        "from": "Headline",
+        "to": "AnswerLine",
+        "relationship": "top-text/bottom-object: headline asserts the imperative, the line enacts the cutting it forbids"
+      },
+      {
+        "from": "BypassLine",
+        "to": "GateRow",
+        "relationship": "ignores the apertures entirely and crosses uncut, ending performance-for-the-audience"
+      }
+    ],
+    "typographyPlan": {
+      "headline": "STOP EDITING FOR AN AUDIENCE THAT WON'T APPLAUSE",
+      "emphasisWords": [
+        "STOP EDITING"
+      ],
+      "supportingText": [
+        "EVERYONE FED — NOTHING LEFT",
+        "HOLD ONE DIRECTION — THIS IS WHAT GETS REMEMBERED"
+      ]
+    },
+    "subtitlePlan": {
+      "enabled": true,
+      "text": "stop reshaping yourself for an audience that won't applaud anyway",
+      "timing": "opens the beat (16.95s–18.6s), over headline reveal",
+      "role": "spoken line"
+    },
+    "motionBeats": [
+      {
+        "order": 1,
+        "action": "Headline lines reveal top-to-bottom with ease-out stagger while the gate row fades in",
+        "purpose": "Stages the verdict first, then the obstacle it indicts"
+      },
+      {
+        "order": 2,
+        "action": "AnswerLine slides through each gate via masked path reveal; fragments scale down and dissolve",
+        "purpose": "Motion equals effort — every pass visibly costs length"
+      },
+      {
+        "order": 3,
+        "action": "Stub dims and sags as the label stamps in with a short position shift",
+        "purpose": "Turns fatigue and lost meaning into an observable state change"
+      },
+      {
+        "order": 4,
+        "action": "Gates hold unlit a beat, then BypassLine draws straight through and exits frame right",
+        "purpose": "Resolve reads as refusal of the gates, not attack on them"
+      },
+      {
+        "order": 5,
+        "action": "Frame holds on dimmed gates as the resolve label reveals word-by-word",
+        "purpose": "Freezes the held-direction image so it can be remembered"
+      }
+    ],
+    "compositionIntent": "Top-text-bottom-object: headline occupies the upper-left third at 8% margin; the lower mid corridor holds the horizontal gate track with origin tag and stamp label, clear of the subtitle band. Travel stays in one corridor, leaving ~55% negative space and open right and bottom bands.",
+    "visualEvidence": [
+      "One line loses visible length at each of three labeled gates, shedding dissolving fragments",
+      "Stub drops to near-dark with label 'EVERYONE FED — NOTHING LEFT', gold only on 'NOTHING'",
+      "Straight gold-tinted stroke crosses the whole gate row uncut and exits frame right",
+      "Gates end as dimmed hairlines — no fills, glows, counters or readouts",
+      "Subtitle band stays empty throughout"
+    ],
+    "forbiddenInterpretations": [
+      "a crowd, clapping hands, cheering figures or applause sound-waves",
+      "counters, tallies, gauges or percentage readouts of approval",
+      "scissors, blades, shredded paper or literal cutting tools",
+      "dashboard cards, UI chrome, seat rows or grid-filled bottom band",
+      "camera shake, glitch or gratuitous zoom on the final stroke"
+    ],
+    "noveltyIntent": "Instead of lines dying at a circle's rim, the audience becomes a row of labeled apertures: your answer passes through and is physically shortened at each gate, so self-editing reads as loss. The resolve line neither bends nor dodges — it refuses the gates and crosses uncut, making 'hold one direction' a measurable property: full length preserved.",
+    "elementBudget": {
+      "min": 6,
+      "max": 9
+    }
+  },
+  "subtitle": {
+    "enabled": true,
+    "role": "spoken line",
+    "phrases": [
+      {
+        "text": "yourself for an audience",
+        "start": 0,
+        "end": 1.65
+      },
+      {
+        "text": "that will not applaud",
+        "start": 1.65,
+        "end": 3.34
+      },
+      {
+        "text": "anyway. Your turn to",
+        "start": 3.34,
+        "end": 4.2
+      }
+    ]
+  }
+}

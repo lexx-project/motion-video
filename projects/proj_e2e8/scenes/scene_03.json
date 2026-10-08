@@ -1,0 +1,83 @@
+{
+  "sceneId": "scene_03",
+  "duration": 3.76,
+  "purpose": "Makes the identity gap literal: the headline itself is torn apart by a dark void, with a single hairline reaching across as the only bridge.",
+  "visualConcept": "TYPE SPLIT BY VOID",
+  "composition": "typographyDominant",
+  "elements": [
+    {
+      "primitive": "WordReveal",
+      "text": "WHO YOU ARE",
+      "align": "center",
+      "staggerStep": 0.08,
+      "accentWords": [],
+      "position": "top",
+      "offsetY": 4,
+      "accent": "none",
+      "size": "lg",
+      "delay": 0,
+      "entrance": "slide",
+      "emphasis": "positionShift",
+      "emphasisAt": 1.7,
+      "exit": "fade"
+    },
+    {
+      "primitive": "WordReveal",
+      "text": "WHO YOU WANT TO BE",
+      "align": "center",
+      "staggerStep": 0.08,
+      "accentWords": [
+        "WANT"
+      ],
+      "position": "bottom",
+      "offsetY": 6,
+      "accent": "gold",
+      "size": "lg",
+      "delay": 0.15,
+      "entrance": "slide",
+      "emphasis": "subtleScale",
+      "emphasisAt": 1.7,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Line",
+      "orientation": "horizontal",
+      "lengthPct": 96,
+      "thicknessPx": 3,
+      "position": "center",
+      "offsetX": 0,
+      "offsetY": 0,
+      "opacity": 0.85,
+      "accent": "none",
+      "delay": 0.4,
+      "entrance": "draw",
+      "emphasis": "highlight",
+      "emphasisAt": 2.2,
+      "exit": "fade"
+    },
+    {
+      "primitive": "GradientGlow",
+      "intensity": 0.22,
+      "diameterPct": 70,
+      "position": "center",
+      "offsetX": 0,
+      "offsetY": 0,
+      "accent": "gold",
+      "delay": 0,
+      "entrance": "fade",
+      "emphasis": "glow",
+      "emphasisAt": 1.7,
+      "exit": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "slide",
+    "emphasis": "controlledReveal",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.7,
+    "exitAt": 3.26
+  }
+}

@@ -1,0 +1,784 @@
+{
+  "perBeat": [
+    {
+      "beatId": "b1",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "CIRCLED TOMORROW",
+          "metaphor": "A calendar month where every future date is scribbled with a promise ring while today's cell stays empty — deferral made literal and instantly self-recognizable.",
+          "composition": "leftTextRightObject",
+          "objects": [
+            "Calendar",
+            "Circle",
+            "Line",
+            "Label"
+          ],
+          "typographyStrategy": "Left-column headline 'EVERY DAY YOU SAY TOMORROW' with TOMORROW in gold; small caption 'the day that never arrives' beneath.",
+          "motionOpportunity": "Calendar slides in from right, rings draw sequentially across past dates (stagger), today's cell stays unhighlighted until a final subtleScale.",
+          "whyItWorks": "The ruled grid plus repeated empty rings reads as habit without narration; gold marks the promise word as the semantic core of the beat.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Calendar",
+            "Circle",
+            "Headline",
+            "Caption"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "ECHOING PROMISE",
+          "metaphor": "The single word TOMORROW repeated downward in diminishing opacity — each echo fainter, showing the promise losing force each time it is spoken.",
+          "composition": "typographyDominant",
+          "objects": [
+            "WordReveal",
+            "Line",
+            "GradientGlow"
+          ],
+          "typographyStrategy": "WordReveal stack of TOMORROW ×4 fading from #F4F1EA to muted; top line carries the gold accent; one hairline rule separates yesterday's echo.",
+          "motionOpportunity": "Words reveal top-to-bottom on a 0.18s stagger while each lower instance fades further; one subordinate glow behind the top word only.",
+          "whyItWorks": "Typography itself becomes the object of decay — pure recognition, near-zero clutter, high text priority match.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "WordReveal",
+            "Line",
+            "GradientGlow"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "MATCH NEVER STRUCK",
+          "metaphor": "An unlit match held static beside a struck-through 'TODAY' — intention present, action withheld; the flame exists only as a dim teal ghost.",
+          "composition": "rightTextLeftObject",
+          "objects": [
+            "Line",
+            "Circle",
+            "Headline",
+            "Indicator"
+          ],
+          "typographyStrategy": "Headline 'YOU SAY TOMORROW' right-aligned, TOMORROW gold; caption 'held, never struck' in muted secondary.",
+          "motionOpportunity": "Match stem draws in (draw entrance), a ghost flame pulses once with emphasis glow then dims — no actual ignition.",
+          "whyItWorks": "Potential energy unspent is a visceral metaphor for deferred change; the negative space around the match carries the quiet emotion.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Line",
+            "Circle",
+            "Indicator",
+            "Headline"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "TOMORROW STACK",
+          "metaphor": "A growing stack of identical promise cards, each labeled TOMORROW, piling up while one card waits untouched — repetition accumulating into weight.",
+          "composition": "objectDominant",
+          "objects": [
+            "Stack",
+            "GenericCard",
+            "CounterText",
+            "Label"
+          ],
+          "typographyStrategy": "Small counter 'DAY 001' with counterChange; one bold label 'TOMORROW' on the top card; headline compact at top-left.",
+          "motionOpportunity": "Cards drop into the stack with staggered slide entrances; counter increments once at emphasisAt to imply the count is still rising.",
+          "whyItWorks": "Physical accumulation converts an abstract habit into visible cost; the untouched card signals today's choice never made.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Stack",
+            "GenericCard",
+            "CounterText",
+            "Headline"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "TODAY LEFT BLANK",
+          "metaphor": "A single large empty checkbox labeled TODAY beside a checked list of every other day — the one action that matters is the one left unticked.",
+          "composition": "asymmetric",
+          "objects": [
+            "Checkbox",
+            "Timeline",
+            "Headline",
+            "Arrow"
+          ],
+          "typographyStrategy": "Headline 'TOMORROW IS EASY' with TOMORROW gold, subheadline 'today stays unchecked' — two lines max, left aligned.",
+          "motionOpportunity": "Timeline items check themselves in sequence (checkAt stagger) stopping abruptly at TODAY; arrow nudges toward it with positionShift.",
+          "whyItWorks": "Checkbox incompleteness is a universal cognitive itch — self-recognition arrives before any critique, matching the beat's quiet tone.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Checkbox",
+            "Timeline",
+            "Headline",
+            "Arrow"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b2",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "TOMORROW Struck Again",
+          "metaphor": "The word TOMORROW is crossed out — then the identical word reappears below, already crossed again. The strike never lands on a change, only on a repeat.",
+          "composition": "typographyDominant",
+          "objects": [
+            "Headline",
+            "Line",
+            "Line",
+            "Label"
+          ],
+          "typographyStrategy": "Two stacked oversized lines of TOMORROW, second one already struck; accent word 'SAME' in gold on a small label beneath.",
+          "motionOpportunity": "First line strikes with draw; second line slides in unchanged with the strike pre-drawn, emphasis highlight at repeat.",
+          "whyItWorks": "Uses the beat's own word as the object of failure — repetition made literally visible without narration.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Headline",
+            "Line",
+            "Label",
+            "WordReveal"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "Closed Chain of Days",
+          "metaphor": "A ring of linked marks forms a closed loop — the path that should extend forward instead rejoins itself, an endless unbroken circuit.",
+          "composition": "centered",
+          "objects": [
+            "Circle",
+            "Indicator",
+            "Label",
+            "Arrow"
+          ],
+          "typographyStrategy": "Centered headline REPEAT / THE SAME THING with 'SAME' in gold; small label DAY 1 · DAY 2 · DAY ∞ at loop edge.",
+          "motionOpportunity": "Link segments draw in sequence around the loop, then an arrow attempts to exit and dissolves back into the ring.",
+          "whyItWorks": "The closed ring is a universal stagnation symbol; escape motion failing communicates the trap directly.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Circle",
+            "Arrow",
+            "Label",
+            "Timeline"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "Identical Checkbox Tomorrow",
+          "metaphor": "Yesterday's ticked box appears again — same box, same tick, same day, showing the promise resolved into a ritual rather than a result.",
+          "composition": "leftTextRightObject",
+          "objects": [
+            "Checkbox",
+            "Checkbox",
+            "Caption",
+            "Line"
+          ],
+          "typographyStrategy": "Left-aligned headline SAME CHOICE / TOMORROW with 'SAME' in gold; caption 'the box gets checked. nothing gets changed.'",
+          "motionOpportunity": "First checkbox checks with draw; second checkbox checks identically on delay with subtleScale emphasis, no state change between them.",
+          "whyItWorks": "Checkbox completion normally signals progress; identical repetition subverts it into unease — progress that isn't progress.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Checkbox",
+            "Checkbox",
+            "Line",
+            "Caption"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "Calendar Groundhog Grid",
+          "metaphor": "A month grid fills with the same highlighted cell pattern day after day — the marks differ in position but never in kind, a flat line of sameness.",
+          "composition": "split",
+          "objects": [
+            "Calendar",
+            "Grid",
+            "Progress",
+            "Label"
+          ],
+          "typographyStrategy": "Right headline EVERY DAY / THE SAME with accent 'SAME' in gold; label REPEAT on the grid side.",
+          "motionOpportunity": "Cells activate in a stagger across two days producing identical patterns; progress bar fills then resets with counterChange.",
+          "whyItWorks": "Calendar structure grounds the time dimension of the loop in a single glance, emphasizing duration of the pattern.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Calendar",
+            "Grid",
+            "Progress",
+            "Label"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "Tomorrow Slider Reset",
+          "metaphor": "A progress bar labelled TOMORROW advances with effort, then snaps back to zero — each advance indistinguishable from the last, forward motion that never accumulates.",
+          "composition": "asymmetric",
+          "objects": [
+            "ProgressBar",
+            "Arrow",
+            "Stack",
+            "Headline"
+          ],
+          "typographyStrategy": "Headline PROMISE / RESET with 'RESET' in red; subheadline 'tomorrow looks exactly like today.'",
+          "motionOpportunity": "Bar fills with counterChange, then snaps back and refills identically; arrow slides forward and returns to origin.",
+          "whyItWorks": "The reset reads instantly as self-reinforcing failure — motion without accumulation is stagnation itself.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "ProgressBar",
+            "Arrow",
+            "Stack",
+            "Subheadline"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b3",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "THE CHASM MEASURED",
+          "metaphor": "Two small figures on opposite cliff edges with a measured void between them turns emotional distance into a literal, crossable gap.",
+          "composition": "split",
+          "objects": [
+            "Line",
+            "Circle",
+            "Label",
+            "GradientGlow"
+          ],
+          "typographyStrategy": "Left-anchored headline; accent only on 'WANT TO BE' to mark the desired self across the void.",
+          "motionOpportunity": "Figures slide in from opposite edges, then a thin measure line draws across the chasm, emphasizing span over drop.",
+          "whyItWorks": "Concrete, instantly readable without narration; the drawing line makes distance feel measurable and finite rather than hopeless.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Line",
+            "Circle",
+            "Label",
+            "Arrow",
+            "GradientGlow"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "PROFILE VS PROFILE",
+          "metaphor": "Two facing profile forms made of simple arcs, separated by a column of empty space, make identity contrast a geometry problem.",
+          "composition": "dualObject",
+          "objects": [
+            "Circle",
+            "Line",
+            "WordReveal",
+            "Indicator"
+          ],
+          "typographyStrategy": "Typography sits inside the negative space between forms; words stack down the gap so copy IS the distance.",
+          "motionOpportunity": "Arcs fade in from each edge, then WordReveal staggers the phrase down the gap, physically filling void with intent.",
+          "whyItWorks": "Elegant and symbolic rather than illustrative; uses negative space as the primary storytelling element.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Circle",
+            "Line",
+            "WordReveal",
+            "Indicator",
+            "GradientGlow"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "THE BRIDGE WITHOUT PLANKS",
+          "metaphor": "A bridge whose span is only two anchor lines with missing planks shows the way exists but the crossing is unbuilt.",
+          "composition": "topTextBottomObject",
+          "objects": [
+            "Line",
+            "Stack",
+            "Arrow",
+            "Caption"
+          ],
+          "typographyStrategy": "Headline top-third; the emphasis phrase rendered in gold as the far-side landing point of the bridge.",
+          "motionOpportunity": "Anchor lines draw from each side, planks stagger in partially and stop, leaving visible holes at center.",
+          "whyItWorks": "Communicates that the path is knowable yet unfinished, which motivates the later 'tiny choices' payoff.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Line",
+            "Stack",
+            "Arrow",
+            "Caption",
+            "Target"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "TWO STATES, ONE MEASURE",
+          "metaphor": "A BeforeAfter diagram frames current self versus desired self as two labeled columns with an empty measurable span between them.",
+          "composition": "asymmetric",
+          "objects": [
+            "BeforeAfter",
+            "ProgressBar",
+            "Number",
+            "Label"
+          ],
+          "typographyStrategy": "Headline left, accent on 'GAP'; a numeric span label quantifies distance like a stat card.",
+          "motionOpportunity": "Columns reveal in stagger, then the distance bar counts up its value, turning longing into data.",
+          "whyItWorks": "Makes the abstract emotional pain concrete and quantifiable, matching the beat's abstract meaning precisely.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "BeforeAfter",
+            "ProgressBar",
+            "Number",
+            "Label"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "TYPE SPLIT BY VOID",
+          "metaphor": "The headline itself is torn in half with a dark vertical void between 'WHO YOU ARE' and 'WHO YOU WANT TO BE', letting typography embody the chasm.",
+          "composition": "typographyDominant",
+          "objects": [
+            "WordReveal",
+            "Line",
+            "GradientGlow",
+            "Indicator"
+          ],
+          "typographyStrategy": "Two stacked uppercase blocks, second block in gold; the gap between them is the visual subject.",
+          "motionOpportunity": "Halves slide apart on entrance, then a single hairline draws across the void as the only bridge suggested.",
+          "whyItWorks": "Purest typography-priority option; meaning survives even at small scale because the layout is the metaphor.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "WordReveal",
+            "Line",
+            "Indicator",
+            "GradientGlow"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b4",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "TILE BRIDGE ASSEMBLING",
+          "metaphor": "A bridge over a dark void lays its own planks one at a time — each plank a small decision, cumulative construction visible mid-assembly.",
+          "composition": "topTextBottomObject",
+          "objects": [
+            "bridge tiles",
+            "void gap",
+            "Line",
+            "Indicator"
+          ],
+          "typographyStrategy": "Headline 'BUILT FROM TINY CHOICES' upper-left, 'TINY CHOICES' gold-accented, one word per line constraint respected.",
+          "motionOpportunity": "Tiles stagger-in left to right (stagger entrance), each landing with subtleScale emphasis; void glow stays subordinate.",
+          "whyItWorks": "Direct literalization of 'built' — the assembling bridge reads instantly without narration and promises removability.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Headline",
+            "Line",
+            "Circle",
+            "Indicator"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "CHOICE CHAIN, LINK BY LINK",
+          "metaphor": "A chain extends link by link across the frame; the newest link is still glowing, showing each choice adds material to what holds you back.",
+          "composition": "leftTextRightObject",
+          "objects": [
+            "Chain rings (Circle outline)",
+            "Line",
+            "Label"
+          ],
+          "typographyStrategy": "Headline left, max 3 lines, accent 'CHOICES' in gold; small label 'ONE LINK = ONE DECISION' as caption.",
+          "motionOpportunity": "Links reveal sequentially via draw-like scale entrances, final link highlight emphasis at beat midpoint.",
+          "whyItWorks": "Chain implies both construction and constraint — the gap is made of linked choices, hence detachable.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Headline",
+            "Circle",
+            "Label",
+            "Line"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "STEP LAYING STAIRCASE",
+          "metaphor": "Each small choice drops as a step, forming a staircase descending into the gap — accumulation made spatial, the descent repeated daily.",
+          "composition": "bottomTextTopObject",
+          "objects": [
+            "Stack bars",
+            "Arrow",
+            "GridBackground"
+          ],
+          "typographyStrategy": "Headline top-center uppercase; 'TINY CHOICES' gold, subheadline 'ONE STEP AT A TIME' muted below.",
+          "motionOpportunity": "Stack bars drop in from top with slide entrance, one per 0.15s; arrow draws downward afterward.",
+          "whyItWorks": "Vertical accumulation maps time to space; stairs read as both progress and repetition.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Headline",
+            "Stack",
+            "Arrow",
+            "GridBackground"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "PUZZLE OF MICRO-DECISIONS",
+          "metaphor": "A grid of cells fills one square at a time, forming the shape of the gap — the picture exists only because of accumulated small fills.",
+          "composition": "asymmetric",
+          "objects": [
+            "Grid cells",
+            "GradientGlow",
+            "HighlightWord"
+          ],
+          "typographyStrategy": "WordReveal headline right-aligned; accent on 'TINY' only; caption 'EVERY CELL A CHOICE' beneath.",
+          "motionOpportunity": "Cells stagger-fill sequentially; one cell pulses subtleScale as the latest choice.",
+          "whyItWorks": "Granular grid makes 'tiny' tangible; partial fill shows construction in progress, high negative space preserved.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Grid",
+            "WordReveal",
+            "GradientGlow",
+            "Caption"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "TIMELINE OF DAILY MARKS",
+          "metaphor": "A horizontal timeline accrues one tick per day — small marks sum into a long bar that spans the gap between two profile silhouettes.",
+          "composition": "split",
+          "objects": [
+            "Timeline",
+            "ProfileCard",
+            "Line"
+          ],
+          "typographyStrategy": "Headline left 'BUILT FROM TINY CHOICES' with gold 'CHOICES'; timeline labels minimal day numbers.",
+          "motionOpportunity": "Ticks draw in sequence via stagger; the accumulated bar extends with controlledReveal to touch the second profile.",
+          "whyItWorks": "Connects micro-choices to identity gap explicitly, setting up the 'unmade' reframe of the script.",
+          "complexity": "high",
+          "primitiveSketch": [
+            "Timeline",
+            "ProfileCard",
+            "Headline",
+            "Line"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b5",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "SMALL GOLD BEATS LARGE DIM",
+          "metaphor": "A hand-built balance beam tilts toward a tiny gold weight that overpowers a large dim mass: value, not volume, decides. Reads instantly as 'what you want most outweighs what you want now'.",
+          "composition": "centered",
+          "objects": [
+            "Line",
+            "Circle",
+            "Number",
+            "Headline"
+          ],
+          "typographyStrategy": "Headline 96px uppercase, 2 lines, accent word 'MOST' in gold; beam sits below in negative space as proof.",
+          "motionOpportunity": "Beam enters with slide, then one controlled positionShift settling the gold side down; gold pan gets a single subtleScale emphasis at 60%.",
+          "whyItWorks": "It turns preference ordering into physics — the viewer feels the verdict before reading the sentence, and the gold accent carries full semantic weight.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Line",
+            "Circle",
+            "Number",
+            "Headline",
+            "GradientGlow"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "TWO DOORS: NOW VS LATER",
+          "metaphor": "Two equal doorways side by side: the left one lit with flat ordinary light (comfortable now), the right one edged in gold (what you want most). Choice is spatial — you simply walk toward one.",
+          "composition": "split",
+          "objects": [
+            "GenericCard",
+            "Arrow",
+            "Headline",
+            "Label"
+          ],
+          "typographyStrategy": "Headline top-left 88px with 'MOST' gold; two tiny labels 'NOW' muted and 'LATER' gold under each doorway card.",
+          "motionOpportunity": "Cards enter staggered, then arrow draws toward the gold card with emphasis highlight while the muted card stays static at 0.6 opacity.",
+          "whyItWorks": "Doors make the beat feel like a real daily decision rather than an abstraction, and the asymmetry of attention shows the ranking visually.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "GenericCard",
+            "Arrow",
+            "Headline",
+            "Label",
+            "Grain"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "THE RANKED CHECKBOX",
+          "metaphor": "A numbered priority list where the long-term want is checked first and the immediate urge sits unchecked below — discipline is literally reordering the list and ticking the top item.",
+          "composition": "leftTextRightObject",
+          "objects": [
+            "Sequence",
+            "Checkbox",
+            "Label",
+            "Line"
+          ],
+          "typographyStrategy": "Headline left, 3 lines max, 'MOST' gold and 'NOW' muted; right column carries the numbered sequence with one checked item.",
+          "motionOpportunity": "Sequence items reveal with stagger, Checkbox checkAt fires mid-scene as the only emphasis, plus a highlight sweep on the checked row.",
+          "whyItWorks": "Ranking plus a tick makes the abstract idea of preference ordering concrete, procedural and repeatable — conviction through order, not drama.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Sequence",
+            "Checkbox",
+            "Label",
+            "Line"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "WEIGHTED WORDS",
+          "metaphor": "The sentence itself becomes the scale: 'MOST' rendered heavy in gold and dense, 'NOW' rendered thin and dim — typography weight performs the meaning without any literal object.",
+          "composition": "typographyDominant",
+          "objects": [
+            "WordReveal",
+            "Indicator",
+            "GradientGlow"
+          ],
+          "typographyStrategy": "WordReveal 100px uppercase across 3 lines, accent words ['MOST','NOW'] but only MOST in gold while NOW stays muted gray; single low glow behind the gold word.",
+          "motionOpportunity": "Word-by-word stagger with 0.12s steps, then a subtleScale on 'MOST' (delta 0.06) and a glow emphasis at 70% as the beat lands.",
+          "whyItWorks": "Highest visual-priority beat, highest typography-priority beat — letting type carry the metaphor gives maximum clarity with minimum clutter.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "WordReveal",
+            "GradientGlow",
+            "Indicator"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "THE FORK: GOLD ROAD vs DIM ROAD",
+          "metaphor": "A single trunk path splits into two branches — the immediate branch fading into dim gray, the enduring branch continuing in gold. Discipline is the moment of taking the harder fork today.",
+          "composition": "asymmetric",
+          "objects": [
+            "Branch",
+            "Arrow",
+            "Caption",
+            "Circle"
+          ],
+          "typographyStrategy": "Headline top-left 92px uppercase, 'MOST' gold; small caption 'TINY CHOICE, EVERY DAY' muted under the fork node.",
+          "motionOpportunity": "Trunk draws first, branches reveal staggered, active gold branch extends with controlledReveal while dim branch holds, ending on a single Indicator pulse.",
+          "whyItWorks": "It links this beat to the script's larger 'tiny choices build the gap' idea, giving one decisive image that means choice, direction and conviction at once.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Branch",
+            "Arrow",
+            "Caption",
+            "Indicator"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b6",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "SINGLE CELL IGNITION",
+          "metaphor": "A grid of empty dormant days is broken by one cell filling with accent light — the smallest possible commitment made visible as the first mark on an otherwise untouched calendar.",
+          "composition": "topTextBottomObject",
+          "objects": [
+            "Grid",
+            "Circle",
+            "Label",
+            "Line"
+          ],
+          "typographyStrategy": "Headline \"START TODAY. START SMALL.\" with \"TODAY\" and \"SMALL\" as the two accent words; short caption below.",
+          "motionOpportunity": "Grid fades in dormant, then a single cell counter-changes to accent with a controlledReveal pulse, echoing the two-line headline with stagger.",
+          "whyItWorks": "Turns both objections into one image: an empty grid = nothing done yet, one lit cell = trivially small and happening now.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Grid",
+            "Circle",
+            "Headline",
+            "Caption"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "FIRST SPARK IN DARKNESS",
+          "metaphor": "One small point of teal light in an otherwise black frame — near-zero entry cost rendered as a single spark that doesn't need to be a fire to be real.",
+          "composition": "centered",
+          "objects": [
+            "Circle",
+            "GradientGlow",
+            "WordReveal",
+            "Indicator"
+          ],
+          "typographyStrategy": "WordReveal headline centered, \"START\" accented; tiny caption \"TODAY. SMALL.\" beneath the spark.",
+          "motionOpportunity": "WordReveal staggers the headline, then the dot scales from 0 with a single subordinate glow bloom as the emphasis beat.",
+          "whyItWorks": "Emotionally encouraging and radically simple; darkness makes the smallness feel brave rather than inadequate.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Circle",
+            "GradientGlow",
+            "WordReveal",
+            "Caption"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "THE FIRST STEP MARK",
+          "metaphor": "A single footprint-like chevron mark lands at the base of a long path line — the journey ahead is huge, but only the first small mark is required now.",
+          "composition": "leftTextRightObject",
+          "objects": [
+            "Arrow",
+            "Line",
+            "Badge",
+            "Headline"
+          ],
+          "typographyStrategy": "Left-aligned headline with \"TODAY\" accented, badge \"STEP 01\" in gold as the scale-objection reducer.",
+          "motionOpportunity": "Path line draws in, then the first chevron marks in with a draw entrance while the badge highlights after.",
+          "whyItWorks": "Converts 'start' into literal forward motion; 'STEP 01' visually proves the scale is small.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Line",
+            "Arrow",
+            "Badge",
+            "Headline"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "TINY CHOICE, REAL WEIGHT",
+          "metaphor": "A small coin-sized Circle sits on one side of a balance Line against a heavy empty mass — the tiny act is small in size but already tipping the scale toward change.",
+          "composition": "asymmetric",
+          "objects": [
+            "Circle",
+            "Line",
+            "Stack",
+            "Subheadline"
+          ],
+          "typographyStrategy": "Headline top-left, \"SMALL\" accented teal; a single subline: \"TODAY IS ENOUGH.\"",
+          "motionOpportunity": "Balance line settles with positionShift as the small circle lands with a scale entrance, emphasizing the tipping moment.",
+          "whyItWorks": "Speaks to the 'too small to matter' doubt by showing small acts already carrying decisive weight.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Line",
+            "Circle",
+            "Stack",
+            "Subheadline"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b7",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "DOT BREAKS INTO A LINE",
+          "metaphor": "A single stationary point accelerates into a horizontal stroke cutting across the void — the hesitation held as a dot, the decision visible as extension. Progress reads instantly without narration.",
+          "composition": "typographyDominant",
+          "objects": [
+            "Circle",
+            "Line",
+            "Arrow",
+            "GradientGlow"
+          ],
+          "typographyStrategy": "Headline 'BUT START.' at 128px uppercase, 'START' in teal accent; one caption line below the extending stroke.",
+          "motionOpportunity": "Dot holds 0.4s, then draws into a line that streaks right while the headline stamps in with scale entrance; glow rises behind the line origin.",
+          "whyItWorks": "Directly literalizes the beat's own metaphorHint (dot becoming a line) while the horizontal thrust gives the imperative forward velocity.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Circle",
+            "Line",
+            "Arrow",
+            "Headline"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "MATCH STRIKES IN THE DARK",
+          "metaphor": "One small flame ignites from a struck point, pushing back a large field of near-black. The tiny light outweighing vast darkness says beginning dissolves the gap.",
+          "composition": "objectDominant",
+          "objects": [
+            "Circle",
+            "Indicator",
+            "SoftOrb",
+            "Label"
+          ],
+          "typographyStrategy": "Headline 'BUT START.' stacked bottom-left, 'START' gold-accented; short caption 'the only move left' in secondary text.",
+          "motionOpportunity": "Match head flares with emphasis glow (single permitted glow), flame settles to steady, headline reveals word-staggered from the light outward.",
+          "whyItWorks": "Emotional shift urgency→resolve is embodied as cold dark giving way to one warm point — high contrast, minimal elements.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Circle",
+            "Indicator",
+            "WordReveal",
+            "GradientGlow"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "ONE STEP OFF THE EDGE",
+          "metaphor": "A figure's edge is a hard horizontal line; a second short line extends past it into empty space. The gap is literally bridged by a single stroke that starts before it's certain.",
+          "composition": "leftTextRightObject",
+          "objects": [
+            "Line",
+            "Arrow",
+            "Target",
+            "GridBackground"
+          ],
+          "typographyStrategy": "Left-aligned headline 'BUT START.' with 'START' in teal, subheadline 'the gap closes when you move' at 40px.",
+          "motionOpportunity": "Bridge line draws out past the edge (draw entrance), arrow slides after it, headline slides in from left with positionShift emphasis.",
+          "whyItWorks": "Turns the abstract 'gap' into spatial geometry the eye crosses in one motion — tension at the edge, release in the extension.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Line",
+            "Arrow",
+            "Subheadline",
+            "GridBackground"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "COUNTER OF ZERO RESETS TO ONE",
+          "metaphor": "Every prior promise sits at zero; the counter flips to 1 the instant action begins. A single unit of motion outweighs endless accumulated intention.",
+          "composition": "centered",
+          "objects": [
+            "Number",
+            "ProgressBar",
+            "Badge",
+            "Circle"
+          ],
+          "typographyStrategy": "Counter 0→1 as dominant element at 200px teal, headline 'BUT START.' directly beneath, caption 'small counts' muted below.",
+          "motionOpportunity": "Counter counterChange from 0 to 1 on beat, progress bar fills a first sliver, badge 'DAY 1' fades in — three tight staggered animations.",
+          "whyItWorks": "Contrasts the script's repetition of empty tomorrows with the irreplaceable first increment; numeric finality matches urgency→resolve.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "CounterText",
+            "ProgressBar",
+            "Badge",
+            "Headline"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "SINGLE SEED THROUGH THE PLATE",
+          "metaphor": "A lone vertical line punches down through a horizontal barrier, its tip breaking into open space below — effort concentrated in one point beats the whole surface.",
+          "composition": "bottomTextTopObject",
+          "objects": [
+            "Line",
+            "Arrow",
+            "Circle",
+            "GradientGlow"
+          ],
+          "typographyStrategy": "Headline anchored bottom at 112px, 'START' gold; a single label 'now' sits at the penetration point.",
+          "motionOpportunity": "Line draws downward through the barrier with masked reveal, impact pulse glow at break point, headline rises with slide entrance.",
+          "whyItWorks": "Gives the imperative physical weight — one concentrated beginning defeats a wide obstacle; gold marks the decisive moment.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Line",
+            "Arrow",
+            "Label",
+            "Headline"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "sceneId": "scene_01",
+  "duration": 9,
+  "purpose": "Membuka dengan pertanyaan: kelelahan people-pleasing sebagai masalah inti, beban tak terlihat dari menahan persepsi orang lain.",
+  "visualConcept": "CONVERGING ARROWS PIN ONE FIGURE",
+  "composition": "centered",
+  "headline": {
+    "text": "YANG PALING BIKIN CAPEK",
+    "accentWords": [
+      "BIKIN",
+      "CAPEK"
+    ],
+    "align": "center"
+  },
+  "elements": [
+    {
+      "primitive": "Arrow",
+      "direction": "right",
+      "variant": "line",
+      "lengthPct": 28,
+      "position": "center",
+      "offsetX": -30,
+      "offsetY": 6,
+      "accent": "none",
+      "size": "md",
+      "delay": 0,
+      "entrance": "slide",
+      "emphasis": "positionShift",
+      "emphasisAt": 3.6
+    },
+    {
+      "primitive": "Arrow",
+      "direction": "left",
+      "variant": "line",
+      "lengthPct": 28,
+      "position": "center",
+      "offsetX": 30,
+      "offsetY": 6,
+      "accent": "none",
+      "size": "md",
+      "delay": 0.15,
+      "entrance": "slide",
+      "emphasis": "positionShift",
+      "emphasisAt": 3.6
+    },
+    {
+      "primitive": "Arrow",
+      "direction": "down",
+      "variant": "line",
+      "lengthPct": 30,
+      "position": "center",
+      "offsetX": 0,
+      "offsetY": -26,
+      "accent": "none",
+      "size": "md",
+      "delay": 0.3,
+      "entrance": "slide",
+      "emphasis": "positionShift",
+      "emphasisAt": 3.6
+    },
+    {
+      "primitive": "Circle",
+      "variant": "outline",
+      "diameterPct": 26,
+      "label": "",
+      "position": "center",
+      "offsetY": 6,
+      "scale": 1,
+      "opacity": 1,
+      "accent": "gold",
+      "size": "lg",
+      "delay": 0.5,
+      "entrance": "fade",
+      "emphasis": "subtleScale",
+      "emphasisAt": 4.2,
+      "exit": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "subtleScale",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 4.2,
+    "exitAt": 8.1
+  }
+}

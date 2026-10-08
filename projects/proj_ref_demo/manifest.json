@@ -1,0 +1,85 @@
+{
+  "projectId": "proj_ref_demo",
+  "createdAt": "2026-10-06T10:51:48.917Z",
+  "updatedAt": "2026-10-06T15:06:27.678Z",
+  "status": "complete",
+  "title": "Fewer Excuses",
+  "scriptPreview": "You do not need more motivation. You need fewer excuses. The people who win are not smarter. They just keep showing up when it is boring. Stop measuring your week one against someone else year five. Small disciplines repeated in silence bui",
+  "hasAudio": true,
+  "sceneIds": [
+    "scene_01",
+    "scene_02",
+    "scene_03",
+    "scene_04",
+    "scene_05",
+    "scene_06"
+  ],
+  "stages": {
+    "analysis": {
+      "status": "done",
+      "startedAt": "2026-10-06T10:51:48.924Z",
+      "finishedAt": "2026-10-06T14:16:02.634Z"
+    },
+    "beats": {
+      "status": "done",
+      "startedAt": "2026-10-06T10:52:16.120Z",
+      "finishedAt": "2026-10-06T14:16:02.639Z"
+    },
+    "timing": {
+      "status": "done",
+      "startedAt": "2026-10-06T10:53:02.175Z",
+      "finishedAt": "2026-10-06T14:16:02.641Z"
+    },
+    "concepts": {
+      "status": "done",
+      "startedAt": "2026-10-06T10:53:04.306Z",
+      "finishedAt": "2026-10-06T14:16:02.647Z"
+    },
+    "sceneGeneration": {
+      "status": "done",
+      "startedAt": "2026-10-06T11:03:54.902Z",
+      "finishedAt": "2026-10-06T14:16:02.667Z"
+    },
+    "validation": {
+      "status": "done",
+      "finishedAt": "2026-10-06T14:16:02.669Z"
+    },
+    "novelty": {
+      "status": "done",
+      "startedAt": "2026-10-06T14:58:01.713Z",
+      "finishedAt": "2026-10-06T14:58:01.719Z"
+    },
+    "render": {
+      "status": "done",
+      "startedAt": "2026-10-06T14:58:01.721Z",
+      "finishedAt": "2026-10-06T14:58:45.886Z"
+    },
+    "conformance": {
+      "status": "done",
+      "startedAt": "2026-10-06T14:58:50.530Z",
+      "finishedAt": "2026-10-06T14:58:51.356Z"
+    },
+    "visionQa": {
+      "status": "done",
+      "startedAt": "2026-10-06T14:58:51.357Z",
+      "finishedAt": "2026-10-06T15:05:08.483Z"
+    },
+    "slop": {
+      "status": "failed",
+      "startedAt": "2026-10-06T15:05:08.484Z",
+      "finishedAt": "2026-10-06T15:06:27.663Z"
+    },
+    "repair": {
+      "status": "failed",
+      "startedAt": "2026-10-06T14:49:58.391Z",
+      "finishedAt": "2026-10-06T14:58:01.712Z",
+      "error": "StudioError: [repair] project=proj_ref_demo: LLM produced invalid structured output after 2 attempts: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"issue\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"rootCause\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"expected\": \"'minimal' | 'conceptReplacement'\",\n    \"received\": \"undefined\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"scope\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"array\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"changesMade\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"array\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"preserve\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"expectedEffect\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"object\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"scene\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"findings\"\n    ],\n    \"path\": [],\n    \"message\": \"Unrecognized key(s) in object: 'findings'\"\n  }\n]"
+    },
+    "final": {
+      "status": "done",
+      "finishedAt": "2026-10-06T15:06:27.677Z"
+    }
+  },
+  "audioDurationSec": 22.085941,
+  "timingSource": "phrase"
+}

@@ -1,0 +1,163 @@
+{
+  "beatId": "b4",
+  "spokenMeaning": "The post nearly goes out, then is erased again out of fear of judgment and gossip.",
+  "viewerTakeaway": "Your own hand un-sends the post: each finished line is pulled back into the caret until nothing is left to send.",
+  "visualMechanism": "textRetractsIntoCaret",
+  "visualNarrative": [
+    {
+      "order": 1,
+      "action": "Headline band top-left fades in: 'POSTING SESUATU… HAPUS LAGI.' with the quiet sub-line 'Takut ada yang ngejudge.'; beneath it a hollow draft card sits alone in the center band, one gold caret blinking at its first line.",
+      "meaning": "Sets the ritual before it happens: the intention to post exists, uncommitted.",
+      "visualEvidence": "Headline block locked to the 8% left/top margin, card centered below with clear band separation; no element crosses into another band."
+    },
+    {
+      "order": 2,
+      "action": "Four text lines type into the card one by one, the gold '99%' counter landing flush against the card's lower-right terminus as the card fill brightens.",
+      "meaning": "The post is essentially ready — near-complete content reads instantly as 'about to go out'.",
+      "visualEvidence": "Lines revealed by stagger draw; 99% optically sized to card height and welded to the bar terminus, never floating in a corner."
+    },
+    {
+      "order": 3,
+      "action": "A two-beat hold at 99%: only the caret blinks once, nothing else moves — hesitation visible as stillness.",
+      "meaning": "The fear arrives in the gap between finishing and sending.",
+      "visualEvidence": "Frame static except one soft blink of the gold caret; card and lines motionless."
+    },
+    {
+      "order": 4,
+      "action": "Each line retracts back into the caret from bottom to top — text un-typing itself — while the counter runs 99 → 54 → 12 → 0 and the card dims to a hollow outline.",
+      "meaning": "Regression: the act visibly un-sends itself — 'hapus lagi' shown as reverse typing, not repetition.",
+      "visualEvidence": "Line 4 pulls into the caret first, then 3, 2, 1; counter lands on 0%; card returns to dim outline."
+    },
+    {
+      "order": 5,
+      "action": "Two fear labels fade in stacked 24px apart in their own lower band: 'NGEJUDGE' over 'NGOMONGIN'; a hairline separates them from 'Nggak jadi terkirim.' in the bottom band.",
+      "meaning": "Names the two fears that caused the retraction without illustrating them literally.",
+      "visualEvidence": "Labels stacked with fixed 24px gap, closing line past a hairline in its own band — no text overlaps anywhere."
+    }
+  ],
+  "semanticObjects": [
+    {
+      "objectType": "TextBlock",
+      "semanticRole": "States the ritual as a flat, exhausted statement — the scene's thesis.",
+      "relationship": "Anchors the top band; the card's retraction illustrates its second word, 'HAPUS'.",
+      "importance": 5
+    },
+    {
+      "objectType": "Card",
+      "semanticRole": "The unpublished post itself: exists only while its lines remain.",
+      "relationship": "Brightens as lines fill in, hollows to outline as lines retract into the caret.",
+      "importance": 5
+    },
+    {
+      "objectType": "TextBlock",
+      "semanticRole": "The post's content: four lines that un-type themselves one by one.",
+      "relationship": "Their sequential retraction drives the counter down to 0%.",
+      "importance": 4
+    },
+    {
+      "objectType": "Label",
+      "semanticRole": "Numerical proof of how close the post came to going out before aborting.",
+      "relationship": "Sits flush at the card's terminus and reacts to each retracted line in real time.",
+      "importance": 4
+    },
+    {
+      "objectType": "Label",
+      "semanticRole": "Names the cause of the abort: judgment and gossip.",
+      "relationship": "Appears only after the card is hollow, stacked below it with a fixed gap.",
+      "importance": 3
+    },
+    {
+      "objectType": "Line",
+      "semanticRole": "A hairline baseline separating the fear labels from the closing line.",
+      "relationship": "Guarantees a clear bottom band so no text ever collides.",
+      "importance": 2
+    }
+  ],
+  "relationships": [
+    {
+      "from": "draftCard",
+      "to": "percentCounter",
+      "relationship": "each retracted line decrements the counter (99 → 0)"
+    },
+    {
+      "from": "draftCard",
+      "to": "fearLabels",
+      "relationship": "card going hollow triggers the two stacked fear labels"
+    },
+    {
+      "from": "fearLabels",
+      "to": "closingLine",
+      "relationship": "hairline landing clears the bottom band for the closing line"
+    }
+  ],
+  "typographyPlan": {
+    "headline": "POSTING SESUATU… HAPUS LAGI.",
+    "emphasisWords": [
+      "HAPUS",
+      "99%"
+    ],
+    "supportingText": [
+      "Takut ada yang ngejudge.",
+      "NGEJUDGE",
+      "NGOMONGIN",
+      "Nggak jadi terkirim."
+    ]
+  },
+  "subtitlePlan": {
+    "enabled": true,
+    "text": "Posting sesuatu… hapus lagi. Takut ada yang ngejudge. Takut ada yang ngomongin.",
+    "timing": "spans full beat while the lines type then retract",
+    "role": "spoken line"
+  },
+  "motionBeats": [
+    {
+      "order": 1,
+      "action": "Headline and sub-line fade in, then the hollow card outline reveals with its blinking caret.",
+      "purpose": "Establish the thesis before the mechanism runs."
+    },
+    {
+      "order": 2,
+      "action": "Card lines stagger-type in while the gold counter ticks up to 99%.",
+      "purpose": "Build expectation of a completed post so the retraction can break it."
+    },
+    {
+      "order": 3,
+      "action": "Hold with a single caret blink at 99%.",
+      "purpose": "Visualizes hesitation as stillness — the decision point."
+    },
+    {
+      "order": 4,
+      "action": "Lines retract into the caret bottom-to-top with counter change; card dims to outline.",
+      "purpose": "The regression itself: the post un-types its own progress."
+    },
+    {
+      "order": 5,
+      "action": "Two fear labels fade in stacked below, closing line settles beneath the hairline.",
+      "purpose": "Names the cause only after the effect, without any text collision."
+    },
+    {
+      "order": 6,
+      "action": "Frame settles, faint vignette tightens on the hollow card and lone caret.",
+      "purpose": "Ends the beat on absence, letting 'hapus lagi' land."
+    }
+  ],
+  "compositionIntent": "split bands: headline top-left at 8% margins, hollow draft card as the single dominant object in the center band with its counter welded to the terminus, fear labels stacked in a lower band with a fixed 24px gap, closing line past a hairline at the bottom. One text block plus one object, ~65% negative space, strictly banded so no cross-anchor overlap.",
+  "visualEvidence": [
+    "Gold 99% sits flush at the card terminus, optically matched to the card's height — never floating in a corner.",
+    "Lines un-type into the caret while the counter lands on 0% — the drain is visible as change.",
+    "Fear labels stack with a fixed 24px gap; the closing line sits in a clear band beneath a hairline.",
+    "Only one accent (gold) appears; card outline, caret rail, and hairline use secondary #B5B1A7."
+  ],
+  "forbiddenInterpretations": [
+    "No looping upload/retry animation — this is a one-way retraction, not a cycle.",
+    "No phone mockup, social-media UI, notification icons, or trash-can/delete button.",
+    "No teal plus gold together — gold is the only accent in this scene.",
+    "No crowd of judging faces, pointing arrows, or floating speech bubbles.",
+    "No leftTextRightObject repeat of scene_03, no stray vertical line across the counter, no countdown clock, glitch, or particle burst on the erasure."
+  ],
+  "noveltyIntent": "Instead of dissolving lines, the post un-types itself: each line is pulled back into a single gold caret while the counter welded to the card terminus drains to 0 — self-cancellation happens as reverse typing inside the content, not in a UI widget.",
+  "elementBudget": {
+    "min": 6,
+    "max": 8
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "sceneId": "scene_04",
+  "duration": 4.66,
+  "purpose": "Confronts the comparison trap: a full YEAR 5 bar looms over a barely-started WEEK 1 bar, then the gold reference frame is removed entirely.",
+  "visualConcept": "TWO COUNTERS, ONE FADES",
+  "composition": "leftTextRightObject",
+  "elements": [
+    {
+      "primitive": "WordReveal",
+      "text": "STOP MEASURING\nWEEK 1",
+      "accentWords": [
+        "WEEK 1"
+      ],
+      "align": "left",
+      "position": "left",
+      "offsetX": 0,
+      "offsetY": -24,
+      "accent": "gold",
+      "entrance": "stagger",
+      "delay": 0,
+      "exit": "fade"
+    },
+    {
+      "primitive": "ProgressBar",
+      "value": 1,
+      "label": "THEM · YEAR 5",
+      "showValue": false,
+      "position": "right",
+      "offsetX": 8,
+      "offsetY": 0,
+      "scale": 1,
+      "accent": "gold",
+      "size": "lg",
+      "entrance": "reveal",
+      "delay": 0.35,
+      "emphasis": "highlight",
+      "emphasisAt": 2.1,
+      "exit": "fade"
+    },
+    {
+      "primitive": "ProgressBar",
+      "value": 0.04,
+      "label": "YOU · WEEK 1",
+      "showValue": false,
+      "position": "right",
+      "offsetX": 8,
+      "offsetY": 14,
+      "accent": "none",
+      "size": "md",
+      "entrance": "reveal",
+      "delay": 0.7,
+      "emphasis": "counterChange",
+      "emphasisAt": 2.1,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Caption",
+      "text": "THEIR YEAR FIVE ISN'T YOUR STARTING LINE",
+      "align": "left",
+      "position": "bottom",
+      "offsetX": -8,
+      "accent": "none",
+      "entrance": "fade",
+      "delay": 1.05,
+      "exit": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "counterChange",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 2.1,
+    "exitAt": 3.2
+  }
+}

@@ -1,0 +1,16 @@
+status=fail overall=6.96 conf=1 conformance=8.7 slop=8
+scene_01: q=6.86 rel=7 clar=7 typo=7 comp=6 tech=fail
+scene_02: q=7.86 rel=8 clar=8 typo=8 comp=8 tech=pass
+scene_03: q=7.14 rel=7 clar=7 typo=8 comp=7 tech=pass
+scene_04: q=6.14 rel=6 clar=6 typo=7 comp=6 tech=pass
+scene_05: q=6.57 rel=7 clar=6 typo=7 comp=7 tech=fail
+scene_06: q=7.57 rel=8 clar=7 typo=8 comp=8 tech=pass
+scene_07: q=7.71 rel=8 clar=8 typo=8 comp=8 tech=pass
+scene_08: q=6.43 rel=8 clar=6 typo=5 comp=6 tech=fail
+reasons:
+  - overall quality 7.0 < 8
+  - slop severity 8 > 6
+  - scene_01: technical correctness fail
+  - scene_05: technical correctness fail
+  - scene_08: technical correctness fail
+  - scene_08: severe readability - Headline overlaps the gold ring GÇö 'DISUKAI' and 'SEMUA' cross the ring stroke on the right.

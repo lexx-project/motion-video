@@ -1,0 +1,28 @@
+{
+  "fontCategory": "grotesque",
+  "weight": "bold headlines, regular sublines",
+  "casing": "uppercase-preferred",
+  "sizeHierarchy": [
+    "tier1: headline ~8% of frame height",
+    "tier2: subline ~3% of frame height",
+    "tier3: micro-label ~1.5% of frame height"
+  ],
+  "alignment": "left-aligned block",
+  "tracking": "slightly wide tracking on uppercase labels",
+  "wordEmphasis": "color shift (pink/yellow) plus weight on key words",
+  "textDensity": "moderate",
+  "textAnimation": "sequential word-by-word reveal with quick fade-in, left to right",
+  "confidence": 0.65,
+  "evidence": [
+    "Headline 'KALAU KAMU BENERAN' in heavy uppercase, left-aligned",
+    "Second line 'NGGAK KUAT' highlighted in pink/red",
+    "Subline 'HARUSNYA...' builds word by word across frames",
+    "Yellow highlight on 'MINDAHIN JAM' in clock scene",
+    "Small centered labels 'MENIT', 'COBA' under clock"
+  ],
+  "lowConfidenceNotes": [
+    "Exact letterforms hard to judge at low resolution; could be condensed grotesque or geometric",
+    "Some frames contain no text, making animation read partially inferred",
+    "Micro-label text below frame is unreadable"
+  ]
+}

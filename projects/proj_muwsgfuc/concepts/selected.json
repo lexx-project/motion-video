@@ -1,0 +1,116 @@
+{
+  "selections": [
+    {
+      "beatId": "b1",
+      "selectedCandidateId": "c3",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 7,
+        "emotionalFit": 9,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The inverse-coupled gauges make the claim physical: every tick of approval that fills the top bar visibly drains the energy bar beneath it, so 'pleasing everyone is exhausting' is read as a mechanism, not a slogan. Opposite-direction ProgressBars are legible muted, use only registered primitives, and keep one dominant gold accent on the headline."
+    },
+    {
+      "beatId": "b2",
+      "selectedCandidateId": "c2",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 9,
+        "motionPotential": 9,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The card's trajectory reversing mid-arc physically enacts 'post, then delete' as one motion event, so the forward slide being cancelled by a returning pull and glow decay makes self-censorship legible without narration. It is a single-object beat with the strongest cold-viewer decode, distinct from prior memory entries in metaphor and composition."
+    },
+    {
+      "beatId": "b3",
+      "selectedCandidateId": "c3",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 8,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 9,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "Contradiction proof makes the futility logical: identical input stamped BAIK and SOMBONG at the same instant proves no action can satisfy the approval function. The split layout enacts the script's opposites pattern so a cold viewer reads the judgment as being about itself, not the subject."
+    },
+    {
+      "beatId": "b4",
+      "selectedCandidateId": "c4",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "One red stroke starting before the first checkpoint and running past the last without lifting enacts the semanticMechanism: judgment is the track itself, not a reaction, so a single unbroken mark over all four states performs 'no behavior escapes verdict' without narration."
+    },
+    {
+      "beatId": "b5",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 9,
+        "emotionalFit": 9,
+        "motionPotential": 8,
+        "technicalFeasibility": 8
+      },
+      "selectionRationale": "The slack-string state makes the beat's 'buat apa?' answer itself by physical subtraction: the pulling source is visibly gone, so the standing figure proves agency without narration. It enacts the question as a state change rather than naming it, using only registered primitives (Line/Circle/Stack/WordReveal) with a single gold accent on 'APA'."
+    },
+    {
+      "beatId": "b6",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 9,
+        "motionPotential": 9,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The dial's semanticMechanism — input noise stays constant on one side while the pointer's rotation visibly attenuates only what reaches 'your life' — physically performs 'seberapa besar pengaruh' as a magnitude a viewer has hand-tuned before, so control is felt as attenuation rather than asserted."
+    },
+    {
+      "beatId": "b7",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 7,
+        "emotionalFit": 9,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "One ring's glow fades fully out while the other holds and intensifies, enacting the separation of stakes instead of naming it. Two circles, one glow: instantly legible to a cold viewer and consistent with dualObject."
+    },
+    {
+      "beatId": "b8",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The seal's semanticMechanism — a stamp presses down once, hardens, and its unbroken ring closes to external editing — physically enacts the closing verdict 'not made for everyone' as finality rather than consolation. A cold viewer reads the landing stamp as 'decided, official' without narration, so the phrase becomes the inscription on an irreversible identity mark."
+    }
+  ]
+}

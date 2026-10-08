@@ -1,0 +1,102 @@
+{
+  "selections": [
+    {
+      "beatId": "b1",
+      "selectedCandidateId": "c5",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 8,
+        "novelty": 7,
+        "emotionalFit": 9,
+        "motionPotential": 9,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The unticked TODAY checkbox beside a self-checking timeline makes deferral instantly self-recognizable, with a clear stop-point motion beat and only four elements. It scores highest on script relevance, clarity, and emotional fit while remaining trivially feasible with registered primitives."
+    },
+    {
+      "beatId": "b2",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 9,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The struck-and-repeated TOMORROW makes the beat's own words the object of failure, reading instantly with only four elements and a clean draw-then-slide motion arc. It is the most literal, lowest-risk, high-impact expression of repetition without relying on generic loop symbolism."
+    },
+    {
+      "beatId": "b3",
+      "selectedCandidateId": "c5",
+      "scores": {
+        "scriptRelevance": 10,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 9,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The headline itself torn apart by a void makes the are/want-to-be gap the literal layout, so meaning survives without narration and stays perfectly on the typography-first, one-accent, negative-space system. It also reads instantly at small scale with low complexity and clean slide-apart plus single hairline-draw motion."
+    },
+    {
+      "beatId": "b4",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 8,
+        "novelty": 7,
+        "emotionalFit": 8,
+        "motionPotential": 9,
+        "technicalFeasibility": 8
+      },
+      "selectionRationale": "The self-assembling bridge reads instantly as 'built from tiny choices' without narration, and its left-to-right stagger with subtleScale landings maximizes motion potential within registered primitives. It beats the chain and timeline on clarity and relevance."
+    },
+    {
+      "beatId": "b5",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 9,
+        "motionPotential": 8,
+        "technicalFeasibility": 8
+      },
+      "selectionRationale": "The balance beam turns preference ordering into felt physics: the gold weight visibly overpowering the dim mass communicates 'most beats now' before the headline is read, with fully semantic gold usage. Its single settle motion is stronger and less generic than the typographic trick in c4, while staying simple and feasible with Line/Circle primitives."
+    },
+    {
+      "beatId": "b6",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The dormant grid broken by one lit cell makes both 'start today' and 'start small' readable in a single frame, with strong semantic accent use and clean hierarchy. It also offers a distinct composition and motion system (grid fade + single-cell counter-change) that stays well within the palette and element limits."
+    },
+    {
+      "beatId": "b7",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "c1 directly literalizes the beat's own dot-to-line metaphor with the most immediate read: a held point drawing into a stroke beneath an imperative headline. It stays within the 5-element cap, single-glow rule, and one-teal-accent discipline, and its low complexity makes the draw-and-stamp motion both striking and trivially feasible."
+    }
+  ]
+}

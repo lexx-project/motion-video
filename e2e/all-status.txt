@@ -1,0 +1,23 @@
+=== muwt0aze-resume.log lastWrite=10/06/2026 23:07:58 ===
+[16:06:01] novelty: novelty gate (pre-render)
+[16:06:01] rendering: rendering preview
+[16:07:49] qa: technical QA + frame extraction
+[16:07:49] qa: reference conformance
+[16:07:58] qa: vision QA (3 independent evaluators)
+=== muwsgfuc-resume.log lastWrite=10/06/2026 22:44:47 ===
+    at visionJsonCall (C:\Users\Administrator\Documents\project\motion-video\src\agents\qa.ts:131:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async visionQa (C:\Users\Administrator\Documents\project\motion-video\src\agents\qa.ts:245:22)
+    at async generateProject (C:\Users\Administrator\Documents\project\motion-video\src\agents\pipeline.ts:161:20)
+    at async main (C:\Users\Administrator\Documents\project\motion-video\src\cli\generate.ts:20:18)
+=== demo-run6.log lastWrite=10/06/2026 22:06:27 ===
+    ]
+  },
+  "previewFile": "C:\\Users\\Administrator\\Documents\\project\\motion-video\\projects\\proj_ref_demo\\renders\\preview.mp4",
+  "finalFile": "C:\\Users\\Administrator\\Documents\\project\\motion-video\\projects\\proj_ref_demo\\renders\\final.mp4"
+}
+now=10/06/2026 23:09:19
+alive:
+  pid=11220
+  pid=15816
+  pid=9444

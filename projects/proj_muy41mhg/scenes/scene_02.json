@@ -1,0 +1,86 @@
+{
+  "sceneId": "scene_02",
+  "duration": 9,
+  "purpose": "Cemas menampilkan: cermin tak pernah diam, cek penampilan berulang demi diterima semua orang.",
+  "visualConcept": "MIRROR RING NEVER SETTLES",
+  "composition": "centered",
+  "headline": {
+    "text": "NGOMONG DIJAGA, PAKAIAN DIPERIKSA",
+    "accentWords": [
+      "DIJAGA"
+    ],
+    "align": "center",
+    "position": "top"
+  },
+  "elements": [
+    {
+      "primitive": "Person",
+      "position": "center",
+      "scale": 1.1,
+      "accent": "none",
+      "role": "semantic",
+      "entrance": "scale",
+      "emphasis": "positionShift",
+      "emphasisAt": 4.05,
+      "delay": 0.3,
+      "opacity": 1,
+      "purpose": "Satu diri yang bergeser menyesuaikan diri dengan penilaian orang lain."
+    },
+    {
+      "primitive": "SpeechBubble",
+      "text": "GIMANA?",
+      "position": "center",
+      "offsetX": 18,
+      "offsetY": -6,
+      "scale": 0.9,
+      "accent": "gold",
+      "role": "semantic",
+      "entrance": "fade",
+      "emphasis": "highlight",
+      "emphasisAt": 4.05,
+      "delay": 1,
+      "opacity": 1,
+      "purpose": "Satu opini orang lain yang menuntut penampilan."
+    },
+    {
+      "primitive": "SpeechBubble",
+      "text": "COBA GANTI",
+      "position": "center",
+      "offsetX": -18,
+      "offsetY": -6,
+      "scale": 0.9,
+      "accent": "gold",
+      "role": "semantic",
+      "entrance": "fade",
+      "emphasis": "highlight",
+      "emphasisAt": 4.4,
+      "delay": 1.4,
+      "opacity": 1,
+      "purpose": "Opini kedua yang berlawanan, memaksa penyesuaian berulang."
+    },
+    {
+      "primitive": "Label",
+      "text": "BIAR SEMUA ORANG SUKA",
+      "position": "bottom",
+      "align": "center",
+      "accent": "gold",
+      "role": "semantic",
+      "entrance": "fade",
+      "emphasis": "highlight",
+      "emphasisAt": 5,
+      "delay": 2,
+      "opacity": 1,
+      "purpose": "Menyatakan motivasi beat: mendapatkan kesukaan semua orang."
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "positionShift",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 4.05,
+    "exitAt": 8
+  }
+}

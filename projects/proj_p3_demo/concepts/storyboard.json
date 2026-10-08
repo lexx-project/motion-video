@@ -1,0 +1,1029 @@
+{
+  "storyboards": [
+    {
+      "beatId": "b1",
+      "spokenMeaning": "Every time you bend your answer to make everyone happy, you get more tired — and the energy never comes back.",
+      "viewerTakeaway": "Three yeses tilt your answer line off its original heading, and the gold angle gap only widens — it never re-levels.",
+      "visualMechanism": "bearing drift: each YES tilts the answer line off its heading",
+      "visualNarrative": [
+        {
+          "order": 1,
+          "action": "Headline 'TRYING TO PLEASE EVERYONE TIRES YOU' reveals word-by-word on the left; on the right a gold hairline labelled ORIGINAL ANSWER fades in level, with a pivot dot at its left end.",
+          "meaning": "Names the cost, then fixes the heading you started from.",
+          "visualEvidence": "Left text block at 8% margins, gauge on the right 46%; gold hairline horizontal at 48% height, label secondary #B5B1A7 with 24px clearance."
+        },
+        {
+          "order": 2,
+          "action": "A white answer line draws out from the pivot, sitting just under and parallel to the hairline — your answer at its true heading.",
+          "meaning": "The unbent answer exists at full strength, so later drift is measurable.",
+          "visualEvidence": "Answer line 8px below the gold hairline, parallel, small neutral tick at its tip; no text overlaps anywhere."
+        },
+        {
+          "order": 3,
+          "action": "The first 'YES' badge lands at the line's tip; the line rotates down about 12° and holds there, the badge staying attached.",
+          "meaning": "First compliance is a deliberate turn away — paid, not bounced back.",
+          "visualEvidence": "Badge label in secondary #B5B1A7, one small gold arc opens between hairline and line, rigid line, no elastic overshoot."
+        },
+        {
+          "order": 4,
+          "action": "A second 'YES' badge joins at mid-line; the line rotates further down while the first angle and badge keep their exact positions.",
+          "meaning": "Repetition adds drift instead of returning it — fatigue accumulates.",
+          "visualEvidence": "Total tilt now visibly below the untouched hairline, both badges riding the same rigid line, single gold accent."
+        },
+        {
+          "order": 5,
+          "action": "The third 'YES' badge lands; the whole line sits far off heading while the gold hairline never moves.",
+          "meaning": "Quiet resentment: exhaustion reads as posture, not alarm.",
+          "visualEvidence": "Three equal secondary badges on one angled line, hairline fixed and clean, no warning color anywhere."
+        },
+        {
+          "order": 6,
+          "action": "A gold angle-arc measures hairline-to-line divergence, the word TIRES shifts gold, caption 'IT NEVER COMES BACK' fades top-right; frame settles.",
+          "meaning": "The residue is a permanent deficit — the heading does not reset on its own.",
+          "visualEvidence": "Static frame: one gold hairline, one gold arc, one gold headline word; caption in the top band, clear of subtitles."
+        }
+      ],
+      "semanticObjects": [
+        {
+          "objectType": "Headline",
+          "semanticRole": "States the claim so the tilted line reads as proof, not decoration.",
+          "relationship": "explains the drifting answer line to its right",
+          "importance": 4
+        },
+        {
+          "objectType": "Line (answer line)",
+          "semanticRole": "Your answer/stance; its angle carries the whole depletion story.",
+          "relationship": "pivots away from the gold hairline with each hung YES",
+          "importance": 5
+        },
+        {
+          "objectType": "Line (gold reference hairline)",
+          "semanticRole": "The original heading you never return to — makes fatigue countable without numbers.",
+          "relationship": "stays fixed and level above the tilted line for the whole beat",
+          "importance": 4
+        },
+        {
+          "objectType": "Badge('YES')",
+          "semanticRole": "Each act of pleasing, rendered as a turn that stays on the frame.",
+          "relationship": "lands on the answer line and forces a lasting rotation",
+          "importance": 5
+        },
+        {
+          "objectType": "Indicator (gold angle-arc)",
+          "semanticRole": "Measures the unrecovered divergence: what pleasing cost and kept.",
+          "relationship": "spans hairline to tilted line at the pivot side",
+          "importance": 4
+        },
+        {
+          "objectType": "Label('ORIGINAL ANSWER')",
+          "semanticRole": "Names the baseline so the metaphor stays literal, not abstract.",
+          "relationship": "tags the hairline's left end with clearance",
+          "importance": 3
+        },
+        {
+          "objectType": "Label('IT NEVER COMES BACK')",
+          "semanticRole": "Closing caption of residue: fatigue as a held state, not an alarm.",
+          "relationship": "sits top-right, annotating the arc away from subtitles",
+          "importance": 3
+        }
+      ],
+      "relationships": [
+        {
+          "from": "Badge('YES')",
+          "to": "Line (answer line)",
+          "relationship": "acts on: forces a permanent rotation where it lands"
+        },
+        {
+          "from": "Line (answer line)",
+          "to": "Line (gold reference hairline)",
+          "relationship": "turns away from: the angle opens and never closes"
+        },
+        {
+          "from": "Indicator (gold angle-arc)",
+          "to": "Line (gold reference hairline)",
+          "relationship": "measures: divergence between start heading and current tilt"
+        },
+        {
+          "from": "Headline",
+          "to": "Line (answer line)",
+          "relationship": "explains: text supplies the claim the rotation proves"
+        },
+        {
+          "from": "Label('IT NEVER COMES BACK')",
+          "to": "Indicator (gold angle-arc)",
+          "relationship": "annotates: names the residue the arc quantifies"
+        }
+      ],
+      "typographyPlan": {
+        "headline": "TRYING TO PLEASE EVERYONE TIRES YOU",
+        "emphasisWords": [
+          "TIRES"
+        ],
+        "supportingText": [
+          "ORIGINAL ANSWER",
+          "YES",
+          "IT NEVER COMES BACK"
+        ]
+      },
+      "subtitlePlan": {
+        "enabled": true,
+        "text": "Every time you try to make everyone happy, you get more tired.",
+        "timing": "spoken across the whole beat, 0.00s onward",
+        "role": "spoken line; bottom 18% band reserved for it, all content lives above"
+      },
+      "motionBeats": [
+        {
+          "order": 1,
+          "action": "Headline words reveal in a quick stagger; hairline, label and pivot fade in, 0.00-0.55s",
+          "purpose": "Claim and baseline together, so the line reads as evidence."
+        },
+        {
+          "order": 2,
+          "action": "Answer line draws outward from the pivot, level under the hairline, 0.45-1.05s",
+          "purpose": "Full straight heading exists before any loss."
+        },
+        {
+          "order": 3,
+          "action": "First YES badge lowers onto the tip; line rotates down and settles, 1.15-1.70s",
+          "purpose": "A discrete, deliberate act of compliance — stagger stays tight."
+        },
+        {
+          "order": 4,
+          "action": "Second YES badge joins; line rotates deeper while badge one holds, 1.95-2.50s",
+          "purpose": "Repetition establishes a countable pattern of drift."
+        },
+        {
+          "order": 5,
+          "action": "Third YES badge lands; whole line far off heading, 2.75-3.35s",
+          "purpose": "The full posture of exhaustion, no warning color."
+        },
+        {
+          "order": 6,
+          "action": "Gold angle-arc draws, TIRES shifts gold, caption fades top-right, 3.55-4.05s",
+          "purpose": "Names the residue as quiet, held fatigue."
+        },
+        {
+          "order": 7,
+          "action": "Frame holds static to 5.40s",
+          "purpose": "Lets the hairline-to-line angle sit in silence."
+        }
+      ],
+      "compositionIntent": "Left text, right object: headline block left-aligned at 8% margin in the top 60% of the left 44%, caption on that same band; pivot and gauge occupy the right 46% with the hairline at 48% height, leaving a blank line under the headline block. Bottom 18% reserved for subtitles; ~62% negative space; gold only on hairline, arc and the word TIRES, all YES labels secondary.",
+      "visualEvidence": [
+        "Answer line tilts ever further below the untouched gold ORIGINAL ANSWER hairline.",
+        "Each turn appears only when its YES badge lands — the line is rigid, so drift accumulates straight to angled.",
+        "Earlier badges keep their exact positions as later ones arrive; no cost is ever recovered.",
+        "Gold angle-arc quantifies the divergence near the pivot; no text collisions, caption in the top band.",
+        "One gold headline word, one gold hairline, one gold arc; three secondary YES badges; seven elements, single accent."
+      ],
+      "forbiddenInterpretations": [
+        "A person, figure, or slumped character — the line, badges and arc carry the fatigue.",
+        "A vessel, liquid level, battery, or percentage progress bar — that repeats the prior depletion device.",
+        "A sagging rope, spring, elastic bounce, or wobble — the line rotates rigidly and never springs back.",
+        "Gold YES labels or teal as a second accent; two accent words maximum in the frame.",
+        "Overlapping or struck-through text, caption inside the subtitle band, camera zoom, shake, or glow."
+      ],
+      "noveltyIntent": "Fatigue is measured as permanent angular drift of a rigid answer line: every YES stays physically on the frame as a badge that turns the line off its gold original heading, and the arc gap never re-levels — no vessel, bar, grid, loop, sagging rope, or bounce as in prior projects.",
+      "elementBudget": {
+        "min": 7,
+        "max": 9
+      }
+    },
+    {
+      "beatId": "b2",
+      "spokenMeaning": "You change your answer to match whoever asked — shape-shifting speech as self-betrayal.",
+      "viewerTakeaway": "My 'yes' bends into every asker's shape, so it stops being mine and stops meaning anything.",
+      "visualMechanism": "oneYesStampedThreeAlignedSlots",
+      "visualNarrative": [
+        {
+          "order": 1,
+          "action": "Headline slides in left; on the right a vertical rail draws down and three different-proportion slots snap onto it, evenly spaced, each labelled empty.",
+          "meaning": "Three contradictory asks sit waiting on one line, countable before anything moves.",
+          "visualEvidence": "One rail with three teal outline slots (wide, tall, thin) locked to the same axis, quick 0.2s stagger."
+        },
+        {
+          "order": 2,
+          "action": "The single solid YES slides right and stretches wide to lock edge-to-edge inside slot I.",
+          "meaning": "First asker: the answer takes their shape whole.",
+          "visualEvidence": "The YES text visibly widens to fill slot I; no second YES exists anywhere."
+        },
+        {
+          "order": 3,
+          "action": "YES lifts to slot II and squashes tall, letters condensed but readable; a dim YES ghost stays in slot I.",
+          "meaning": "Second asker, opposite demand — conformity repeats and starts keeping a record.",
+          "visualEvidence": "Slot I holds a faint stretched YES while the solid condensed YES sits in slot II."
+        },
+        {
+          "order": 4,
+          "action": "YES drops into slot III as a thin sliver and holds; slot II keeps its dim tall YES; frame eases to a hold.",
+          "meaning": "Self-betrayal made countable: one word, three readable versions, none of them yours.",
+          "visualEvidence": "Final rail: three readable YES forms — two dim ghosts, one solid and thinned — on one axis."
+        }
+      ],
+      "semanticObjects": [
+        {
+          "objectType": "Block",
+          "semanticRole": "The actor: your actual answer, the one thing that should hold a fixed form.",
+          "relationship": "moves and deforms along the rail into slot I, then II, then III",
+          "importance": 5
+        },
+        {
+          "objectType": "Outline",
+          "semanticRole": "Slot I — first asker's wide demand.",
+          "relationship": "receives the YES first, then keeps its stretched dim ghost",
+          "importance": 4
+        },
+        {
+          "objectType": "Outline",
+          "semanticRole": "Slot II — second, contradictory asker.",
+          "relationship": "receives the YES second, keeps the tall dim ghost after it departs",
+          "importance": 4
+        },
+        {
+          "objectType": "Outline",
+          "semanticRole": "Slot III — final asker, the most diminished version of the answer.",
+          "relationship": "captures the YES last and holds it as the solid final state",
+          "importance": 4
+        },
+        {
+          "objectType": "Line",
+          "semanticRole": "The single axis: proves all three asks belong to one continuous pressure, not floating options.",
+          "relationship": "threads through all three slots and never moves",
+          "importance": 3
+        },
+        {
+          "objectType": "Headline",
+          "semanticRole": "Names the behavior in the viewer's own words.",
+          "relationship": "frames the rail as its literal demonstration",
+          "importance": 3
+        }
+      ],
+      "relationships": [
+        {
+          "from": "Block (YES)",
+          "to": "Slot I (wide)",
+          "relationship": "conforms-into: the YES stretches until its edges lock with the slot interior"
+        },
+        {
+          "from": "Block (YES)",
+          "to": "Slot II (tall)",
+          "relationship": "re-conforms: same word re-forms to an opposite proportion, proving reflex"
+        },
+        {
+          "from": "Rail",
+          "to": "Slot I, II, III",
+          "relationship": "anchors-along: all three demands stay visibly one sequence, countable not scattered"
+        },
+        {
+          "from": "Slot I",
+          "to": "Block (YES)",
+          "relationship": "records: keeps a readable dim YES ghost after the block leaves, stacking evidence"
+        },
+        {
+          "from": "Headline word CHANGE",
+          "to": "Block (YES)",
+          "relationship": "names: gold word points at the very action the block performs"
+        }
+      ],
+      "typographyPlan": {
+        "headline": "YOU CHANGE YOUR ANSWER TO MATCH",
+        "emphasisWords": [
+          "CHANGE"
+        ],
+        "supportingText": []
+      },
+      "subtitlePlan": {
+        "enabled": true,
+        "text": "each time you bend your answer to match the asker, your 'yes' loses all value",
+        "timing": "mid-beat, spoken over the second reshape",
+        "role": "spoken line"
+      },
+      "motionBeats": [
+        {
+          "order": 1,
+          "action": "Headline slides from left; rail draws top-down, three slots snap in at 0.2s intervals, all placed by 1.1s.",
+          "purpose": "Establishes the countable, aligned set of demands before the answer moves."
+        },
+        {
+          "order": 2,
+          "action": "Solid YES scales from 0.9, slides and stretches horizontally into slot I with a brief contact highlight.",
+          "purpose": "Conformity as an active act — the answer moves, the demand does not."
+        },
+        {
+          "order": 3,
+          "action": "YES lifts to slot II with a short ease-out squash; a dim YES ghost fades into slot I.",
+          "purpose": "Proves reshaping is repeatable and starts the readable record."
+        },
+        {
+          "order": 4,
+          "action": "YES settles thinned into slot III, slot II's ghost fades in, frame holds the last half second.",
+          "purpose": "Leaves the rail of three readable YES forms sitting with the viewer."
+        }
+      ],
+      "compositionIntent": "leftTextRightObject on 8% margins: headline anchors the left third, static. Right half holds one vertical rail with three slots on a shared axis, even spacing, all content kept above the subtitle band (bottom 20% clear). 60% negative space, six elements, single accent family on the object, gold only on CHANGE.",
+      "visualEvidence": [
+        "Three differently-proportioned slots sit aligned on one rail with even spacing from step 1 onward.",
+        "One solid YES is seen re-forming into all three slots — never duplicated.",
+        "Ghosts are readable deformed YES words, not abstract shapes.",
+        "Only teal touches the slots; gold appears solely on the word CHANGE.",
+        "Final frame: three readable YES versions stacked on the rail, two dim, one solid."
+      ],
+      "forbiddenInterpretations": [
+        "Scattered or floating slots at uneven heights — all three must sit on one rail at even spacing.",
+        "A gold-outlined slot or gold YES — gold is reserved for the word CHANGE; three separate solid YES copies are also forbidden, only dim readable YES ghosts may remain.",
+        "Slots entering later than 1.4s apart or sliding in one at a time from the frame edge; no content inside the bottom subtitle band.",
+        "Crossed-out or red strike marks, masks, chameleon, faces or costume metaphors for shape-shifting.",
+        "Eyebrow rows, subheads, labels or captions beyond the six elements."
+      ],
+      "noveltyIntent": "Prior beats used struck lines, split type and static grids; here one rail carries the whole argument — the single word's travel down it, stamping readable ghosts of itself, makes conformity countable in a single glance.",
+      "elementBudget": {
+        "min": 6,
+        "max": 7
+      }
+    },
+    {
+      "beatId": "b4",
+      "spokenMeaning": "People with a fixed stance are the ones remembered — conviction earns recognition while constant self-editing dissolves you.",
+      "viewerTakeaway": "Every re-edit erases a version of your answer; the one answer never struck is the one resting on the line, and the one remembered.",
+      "visualMechanism": "struckDecayVsHeldAnchor",
+      "visualNarrative": [
+        {
+          "order": 1,
+          "action": "Headline staggers in upper-left on two lines — 'NEVER BEND,' over 'GET REMEMBERED' — with 'REMEMBERED' the single teal word; the block never leaves the top band.",
+          "meaning": "The claim is set as structure first, in a clean band no object will ever cross.",
+          "visualEvidence": "Lines at y≈14% and y≈26%, x=8%, each ≤60 chars, cream #F4F2ED; only 'REMEMBERED' in teal #7FD1BD; block ends above y=36%, no accent anywhere else in text."
+        },
+        {
+          "order": 2,
+          "action": "Four answer hairlines fade in stacked lower-right at x=52%–88%, y≈54/62/70/78%, then a baseline hairline draws left→right at y=80% beneath them.",
+          "meaning": "A record of your answers appears — four versions measured against one shared line.",
+          "visualEvidence": "Four secondary #B5B1A7 hairlines, 0.15s stagger, all delays under 1.0s; baseline y=80%, x=50%–90%, draws in 0.4s; nothing below y=36% except these objects."
+        },
+        {
+          "order": 3,
+          "action": "Strikes draw across the top three answer lines in quick succession, then those struck lines dim to 12% and dissolve out of frame.",
+          "meaning": "Each time you bend your answer to match the asker, that version is cancelled — compromise shown as visible decay.",
+          "visualEvidence": "Strikes on y≈54/62/70 lines in #B5B1A7 at 70%, 0.15s stagger, last strike starts by ~1.3s; struck lines fade toward zero; the y≈78% line stays untouched."
+        },
+        {
+          "order": 4,
+          "action": "The surviving line turns teal, thickens to ~8px and settles flush onto the baseline at y=80%, locking with zero sway; label 'HELD' fades in just above its right end.",
+          "meaning": "The answer you never keep editing is the only thing left standing on the line — conviction is what survives to be remembered.",
+          "visualEvidence": "Teal #7FD1BD line x=52%–80%, bottom edge exactly on baseline y=80%, 100% opacity, no glow; 'HELD' 34px w700 secondary #B5B1A7 at x≈76%, y≈72%, directly above the line's right end; all struck lines gone."
+        },
+        {
+          "order": 5,
+          "action": "The complete spoken caption resolves along the bottom safe margin — 'people who never change their mind are the ones others remember.' — and the frame holds to the cut.",
+          "meaning": "Claim, surviving object and spoken line land on one referent before the cut; envy settles into aspiration.",
+          "visualEvidence": "Caption full and unbroken at y≈88%–94%, x=8%, secondary #B5B1A7, clear of baseline, teal line and label; frame holds with 3 objects total: headline, teal line + baseline, label."
+        }
+      ],
+      "semanticObjects": [
+        {
+          "objectType": "Headline",
+          "semanticRole": "States the beat's claim as a two-line imperative with one accent word.",
+          "relationship": "Sits entirely in the top band, never overlapping the record stage below.",
+          "importance": 5
+        },
+        {
+          "objectType": "AnswerLine",
+          "semanticRole": "Four versions of your answer in a written record, stacked against one line.",
+          "relationship": "Stacked above the baseline; three are struck and dissolved, the fourth survives.",
+          "importance": 5
+        },
+        {
+          "objectType": "SolidMark",
+          "semanticRole": "The one answer never edited — the fixed direction that earns memory.",
+          "relationship": "Rests flush on the baseline as the only form whose edge touches it.",
+          "importance": 5
+        },
+        {
+          "objectType": "StrikeLine",
+          "semanticRole": "The act of self-editing itself — compromise rendered as decay.",
+          "relationship": "Crosses each AnswerLine in sequence, then leaves with the line it killed.",
+          "importance": 4
+        },
+        {
+          "objectType": "Baseline",
+          "semanticRole": "The shared measure every answer is judged against.",
+          "relationship": "Runs under the whole record; only the SolidMark touches it.",
+          "importance": 4
+        },
+        {
+          "objectType": "Label",
+          "semanticRole": "Names the survivor's quality in one word: HELD.",
+          "relationship": "Floats directly above the SolidMark's right end, secondary tone, no second accent.",
+          "importance": 3
+        },
+        {
+          "objectType": "Caption",
+          "semanticRole": "Carries the spoken line verbatim so audio and image land together.",
+          "relationship": "Overlays the bottom safe margin, below baseline, mark and label.",
+          "importance": 3
+        }
+      ],
+      "relationships": [
+        {
+          "from": "StrikeLine",
+          "to": "AnswerLine",
+          "relationship": "cancels: each strike visibly kills one version, so editing reads as erasure rather than refinement."
+        },
+        {
+          "from": "SolidMark",
+          "to": "Baseline",
+          "relationship": "rests-on: the teal line is the only form grounded on the shared line, making conviction literally stand on the measure."
+        },
+        {
+          "from": "AnswerLine",
+          "to": "SolidMark",
+          "relationship": "dissolves-away-against: struck versions fade to nothing while the unstruck line stays at full opacity and color."
+        },
+        {
+          "from": "Headline",
+          "to": "SolidMark",
+          "relationship": "claims: 'GET REMEMBERED' finds its only referent in the surviving teal line below it."
+        },
+        {
+          "from": "Label",
+          "to": "SolidMark",
+          "relationship": "names: 'HELD' sits above the mark's end, giving the survivor a word without a second accent."
+        }
+      ],
+      "typographyPlan": {
+        "headline": "NEVER BEND, / GET REMEMBERED",
+        "emphasisWords": [
+          "REMEMBERED"
+        ],
+        "supportingText": [
+          "HELD"
+        ]
+      },
+      "subtitlePlan": {
+        "enabled": true,
+        "text": "Meanwhile the people who never change their mind are the ones others remember.",
+        "timing": "12.74s–16.95s, spoken line across the beat",
+        "role": "spoken line"
+      },
+      "motionBeats": [
+        {
+          "order": 1,
+          "action": "Headline words stagger-reveal on two lines, teal landing last on 'REMEMBERED'.",
+          "purpose": "Builds the claim band first so the record below reads as its proof."
+        },
+        {
+          "order": 2,
+          "action": "Four answer hairlines stagger-fade in (0.15s apart), then the baseline draws left to right.",
+          "purpose": "Establishes record and shared measure before any editing happens to it."
+        },
+        {
+          "order": 3,
+          "action": "Strikes draw across three lines in quick succession; those lines dim and dissolve.",
+          "purpose": "Accumulation of edits is the mechanism — each crossing removes one version of you."
+        },
+        {
+          "order": 4,
+          "action": "The survivor thickens teal, settles flush onto the baseline and locks with zero sway; 'HELD' fades above it.",
+          "purpose": "Stillness is the payoff: it must arrive after the erasures so the contrast is felt."
+        },
+        {
+          "order": 5,
+          "action": "Full caption resolves along the bottom margin; frame holds to the cut.",
+          "purpose": "Ties claim, spoken line and surviving object to one referent."
+        }
+      ],
+      "compositionIntent": "Asymmetric top-left text / lower-right record. Headline x=8%–58%, y=12%–34%; record stage x=50%–90%, y=50%–82%: three struck lines at y≈54/62/70 dissolving, teal line flush on baseline y=80% (x=52%–80%), 'HELD' above its right end at y≈72%. Caption y=88%–94%. ~60% negative space, 8% side margins, teal the sole accent, zero headline/object overlap, 9 elements total.",
+      "visualEvidence": [
+        "Three struck answer hairlines visibly dissolve while one teal line sits flush on the drawn baseline — decay vs conviction readable before any text is read.",
+        "Baseline at y=80% x=50%–90% with only the teal line's bottom edge touching it; struck lines fade toward zero.",
+        "Headline band ends above y=36%, every record object starts below y=50% — no cross-anchor collision in frame.",
+        "Teal #7FD1BD appears only on 'REMEMBERED' and the surviving line; label and caption are secondary, no gold/orange/red.",
+        "Caption is the full sentence ending '...are the ones others remember.' — no orphan fragment; all staggers start under 1.4s."
+      ],
+      "forbiddenInterpretations": [
+        "Gold, orange or red in this beat — teal is the sole accent, on one word and the surviving line only.",
+        "Twin figures with a winner tag, avatar/crowd icons, applause marks, before/after diagrams, or the swaying-ghost/planted-bar solution.",
+        "Glow halo, spotlight, lens flare, particles, motion blur, glitch or flashy transitions.",
+        "Text-only frames: baseline, struck lines or teal line missing; headline glyphs crossing into the record stage.",
+        "A floating 'HELD' label without the teal line directly beneath it, a truncated caption fragment, or staggered delays past 1.4s."
+      ],
+      "noveltyIntent": "Four answer hairlines act as a written record: three strike themselves out in quick sequence, dim and dissolve, while the fourth thickens teal and plants flush on the shared baseline beneath 'HELD'. Memory is shown as whatever survives your own editing, and the single accent word 'REMEMBERED' points straight down at it.",
+      "elementBudget": {
+        "min": 8,
+        "max": 10
+      }
+    },
+    {
+      "beatId": "b3",
+      "spokenMeaning": "Repeating 'yes' for everyone drains its value until the word becomes noise with no meaning left.",
+      "viewerTakeaway": "Watch the one sincere YES get copied into a grid for everyone, lose its privilege, and join the crowd while its teal value line retracts to a stub.",
+      "visualMechanism": "singular word diluted into crowd grid",
+      "visualNarrative": [
+        {
+          "order": 1,
+          "action": "Headline 'YOUR YES STOPS MEANING ANYTHING' fades up left; one large crisp YES sits right with a full-width teal value line drawing beneath it; a dim row of audience dots waits along the bottom.",
+          "meaning": "The first yes serves one asker and carries full credibility.",
+          "visualEvidence": "Left headline + subtitle band, right oversized sharp YES, edge-to-edge teal line, faint audience dot row, ~65% empty dark space."
+        },
+        {
+          "order": 2,
+          "action": "Three smaller dim YES copies fan out beside the hero at 0.45s; the teal line retracts to two-thirds width in the same frame.",
+          "meaning": "Saying it again to more people already costs measurable value.",
+          "visualEvidence": "Hero YES still dominant but now flanked by 3 reduced, dimmer echoes; teal line visibly shorter the moment they land."
+        },
+        {
+          "order": 3,
+          "action": "Echoes multiply into a compact grid of identical dim YES marks at 0.75s; the teal line retracts to a short stub; the audience dots lift once in applause and settle.",
+          "meaning": "Quantity turns the answer into interchangeable texture for everyone asked.",
+          "visualEvidence": "Uniform grid of six equal YES cells, short teal stub beneath the hero position, one restrained pulse of the dot row."
+        },
+        {
+          "order": 4,
+          "action": "At 1.05s the hero YES scales down and slides into the one empty grid cell, matching the others in size and brightness; the stub holds.",
+          "meaning": "The singular answer joins the crowd — its privilege and identity erode.",
+          "visualEvidence": "No YES is larger than any other after the merge; grid complete; teal stub unchanged and diminished."
+        },
+        {
+          "order": 5,
+          "action": "Frame settles static with soft ease-out: uniform dim grid, teal stub, headline and subtitle still perfectly legible.",
+          "meaning": "Hollowness — the word survives, the value underneath it is gone; the emotional low point.",
+          "visualEvidence": "Equalized YES grid, short stub, one crisp headline, one subtitle line, heavy negative space."
+        }
+      ],
+      "semanticObjects": [
+        {
+          "objectType": "WordReveal:heroYES",
+          "semanticRole": "The one sincere answer — the baseline of value the rest of the beat measures against.",
+          "relationship": "anchors the full-width teal line, then merges into the echo grid",
+          "importance": 5
+        },
+        {
+          "objectType": "Grid:echoYES",
+          "semanticRole": "Everyone asked — identical copies that turn the answer into interchangeable texture.",
+          "relationship": "grows from three echoes into a full grid and receives the hero YES as its last cell",
+          "importance": 5
+        },
+        {
+          "objectType": "Line:credibilityMeter",
+          "semanticRole": "The value of the word: full-width teal when sincere, retracting to a stub as copies multiply.",
+          "relationship": "shortens with each multiplication and stops as a stub once the hero merges",
+          "importance": 5
+        },
+        {
+          "objectType": "Row:audienceDots",
+          "semanticRole": "The audience whose applause the bending was for — present, dim, unimpressed beyond one pulse.",
+          "relationship": "sits below the grid, lifts once at peak quantity, then settles back to dim",
+          "importance": 3
+        },
+        {
+          "objectType": "Headline",
+          "semanticRole": "The verdict stated once and fixed while the right side decays.",
+          "relationship": "holds the left column, clear of the right grid and bottom subtitle",
+          "importance": 3
+        },
+        {
+          "objectType": "Subtitle",
+          "semanticRole": "The spoken explanation of the decay as it performs itself.",
+          "relationship": "sits in the bottom-left band, never touching headline or grid",
+          "importance": 2
+        }
+      ],
+      "relationships": [
+        {
+          "from": "Grid:echoYES",
+          "to": "WordReveal:heroYES",
+          "relationship": "absorbs it — echoes multiply, then the hero scales down and slides into the last open cell"
+        },
+        {
+          "from": "Line:credibilityMeter",
+          "to": "Grid:echoYES",
+          "relationship": "measures then withdraws — shortens with each added copy and holds as a stub after the merge"
+        },
+        {
+          "from": "Row:audienceDots",
+          "to": "Grid:echoYES",
+          "relationship": "answers once — a single restrained applause pulse when the grid completes, then dim again"
+        }
+      ],
+      "typographyPlan": {
+        "headline": "YOUR YES STOPS MEANING ANYTHING",
+        "emphasisWords": [
+          "YES",
+          "ANYTHING"
+        ],
+        "supportingText": []
+      },
+      "subtitlePlan": {
+        "enabled": true,
+        "text": "each time you bend your answer to match the asker, your 'yes' loses all value",
+        "timing": "during the echo and grid entrances",
+        "role": "spoken line explaining the decay as it is performed"
+      },
+      "motionBeats": [
+        {
+          "order": 1,
+          "action": "Headline fade-up, hero YES fade-in plus left-to-right teal line draw (0–0.35s)",
+          "purpose": "Establish the sincere baseline and its full-value measure."
+        },
+        {
+          "order": 2,
+          "action": "Three echoes stagger in fast at 0.45s while the teal line retracts and dims simultaneously",
+          "purpose": "Repetition visibly costs value in the same frame it arrives."
+        },
+        {
+          "order": 3,
+          "action": "Grid cells stagger open at 0.75s, line retracts to stub, audience row gives one soft pulse",
+          "purpose": "Quantity crowds meaning out; the applause is present but unimpressed."
+        },
+        {
+          "order": 4,
+          "action": "Hero YES subtleScale-down plus positionShift into the empty cell at 1.05s",
+          "purpose": "The privileged answer loses its distinction and joins the crowd."
+        },
+        {
+          "order": 5,
+          "action": "Block settles static with soft ease-out by 1.3s over the stub",
+          "purpose": "Final hollowness beat — the measure quits, leaving answers with no value."
+        }
+      ],
+      "compositionIntent": "leftTextRightObject: headline top-left with subtitle in the bottom-left band; hero YES and its echo grid fill the right column over one teal value line; audience dots run along the bottom-right baseline. No caption label anywhere. ~65% empty dark; only the right column is lit action.",
+      "visualEvidence": [
+        "One large YES shrinks into a uniform grid of identical dim copies — privilege lost by quantity alone.",
+        "Teal value line measurably shortens with each multiplication and ends as a short stub.",
+        "Audience dot row gives exactly one restrained applause pulse, then stays dim."
+      ],
+      "forbiddenInterpretations": [
+        "No side caption such as 'THREE ANSWERS. ONE VOICE.' — any extra label collides with the headline anchor.",
+        "No blur or semantic-satiation dissolve — that decay path was used in the previous version.",
+        "No strike-throughs, crossed-out words, droplets, cracks or particles; decay stays geometric and typographic.",
+        "No glowing or red-warning treatment; teal is the only accent, no second accent word.",
+        "No evenly spaced YES copies before the grid forms — echoes must visibly shrink and dim toward equality, max nine instances."
+      ],
+      "noveltyIntent": "Value dies by equalization, not by blur: the one sincere YES is copied for everyone, the copies mass into a grid, the teal meter retracts to a stub, and the hero itself scales down and merges into the last cell — the answer survives only as one indistinguishable cell among many.",
+      "elementBudget": {
+        "min": 6,
+        "max": 7
+      }
+    },
+    {
+      "beatId": "b5",
+      "spokenMeaning": "You keep reshaping your answers for an audience that gives nothing back, so the performance is pointless and you should stop.",
+      "viewerTakeaway": "Every self-edit cuts you down to a stub at the crowd's gates — drop the gates, hold one full-length direction, and it is what gets remembered.",
+      "visualMechanism": "apertureGatesClipLineBypass",
+      "visualNarrative": [
+        {
+          "order": 1,
+          "action": "Headline reveals line-by-line upper-left; below it a taut line draws from the left margin tagged 'YOUR MIND', with one aperture gate labeled 'EVERYONE' waiting ahead.",
+          "meaning": "The answer starts whole and comes from the self; the crowd is staged as a gate your line must pass through.",
+          "visualEvidence": "Headline at 8% left margin, upper-left third; one horizontal line in the lower corridor with origin tick and 34px tag 'YOUR MIND'; one hairline aperture gate; ~55% empty dark field."
+        },
+        {
+          "order": 2,
+          "action": "The line slides through gate 1 and emerges shorter, a dim fragment dropping off its tail; gate 2 'PEOPLE' fades in ahead and clips a second fragment the same way.",
+          "meaning": "Matching the asker is subtraction: each accommodation removes part of the answer rather than refining it.",
+          "visualEvidence": "Line loses ~25% length per pass; two grey fragments scale to zero and dissolve; gates reveal with staggered fade; no glow, no counters."
+        },
+        {
+          "order": 3,
+          "action": "At gate 3 'APPLAUSE' only a short stub emerges; it dims toward black and sags off-axis while the label stamps: 'EVERYONE FED — NOTHING LEFT', gold on 'NOTHING'.",
+          "meaning": "Disillusionment clears into fatigue: the crowd is fed and what remains of you no longer means anything.",
+          "visualEvidence": "Stub at ~15% length, luminance ~30%; 34px uppercase label under the track above the subtitle band; gold only on 'NOTHING'."
+        },
+        {
+          "order": 4,
+          "action": "The gates hold empty a beat, then a fresh full-length stroke draws at constant height from the left margin, ignoring every aperture and passing through the row uncut.",
+          "meaning": "The imperative made visible: stop entering their gates — one unedited direction held at full length.",
+          "visualEvidence": "Straight gold-tinted line crossing the whole gate row; gates dim to hairline; fragments gone; empty bands above and below."
+        },
+        {
+          "order": 5,
+          "action": "The stroke exits frame right; hold on dimmed gates with the line 'HOLD ONE DIRECTION — THIS IS WHAT GETS REMEMBERED', gold on 'REMEMBERED'.",
+          "meaning": "Resolve: what you refuse to cut for them is the only version anyone retains.",
+          "visualEvidence": "Gates and stub at low luminance; one 34px uppercase label; large negative space preserved."
+        }
+      ],
+      "semanticObjects": [
+        {
+          "objectType": "Headline",
+          "semanticRole": "States the defiant imperative the frame must prove.",
+          "relationship": "asserted against the GateRow; the clipped line is its evidence",
+          "importance": 5
+        },
+        {
+          "objectType": "AnswerLine",
+          "semanticRole": "Your answer leaving the mind — whole at origin, cut shorter by every gate it passes through.",
+          "relationship": "draws from the left margin, clips at each gate, ends as a dim stub",
+          "importance": 5
+        },
+        {
+          "objectType": "GateRow",
+          "semanticRole": "The audience as three apertures — EVERYONE, PEOPLE, APPLAUSE — that only let a shaped version through.",
+          "relationship": "receives AnswerLine and subtracts length; dimmed by BypassLine",
+          "importance": 5
+        },
+        {
+          "objectType": "CutFragment",
+          "semanticRole": "The discarded versions of yourself — edits no one sees or thanks you for.",
+          "relationship": "breaks off AnswerLine at each gate, scales down and dissolves",
+          "importance": 4
+        },
+        {
+          "objectType": "BypassLine",
+          "semanticRole": "The held direction: one full-length unedited stroke that never enters the gates.",
+          "relationship": "crosses GateRow uncut and exits frame right",
+          "importance": 5
+        },
+        {
+          "objectType": "Label",
+          "semanticRole": "Names the outcome so the zero reads as unpaid, not broken.",
+          "relationship": "anchored beneath the gate track; gold on a single word",
+          "importance": 3
+        }
+      ],
+      "relationships": [
+        {
+          "from": "AnswerLine",
+          "to": "GateRow",
+          "relationship": "passes each aperture and loses length — the gates do not stop it, they consume it"
+        },
+        {
+          "from": "CutFragment",
+          "to": "AnswerLine",
+          "relationship": "breaks away from the tail, proving the edit is subtraction not improvement"
+        },
+        {
+          "from": "GateRow",
+          "to": "Label",
+          "relationship": "anchors the label, giving the emptied track the meaning 'NOTHING LEFT'"
+        },
+        {
+          "from": "Headline",
+          "to": "AnswerLine",
+          "relationship": "top-text/bottom-object: headline asserts the imperative, the line enacts the cutting it forbids"
+        },
+        {
+          "from": "BypassLine",
+          "to": "GateRow",
+          "relationship": "ignores the apertures entirely and crosses uncut, ending performance-for-the-audience"
+        }
+      ],
+      "typographyPlan": {
+        "headline": "STOP EDITING FOR AN AUDIENCE THAT WON'T APPLAUSE",
+        "emphasisWords": [
+          "STOP EDITING"
+        ],
+        "supportingText": [
+          "EVERYONE FED — NOTHING LEFT",
+          "HOLD ONE DIRECTION — THIS IS WHAT GETS REMEMBERED"
+        ]
+      },
+      "subtitlePlan": {
+        "enabled": true,
+        "text": "stop reshaping yourself for an audience that won't applaud anyway",
+        "timing": "opens the beat (16.95s–18.6s), over headline reveal",
+        "role": "spoken line"
+      },
+      "motionBeats": [
+        {
+          "order": 1,
+          "action": "Headline lines reveal top-to-bottom with ease-out stagger while the gate row fades in",
+          "purpose": "Stages the verdict first, then the obstacle it indicts"
+        },
+        {
+          "order": 2,
+          "action": "AnswerLine slides through each gate via masked path reveal; fragments scale down and dissolve",
+          "purpose": "Motion equals effort — every pass visibly costs length"
+        },
+        {
+          "order": 3,
+          "action": "Stub dims and sags as the label stamps in with a short position shift",
+          "purpose": "Turns fatigue and lost meaning into an observable state change"
+        },
+        {
+          "order": 4,
+          "action": "Gates hold unlit a beat, then BypassLine draws straight through and exits frame right",
+          "purpose": "Resolve reads as refusal of the gates, not attack on them"
+        },
+        {
+          "order": 5,
+          "action": "Frame holds on dimmed gates as the resolve label reveals word-by-word",
+          "purpose": "Freezes the held-direction image so it can be remembered"
+        }
+      ],
+      "compositionIntent": "Top-text-bottom-object: headline occupies the upper-left third at 8% margin; the lower mid corridor holds the horizontal gate track with origin tag and stamp label, clear of the subtitle band. Travel stays in one corridor, leaving ~55% negative space and open right and bottom bands.",
+      "visualEvidence": [
+        "One line loses visible length at each of three labeled gates, shedding dissolving fragments",
+        "Stub drops to near-dark with label 'EVERYONE FED — NOTHING LEFT', gold only on 'NOTHING'",
+        "Straight gold-tinted stroke crosses the whole gate row uncut and exits frame right",
+        "Gates end as dimmed hairlines — no fills, glows, counters or readouts",
+        "Subtitle band stays empty throughout"
+      ],
+      "forbiddenInterpretations": [
+        "a crowd, clapping hands, cheering figures or applause sound-waves",
+        "counters, tallies, gauges or percentage readouts of approval",
+        "scissors, blades, shredded paper or literal cutting tools",
+        "dashboard cards, UI chrome, seat rows or grid-filled bottom band",
+        "camera shake, glitch or gratuitous zoom on the final stroke"
+      ],
+      "noveltyIntent": "Instead of lines dying at a circle's rim, the audience becomes a row of labeled apertures: your answer passes through and is physically shortened at each gate, so self-editing reads as loss. The resolve line neither bends nor dodges — it refuses the gates and crosses uncut, making 'hold one direction' a measurable property: full length preserved.",
+      "elementBudget": {
+        "min": 6,
+        "max": 9
+      }
+    },
+    {
+      "beatId": "b6",
+      "spokenMeaning": "Commit to one direction and hold it despite pressure from every side.",
+      "viewerTakeaway": "The audience keeps rotating its asks and its applause; your bearing never rotates with it.",
+      "visualMechanism": "rotating-ask-dial-vs-fixed-needle",
+      "visualNarrative": [
+        {
+          "order": 1,
+          "action": "Headline 'PICK ONE / AND HOLD IT' staggers in on the right half from a 14px right offset, lines 0.25s apart, 'HOLD' the only gold word.",
+          "meaning": "The imperative is stated once, before the crowd noise begins.",
+          "visualEvidence": "Left-aligned 96px uppercase block confined to the right half, one accent word, clear of the left object field."
+        },
+        {
+          "order": 2,
+          "action": "In the left field a faint dial ring draws itself around a center point, its rim studded with small dim tick-arrows all pointing different ways.",
+          "meaning": "Everyone's asks: many directions offered, none of them yours.",
+          "visualEvidence": "One muted circular ring at x=30%, several small dim arrowheads on its rim, no gold anywhere yet."
+        },
+        {
+          "order": 3,
+          "action": "The ring begins to rotate; as each tick-arrow passes the top, a short label flickers ('MATCH', 'CHANGE', 'PLEASE') and the rim arrows pulse like applause marks.",
+          "meaning": "The audience keeps re-asking and applauding for a reshaped answer.",
+          "visualEvidence": "Rotating ring with dim arc-pulses on the rim, three muted 34px labels swapping in sequence, all secondary grey."
+        },
+        {
+          "order": 4,
+          "action": "A single gold bearing needle snaps outward from the center on one fixed heading, locking there while the ring keeps turning behind it.",
+          "meaning": "You choose one direction — and it does not turn with the room.",
+          "visualEvidence": "One straight gold needle from dial center to a fixed bearing, ring visibly mid-rotation behind it, gold restricted to needle and one heading tick."
+        },
+        {
+          "order": 5,
+          "action": "The ring accelerates a full turn, arrows and applause pulses sweep past the needle; the needle never deflects by a frame, and the label 'ONE BEARING' fades in at its tip.",
+          "meaning": "Confirmation: pressure is cyclical, the stance is not — everyone keeps clapping, you keep your heading.",
+          "visualEvidence": "Needle pixel-identical through the sweep, one 34px muted label at the needle tip, no second accent color."
+        },
+        {
+          "order": 6,
+          "action": "Ring, arrows and applause pulses dissolve; a soft restrained glow settles along the needle, the caption fades in bottom-right, and the frame holds perfectly static.",
+          "meaning": "Resolve: once the noise is gone, only your direction remains in the frame.",
+          "visualEvidence": "Single gold needle on an empty dark field, one complete caption on its own baseline, absolute stillness."
+        }
+      ],
+      "semanticObjects": [
+        {
+          "objectType": "Line",
+          "semanticRole": "The chosen direction — one fixed bearing that never rotates with the room.",
+          "relationship": "runs from the dial center outward on a fixed heading, defines the whole frame's axis",
+          "importance": 5
+        },
+        {
+          "objectType": "Circle",
+          "semanticRole": "The rotating ring of everyone's asks and applause — cyclical, never satisfied.",
+          "relationship": "surrounds the Line's pivot in the left field, turns behind the needle",
+          "importance": 5
+        },
+        {
+          "objectType": "Arrow",
+          "semanticRole": "A single asker's demand to reshape your answer, one of many on the rim.",
+          "relationship": "sits on the Circle's rim, sweeps past the Line and fails to move it",
+          "importance": 4
+        },
+        {
+          "objectType": "Arrow",
+          "semanticRole": "A second ask from a different angle, proving the crowd's pressure is all directions at once.",
+          "relationship": "also rim-mounted, follows the same rotation as the first",
+          "importance": 3
+        },
+        {
+          "objectType": "Label",
+          "semanticRole": "Names the proof point: one bearing held through the whole sweep.",
+          "relationship": "sits at the needle tip in the left field, muted except its proximity to the gold line",
+          "importance": 2
+        },
+        {
+          "objectType": "Headline",
+          "semanticRole": "States the imperative the mechanism then proves.",
+          "relationship": "right-half text block, upper-right third, holds clear of the dial",
+          "importance": 4
+        },
+        {
+          "objectType": "Subheadline",
+          "semanticRole": "Names the rule only after the full sweep completes.",
+          "relationship": "directly under the Headline, no overprint or duplicate ghosting",
+          "importance": 3
+        },
+        {
+          "objectType": "Caption",
+          "semanticRole": "Carries the single complete spoken call to action.",
+          "relationship": "one clean bottom-right baseline, never overlapping other text",
+          "importance": 2
+        },
+        {
+          "objectType": "Line",
+          "semanticRole": "Applause pulses on the rim — the audience's approval, loud but directionless.",
+          "relationship": "short arcs riding the Circle's rim, dissolve before the final frame",
+          "importance": 3
+        }
+      ],
+      "relationships": [
+        {
+          "from": "Line",
+          "to": "Circle",
+          "relationship": "holds one heading while the ring of asks rotates around its pivot — direction is fixed, the room is not"
+        },
+        {
+          "from": "Arrow",
+          "to": "Circle",
+          "relationship": "rim-mounted demand that sweeps past the Line instead of deflecting it"
+        },
+        {
+          "from": "Arrow(second)",
+          "to": "Arrow",
+          "relationship": "same rim, different angle — everyone's ask arrives from all sides in sequence"
+        },
+        {
+          "from": "Line(applause arcs)",
+          "to": "Circle",
+          "relationship": "audience approval rides the rotating rim, loud and directionless"
+        },
+        {
+          "from": "Subheadline",
+          "to": "Headline",
+          "relationship": "names the rule stated by the headline, deferred until after the full sweep"
+        }
+      ],
+      "typographyPlan": {
+        "headline": "PICK ONE AND HOLD IT",
+        "emphasisWords": [
+          "HOLD"
+        ],
+        "supportingText": [
+          "ONE BEARING",
+          "choose one direction and stay with it."
+        ]
+      },
+      "subtitlePlan": {
+        "enabled": true,
+        "text": "choose one direction and stay with it.",
+        "timing": "final third, as the rim noise dissolves",
+        "role": "spoken line, one complete sentence, bottom-right, no overprint or truncation"
+      },
+      "motionBeats": [
+        {
+          "order": 1,
+          "action": "Headline lines stagger in from a 14px right offset with fade, 0.25s apart.",
+          "purpose": "States the imperative fast so the dial event keeps visual priority."
+        },
+        {
+          "order": 2,
+          "action": "Ring draws via a masked circular reveal; rim tick-arrows stagger on one by one.",
+          "purpose": "Builds the field of competing asks before any of them move."
+        },
+        {
+          "order": 3,
+          "action": "Ring rotates with measured ease-in-out; labels and applause arcs highlight in sequence at the top position.",
+          "purpose": "Shows the audience actively re-asking and clapping for a reshaped answer."
+        },
+        {
+          "order": 4,
+          "action": "Needle scales from 0.2 to full length with a crisp ease-out and holds absolutely still through the continuing rotation.",
+          "purpose": "Makes commitment visible as a locked heading amid moving noise."
+        },
+        {
+          "order": 5,
+          "action": "Ring completes an accelerated sweep, then rim arrows and pulses dissolve; 'ONE BEARING' label fades in.",
+          "purpose": "Confirms the stance is direction-independent of the pressure."
+        },
+        {
+          "order": 6,
+          "action": "Restrained glow settles along the needle, caption fades in, everything holds static.",
+          "purpose": "Settles the beat into resolve — emphasis without a new event."
+        }
+      ],
+      "compositionIntent": "Right text-left object: headline, subheadline and caption form one left-aligned block on the right half; the dial ring anchors x=30% in the left field with the gold needle pointing left-down on a fixed heading. Roughly 65% empty dark field; the rotating rim never crosses into the text zone. Gold appears only on the needle, its heading tick and the word HOLD.",
+      "visualEvidence": [
+        "One gold bearing needle held pixel-still while the rim of asks completes a full rotation behind it.",
+        "Rim tick-arrows and applause pulses sweeping past without deflecting the needle by a frame.",
+        "A muted label at the needle tip naming the proof, appearing only after the sweep finishes.",
+        "One complete caption sentence with no truncation, overprint, or text collision.",
+        "A single accent color (gold) against muted secondary ring, arrows and text."
+      ],
+      "forbiddenInterpretations": [
+        "A detached glow dot, floating axis fragment or stray marker with no structural role.",
+        "Duplicate or ghosted text bleeding behind the subheadline or label.",
+        "Pressure arrows crossing over the text block or pinning the needle off-heading in the final frame.",
+        "A second accent color anywhere, truncated caption fragments, or red warning treatment.",
+        "Generic force diagrams with grids, numeric readouts, or gratuitous glow bloom."
+      ],
+      "noveltyIntent": "Unlike the earlier plumb-rebound, the payoff here is non-motion: a dial of everyone's asks and applause rotates a full circle while one gold needle simply refuses to turn — commitment proven as held heading amid cyclical noise, not as swing-and-return.",
+      "elementBudget": {
+        "min": 9,
+        "max": 9
+      }
+    }
+  ]
+}

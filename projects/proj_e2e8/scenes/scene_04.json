@@ -1,0 +1,82 @@
+{
+  "sceneId": "scene_04",
+  "duration": 2.8,
+  "purpose": "Shows the gap as constructed: a bridge span lays itself plank by plank over a dark void, proving the divide is built from accumulated micro-decisions.",
+  "visualConcept": "TILE BRIDGE ASSEMBLING",
+  "composition": "topTextBottomObject",
+  "headline": {
+    "text": "BUILT FROM\nTINY CHOICES",
+    "accentWords": [
+      "TINY",
+      "CHOICES"
+    ],
+    "align": "center"
+  },
+  "elements": [
+    {
+      "primitive": "Line",
+      "orientation": "horizontal",
+      "lengthPct": 34,
+      "thicknessPx": 18,
+      "position": "bottom",
+      "offsetX": -34,
+      "offsetY": -24,
+      "accent": "none",
+      "delay": 0,
+      "entrance": "draw",
+      "emphasis": "subtleScale",
+      "emphasisAt": 1.6
+    },
+    {
+      "primitive": "Line",
+      "orientation": "horizontal",
+      "lengthPct": 34,
+      "thicknessPx": 18,
+      "position": "bottom",
+      "offsetX": 0,
+      "offsetY": -24,
+      "accent": "none",
+      "delay": 0.35,
+      "entrance": "draw",
+      "emphasis": "subtleScale",
+      "emphasisAt": 1.6
+    },
+    {
+      "primitive": "Line",
+      "orientation": "horizontal",
+      "lengthPct": 34,
+      "thicknessPx": 18,
+      "position": "bottom",
+      "offsetX": 34,
+      "offsetY": -24,
+      "accent": "none",
+      "delay": 0.7,
+      "entrance": "draw",
+      "emphasis": "subtleScale",
+      "emphasisAt": 1.6
+    },
+    {
+      "primitive": "Indicator",
+      "variant": "pulse",
+      "label": "ONE PLANK AT A TIME",
+      "position": "bottom",
+      "offsetX": 6,
+      "offsetY": -34,
+      "accent": "gold",
+      "delay": 1.05,
+      "entrance": "fade",
+      "emphasis": "highlight",
+      "emphasisAt": 1.6
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "subtleScale",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.6,
+    "exitAt": 2.45
+  }
+}

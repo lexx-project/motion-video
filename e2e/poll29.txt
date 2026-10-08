@@ -1,0 +1,11 @@
+STATUS=complete
+logLast=10/06/2026 16:31:20
+now=10/06/2026 16:38:09
+finalWrite=10/06/2026 16:10:30
+ERR=
+      "scene_07: severe relevance/clarity issue"
+    ]
+  },
+  "previewFile": "C:\\Users\\Administrator\\Documents\\project\\motion-video\\projects\\proj_e2e8\\renders\\preview.mp4",
+  "finalFile": "C:\\Users\\Administrator\\Documents\\project\\motion-video\\projects\\proj_e2e8\\renders\\final.mp4"
+}

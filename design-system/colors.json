@@ -1,0 +1,67 @@
+{
+  "$comment": "V2 - reference-derived palette. PROVENANCE: reference/analysis (pixel sampling of 30 frames + MiMo color analyst, confidence per token in 'provenance'). SPEC: MASTER_SPEC 2.2.",
+  "background": {
+    "base": "#0B1313",
+    "deep": "#070D0D",
+    "elevated": "#141E1D",
+    "hairline": "#1F2C2A",
+    "warmVariant": "#17110B"
+  },
+  "text": {
+    "primary": "#F4F2ED",
+    "secondary": "#B5B1A7",
+    "muted": "#7A776F"
+  },
+  "accents": {
+    "teal": {
+      "value": "#7FD1BD",
+      "dim": "#3E7A6E",
+      "glow": "rgba(127, 209, 189, 0.26)",
+      "semantic": "positive/cool emphasis, brand-neutral affirmation, progress"
+    },
+    "gold": {
+      "value": "#F5C54D",
+      "dim": "#8A7430",
+      "glow": "rgba(245, 197, 77, 0.26)",
+      "semantic": "important semantic emphasis, key words, value, time"
+    },
+    "orange": {
+      "value": "#E07A3F",
+      "dim": "#7E4322",
+      "glow": "rgba(224, 122, 63, 0.24)",
+      "semantic": "selected environmental warmth (rare - brown-graded reference variant); use sparingly"
+    },
+    "red": {
+      "value": "#E8475F",
+      "dim": "#7E2634",
+      "glow": "rgba(232, 71, 95, 0.26)",
+      "semantic": "warning, contradiction, defeat phrases ONLY"
+    }
+  },
+  "rules": {
+    "maxAccentWordsPerHeadline": 2,
+    "oneDominantAccentPerScene": true,
+    "accentUsage": "semantic, never decorative",
+    "backgroundGlowMustBeSubordinate": true,
+    "maxGlowsPerScene": 1,
+    "noRainbowPalettes": true,
+    "primaryTextContrastMin": 7,
+    "accentTextContrastMin": 3,
+    "backgroundHasRadialVignette": true
+  },
+  "provenance": {
+    "background.base": { "source": "reference pixel sampling (#0a1212 x10, #0b1212 x5 of 30 frames) + vision estimate #0b1313", "confidence": 0.9 },
+    "background.deep": { "source": "derived: darker companion of base for vignette edge", "confidence": 0.7 },
+    "background.elevated": { "source": "derived: elevated surface one step above base, same teal cast", "confidence": 0.65 },
+    "background.hairline": { "source": "derived: stroke color above elevated", "confidence": 0.6 },
+    "background.warmVariant": { "source": "reference frames with warm brown grade (unclear if palette or grade)", "confidence": 0.5 },
+    "text.primary": { "source": "vision estimate #f4f2ed; pixel samples (#b5b1a7..#cbbeb2) are downscaled/diluted", "confidence": 0.85 },
+    "text.secondary": { "source": "pixel samples of subtitle glyphs + vision estimate", "confidence": 0.7 },
+    "text.muted": { "source": "derived between secondary and background", "confidence": 0.5 },
+    "accents.teal.value": { "source": "vision: mint brand accent (#7fd1bd) on avatars/logo", "confidence": 0.75 },
+    "accents.gold.value": { "source": "vision: golden-yellow key-word emphasis (#f5c54d)", "confidence": 0.7 },
+    "accents.red.value": { "source": "vision: pink-red warning phrases (#e8475f), hue/sat +-10", "confidence": 0.65 },
+    "accents.orange.value": { "source": "MASTER_SPEC 2.2 warm environmental option; weak reference presence", "confidence": 0.4 },
+    "rules": { "source": "MASTER_SPEC 2.2 (unchanged)", "confidence": 1 }
+  }
+}

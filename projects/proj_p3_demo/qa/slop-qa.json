@@ -1,0 +1,24 @@
+{
+  "projectSeverity": 7,
+  "verdict": "severe",
+  "findings": [
+    {
+      "sceneId": "scene_03",
+      "type": "visual-clutter",
+      "evidence": "frame carries a clipped oversized YES, a three-line YES stack, a 3x3 grid, a stray teal indicator dot, headline and subtitle — six-plus competing elements with no clear negative space",
+      "severity": 7
+    },
+    {
+      "sceneId": "scene_06",
+      "type": "visual-clutter",
+      "evidence": "ring, two arrows, bearing needle, separate 'ONE BEARING' and 'CHOOSE ONE DIRECTION' labels, indicator dot, headline and subtitle stack to eight elements across three corners",
+      "severity": 7
+    },
+    {
+      "sceneId": "scene_04",
+      "type": "weak-metaphor",
+      "evidence": "only the headline, a lone 'HELD' label and the subtitle are present; the struck answer versions and the locked teal baseline line are not visible, so the 'strikes dissolve, one line held' metaphor cannot be read without narration",
+      "severity": 6
+    }
+  ]
+}

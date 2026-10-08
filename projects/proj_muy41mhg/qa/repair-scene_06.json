@@ -1,0 +1,20 @@
+{
+  "sceneId": "scene_06",
+  "issue": "Frame shows only a floating teal pill and a stray vertical line — no gauge or needle, so 'TETAP DI NOL' contradicts the visuals and the lever/zero metaphor never reads.",
+  "rootCause": "Stack of bars plus an unanchored vertical Line cannot depict a reading dial; the Indicator renders as an unattached pill, leaving the zero-claim unsupported and the right half near-empty.",
+  "scope": "minimal",
+  "changesMade": [
+    "Replaced Stack + stray vertical Line with an outline Circle dial and an upward Arrow needle pinned at the zero position",
+    "Replaced the floating Indicator pill with a centered Label 'TETAP DI NOL' anchored directly under the dial",
+    "Added a second Arrow as the lever that slides in and positionShifts (the throw) while the needle stays fixed",
+    "Removed the decorative GradientGlow and set all objects to accent none so gold 'NGONTROL' is the sole accent"
+  ],
+  "preserve": [
+    "Headline text and gold accent word NGONTROL",
+    "leftTextRightObject composition",
+    "Duration and timing (3.61s, entrance 0, emphasis 1.6, exit 3.11)",
+    "Stagger entrance / fade exit motion family",
+    "Indonesian label copy"
+  ],
+  "expectedEffect": "The right half reads as one coherent machine: our lever visibly throws while the dial's needle holds at zero, making the label truthful and enacting 'tak terjangkau' instead of narrating it."
+}

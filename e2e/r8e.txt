@@ -1,0 +1,27 @@
+[21:12:49] repairing: scene scene_05 repair skipped: [repair] project=proj_muwt0aze: LLM produced invalid structured output after 2 attempts: [
+  {
+    "code": "unrecognized_keys",
+    "keys": [
+      "position",
+      "offsetX",
+      "offsetY",
+      "scale",
+      "opacity",
+      "rotation",
+      "accent",
+      "size",
+      "delay",
+      "entrance",
+      "emphasis",
+      "emphasisAt",
+      "exit",
+      "density"
+    ],
+    "path": [
+      "scene",
+      "headline"
+    ],
+    "message": "Unrecognized key(s) in object: 'position', 'offse
+[21:13:37] repairing: scene scene_01 repair skipped: [repair] project=proj_muwt0aze: LLM produced invalid structured output after 2 attempts: [repair] project=proj_muwt0aze scene=scene_01: The repaired scene still has layout collisions:
+- scene.headline("YANG PALING BIKIN ...") overlaps Arrow[0] (100%)
+scene.headline("YANG PALING BIKIN ...") overlaps Arrow[1] (100%)

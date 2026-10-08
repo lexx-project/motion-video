@@ -1,0 +1,11 @@
+{
+  "sceneId": "scene_01",
+  "rootCause": "Timeline states inverted: MON/TUE 'done' rendered as empty rings while TODAY 'active' rendered as a filled gold dot, contradicting 'today stays unchecked'. Cluster also sat in the upper 45%, making the frame top-heavy.",
+  "changesMade": [
+    "Swapped Timeline states: MON/TUE -> 'active' (filled/ticked), TODAY -> 'todo' (open unchecked ring), gold accent kept on today's openness",
+    "Added offsetY 15 to Timeline so the block sits nearer vertical center",
+    "Moved Subheadline to position 'right' with offsetY 4 to align with the timeline column",
+    "Headline, copy, accents, timing and motion untouched — all pass"
+  ],
+  "expectedEffect": "Past days read as ticked, TODAY reads as an open unchecked ring under the highlight emphasis, and the right column balances the vertical axis so the 'today left blank' metaphor lands without narration."
+}

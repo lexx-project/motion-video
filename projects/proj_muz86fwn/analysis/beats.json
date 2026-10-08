@@ -1,0 +1,211 @@
+{
+  "beats": [
+    {
+      "id": "b1",
+      "text": "Lu tau nggak… salah satu hal yang paling bikin capek? Berusaha biar semua orang suka sama kita.",
+      "why": "Membuka luka bersama: kelelahan tersembunyi di balik people-pleasing, menarik penonton masuk lewat pertanyaan personal.",
+      "emotion": "kelelahan, urgensi, keterhubungan",
+      "metaphorHints": [
+        "seseorang menopang terlalu banyak tangan sekaligus",
+        "beban yang menumpuk di punggung"
+      ],
+      "abstractMeaning": "Energi habis untuk memenuhi ekspektasi yang tak berujung",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "paling bikin capek",
+      "timing": {
+        "id": "b1",
+        "text": "Lu tau nggak… salah satu hal yang paling bikin capek? Berusaha biar semua orang suka sama kita.",
+        "start": 0,
+        "end": 55.07,
+        "duration": 55.07,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b2",
+      "text": "Cara ngomong dijaga. Cara berpakaian dipikirin.",
+      "why": "Menggambarkan mekanisme kontrol-diri sehari-hari — topeng yang terus dipakai sebelum bertemu dunia.",
+      "emotion": "cemas, ketegangan",
+      "metaphorHints": [
+        "topeng yang berganti-ganti",
+        "cermin sebagai penjaga penampilan"
+      ],
+      "abstractMeaning": "Identitas yang disunting terus-menerus demi penerimaan sosial",
+      "visualPriority": "medium",
+      "typographyPriority": "medium",
+      "important": true,
+      "emphasisPhrase": "dijaga",
+      "timing": {
+        "id": "b2",
+        "text": "Cara ngomong dijaga. Cara berpakaian dipikirin.",
+        "start": 55.07,
+        "end": 56.87,
+        "duration": 1.8,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b3",
+      "text": "Posting sesuatu… hapus lagi. Takut ada yang ngejudge. Takut ada yang ngomongin.",
+      "why": "Mengungkap siklus mikro yang paling relatable: menulis, ragu, menghapus — ketakutan pada penilaian.",
+      "emotion": "ragu, takut, frustasi",
+      "metaphorHints": [
+        "kursor mengetik lalu tombol hapus ditekan",
+        "postingan yang memudar sebelum terkirim"
+      ],
+      "abstractMeaning": "Suara diri yang dibungkam oleh bayang-bayang opini orang lain",
+      "visualPriority": "high",
+      "typographyPriority": "medium",
+      "important": true,
+      "emphasisPhrase": "hapus lagi",
+      "timing": {
+        "id": "b3",
+        "text": "Posting sesuatu… hapus lagi. Takut ada yang ngejudge. Takut ada yang ngomongin.",
+        "start": 56.87,
+        "end": 60.48,
+        "duration": 3.61,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b4",
+      "text": "Padahal… mau lu ngapain juga, pasti ada aja yang nggak suka.",
+      "why": "Membongkar ilusi: usaha menyenangkan semua orang adalah target yang mustahil.",
+      "emotion": "resignasi, pencerahan",
+      "metaphorHints": [
+        "panah dari segala arah menuju satu titik",
+        "banyak pasang mata yang menilai dari sisi masing-masing"
+      ],
+      "abstractMeaning": "Kontradiksi bawaan penilaian sosial — kepuasan semua orang tidak mungkin",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "pasti ada aja yang nggak suka",
+      "timing": {
+        "id": "b4",
+        "text": "Padahal… mau lu ngapain juga, pasti ada aja yang nggak suka.",
+        "start": 60.48,
+        "end": 64.09,
+        "duration": 3.61,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b5",
+      "text": "Lu baik dibilang pencitraan. Lu diem dibilang sombong. Lu sukses dibilang beruntung. Lu gagal ditertawain.",
+      "why": "Menumpuk bukti bahwa penilaian berubah-ubah: tidak ada posisi yang aman.",
+      "emotion": "frustrasi, ketidakadilan",
+      "metaphorHints": [
+        "dinding label bertentangan menempel pada satu siluet",
+        "timbangan yang selalu miring ke dua arah"
+      ],
+      "abstractMeaning": "Inkonsistensi penghakiman sosial — dua keadaan berlawanan dihukum sama",
+      "visualPriority": "high",
+      "typographyPriority": "medium",
+      "important": true,
+      "emphasisPhrase": "dibilang pencitraan",
+      "timing": {
+        "id": "b5",
+        "text": "Lu baik dibilang pencitraan. Lu diem dibilang sombong. Lu sukses dibilang beruntung. Lu gagal ditertawain.",
+        "start": 64.09,
+        "end": 69.51,
+        "duration": 5.42,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b6",
+      "text": "Jadi buat apa? Lu nggak akan pernah bisa ngontrol apa yang orang lain pikirin.",
+      "why": "Pergeseran inti: berhenti mengontrol yang tak bisa dikontrol, locus of control kembali ke diri.",
+      "emotion": "kejutan, kelegaan awal",
+      "metaphorHints": [
+        "tangan yang melepaskan pegangan",
+        "kaca pembatas antara diri dan kata-kata penilaian"
+      ],
+      "abstractMeaning": "Batas antara yang bisa dan tak bisa dikendalikan",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "nggak akan pernah bisa ngontrol",
+      "timing": {
+        "id": "b6",
+        "text": "Jadi buat apa? Lu nggak akan pernah bisa ngontrol apa yang orang lain pikirin.",
+        "start": 69.51,
+        "end": 73.12,
+        "duration": 3.61,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b7",
+      "text": "Tapi lu bisa ngontrol… seberapa besar pendapat mereka ngaruh ke hidup lu.",
+      "why": "Menyatakan kuasa yang tersisa: bukan menghentikan omongan, melainkan mengatur bobotnya.",
+      "emotion": "keyakinan, pemberdayaan",
+      "metaphorHints": [
+        "timbangan yang disetel ulang",
+        "katup yang mengatur aliran suara masuk"
+      ],
+      "abstractMeaning": "Regulasi pengaruh eksternal — otonomi emosional",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "seberapa besar pendapat mereka ngaruh ke hidup lu",
+      "timing": {
+        "id": "b7",
+        "text": "Tapi lu bisa ngontrol… seberapa besar pendapat mereka ngaruh ke hidup lu.",
+        "start": 73.12,
+        "end": 76.73,
+        "duration": 3.61,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b8",
+      "text": "Karena pada akhirnya… mereka pulang ke hidup mereka. Dan lu… harus tetap hidup dengan hidup lu sendiri.",
+      "why": "Menutup ketergantungan: setiap orang kembali ke jalan hidupnya masing-masing, kita pun demikian.",
+      "emotion": "ketenangan, kemandirian",
+      "metaphorHints": [
+        "kerumunan berbalik masuk ke pintu-pintu kecil mereka sendiri",
+        "dua jalur yang berpisah"
+      ],
+      "abstractMeaning": "Pemisahan identitas — hidup orang lain bukan tanggung jawab kita",
+      "visualPriority": "medium",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "harus tetap hidup dengan hidup lu sendiri",
+      "timing": {
+        "id": "b8",
+        "text": "Karena pada akhirnya… mereka pulang ke hidup mereka. Dan lu… harus tetap hidup dengan hidup lu sendiri.",
+        "start": 76.73,
+        "end": 83.95,
+        "duration": 7.22,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b9",
+      "text": "Jadi nggak apa-apa… kalau nggak semua orang suka sama lu. Lu juga nggak diciptain buat disukai semua orang.",
+      "why": "Klimaks penerimaan diri: melepaskan tuntutan disukai sebagai tujuan hidup.",
+      "emotion": "pembebasan, kedamaian, keyakinan",
+      "metaphorHints": [
+        "siluet yang terang dan tegak setelah kata-kata penilaian memudar",
+        "cincin yang melebar meninggalkan diri"
+      ],
+      "abstractMeaning": "Harga diri yang tidak bergantung pada validasi massa",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "nggak diciptain buat disukai semua orang",
+      "timing": {
+        "id": "b9",
+        "text": "Jadi nggak apa-apa… kalau nggak semua orang suka sama lu. Lu juga nggak diciptain buat disukai semua orang.",
+        "start": 83.95,
+        "end": 133.6,
+        "duration": 49.65,
+        "source": "phrase"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "sceneId": "scene_02",
+  "duration": 3.61,
+  "purpose": "Enacts self-censorship: a glowing post card rises toward publishing, then is snatched back and dimmed — 'hapus lagi'.",
+  "visualConcept": "POST → WITHDRAW",
+  "composition": "centered",
+  "headline": {
+    "text": "POSTING… HAPUS LAGI",
+    "accentWords": [
+      "HAPUS LAGI"
+    ],
+    "align": "center"
+  },
+  "elements": [
+    {
+      "primitive": "GenericCard",
+      "label": "POST",
+      "position": "center",
+      "accent": "gold",
+      "scale": 1,
+      "entrance": "scale",
+      "emphasis": "positionShift",
+      "emphasisAt": 1.6,
+      "exit": "fade",
+      "delay": 0
+    },
+    {
+      "primitive": "Arrow",
+      "direction": "right",
+      "variant": "line",
+      "lengthPct": 50,
+      "position": "top",
+      "accent": "gold",
+      "entrance": "reveal",
+      "emphasis": "positionShift",
+      "emphasisAt": 1.6,
+      "delay": 0.3
+    },
+    {
+      "primitive": "GradientGlow",
+      "intensity": 0.35,
+      "diameterPct": 80,
+      "position": "center",
+      "accent": "none",
+      "entrance": "fade",
+      "emphasis": "glow",
+      "emphasisAt": 1.6,
+      "exit": "fade",
+      "delay": 0.15
+    }
+  ],
+  "motion": {
+    "entrance": "scale",
+    "emphasis": "positionShift",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.6
+  }
+}

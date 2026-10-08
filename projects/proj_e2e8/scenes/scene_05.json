@@ -1,0 +1,96 @@
+{
+  "sceneId": "scene_05",
+  "duration": 5.49,
+  "purpose": "Defines discipline as a weighing act: the enduring want outranks the urgent impulse, shown as a beam tilted by a small gold weight.",
+  "visualConcept": "SMALL GOLD BEATS LARGE DIM",
+  "composition": "centered",
+  "headline": {
+    "text": "WANT MOST\nBEATS WANT NOW",
+    "accentWords": [
+      "MOST"
+    ],
+    "align": "center"
+  },
+  "elements": [
+    {
+      "primitive": "GradientGlow",
+      "position": "center",
+      "accent": "gold",
+      "intensity": 0.3,
+      "diameterPct": 70,
+      "offsetY": -6,
+      "delay": 0,
+      "entrance": "fade",
+      "opacity": 1
+    },
+    {
+      "primitive": "Line",
+      "position": "center",
+      "orientation": "horizontal",
+      "lengthPct": 70,
+      "thicknessPx": 6,
+      "accent": "none",
+      "offsetY": -16,
+      "rotation": 14,
+      "delay": 0.2,
+      "entrance": "slide",
+      "emphasis": "positionShift",
+      "emphasisAt": 2.8,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Line",
+      "position": "center",
+      "orientation": "vertical",
+      "lengthPct": 12,
+      "thicknessPx": 5,
+      "accent": "none",
+      "offsetY": -10,
+      "delay": 0.4,
+      "entrance": "draw",
+      "exit": "fade"
+    },
+    {
+      "primitive": "Circle",
+      "position": "center",
+      "variant": "filled",
+      "diameterPct": 22,
+      "accent": "orange",
+      "offsetX": -30,
+      "offsetY": -21,
+      "opacity": 0.5,
+      "scale": 1,
+      "delay": 0.6,
+      "entrance": "scale",
+      "emphasis": "subtleScale",
+      "emphasisAt": 3,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Circle",
+      "position": "center",
+      "variant": "filled",
+      "diameterPct": 11,
+      "accent": "gold",
+      "offsetX": 30,
+      "offsetY": -11,
+      "opacity": 1,
+      "scale": 1,
+      "delay": 1,
+      "entrance": "scale",
+      "emphasis": "subtleScale",
+      "emphasisAt": 3.3,
+      "exit": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "slide",
+    "emphasis": "positionShift",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 2.8,
+    "exitAt": 4.89
+  }
+}

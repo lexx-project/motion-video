@@ -1,0 +1,79 @@
+{
+  "projectId": "proj_e2e8",
+  "createdAt": "2026-10-06T05:24:09.838Z",
+  "updatedAt": "2026-10-06T09:31:20.991Z",
+  "status": "complete",
+  "title": "Start Today",
+  "scriptPreview": "Every day you say tomorrow you will change. But tomorrow you repeat the same thing. The gap between who you are and who you want to be is built from tiny choices. Discipline is choosing what you want most over what you want now. Start today",
+  "hasAudio": true,
+  "sceneIds": [
+    "scene_01",
+    "scene_02",
+    "scene_03",
+    "scene_04",
+    "scene_05",
+    "scene_06",
+    "scene_07"
+  ],
+  "stages": {
+    "analysis": {
+      "status": "done",
+      "startedAt": "2026-10-06T05:24:09.843Z",
+      "finishedAt": "2026-10-06T08:15:23.881Z"
+    },
+    "beats": {
+      "status": "done",
+      "startedAt": "2026-10-06T05:24:33.507Z",
+      "finishedAt": "2026-10-06T08:15:23.883Z"
+    },
+    "timing": {
+      "status": "done",
+      "startedAt": "2026-10-06T05:25:26.125Z",
+      "finishedAt": "2026-10-06T08:15:23.884Z"
+    },
+    "concepts": {
+      "status": "done",
+      "startedAt": "2026-10-06T05:30:52.025Z",
+      "finishedAt": "2026-10-06T08:15:23.885Z"
+    },
+    "sceneGeneration": {
+      "status": "done",
+      "startedAt": "2026-10-06T06:30:37.089Z",
+      "finishedAt": "2026-10-06T08:15:23.895Z"
+    },
+    "validation": {
+      "status": "done",
+      "finishedAt": "2026-10-06T08:15:23.896Z"
+    },
+    "novelty": {
+      "status": "done",
+      "startedAt": "2026-10-06T09:09:37.818Z",
+      "finishedAt": "2026-10-06T09:09:37.821Z"
+    },
+    "render": {
+      "status": "done",
+      "startedAt": "2026-10-06T09:09:37.823Z",
+      "finishedAt": "2026-10-06T09:10:30.560Z"
+    },
+    "visionQa": {
+      "status": "done",
+      "startedAt": "2026-10-06T09:10:37.122Z",
+      "finishedAt": "2026-10-06T09:21:39.451Z"
+    },
+    "slop": {
+      "status": "failed",
+      "startedAt": "2026-10-06T09:21:39.452Z",
+      "finishedAt": "2026-10-06T09:31:20.977Z"
+    },
+    "repair": {
+      "status": "running",
+      "startedAt": "2026-10-06T09:07:40.463Z"
+    },
+    "final": {
+      "status": "done",
+      "finishedAt": "2026-10-06T09:31:20.990Z"
+    }
+  },
+  "audioDurationSec": 21.501315,
+  "timingSource": "phrase"
+}

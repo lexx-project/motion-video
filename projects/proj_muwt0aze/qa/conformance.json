@@ -1,0 +1,143 @@
+{
+  "scenes": [
+    {
+      "sceneId": "scene_01",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 10,
+        "motion": 10,
+        "density": 4.5,
+        "negativeSpace": 6
+      },
+      "overall": 8.6,
+      "evidence": [
+        "5 renderable elements > 4",
+        "4 objects (reference uses a single dominant object)"
+      ]
+    },
+    {
+      "sceneId": "scene_02",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 6.5,
+        "motion": 9,
+        "density": 7.5,
+        "negativeSpace": 6
+      },
+      "overall": 8.4,
+      "evidence": [
+        "grammar \"split\" absent from reference shares (allowed by spec, off-language)",
+        "1 element delay > 1.4s (reference staggers quickly)",
+        "5 renderable elements > 4"
+      ]
+    },
+    {
+      "sceneId": "scene_03",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 10,
+        "motion": 10,
+        "density": 10,
+        "negativeSpace": 10
+      },
+      "overall": 10,
+      "evidence": [
+        "structure conforms to reference-derived language"
+      ]
+    },
+    {
+      "sceneId": "scene_04",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 10,
+        "motion": 9,
+        "density": 7.5,
+        "negativeSpace": 6
+      },
+      "overall": 8.9,
+      "evidence": [
+        "motion \"positionShift\" outside reference-preferred set",
+        "5 renderable elements > 4"
+      ]
+    },
+    {
+      "sceneId": "scene_05",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 9,
+        "motion": 9,
+        "density": 4.5,
+        "negativeSpace": 6
+      },
+      "overall": 8.4,
+      "evidence": [
+        "motion \"positionShift\" outside reference-preferred set",
+        "5 renderable elements > 4",
+        "4 objects (reference uses a single dominant object)"
+      ]
+    },
+    {
+      "sceneId": "scene_06",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 10,
+        "motion": 10,
+        "density": 6,
+        "negativeSpace": 6
+      },
+      "overall": 8.9,
+      "evidence": [
+        "5 renderable elements > 4",
+        "3 objects (reference uses a single dominant object)"
+      ]
+    },
+    {
+      "sceneId": "scene_07",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 6.5,
+        "motion": 9,
+        "density": 10,
+        "negativeSpace": 8
+      },
+      "overall": 9.1,
+      "evidence": [
+        "grammar \"dualObject\" absent from reference shares (allowed by spec, off-language)",
+        "motion \"slide\" outside reference-preferred set"
+      ]
+    },
+    {
+      "sceneId": "scene_08",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 2.5,
+        "motion": 10,
+        "density": 10,
+        "negativeSpace": 8
+      },
+      "overall": 8.6,
+      "evidence": [
+        "grammar \"objectDominant\" absent from reference shares (allowed by spec, off-language)",
+        "COLLISION: scene.headline(\"LU NGGAK DICIPTAIN...\") overlaps Label[2](\"TETAP UTUH — TANPA...\") (est. 100% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor"
+      ]
+    }
+  ],
+  "overall": 8.9,
+  "method": "structural checks against reference-derived design tokens + rendered-frame luma/text/accent stats (no pixel similarity)"
+}

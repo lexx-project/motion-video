@@ -1,0 +1,172 @@
+{
+  "beats": [
+    {
+      "id": "b1",
+      "text": "Every day you say tomorrow you will change.",
+      "why": "Establishes the habitual promise — the audience recognizes themselves before any critique lands.",
+      "emotion": "quiet self-recognition",
+      "metaphorHints": [
+        "calendar with tomorrow circled but never filled",
+        "word TOMORROW repeated as fading echo",
+        "unlit match held but not struck"
+      ],
+      "abstractMeaning": "Deferred intention feels like progress while changing nothing.",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": false,
+      "emphasisPhrase": "tomorrow",
+      "timing": {
+        "id": "b1",
+        "text": "Every day you say tomorrow you will change.",
+        "start": 0,
+        "end": 3.76,
+        "duration": 3.76,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b2",
+      "text": "But tomorrow you repeat the same thing.",
+      "why": "Breaks the promise with contradiction — the loop is exposed as a self-reinforcing pattern, not a one-off slip.",
+      "emotion": "unease",
+      "metaphorHints": [
+        "identical mark reappearing on the next day",
+        "closed loop of a chain or ring",
+        "struck-through word reappearing unchanged"
+      ],
+      "abstractMeaning": "Repetition without change is the mechanism of stagnation.",
+      "visualPriority": "medium",
+      "typographyPriority": "medium",
+      "important": false,
+      "emphasisPhrase": "repeat the same thing",
+      "timing": {
+        "id": "b2",
+        "text": "But tomorrow you repeat the same thing.",
+        "start": 3.76,
+        "end": 5.89,
+        "duration": 2.13,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b3",
+      "text": "The gap between who you are and who you want to be",
+      "why": "Names the central pain: distance between current self and desired self. The whole video's metaphor lives here.",
+      "emotion": "longing + confrontation",
+      "metaphorHints": [
+        "two silhouettes on opposite edges of a dark chasm",
+        "two profile forms separated by negative space",
+        "empty bridge span with no planks"
+      ],
+      "abstractMeaning": "Identity distance is a physical void that can be measured and crossed.",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "who you want to be",
+      "timing": {
+        "id": "b3",
+        "text": "The gap between who you are and who you want to be",
+        "start": 5.89,
+        "end": 9.65,
+        "duration": 3.76,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b4",
+      "text": "is built from tiny choices.",
+      "why": "Reframes the gap as constructed by micro-decisions — it is made, therefore it can be unmade or bridged.",
+      "emotion": "clarifying resolve",
+      "metaphorHints": [
+        "bridge assembling one small tile at a time",
+        "chain gaining one link per choice",
+        "staircase of small steps descending into the gap"
+      ],
+      "abstractMeaning": "Cumulative small decisions are the building material of the gap.",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "tiny choices",
+      "timing": {
+        "id": "b4",
+        "text": "is built from tiny choices.",
+        "start": 9.65,
+        "end": 11.77,
+        "duration": 2.12,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b5",
+      "text": "Discipline is choosing what you want most over what you want now.",
+      "why": "Gives the definition of discipline as a weighing act between future desire and present impulse — the core principle.",
+      "emotion": "steady conviction",
+      "metaphorHints": [
+        "balance scale where a small gold weight outweighs a large dim one",
+        "two doors: one bright-now, one gold-later",
+        "checkbox of long-term desire over immediate comfort"
+      ],
+      "abstractMeaning": "Preference ordering: the enduring want outranks the urgent want.",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "want most over what you want now",
+      "timing": {
+        "id": "b5",
+        "text": "Discipline is choosing what you want most over what you want now.",
+        "start": 11.77,
+        "end": 17.26,
+        "duration": 5.49,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b6",
+      "text": "Start today. Start small.",
+      "why": "Removes both objections — timing and scale — converting principle into an achievable first act.",
+      "emotion": "encouragement",
+      "metaphorHints": [
+        "one calendar cell fills with accent color, breaking empty days",
+        "single small point of light in darkness",
+        "first footstep mark"
+      ],
+      "abstractMeaning": "The entry cost is near zero: now, and tiny.",
+      "visualPriority": "medium",
+      "typographyPriority": "high",
+      "important": false,
+      "emphasisPhrase": "Start today",
+      "timing": {
+        "id": "b6",
+        "text": "Start today. Start small.",
+        "start": 17.26,
+        "end": 19.38,
+        "duration": 2.12,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b7",
+      "text": "But start.",
+      "why": "Final imperative — the entire argument collapses into one verb; hesitation is the only remaining failure.",
+      "emotion": "urgency → resolve",
+      "metaphorHints": [
+        "dot becoming a line, line beginning to extend",
+        "match finally struck",
+        "one step off the edge into the gap"
+      ],
+      "abstractMeaning": "Beginning is the only action that dissolves the gap.",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "start",
+      "timing": {
+        "id": "b7",
+        "text": "But start.",
+        "start": 19.38,
+        "end": 21.5,
+        "duration": 2.12,
+        "source": "phrase"
+      }
+    }
+  ]
+}

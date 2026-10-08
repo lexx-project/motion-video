@@ -1,0 +1,76 @@
+{
+  "sceneId": "scene_05",
+  "duration": 1.8,
+  "purpose": "Pivot: the pulling strings go slack and the figure stands self-supported, letting the question 'buang apa?' answer itself through physical subtraction.",
+  "visualConcept": "STRINGS GO SLACK",
+  "composition": "objectDominant",
+  "elements": [
+    {
+      "primitive": "WordReveal",
+      "text": "JADI… BUAT APA?",
+      "accentWords": [
+        "APA"
+      ],
+      "align": "left",
+      "position": "top",
+      "offsetX": -4,
+      "offsetY": 2,
+      "accent": "gold",
+      "delay": 0.6,
+      "entrance": "stagger",
+      "emphasis": "controlledReveal",
+      "emphasisAt": 0.9
+    },
+    {
+      "primitive": "Line",
+      "orientation": "vertical",
+      "lengthPct": 38,
+      "thicknessPx": 3,
+      "position": "center",
+      "offsetX": 6,
+      "offsetY": -10,
+      "accent": "none",
+      "rotation": 8,
+      "delay": 0,
+      "entrance": "draw",
+      "emphasis": "positionShift",
+      "emphasisAt": 0.75
+    },
+    {
+      "primitive": "Circle",
+      "variant": "outline",
+      "diameterPct": 24,
+      "position": "center",
+      "offsetX": 6,
+      "offsetY": 22,
+      "accent": "none",
+      "delay": 0.3,
+      "entrance": "scale",
+      "emphasis": "subtleScale",
+      "emphasisAt": 1
+    },
+    {
+      "primitive": "Stack",
+      "variant": "coins",
+      "count": 4,
+      "position": "bottom",
+      "offsetX": 10,
+      "offsetY": 4,
+      "accent": "none",
+      "delay": 0.5,
+      "entrance": "stagger",
+      "emphasis": "highlight",
+      "emphasisAt": 1.1
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "positionShift",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 0.81,
+    "exitAt": 1.5
+  }
+}

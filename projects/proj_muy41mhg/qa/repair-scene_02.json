@@ -1,0 +1,18 @@
+{
+  "sceneId": "scene_02",
+  "issue": "Scene showed a calendar with no referent for others' opinions; after repair the centered headline still overlaps both SpeechBubbles 100%.",
+  "rootCause": "Headline and both SpeechBubbles share the center band while headline has no explicit top anchor, so the renderer places them over the same region.",
+  "scope": "minimal",
+  "changesMade": [
+    "Moved headline to the top band (position top, align center) so text occupies its own row",
+    "Kept Person + both SpeechBubbles in the center band (same anchor stacks safely, bubbles left/right around Person)",
+    "Label stays bottom above the VO band",
+    "Replaced Calendar with Person + opinion SpeechBubbles to enact 'biar semua orang suka'"
+  ],
+  "preserve": [
+    "Headline text, typography, gold accent word DIJAGA",
+    "Dark bg, single gold semantic accent, 9s duration and timing",
+    "Stagger/fade motion family, restrained motion, VO band clear"
+  ],
+  "expectedEffect": "Headline runs alone across the top while the figure sways between two other-people opinions in the center and the motive label sits bottom — collision cleared, beat still enacted."
+}

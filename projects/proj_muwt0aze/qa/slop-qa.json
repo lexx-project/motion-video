@@ -1,0 +1,24 @@
+{
+  "projectSeverity": 6,
+  "verdict": "needs_repair",
+  "findings": [
+    {
+      "sceneId": "scene_08",
+      "type": "bad-typography",
+      "evidence": "headline 'LU NGGAK DICIPTAIN BUAT DISUKAI SEMUA ORANG' breaks into 6 lines (LU NGGAK / DICIPTAIN / BUAT / DISUKAI / SEMUA / ORANG), exceeding the 4-line limit instead of being rephrased or set at a consistent size",
+      "severity": 8
+    },
+    {
+      "sceneId": "scene_06",
+      "type": "visual-clutter",
+      "evidence": "dial ring is positioned on top of the headline, its yellow stroke cutting through the letters of 'PENGARUHNYA' — object and type collide instead of occupying separate left/right halves",
+      "severity": 7
+    },
+    {
+      "sceneId": "scene_01",
+      "type": "visual-clutter",
+      "evidence": "the pinned-figure circle's lower arc crosses through the first headline line 'YANG', creating an accidental stack collision rather than clear separation between figure and type",
+      "severity": 6
+    }
+  ]
+}

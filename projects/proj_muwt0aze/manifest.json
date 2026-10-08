@@ -1,0 +1,81 @@
+{
+  "projectId": "proj_muwt0aze",
+  "createdAt": "2026-10-06T14:58:40.929Z",
+  "updatedAt": "2026-10-06T23:25:52.907Z",
+  "status": "complete",
+  "scriptPreview": "**“Lu tau nggak…\nsalah satu hal yang paling bikin capek?”**\n\nBerusaha…\n\nbiar semua orang suka sama kita.\n\nCara ngomong dijaga.\n\nCara berpakaian dipikirin.\n\nPosting sesuatu…\n\nhapus lagi.\n\nTakut ada yang ngejudge.\n\nTakut ada yang ngomongin.\n\n",
+  "hasAudio": true,
+  "sceneIds": [
+    "scene_05",
+    "scene_06",
+    "scene_08"
+  ],
+  "stages": {
+    "analysis": {
+      "status": "done",
+      "startedAt": "2026-10-06T14:58:41.020Z",
+      "finishedAt": "2026-10-06T22:16:17.785Z"
+    },
+    "beats": {
+      "status": "done",
+      "startedAt": "2026-10-06T15:01:53.077Z",
+      "finishedAt": "2026-10-06T22:16:17.787Z"
+    },
+    "timing": {
+      "status": "done",
+      "startedAt": "2026-10-06T15:08:52.195Z",
+      "finishedAt": "2026-10-06T22:16:17.788Z"
+    },
+    "concepts": {
+      "status": "done",
+      "startedAt": "2026-10-06T15:08:56.141Z",
+      "finishedAt": "2026-10-06T22:16:17.789Z"
+    },
+    "sceneGeneration": {
+      "status": "done",
+      "startedAt": "2026-10-06T17:41:42.450Z",
+      "finishedAt": "2026-10-06T22:16:17.816Z"
+    },
+    "validation": {
+      "status": "done",
+      "finishedAt": "2026-10-06T22:16:17.817Z"
+    },
+    "novelty": {
+      "status": "done",
+      "startedAt": "2026-10-06T23:20:35.867Z",
+      "finishedAt": "2026-10-06T23:20:35.885Z"
+    },
+    "render": {
+      "status": "done",
+      "startedAt": "2026-10-06T23:20:35.888Z",
+      "finishedAt": "2026-10-06T23:22:12.274Z"
+    },
+    "conformance": {
+      "status": "done",
+      "startedAt": "2026-10-06T23:22:20.258Z",
+      "finishedAt": "2026-10-06T23:22:21.556Z"
+    },
+    "visionQa": {
+      "status": "done",
+      "startedAt": "2026-10-06T23:22:21.557Z",
+      "finishedAt": "2026-10-06T23:25:06.030Z"
+    },
+    "slop": {
+      "status": "failed",
+      "startedAt": "2026-10-06T23:25:06.031Z",
+      "finishedAt": "2026-10-06T23:25:52.884Z"
+    },
+    "repair": {
+      "status": "failed",
+      "startedAt": "2026-10-06T23:09:59.154Z",
+      "finishedAt": "2026-10-06T23:20:35.865Z",
+      "error": "StudioError: [llm]: LLM call failed after retries: HTTP 524: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>lexxproject.web.id | 524: A timeout occurred</title>\n<meta charset=\"UT"
+    },
+    "final": {
+      "status": "done",
+      "finishedAt": "2026-10-06T23:25:52.906Z"
+    }
+  },
+  "audioDurationSec": 55.066063,
+  "timingSource": "phrase"
+}

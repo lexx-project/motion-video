@@ -1,0 +1,167 @@
+{
+  "scenes": [
+    {
+      "sceneId": "scene_01",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 10,
+        "motion": 10,
+        "density": 10,
+        "negativeSpace": 10
+      },
+      "overall": 10,
+      "evidence": [
+        "structure conforms to reference-derived language"
+      ]
+    },
+    {
+      "sceneId": "scene_02",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 10,
+        "motion": 8,
+        "density": 10,
+        "negativeSpace": 10
+      },
+      "overall": 9.7,
+      "evidence": [
+        "motion \"positionShift\" outside reference-preferred set",
+        "1 element delay > 1.4s (reference staggers quickly)"
+      ]
+    },
+    {
+      "sceneId": "scene_03",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 10,
+        "motion": 10,
+        "density": 10,
+        "negativeSpace": 10
+      },
+      "overall": 10,
+      "evidence": [
+        "structure conforms to reference-derived language"
+      ]
+    },
+    {
+      "sceneId": "scene_04",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 7,
+        "composition": 0,
+        "motion": 7,
+        "density": 10,
+        "negativeSpace": 8.5
+      },
+      "overall": 7.5,
+      "evidence": [
+        "distinct accents: teal, gold (one dominant accent rule)",
+        "COLLISION: scene.headline(\"POSTING. HAPUS LAG...\") overlaps ProgressBar[0] (est. 26% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor",
+        "motion \"slide\" outside reference-preferred set",
+        "2 element delay > 1.4s (reference staggers quickly)",
+        "SUBTITLE_COLLISION: subtitle band overlaps Label[4](\"NGEJUDGE...\") (85%) - move content out of the bottom band when subtitles are enabled",
+        "SUBTITLE_COLLISION: subtitle band overlaps Label[5](\"NGOMONGIN...\") (76%) - move content out of the bottom band when subtitles are enabled"
+      ]
+    },
+    {
+      "sceneId": "scene_05",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 6.5,
+        "motion": 9,
+        "density": 6,
+        "negativeSpace": 10
+      },
+      "overall": 8.8,
+      "evidence": [
+        "grammar \"split\" absent from reference shares (allowed by spec, off-language)",
+        "motion \"positionShift\" outside reference-preferred set",
+        "SPARSE: only 2 renderable element(s) - narrative likely under-visualized"
+      ]
+    },
+    {
+      "sceneId": "scene_06",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 6,
+        "motion": 6,
+        "density": 7,
+        "negativeSpace": 7
+      },
+      "overall": 8,
+      "evidence": [
+        "4 element delay > 1.4s (reference staggers quickly)",
+        "9 elements exceeds guideline 8 (readability pressure; hard max 10)",
+        "SUBTITLE_COLLISION: subtitle band overlaps Label[7](\"DITERTAWAKAN...\") (100%) - move content out of the bottom band when subtitles are enabled"
+      ]
+    },
+    {
+      "sceneId": "scene_07",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 9,
+        "color": 10,
+        "composition": 0,
+        "motion": 9,
+        "density": 10,
+        "negativeSpace": 8.5
+      },
+      "overall": 8.1,
+      "evidence": [
+        "WordReveal \"SEBESAR PENGARUH YANG LU...\" estimates 5 lines in top anchor",
+        "grammar \"split\" absent from reference shares (allowed by spec, off-language)",
+        "COLLISION: WordReveal[0](\"SEBESAR PENGARUH Y...\") overlaps Arrow[1] (est. 100% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor",
+        "COLLISION: WordReveal[0](\"SEBESAR PENGARUH Y...\") overlaps Circle[4] (est. 100% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor",
+        "COLLISION: WordReveal[0](\"SEBESAR PENGARUH Y...\") overlaps Circle[5] (est. 46% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor",
+        "1 element delay > 1.4s (reference staggers quickly)"
+      ]
+    },
+    {
+      "sceneId": "scene_08",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 10,
+        "motion": 9,
+        "density": 10,
+        "negativeSpace": 8.5
+      },
+      "overall": 9.6,
+      "evidence": [
+        "1 element delay > 1.4s (reference staggers quickly)"
+      ]
+    },
+    {
+      "sceneId": "scene_09",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 7,
+        "composition": 6.5,
+        "motion": 9,
+        "density": 10,
+        "negativeSpace": 10
+      },
+      "overall": 8.9,
+      "evidence": [
+        "distinct accents: teal, gold (one dominant accent rule)",
+        "grammar \"objectDominant\" absent from reference shares (allowed by spec, off-language)",
+        "1 element delay > 1.4s (reference staggers quickly)"
+      ]
+    }
+  ],
+  "overall": 9,
+  "method": "structural checks against reference-derived design tokens + rendered-frame luma/text/accent stats (no pixel similarity)"
+}

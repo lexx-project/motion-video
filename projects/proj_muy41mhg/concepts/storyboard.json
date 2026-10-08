@@ -1,0 +1,1525 @@
+{
+  "storyboards": [
+    {
+      "beatId": "b1",
+      "spokenMeaning": "Opening hook asking which single thing is most exhausting — the fatigue of performing for other people's approval.",
+      "viewerTakeaway": "Capek isn't vague: my own energy is a finite reserve, and spending it to be liked visibly empties it.",
+      "visualMechanism": "depletion",
+      "visualNarrative": [
+        {
+          "order": 1,
+          "action": "Caption line fades in at bottom-left, then the question headline staggers in word by word: SALAH SATU HAL YANG PALING BIKIN CAPEK",
+          "meaning": "Direct question pulls the listener in and names exhaustion as the subject before any argument",
+          "visualEvidence": "Four word groups appear left-to-right at the 8% margin; gold lands only on CAPEK"
+        },
+        {
+          "order": 2,
+          "action": "A tall empty gauge track appears on the right and fills to the top in teal, counter reads 100%",
+          "meaning": "The self is established as a measurable, finite capacity that starts full",
+          "visualEvidence": "One vertical column right side fills completely; label ENERGI DIRI LU sits under it"
+        },
+        {
+          "order": 3,
+          "action": "The teal fill drains downward while the counter drops 100% -> 76% -> 52% -> 34%",
+          "meaning": "Effort to be liked visibly depletes the person; fatigue is quantity leaving, not pressure arriving",
+          "visualEvidence": "Fill level retreats inside the hollow track and the percentage beside it falls in exact sync"
+        },
+        {
+          "order": 4,
+          "action": "Drain halts on a low stub; the 34% counter and the word CAPEK pulse gold once",
+          "meaning": "The question lands: this measurable loss is exactly why it feels tiring",
+          "visualEvidence": "Short teal stub remains at the bottom of a mostly-empty track; one gold pulse, no other motion"
+        }
+      ],
+      "semanticObjects": [
+        {
+          "objectType": "WordReveal",
+          "semanticRole": "The spoken hook made visible: names the exhaustion instead of illustrating it",
+          "relationship": "its gold CAPEK sits level with the emptied gauge, so word and loss point at each other",
+          "importance": 5
+        },
+        {
+          "objectType": "ProgressBar",
+          "semanticRole": "Self-energy as a finite teal column; the depletion metaphor of this beat",
+          "relationship": "drains downward inside EnergyTrack while PercentCounter mirrors it",
+          "importance": 5
+        },
+        {
+          "objectType": "Track",
+          "semanticRole": "Hollow frame = the capacity that was full and is now mostly lost",
+          "relationship": "contains EnergyGauge, making the empty remainder readable",
+          "importance": 4
+        },
+        {
+          "objectType": "Label",
+          "semanticRole": "Quantifies tiredness so capek needs no explanation",
+          "relationship": "reads EnergyGauge fill level in real time and drops with it",
+          "importance": 4
+        },
+        {
+          "objectType": "Indicator",
+          "semanticRole": "Single semantic accent word CAPEK — the only emphasis in the frame",
+          "relationship": "pulses only when the drain stops",
+          "importance": 3
+        },
+        {
+          "objectType": "Caption",
+          "semanticRole": "Verbatim VO grounding for the hook",
+          "relationship": "supports QuestionHeadline from below",
+          "importance": 2
+        }
+      ],
+      "relationships": [
+        {
+          "from": "PercentCounter",
+          "to": "EnergyGauge",
+          "relationship": "reads: percentage value mirrors gauge fill level every frame"
+        },
+        {
+          "from": "EnergyGauge",
+          "to": "EnergyTrack",
+          "relationship": "drains inside: fill retreats downward within the empty frame"
+        },
+        {
+          "from": "QuestionHeadline",
+          "to": "EnergyGauge",
+          "relationship": "aligns with: gold CAPEK sits level with the low teal stub"
+        },
+        {
+          "from": "Caption",
+          "to": "QuestionHeadline",
+          "relationship": "grounds: caption carries the same spoken words under the headline"
+        }
+      ],
+      "typographyPlan": {
+        "headline": "SALAH SATU HAL YANG PALING BIKIN CAPEK",
+        "emphasisWords": [
+          "CAPEK"
+        ],
+        "supportingText": [
+          "ENERGI DIRI LU",
+          "34% TERSISA"
+        ]
+      },
+      "subtitlePlan": {
+        "enabled": true,
+        "text": "Lu tau nggak… salah satu hal yang paling bikin capek?",
+        "timing": "whole beat, 0.00s-3.61s",
+        "role": "spoken line"
+      },
+      "motionBeats": [
+        {
+          "order": 1,
+          "action": "Caption fades in bottom-left as speech begins",
+          "purpose": "Ground the hook in the exact spoken words"
+        },
+        {
+          "order": 2,
+          "action": "Headline words stagger in left-to-right, 0.12s apart, ease-out",
+          "purpose": "Staged question builds anticipation toward the gold word"
+        },
+        {
+          "order": 3,
+          "action": "Gauge track fades in, teal fill rises to 100% over 0.6s",
+          "purpose": "Establish the capacity as full before anything is lost"
+        },
+        {
+          "order": 4,
+          "action": "Fill drains top-down while counter steps 100->34",
+          "purpose": "Depletion is the mechanism of fatigue; counter change proves it is measurable"
+        },
+        {
+          "order": 5,
+          "action": "Single gold pulse on 34% and on CAPEK, then hold still",
+          "purpose": "Punch the answer to the question without adding motion"
+        }
+      ],
+      "compositionIntent": "leftTextRightObject: two-line question block top-left at 8% margin, one tall vertical gauge with counter in the right ~30%, caption bottom-left, ~60% negative space between. Static camera, soft vignette, nothing centered, nothing decorative in the gap.",
+      "visualEvidence": [
+        "Gold CAPEK is the only accented word; everything else is off-white text",
+        "Teal fill visibly drops inside a hollow track while the number beside it falls 100%->34%",
+        "Low teal stub sits across from CAPEK, empty track above it proves the loss",
+        "Frame holds 60% empty dark space; only 6 elements total"
+      ],
+      "forbiddenInterpretations": [
+        "No battery/lightning-bolt clipart or emoji of a tired face",
+        "No arrows, bolts or critic figures attacking the gauge — energy leaves from within",
+        "No counter drifting independently of the fill level",
+        "No particles, sparks or glow emitted by the draining fill",
+        "No centered gauge crowding the headline, no extra accent colors beyond teal and gold CAPEK"
+      ],
+      "noveltyIntent": "Fatigue is measured instead of depicted: a teal capacity column empties in sync with a percentage counter while the question's gold CAPEK sits level with the low stub — depletion, not incoming pressure.",
+      "elementBudget": {
+        "min": 6,
+        "max": 8
+      }
+    },
+    {
+      "beatId": "b2",
+      "spokenMeaning": "The monologue names the exhausting behavior: bending yourself so everyone will like you.",
+      "viewerTakeaway": "Trying to please everyone costs real pieces of yourself and never buys the approval back.",
+      "visualMechanism": "depletion — the teal self-disc loses material that converts into gold approva...",
+      "visualNarrative": [
+        {
+          "order": 1,
+          "action": "A solid teal circle labelled DIRI LU fades in intact, slightly left of center.",
+          "meaning": "Establishes the whole self before the eroding begins.",
+          "visualEvidence": "Unbroken teal disc with a full ring stroke, label 'DIRI LU' beneath it."
+        },
+        {
+          "order": 2,
+          "action": "Small gold notches break off the disc's right edge one by one, each becoming a gold coin token.",
+          "meaning": "Each attempt to please spends a real piece of the self.",
+          "visualEvidence": "Disc edge visibly dented where notches detached; coins emerge only from those notches."
+        },
+        {
+          "order": 3,
+          "action": "The gold coins drift along a thin arc toward three dim hollow face dots on the right.",
+          "meaning": "Self-material is converted into approval offerings sent outward.",
+          "visualEvidence": "Coin arc ends at a row of dim outlined faces, never curving back."
+        },
+        {
+          "order": 4,
+          "action": "Coins land; the faces stay dim and unresponsive while the teal disc is left as a thin hollow ring.",
+          "meaning": "Approval never returns — the effort depletes the giver permanently.",
+          "visualEvidence": "Hollow ring with wide empty center, label now dimmed, faces unchanged."
+        }
+      ],
+      "semanticObjects": [
+        {
+          "objectType": "Circle",
+          "semanticRole": "The person being hollowed — value physically leaves this core",
+          "relationship": "source of every gold token, eroded by them",
+          "importance": 5
+        },
+        {
+          "objectType": "Badge",
+          "semanticRole": "A slice of self converted into an offering of likability",
+          "relationship": "chips off the circle and travels to the audience",
+          "importance": 4
+        },
+        {
+          "objectType": "Circle",
+          "semanticRole": "The everyone whose approval can never be satisfied",
+          "relationship": "receives tokens but never brightens or gives back",
+          "importance": 4
+        },
+        {
+          "objectType": "Indicator",
+          "semanticRole": "One-way direction of giving: self to others, no return path",
+          "relationship": "connects circle edge to face dots unidirectionally",
+          "importance": 3
+        },
+        {
+          "objectType": "Label",
+          "semanticRole": "Names the behavior while the image proves its cost",
+          "relationship": "sits above the mechanism as its caption",
+          "importance": 3
+        }
+      ],
+      "relationships": [
+        {
+          "from": "Teal self circle",
+          "to": "Gold approval token",
+          "relationship": "material source — each token is carved from the disc's edge"
+        },
+        {
+          "from": "Gold approval token",
+          "to": "Dim face dots (audience)",
+          "relationship": "delivered offering that receives no response or return"
+        },
+        {
+          "from": "Arc indicator",
+          "to": "Teal self circle",
+          "relationship": "shows depletion drains one-way outward, never refills"
+        }
+      ],
+      "typographyPlan": {
+        "headline": "BERUSAHA BIAR DISUKAI SEMUA ORANG",
+        "emphasisWords": [
+          "SEMUA",
+          "ORANG"
+        ],
+        "supportingText": [
+          "SETIAP POTONGAN KELUAR",
+          "GA PERNAH BALIK LAGI",
+          "YANG DIBERI: DIRI LU"
+        ]
+      },
+      "subtitlePlan": {
+        "enabled": true,
+        "text": "Berusaha… biar semua orang suka sama kita.",
+        "timing": "spoken over the intact teal circle, before chipping begins",
+        "role": "spoken line"
+      },
+      "motionBeats": [
+        {
+          "order": 1,
+          "action": "Fade-in and slight scale-up of the intact teal disc with its label",
+          "purpose": "Present the whole self so its later loss is measurable"
+        },
+        {
+          "order": 2,
+          "action": "Staggered chipping: three notches detach at 0.5s intervals, each morphing into a coin",
+          "purpose": "Show depletion as accumulated discrete acts, not a single event"
+        },
+        {
+          "order": 3,
+          "action": "Coins slide along the arc with soft ease-out toward the faces",
+          "purpose": "Trace where the self-material actually goes"
+        },
+        {
+          "order": 4,
+          "action": "Coin arrival leaves faces static while the disc contracts to a hollow ring",
+          "purpose": "Prove the exchange is one-way — effort converts to loss, not approval"
+        },
+        {
+          "order": 5,
+          "action": "Dim the DIRI LU label color as the ring hollows",
+          "purpose": "Mark the identity cost as the scene's closing beat"
+        }
+      ],
+      "compositionIntent": "Centered mechanism on a dark radial stage: hollowing teal disc at ~35% x, three dim face dots at ~72% x, one thin gold arc connecting them, headline top-left in the upper third. Roughly 60% negative space, one text block plus one dominant object.",
+      "visualEvidence": [
+        "Disc edge shows visible notches exactly where coins were removed, proving material left the self",
+        "Arc terminates at the audience with no return line, proving the giving is one-way",
+        "Faces remain the same dim outline after receiving three coins, proving approval never arrives",
+        "Final thin ring versus initial solid disc shows the core was consumed, not decorated"
+      ],
+      "forbiddenInterpretations": [
+        "generic circle-and-arrow diagram with no visible damage",
+        "a person figure literally handing over gifts",
+        "smiling crowd or applause rewarding the effort",
+        "multiple accents competing — coins and arc share one gold accent, disc holds the teal",
+        "a mask or costume being added — this mechanism removes material, never covers it"
+      ],
+      "noveltyIntent": "Where prior beats added layers or tilted lines, this one removes mass: the protagonist's own color physically becomes the currency spent, so the audience watches the self get smaller rather than the situation get bigger.",
+      "elementBudget": {
+        "min": 7,
+        "max": 9
+      }
+    },
+    {
+      "beatId": "b3",
+      "spokenMeaning": "Cara ngomong dijaga. Cara berpakaian dipikirin. You curate your words and your clothes minute by minute so nobody can judge them.",
+      "viewerTakeaway": "Watching the true word get struck and replaced shows how exhausting self-monitoring is: the safe version stands, but the scar of what you erased never leaves.",
+      "visualMechanism": "In-place word swap: the honest word in a real sentence is struck by a gold ha...",
+      "visualNarrative": [
+        {
+          "order": 1,
+          "action": "Headline 'LU JAGA DUA HAL TIAP DETIK' fades up left; below it the first row label NGOMONG and the phrase 'gue bilang susah' reveal, SUSAH set in gold.",
+          "meaning": "The honest version exists first — speech is still true before the monitoring kicks in.",
+          "visualEvidence": "Gold word SUSAH sits solid at the end of an otherwise plain sentence under a small uppercase NGOMONG label."
+        },
+        {
+          "order": 2,
+          "action": "A gold hairline draws left-to-right across SUSAH and the word dims to 35% opacity, staying on screen as a ghost.",
+          "meaning": "Self-monitoring strikes the true word before it lands; the deletion leaves a visible scar, not a clean erase.",
+          "visualEvidence": "Gold strike line crosses SUSAH while the struck word remains faintly readable beneath it."
+        },
+        {
+          "order": 3,
+          "action": "The bland word 'oke' slides into the same slot on the same baseline; the struck 'susah' stays as a dim ghost behind the strike.",
+          "meaning": "The safe version stands in the position of truth — the sentence now reads curated, and the record of what was removed persists.",
+          "visualEvidence": "One slot holds both words: solid white 'oke' in front, gold struck ghost 'susah' behind it."
+        },
+        {
+          "order": 4,
+          "action": "Second row BERPAKAIAN reveals with 'gue pake berani', then repeats the identical action: strike draws across BERANI, it ghosts, 'biasa' slides into the slot.",
+          "meaning": "Appearance is curated by the exact same mechanism — repetition proves it is habitual hypervigilance, not a one-off edit.",
+          "visualEvidence": "Two parallel rows each ending in an identical gold strike scar, both slots now holding bland white words."
+        },
+        {
+          "order": 5,
+          "action": "Both rows hold with a small inward position shift (rows tighten toward the headline) while the gold scars stay lit.",
+          "meaning": "The frame tightens physically: performed identity is comfortable for no one, and the record of editing is permanent.",
+          "visualEvidence": "Static final frame: headline, two labels, two bland sentences, two gold strike scars, dark empty right third."
+        }
+      ],
+      "semanticObjects": [
+        {
+          "objectType": "Typography",
+          "semanticRole": "States the claim being proven: two things guarded constantly",
+          "relationship": "frames both rows beneath it",
+          "importance": 3
+        },
+        {
+          "objectType": "Label",
+          "semanticRole": "Names the first monitored domain: speech",
+          "relationship": "labels the speech row",
+          "importance": 2
+        },
+        {
+          "objectType": "WordReveal",
+          "semanticRole": "The true word SUSAH — the value being surrendered",
+          "relationship": "gets struck by StrikeSpeech, then displaced by SafeWordSpeech",
+          "importance": 4
+        },
+        {
+          "objectType": "Line",
+          "semanticRole": "The act of self-censorship itself, drawn as a hairline",
+          "relationship": "crosses and dims HonestWordSpeech",
+          "importance": 4
+        },
+        {
+          "objectType": "WordReveal",
+          "semanticRole": "The bland replacement OKE that survives",
+          "relationship": "slides into the slot vacated by HonestWordSpeech",
+          "importance": 4
+        },
+        {
+          "objectType": "Label",
+          "semanticRole": "Names the second monitored domain: appearance",
+          "relationship": "labels the clothing row",
+          "importance": 2
+        },
+        {
+          "objectType": "WordReveal",
+          "semanticRole": "The distinct choice BERANI being erased",
+          "relationship": "gets struck by StrikeClothing, then displaced by SafeWordClothing",
+          "importance": 4
+        },
+        {
+          "objectType": "Line",
+          "semanticRole": "Second identical act of curation — repetition as habit",
+          "relationship": "crosses and dims HonestWordClothing",
+          "importance": 3
+        },
+        {
+          "objectType": "WordReveal",
+          "semanticRole": "The plain replacement BIASA that survives",
+          "relationship": "slides into the slot vacated by HonestWordClothing",
+          "importance": 3
+        },
+        {
+          "objectType": "Label",
+          "semanticRole": "Fixed words 'gue bilang' / 'gue pake' making each slot a real sentence, not a diagram",
+          "relationship": "holds each swappable slot in place",
+          "importance": 3
+        }
+      ],
+      "relationships": [
+        {
+          "from": "StrikeSpeech",
+          "to": "HonestWordSpeech",
+          "relationship": "crosses out and dims to a retained ghost"
+        },
+        {
+          "from": "SafeWordSpeech",
+          "to": "HonestWordSpeech",
+          "relationship": "displaces into the same slot on the same baseline"
+        },
+        {
+          "from": "StrikeClothing",
+          "to": "HonestWordClothing",
+          "relationship": "crosses out and dims to a retained ghost"
+        },
+        {
+          "from": "SafeWordClothing",
+          "to": "HonestWordClothing",
+          "relationship": "displaces into the same slot on the same baseline"
+        },
+        {
+          "from": "Headline",
+          "to": "SentenceFrame",
+          "relationship": "frames and is proven by both rows"
+        },
+        {
+          "from": "Label NGOMONG",
+          "to": "SentenceFrame",
+          "relationship": "names the domain of the first row"
+        },
+        {
+          "from": "Label BERPAKAIAN",
+          "to": "SentenceFrame",
+          "relationship": "names the domain of the second row"
+        }
+      ],
+      "typographyPlan": {
+        "headline": "LU JAGA DUA HAL TIAP DETIK",
+        "emphasisWords": [
+          "SUSAH",
+          "BERANI"
+        ],
+        "supportingText": [
+          "NGOMONG",
+          "gue bilang susah → oke",
+          "BERPAKAIAN",
+          "gue pake berani → biasa"
+        ]
+      },
+      "subtitlePlan": {
+        "enabled": true,
+        "text": "Cara ngomong dijaga. Cara berpakaian dipikirin.",
+        "timing": "full beat, 53.26s–55.07s",
+        "role": "spoken line"
+      },
+      "motionBeats": [
+        {
+          "order": 1,
+          "action": "Headline fades up left, soft ease-out",
+          "purpose": "Anchors the claim before the frame proves it"
+        },
+        {
+          "order": 2,
+          "action": "NGOMONG label and 'gue bilang susah' stagger in",
+          "purpose": "Establishes the honest sentence as the starting truth"
+        },
+        {
+          "order": 3,
+          "action": "Gold hairline draws across SUSAH",
+          "purpose": "Performs the monitoring act — someone editing you mid-sentence"
+        },
+        {
+          "order": 4,
+          "action": "SUSAH dissolves to a 35% ghost while 'oke' slides into the slot",
+          "purpose": "Shows replacement, not disappearance: the safe word stands, the scar stays"
+        },
+        {
+          "order": 5,
+          "action": "BERPAKAIAN label and 'gue pake berani' stagger in",
+          "purpose": "Extends the same scrutiny from voice to body"
+        },
+        {
+          "order": 6,
+          "action": "Second strike draws across BERANI, then 'biasa' slides in",
+          "purpose": "Repetition proves this is a habitual loop, not one incident"
+        },
+        {
+          "order": 7,
+          "action": "Both rows shift slightly inward and hold",
+          "purpose": "Physicalizes tightness — the frame compresses around the curated lines"
+        }
+      ],
+      "compositionIntent": "Typography-dominant frame, left-aligned at the 8% margin: 96px headline top-left, two stacked rows beneath, each a 34px uppercase label plus one 52px sentence whose final slot word is the animated element. The right third stays empty dark vignette so the two gold scars read alone.",
+      "visualEvidence": [
+        "Gold word SUSAH sits solid in a real sentence before any strike appears",
+        "Gold hairline crosses SUSAH while the struck word stays readable at low opacity",
+        "Solid white 'oke' occupies the exact baseline slot with the struck ghost behind it",
+        "Two parallel rows each ending in an identical gold strike scar after the swap",
+        "Final frame shows bland white words standing where the two gold words used to be"
+      ],
+      "forbiddenInterpretations": [
+        "Mouth, speech-bubble or clothing illustrations",
+        "Filter-gate, lock or mask icons (already used in proj_muwt0aze)",
+        "Striking out the whole sentence instead of swapping one slot word",
+        "Slider, dial or arrow-diagram explanation of self-censorship",
+        "More than two gold words, glow bloom, glitch or camera shake"
+      ],
+      "noveltyIntent": "Self-censorship is performed by editing two real sentence slots in place, keeping each deleted honest word visible as a gold scar, unlike prior struck-answer grids or filter-gate diagrams.",
+      "elementBudget": {
+        "min": 8,
+        "max": 10
+      }
+    },
+    {
+      "beatId": "b5",
+      "spokenMeaning": "No matter what you do, someone will disapprove — the negative verdict isn't a response to your action, it's already there before you act.",
+      "viewerTakeaway": "Approval-seeking is a rigged game: since the verdict arrives before the action, changing what you do can never change whether you're criticized.",
+      "visualMechanism": "decisionConsequence",
+      "visualNarrative": [
+        {
+          "order": 1,
+          "action": "Left text block (headline + supporting lines) fades in; right side shows only a bare outlined stage rectangle on the dark bg.",
+          "meaning": "Nothing has been done yet — the space of action is empty and unjudged.",
+          "visualEvidence": "Empty 1px outlined rectangle sits right of the text block, interior completely blank."
+        },
+        {
+          "order": 2,
+          "action": "A red verdict stamp drops hard onto the EMPTY stage interior first, before any action exists, landing slightly rotated.",
+          "meaning": "The judgment is issued before any behavior occurs — the disapproval is not a response, it is the starting condition.",
+          "visualEvidence": "Red stamp badge with white 'VONIS' hits blank stage floor while no line is drawn anywhere in frame."
+        },
+        {
+          "order": 3,
+          "action": "A teal action line draws itself from the stage's left edge, runs right, and is pressed flat where it passes beneath the red stamp, stopping at it.",
+          "meaning": "Whatever you actually do arrives second and enters the frame already under the verdict.",
+          "visualEvidence": "Teal stroke draws left→right and flattens/clips exactly at the stamp's footprint, stamp sitting above it unchanged."
+        },
+        {
+          "order": 4,
+          "action": "A second, dimmer teal line draws on a different route (rises, curves around) but still terminates underneath the same unmoved stamp; stamp holds and the frame exits by fade.",
+          "meaning": "Changing the action does not move the verdict — no path escapes, so the whole approval-seeking strategy is rigged.",
+          "visualEvidence": "Two different teal paths both end under one identical red stamp that never shifts, lifts, or re-evaluates."
+        }
+      ],
+      "semanticObjects": [
+        {
+          "objectType": "Badge",
+          "semanticRole": "The disapproval itself — a 'someone won't like it' verdict that exists before any behavior.",
+          "relationship": "Lands on the empty stage first, then occludes/presses down every action line drawn afterward.",
+          "importance": 5
+        },
+        {
+          "objectType": "Line",
+          "semanticRole": "The viewer's actual deeds (kind, silent, successful, failing) — varied attempts to earn approval.",
+          "relationship": "Draws in after the stamp and is flattened/stopped where it passes under the stamp.",
+          "importance": 5
+        },
+        {
+          "objectType": "Line",
+          "semanticRole": "A different strategy — proof that changing the action does not change the outcome.",
+          "relationship": "Takes an alternate route yet still terminates beneath the same unmoved stamp.",
+          "importance": 4
+        },
+        {
+          "objectType": "Frame",
+          "semanticRole": "The field where 'mau lu ngapain juga' happens — an open arena the verdict already occupies.",
+          "relationship": "Frames and contains the stamp and both action lines.",
+          "importance": 3
+        },
+        {
+          "objectType": "Label",
+          "semanticRole": "Names the mechanism so the image reads as a verdict, not decoration.",
+          "relationship": "Sits inside the stamp as its printed text.",
+          "importance": 3
+        },
+        {
+          "objectType": "Headline",
+          "semanticRole": "States the reversed causality in words on the left.",
+          "relationship": "Leads the eye left→right into the stage sequence.",
+          "importance": 4
+        },
+        {
+          "objectType": "Subheadline",
+          "semanticRole": "Plain-language grounding of the claim in the viewer's own life.",
+          "relationship": "Sits directly beneath the headline as one quiet block.",
+          "importance": 2
+        }
+      ],
+      "relationships": [
+        {
+          "from": "RedVerdictStamp",
+          "to": "StageOutline",
+          "relationship": "lands_on_before_anything_exists"
+        },
+        {
+          "from": "ActionLineTeal",
+          "to": "RedVerdictStamp",
+          "relationship": "draws_in_and_is_pressed_flat_underneath"
+        },
+        {
+          "from": "SecondActionLineDim",
+          "to": "RedVerdictStamp",
+          "relationship": "reroutes_but_still_terminates_under"
+        },
+        {
+          "from": "StageOutline",
+          "to": "ActionLineTeal",
+          "relationship": "frames_and_clips"
+        }
+      ],
+      "typographyPlan": {
+        "headline": "VONIS DATANG LEBIH DULU",
+        "emphasisWords": [
+          "VONIS",
+          "DULU"
+        ],
+        "supportingText": [
+          "Mau lu ngapain juga,",
+          "hasilnya tetap sama.",
+          "Vonisnya keluar duluan —",
+          "baru lu jalan."
+        ]
+      },
+      "subtitlePlan": {
+        "enabled": true,
+        "text": "Padahal… mau lu ngapain juga, pasti ada aja yang nggak suka.",
+        "timing": "58.7–61.2s, held while stamp lands and line draws",
+        "role": "spoken line"
+      },
+      "motionBeats": [
+        {
+          "order": 1,
+          "action": "Headline reveals line-by-line left, then supporting lines fade in beneath.",
+          "purpose": "Establish the claim calmly before the reversal lands."
+        },
+        {
+          "order": 2,
+          "action": "Stage outline wipes open on the right, interior empty.",
+          "purpose": "Give the verdict a blank field to violate."
+        },
+        {
+          "order": 3,
+          "action": "Red stamp drops with a short scale-down impact and 4° tilt onto the empty stage.",
+          "purpose": "Makes the verdict the first event — causality visibly reversed."
+        },
+        {
+          "order": 4,
+          "action": "Teal line draws left→right and flattens where the stamp sits above it.",
+          "purpose": "Shows the action arriving second and entering already condemned."
+        },
+        {
+          "order": 5,
+          "action": "Second dim teal path draws on a different curve, ending under the same stamp; stamp does not move.",
+          "purpose": "Proves no variation of action escapes the pre-issued judgment."
+        },
+        {
+          "order": 6,
+          "action": "One subtle scale pulse on the stamp, then whole frame fades out.",
+          "purpose": "Leaves the fixed verdict as the lasting impression."
+        }
+      ],
+      "compositionIntent": "leftTextRightObject: headline + supporting lines occupy the left ~38% with 8% margins, the right ~48% holds a single outlined stage. Red stamp is the only saturated mass, upper area of the stage; teal lines are thin strokes entering from lower-left of the stage. Roughly 60% negative space, no third cluster.",
+      "visualEvidence": [
+        "Red stamp lands on a completely blank stage before any line exists in frame.",
+        "Teal action line flattens and stops exactly beneath the stamp's footprint.",
+        "Second teal path curves differently yet ends under the identical unmoved stamp.",
+        "'VONIS' and 'DULU' carry the only red type; all other text stays off-white."
+      ],
+      "forbiddenInterpretations": [
+        "Two people arguing or a crowd of critic speech bubbles",
+        "A balance scale weighing praise versus criticism",
+        "A checklist or grid of different criticisms",
+        "Action arrows bouncing off a shield or dodging the stamp",
+        "Camera shake, impact particles or glitch on the stamp landing"
+      ],
+      "noveltyIntent": "Unlike memory's drift, bending and moving-target mechanisms, this reverses time itself: the red verdict stamps an empty stage before any action line is drawn, so unfairness reads as reversed causality rather than comparison.",
+      "elementBudget": {
+        "min": 6,
+        "max": 8
+      }
+    },
+    {
+      "beatId": "b7",
+      "spokenMeaning": "The effort to control what others think is futile — their judgment stops at a line you own and can never be brought inside.",
+      "viewerTakeaway": "Let judgment arrive, glance off the boundary, and pass — it never gets to enter or move you.",
+      "visualMechanism": "barrier — converging opinion strokes halt at a gold perimeter ring and slide ...",
+      "visualNarrative": [
+        {
+          "order": 1,
+          "action": "Four thin opinion strokes enter from the outer edges, aimed straight at a centered inner disc labelled DIRI LU, and halt one shared radius away against a hairline gold ring.",
+          "meaning": "Others' judgments arrive with force but stop at a boundary that is not theirs to move.",
+          "visualEvidence": "Four converging strokes all end at an identical gap before the gold ring; none touches the disc."
+        },
+        {
+          "order": 2,
+          "action": "Each blocked stroke slides off along the ring's curve, curving away toward the frame edges while the disc and ring stay perfectly still.",
+          "meaning": "Judgment is deflected and dissipates outward — it can pass by, never through.",
+          "visualEvidence": "Stroke tips trace short arcs along the ring's outer edge and exit; ring and disc show zero displacement."
+        },
+        {
+          "order": 3,
+          "action": "Headline lu NGGAK BISA NGONTROL settles above the scene with NGGAK BISA in gold; strokes leave as faint dim tracks.",
+          "meaning": "The pivot: control is named exactly where it ends.",
+          "visualEvidence": "Two-word gold emphasis; residual hairline trails record where opinions passed without entry."
+        }
+      ],
+      "semanticObjects": [
+        {
+          "objectType": "Circle",
+          "semanticRole": "Holds DIRI LU — the sovereign self that stays intact and unmoved.",
+          "relationship": "Defended by the ring; absorbs nothing from outside.",
+          "importance": 5
+        },
+        {
+          "objectType": "Ring",
+          "semanticRole": "The boundary of control — a hard, thin perimeter judgment cannot breach.",
+          "relationship": "Physically stops and deflects every incoming stroke.",
+          "importance": 5
+        },
+        {
+          "objectType": "Line",
+          "semanticRole": "Criticism of looks/words — halts at the ring.",
+          "relationship": "Travels toward the disc, blocked at the ring, slides off along it.",
+          "importance": 4
+        },
+        {
+          "objectType": "Line",
+          "semanticRole": "Criticism of success/failure — halts at the ring.",
+          "relationship": "Travels toward the disc, blocked at the ring, slides off along it.",
+          "importance": 4
+        },
+        {
+          "objectType": "Line",
+          "semanticRole": "Criticism of kindness — halts at the ring.",
+          "relationship": "Travels toward the disc, blocked at the ring, slides off along it.",
+          "importance": 3
+        },
+        {
+          "objectType": "Line",
+          "semanticRole": "Criticism of silence/posting — halts at the ring.",
+          "relationship": "Travels toward the disc, blocked at the ring, slides off along it.",
+          "importance": 3
+        },
+        {
+          "objectType": "Label",
+          "semanticRole": "Names the principle: control simply doesn't extend there.",
+          "relationship": "Anchors the top of the frame above the deflection.",
+          "importance": 4
+        }
+      ],
+      "relationships": [
+        {
+          "from": "OpinionStrokeA",
+          "to": "GoldRing",
+          "relationship": "blocked-by: stroke terminates at ring radius, then deflects along its curve"
+        },
+        {
+          "from": "OpinionStrokeB",
+          "to": "GoldRing",
+          "relationship": "blocked-by: stroke terminates at ring radius, then deflects along its curve"
+        },
+        {
+          "from": "OpinionStrokeC",
+          "to": "GoldRing",
+          "relationship": "blocked-by: stroke terminates at ring radius, then deflects along its curve"
+        },
+        {
+          "from": "OpinionStrokeD",
+          "to": "GoldRing",
+          "relationship": "blocked-by: stroke terminates at ring radius, then deflects along its curve"
+        },
+        {
+          "from": "GoldRing",
+          "to": "InnerDisc",
+          "relationship": "protects: ring holds perimeter, disc remains static inside it"
+        }
+      ],
+      "typographyPlan": {
+        "headline": "LU NGGAK BISA NGONTROL",
+        "emphasisWords": [
+          "NGGAK BISA"
+        ],
+        "supportingText": [
+          "Pendapat orang lain",
+          "berhenti di batas ini"
+        ]
+      },
+      "subtitlePlan": {
+        "enabled": true,
+        "text": "Jadi… buat apa? Lu nggak akan pernah bisa ngontrol apa yang orang lain pikirin.",
+        "timing": "Opening of the beat, over the strokes' approach and block",
+        "role": "spoken line"
+      },
+      "motionBeats": [
+        {
+          "order": 1,
+          "action": "Four strokes slide inward in stagger toward the disc.",
+          "purpose": "Builds the incoming pressure of others' judgment."
+        },
+        {
+          "order": 2,
+          "action": "Each stroke snaps to a halt at the ring with a brief settle.",
+          "purpose": "Performs the boundary as physical — the block is the point."
+        },
+        {
+          "order": 3,
+          "action": "Blocked strokes slide off along the ring's curve and exit frame.",
+          "purpose": "Shows judgment passing by, never in — indifference as motion."
+        },
+        {
+          "order": 4,
+          "action": "Ring gives one restrained gold emphasis pulse on the last deflection.",
+          "purpose": "Confirms the boundary held without glow excess."
+        },
+        {
+          "order": 5,
+          "action": "Headline words reveal in staged fade; strokes dissolve to dim tracks.",
+          "purpose": "Lands the principle after the action has proven it."
+        }
+      ],
+      "compositionIntent": "Centered composition: inner disc at frame center with a thin gold ring, headline set left-aligned in the upper third. Four opinion strokes converge from the diagonals, each stopping short of the ring and deflecting along it; generous dark negative space keeps the perimeter as the single focal structure.",
+      "visualEvidence": [
+        "All four strokes terminate at an identical gap outside the ring; none crosses it.",
+        "Strokes' tips trace arcs along the ring edge while disc and ring remain perfectly static.",
+        "Gold appears only on the ring and two headline words — the boundary and the named limit."
+      ],
+      "forbiddenInterpretations": [
+        "arrows that pass through or pierce the circle",
+        "generic circle-and-arrow diagram without deflection",
+        "a shield, wall, or force-field emoji metaphor",
+        "pulsing glow halo implying the disc is 'protected by energy'",
+        "opinions shrinking or disappearing to suggest they stop existing"
+      ],
+      "noveltyIntent": "Unlike prior boundary and dial scenes, judgment here is an active express motion that visibly halts and slides off a perimeter, so untouchability is performed by the outside element, not asserted by the self.",
+      "elementBudget": {
+        "min": 7,
+        "max": 8
+      }
+    },
+    {
+      "beatId": "b9",
+      "spokenMeaning": "Mereka pulang ke hidup mereka, dan lu tetap harus hidup dengan hidup lu sendiri — jadi nggak apa-apa kalau nggak semua orang suka sama lu, karena lu memang nggak diciptain buat disukai semua orang.",
+      "viewerTakeaway": "Kepentingan orang lain dan hidup lu berangkat dari titik yang sama lalu berpisah; hidup lu yang tetap jalan adalah bukti bahwa lu bebas dari penilaian mereka.",
+      "visualMechanism": "separation",
+      "visualNarrative": [
+        {
+          "order": 1,
+          "action": "A single small origin dot fades in at the lower-left third; both life-trails will start from it.",
+          "meaning": "Both lives share one starting point — separation is a choice made from here, not from nothing.",
+          "visualEvidence": "One white dot at x≈15%, y≈65% on the dark field, before any line exists."
+        },
+        {
+          "order": 2,
+          "action": "Headline slides in word by word: 'MEREKA PULANG. LU TETAP JALAN.' — 'JALAN' lands in gold.",
+          "meaning": "States the two destinations before the geometry explains them.",
+          "visualEvidence": "Two headline lines left-aligned top-left; only 'JALAN' carries the gold accent."
+        },
+        {
+          "order": 3,
+          "action": "A dim trail draws from the origin, curving up-right and terminating inside a cluster of five small house-blocks.",
+          "meaning": "'Mereka pulang' enacted: their path ends at their own home and stops there.",
+          "visualEvidence": "Grey-white hairline bends upward and its tip disappears into the block cluster at x≈48%."
+        },
+        {
+          "order": 4,
+          "action": "The five house-blocks stagger into place around the dim trail's tip, then hold at low brightness.",
+          "meaning": "Their world is complete and closed — it receives them and is not a destination for the viewer.",
+          "visualEvidence": "Five dim rectangular blocks stacked as a small settlement; they stay at ~35% opacity."
+        },
+        {
+          "order": 5,
+          "action": "Label 'MEREKA PULANG KE HIDUP MEREKA' fades in under the dim trail.",
+          "meaning": "Names their route so the geometry cannot be misread as loss or abandonment.",
+          "visualEvidence": "One uppercase 34px label, secondary text color, sitting below the curved dim trail."
+        },
+        {
+          "order": 6,
+          "action": "A gold trail draws from the same origin, running shallow beneath the cluster, passing beyond it, and stopping only at the right frame edge.",
+          "meaning": "The viewer's life keeps going past their home and does not end where their approval ends.",
+          "visualEvidence": "Unbroken gold line from x≈15% to x≈92%, crossing under the block cluster with no bend into it."
+        },
+        {
+          "order": 7,
+          "action": "As the gold tip passes the cluster, the cluster visibly dims and stays dim; the trails never rejoin.",
+          "meaning": "Separation acts out: their world recedes the further one's own life continues.",
+          "visualEvidence": "Cluster opacity drops from 50% to 35% only after the gold line clears it; no line reconnects the two paths."
+        },
+        {
+          "order": 8,
+          "action": "Label 'HIDUP LU' fades in under the gold trail's far end; a final soft highlight passes along the gold line to its tip.",
+          "meaning": "Permission lands: this continuing path is the whole point — being liked by everyone was never the destination.",
+          "visualEvidence": "Gold label at the right edge; a subtle highlight sweep ends at the line's tip, then the frame holds still."
+        }
+      ],
+      "semanticObjects": [
+        {
+          "objectType": "Actor",
+          "semanticRole": "Shared starting point of both lives, so divergence reads as a choice rather than an accident.",
+          "relationship": "emits dimTrail and goldTrail",
+          "importance": 3
+        },
+        {
+          "objectType": "Actor",
+          "semanticRole": "Their path: curves back and terminates inside the house cluster — 'mereka pulang'.",
+          "relationship": "terminates inside houseCluster",
+          "importance": 4
+        },
+        {
+          "objectType": "Actor",
+          "semanticRole": "The viewer's path: one continuous line that passes the cluster and reaches the frame edge — an open-ended life.",
+          "relationship": "passes beyond houseCluster without entering it",
+          "importance": 5
+        },
+        {
+          "objectType": "Actor",
+          "semanticRole": "Five small blocks reading instantly as 'their home'; the closed world that receives them.",
+          "relationship": "absorbs dimTrail; is passed and dimmed by goldTrail",
+          "importance": 4
+        },
+        {
+          "objectType": "Actor",
+          "semanticRole": "Declares the split thesis; gold on 'JALAN' marks the continuing life as the valued one.",
+          "relationship": "frames both trails from above",
+          "importance": 5
+        },
+        {
+          "objectType": "Actor",
+          "semanticRole": "Names their destination so their leaving is neutral, not a rejection.",
+          "relationship": "anchored below dimTrail",
+          "importance": 3
+        },
+        {
+          "objectType": "Actor",
+          "semanticRole": "Names the viewer's path as sovereign: the life that keeps going.",
+          "relationship": "anchored below goldTrail's far end",
+          "importance": 4
+        }
+      ],
+      "relationships": [
+        {
+          "from": "originPoint",
+          "to": "dimTrail",
+          "relationship": "source — one shared start the dim path leaves from"
+        },
+        {
+          "from": "dimTrail",
+          "to": "houseCluster",
+          "relationship": "terminates-in — their path ends inside their home"
+        },
+        {
+          "from": "goldTrail",
+          "to": "houseCluster",
+          "relationship": "passes-beyond-and-dims — the acting pair: the gold line clears the cluster and forces it to recede"
+        },
+        {
+          "from": "headline",
+          "to": "goldTrail",
+          "relationship": "labels-in-advance — 'JALAN' names what the gold line then performs"
+        },
+        {
+          "from": "labelYours",
+          "to": "goldTrail",
+          "relationship": "anchors-to — caption lands only after the line reaches the edge"
+        }
+      ],
+      "typographyPlan": {
+        "headline": "MEREKA PULANG. LU TETAP JALAN.",
+        "emphasisWords": [
+          "PULANG",
+          "JALAN"
+        ],
+        "supportingText": [
+          "MEREKA PULANG KE HIDUP MEREKA.",
+          "LU TETAP HIDUP DENGAN HIDUP LU.",
+          "NGGAK SEMUA ORANG SUKA SAMA LU.",
+          "NGGAK APA-APA."
+        ]
+      },
+      "subtitlePlan": {
+        "enabled": true,
+        "text": "Jadi nggak apa-apa kalau nggak semua orang suka sama lu — lu juga nggak diciptain buat disukai semua orang.",
+        "timing": "final ~18s of the beat (≈106.5s–124.58s), after the gold trail reaches the edge",
+        "role": "closing punchline caption — the spoken permission the gold line has just proved"
+      },
+      "motionBeats": [
+        {
+          "order": 1,
+          "action": "Origin dot fades in alone.",
+          "purpose": "Establish the shared starting point before any divergence."
+        },
+        {
+          "order": 2,
+          "action": "Headline words stagger-slide in; 'JALAN' takes a single gold highlight on landing.",
+          "purpose": "Set the thesis and pre-assign gold to the continuing life."
+        },
+        {
+          "order": 3,
+          "action": "Dim trail draws upward in a slow ease-out curve into the cluster.",
+          "purpose": "Animate 'mereka pulang' as a path that ends at their home."
+        },
+        {
+          "order": 4,
+          "action": "Five house-blocks stagger in around the dim tip, then hold dim.",
+          "purpose": "Build their closed world with restrained sequence, no decorative flourish."
+        },
+        {
+          "order": 5,
+          "action": "Label 'MEREKA PULANG KE HIDUP MEREKA' fades in.",
+          "purpose": "Name their destination so their exit reads neutral."
+        },
+        {
+          "order": 6,
+          "action": "Gold trail draws from the origin, under the cluster, out to the right edge in one unbroken stroke.",
+          "purpose": "The core acting motion: one's life keeps moving past their world."
+        },
+        {
+          "order": 7,
+          "action": "House cluster dims one step as the gold tip clears it.",
+          "purpose": "Reaction shot — separation is caused by continuing, not by rejecting."
+        },
+        {
+          "order": 8,
+          "action": "Label 'HIDUP LU' fades in; a soft highlight sweeps once along the gold line to its tip; frame holds static.",
+          "purpose": "Land the permission and end in resolute calm instead of more animation."
+        }
+      ],
+      "compositionIntent": "Horizontal split frame: headline block top-left at 8% margin; lower two-thirds holds one origin at left (x≈15%, y≈65%), a dim trail curving up-right into a five-block house cluster at x≈48%, and a gold trail running shallow beneath it out to x≈92%. One label under each trail, large negative space above the right half.",
+      "visualEvidence": [
+        "Two lines leave one dot; the dim one ends inside the block cluster, the gold one crosses under it and touches the right edge.",
+        "Cluster opacity visibly drops only after the gold line passes — separation acts, not just coexists.",
+        "Only 'JALAN' and the right label carry gold; everything else is white/secondary on #0B1313.",
+        "No line ever reconnects the two paths; the gold tip holds at the frame edge."
+      ],
+      "forbiddenInterpretations": [
+        "No two doors, gates, or room split — that visual was already used in this project family.",
+        "No arrows, filters, dials, or opinion bubbles; this beat is trajectory, not selection.",
+        "No literal people or figures standing between groups; trails carry the story.",
+        "No red accent — their departure is not a defeat or a conflict.",
+        "No glowing particles, camera moves, or simultaneous trail draws; entrances stay sequential."
+      ],
+      "noveltyIntent": "Unlike the earlier closed-door separation, both lives share one origin and the gold path physically passes the house cluster, making separation a continuous trajectory whose cause is simply keeping going.",
+      "elementBudget": {
+        "min": 7,
+        "max": 8
+      }
+    },
+    {
+      "beatId": "b8",
+      "spokenMeaning": "You cannot stop others' opinions, but you decide how much of them reaches your life.",
+      "viewerTakeaway": "Opinions stay stacked outside my wall; the gap I set is the only thing that lets them in.",
+      "visualMechanism": "sluiceGapOnWall — opinion stack flush at a walled gap",
+      "visualNarrative": [
+        {
+          "order": 1,
+          "action": "Left column holds the headline; beneath it six dim opinion rows stack flush against a vertical hairline wall, labeled PENDAPAT MEREKA.",
+          "meaning": "Others' opinions are a fixed mass that stays on their side — present, neutral, never erased.",
+          "visualEvidence": "Six equal dim rows end exactly at the center wall line; label PENDAPAT MEREKA sits above them, no row highlighted."
+        },
+        {
+          "order": 2,
+          "action": "A full-height hairline wall draws top-to-bottom down the center, leaving one small mid-height aperture; the right panel HIDUP LU fades in as a clean outline.",
+          "meaning": "The boundary of control is constructed, not given: life is a separate room with an opening you own.",
+          "visualEvidence": "Wall is one continuous 1px line with a single visible gap; right side shows only an outlined space labeled HIDUP LU."
+        },
+        {
+          "order": 3,
+          "action": "One thin teal thread leaves the stack, runs to the wall, passes through the aperture, and stops inside HIDUP LU.",
+          "meaning": "Influence still reaches you, but only as much as the opening allows — measured, not silenced.",
+          "visualEvidence": "Single teal hairline crosses the wall once; its width is clearly thinner than the stacked opinion rows."
+        },
+        {
+          "order": 4,
+          "action": "The aperture narrows to a slit while the thread thins and dims; the HIDUP LU outline holds crisp and brightens one step.",
+          "meaning": "You do not fight the source — you shrink the gap, so judgment carries less weight in your life.",
+          "visualEvidence": "Gap closes to a third; thread luminance drops; HIDUP LU outline stays unchanged and sharper."
+        },
+        {
+          "order": 5,
+          "action": "Headline words LU ATUR settle with a small scale emphasis, frame held static.",
+          "meaning": "The agency claim lands exactly as the gap finishes closing.",
+          "visualEvidence": "LU ATUR scales from 1.03 to 1.0 in teal while everything else stays still."
+        }
+      ],
+      "semanticObjects": [
+        {
+          "objectType": "Label",
+          "semanticRole": "The constant, uncontrollable stream of others' judgments — visible and neutral, never deleted.",
+          "relationship": "Source of the thread; stopped flush at the wall",
+          "importance": 4
+        },
+        {
+          "objectType": "Grid",
+          "semanticRole": "Many voices as repeated identical rows: quantity is real but inert on their side.",
+          "relationship": "Stacked under PENDAPAT MEREKA, blocked by the wall",
+          "importance": 4
+        },
+        {
+          "objectType": "Line",
+          "semanticRole": "The boundary of control: its gap size IS the decision of how much influence passes.",
+          "relationship": "Blocks the stack, frames and regulates the thread",
+          "importance": 5
+        },
+        {
+          "objectType": "Line",
+          "semanticRole": "Makes influence a quantity that can be thinned rather than a force to fight.",
+          "relationship": "Crosses the aperture into HIDUP LU",
+          "importance": 5
+        },
+        {
+          "objectType": "Label",
+          "semanticRole": "Your own life as a protected, sovereign receiving space.",
+          "relationship": "Receives the thread, shielded by the wall",
+          "importance": 4
+        },
+        {
+          "objectType": "Subheadline",
+          "semanticRole": "States the agency claim the geometry proves.",
+          "relationship": "Anchored top-left, aligned to the stack column",
+          "importance": 3
+        }
+      ],
+      "relationships": [
+        {
+          "from": "Opinion stack",
+          "to": "Hairline wall",
+          "relationship": "blocked-by (rows end flush at the wall; only one row continues as the thread)"
+        },
+        {
+          "from": "Wall aperture",
+          "to": "Teal thread",
+          "relationship": "regulates (gap width sets thread width and how far it reaches)"
+        },
+        {
+          "from": "Teal thread",
+          "to": "HIDUP LU panel",
+          "relationship": "enters-through (delivers only a measured amount of outside opinion)"
+        }
+      ],
+      "typographyPlan": {
+        "headline": "LU ATUR SEBESAR APA YANG MASUK",
+        "emphasisWords": [
+          "LU ATUR"
+        ],
+        "supportingText": [
+          "PENDAPAT MEREKA — atas tumpukan",
+          "HIDUP LU — ruang kanan",
+          "Yang lewat cuma sebatas celah"
+        ]
+      },
+      "subtitlePlan": {
+        "enabled": true,
+        "text": "Tapi lu bisa ngontrol… seberapa besar pendapat mereka ngaruh ke hidup lu.",
+        "timing": "full beat, 71.32s–74.93s",
+        "role": "spoken line — kept clear of all glow and geometry, full width bottom"
+      },
+      "motionBeats": [
+        {
+          "order": 1,
+          "action": "Staggered fade-in of the six opinion rows, then the label PENDAPAT MEREKA.",
+          "purpose": "Establishes opinions as an existing passive mass before control appears."
+        },
+        {
+          "order": 2,
+          "action": "Wall draws top-to-bottom as one hairline, pausing to leave the aperture open; panel HIDUP LU fades in.",
+          "purpose": "Builds the boundary as a deliberate act — control is constructed."
+        },
+        {
+          "order": 3,
+          "action": "Teal thread extends from the stack, bends at the wall, slides through the aperture into HIDUP LU (ease-out).",
+          "purpose": "Shows influence flowing only through the opening you allow."
+        },
+        {
+          "order": 4,
+          "action": "Aperture narrows while thread thins and dims; HIDUP LU outline brightens a step.",
+          "purpose": "The reframe: shrinking the gap, not fighting the source, is the control."
+        },
+        {
+          "order": 5,
+          "action": "LU ATUR settles with a 1.03→1.0 subtleScale; frame static for the final half-second.",
+          "purpose": "Lands the agency claim as the gap finishes closing."
+        }
+      ],
+      "compositionIntent": "leftTextRightObject: headline and opinion stack anchored left (~8% margin), center a full-height hairline wall with one mid-height aperture, right an outlined HIDUP LU space crossed by a single thin teal thread. One accent (teal) only, glow absent or tiny behind HIDUP LU, ~65% negative space, caption on its own clear bottom band.",
+      "visualEvidence": [
+        "Opinion rows end exactly flush against the wall — only one row continues as a thread.",
+        "Thread is visibly thinner than the rows and dims as the aperture narrows.",
+        "HIDUP LU stays empty and stable: life protected, opinions still present.",
+        "Subtitle band is fully clear of geometry and glow; headline fits within 4 lines."
+      ],
+      "forbiddenInterpretations": [
+        "No gold or second accent anywhere — teal is the only accent, white for all other emphasis.",
+        "No dial, gauge, or rotating knob (repeat of the noise-dial mechanism).",
+        "No glow blob touching the caption; no lens flare, no particles.",
+        "Opinions never deleted, struck out, or shown in red — neutral dim rows only.",
+        "No empty unlabeled card: every panel carries its label.",
+        "No person silhouette, no converging arrows, no extra headline block."
+      ],
+      "noveltyIntent": "Control is staged as sluice-gap sizing on a physical wall — flow limited by aperture width — instead of the dial, spotlight, or grid devices used before.",
+      "elementBudget": {
+        "min": 7,
+        "max": 9
+      }
+    },
+    {
+      "beatId": "b4",
+      "spokenMeaning": "The post nearly goes out, then is erased again out of fear of judgment and gossip.",
+      "viewerTakeaway": "Your own hand un-sends the post: each finished line is pulled back into the caret until nothing is left to send.",
+      "visualMechanism": "textRetractsIntoCaret",
+      "visualNarrative": [
+        {
+          "order": 1,
+          "action": "Headline band top-left fades in: 'POSTING SESUATU… HAPUS LAGI.' with the quiet sub-line 'Takut ada yang ngejudge.'; beneath it a hollow draft card sits alone in the center band, one gold caret blinking at its first line.",
+          "meaning": "Sets the ritual before it happens: the intention to post exists, uncommitted.",
+          "visualEvidence": "Headline block locked to the 8% left/top margin, card centered below with clear band separation; no element crosses into another band."
+        },
+        {
+          "order": 2,
+          "action": "Four text lines type into the card one by one, the gold '99%' counter landing flush against the card's lower-right terminus as the card fill brightens.",
+          "meaning": "The post is essentially ready — near-complete content reads instantly as 'about to go out'.",
+          "visualEvidence": "Lines revealed by stagger draw; 99% optically sized to card height and welded to the bar terminus, never floating in a corner."
+        },
+        {
+          "order": 3,
+          "action": "A two-beat hold at 99%: only the caret blinks once, nothing else moves — hesitation visible as stillness.",
+          "meaning": "The fear arrives in the gap between finishing and sending.",
+          "visualEvidence": "Frame static except one soft blink of the gold caret; card and lines motionless."
+        },
+        {
+          "order": 4,
+          "action": "Each line retracts back into the caret from bottom to top — text un-typing itself — while the counter runs 99 → 54 → 12 → 0 and the card dims to a hollow outline.",
+          "meaning": "Regression: the act visibly un-sends itself — 'hapus lagi' shown as reverse typing, not repetition.",
+          "visualEvidence": "Line 4 pulls into the caret first, then 3, 2, 1; counter lands on 0%; card returns to dim outline."
+        },
+        {
+          "order": 5,
+          "action": "Two fear labels fade in stacked 24px apart in their own lower band: 'NGEJUDGE' over 'NGOMONGIN'; a hairline separates them from 'Nggak jadi terkirim.' in the bottom band.",
+          "meaning": "Names the two fears that caused the retraction without illustrating them literally.",
+          "visualEvidence": "Labels stacked with fixed 24px gap, closing line past a hairline in its own band — no text overlaps anywhere."
+        }
+      ],
+      "semanticObjects": [
+        {
+          "objectType": "TextBlock",
+          "semanticRole": "States the ritual as a flat, exhausted statement — the scene's thesis.",
+          "relationship": "Anchors the top band; the card's retraction illustrates its second word, 'HAPUS'.",
+          "importance": 5
+        },
+        {
+          "objectType": "Card",
+          "semanticRole": "The unpublished post itself: exists only while its lines remain.",
+          "relationship": "Brightens as lines fill in, hollows to outline as lines retract into the caret.",
+          "importance": 5
+        },
+        {
+          "objectType": "TextBlock",
+          "semanticRole": "The post's content: four lines that un-type themselves one by one.",
+          "relationship": "Their sequential retraction drives the counter down to 0%.",
+          "importance": 4
+        },
+        {
+          "objectType": "Label",
+          "semanticRole": "Numerical proof of how close the post came to going out before aborting.",
+          "relationship": "Sits flush at the card's terminus and reacts to each retracted line in real time.",
+          "importance": 4
+        },
+        {
+          "objectType": "Label",
+          "semanticRole": "Names the cause of the abort: judgment and gossip.",
+          "relationship": "Appears only after the card is hollow, stacked below it with a fixed gap.",
+          "importance": 3
+        },
+        {
+          "objectType": "Line",
+          "semanticRole": "A hairline baseline separating the fear labels from the closing line.",
+          "relationship": "Guarantees a clear bottom band so no text ever collides.",
+          "importance": 2
+        }
+      ],
+      "relationships": [
+        {
+          "from": "draftCard",
+          "to": "percentCounter",
+          "relationship": "each retracted line decrements the counter (99 → 0)"
+        },
+        {
+          "from": "draftCard",
+          "to": "fearLabels",
+          "relationship": "card going hollow triggers the two stacked fear labels"
+        },
+        {
+          "from": "fearLabels",
+          "to": "closingLine",
+          "relationship": "hairline landing clears the bottom band for the closing line"
+        }
+      ],
+      "typographyPlan": {
+        "headline": "POSTING SESUATU… HAPUS LAGI.",
+        "emphasisWords": [
+          "HAPUS",
+          "99%"
+        ],
+        "supportingText": [
+          "Takut ada yang ngejudge.",
+          "NGEJUDGE",
+          "NGOMONGIN",
+          "Nggak jadi terkirim."
+        ]
+      },
+      "subtitlePlan": {
+        "enabled": true,
+        "text": "Posting sesuatu… hapus lagi. Takut ada yang ngejudge. Takut ada yang ngomongin.",
+        "timing": "spans full beat while the lines type then retract",
+        "role": "spoken line"
+      },
+      "motionBeats": [
+        {
+          "order": 1,
+          "action": "Headline and sub-line fade in, then the hollow card outline reveals with its blinking caret.",
+          "purpose": "Establish the thesis before the mechanism runs."
+        },
+        {
+          "order": 2,
+          "action": "Card lines stagger-type in while the gold counter ticks up to 99%.",
+          "purpose": "Build expectation of a completed post so the retraction can break it."
+        },
+        {
+          "order": 3,
+          "action": "Hold with a single caret blink at 99%.",
+          "purpose": "Visualizes hesitation as stillness — the decision point."
+        },
+        {
+          "order": 4,
+          "action": "Lines retract into the caret bottom-to-top with counter change; card dims to outline.",
+          "purpose": "The regression itself: the post un-types its own progress."
+        },
+        {
+          "order": 5,
+          "action": "Two fear labels fade in stacked below, closing line settles beneath the hairline.",
+          "purpose": "Names the cause only after the effect, without any text collision."
+        },
+        {
+          "order": 6,
+          "action": "Frame settles, faint vignette tightens on the hollow card and lone caret.",
+          "purpose": "Ends the beat on absence, letting 'hapus lagi' land."
+        }
+      ],
+      "compositionIntent": "split bands: headline top-left at 8% margins, hollow draft card as the single dominant object in the center band with its counter welded to the terminus, fear labels stacked in a lower band with a fixed 24px gap, closing line past a hairline at the bottom. One text block plus one object, ~65% negative space, strictly banded so no cross-anchor overlap.",
+      "visualEvidence": [
+        "Gold 99% sits flush at the card terminus, optically matched to the card's height — never floating in a corner.",
+        "Lines un-type into the caret while the counter lands on 0% — the drain is visible as change.",
+        "Fear labels stack with a fixed 24px gap; the closing line sits in a clear band beneath a hairline.",
+        "Only one accent (gold) appears; card outline, caret rail, and hairline use secondary #B5B1A7."
+      ],
+      "forbiddenInterpretations": [
+        "No looping upload/retry animation — this is a one-way retraction, not a cycle.",
+        "No phone mockup, social-media UI, notification icons, or trash-can/delete button.",
+        "No teal plus gold together — gold is the only accent in this scene.",
+        "No crowd of judging faces, pointing arrows, or floating speech bubbles.",
+        "No leftTextRightObject repeat of scene_03, no stray vertical line across the counter, no countdown clock, glitch, or particle burst on the erasure."
+      ],
+      "noveltyIntent": "Instead of dissolving lines, the post un-types itself: each line is pulled back into a single gold caret while the counter welded to the card terminus drains to 0 — self-cancellation happens as reverse typing inside the content, not in a UI widget.",
+      "elementBudget": {
+        "min": 6,
+        "max": 8
+      }
+    },
+    {
+      "beatId": "b6",
+      "spokenMeaning": "Whatever state you choose, the verdict is the same — the judge never reads the input.",
+      "viewerTakeaway": "Every possible version of you gets fed into one machine that only ever prints the same red verdict, so stop editing yourself to please it.",
+      "visualMechanism": "fourInputsOneVerdictTape",
+      "visualNarrative": [
+        {
+          "order": 1,
+          "action": "Left column reveals headline plus one small caption; on the right only a bare feed slot and a short blank tape stub exist.",
+          "meaning": "The judge's mouth and its paper are installed before any input exists.",
+          "visualEvidence": "Headline block locked to left 8% margin; slot + 12%-long blank tape stub alone on the right axis."
+        },
+        {
+          "order": 2,
+          "action": "Input slip BAIK slides right into the slot; the tape draws down one segment and prints PENCITRAAN in red.",
+          "meaning": "First state enters, and the machine answers in its own fixed negative language.",
+          "visualEvidence": "Slip stops flush at the slot; first red row appears directly under the slot on the same vertical tape axis."
+        },
+        {
+          "order": 3,
+          "action": "Slip swaps to DIEM and feeds again; a second red row SOMBOG prints beneath the first, tape extending in one continuous strip.",
+          "meaning": "Different input, identical treatment — the verdict class never changes.",
+          "visualEvidence": "Two red rows stacked with equal 40px leading on one unbroken tape line; slot unchanged."
+        },
+        {
+          "order": 4,
+          "action": "Slip cycles SUKSES then GAGAGAL feeding twice more with tightening intervals; BERUNTUNG and DITERTAWAKAN print as rows three and four.",
+          "meaning": "Cumulative frustration: four parallel contradictions, one strip, no exception.",
+          "visualEvidence": "Four red rows in a single column, evenly spaced, all hanging from the same slot."
+        },
+        {
+          "order": 5,
+          "action": "Input slip empties and fades; the four red rows highlight top to bottom while headline and slot stay completely still.",
+          "meaning": "The machine never judged the person — it only ever printed.",
+          "visualEvidence": "Blank slot, four red verdict rows lit in sequence, headline untouched in the left column."
+        }
+      ],
+      "semanticObjects": [
+        {
+          "objectType": "TextBlock",
+          "semanticRole": "States the thesis the tape then proves: outcome is constant regardless of conduct.",
+          "relationship": "left column top, own region, never intersecting slip or tape",
+          "importance": 4
+        },
+        {
+          "objectType": "Label",
+          "semanticRole": "The person's four possible states (BAIK/DIEM/SUKSES/GAGAL) — the only variable in the frame.",
+          "relationship": "left of the slot, swaps text and feeds horizontally each cycle",
+          "importance": 5
+        },
+        {
+          "objectType": "Line",
+          "semanticRole": "The judge's unreading feed slot: fixed mouth that accepts any input without inspecting it.",
+          "relationship": "head of the tape, vertical axis on the right, never moves or adapts",
+          "importance": 5
+        },
+        {
+          "objectType": "Line",
+          "semanticRole": "One continuous verdict tape: the physical record that all four outputs belong to one unchanged mechanism.",
+          "relationship": "hangs from the slot, grows downward, receives every printed row",
+          "importance": 4
+        },
+        {
+          "objectType": "Label",
+          "semanticRole": "Four red verdict rows (PENCITRAAN/SOMBOG/BERUNTUNG/DITERTAWAKAN) — the negative reframing, uniform in color and alignment.",
+          "relationship": "stacked on the tape under the slot, equal leading, all red, all right-aligned to the tape axis",
+          "importance": 5
+        },
+        {
+          "objectType": "TextBlock",
+          "semanticRole": "One short caption naming the mechanism: the slot never reads the state.",
+          "relationship": "left column under the headline, clear of the slip path",
+          "importance": 2
+        }
+      ],
+      "relationships": [
+        {
+          "from": "StateSlip",
+          "to": "FeedSlot",
+          "relationship": "feeds horizontally into the slot, which accepts it without moving or reading its label"
+        },
+        {
+          "from": "FeedSlot",
+          "to": "VerdictTape",
+          "relationship": "prints exactly one red row onto the tape on every pass"
+        },
+        {
+          "from": "VerdictTape",
+          "to": "VerdictRows",
+          "relationship": "holds all four rows in one vertical column so the sameness is structural, not decorative"
+        }
+      ],
+      "typographyPlan": {
+        "headline": "SALAH APA PUN, HASILNYA SAMA",
+        "emphasisWords": [
+          "SALAH",
+          "SAMA"
+        ],
+        "supportingText": [
+          "SLOT INI NGGAK PERNAH BACA STATE LU."
+        ]
+      },
+      "subtitlePlan": {
+        "enabled": true,
+        "text": "Lu baik… dibilang pencitraan. Lu diem… dibilang sombong. Lu sukses… dibilang beruntung. Lu gagal… ditertawain.",
+        "timing": "runs across the whole beat, synced to the four tape prints",
+        "role": "spoken line — verbatim caption of the four parallel contradictions"
+      },
+      "motionBeats": [
+        {
+          "order": 1,
+          "action": "Headline reveals line by line with a short stagger, caption fading under it; tape stub draws in.",
+          "purpose": "Sets the charge before the machine demonstrates it."
+        },
+        {
+          "order": 2,
+          "action": "Input slip slides into the slot with soft ease-out; the tape extends and the first red row reveals.",
+          "purpose": "Presents the current input and its immediate, unread answer."
+        },
+        {
+          "order": 3,
+          "action": "Slip dissolve-swaps to DIEM, feeds again; second red row reveals below the first.",
+          "purpose": "Repetition begins: input varies, response does not."
+        },
+        {
+          "order": 4,
+          "action": "Slip cycles SUKSES and GAGAL with tightening intervals while rows three and four reveal in sequence.",
+          "purpose": "Repetition is the argument: four contradictions, one tape."
+        },
+        {
+          "order": 5,
+          "action": "Final hold: rows highlight top to bottom while headline, slot and tape axis stay completely static.",
+          "purpose": "Hands the viewer the indignation — same machine, four states, one verdict."
+        }
+      ],
+      "compositionIntent": "leftTextRightObject: headline + caption + feeding slip own the left half on an 8% margin; the right half is a single vertical axis where slot sits at ~28% height and the verdict tape hangs down to ~70%, stopping well clear of the bottom subtitle band. Slip travels only through empty space between the columns; nothing crosses axes, right edge stays dark vignette, ~65% negative space.",
+      "visualEvidence": [
+        "Left text column and right tape axis never intersect; slip path runs through empty mid-space.",
+        "Tape grows as one unbroken line from a slot that never shifts position.",
+        "Four red verdict rows in one column with identical color, size and leading."
+      ],
+      "forbiddenInterpretations": [
+        "Rubber-stamp seal press or descending hammer head (prior mechanism)",
+        "Any text row overlapping the headline, the slip path, or the bottom subtitle band",
+        "Struck-out / crossed-through words, rotating dial with needle, uniform grid with one lit cell",
+        "Conveyor belt, assembly line, factory machine housing or gears",
+        "Differently colored verdict rows or more than one accent color on the tape",
+        "A slot or tape that bends, adapts, or reacts to which slip is entering",
+        "Speech bubbles, human figures judging, or top-edge-clipped cards outside the safe frame"
+      ],
+      "noveltyIntent": "A single vertical verdict tape fed by one unreading slot: four state slips enter horizontally, four identical-looking red rows print downward on one continuous strip. Verdict sameness is structural — one tape, one axis, one color — never a stamp, strike, dial or grid.",
+      "elementBudget": {
+        "min": 6,
+        "max": 9
+      }
+    }
+  ]
+}

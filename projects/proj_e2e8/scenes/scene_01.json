@@ -1,0 +1,64 @@
+{
+  "sceneId": "scene_01",
+  "duration": 3.76,
+  "purpose": "Establish the habitual promise of deferral: every day is ticked except today, which stays open — quiet self-recognition before critique.",
+  "visualConcept": "TODAY LEFT BLANK",
+  "composition": "asymmetric",
+  "headline": {
+    "text": "TOMORROW\nIS EASY",
+    "accentWords": [
+      "TOMORROW"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "Subheadline",
+      "text": "today stays unchecked",
+      "align": "left",
+      "position": "right",
+      "offsetY": 4,
+      "accent": "none",
+      "size": "md",
+      "delay": 0.3,
+      "entrance": "fade"
+    },
+    {
+      "primitive": "Timeline",
+      "items": [
+        {
+          "label": "MON",
+          "state": "active"
+        },
+        {
+          "label": "TUE",
+          "state": "active"
+        },
+        {
+          "label": "TODAY",
+          "state": "todo"
+        }
+      ],
+      "orientation": "vertical",
+      "position": "right",
+      "offsetX": -1,
+      "offsetY": 15,
+      "accent": "gold",
+      "size": "md",
+      "delay": 0.6,
+      "entrance": "stagger",
+      "emphasis": "highlight",
+      "emphasisAt": 1.7
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "highlight",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.7,
+    "exitAt": 3.2
+  }
+}

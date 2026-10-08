@@ -1,0 +1,1119 @@
+{
+  "$comment": "Registry metadata for every renderable primitive. Consumed by src/validation to build the Zod schema for element params - unknown primitives fail validation (MASTER_SPEC section 8). param types: string, number, boolean, enum, stringArray, objectArray.",
+  "common": {
+    "position": {
+      "type": "enum",
+      "values": [
+        "center",
+        "left",
+        "right",
+        "top",
+        "bottom",
+        "topLeft",
+        "topRight",
+        "bottomLeft",
+        "bottomRight"
+      ],
+      "default": "center"
+    },
+    "offsetX": {
+      "type": "number",
+      "min": -50,
+      "max": 50,
+      "default": 0
+    },
+    "offsetY": {
+      "type": "number",
+      "min": -50,
+      "max": 50,
+      "default": 0
+    },
+    "scale": {
+      "type": "number",
+      "min": 0.2,
+      "max": 3,
+      "default": 1
+    },
+    "opacity": {
+      "type": "number",
+      "min": 0,
+      "max": 1,
+      "default": 1
+    },
+    "rotation": {
+      "type": "number",
+      "min": -360,
+      "max": 360,
+      "default": 0
+    },
+    "accent": {
+      "type": "enum",
+      "values": [
+        "none",
+        "teal",
+        "gold",
+        "orange",
+        "red"
+      ],
+      "default": "none"
+    },
+    "size": {
+      "type": "enum",
+      "values": [
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "default": "md"
+    },
+    "variant": {
+      "type": "string",
+      "max": 32
+    },
+    "delay": {
+      "type": "number",
+      "min": 0,
+      "max": 60,
+      "default": 0
+    },
+    "entrance": {
+      "type": "enum",
+      "values": [
+        "fade",
+        "reveal",
+        "slide",
+        "scale",
+        "draw",
+        "stagger"
+      ],
+      "optional": true
+    },
+    "emphasis": {
+      "type": "enum",
+      "values": [
+        "subtleScale",
+        "positionShift",
+        "highlight",
+        "glow",
+        "counterChange",
+        "controlledReveal"
+      ],
+      "optional": true
+    },
+    "exit": {
+      "type": "enum",
+      "values": [
+        "fade",
+        "slide",
+        "dissolve",
+        "maskedTransition"
+      ],
+      "optional": true
+    },
+    "emphasisAt": {
+      "type": "number",
+      "min": 0,
+      "max": 60,
+      "optional": true
+    },
+    "density": {
+      "type": "number",
+      "min": 0,
+      "max": 1,
+      "optional": true
+    },
+    "role": {
+      "type": "enum",
+      "values": [
+        "semantic",
+        "supporting",
+        "decorative"
+      ],
+      "optional": true
+    },
+    "purpose": {
+      "type": "string",
+      "max": 140,
+      "optional": true
+    }
+  },
+  "primitives": {
+    "Headline": {
+      "category": "typography",
+      "params": {
+        "text": {
+          "type": "string",
+          "required": true,
+          "max": 140
+        },
+        "accentWords": {
+          "type": "stringArray",
+          "maxItems": 2
+        },
+        "align": {
+          "type": "enum",
+          "values": [
+            "left",
+            "center",
+            "right"
+          ],
+          "default": "left"
+        }
+      }
+    },
+    "Subheadline": {
+      "category": "typography",
+      "params": {
+        "text": {
+          "type": "string",
+          "required": true,
+          "max": 200
+        },
+        "accentWords": {
+          "type": "stringArray",
+          "maxItems": 2
+        },
+        "align": {
+          "type": "enum",
+          "values": [
+            "left",
+            "center",
+            "right"
+          ],
+          "default": "left"
+        }
+      }
+    },
+    "Label": {
+      "category": "typography",
+      "params": {
+        "text": {
+          "type": "string",
+          "required": true,
+          "max": 60
+        },
+        "align": {
+          "type": "enum",
+          "values": [
+            "left",
+            "center",
+            "right"
+          ],
+          "default": "center"
+        }
+      }
+    },
+    "Caption": {
+      "category": "typography",
+      "params": {
+        "text": {
+          "type": "string",
+          "required": true,
+          "max": 160
+        },
+        "align": {
+          "type": "enum",
+          "values": [
+            "left",
+            "center",
+            "right"
+          ],
+          "default": "left"
+        }
+      }
+    },
+    "WordReveal": {
+      "category": "typography",
+      "params": {
+        "text": {
+          "type": "string",
+          "required": true,
+          "max": 140
+        },
+        "staggerStep": {
+          "type": "number",
+          "min": 0.03,
+          "max": 0.4,
+          "default": 0.1
+        },
+        "accentWords": {
+          "type": "stringArray",
+          "maxItems": 2
+        },
+        "align": {
+          "type": "enum",
+          "values": [
+            "left",
+            "center",
+            "right"
+          ],
+          "default": "left"
+        }
+      }
+    },
+    "CharacterReveal": {
+      "category": "typography",
+      "params": {
+        "text": {
+          "type": "string",
+          "required": true,
+          "max": 80
+        },
+        "staggerStep": {
+          "type": "number",
+          "min": 0.01,
+          "max": 0.2,
+          "default": 0.04
+        },
+        "align": {
+          "type": "enum",
+          "values": [
+            "left",
+            "center",
+            "right"
+          ],
+          "default": "left"
+        }
+      }
+    },
+    "HighlightWord": {
+      "category": "typography",
+      "params": {
+        "text": {
+          "type": "string",
+          "required": true,
+          "max": 60
+        },
+        "word": {
+          "type": "string",
+          "required": true,
+          "max": 40
+        },
+        "align": {
+          "type": "enum",
+          "values": [
+            "left",
+            "center",
+            "right"
+          ],
+          "default": "left"
+        }
+      }
+    },
+    "CounterText": {
+      "category": "typography",
+      "params": {
+        "from": {
+          "type": "number",
+          "min": -1000000,
+          "max": 1000000,
+          "default": 0
+        },
+        "to": {
+          "type": "number",
+          "min": -1000000,
+          "max": 1000000,
+          "required": true
+        },
+        "prefix": {
+          "type": "string",
+          "max": 8,
+          "default": ""
+        },
+        "suffix": {
+          "type": "string",
+          "max": 8,
+          "default": ""
+        },
+        "duration": {
+          "type": "number",
+          "min": 0.3,
+          "max": 8,
+          "default": 1.6
+        },
+        "align": {
+          "type": "enum",
+          "values": [
+            "left",
+            "center",
+            "right"
+          ],
+          "default": "left"
+        }
+      }
+    },
+    "Quote": {
+      "category": "typography",
+      "params": {
+        "text": {
+          "type": "string",
+          "required": true,
+          "max": 220
+        },
+        "attribution": {
+          "type": "string",
+          "max": 60,
+          "optional": true
+        }
+      }
+    },
+    "Clock": {
+      "category": "object",
+      "params": {
+        "hour": {
+          "type": "number",
+          "min": 0,
+          "max": 23,
+          "default": 9
+        },
+        "minute": {
+          "type": "number",
+          "min": 0,
+          "max": 59,
+          "default": 15
+        },
+        "variant": {
+          "type": "enum",
+          "values": [
+            "analog",
+            "digital"
+          ],
+          "default": "analog"
+        }
+      }
+    },
+    "Calendar": {
+      "category": "object",
+      "params": {
+        "label": {
+          "type": "string",
+          "max": 24,
+          "default": ""
+        },
+        "activeDays": {
+          "type": "stringArray",
+          "maxItems": 8
+        },
+        "variant": {
+          "type": "enum",
+          "values": [
+            "month",
+            "streak",
+            "grid"
+          ],
+          "default": "month"
+        }
+      }
+    },
+    "ProfileCard": {
+      "category": "object",
+      "params": {
+        "name": {
+          "type": "string",
+          "required": true,
+          "max": 40
+        },
+        "role": {
+          "type": "string",
+          "max": 60,
+          "default": ""
+        },
+        "initials": {
+          "type": "string",
+          "max": 3,
+          "default": ""
+        }
+      }
+    },
+    "GenericCard": {
+      "category": "object",
+      "params": {
+        "label": {
+          "type": "string",
+          "required": true,
+          "max": 40
+        },
+        "sublabel": {
+          "type": "string",
+          "max": 40,
+          "optional": true
+        },
+        "state": {
+          "type": "enum",
+          "values": [
+            "default",
+            "active",
+            "muted",
+            "done"
+          ],
+          "default": "default"
+        }
+      }
+    },
+    "Target": {
+      "category": "object",
+      "params": {
+        "rings": {
+          "type": "number",
+          "min": 2,
+          "max": 6,
+          "default": 4
+        },
+        "hitIndex": {
+          "type": "number",
+          "min": -1,
+          "max": 6,
+          "default": -1
+        },
+        "label": {
+          "type": "string",
+          "max": 30,
+          "optional": true
+        }
+      }
+    },
+    "ProgressBar": {
+      "category": "object",
+      "params": {
+        "value": {
+          "type": "number",
+          "min": 0,
+          "max": 1,
+          "required": true
+        },
+        "label": {
+          "type": "string",
+          "max": 40,
+          "optional": true
+        },
+        "showValue": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "Checkbox": {
+      "category": "object",
+      "params": {
+        "checked": {
+          "type": "boolean",
+          "default": false
+        },
+        "label": {
+          "type": "string",
+          "max": 50,
+          "optional": true
+        },
+        "checkAt": {
+          "type": "number",
+          "min": 0,
+          "max": 60,
+          "optional": true
+        }
+      }
+    },
+    "Arrow": {
+      "category": "object",
+      "params": {
+        "direction": {
+          "type": "enum",
+          "values": [
+            "right",
+            "left",
+            "up",
+            "down",
+            "diagonal"
+          ],
+          "default": "right"
+        },
+        "variant": {
+          "type": "enum",
+          "values": [
+            "line",
+            "chevron",
+            "curve"
+          ],
+          "default": "line"
+        },
+        "lengthPct": {
+          "type": "number",
+          "min": 10,
+          "max": 100,
+          "default": 50
+        }
+      }
+    },
+    "Line": {
+      "category": "object",
+      "params": {
+        "orientation": {
+          "type": "enum",
+          "values": [
+            "horizontal",
+            "vertical",
+            "diagonal"
+          ],
+          "default": "horizontal"
+        },
+        "lengthPct": {
+          "type": "number",
+          "min": 5,
+          "max": 100,
+          "default": 60
+        },
+        "thicknessPx": {
+          "type": "number",
+          "min": 1,
+          "max": 24,
+          "default": 3
+        }
+      }
+    },
+    "Circle": {
+      "category": "object",
+      "params": {
+        "variant": {
+          "type": "enum",
+          "values": [
+            "outline",
+            "filled",
+            "ring"
+          ],
+          "default": "outline"
+        },
+        "diameterPct": {
+          "type": "number",
+          "min": 5,
+          "max": 100,
+          "default": 40
+        },
+        "label": {
+          "type": "string",
+          "max": 30,
+          "optional": true
+        }
+      }
+    },
+    "Stack": {
+      "category": "object",
+      "params": {
+        "count": {
+          "type": "number",
+          "min": 2,
+          "max": 8,
+          "default": 4
+        },
+        "variant": {
+          "type": "enum",
+          "values": [
+            "cards",
+            "bars",
+            "coins"
+          ],
+          "default": "cards"
+        },
+        "label": {
+          "type": "string",
+          "max": 30,
+          "optional": true
+        }
+      }
+    },
+    "Grid": {
+      "category": "object",
+      "params": {
+        "cols": {
+          "type": "number",
+          "min": 2,
+          "max": 6,
+          "default": 3
+        },
+        "rows": {
+          "type": "number",
+          "min": 2,
+          "max": 6,
+          "default": 3
+        },
+        "activeCells": {
+          "type": "stringArray",
+          "maxItems": 12
+        },
+        "variant": {
+          "type": "enum",
+          "values": [
+            "cells",
+            "dots"
+          ],
+          "default": "cells"
+        }
+      }
+    },
+    "Indicator": {
+      "category": "object",
+      "params": {
+        "variant": {
+          "type": "enum",
+          "values": [
+            "dot",
+            "pulse",
+            "arrow"
+          ],
+          "default": "dot"
+        },
+        "label": {
+          "type": "string",
+          "max": 40,
+          "optional": true
+        }
+      }
+    },
+    "Number": {
+      "category": "object",
+      "params": {
+        "value": {
+          "type": "number",
+          "min": -99999,
+          "max": 99999,
+          "required": true
+        },
+        "prefix": {
+          "type": "string",
+          "max": 6,
+          "default": ""
+        },
+        "suffix": {
+          "type": "string",
+          "max": 6,
+          "default": ""
+        }
+      }
+    },
+    "Badge": {
+      "category": "object",
+      "params": {
+        "text": {
+          "type": "string",
+          "required": true,
+          "max": 30
+        },
+        "variant": {
+          "type": "enum",
+          "values": [
+            "pill",
+            "outline"
+          ],
+          "default": "pill"
+        }
+      }
+    },
+    "Timeline": {
+      "category": "diagram",
+      "params": {
+        "items": {
+          "type": "objectArray",
+          "required": true,
+          "minItems": 2,
+          "maxItems": 7,
+          "itemFields": {
+            "label": {
+              "type": "string",
+              "required": true,
+              "max": 30
+            },
+            "state": {
+              "type": "enum",
+              "values": [
+                "todo",
+                "active",
+                "done"
+              ],
+              "default": "todo"
+            }
+          }
+        },
+        "orientation": {
+          "type": "enum",
+          "values": [
+            "vertical",
+            "horizontal"
+          ],
+          "default": "vertical"
+        }
+      }
+    },
+    "Comparison": {
+      "category": "diagram",
+      "params": {
+        "leftLabel": {
+          "type": "string",
+          "required": true,
+          "max": 30
+        },
+        "rightLabel": {
+          "type": "string",
+          "required": true,
+          "max": 30
+        },
+        "leftItems": {
+          "type": "stringArray",
+          "required": true,
+          "minItems": 1,
+          "maxItems": 5
+        },
+        "rightItems": {
+          "type": "stringArray",
+          "required": true,
+          "minItems": 1,
+          "maxItems": 5
+        },
+        "accentSide": {
+          "type": "enum",
+          "values": [
+            "left",
+            "right",
+            "none"
+          ],
+          "default": "right"
+        }
+      }
+    },
+    "BeforeAfter": {
+      "category": "diagram",
+      "params": {
+        "beforeLabel": {
+          "type": "string",
+          "required": true,
+          "max": 30
+        },
+        "afterLabel": {
+          "type": "string",
+          "required": true,
+          "max": 30
+        },
+        "beforeItems": {
+          "type": "stringArray",
+          "required": true,
+          "minItems": 1,
+          "maxItems": 4
+        },
+        "afterItems": {
+          "type": "stringArray",
+          "required": true,
+          "minItems": 1,
+          "maxItems": 4
+        },
+        "direction": {
+          "type": "enum",
+          "values": [
+            "horizontal",
+            "vertical"
+          ],
+          "default": "horizontal"
+        }
+      }
+    },
+    "Flow": {
+      "category": "diagram",
+      "params": {
+        "steps": {
+          "type": "objectArray",
+          "required": true,
+          "minItems": 2,
+          "maxItems": 6,
+          "itemFields": {
+            "label": {
+              "type": "string",
+              "required": true,
+              "max": 30
+            },
+            "state": {
+              "type": "enum",
+              "values": [
+                "todo",
+                "active",
+                "done"
+              ],
+              "default": "todo"
+            }
+          }
+        },
+        "orientation": {
+          "type": "enum",
+          "values": [
+            "vertical",
+            "horizontal"
+          ],
+          "default": "horizontal"
+        }
+      }
+    },
+    "Branch": {
+      "category": "diagram",
+      "params": {
+        "trunkLabel": {
+          "type": "string",
+          "max": 30,
+          "optional": true
+        },
+        "branches": {
+          "type": "objectArray",
+          "required": true,
+          "minItems": 2,
+          "maxItems": 5,
+          "itemFields": {
+            "label": {
+              "type": "string",
+              "required": true,
+              "max": 30
+            },
+            "state": {
+              "type": "enum",
+              "values": [
+                "todo",
+                "active",
+                "done"
+              ],
+              "default": "todo"
+            }
+          }
+        }
+      }
+    },
+    "Relationship": {
+      "category": "diagram",
+      "params": {
+        "centerLabel": {
+          "type": "string",
+          "required": true,
+          "max": 30
+        },
+        "nodes": {
+          "type": "objectArray",
+          "required": true,
+          "minItems": 2,
+          "maxItems": 6,
+          "itemFields": {
+            "label": {
+              "type": "string",
+              "required": true,
+              "max": 24
+            },
+            "state": {
+              "type": "enum",
+              "values": [
+                "todo",
+                "active",
+                "done"
+              ],
+              "default": "todo"
+            }
+          }
+        }
+      }
+    },
+    "Progress": {
+      "category": "diagram",
+      "params": {
+        "steps": {
+          "type": "objectArray",
+          "required": true,
+          "minItems": 2,
+          "maxItems": 7,
+          "itemFields": {
+            "label": {
+              "type": "string",
+              "required": true,
+              "max": 30
+            },
+            "state": {
+              "type": "enum",
+              "values": [
+                "todo",
+                "active",
+                "done"
+              ],
+              "default": "todo"
+            }
+          }
+        },
+        "orientation": {
+          "type": "enum",
+          "values": [
+            "vertical",
+            "horizontal"
+          ],
+          "default": "horizontal"
+        }
+      }
+    },
+    "Sequence": {
+      "category": "diagram",
+      "params": {
+        "items": {
+          "type": "objectArray",
+          "required": true,
+          "minItems": 2,
+          "maxItems": 6,
+          "itemFields": {
+            "label": {
+              "type": "string",
+              "required": true,
+              "max": 30
+            },
+            "state": {
+              "type": "enum",
+              "values": [
+                "todo",
+                "active",
+                "done"
+              ],
+              "default": "todo"
+            }
+          }
+        },
+        "numbered": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+    "GradientGlow": {
+      "category": "atmospheric",
+      "params": {
+        "intensity": {
+          "type": "number",
+          "min": 0,
+          "max": 1,
+          "default": 0.35
+        },
+        "diameterPct": {
+          "type": "number",
+          "min": 10,
+          "max": 150,
+          "default": 70
+        }
+      }
+    },
+    "SoftOrb": {
+      "category": "atmospheric",
+      "params": {
+        "intensity": {
+          "type": "number",
+          "min": 0,
+          "max": 1,
+          "default": 0.25
+        },
+        "diameterPct": {
+          "type": "number",
+          "min": 10,
+          "max": 120,
+          "default": 50
+        },
+        "drift": {
+          "type": "number",
+          "min": 0,
+          "max": 1,
+          "default": 0.2
+        }
+      }
+    },
+    "Grain": {
+      "category": "atmospheric",
+      "params": {
+        "opacity": {
+          "type": "number",
+          "min": 0,
+          "max": 0.12,
+          "default": 0.05
+        }
+      }
+    },
+    "GridBackground": {
+      "category": "atmospheric",
+      "params": {
+        "cellPx": {
+          "type": "number",
+          "min": 40,
+          "max": 300,
+          "default": 96
+        },
+        "opacity": {
+          "type": "number",
+          "min": 0,
+          "max": 0.5,
+          "default": 0.12
+        }
+      }
+    },
+    "LightSweep": {
+      "category": "atmospheric",
+      "params": {
+        "intensity": {
+          "type": "number",
+          "min": 0,
+          "max": 1,
+          "default": 0.3
+        },
+        "angleDeg": {
+          "type": "number",
+          "min": -60,
+          "max": 60,
+          "default": 20
+        },
+        "duration": {
+          "type": "number",
+          "min": 0.5,
+          "max": 5,
+          "default": 1.8
+        }
+      }
+    },
+    "Person": {
+      "category": "object",
+      "params": {
+        "variant": {
+          "type": "enum",
+          "values": [
+            "stand",
+            "carry",
+            "tired",
+            "reach"
+          ],
+          "default": "stand"
+        },
+        "label": {
+          "type": "string",
+          "max": 30,
+          "optional": true
+        }
+      }
+    },
+    "SpeechBubble": {
+      "category": "object",
+      "params": {
+        "text": {
+          "type": "string",
+          "max": 60,
+          "optional": true
+        },
+        "variant": {
+          "type": "enum",
+          "values": [
+            "speech",
+            "thought"
+          ],
+          "default": "speech"
+        },
+        "direction": {
+          "type": "enum",
+          "values": [
+            "left",
+            "right"
+          ],
+          "default": "right"
+        }
+      }
+    }
+  }
+}

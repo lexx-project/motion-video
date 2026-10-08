@@ -1,0 +1,43 @@
+{
+  "background": {
+    "value": "#0b1313",
+    "confidence": 0.9
+  },
+  "textPrimary": {
+    "value": "#f4f2ed",
+    "confidence": 0.85
+  },
+  "textSecondary": {
+    "value": "#b5b1a7",
+    "confidence": 0.7
+  },
+  "accents": [
+    {
+      "role": "warning",
+      "value": "#e8475f",
+      "semantic": "pink-red used on negative/defeat phrases like 'NGGAK KUAT'",
+      "confidence": 0.65
+    },
+    {
+      "role": "important",
+      "value": "#f5c54d",
+      "semantic": "yellow used to highlight key words 'MINDAHIN JAM' and the clock hand",
+      "confidence": 0.7
+    },
+    {
+      "role": "other",
+      "value": "#7fd1bd",
+      "semantic": "mint-teal brand color for avatar figure, quote-mark logo and @talkquote branding",
+      "confidence": 0.75
+    }
+  ],
+  "warmCoolBalance": "Cool-dominant: dark teal-green background and mint accents carry most frames; warmth appears as accents (yellow, pink-red) and one brown-graded transition frame",
+  "overallLuma": "dark",
+  "reconcileWithSamples": "Background samples (#0a1212/#0b1212/#0a1111) align directly with my #0b1313 estimate; frame 4 adds a teal vignette tint but the base stays near-black. Sampled text primaries (#b5b1a7–#cbbeb2) are 48x27 downscales that blend white glyphs with the near-black background, so true headline white is brighter, ~#f4f2ed. avgFrameLuma 24.8 confirms overall dark exposure.",
+  "confidence": 0.78,
+  "lowConfidenceNotes": [
+    "Accent hexes (#e8475f, #f5c54d, #7fd1bd) were read from full frames, not pixel-sampled; hue/saturation estimates are ±10.",
+    "Frame 3's warm brown background may be a graded transition rather than a true palette color, so it is not counted as the dominant background.",
+    "Exact secondary-text grey is uncertain (0.7) because small subtitle text was diluted in the samples."
+  ]
+}

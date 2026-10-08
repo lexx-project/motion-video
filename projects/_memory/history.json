@@ -1,0 +1,752 @@
+[
+  {
+    "projectId": "proj_e2e8",
+    "sceneId": "scene_01",
+    "visualConcept": "TODAY LEFT BLANK",
+    "metaphor": "Establish the habitual promise of deferral: every day is ticked except today, which stays open — quiet self-recognition before critique.",
+    "composition": "asymmetric",
+    "dominantObjects": [
+      "Subheadline",
+      "Timeline"
+    ],
+    "primitiveCombination": [
+      "Subheadline",
+      "Timeline"
+    ],
+    "motionPattern": "stagger/highlight/fade",
+    "semanticPurpose": "Establish the habitual promise of deferral: every day is ticked except today, which stays open — quiet self-recognition before critique."
+  },
+  {
+    "projectId": "proj_e2e8",
+    "sceneId": "scene_02",
+    "visualConcept": "Struck TOMORROW repeats below, already crossed, linked by a connecting hairline loop",
+    "metaphor": "Expose the loop: tomorrow's promise is struck out again, identical and unchanged — repetition without change is the mechanism of stagnation.",
+    "composition": "typographyDominant",
+    "dominantObjects": [
+      "Line",
+      "Line",
+      "Line"
+    ],
+    "primitiveCombination": [
+      "WordReveal",
+      "Line",
+      "Line",
+      "WordReveal",
+      "Line"
+    ],
+    "motionPattern": "reveal/highlight/dissolve",
+    "semanticPurpose": "Expose the loop: tomorrow's promise is struck out again, identical and unchanged — repetition without change is the mechanism of stagnation."
+  },
+  {
+    "projectId": "proj_e2e8",
+    "sceneId": "scene_03",
+    "visualConcept": "TYPE SPLIT BY VOID",
+    "metaphor": "Makes the identity gap literal: the headline itself is torn apart by a dark void, with a single hairline reaching across as the only bridge.",
+    "composition": "typographyDominant",
+    "dominantObjects": [
+      "Line"
+    ],
+    "primitiveCombination": [
+      "WordReveal",
+      "WordReveal",
+      "Line",
+      "GradientGlow"
+    ],
+    "motionPattern": "slide/controlledReveal/fade",
+    "semanticPurpose": "Makes the identity gap literal: the headline itself is torn apart by a dark void, with a single hairline reaching across as the only bridge."
+  },
+  {
+    "projectId": "proj_e2e8",
+    "sceneId": "scene_04",
+    "visualConcept": "TILE BRIDGE ASSEMBLING",
+    "metaphor": "Shows the gap as constructed: a bridge span lays itself plank by plank over a dark void, proving the divide is built from accumulated micro-decisions.",
+    "composition": "topTextBottomObject",
+    "dominantObjects": [
+      "Line",
+      "Line",
+      "Line",
+      "Indicator"
+    ],
+    "primitiveCombination": [
+      "Line",
+      "Line",
+      "Line",
+      "Indicator"
+    ],
+    "motionPattern": "stagger/subtleScale/fade",
+    "semanticPurpose": "Shows the gap as constructed: a bridge span lays itself plank by plank over a dark void, proving the divide is built from accumulated micro-decisions."
+  },
+  {
+    "projectId": "proj_e2e8",
+    "sceneId": "scene_05",
+    "visualConcept": "SMALL GOLD BEATS LARGE DIM",
+    "metaphor": "Defines discipline as a weighing act: the enduring want outranks the urgent impulse, shown as a beam tilted by a small gold weight.",
+    "composition": "centered",
+    "dominantObjects": [
+      "Line",
+      "Circle",
+      "Circle"
+    ],
+    "primitiveCombination": [
+      "GradientGlow",
+      "Line",
+      "Circle",
+      "Circle"
+    ],
+    "motionPattern": "slide/positionShift/fade",
+    "semanticPurpose": "Defines discipline as a weighing act: the enduring want outranks the urgent impulse, shown as a beam tilted by a small gold weight."
+  },
+  {
+    "projectId": "proj_e2e8",
+    "sceneId": "scene_06",
+    "visualConcept": "Single cell ignition",
+    "metaphor": "Turns both objections into one image: an empty dormant grid broken by a single lit cell — now, and tiny.",
+    "composition": "topTextBottomObject",
+    "dominantObjects": [
+      "Grid"
+    ],
+    "primitiveCombination": [
+      "Grid"
+    ],
+    "motionPattern": "fade/highlight/fade",
+    "semanticPurpose": "Turns both objections into one image: an empty dormant grid broken by a single lit cell — now, and tiny."
+  },
+  {
+    "projectId": "proj_e2e8",
+    "sceneId": "scene_07",
+    "visualConcept": "Dot breaks into a line",
+    "metaphor": "Final imperative: the held dot breaks into an extending line, making 'start' the visible action that closes the gap.",
+    "composition": "typographyDominant",
+    "dominantObjects": [
+      "Circle",
+      "Line"
+    ],
+    "primitiveCombination": [
+      "Circle",
+      "Line",
+      "GradientGlow",
+      "Caption"
+    ],
+    "motionPattern": "scale/controlledReveal/fade",
+    "semanticPurpose": "Final imperative: the held dot breaks into an extending line, making 'start' the visible action that closes the gap."
+  },
+  {
+    "projectId": "proj_ref_demo",
+    "sceneId": "scene_01",
+    "visualConcept": "FULL TANK, BLOCKS REMOVED",
+    "metaphor": "Reframe: motivation is already saturated and cannot grow, while removing excuses one by one is what actually opens the path to action.",
+    "composition": "leftTextRightObject",
+    "dominantObjects": [
+      "ProgressBar",
+      "Stack"
+    ],
+    "primitiveCombination": [
+      "ProgressBar",
+      "Stack"
+    ],
+    "motionPattern": "stagger/controlledReveal/fade",
+    "semanticPurpose": "Reframe: motivation is already saturated and cannot grow, while removing excuses one by one is what actually opens the path to action."
+  },
+  {
+    "projectId": "proj_ref_demo",
+    "sceneId": "scene_02",
+    "visualConcept": "TWIN SILHOUETTES, ONE GOLD TAG",
+    "metaphor": "Kill the talent myth: two identical outlines share one measurement height, only one carries a gold tag — winning is a label, not superiority.",
+    "composition": "dualObject",
+    "dominantObjects": [
+      "Circle",
+      "Circle",
+      "Line",
+      "Badge"
+    ],
+    "primitiveCombination": [
+      "Circle",
+      "Circle",
+      "Line",
+      "Badge"
+    ],
+    "motionPattern": "scale/subtleScale/fade",
+    "semanticPurpose": "Kill the talent myth: two identical outlines share one measurement height, only one carries a gold tag — winning is a label, not superiority."
+  },
+  {
+    "projectId": "proj_ref_demo",
+    "sceneId": "scene_03",
+    "visualConcept": "Split waveform tracks: spikes collapse, pulse endures",
+    "metaphor": "Contrast proves the mechanism: the erratic motivation track dies mid-frame while the even boring pulse runs unbroken.",
+    "composition": "split",
+    "dominantObjects": [
+      "Line",
+      "Line"
+    ],
+    "primitiveCombination": [
+      "Label",
+      "Line",
+      "Line",
+      "Label"
+    ],
+    "motionPattern": "draw/positionShift/fade",
+    "semanticPurpose": "Contrast proves the mechanism: the erratic motivation track dies mid-frame while the even boring pulse runs unbroken."
+  },
+  {
+    "projectId": "proj_ref_demo",
+    "sceneId": "scene_04",
+    "visualConcept": "TWO COUNTERS, ONE FADES",
+    "metaphor": "Confronts the comparison trap: a full YEAR 5 bar looms over a barely-started WEEK 1 bar, then the gold reference frame is removed entirely.",
+    "composition": "leftTextRightObject",
+    "dominantObjects": [
+      "ProgressBar",
+      "ProgressBar"
+    ],
+    "primitiveCombination": [
+      "WordReveal",
+      "ProgressBar",
+      "ProgressBar",
+      "Caption"
+    ],
+    "motionPattern": "stagger/counterChange/fade",
+    "semanticPurpose": "Confronts the comparison trap: a full YEAR 5 bar looms over a barely-started WEEK 1 bar, then the gold reference frame is removed entirely."
+  },
+  {
+    "projectId": "proj_ref_demo",
+    "sceneId": "scene_05",
+    "visualConcept": "QUIET MARKS LIFT THE BLOCK",
+    "metaphor": "Private repeated practice visibly converts into public weight: dim marks accumulate under a horizon while a heavy block lifts in direct response.",
+    "composition": "split",
+    "dominantObjects": [
+      "Line",
+      "Stack",
+      "Stack"
+    ],
+    "primitiveCombination": [
+      "Line",
+      "Stack",
+      "Stack",
+      "Label"
+    ],
+    "motionPattern": "stagger/positionShift/fade",
+    "semanticPurpose": "Private repeated practice visibly converts into public weight: dim marks accumulate under a horizon while a heavy block lifts in direct response."
+  },
+  {
+    "projectId": "proj_ref_demo",
+    "sceneId": "scene_06",
+    "visualConcept": "SPOTLIGHT STOPS ON THE EMPTY SEAT",
+    "metaphor": "A hard beam sweeps the dark stage and halts on one empty outlined seat, handing the viewer the call to act now.",
+    "composition": "centered",
+    "dominantObjects": [
+      "Circle"
+    ],
+    "primitiveCombination": [
+      "GradientGlow",
+      "LightSweep",
+      "Circle",
+      "Label"
+    ],
+    "motionPattern": "slide/highlight/fade",
+    "semanticPurpose": "A hard beam sweeps the dark stage and halts on one empty outlined seat, handing the viewer the call to act now."
+  },
+  {
+    "projectId": "proj_muwt0aze",
+    "sceneId": "scene_01",
+    "visualConcept": "CONVERGING ARROWS PIN ONE FIGURE",
+    "metaphor": "Membuka dengan pertanyaan: kelelahan people-pleasing sebagai masalah inti, beban tak terlihat dari menahan persepsi orang lain.",
+    "composition": "centered",
+    "dominantObjects": [
+      "Arrow",
+      "Arrow",
+      "Arrow",
+      "Circle"
+    ],
+    "primitiveCombination": [
+      "Arrow",
+      "Arrow",
+      "Arrow",
+      "Circle"
+    ],
+    "motionPattern": "stagger/subtleScale/fade",
+    "semanticPurpose": "Membuka dengan pertanyaan: kelelahan people-pleasing sebagai masalah inti, beban tak terlihat dari menahan persepsi orang lain."
+  },
+  {
+    "projectId": "proj_muwt0aze",
+    "sceneId": "scene_02",
+    "visualConcept": "FILTER GATE BETWEEN SELF AND WORLD",
+    "metaphor": "Self-censorship shown as expressive words clipped at a judgment gate; only bland versions pass through, enacting 'hapus lagi'.",
+    "composition": "split",
+    "dominantObjects": [
+      "Line"
+    ],
+    "primitiveCombination": [
+      "Line",
+      "Label",
+      "Label",
+      "Label"
+    ],
+    "motionPattern": "reveal/highlight/dissolve",
+    "semanticPurpose": "Self-censorship shown as expressive words clipped at a judgment gate; only bland versions pass through, enacting 'hapus lagi'."
+  },
+  {
+    "projectId": "proj_muwt0aze",
+    "sceneId": "scene_03",
+    "visualConcept": "SPOT THAT RETURNS AFTER EVERY WIPE",
+    "metaphor": "Disadari bahwa penilaian negatif selalu muncul kembali berapa pun usaha menghindarinya — bukan salah kita, struktural.",
+    "composition": "centered",
+    "dominantObjects": [
+      "Circle"
+    ],
+    "primitiveCombination": [
+      "Circle",
+      "Label"
+    ],
+    "motionPattern": "fade/controlledReveal/fade",
+    "semanticPurpose": "Disadari bahwa penilaian negatif selalu muncul kembali berapa pun usaha menghindarinya — bukan salah kita, struktural."
+  },
+  {
+    "projectId": "proj_muwt0aze",
+    "sceneId": "scene_04",
+    "visualConcept": "ONE NEEDLE, ALWAYS 180 FLIP",
+    "metaphor": "Membuktikan kontradiksi penilaian: alat ukur yang sama dibalik 180° oleh setiap input, sehingga vonis selalu berlawanan dengan yang dinilai.",
+    "composition": "centered",
+    "dominantObjects": [
+      "Arrow",
+      "Arrow"
+    ],
+    "primitiveCombination": [
+      "Arrow",
+      "Arrow",
+      "Label",
+      "Label"
+    ],
+    "motionPattern": "fade/positionShift/fade",
+    "semanticPurpose": "Membuktikan kontradiksi penilaian: alat ukur yang sama dibalik 180° oleh setiap input, sehingga vonis selalu berlawanan dengan yang dinilai."
+  },
+  {
+    "projectId": "proj_muwt0aze",
+    "sceneId": "scene_05",
+    "visualConcept": "TETHER SLIPS PAST THE GRIP",
+    "metaphor": "Melepaskan ilusi kendali atas pikiran orang lain: benang terlepas dari genggaman, hanya garis milik sendiri yang tetap bertahan.",
+    "composition": "asymmetric",
+    "dominantObjects": [
+      "Indicator",
+      "Line",
+      "Line",
+      "Circle"
+    ],
+    "primitiveCombination": [
+      "Indicator",
+      "Line",
+      "Line",
+      "Circle"
+    ],
+    "motionPattern": "fade/positionShift/fade",
+    "semanticPurpose": "Melepaskan ilusi kendali atas pikiran orang lain: benang terlepas dari genggaman, hanya garis milik sendiri yang tetap bertahan."
+  },
+  {
+    "projectId": "proj_muwt0aze",
+    "sceneId": "scene_06",
+    "visualConcept": "DIAL TURNS THE NOISE DOWN",
+    "metaphor": "Memberi kuasa kembali: pendapat tetap masuk, tapi penonton yang mengatur seberapa besar pengaruhnya ke hidup.",
+    "composition": "leftTextRightObject",
+    "dominantObjects": [
+      "Circle",
+      "Indicator",
+      "Circle"
+    ],
+    "primitiveCombination": [
+      "Label",
+      "Circle",
+      "Indicator",
+      "Circle"
+    ],
+    "motionPattern": "stagger/highlight/fade",
+    "semanticPurpose": "Memberi kuasa kembali: pendapat tetap masuk, tapi penonton yang mengatur seberapa besar pengaruhnya ke hidup."
+  },
+  {
+    "projectId": "proj_muwt0aze",
+    "sceneId": "scene_07",
+    "visualConcept": "TWO DOORS, ONE CLOSES",
+    "metaphor": "Pemisahan ruang hidup: pintu mereka meredup dan tertutup sementara pintu lu tetap terbuka dan menyala — lu bertahan di hidup lu sendiri.",
+    "composition": "dualObject",
+    "dominantObjects": [
+      "Circle",
+      "Circle"
+    ],
+    "primitiveCombination": [
+      "Circle",
+      "Circle",
+      "GradientGlow"
+    ],
+    "motionPattern": "slide/subtleScale/fade",
+    "semanticPurpose": "Pemisahan ruang hidup: pintu mereka meredup dan tertutup sementara pintu lu tetap terbuka dan menyala — lu bertahan di hidup lu sendiri."
+  },
+  {
+    "projectId": "proj_muwt0aze",
+    "sceneId": "scene_08",
+    "visualConcept": "ONE SHAPE DECLINES THE MOULD",
+    "metaphor": "Pembebasan: satu bentuk utuh tetap utuh di antara sel-sel seragam yang menekannya — beda itu struktur, bukan cacat.",
+    "composition": "objectDominant",
+    "dominantObjects": [
+      "Grid",
+      "Circle"
+    ],
+    "primitiveCombination": [
+      "Grid",
+      "Circle",
+      "Label"
+    ],
+    "motionPattern": "stagger/subtleScale/fade",
+    "semanticPurpose": "Pembebasan: satu bentuk utuh tetap utuh di antara sel-sel seragam yang menekannya — beda itu struktur, bukan cacat."
+  },
+  {
+    "projectId": "proj_p3_demo",
+    "sceneId": "scene_01",
+    "visualConcept": "Bearing drift: rigid answer line rotates down under three YES badges",
+    "metaphor": "Each YES tilts the answer line off its original heading; gold arc shows drift never recovers.",
+    "composition": "leftTextRightObject",
+    "dominantObjects": [
+      "Line",
+      "Line",
+      "Badge",
+      "Badge",
+      "Badge",
+      "Indicator"
+    ],
+    "primitiveCombination": [
+      "Label",
+      "Line",
+      "Line",
+      "Badge",
+      "Badge",
+      "Badge",
+      "Indicator",
+      "Label"
+    ],
+    "motionPattern": "reveal/positionShift/fade",
+    "semanticPurpose": "Each YES tilts the answer line off its original heading; gold arc shows drift never recovers.",
+    "visualMechanism": "bearing drift: each YES tilts the answer line off its heading"
+  },
+  {
+    "projectId": "proj_p3_demo",
+    "sceneId": "scene_02",
+    "visualConcept": "One YES stretched into three molds on a single rail",
+    "metaphor": "Shows self-betrayal as one YES reshaping to fit three contradictory asks, leaving a countable record of conforming versions.",
+    "composition": "leftTextRightObject",
+    "dominantObjects": [
+      "Line",
+      "Circle",
+      "Circle",
+      "Circle"
+    ],
+    "primitiveCombination": [
+      "Line",
+      "Circle",
+      "Label",
+      "Circle",
+      "Label",
+      "Circle",
+      "Label"
+    ],
+    "motionPattern": "stagger/highlight/fade",
+    "semanticPurpose": "Shows self-betrayal as one YES reshaping to fit three contradictory asks, leaving a countable record of conforming versions.",
+    "visualMechanism": "oneYesStampedThreeAlignedSlots"
+  },
+  {
+    "projectId": "proj_p3_demo",
+    "sceneId": "scene_03",
+    "visualConcept": "HERO YES ABSORBED INTO ECHO GRID",
+    "metaphor": "Show sincere YES losing value: hero word multiplies into a uniform dim grid while its teal credibility line retracts to a stub.",
+    "composition": "leftTextRightObject",
+    "dominantObjects": [
+      "Line",
+      "Grid",
+      "Indicator",
+      "Line"
+    ],
+    "primitiveCombination": [
+      "WordReveal",
+      "Line",
+      "WordReveal",
+      "Grid",
+      "Indicator",
+      "Line"
+    ],
+    "motionPattern": "fade/subtleScale/fade",
+    "semanticPurpose": "Show sincere YES losing value: hero word multiplies into a uniform dim grid while its teal credibility line retracts to a stub.",
+    "visualMechanism": "singular word diluted into crowd grid"
+  },
+  {
+    "projectId": "proj_p3_demo",
+    "sceneId": "scene_04",
+    "visualConcept": "STRIKED ANSWERS, ONE HELD LINE",
+    "metaphor": "Four struck answer versions dissolve while one teal line locks flush on the shared baseline — conviction is the only thing remembered.",
+    "composition": "asymmetric",
+    "dominantObjects": [
+      "Line",
+      "Line",
+      "Line",
+      "Line",
+      "Line",
+      "Line",
+      "Line",
+      "Line"
+    ],
+    "primitiveCombination": [
+      "Line",
+      "Line",
+      "Line",
+      "Line",
+      "Line",
+      "Line",
+      "Line",
+      "Line",
+      "Label"
+    ],
+    "motionPattern": "stagger/controlledReveal/dissolve",
+    "semanticPurpose": "Four struck answer versions dissolve while one teal line locks flush on the shared baseline — conviction is the only thing remembered.",
+    "visualMechanism": "struckDecayVsHeldAnchor"
+  },
+  {
+    "projectId": "proj_p3_demo",
+    "sceneId": "scene_05",
+    "visualConcept": "BENDS DIE, STRAIGHT PASSES BEYOND THE HOLLOW AUDIENCE",
+    "metaphor": "Prove self-editing is unrewarded: bent lines die at a hollow audience, the return path never closes, then one straight gold stroke passes beyond it.",
+    "composition": "leftTextRightObject",
+    "dominantObjects": [
+      "Circle",
+      "Line",
+      "Line",
+      "Line",
+      "Line",
+      "Line"
+    ],
+    "primitiveCombination": [
+      "Circle",
+      "Line",
+      "Line",
+      "Line",
+      "Line",
+      "Label",
+      "Line"
+    ],
+    "motionPattern": "reveal/highlight/fade",
+    "semanticPurpose": "Prove self-editing is unrewarded: bent lines die at a hollow audience, the return path never closes, then one straight gold stroke passes beyond it.",
+    "visualMechanism": "bendsDieStraightPasses"
+  },
+  {
+    "projectId": "proj_p3_demo",
+    "sceneId": "scene_06",
+    "visualConcept": "Rotating ask-ring sweeps behind a locked gold bearing needle",
+    "metaphor": "Close the arc from drift to resolve: a ring of rotating asks sweeps a full turn while one gold needle holds a single fixed bearing.",
+    "composition": "rightTextLeftObject",
+    "dominantObjects": [
+      "Circle",
+      "Arrow",
+      "Arrow",
+      "Arrow",
+      "Line",
+      "Line",
+      "Indicator"
+    ],
+    "primitiveCombination": [
+      "Subheadline",
+      "Circle",
+      "Arrow",
+      "Arrow",
+      "Arrow",
+      "Line",
+      "Line",
+      "Indicator",
+      "Label"
+    ],
+    "motionPattern": "stagger/subtleScale/fade",
+    "semanticPurpose": "Close the arc from drift to resolve: a ring of rotating asks sweeps a full turn while one gold needle holds a single fixed bearing.",
+    "visualMechanism": "rotating-ask-dial-vs-fixed-needle"
+  },
+  {
+    "projectId": "proj_muy41mhg",
+    "sceneId": "scene_01",
+    "visualConcept": "BIG QUESTION, THEN OTHERS' OPINIONS CROWD THE SELF WHILE ENERGY RUNS DRY",
+    "metaphor": "Hook: pertanyaan pembuka soal kelelahan — pendapat orang lain yang menekan diri sementara energi nyaris habis, dalam frame yang sama.",
+    "composition": "centered",
+    "dominantObjects": [
+      "Person",
+      "SpeechBubble",
+      "ProgressBar"
+    ],
+    "primitiveCombination": [
+      "WordReveal",
+      "Person",
+      "SpeechBubble",
+      "ProgressBar"
+    ],
+    "motionPattern": "stagger/controlledReveal/fade",
+    "semanticPurpose": "Hook: pertanyaan pembuka soal kelelahan — pendapat orang lain yang menekan diri sementara energi nyaris habis, dalam frame yang sama."
+  },
+  {
+    "projectId": "proj_muy41mhg",
+    "sceneId": "scene_02",
+    "visualConcept": "MIRROR RING NEVER SETTLES",
+    "metaphor": "Cemas menampilkan: cermin tak pernah diam, cek penampilan berulang demi diterima semua orang.",
+    "composition": "centered",
+    "dominantObjects": [
+      "Person",
+      "SpeechBubble",
+      "SpeechBubble"
+    ],
+    "primitiveCombination": [
+      "Person",
+      "SpeechBubble",
+      "SpeechBubble",
+      "Label"
+    ],
+    "motionPattern": "stagger/positionShift/fade",
+    "semanticPurpose": "Cemas menampilkan: cermin tak pernah diam, cek penampilan berulang demi diterima semua orang."
+  },
+  {
+    "projectId": "proj_muy41mhg",
+    "sceneId": "scene_03",
+    "visualConcept": "POST VANISHES AT ZERO READS",
+    "metaphor": "Self-censorship peaks: a composed post dissolves while the views counter never leaves zero — no audience ever judged it.",
+    "composition": "leftTextRightObject",
+    "dominantObjects": [
+      "GenericCard",
+      "Number"
+    ],
+    "primitiveCombination": [
+      "GenericCard",
+      "Number",
+      "Label"
+    ],
+    "motionPattern": "fade/subtleScale/dissolve",
+    "semanticPurpose": "Self-censorship peaks: a composed post dissolves while the views counter never leaves zero — no audience ever judged it."
+  },
+  {
+    "projectId": "proj_muy41mhg",
+    "sceneId": "scene_04",
+    "visualConcept": "UPLOAD BAR DRAINS FROM 99 TO 0",
+    "metaphor": "Post-and-delete ritual: upload bar climbs to 99%, hesitates, then drains to 0% as fear of judgment undoes the post.",
+    "composition": "leftTextRightObject",
+    "dominantObjects": [
+      "ProgressBar",
+      "GenericCard",
+      "Line"
+    ],
+    "primitiveCombination": [
+      "ProgressBar",
+      "Label",
+      "GenericCard",
+      "Line",
+      "Label",
+      "Label"
+    ],
+    "motionPattern": "slide/counterChange/fade",
+    "semanticPurpose": "Post-and-delete ritual: upload bar climbs to 99%, hesitates, then drains to 0% as fear of judgment undoes the post.",
+    "visualMechanism": "regression"
+  },
+  {
+    "projectId": "proj_muy41mhg",
+    "sceneId": "scene_05",
+    "visualConcept": "TWO COLUMNS THAT NEVER ALIGN",
+    "metaphor": "Empat tindakan jujur dipasangkan dengan empat vonis yang saling bertabrakan — kolom kiri dan kanan tidak pernah sejajar, membuktikan makna selalu dibalik.",
+    "composition": "split",
+    "dominantObjects": [
+      "WordReveal",
+      "Comparison"
+    ],
+    "primitiveCombination": [
+      "WordReveal",
+      "Comparison"
+    ],
+    "motionPattern": "stagger/positionShift/fade",
+    "semanticPurpose": "Empat tindakan jujur dipasangkan dengan empat vonis yang saling bertabrakan — kolom kiri dan kanan tidak pernah sejajar, membuktikan makna selalu dibalik."
+  },
+  {
+    "projectId": "proj_muy41mhg",
+    "sceneId": "scene_06",
+    "visualConcept": "FOUR INPUTS, ONE RED VERDICT TAPE",
+    "metaphor": "Prove the trap: BAIK, DIEM, SUKSES, GAGAL all feed one unreading slot that prints four identical red verdicts on one tape.",
+    "composition": "leftTextRightObject",
+    "dominantObjects": [
+      "Line",
+      "Line"
+    ],
+    "primitiveCombination": [
+      "Label",
+      "Line",
+      "Line",
+      "Label",
+      "Label",
+      "Label",
+      "Label",
+      "Label"
+    ],
+    "motionPattern": "stagger/highlight/fade",
+    "semanticPurpose": "Prove the trap: BAIK, DIEM, SUKSES, GAGAL all feed one unreading slot that prints four identical red verdicts on one tape.",
+    "visualMechanism": "fourInputsOneVerdictTape"
+  },
+  {
+    "projectId": "proj_muy41mhg",
+    "sceneId": "scene_07",
+    "visualConcept": "APERTURE: THE GAP YOU SET",
+    "metaphor": "Pivot ke kuasa diri: suara tetap masuk, tapi lu sendiri yang mengatur seberapa besar pengaruhnya sampai ke hidup lu.",
+    "composition": "split",
+    "dominantObjects": [
+      "Arrow",
+      "Arrow",
+      "Circle",
+      "Circle"
+    ],
+    "primitiveCombination": [
+      "WordReveal",
+      "Arrow",
+      "Arrow",
+      "Label",
+      "Circle",
+      "Circle",
+      "Label"
+    ],
+    "motionPattern": "stagger/subtleScale/fade",
+    "semanticPurpose": "Pivot ke kuasa diri: suara tetap masuk, tapi lu sendiri yang mengatur seberapa besar pengaruhnya sampai ke hidup lu."
+  },
+  {
+    "projectId": "proj_muy41mhg",
+    "sceneId": "scene_08",
+    "visualConcept": "sluiceGapOnWall — opinion stack blocked, teal thread through a narrowing aperture",
+    "metaphor": "Reframe agency: a walled gap lets only a measured thread of others' opinions into HIDUP LU.",
+    "composition": "leftTextRightObject",
+    "dominantObjects": [
+      "Grid",
+      "Line",
+      "Line",
+      "Indicator",
+      "Line"
+    ],
+    "primitiveCombination": [
+      "Grid",
+      "Label",
+      "Line",
+      "Line",
+      "Indicator",
+      "Line",
+      "Label"
+    ],
+    "motionPattern": "fade/subtleScale/fade",
+    "semanticPurpose": "Reframe agency: a walled gap lets only a measured thread of others' opinions into HIDUP LU.",
+    "visualMechanism": "sluiceGapOnWall — opinion stack flush at a walled gap"
+  },
+  {
+    "projectId": "proj_muy41mhg",
+    "sceneId": "scene_09",
+    "visualConcept": "BULLSEYE RELABELS FROM SEMUA ORANG TO LU",
+    "metaphor": "Resolusi akhir: pusat sasaran tidak berubah, hanya labelnya — dari 'SEMUA ORANG' menjadi 'LU', melepas kelelahan mencari persetujuan kolektif.",
+    "composition": "objectDominant",
+    "dominantObjects": [
+      "Target"
+    ],
+    "primitiveCombination": [
+      "Target",
+      "Label",
+      "Label"
+    ],
+    "motionPattern": "reveal/highlight/fade",
+    "semanticPurpose": "Resolusi akhir: pusat sasaran tidak berubah, hanya labelnya — dari 'SEMUA ORANG' menjadi 'LU', melepas kelelahan mencari persetujuan kolektif."
+  }
+]

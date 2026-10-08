@@ -1,0 +1,73 @@
+{
+  "sceneId": "scene_03",
+  "duration": 3.61,
+  "purpose": "Self-censorship peaks: a composed post dissolves while the views counter never leaves zero — no audience ever judged it.",
+  "visualConcept": "POST VANISHES AT ZERO READS",
+  "composition": "leftTextRightObject",
+  "headline": {
+    "text": "POSTING… HAPUS LAGI",
+    "accentWords": [
+      "HAPUS LAGI"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "GenericCard",
+      "label": "POSTINGAN BARU",
+      "sublabel": "siap terbit…",
+      "state": "active",
+      "position": "right",
+      "offsetX": 0,
+      "offsetY": -20,
+      "scale": 1,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "The composed post that will dissolve — the thing being deleted, anchored at the top of the right column.",
+      "entrance": "fade",
+      "emphasis": "subtleScale",
+      "emphasisAt": 1.2,
+      "exit": "dissolve",
+      "delay": 0.2
+    },
+    {
+      "primitive": "Number",
+      "value": 0,
+      "suffix": " VIEWS",
+      "position": "right",
+      "offsetX": 0,
+      "offsetY": 4,
+      "size": "md",
+      "accent": "gold",
+      "role": "semantic",
+      "purpose": "Zero-read counter that never changes: no audience ever judged the post.",
+      "entrance": "fade",
+      "emphasis": "subtleScale",
+      "emphasisAt": 1.6,
+      "delay": 0.45
+    },
+    {
+      "primitive": "Label",
+      "text": "SEBELUM ADA YANG MENILAI",
+      "align": "center",
+      "position": "right",
+      "offsetX": 0,
+      "offsetY": 14,
+      "accent": "none",
+      "role": "supporting",
+      "purpose": "Caption directly under the numeral: the feared judgment never arrived.",
+      "entrance": "fade",
+      "delay": 0.7
+    }
+  ],
+  "motion": {
+    "entrance": "fade",
+    "emphasis": "subtleScale",
+    "exit": "dissolve"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.6,
+    "exitAt": 2.75
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "beatId": "b9",
+  "spokenMeaning": "Mereka pulang ke hidup mereka, dan lu tetap harus hidup dengan hidup lu sendiri — jadi nggak apa-apa kalau nggak semua orang suka sama lu, karena lu memang nggak diciptain buat disukai semua orang.",
+  "viewerTakeaway": "Kepentingan orang lain dan hidup lu berangkat dari titik yang sama lalu berpisah; hidup lu yang tetap jalan adalah bukti bahwa lu bebas dari penilaian mereka.",
+  "visualMechanism": "separation",
+  "visualNarrative": [
+    {
+      "order": 1,
+      "action": "A single small origin dot fades in at the lower-left third; both life-trails will start from it.",
+      "meaning": "Both lives share one starting point — separation is a choice made from here, not from nothing.",
+      "visualEvidence": "One white dot at x≈15%, y≈65% on the dark field, before any line exists."
+    },
+    {
+      "order": 2,
+      "action": "Headline slides in word by word: 'MEREKA PULANG. LU TETAP JALAN.' — 'JALAN' lands in gold.",
+      "meaning": "States the two destinations before the geometry explains them.",
+      "visualEvidence": "Two headline lines left-aligned top-left; only 'JALAN' carries the gold accent."
+    },
+    {
+      "order": 3,
+      "action": "A dim trail draws from the origin, curving up-right and terminating inside a cluster of five small house-blocks.",
+      "meaning": "'Mereka pulang' enacted: their path ends at their own home and stops there.",
+      "visualEvidence": "Grey-white hairline bends upward and its tip disappears into the block cluster at x≈48%."
+    },
+    {
+      "order": 4,
+      "action": "The five house-blocks stagger into place around the dim trail's tip, then hold at low brightness.",
+      "meaning": "Their world is complete and closed — it receives them and is not a destination for the viewer.",
+      "visualEvidence": "Five dim rectangular blocks stacked as a small settlement; they stay at ~35% opacity."
+    },
+    {
+      "order": 5,
+      "action": "Label 'MEREKA PULANG KE HIDUP MEREKA' fades in under the dim trail.",
+      "meaning": "Names their route so the geometry cannot be misread as loss or abandonment.",
+      "visualEvidence": "One uppercase 34px label, secondary text color, sitting below the curved dim trail."
+    },
+    {
+      "order": 6,
+      "action": "A gold trail draws from the same origin, running shallow beneath the cluster, passing beyond it, and stopping only at the right frame edge.",
+      "meaning": "The viewer's life keeps going past their home and does not end where their approval ends.",
+      "visualEvidence": "Unbroken gold line from x≈15% to x≈92%, crossing under the block cluster with no bend into it."
+    },
+    {
+      "order": 7,
+      "action": "As the gold tip passes the cluster, the cluster visibly dims and stays dim; the trails never rejoin.",
+      "meaning": "Separation acts out: their world recedes the further one's own life continues.",
+      "visualEvidence": "Cluster opacity drops from 50% to 35% only after the gold line clears it; no line reconnects the two paths."
+    },
+    {
+      "order": 8,
+      "action": "Label 'HIDUP LU' fades in under the gold trail's far end; a final soft highlight passes along the gold line to its tip.",
+      "meaning": "Permission lands: this continuing path is the whole point — being liked by everyone was never the destination.",
+      "visualEvidence": "Gold label at the right edge; a subtle highlight sweep ends at the line's tip, then the frame holds still."
+    }
+  ],
+  "semanticObjects": [
+    {
+      "objectType": "Actor",
+      "semanticRole": "Shared starting point of both lives, so divergence reads as a choice rather than an accident.",
+      "relationship": "emits dimTrail and goldTrail",
+      "importance": 3
+    },
+    {
+      "objectType": "Actor",
+      "semanticRole": "Their path: curves back and terminates inside the house cluster — 'mereka pulang'.",
+      "relationship": "terminates inside houseCluster",
+      "importance": 4
+    },
+    {
+      "objectType": "Actor",
+      "semanticRole": "The viewer's path: one continuous line that passes the cluster and reaches the frame edge — an open-ended life.",
+      "relationship": "passes beyond houseCluster without entering it",
+      "importance": 5
+    },
+    {
+      "objectType": "Actor",
+      "semanticRole": "Five small blocks reading instantly as 'their home'; the closed world that receives them.",
+      "relationship": "absorbs dimTrail; is passed and dimmed by goldTrail",
+      "importance": 4
+    },
+    {
+      "objectType": "Actor",
+      "semanticRole": "Declares the split thesis; gold on 'JALAN' marks the continuing life as the valued one.",
+      "relationship": "frames both trails from above",
+      "importance": 5
+    },
+    {
+      "objectType": "Actor",
+      "semanticRole": "Names their destination so their leaving is neutral, not a rejection.",
+      "relationship": "anchored below dimTrail",
+      "importance": 3
+    },
+    {
+      "objectType": "Actor",
+      "semanticRole": "Names the viewer's path as sovereign: the life that keeps going.",
+      "relationship": "anchored below goldTrail's far end",
+      "importance": 4
+    }
+  ],
+  "relationships": [
+    {
+      "from": "originPoint",
+      "to": "dimTrail",
+      "relationship": "source — one shared start the dim path leaves from"
+    },
+    {
+      "from": "dimTrail",
+      "to": "houseCluster",
+      "relationship": "terminates-in — their path ends inside their home"
+    },
+    {
+      "from": "goldTrail",
+      "to": "houseCluster",
+      "relationship": "passes-beyond-and-dims — the acting pair: the gold line clears the cluster and forces it to recede"
+    },
+    {
+      "from": "headline",
+      "to": "goldTrail",
+      "relationship": "labels-in-advance — 'JALAN' names what the gold line then performs"
+    },
+    {
+      "from": "labelYours",
+      "to": "goldTrail",
+      "relationship": "anchors-to — caption lands only after the line reaches the edge"
+    }
+  ],
+  "typographyPlan": {
+    "headline": "MEREKA PULANG. LU TETAP JALAN.",
+    "emphasisWords": [
+      "PULANG",
+      "JALAN"
+    ],
+    "supportingText": [
+      "MEREKA PULANG KE HIDUP MEREKA.",
+      "LU TETAP HIDUP DENGAN HIDUP LU.",
+      "NGGAK SEMUA ORANG SUKA SAMA LU.",
+      "NGGAK APA-APA."
+    ]
+  },
+  "subtitlePlan": {
+    "enabled": true,
+    "text": "Jadi nggak apa-apa kalau nggak semua orang suka sama lu — lu juga nggak diciptain buat disukai semua orang.",
+    "timing": "final ~18s of the beat (≈106.5s–124.58s), after the gold trail reaches the edge",
+    "role": "closing punchline caption — the spoken permission the gold line has just proved"
+  },
+  "motionBeats": [
+    {
+      "order": 1,
+      "action": "Origin dot fades in alone.",
+      "purpose": "Establish the shared starting point before any divergence."
+    },
+    {
+      "order": 2,
+      "action": "Headline words stagger-slide in; 'JALAN' takes a single gold highlight on landing.",
+      "purpose": "Set the thesis and pre-assign gold to the continuing life."
+    },
+    {
+      "order": 3,
+      "action": "Dim trail draws upward in a slow ease-out curve into the cluster.",
+      "purpose": "Animate 'mereka pulang' as a path that ends at their home."
+    },
+    {
+      "order": 4,
+      "action": "Five house-blocks stagger in around the dim tip, then hold dim.",
+      "purpose": "Build their closed world with restrained sequence, no decorative flourish."
+    },
+    {
+      "order": 5,
+      "action": "Label 'MEREKA PULANG KE HIDUP MEREKA' fades in.",
+      "purpose": "Name their destination so their exit reads neutral."
+    },
+    {
+      "order": 6,
+      "action": "Gold trail draws from the origin, under the cluster, out to the right edge in one unbroken stroke.",
+      "purpose": "The core acting motion: one's life keeps moving past their world."
+    },
+    {
+      "order": 7,
+      "action": "House cluster dims one step as the gold tip clears it.",
+      "purpose": "Reaction shot — separation is caused by continuing, not by rejecting."
+    },
+    {
+      "order": 8,
+      "action": "Label 'HIDUP LU' fades in; a soft highlight sweeps once along the gold line to its tip; frame holds static.",
+      "purpose": "Land the permission and end in resolute calm instead of more animation."
+    }
+  ],
+  "compositionIntent": "Horizontal split frame: headline block top-left at 8% margin; lower two-thirds holds one origin at left (x≈15%, y≈65%), a dim trail curving up-right into a five-block house cluster at x≈48%, and a gold trail running shallow beneath it out to x≈92%. One label under each trail, large negative space above the right half.",
+  "visualEvidence": [
+    "Two lines leave one dot; the dim one ends inside the block cluster, the gold one crosses under it and touches the right edge.",
+    "Cluster opacity visibly drops only after the gold line passes — separation acts, not just coexists.",
+    "Only 'JALAN' and the right label carry gold; everything else is white/secondary on #0B1313.",
+    "No line ever reconnects the two paths; the gold tip holds at the frame edge."
+  ],
+  "forbiddenInterpretations": [
+    "No two doors, gates, or room split — that visual was already used in this project family.",
+    "No arrows, filters, dials, or opinion bubbles; this beat is trajectory, not selection.",
+    "No literal people or figures standing between groups; trails carry the story.",
+    "No red accent — their departure is not a defeat or a conflict.",
+    "No glowing particles, camera moves, or simultaneous trail draws; entrances stay sequential."
+  ],
+  "noveltyIntent": "Unlike the earlier closed-door separation, both lives share one origin and the gold path physically passes the house cluster, making separation a continuous trajectory whose cause is simply keeping going.",
+  "elementBudget": {
+    "min": 7,
+    "max": 8
+  }
+}

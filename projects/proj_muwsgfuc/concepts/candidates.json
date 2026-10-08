@@ -1,0 +1,977 @@
+{
+  "perBeat": [
+    {
+      "beatId": "b1",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "TWO-PERSON SEESEAWAW SEE-SAW: THEIR OPINION TIPS, MY CORE STAYS STILL",
+          "metaphor": "Their collective opinion is one heavy pan full of small face-tokens; my own core is a small steady counterweight that never moves. Only the beam angle changes.",
+          "semanticMechanism": "The see-saw physically separates two things the script separates: their judgment (movable, heavy, swinging) and my self (fixed pivot, upright). The beam tips repeatedly but the pivot never yields, performing 'you can't control their opinion, only how much it moves you.'",
+          "whyViewerUnderstandsIt": "A seesaw is read instantly as a weighing of forces. The audience sees external opinion exert real force (it tips) yet land back, while the person-side stays planted — meaning is legible even muted.",
+          "composition": "centered",
+          "objects": [
+            "Line",
+            "Circle",
+            "Stack",
+            "Label"
+          ],
+          "typographyStrategy": "Headline first two lines upper-left, 'paling bikin capek' in gold; small label under the beam as counter.",
+          "motionOpportunity": "Beam slides to tip and back (positionShift), face-tokens stagger in on the heavy pan, headline word-by-word reveal; final fade.",
+          "whyItWorks": "Turns abstract 'influence' into a physical system with a visible limit of effect; avoids literal masks while keeping the weight of others' judgment.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Line",
+            "Circle",
+            "Stack",
+            "WordReveal"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "LIFTING A MASK THAT KEEPS RE-APPEARING",
+          "metaphor": "A tired hand raises a smiling outline mask away from a face-circle — but a second identical mask outline waits behind it, and a third behind that.",
+          "semanticMechanism": "The repeated identical outlines show that removing one pleasing facade just exposes the next; the effort never terminates. Each mask the hand lifts is replaced, so the arm never rests — effort without arrival.",
+          "whyViewerUnderstandsIt": "Lifting a mask is the universal gesture of dropping a persona; seeing more masks queued behind it converts 'berusaha biar semua orang suka' into an endless, visible labor.",
+          "composition": "rightTextLeftObject",
+          "objects": [
+            "Circle",
+            "Circle",
+            "GenericCard",
+            "Arrow"
+          ],
+          "typographyStrategy": "Headline left, uppercase Archivo 96, 'capek' in gold; one muted caption naming the loop.",
+          "motionOpportunity": "Mask scales up and slides out (slide exit), next mask advances via positionShift, hand line holds with subtleScale fatigue; fade out.",
+          "whyItWorks": "Directly dramatizes the hint 'a heavy mask held up by tired hands' while adding the stronger point: the task is recursive, not one-off.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Circle",
+            "GenericCard",
+            "Arrow",
+            "Subheadline"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "THE APPLAUSE GAUGE THAT NEVER FILLS",
+          "metaphor": "A horizontal meter fills with other people's approving tick-marks, but every mark that lands drains a small personal battery beneath it.",
+          "semanticMechanism": "Two coupled gauges run in opposite directions in the same frame: external approval rises while internal energy falls. The inverse coupling IS the claim — that pursuit of liking is self-exhaustion.",
+          "whyViewerUnderstandsIt": "Opposite-direction bars are decoded without explanation: something gains, something empties. The drain visibly pays for the fill.",
+          "composition": "split",
+          "objects": [
+            "ProgressBar",
+            "ProgressBar",
+            "Label",
+            "Line"
+          ],
+          "typographyStrategy": "Headline top spanning both columns, 'paling bikin capek' gold; each gauge gets a small uppercase label.",
+          "motionOpportunity": "Both bars animate by counterChange/stagger at once, divider line draws, headline reveal, fade.",
+          "whyItWorks": "Quantifies an emotional tradeoff; gives the 'high' typography priority a clean stage while the object work stays minimal.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "ProgressBar",
+            "ProgressBar",
+            "Line",
+            "WordReveal"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "ONE BODY, MANY POINTING LINES",
+          "metaphor": "A single dim circle stands centered while thin judgement lines close in from every edge, each one nudging the circle a few pixels off its own center — repeatedly.",
+          "semanticMechanism": "Each line = one external opinion; each nudge = a self-adjustment made to please. The circle drifts from its own origin with every hit, showing the self being relocated by other people's verdicts.",
+          "whyViewerUnderstandsIt": "Converging arrows on one target reads as pressure/judgement; the target's repeated displacement shows loss of footing without needing the words.",
+          "composition": "centered",
+          "objects": [
+            "Circle",
+            "Arrow",
+            "Indicator",
+            "Line"
+          ],
+          "typographyStrategy": "Headline above the symbol, uppercase, 'semua orang' accent in gold; tiny label at circle's original ghost position.",
+          "motionOpportunity": "Arrows draw in stagger (draw), circle takes positionShift nudges, original position marked by a fading outline, exit fade.",
+          "whyItWorks": "Enacts Takut dijudge / diomongin literally as incoming vectors, and the drift prefigures the later script idea of influence penetrating you.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Circle",
+            "Arrow",
+            "Line",
+            "Indicator"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "TWO DOORS: ALL FACES VS ONE SELF",
+          "metaphor": "A wide door glowing with many identical face-dots promises acceptance; beside it, a narrow quiet door with a single dot. The hand alternates, reaching and retracting, never entering.",
+          "semanticMechanism": "Two mutually exclusive destinations are presented as a choice the tired hand keeps failing to make; the hesitation loop (reach, retract, repeat) performs the wasted energy of trying to enter 'everyone likes me.'",
+          "whyViewerUnderstandsIt": "Many identical faces behind one door versus a lone lit doorway states the fork plainly; the stuttering hand shows paralysis and fatigue.",
+          "composition": "dualObject",
+          "objects": [
+            "GenericCard",
+            "Circle",
+            "Arrow",
+            "Label"
+          ],
+          "typographyStrategy": "Headline centered above both doors, gold on 'semua orang'; micro-labels under each door, centered per label rules.",
+          "motionOpportunity": "Doors fade in stagger, arrow slides toward left door and returns (positionShift), subtleScale on the tired hand line, exit dissolve.",
+          "whyItWorks": "Frames the beat as an unsatisfiable choice rather than a symptom, planting the script's later resolution ('not made to be liked by everyone').",
+          "complexity": "low",
+          "primitiveSketch": [
+            "GenericCard",
+            "Circle",
+            "Arrow",
+            "Label"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b2",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "THREE GUARDS ON THE SELF",
+          "metaphor": "Three surveillance posts watch a small figure; each act of self-monitoring lights one guard, and the last guard erases the figure's own mark.",
+          "semanticMechanism": "Three stacked checkpoints each illuminate as a guard inspects the line beneath it; the final checkpoint clears the written mark, physically performing speak-dress-post-then-delete as escalating surveillance.",
+          "whyViewerUnderstandsIt": "Repeated inspection points that each dim or erase what's under them read as constant self-censorship even without reading the words.",
+          "composition": "leftTextRightObject",
+          "objects": [
+            "Grid",
+            "Checkbox",
+            "Line",
+            "Circle"
+          ],
+          "typographyStrategy": "WordReveal headline with 'hapus lagi' as the single gold accent phrase.",
+          "motionOpportunity": "stagger entrance of guards, highlight on each checkAt, fade of the erased mark.",
+          "whyItWorks": "Turns three concrete behaviors into one escalating system rather than three icons.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "WordReveal",
+            "Grid",
+            "Checkbox",
+            "Line"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "POST → WITHDRAW",
+          "metaphor": "A glowing post card rises toward a publish line, then is pulled back and dimmed as a hand-shape hovers and withdraws.",
+          "semanticMechanism": "The card's own trajectory reverses mid-arc: forward motion (posting) is physically cancelled by a returning slide and glow decay, so the frame enacts 'post, then delete' as one motion event.",
+          "whyViewerUnderstandsIt": "An object starting to be published and being snatched back is universally read as hesitation and self-removal.",
+          "composition": "centered",
+          "objects": [
+            "GenericCard",
+            "Arrow",
+            "GradientGlow",
+            "Circle"
+          ],
+          "typographyStrategy": "Short centered headline; 'hapus lagi' in gold, revealed after the withdrawal.",
+          "motionOpportunity": "scale/glide in, positionShift back, glow decay, fade exit.",
+          "whyItWorks": "Single object carries the whole beat; strongest cold-viewer decode.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "GenericCard",
+            "Arrow",
+            "GradientGlow",
+            "Caption"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "FOUR STRINGS, NO STEP",
+          "metaphor": "A small figure holds a single dot in place while four taut lines pull it toward four different judged directions.",
+          "semanticMechanism": "Competing tensions cancel out: four arrows of equal strength leave the center mark frozen, showing self-monitoring as paralysis produced by opposed external pulls.",
+          "whyViewerUnderstandsIt": "Tug-of-war geometry with a stuck center reads instantly as 'can't move without being watched.'",
+          "composition": "asymmetric",
+          "objects": [
+            "Circle",
+            "Arrow",
+            "Arrow",
+            "Arrow"
+          ],
+          "typographyStrategy": "Left-aligned two-line headline, muted secondary line for the fear phrases.",
+          "motionOpportunity": "draw of strings, subtleScale strain pulse, fade.",
+          "whyItWorks": "Visualizes the anxiety as forces rather than icons.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Circle",
+            "Arrow",
+            "Line",
+            "Caption"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "MIRROR MASK SLIDE",
+          "metaphor": "An outlined face-ring holds a second, smaller ring that slides over it like a mask, dimming the original.",
+          "semanticMechanism": "A covering layer slides across and occludes the base ring while its opacity drops — the authentic layer literally becomes hidden beneath a managed one.",
+          "whyViewerUnderstandsIt": "One shape covering another is the oldest diagram of hiding a self behind a presentation.",
+          "composition": "dualObject",
+          "objects": [
+            "Circle",
+            "Circle",
+            "Line",
+            "Label"
+          ],
+          "typographyStrategy": "Headline above, small centered label under the mask ('DIPANTAU').",
+          "motionOpportunity": "slide of mask layer, highlight edge, subtleScale settle.",
+          "whyItWorks": "Quiet, symbolic, distinct from the other candidates' motion metaphors.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Circle",
+            "Circle",
+            "Label",
+            "Line"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "EDIT UNDO LADDER",
+          "metaphor": "A vertical stack of typed lines; each line is struck through in sequence until only an empty frame remains.",
+          "semanticMechanism": "Sequential erasure accumulates downward — line after line is removed by a striking stroke, so suppression is shown as repeated, compounding subtraction ending in emptiness.",
+          "whyViewerUnderstandsIt": "Watched lines disappearing one by one reads as self-censorship and deletion without needing narration.",
+          "composition": "typographyDominant",
+          "objects": [
+            "Line",
+            "Line",
+            "Line",
+            "Indicator"
+          ],
+          "typographyStrategy": "Stacked word-by-word reveal where struck lines echo the script's guarded-speech phrases.",
+          "motionOpportunity": "stagger strikes, highlight on final empty state, fade.",
+          "whyItWorks": "Type itself becomes the enacted subject, matching the phrase-sourced beat.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "WordReveal",
+            "Line",
+            "Line",
+            "Indicator"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b3",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "SHIFTING BULLSEYE — no center to hit",
+          "metaphor": "A target whose rings drift every time an arrow lands; arrows from four directions stick in the outer ring, never near the middle.",
+          "semanticMechanism": "Universal approval is structurally impossible because the standard relocates after every attempt — arrows arrive on target, then the target moves, so a hit can never be registered.",
+          "whyViewerUnderstandsIt": "You watch arrows arrive accurately and still miss, then see the center slide away again: no aim could ever be enough, regardless of effort.",
+          "composition": "objectDominant",
+          "objects": [
+            "Target",
+            "Arrow",
+            "Arrow",
+            "Label"
+          ],
+          "typographyStrategy": "Headline top-left, uppercase Archivo 96, emphasis phrase split with 'nggak suka' in red; one word max tinted.",
+          "motionOpportunity": "Arrows draw in staggered, target center positionShift on each landing, headline WordReveal then fade.",
+          "whyItWorks": "It enacts the moving goalpost rather than naming it, and the miss-on-arrival event carries the bleak clarity without narration.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Target",
+            "Arrow",
+            "Arrow",
+            "WordReveal"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "ALL ARROWS POINT IN",
+          "metaphor": "One small dot at center; hairline arrows press inward from every edge of the frame, each tip tagged with the same verdict.",
+          "semanticMechanism": "Disapproval arrives from all directions simultaneously, so no orientation, action or position of the self can avoid it — the geometry itself has no safe angle.",
+          "whyViewerUnderstandsIt": "The center dot tries nothing and is already surrounded; the viewer sees that avoidance is impossible before reading a word.",
+          "composition": "centered",
+          "objects": [
+            "Circle",
+            "Arrow",
+            "Arrow",
+            "Label"
+          ],
+          "typographyStrategy": "Headline below center, left-aligned, accent on 'pasti ada aja'; red single-accent rule for the verdict tags.",
+          "motionOpportunity": "Arrows slide inward staggered then hold, center Circle subtleScale pulse once, Label fade, exit dissolve.",
+          "whyItWorks": "Directional convergence physically demonstrates 'no matter what you do' — the picture argues before the text does.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Circle",
+            "Arrow",
+            "Label",
+            "WordReveal"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "ONE SELF, TWO OPPOSITE VERDICTS",
+          "metaphor": "A single dot in the middle; the left side stamps it BAIK, the right side stamps it SOMBONG at the same instant.",
+          "semanticMechanism": "Contradiction proof: identical input produces mutually exclusive labels, so the approval function can never return true for any action taken.",
+          "whyViewerUnderstandsIt": "Seeing one subject called both good and arrogant in the same frame shows the judging isn't about the subject at all.",
+          "composition": "split",
+          "objects": [
+            "Circle",
+            "Comparison",
+            "Label"
+          ],
+          "typographyStrategy": "Headline top spanning full width; 'nggak suka' as the only red accent word pair; labels small uppercase centered per side.",
+          "motionOpportunity": "Both verdict labels stamp in with stagger, center dot highlight flash on each stamp, headline WordReveal left-to-right.",
+          "whyItWorks": "Performs the script's coming pattern of opposites (baik/pencitraan, diem/sombong) and makes futility logical, not emotional.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Comparison",
+            "Circle",
+            "WordReveal"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "ALWAYS ONE RED CELL",
+          "metaphor": "A grid of cells lights teal one by one as choices are made — and exactly one cell stays red, jumping to a new position each round.",
+          "semanticMechanism": "Exhaustive search with a permanent failure: no matter which cells you select, the configuration never reaches all-teal, proving disapproval is a fixed residue, not a correctable error.",
+          "whyViewerUnderstandsIt": "Repeated rounds of almost-perfect grids teach the rule in seconds: there is always a red one, wherever you move it.",
+          "composition": "topTextBottomObject",
+          "objects": [
+            "Grid",
+            "Label",
+            "Caption"
+          ],
+          "typographyStrategy": "Headline top-left two lines max, emphasis 'pasti ada aja yang nggak suka' with red on 'ada aja'; caption micro-explainer below grid.",
+          "motionOpportunity": "Cells stagger-highlight teal, red cell counterChange position between rounds, grid then fades.",
+          "whyItWorks": "Turns a statistical truth into a repeatable visible event, using one dominant red accent with strict semantic meaning.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Grid",
+            "Label",
+            "WordReveal"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "CROSSING PATHS, NEVER MEETING",
+          "metaphor": "Two long arrows cross diagonally: yours reaching out for approval, theirs reaching in to disapprove — they pass through each other and keep going.",
+          "semanticMechanism": "Two trajectories occupy the same space without interacting: your effort and their judgment run parallel obligations that can never connect or cancel out.",
+          "whyViewerUnderstandsIt": "The X shape reads as two opposing intents that intersect yet never stop for each other — agreement is not on the table.",
+          "composition": "asymmetric",
+          "objects": [
+            "Arrow",
+            "Arrow",
+            "Circle",
+            "Label"
+          ],
+          "typographyStrategy": "Headline stacked in the upper-left quadrant, uppercase, single red accent on 'nggak suka'; crossing point left as negative space.",
+          "motionOpportunity": "Arrows draw along their paths staggered, crossing point glow once at intersection, headline slide-in then settle.",
+          "whyItWorks": "Minimal element count, strong symbolic geometry, and the miss is enacted by motion instead of illustrated by an icon.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Arrow",
+            "Arrow",
+            "WordReveal"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b4",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "FOUR VERDICTS SLAM ONTO ONE STILL FIGURE",
+          "metaphor": "Four verdict cards drop one after another onto a single motionless dot; the dot never reacts because the verdicts are not answering anything it does.",
+          "semanticMechanism": "The subject stays constant while staggered verdict cards fall from above, each stamped on a different behavior state (baik/diem/sukses/gagal). The dot's absolute stillness after every impact is the proof: the verdicts are aimed at the person, not at the action.",
+          "whyViewerUnderstandsIt": "Cards keep landing and the dot keeps not changing. Even with the words ignored: nothing I do moves the verdict, so the verdict cannot be about what I do.",
+          "composition": "objectDominant",
+          "objects": [
+            "GenericCard",
+            "GenericCard",
+            "Circle",
+            "Label"
+          ],
+          "typographyStrategy": "Headline upper-left, Archivo 900 uppercase, max 2 red accent words; each card one short verdict word in Inter 700 label tier, red, one gold 'SALAH' as the only secondary accent.",
+          "motionOpportunity": "stagger slide-down of four cards 0.35s apart with fade settle; subtleScale pulse on the static dot at each impact to show the hit lands but changes nothing.",
+          "whyItWorks": "It performs the double bind physically: motion belongs to the accusers, not the accused. The inert center is the emotional core of unfairness.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "WordReveal",
+            "GenericCard",
+            "Circle"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "FOUR ARROWS, ONE DOT THAT NEVER MOVES",
+          "metaphor": "Four labeled verdict arrows draw inward from the four frame edges toward one small outlined dot at the center; each stops short, the dot unchanged.",
+          "semanticMechanism": "Judgment arrives from every direction at once; above/below/left/right map to the four verdicts and all four converge on one fixed target, so no behavior state sits outside the strike zone.",
+          "whyViewerUnderstandsIt": "Four arrows from four edges all aim at one tiny dot. Without reading a word you get: every direction is covered and the same small thing is what is being hit.",
+          "composition": "topTextBottomObject",
+          "objects": [
+            "Arrow",
+            "Arrow",
+            "Circle",
+            "Label"
+          ],
+          "typographyStrategy": "Headline top-left, Archivo 900, one red accent word; verdict words sit under each arrow as centered Inter 700 labels, muted tone with red on the most hostile one.",
+          "motionOpportunity": "stagger draw of four arrows from their edges, 0.4s apart, then a single subtleScale on the dot when all four point inward.",
+          "whyItWorks": "Converging vectors read as no-escape before any text is processed, and the fixed dot makes the structural claim visible: the person is the constant.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "WordReveal",
+            "Arrow",
+            "Circle"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "FOUR INPUTS, ONE RED OUTPUT",
+          "metaphor": "Four behavior labels fan out at the left, then their hairlines bend and funnel into a single red verdict node on the right.",
+          "semanticMechanism": "The diagram is a function whose output ignores its input: four distinct inputs travel four distinct paths and terminate in the identical node, so the ending is fixed before the input is chosen.",
+          "whyViewerUnderstandsIt": "Everything arrives at the same red point. The funnel silhouette tells you the ending was fixed no matter which path you take.",
+          "composition": "leftTextRightObject",
+          "objects": [
+            "Label",
+            "Line",
+            "Circle",
+            "Badge"
+          ],
+          "typographyStrategy": "Headline left, Archivo 900 with red accent on 'PASTI ADA'; input labels muted Inter 700, the single output node carries one gold word as the only secondary accent.",
+          "motionOpportunity": "stagger draw of converging hairlines left to right, then subtleScale on the output node with one glow subordinate to type.",
+          "whyItWorks": "It converts a verbal complaint into a readable system diagram, making the structural claim legible: the trap is the architecture, not your performance.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Subheadline",
+            "Label",
+            "Line",
+            "Circle"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "THE RED LINE NEVER LIFTS",
+          "metaphor": "A horizontal track of four checkpoints (baik, diem, sukses, gagal); one red line draws across all four in a single unbroken stroke.",
+          "semanticMechanism": "The stroke starts before the first state and runs past the last without lifting, so judgment is not a reaction to any individual state; it is the track itself. One continuous mark covering every option performs the no-behavior-escapes claim.",
+          "whyViewerUnderstandsIt": "The red line does not stop at any checkpoint; it runs straight through them all. One stroke over everything reads instantly as one verdict over every choice.",
+          "composition": "bottomTextTopObject",
+          "objects": [
+            "Sequence",
+            "Line",
+            "Label"
+          ],
+          "typographyStrategy": "Headline bottom-left, Archivo 900, red accent on 'DITERTAWAKAN'; checkpoint words appear as small centered labels that the line passes over.",
+          "motionOpportunity": "single continuous draw of the red line with each checkpoint label fading in as the stroke crosses it; exit fade on the whole track.",
+          "whyItWorks": "It is the simplest possible enactment of structural unfairness and needs zero explanation; the unbroken stroke is the argument.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Subheadline",
+            "Sequence",
+            "Line",
+            "Label"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "THE WIRING IS CROSSED",
+          "metaphor": "Left column: the four things you can do. Right column: the four verdicts. Connector hairlines cross each other into a tangle, no straight line between cause and outcome.",
+          "semanticMechanism": "Each behavior connects to a verdict that contradicts it, and the connectors physically cross one another, so the map has no straight path. A crossed wiring diagram performs the mapping-is-arbitrary claim without narration.",
+          "whyViewerUnderstandsIt": "The lines all cross, so no action leads to a fair verdict. At a glance a crossed diagram reads as a broken or rigged system.",
+          "composition": "split",
+          "objects": [
+            "Comparison",
+            "Line",
+            "Label",
+            "Label"
+          ],
+          "typographyStrategy": "Headline top, Archivo 900 with red on 'NGGAK PERNAH CUKUP'; column heads in Inter 700 label tier, left muted, right red.",
+          "motionOpportunity": "stagger draw of each connector as its behavior-verdict pair lights up; emphasis highlight on the central crossing knot, then fade.",
+          "whyItWorks": "It uses diagram vocabulary to make the contradiction legible as geometry, giving the beat a distinct intellectual shape after the visceral hits.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Subheadline",
+            "Comparison",
+            "Line"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b5",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "STRINGS GO SLACK",
+          "metaphor": "A marionette crossbar hangs empty; the strings that drove every performance fall slack and coil on the floor. The figure remains upright under its own weight for the first time.",
+          "semanticMechanism": "Agency is shown by subtraction: the pulling source is gone, and the figure now stands self-supported. The outside hand stops producing the effort, so 'what for?' answers itself.",
+          "whyViewerUnderstandsIt": "A puppet held by strings reads instantly as living for someone else. The moment those strings drop slack, the same figure is seen standing without them — freedom demonstrated, not told.",
+          "composition": "objectDominant",
+          "objects": [
+            "WordReveal",
+            "Line",
+            "Circle",
+            "Stack"
+          ],
+          "typographyStrategy": "Muted 'Jadi…' in caption tier, then 'BUAT APA?' in Archivo 900 with 'APA' in gold, hanging in the empty space the slack strings leave.",
+          "motionOpportunity": "Strings draw then go slack via reveal, the figure settles with one subtleScale, headline lands word-by-word.",
+          "whyItWorks": "It answers the beat's own metaphor hint literally and turns the pivot into a physical state: the thing you pulled against simply is not pulling anymore.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "WordReveal",
+            "Line",
+            "Circle",
+            "Stack"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "THE LEDGER IS STAMPED VOID",
+          "metaphor": "A dark ledger lists every adjustment made for approval, one entry per line. The final total is stamped VOID; the costs remain, the value is cancelled.",
+          "semanticMechanism": "Each line is a cost already paid, proving the exhaustion. The VOID stamp cancels only the reward column — the deal was lopsided all along.",
+          "whyViewerUnderstandsIt": "A receipt you keep paying for whose final line says nothing gained is a universally read document. The viewer sees the imbalance before reading the headline.",
+          "composition": "leftTextRightObject",
+          "objects": [
+            "Stack",
+            "Badge",
+            "WordReveal",
+            "Line"
+          ],
+          "typographyStrategy": "'BUAT APA?' as the gold verdict; adjustment entries sit in muted caption tier like the document's own print.",
+          "motionOpportunity": "Entries stagger in one by one, the Badge stamp lands with a scale impact, list dims, headline fades up last.",
+          "whyItWorks": "It reframes the pivot as an accounting verdict, matching the script's accumulated list of adjustments, and gives the question official finality.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Stack",
+            "Badge",
+            "WordReveal",
+            "Line"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "THE MASK FALLS, THE OUTLINE STAYS",
+          "metaphor": "A pale mask panel detaches from a plain outline and drops out of frame. The outline behind is unchanged — standing, unadorned, needing nothing from the falling layer.",
+          "semanticMechanism": "Removal proves nothing was lost: the base figure is intact after the mask leaves. Being liked was a detachable layer, so ending it costs nothing.",
+          "whyViewerUnderstandsIt": "A mask dropping to reveal an unchanged form beneath says 'you were fine before the performance' without a word. The strategy is shown as optional, not essential.",
+          "composition": "centered",
+          "objects": [
+            "GenericCard",
+            "Circle",
+            "WordReveal",
+            "GradientGlow"
+          ],
+          "typographyStrategy": "'BUAT APA?' centered under the drop zone with 'APA' in gold; one muted caption carries 'Jadi…' as lead-in.",
+          "motionOpportunity": "Mask slides down and dissolves, the outline settles with subtleScale, headline arrives with WordReveal stagger.",
+          "whyItWorks": "It is the most direct reading of the mask hint and frames the turn as relief rather than loss.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "GenericCard",
+            "Circle",
+            "WordReveal",
+            "GradientGlow"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "THE APPROVAL COUNTER HITS ZERO",
+          "metaphor": "A tall counter climbs through likes and nods, then powers down to a hard zero and goes dark. The figure beside it does not react — it stops watching it.",
+          "semanticMechanism": "The number performs the emptiness: the metric you played for visibly returns to zero and is ignored. The strategy's payoff is demonstrated as void, not argued.",
+          "whyViewerUnderstandsIt": "Everyone knows refreshing for a number. Seeing it reset to zero, then be turned away from, makes 'what's the point?' a felt event in under two seconds.",
+          "composition": "typographyDominant",
+          "objects": [
+            "CounterText",
+            "Circle",
+            "GradientGlow",
+            "WordReveal"
+          ],
+          "typographyStrategy": "Counter in the counter tier, Archivo 900, gold; 'BUAT APA?' stacked beneath in off-white so number and question share one column.",
+          "motionOpportunity": "Counter runs counterChange upward, drops to zero and dims; figure turns away with positionShift; headline fades in last.",
+          "whyItWorks": "It converts the beat's exhaustion into a single visible reset, and the indifference shown is the agency itself.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "CounterText",
+            "Circle",
+            "GradientGlow",
+            "WordReveal"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "THE OPINION RINGS GO QUIET",
+          "metaphor": "Concentric rings of outside voices pulse and crowd a small center marker. One by one the rings stop, dim, and go still. The center marker never moved.",
+          "semanticMechanism": "The relationship shown is influence versus the self: the outer noise loses all force while the center holds its position unchanged. Control is demonstrated as withdrawal of attention, not victory over others.",
+          "whyViewerUnderstandsIt": "A small dot surrounded by loud rings is instantly readable as a person among opinions. Rings dying one by one while the dot stays still shows that the power came from listening.",
+          "composition": "centered",
+          "objects": [
+            "Circle",
+            "Target",
+            "Indicator",
+            "WordReveal"
+          ],
+          "typographyStrategy": "'BUAT APA?' centered inside the quieted rings once the outer noise dims, 'APA' in gold, tight tracking.",
+          "motionOpportunity": "Rings pulse then dim out in stagger; the center holds with zero motion; headline enters after the silence lands.",
+          "whyItWorks": "It visualizes the exact pivot that follows this beat — that you cannot control their thoughts, only their weight — without narrating it.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Circle",
+            "Target",
+            "Indicator",
+            "WordReveal"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b6",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "DIAL TURNS DOWN THEIR NOISE",
+          "metaphor": "A physical volume knob: incoming opinion-noise strokes stay constant on one side, but the pointer rotates down and the flow reaching 'your life' shrinks to a thread.",
+          "semanticMechanism": "Input stays unchanged while output visibly attenuates — the dial physically separates opinion (uncontrolled) from influence (controlled), performing the beat's exact split.",
+          "whyViewerUnderstandsIt": "Everything banging on the left keeps banging; only what passes the knob gets thinner as the pointer turns down. Control shown as attenuation, not silence.",
+          "composition": "leftTextRightObject",
+          "objects": [
+            "Circle",
+            "Line",
+            "Line",
+            "Label"
+          ],
+          "typographyStrategy": "Left headline LU BISA NGONTROL with accent on 'seberapa besar' inside a WordReveal subline; micro-label under the dial.",
+          "motionOpportunity": "positionShift on the pointer, draw on the noise strokes, fade on the passing flow — one system, staged left to right.",
+          "whyItWorks": "Turns an abstract internal boundary into a tactile mechanical action anyone has performed, so agency is felt not told.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "WordReveal",
+            "Circle",
+            "Line",
+            "Label"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "HAIRLINE BOUNDARY, OPINIONS CANNOT CROSS",
+          "metaphor": "A single thin ring encloses a quiet inner space holding one gold point; opinion ticks press inward from outside and dissolve at the line, never entering.",
+          "semanticMechanism": "The ring is a permeable-to-noise but impenetrable-to-influence boundary: marks accumulate outside while the inside stays untouched, spatializing locus of control.",
+          "whyViewerUnderstandsIt": "Crowd marks pile up on the rim and vanish there; what matters stays alone and undisturbed in the middle. Distance, not battle.",
+          "composition": "centered",
+          "objects": [
+            "Circle",
+            "Indicator",
+            "Grid"
+          ],
+          "typographyStrategy": "TypographicDominant headline centered above the ring, max 2 lines, accent word 'NGARUH' marked red-dim as the thing kept out.",
+          "motionOpportunity": "scale draw for the ring, stagger for the pressing ticks, highlight for the inner point — max two simultaneous systems.",
+          "whyItWorks": "Zero combat imagery: relief is conveyed by stillness inside versus noise outside, matching the beat's calm empowerment.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "WordReveal",
+            "Circle",
+            "Indicator"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "DEFLECTOR SENDS JUDGMENT PAST YOU",
+          "metaphor": "Arrows of judgment fly in from the crowd side, strike one angled hairline, and slide past the figure on a curved path — nothing bounces back, nothing lands.",
+          "semanticMechanism": "Deflection instead of blocking: the arrows keep their own trajectory (others keep thinking) while missing the target entirely (zero influence), enacting both halves of the sentence.",
+          "whyViewerUnderstandsIt": "The insults don't stop — they just never connect. One tilt of a line is the whole difference between hurt and freedom.",
+          "composition": "rightTextLeftObject",
+          "objects": [
+            "Arrow",
+            "Line",
+            "Circle",
+            "Label"
+          ],
+          "typographyStrategy": "Right-aligned headline left clear for the action zone; accentWords ['seberapa besar'] in the subline, caption labels the deflected path.",
+          "motionOpportunity": "slide for incoming arrows, draw for the deflecting line, fade as arrows exit frame — physical trajectory carries the meaning.",
+          "whyItWorks": "Uses motion grammar already native to video: viewers read paths and collisions instantly without narration.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "WordReveal",
+            "Arrow",
+            "Line",
+            "Circle"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "TWO COLUMNS: THEIRS VS YOURS",
+          "metaphor": "A Comparison diagram: left column lists what they do (ngomongin, ngejudge, nggak suka) in dim muted type; right column (accent gold) holds your actual life — kerja, istirahat, mimpi.",
+          "semanticMechanism": "Two domains side by side with a hairline divide makes the ownership split literal: the left column can grow, shrink or churn without ever altering the right column's content.",
+          "whyViewerUnderstandsIt": "The noisy list stays on their side of the line; my side keeps its own items regardless. Nothing crosses the gutter.",
+          "composition": "split",
+          "objects": [
+            "Comparison",
+            "Line"
+          ],
+          "typographyStrategy": "Headline above the split; left items muted, right items primary with one gold accent word; caption 'NGARUH' sits on the divider.",
+          "motionOpportunity": "stagger for left items entering and churning, highlight for right items settling, fade out left churn at emphasisAt.",
+          "whyItWorks": "Gives the audience a scannable, screenshot-able structure — the teaching becomes a diagram they can recall later.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Comparison",
+            "WordReveal",
+            "Caption"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "INPUT MAXES, INFLUENCE METER DROPS",
+          "metaphor": "A constant storm of opinion strokes feeds a meter labelled 'PENGARUH KE HIDUP LU'; the bar counts down from full to a sliver while the storm never changes.",
+          "semanticMechanism": "CounterChange on the meter against a frozen input performs cause-independence: one variable moves alone, proving the controllable lever is the meter, not the storm.",
+          "whyViewerUnderstandsIt": "The noise never stops and never matters — only my bar moves, and I'm the one moving it. Agency is a number going down.",
+          "composition": "topTextBottomObject",
+          "objects": [
+            "ProgressBar",
+            "Line",
+            "GradientGlow"
+          ],
+          "typographyStrategy": "Headline top, 2 lines max; ProgressBar label carries 'seberapa besar' semantics; single teal glow subordinate behind the meter.",
+          "motionOpportunity": "counterChange on value 0.9 → 0.12, subtleScale on the meter, fade on storm opacity at emphasis — clean single system.",
+          "whyItWorks": "Numeric drop reads as measurable relief and hands the viewer a concrete dial for an abstract teaching.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "WordReveal",
+            "ProgressBar",
+            "GradientGlow"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b7",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "TWO LAMPS, ONE STILL BURNING",
+          "metaphor": "Two identical ring-lights side by side: theirs dims as they arrive home, yours keeps a steady glow in the dark — separate lives, separate light to maintain.",
+          "semanticMechanism": "The left ring's glow fades fully out while the right ring's glow holds and gently intensifies; the frame performs the separation of stakes instead of naming it.",
+          "whyViewerUnderstandsIt": "One light going out over there while another stays lit here reads instantly as: they have their own home to return to, you are the one left tending your own.",
+          "composition": "dualObject",
+          "objects": [
+            "Circle",
+            "Circle",
+            "GradientGlow",
+            "Label"
+          ],
+          "typographyStrategy": "Headline low-left under the two rings, uppercase Archivo 900, gold accent only on 'HIDUP LU SENDIRI'.",
+          "motionOpportunity": "emphasis glow on right ring, fade exit on left glow, subtleScale on the accent phrase — two motion systems max.",
+          "whyItWorks": "Calm, symmetrical, then asymmetric light: the emotional resolution is enacted by illumination rather than illustration.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Circle",
+            "Circle",
+            "GradientGlow",
+            "Label"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "PATH SPLITS, ONE WAY KEEPS GOING",
+          "metaphor": "One road forks: the branch carrying the crowd's judgment shortens and dims into darkness, the other keeps drawing forward to a small lit marker.",
+          "semanticMechanism": "A line draws in, Branch splits it, left branch retracts/fades while right branch continues extending to an endpoint dot — divergence and continuation are physically performed.",
+          "whyViewerUnderstandsIt": "Directional motion does the talking: everything pulls away down one path, one line keeps advancing toward something lit — your life keeps going.",
+          "composition": "topTextBottomObject",
+          "objects": [
+            "Branch",
+            "Arrow",
+            "Line",
+            "Indicator"
+          ],
+          "typographyStrategy": "Two-line headline top-left; 'HIDUP LU SENDIRI' as gold HighlightWord riding the continuing branch's label.",
+          "motionOpportunity": "draw on trunk, stagger on branch states, fade on the retreating branch, controlledReveal on the accent phrase.",
+          "whyItWorks": "Turns a two-clause script line into geometry: separation happens once, then motion shows who still moves.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Branch",
+            "Arrow",
+            "WordReveal"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "THE SENTENCE TEARS IN TWO",
+          "metaphor": "The spoken line itself divides on screen: their half slides off into the dark, your half stays centered and takes the accent light.",
+          "semanticMechanism": "Word-level migration — muted words physically drift left and fade out while 'HIDUP LU SENDIRI' holds position and shifts to gold; the typography enacts the split.",
+          "whyViewerUnderstandsIt": "Watching part of a sentence leave the frame while the remainder brightens makes the meaning obvious even with sound off.",
+          "composition": "typographyDominant",
+          "objects": [
+            "WordReveal",
+            "HighlightWord",
+            "Line"
+          ],
+          "typographyStrategy": "Headline 96px uppercase left; stagger word reveal, then a hairline draws under the surviving phrase as it accents.",
+          "motionOpportunity": "stagger entrance, slide+fade exit on departing words, highlight emphasis on the retained phrase.",
+          "whyItWorks": "TypographyPriority is high for this beat; here the words are the actors, so text and metaphor are the same object.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "WordReveal",
+            "HighlightWord",
+            "Line"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "THE CROWD DRAINS, ONE DOT REMAINS",
+          "metaphor": "A dense grid of dots empties outward toward the frame edges — everyone going home — leaving a single steady point in wide dark negative space.",
+          "semanticMechanism": "Staggered cell-by-cell fade toward the margins performs the exodus; the one remaining centered dot with a soft glow holds through the whole drain.",
+          "whyViewerUnderstandsIt": "A field emptying out except for one unmoving point is instantly legible as: all of them left, this one is still here.",
+          "composition": "asymmetric",
+          "objects": [
+            "Grid",
+            "Circle",
+            "GradientGlow",
+            "Subheadline"
+          ],
+          "typographyStrategy": "Subline top-left small, headline anchored bottom-left with gold on the emphasis phrase, kept clear of the draining grid.",
+          "motionOpportunity": "stagger exit fade on grid cells, glow emphasis on the survivor dot, fade entrance for type.",
+          "whyItWorks": "Uses strong negative space — the emptiness after dispersal is literally the 'open life' the beat promises.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Grid",
+            "Circle",
+            "GradientGlow"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "OPINIONS UNLINK, CENTER STAYS",
+          "metaphor": "Judgment words orbit you as connected nodes; the connecting lines snap away one by one and the crowd falls off, while the center node remains unmoved.",
+          "semanticMechanism": "Relationship links dissolve sequentially (fade exit) until only the centerLabel node with a glow is left — autonomy is shown as a network losing its grip, not as a slogan.",
+          "whyViewerUnderstandsIt": "As each tether disappears and the outer labels drop away, the viewer sees judgment losing reach while the center persists unchanged.",
+          "composition": "centered",
+          "objects": [
+            "Relationship",
+            "GradientGlow",
+            "WordReveal"
+          ],
+          "typographyStrategy": "Centered word reveal above the diagram; max two gold words on 'HIDUP LU SENDIRI' in the closing line.",
+          "motionOpportunity": "stagger dissolve on links/nodes, glow emphasis on center, subtleScale on the final phrase.",
+          "whyItWorks": "Frames the beat as control of influence: the noise physically detaches, leaving calm resolve in the middle of the frame.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Relationship",
+            "GradientGlow",
+            "WordReveal"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b8",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "IMMUTABLE SEAL — NOT MADE FOR EVERYONE",
+          "metaphor": "A circular stamp presses down once and locks, its ring unbroken, bearing the closing line — an official mark on who you are that no outside hand can re-stamp.",
+          "semanticMechanism": "The seal performs finality: a stamp comes down, hardens and is done — identity declared, not up for vote. The ring's unbroken geometry reads as whole and closed to external editing.",
+          "whyViewerUnderstandsIt": "A stamp is universally the object that says 'decided, official'. Seeing it land and stay while the phrase appears tells the viewer this is a verdict about them they can finally accept, not a request for approval.",
+          "composition": "centered",
+          "objects": [
+            "Circle",
+            "Badge",
+            "WordReveal",
+            "GradientGlow"
+          ],
+          "typographyStrategy": "WordReveal of the emphasis phrase, weight 900 uppercase, gold on 'DICIPTAIN BUAT DISUKAI', seal badge carries the short fragment 'BUAT SEMUA ORANG' struck through.",
+          "motionOpportunity": "Circle scales down with entrance 'scale' like a stamp pressing, then badge highlight — one subtle scale delta ≤0.08, glow subordinate.",
+          "whyItWorks": "Turns the abstract idea 'designed this way' into a physical, irreversible object action; the closing line becomes the stamp's inscription rather than mere caption.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Circle",
+            "Badge",
+            "WordReveal"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "JUDGMENT ARROWS DEFLECT OFF A WHOLE CIRCLE",
+          "metaphor": "Four dim arrows fly in from the frame edges toward a single bright ring; each strikes the edge and slides off along it, leaving the circle perfectly intact.",
+          "semanticMechanism": "Enacts rejection as contact without penetration: external opinion physically arrives, meets a boundary, and leaves a traceless path — the circle's wholeness is proven by what fails to change it.",
+          "whyViewerUnderstandsIt": "Even muted, the viewer reads incoming arrows as attacks or judgments and sees them slide away harmlessly — 'their words don't get in' is understood without reading the text.",
+          "composition": "split",
+          "objects": [
+            "Circle",
+            "Arrow",
+            "Arrow",
+            "Arrow",
+            "Label"
+          ],
+          "typographyStrategy": "Headline left, 2 lines max, uppercase; accent gold on 'NGGAK APA-APA' only; small centered label under the ring for the phrase fragment.",
+          "motionOpportunity": "Arrows entrance 'slide' staggered, circle 'draw' then 'highlight' at emphasisAt; exits fade — max two motion systems.",
+          "whyItWorks": "The frame's meaning survives with sound off: boundary plus deflection is the whole thesis of the closing beat.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Circle",
+            "Arrow",
+            "Label"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "ONE WHOLE DOT OUTSIDE THE CROWD RING",
+          "metaphor": "A dim lattice of many equal dots forms a closed crowd ring; a single gold dot sits alone in the negative space outside it, larger and fully lit, needing nothing from the cluster.",
+          "semanticMechanism": "Performs belonging-vs-wholeness: the ring can only include by absorption, while the separated dot is complete as a single filled form — its isolation reads as fullness, not loss.",
+          "whyViewerUnderstandsIt": "One bright complete dot apart from a dim mass reads instantly as 'the one who doesn't join — and is fine', a visual the script's last line names.",
+          "composition": "bottomTextTopObject",
+          "objects": [
+            "Grid",
+            "Circle",
+            "Subheadline"
+          ],
+          "typographyStrategy": "Subheadline-weight closing line bottom-left, uppercase display; gold accent words 'NGGAK DICIPTAIN' — one dominant accent only.",
+          "motionOpportunity": "Grid fades in dim, circle entrance 'scale' from 0.6 then 'subtleScale' pulse once at emphasisAt.",
+          "whyItWorks": "Negative space does the talking: the emptiness around the single dot is the freedom the beat promises.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Grid",
+            "Circle",
+            "Subheadline"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "ONE KEY, MANY LOCKS",
+          "metaphor": "A stack of muted lock cards sits unreachable; a single gold key slides toward the one lock that matches and turns, while the rest dim further.",
+          "semanticMechanism": "Enacts designed-fit: compatibility is selective by nature — most combinations fail by geometry alone, so not being chosen by most is a specification, not a flaw.",
+          "whyViewerUnderstandsIt": "Everyone knows only one key opens one lock; the mass of rejected locks beside the single turning one says 'not for everyone' as a fact of design.",
+          "composition": "leftTextRightObject",
+          "objects": [
+            "Stack",
+            "GenericCard",
+            "Arrow",
+            "Label"
+          ],
+          "typographyStrategy": "Left headline 3 lines max, gold on 'DICIPTAIN'; right side label under lock.",
+          "motionOpportunity": "Arrow 'slide' then GenericCard state highlight, stack cards stagger entrance; one glow max.",
+          "whyItWorks": "Shifts the beat from consolation to specification — rejection reframed as correct matching, which is more freeing than reassurance.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Stack",
+            "GenericCard",
+            "Arrow"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "THE ARC CLOSES ITSELF, IGNORING THE TICKS",
+          "metaphor": "A hairline arc draws itself all the way around and seals into a closed circle; outside it, small dim tick marks (other people's verdicts) fade to nothing as the closure completes.",
+          "semanticMechanism": "The arc's closure is caused only by itself — nothing from outside enters the drawing; as it seals, external ticks fade, showing approval becomes irrelevant once wholeness is self-issued.",
+          "whyViewerUnderstandsIt": "A circle finishing its own draw feels satisfying and final; watching outside marks disappear as it closes reads as 'their opinions stopped mattering'.",
+          "composition": "typographyDominant",
+          "objects": [
+            "Circle",
+            "Line",
+            "Caption",
+            "GradientGlow"
+          ],
+          "typographyStrategy": "Headline dominant, 2-3 lines uppercase 96px, WordReveal stagger; gold on 'NGGAK DICIPTAIN', red never used here.",
+          "motionOpportunity": "Circle entrance 'draw' (line vocabulary), ticks exit 'fade' after seal, headline stagger word-by-word — two systems max.",
+          "whyItWorks": "Typography leads for this high-priority text beat while the drawn closure supplies an enacted metaphor rather than decoration.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "WordReveal",
+            "Circle",
+            "Line"
+          ]
+        }
+      ]
+    }
+  ]
+}

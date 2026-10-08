@@ -1,0 +1,86 @@
+{
+  "sceneId": "scene_01",
+  "duration": 3.61,
+  "purpose": "Hook: pertanyaan pembuka soal kelelahan — pendapat orang lain yang menekan diri sementara energi nyaris habis, dalam frame yang sama.",
+  "visualConcept": "BIG QUESTION, THEN OTHERS' OPINIONS CROWD THE SELF WHILE ENERGY RUNS DRY",
+  "composition": "centered",
+  "elements": [
+    {
+      "primitive": "WordReveal",
+      "text": "LU TAU NGGAK… HAL PALING BIKIN CAPEK",
+      "accentWords": [
+        "BIKIN CAPEK"
+      ],
+      "align": "center",
+      "position": "top",
+      "accent": "gold",
+      "delay": 0,
+      "entrance": "stagger",
+      "emphasis": "highlight",
+      "emphasisAt": 1.6,
+      "exit": "fade",
+      "role": "semantic",
+      "purpose": "Opening question of the beat with the emphasized phrase 'paling bikin capek' lit in gold."
+    },
+    {
+      "primitive": "Person",
+      "position": "center",
+      "offsetX": -14,
+      "offsetY": 8,
+      "scale": 1,
+      "opacity": 1,
+      "accent": "none",
+      "delay": 0.4,
+      "entrance": "fade",
+      "emphasis": "subtleScale",
+      "emphasisAt": 1.6,
+      "exit": "fade",
+      "role": "semantic",
+      "purpose": "Represents diri lu — the self that receives the pressure of other people's opinions."
+    },
+    {
+      "primitive": "SpeechBubble",
+      "position": "center",
+      "offsetX": 18,
+      "offsetY": 6,
+      "scale": 0.9,
+      "opacity": 1,
+      "accent": "none",
+      "delay": 0.8,
+      "entrance": "slide",
+      "emphasis": "positionShift",
+      "emphasisAt": 1.6,
+      "exit": "fade",
+      "role": "semantic",
+      "purpose": "Represents pendapat orang lain sliding in to crowd the self."
+    },
+    {
+      "primitive": "ProgressBar",
+      "value": 0.12,
+      "showValue": false,
+      "label": "PENDAPAT ORANG LAIN NGEHABISIN DIRI LU",
+      "position": "center",
+      "offsetY": 22,
+      "scale": 1,
+      "opacity": 1,
+      "accent": "gold",
+      "delay": 1.2,
+      "entrance": "scale",
+      "emphasis": "controlledReveal",
+      "emphasisAt": 1.6,
+      "exit": "fade",
+      "role": "semantic",
+      "purpose": "Energy bar near empty: others' opinions are what drains diri lu — the beat's answer hinted visually."
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "controlledReveal",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.6,
+    "exitAt": 3.1
+  }
+}

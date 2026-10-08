@@ -1,0 +1,4 @@
+qa-summary: not yet written
+scenes written: 6
+storyboard files: 6
+scene_01: comp=leftTextRightObject mech=bearing drift: each YES tilts the answer line off its heading els=8 sub=4 phrases roles=8/8

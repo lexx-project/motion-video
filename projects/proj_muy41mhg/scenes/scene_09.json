@@ -1,0 +1,76 @@
+{
+  "sceneId": "scene_09",
+  "duration": 9,
+  "purpose": "Resolusi akhir: pusat sasaran tidak berubah, hanya labelnya — dari 'SEMUA ORANG' menjadi 'LU', melepas kelelahan mencari persetujuan kolektif.",
+  "visualConcept": "BULLSEYE RELABELS FROM SEMUA ORANG TO LU",
+  "composition": "objectDominant",
+  "headline": {
+    "text": "YANG PUSATNYA BUKAN MEREKA",
+    "accentWords": [
+      "BUKAN",
+      "MEREKA"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "Target",
+      "position": "right",
+      "offsetX": -16,
+      "rings": 5,
+      "hitIndex": 0,
+      "label": "",
+      "accent": "teal",
+      "scale": 1.05,
+      "delay": 0,
+      "entrance": "reveal",
+      "emphasis": "controlledReveal",
+      "emphasisAt": 0.8,
+      "role": "semantic",
+      "purpose": "Fixed bullseye whose center never moves — only the label reading it changes."
+    },
+    {
+      "primitive": "Label",
+      "text": "SEMUA ORANG",
+      "position": "right",
+      "offsetX": -16,
+      "offsetY": -28,
+      "align": "center",
+      "accent": "none",
+      "size": "md",
+      "delay": 0.5,
+      "entrance": "fade",
+      "emphasis": "highlight",
+      "emphasisAt": 3.4,
+      "exit": "fade",
+      "role": "semantic",
+      "purpose": "Old collective label attached above the ring, released before the new one lands."
+    },
+    {
+      "primitive": "Label",
+      "text": "LU",
+      "position": "right",
+      "offsetX": -16,
+      "offsetY": 0,
+      "align": "center",
+      "accent": "gold",
+      "size": "lg",
+      "delay": 4,
+      "entrance": "scale",
+      "emphasis": "highlight",
+      "emphasisAt": 4.05,
+      "role": "semantic",
+      "purpose": "New sole label landing in the bullseye center at the emphasis beat — the relabel itself."
+    }
+  ],
+  "motion": {
+    "entrance": "reveal",
+    "emphasis": "highlight",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 4.05,
+    "exitAt": 8.2
+  }
+}

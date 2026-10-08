@@ -1,0 +1,74 @@
+{
+  "sceneId": "scene_02",
+  "duration": 2.74,
+  "purpose": "Kill the talent myth: two identical outlines share one measurement height, only one carries a gold tag — winning is a label, not superiority.",
+  "visualConcept": "TWIN SILHOUETTES, ONE GOLD TAG",
+  "composition": "dualObject",
+  "headline": {
+    "text": "SMARTER ISN'T THE DIFFERENCE",
+    "accentWords": [
+      "SMARTER"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "Circle",
+      "position": "left",
+      "offsetX": 6,
+      "offsetY": 8,
+      "scale": 1,
+      "accent": "none",
+      "entrance": "scale",
+      "delay": 0,
+      "density": 0.6
+    },
+    {
+      "primitive": "Circle",
+      "position": "right",
+      "offsetX": -6,
+      "offsetY": 8,
+      "scale": 1,
+      "accent": "none",
+      "entrance": "scale",
+      "delay": 0.15,
+      "density": 0.6
+    },
+    {
+      "primitive": "Line",
+      "position": "top",
+      "offsetY": 20,
+      "lengthPct": 64,
+      "thicknessPx": 2,
+      "accent": "none",
+      "entrance": "draw",
+      "delay": 0.6,
+      "density": 0.5
+    },
+    {
+      "primitive": "Badge",
+      "text": "WINNER",
+      "variant": "pill",
+      "position": "right",
+      "offsetX": -6,
+      "offsetY": -2,
+      "scale": 1,
+      "accent": "gold",
+      "entrance": "scale",
+      "emphasis": "subtleScale",
+      "emphasisAt": 1.6,
+      "delay": 1.4,
+      "density": 0.4
+    }
+  ],
+  "motion": {
+    "entrance": "scale",
+    "emphasis": "subtleScale",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.6,
+    "exitAt": 2.34
+  }
+}

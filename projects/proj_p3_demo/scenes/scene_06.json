@@ -1,0 +1,356 @@
+{
+  "sceneId": "scene_06",
+  "duration": 3.79,
+  "purpose": "Close the arc from drift to resolve: a ring of rotating asks sweeps a full turn while one gold needle holds a single fixed bearing.",
+  "visualConcept": "Rotating ask-ring sweeps behind a locked gold bearing needle",
+  "composition": "rightTextLeftObject",
+  "headline": {
+    "text": "HOLD ONE LINE",
+    "accentWords": [
+      "HOLD"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "Subheadline",
+      "position": "bottomRight",
+      "offsetY": -10,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "names the rule only after the full sweep completes",
+      "delay": 2.9,
+      "entrance": "fade",
+      "text": "CHOOSE ONE DIRECTION"
+    },
+    {
+      "primitive": "Circle",
+      "position": "left",
+      "offsetX": 28,
+      "offsetY": 0,
+      "scale": 0.85,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "rotating ring of everyone's asks and applause",
+      "delay": 0.45,
+      "entrance": "draw"
+    },
+    {
+      "primitive": "Arrow",
+      "position": "left",
+      "offsetX": 28,
+      "offsetY": -19,
+      "rotation": 90,
+      "scale": 0.65,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "rim-mounted ask sweeping past the needle without deflecting it",
+      "delay": 0.7,
+      "entrance": "fade"
+    },
+    {
+      "primitive": "Arrow",
+      "position": "left",
+      "offsetX": 13,
+      "offsetY": 13,
+      "rotation": 160,
+      "scale": 0.65,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "second ask from another angle: pressure arrives from all sides",
+      "delay": 0.9,
+      "entrance": "fade"
+    },
+    {
+      "primitive": "Arrow",
+      "position": "left",
+      "offsetX": 41,
+      "offsetY": -15,
+      "rotation": 45,
+      "scale": 0.6,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "third ask proving the crowd's demands point every way at once",
+      "delay": 1,
+      "entrance": "fade"
+    },
+    {
+      "primitive": "Line",
+      "position": "left",
+      "offsetX": 28,
+      "offsetY": 0,
+      "rotation": 42,
+      "scale": 0.75,
+      "opacity": 0.5,
+      "accent": "none",
+      "role": "supporting",
+      "purpose": "applause pulses riding the rim: approval loud but directionless",
+      "delay": 1.05,
+      "entrance": "fade",
+      "exit": "fade"
+    },
+    {
+      "primitive": "Line",
+      "position": "left",
+      "offsetX": 28,
+      "offsetY": 0,
+      "rotation": -38,
+      "scale": 0.85,
+      "accent": "gold",
+      "role": "semantic",
+      "purpose": "the fixed bearing needle that never rotates with the room",
+      "delay": 1.8,
+      "entrance": "scale",
+      "emphasisAt": 1.85
+    },
+    {
+      "primitive": "Indicator",
+      "position": "left",
+      "offsetX": 13,
+      "offsetY": 12,
+      "scale": 0.6,
+      "accent": "gold",
+      "role": "supporting",
+      "purpose": "heading tick marking the one chosen direction",
+      "delay": 1.95,
+      "entrance": "fade"
+    },
+    {
+      "primitive": "Label",
+      "position": "bottomLeft",
+      "offsetX": 10,
+      "offsetY": -8,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "names the proof point after the sweep finishes",
+      "delay": 2.95,
+      "entrance": "fade",
+      "text": "ONE BEARING"
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "subtleScale",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.85
+  },
+  "storyboard": {
+    "beatId": "b6",
+    "spokenMeaning": "Commit to one direction and hold it despite pressure from every side.",
+    "viewerTakeaway": "The audience keeps rotating its asks and its applause; your bearing never rotates with it.",
+    "visualMechanism": "rotating-ask-dial-vs-fixed-needle",
+    "visualNarrative": [
+      {
+        "order": 1,
+        "action": "Headline 'PICK ONE / AND HOLD IT' staggers in on the right half from a 14px right offset, lines 0.25s apart, 'HOLD' the only gold word.",
+        "meaning": "The imperative is stated once, before the crowd noise begins.",
+        "visualEvidence": "Left-aligned 96px uppercase block confined to the right half, one accent word, clear of the left object field."
+      },
+      {
+        "order": 2,
+        "action": "In the left field a faint dial ring draws itself around a center point, its rim studded with small dim tick-arrows all pointing different ways.",
+        "meaning": "Everyone's asks: many directions offered, none of them yours.",
+        "visualEvidence": "One muted circular ring at x=30%, several small dim arrowheads on its rim, no gold anywhere yet."
+      },
+      {
+        "order": 3,
+        "action": "The ring begins to rotate; as each tick-arrow passes the top, a short label flickers ('MATCH', 'CHANGE', 'PLEASE') and the rim arrows pulse like applause marks.",
+        "meaning": "The audience keeps re-asking and applauding for a reshaped answer.",
+        "visualEvidence": "Rotating ring with dim arc-pulses on the rim, three muted 34px labels swapping in sequence, all secondary grey."
+      },
+      {
+        "order": 4,
+        "action": "A single gold bearing needle snaps outward from the center on one fixed heading, locking there while the ring keeps turning behind it.",
+        "meaning": "You choose one direction — and it does not turn with the room.",
+        "visualEvidence": "One straight gold needle from dial center to a fixed bearing, ring visibly mid-rotation behind it, gold restricted to needle and one heading tick."
+      },
+      {
+        "order": 5,
+        "action": "The ring accelerates a full turn, arrows and applause pulses sweep past the needle; the needle never deflects by a frame, and the label 'ONE BEARING' fades in at its tip.",
+        "meaning": "Confirmation: pressure is cyclical, the stance is not — everyone keeps clapping, you keep your heading.",
+        "visualEvidence": "Needle pixel-identical through the sweep, one 34px muted label at the needle tip, no second accent color."
+      },
+      {
+        "order": 6,
+        "action": "Ring, arrows and applause pulses dissolve; a soft restrained glow settles along the needle, the caption fades in bottom-right, and the frame holds perfectly static.",
+        "meaning": "Resolve: once the noise is gone, only your direction remains in the frame.",
+        "visualEvidence": "Single gold needle on an empty dark field, one complete caption on its own baseline, absolute stillness."
+      }
+    ],
+    "semanticObjects": [
+      {
+        "objectType": "Line",
+        "semanticRole": "The chosen direction — one fixed bearing that never rotates with the room.",
+        "relationship": "runs from the dial center outward on a fixed heading, defines the whole frame's axis",
+        "importance": 5
+      },
+      {
+        "objectType": "Circle",
+        "semanticRole": "The rotating ring of everyone's asks and applause — cyclical, never satisfied.",
+        "relationship": "surrounds the Line's pivot in the left field, turns behind the needle",
+        "importance": 5
+      },
+      {
+        "objectType": "Arrow",
+        "semanticRole": "A single asker's demand to reshape your answer, one of many on the rim.",
+        "relationship": "sits on the Circle's rim, sweeps past the Line and fails to move it",
+        "importance": 4
+      },
+      {
+        "objectType": "Arrow",
+        "semanticRole": "A second ask from a different angle, proving the crowd's pressure is all directions at once.",
+        "relationship": "also rim-mounted, follows the same rotation as the first",
+        "importance": 3
+      },
+      {
+        "objectType": "Label",
+        "semanticRole": "Names the proof point: one bearing held through the whole sweep.",
+        "relationship": "sits at the needle tip in the left field, muted except its proximity to the gold line",
+        "importance": 2
+      },
+      {
+        "objectType": "Headline",
+        "semanticRole": "States the imperative the mechanism then proves.",
+        "relationship": "right-half text block, upper-right third, holds clear of the dial",
+        "importance": 4
+      },
+      {
+        "objectType": "Subheadline",
+        "semanticRole": "Names the rule only after the full sweep completes.",
+        "relationship": "directly under the Headline, no overprint or duplicate ghosting",
+        "importance": 3
+      },
+      {
+        "objectType": "Caption",
+        "semanticRole": "Carries the single complete spoken call to action.",
+        "relationship": "one clean bottom-right baseline, never overlapping other text",
+        "importance": 2
+      },
+      {
+        "objectType": "Line",
+        "semanticRole": "Applause pulses on the rim — the audience's approval, loud but directionless.",
+        "relationship": "short arcs riding the Circle's rim, dissolve before the final frame",
+        "importance": 3
+      }
+    ],
+    "relationships": [
+      {
+        "from": "Line",
+        "to": "Circle",
+        "relationship": "holds one heading while the ring of asks rotates around its pivot — direction is fixed, the room is not"
+      },
+      {
+        "from": "Arrow",
+        "to": "Circle",
+        "relationship": "rim-mounted demand that sweeps past the Line instead of deflecting it"
+      },
+      {
+        "from": "Arrow(second)",
+        "to": "Arrow",
+        "relationship": "same rim, different angle — everyone's ask arrives from all sides in sequence"
+      },
+      {
+        "from": "Line(applause arcs)",
+        "to": "Circle",
+        "relationship": "audience approval rides the rotating rim, loud and directionless"
+      },
+      {
+        "from": "Subheadline",
+        "to": "Headline",
+        "relationship": "names the rule stated by the headline, deferred until after the full sweep"
+      }
+    ],
+    "typographyPlan": {
+      "headline": "PICK ONE AND HOLD IT",
+      "emphasisWords": [
+        "HOLD"
+      ],
+      "supportingText": [
+        "ONE BEARING",
+        "choose one direction and stay with it."
+      ]
+    },
+    "subtitlePlan": {
+      "enabled": true,
+      "text": "choose one direction and stay with it.",
+      "timing": "final third, as the rim noise dissolves",
+      "role": "spoken line, one complete sentence, bottom-right, no overprint or truncation"
+    },
+    "motionBeats": [
+      {
+        "order": 1,
+        "action": "Headline lines stagger in from a 14px right offset with fade, 0.25s apart.",
+        "purpose": "States the imperative fast so the dial event keeps visual priority."
+      },
+      {
+        "order": 2,
+        "action": "Ring draws via a masked circular reveal; rim tick-arrows stagger on one by one.",
+        "purpose": "Builds the field of competing asks before any of them move."
+      },
+      {
+        "order": 3,
+        "action": "Ring rotates with measured ease-in-out; labels and applause arcs highlight in sequence at the top position.",
+        "purpose": "Shows the audience actively re-asking and clapping for a reshaped answer."
+      },
+      {
+        "order": 4,
+        "action": "Needle scales from 0.2 to full length with a crisp ease-out and holds absolutely still through the continuing rotation.",
+        "purpose": "Makes commitment visible as a locked heading amid moving noise."
+      },
+      {
+        "order": 5,
+        "action": "Ring completes an accelerated sweep, then rim arrows and pulses dissolve; 'ONE BEARING' label fades in.",
+        "purpose": "Confirms the stance is direction-independent of the pressure."
+      },
+      {
+        "order": 6,
+        "action": "Restrained glow settles along the needle, caption fades in, everything holds static.",
+        "purpose": "Settles the beat into resolve — emphasis without a new event."
+      }
+    ],
+    "compositionIntent": "Right text-left object: headline, subheadline and caption form one left-aligned block on the right half; the dial ring anchors x=30% in the left field with the gold needle pointing left-down on a fixed heading. Roughly 65% empty dark field; the rotating rim never crosses into the text zone. Gold appears only on the needle, its heading tick and the word HOLD.",
+    "visualEvidence": [
+      "One gold bearing needle held pixel-still while the rim of asks completes a full rotation behind it.",
+      "Rim tick-arrows and applause pulses sweeping past without deflecting the needle by a frame.",
+      "A muted label at the needle tip naming the proof, appearing only after the sweep finishes.",
+      "One complete caption sentence with no truncation, overprint, or text collision.",
+      "A single accent color (gold) against muted secondary ring, arrows and text."
+    ],
+    "forbiddenInterpretations": [
+      "A detached glow dot, floating axis fragment or stray marker with no structural role.",
+      "Duplicate or ghosted text bleeding behind the subheadline or label.",
+      "Pressure arrows crossing over the text block or pinning the needle off-heading in the final frame.",
+      "A second accent color anywhere, truncated caption fragments, or red warning treatment.",
+      "Generic force diagrams with grids, numeric readouts, or gratuitous glow bloom."
+    ],
+    "noveltyIntent": "Unlike the earlier plumb-rebound, the payoff here is non-motion: a dial of everyone's asks and applause rotates a full circle while one gold needle simply refuses to turn — commitment proven as held heading amid cyclical noise, not as swing-and-return.",
+    "elementBudget": {
+      "min": 9,
+      "max": 9
+    }
+  },
+  "subtitle": {
+    "enabled": true,
+    "role": "spoken line, one complete sentence, bottom-right, no overprint or truncation",
+    "phrases": [
+      {
+        "text": "anyway. Your turn to",
+        "start": 0,
+        "end": 0.83
+      },
+      {
+        "text": "choose one direction and",
+        "start": 0.83,
+        "end": 2.52
+      },
+      {
+        "text": "stay with it.",
+        "start": 2.52,
+        "end": 3.79
+      }
+    ]
+  }
+}

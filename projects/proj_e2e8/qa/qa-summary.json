@@ -1,0 +1,292 @@
+{
+  "technical": {
+    "file": "C:\\Users\\Administrator\\Documents\\project\\motion-video\\projects\\proj_e2e8\\renders\\preview.mp4",
+    "durationSec": 22.187,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "hasAudio": true,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "errors": []
+  },
+  "visual": {
+    "projectStatus": "fail",
+    "overall": {
+      "scriptRelevance": 4,
+      "visualClarity": 7,
+      "designConsistency": 7,
+      "typography": 7,
+      "composition": 7,
+      "motionQuality": 6,
+      "novelty": 6,
+      "aiSlopSeverity": 3,
+      "technicalCorrectness": "fail"
+    },
+    "scenes": [
+      {
+        "sceneId": "scene_01",
+        "scores": {
+          "scriptRelevance": 9,
+          "visualClarity": 9,
+          "designConsistency": 9,
+          "typography": 9,
+          "composition": 8,
+          "motionQuality": 7,
+          "novelty": 8,
+          "aiSlopSeverity": 1
+        },
+        "technicalCorrectness": "pass",
+        "issues": [
+          "Large dead zone between headline (y~90-140 of 756) and subheadline 'today stays unchecked' (y~300-370), leaving the mid-frame empty and the subheadline/timeline cluster floating low-right.",
+          "Timeline labels (MON/TUE/TODAY) are small (approx 14-16px equivalent at this scale) and TODAY's hollow circle is low-contrast against #0A0B0D."
+        ],
+        "recommendedRepair": [
+          "Raise the Timeline to sit under the subheadline so headline -> sub -> timeline read as one right-aligned column, and lift the TODAY hollow ring to text.muted #6E6B64 minimum for phone legibility."
+        ]
+      },
+      {
+        "sceneId": "scene_02",
+        "scores": {
+          "scriptRelevance": 2,
+          "visualClarity": 8,
+          "designConsistency": 6,
+          "typography": 8,
+          "composition": 7,
+          "motionQuality": 6,
+          "novelty": 7,
+          "aiSlopSeverity": 3
+        },
+        "technicalCorrectness": "fail",
+        "issues": [
+          "Rendered frame shows 'WHO YOU ARE / WHO YOU WANT TO BE' — that is scene_03's identity-gap content, not scene_02's struck repeating TOMORROW with a looping return arrow (primitives WordReveal,Line,Arrow,WordReveal,Line all absent).",
+          "Even as delivered, neither TOMORROW instance carries the required strikethrough Line, so the 'already crossed out' mechanism of the beat is not communicated."
+        ],
+        "recommendedRepair": [
+          "Replace with the scene_02 frame: two stacked TOMORROW word reveals, each with a horizontal strike Line, connected by a looping Arrow, per the registered primitive list."
+        ]
+      },
+      {
+        "sceneId": "scene_03",
+        "scores": {
+          "scriptRelevance": 2,
+          "visualClarity": 6,
+          "designConsistency": 6,
+          "typography": 8,
+          "composition": 6,
+          "motionQuality": 6,
+          "novelty": 6,
+          "aiSlopSeverity": 4
+        },
+        "technicalCorrectness": "fail",
+        "issues": [
+          "Rendered frame shows 'BUILT FROM TINY CHOICES' + 'ONE PLANK AT A TIME' — scene_04's content, not scene_03's 'TYPE SPLIT BY VOID' (no split WordReveal pair, no bridging hairline Line visible).",
+          "Frame also fails its own scene_04 spec: the three bridge-plank Line primitives are missing, leaving only a small Indicator dot and caption in a mostly empty lower half (y~370-756 of 756 is void)."
+        ],
+        "recommendedRepair": [
+          "Reorder/regenerate so scene_03 receives the 'WHO YOU ARE / WHO YOU WANT TO BE' frame split by the void with a single hairline Line bridging the gap, and give scene_04 a frame where the plank Lines actually assemble across the void."
+        ]
+      },
+      {
+        "sceneId": "scene_04",
+        "scores": {
+          "scriptRelevance": 2,
+          "visualClarity": 7,
+          "designConsistency": 6,
+          "typography": 8,
+          "composition": 7,
+          "motionQuality": 6,
+          "novelty": 6,
+          "aiSlopSeverity": 3
+        },
+        "technicalCorrectness": "fail",
+        "issues": [
+          "Rendered frame shows 'BUT START.' with a teal dot — scene_07's content, not scene_04's plank-bridge assembly (no Line/Line/Line planks, no topTextBottomObject bridge structure).",
+          "Frame mixes two accents in one scene: teal #2FD6A9 dot at left and gold #F2C14E 'START.', and the teal dot floats unlinked to the headline, weakening the 'dot breaks into line' metaphor (no Line is present at all)."
+        ],
+        "recommendedRepair": [
+          "Send this frame to scene_07 (adding the extending Line from the dot) and regenerate scene_04 as a topTextBottomObject with staggered plank Lines laying across the void."
+        ]
+      },
+      {
+        "sceneId": "scene_05",
+        "scores": {
+          "scriptRelevance": 3,
+          "visualClarity": 8,
+          "designConsistency": 6,
+          "typography": 8,
+          "composition": 7,
+          "motionQuality": 6,
+          "novelty": 6,
+          "aiSlopSeverity": 3
+        },
+        "technicalCorrectness": "fail",
+        "issues": [
+          "Rendered frame shows stacked 'TOMORROW' + up arrow + 'TOMORROW' — scene_02's loop content, not scene_05's weighing-beam diagram (Line beam, two Circles as weights, GradientGlow all missing).",
+          "The second TOMORROW is gold-accented but carries no strike Line, so the 'promise repeated and crossed out again' beat reads as neutral repetition rather than contradiction."
+        ],
+        "recommendedRepair": [
+          "Re-map this frame to scene_02 (adding the strike Lines) and produce scene_05 as a centered beam with a small gold Circle outweighing a large dim Circle, per its primitive list."
+        ]
+      },
+      {
+        "sceneId": "scene_06",
+        "scores": {
+          "scriptRelevance": 2,
+          "visualClarity": 7,
+          "designConsistency": 5,
+          "typography": 5,
+          "composition": 6,
+          "motionQuality": 6,
+          "novelty": 6,
+          "aiSlopSeverity": 4
+        },
+        "technicalCorrectness": "fail",
+        "issues": [
+          "Rendered frame shows 'WANT MOST BEATS WANT NOW' with orange + gold circles — scene_05's content, not scene_06's single lit grid cell.",
+          "Headline breaks into 5 lines ('WANT / MOST / BEATS / WANT / NOW'), exceeding maxHeadlineLines=4 (bad-typography rule).",
+          "Two accents active simultaneously: orange #E07A3F circle top-left plus gold #F2C14E circle and gold glow — violates oneDominantAccentPerScene, and the beam/fulcrum metaphor is unreadable (only a faint hairline fragment at top center)."
+        ],
+        "recommendedRepair": [
+          "Reassign to scene_05 after rebuilding it as an actual beam, and give scene_06 the 'START TODAY. START SMALL.' grid frame; cap the headline at 4 lines and keep only gold as the dominant accent."
+        ]
+      },
+      {
+        "sceneId": "scene_07",
+        "scores": {
+          "scriptRelevance": 3,
+          "visualClarity": 9,
+          "designConsistency": 8,
+          "typography": 8,
+          "composition": 8,
+          "motionQuality": 7,
+          "novelty": 7,
+          "aiSlopSeverity": 2
+        },
+        "technicalCorrectness": "fail",
+        "issues": [
+          "Rendered frame shows 'START TODAY. START SMALL.' with a 6x4 Grid and one lit cell — scene_06's content, not scene_07's dot-breaks-into-line imperative.",
+          "Within the frame itself, TODAY and SMALL are both accented (2 accent words, at the limit) and the grid sits well below center with a large empty band y~230-400 of 756."
+        ],
+        "recommendedRepair": [
+          "Re-map this frame to scene_06, tightening the gap between headline and grid, and generate scene_07 as 'BUT START.' with the held dot extending into a Line over one subordinate glow."
+        ]
+      }
+    ]
+  },
+  "slop": {
+    "projectSeverity": 6,
+    "verdict": "needs_repair",
+    "findings": [
+      {
+        "sceneId": "scene_02",
+        "type": "weak-metaphor",
+        "evidence": "The two repeated TOMORROW words are shown plain — the strikethrough Lines from the spec are missing in the rendered frame, so the 'already crossed / struck again' mechanism never reads; only the arrow carries meaning",
+        "severity": 6
+      },
+      {
+        "sceneId": "scene_04",
+        "type": "weak-metaphor",
+        "evidence": "No bridge span, planks, or void appear in the frame — the metaphor is carried entirely by the caption 'ONE PLANK AT A TIME' narration instead of the visual",
+        "severity": 6
+      },
+      {
+        "sceneId": "scene_05",
+        "type": "weak-metaphor",
+        "evidence": "Two circles float disconnected with only a faint short hairline at top; the tilted-beam weighing relationship (want-most outranks want-now) is not legible in the composition",
+        "severity": 6
+      },
+      {
+        "sceneId": "scene_07",
+        "type": "generic-ai-aesthetics",
+        "evidence": "The dot and its background glow switch to a saturated mint green, introducing a hue outside the project's amber/orange-on-dark palette while the headline accent stays amber",
+        "severity": 6
+      },
+      {
+        "sceneId": "scene_03",
+        "type": "repetitive-layouts",
+        "evidence": "Same centered stacked two-block typography composition as scene_02 (large word block top, element in middle gap, large word block bottom) reused for another gap metaphor",
+        "severity": 5
+      }
+    ]
+  },
+  "novelty": {
+    "results": [
+      {
+        "sceneId": "scene_01",
+        "similarity": 0,
+        "matchedDimensions": [],
+        "verdict": "accept",
+        "against": "history"
+      },
+      {
+        "sceneId": "scene_02",
+        "similarity": 0,
+        "matchedDimensions": [],
+        "verdict": "accept",
+        "against": "history"
+      },
+      {
+        "sceneId": "scene_03",
+        "similarity": 10,
+        "matchedDimensions": [
+          "sameComposition"
+        ],
+        "verdict": "accept",
+        "against": "same-project/scene_02"
+      },
+      {
+        "sceneId": "scene_04",
+        "similarity": 0,
+        "matchedDimensions": [],
+        "verdict": "accept",
+        "against": "history"
+      },
+      {
+        "sceneId": "scene_05",
+        "similarity": 0,
+        "matchedDimensions": [],
+        "verdict": "accept",
+        "against": "history"
+      },
+      {
+        "sceneId": "scene_06",
+        "similarity": 10,
+        "matchedDimensions": [
+          "sameComposition"
+        ],
+        "verdict": "accept",
+        "against": "same-project/scene_04"
+      },
+      {
+        "sceneId": "scene_07",
+        "similarity": 15,
+        "matchedDimensions": [
+          "sameDominantObject"
+        ],
+        "verdict": "accept",
+        "against": "same-project/scene_05"
+      }
+    ],
+    "rejectedSceneIds": [],
+    "status": "pass"
+  },
+  "overallQuality": 6.343537414965986,
+  "status": "fail",
+  "reasons": [
+    "overall quality 6.3 < 8",
+    "scene_02: technical correctness fail",
+    "scene_02: severe relevance/clarity issue",
+    "scene_03: technical correctness fail",
+    "scene_03: severe relevance/clarity issue",
+    "scene_04: technical correctness fail",
+    "scene_04: severe relevance/clarity issue",
+    "scene_05: technical correctness fail",
+    "scene_05: severe relevance/clarity issue",
+    "scene_06: technical correctness fail",
+    "scene_06: severe relevance/clarity issue",
+    "scene_06: severe readability - Two accents active simultaneously: orange #E07A3F circle top-left plus gold #F2C14E circle and gold glow — violates oneDominantAccentPerScene, and the beam/fulcrum metaphor is unreadable (only a faint hairline fragment at top center).",
+    "scene_07: technical correctness fail",
+    "scene_07: severe relevance/clarity issue"
+  ]
+}

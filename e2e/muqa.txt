@@ -1,0 +1,15 @@
+status=needs_repair overall=6.91 conf=1 conformance=9.1 slop=8
+scene_01: q=6.86 rel=7 clar=7 tech=pass issues=3
+scene_02: q=7.14 rel=8 clar=7 tech=pass issues=0
+scene_03: q=7.14 rel=8 clar=7 tech=pass issues=0
+scene_04: q=6.71 rel=7 clar=7 tech=pass issues=3
+scene_05: q=6.86 rel=7 clar=7 tech=pass issues=0
+scene_06: q=6.57 rel=8 clar=6 tech=pass issues=3
+scene_07: q=7.57 rel=8 clar=8 tech=pass issues=0
+scene_08: q=6.57 rel=8 clar=6 tech=pass issues=3
+reasons:
+  - overall quality 6.9 < 8
+  - slop severity 8 > 6
+  - scene_01: severe readability - Horizontal gold rule runs directly through the top of the headline: the line at yGëê340 crosses the ascenders of 'YANG' and 'PALING', so the text block
+  - scene_06: severe readability - Object overlaps text: the gold ring's left arc cuts through the third headline line GÇö 'PENGARUHNYA' passes under the stroke between xGëê255GÇô355, breaki
+  - scene_08: severe readability - Graphic/text collision: the gold ring stroke cuts through 'SEMUA'/'ORANG' and the dark grid squares sit behind 'DISUKAI', so the object overlaps the 

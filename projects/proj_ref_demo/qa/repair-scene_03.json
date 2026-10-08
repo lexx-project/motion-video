@@ -1,0 +1,21 @@
+{
+  "sceneId": "scene_03",
+  "issue": "The two waveform tracks are absent from the frame, leaving the labels 'SPIKES' and 'SHOWING UP' orphaned around a small headline in ~80% empty space, so the collapse-vs-endure mechanism never renders.",
+  "rootCause": "Both Line primitives were stacked on the center axis (offsetY -8/+20) where they collide with the headline band, and as identical straight hairlines they neither read as spike-vs-pulse contrast nor survive the render, so the tracks vanish while their labels float unattached.",
+  "scope": "minimal",
+  "changesMade": [
+    "Split the tracks into true halves: spike track moved to top half, shortened to lengthPct 46 with offsetX -6 so it visibly terminates mid-frame.",
+    "Pulse track moved to bottom half, lengthPct 92 with offsetX 4 so it runs unbroken toward the right edge, kept teal as the single positive accent.",
+    "Labels re-anchored directly to their tracks: SPIKES just above the upper track, SHOWING UP just below the lower track.",
+    "Headline stays centered on the split axis between the two tracks so the three parts read as one mechanism; gold 'WINS' untouched.",
+    "No new text or elements; motion vocabulary unchanged (draw entrance / positionShift emphasis / fade exit)."
+  ],
+  "preserve": [
+    "Headline text 'BORING WINS' with gold accent on 'WINS' and center align",
+    "Split composition family and two-label naming",
+    "draw → positionShift → fade motion family and timing (entrance 0, emphasis 1.3, exit 2.3)",
+    "2.74s duration",
+    "Dark palette with one dominant accent (teal track)"
+  ],
+  "expectedEffect": "The frame now shows an erratic short track dying mid-frame above the headline and a continuous teal pulse running past the right edge below it, with labels physically attached — the contrast itself enacts 'they just keep showing up when it is boring', restoring clarity and script relevance."
+}

@@ -1,0 +1,267 @@
+{
+  "sceneId": "scene_04",
+  "duration": 3.61,
+  "purpose": "Post-and-delete ritual: upload bar climbs to 99%, hesitates, then drains to 0% as fear of judgment undoes the post.",
+  "visualConcept": "UPLOAD BAR DRAINS FROM 99 TO 0",
+  "composition": "leftTextRightObject",
+  "headline": {
+    "text": "POSTING. HAPUS LAGI.",
+    "accentWords": [
+      "HAPUS"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "ProgressBar",
+      "position": "right",
+      "accent": "teal",
+      "role": "semantic",
+      "purpose": "actor: fill climbs to 99% then drains to zero, making self-erasure literal",
+      "value": 0.99,
+      "delay": 0.5,
+      "entrance": "scale",
+      "emphasis": "controlledReveal"
+    },
+    {
+      "primitive": "Label",
+      "position": "topRight",
+      "accent": "gold",
+      "role": "semantic",
+      "purpose": "counter proof of how close the post came before aborting",
+      "text": "99%",
+      "delay": 0.7,
+      "entrance": "fade",
+      "emphasis": "highlight"
+    },
+    {
+      "primitive": "GenericCard",
+      "position": "bottomRight",
+      "accent": "none",
+      "role": "semantic",
+      "label": "DRAFT",
+      "purpose": "the unpublished draft: lit while fill is high, hollow after the drain",
+      "delay": 0.6,
+      "entrance": "reveal",
+      "emphasis": "subtleScale"
+    },
+    {
+      "primitive": "Line",
+      "position": "right",
+      "rotation": 90,
+      "scale": 0.9,
+      "accent": "none",
+      "role": "supporting",
+      "purpose": "static tick scale making the fill's downward travel measurable",
+      "delay": 0.5,
+      "entrance": "draw"
+    },
+    {
+      "primitive": "Label",
+      "position": "bottomRight",
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "names the first fear that triggered the drain",
+      "text": "NGEJUDGE",
+      "delay": 2.7,
+      "entrance": "fade"
+    },
+    {
+      "primitive": "Label",
+      "position": "bottomRight",
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "names the second fear, explaining the empty bar",
+      "text": "NGOMONGIN",
+      "delay": 2.95,
+      "entrance": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "slide",
+    "emphasis": "counterChange",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.9
+  },
+  "storyboard": {
+    "beatId": "b4",
+    "spokenMeaning": "The post nearly goes out, then is erased again out of fear of judgment and gossip.",
+    "viewerTakeaway": "Post-and-delete is a visible retreat: fear of being judged makes you undo your own progress.",
+    "visualMechanism": "regression",
+    "visualNarrative": [
+      {
+        "order": 1,
+        "action": "Left headline block fades in: 'POSTING. HAPUS LAGI.' with a quiet sub-line about fear of judgment; right side shows an empty vertical upload bar with a dim draft post card behind it.",
+        "meaning": "Sets the ritual before it happens: the intention to post exists, uncommitted.",
+        "visualEvidence": "Headline sits left at 8% margin; bar outline and dim draft card occupy the right third, bar at 0%."
+      },
+      {
+        "order": 2,
+        "action": "Teal fill climbs the bar in three quick stages to 99%, the gold percent label ticking up with it; the draft card brightens as the fill passes it.",
+        "meaning": "The post is essentially ready — the near-complete bar reads instantly as 'about to go out'.",
+        "visualEvidence": "Teal column reaches just below the bar cap, gold '99%' label locked beside it, draft card at full opacity."
+      },
+      {
+        "order": 3,
+        "action": "A two-beat hold at 99%: the label blinks once, nothing else moves — hesitation visible as stillness.",
+        "meaning": "The fear arrives in the gap between finishing and sending.",
+        "visualEvidence": "Frame is static except one soft blink of the gold percent, fill motionless at 99%."
+      },
+      {
+        "order": 4,
+        "action": "The teal fill drains downward back to zero, the gold label counting 99 → 54 → 12 → 0, and the draft card dims back to hollow outline as the fill passes it.",
+        "meaning": "Regression: the act visibly undoes itself — 'hapus lagi' is shown as reversal, not repetition.",
+        "visualEvidence": "Teal column retreats to the bar base, label lands on '0%', draft card returns to dim outline."
+      },
+      {
+        "order": 5,
+        "action": "The emptied bar and outline card remain while two small labels settle beside them: 'ngejudge' and 'ngomongin' in muted secondary text.",
+        "meaning": "Names the two fears that caused the drain without illustrating them literally.",
+        "visualEvidence": "Empty bar at 0%, two small uppercase labels stacked to its left, headline still held on the left."
+      }
+    ],
+    "semanticObjects": [
+      {
+        "objectType": "TextBlock",
+        "semanticRole": "States the ritual as a flat, exhausted statement — the scene's thesis.",
+        "relationship": "Anchors left third; the bar's reversal illustrates its second word, 'HAPUS'.",
+        "importance": 5
+      },
+      {
+        "objectType": "ProgressBar",
+        "semanticRole": "The actor: carries intent forward to 99% then drains back, making self-erasure literal.",
+        "relationship": "Drives percentLabel and ghostDraft; both respond to its fill level.",
+        "importance": 5
+      },
+      {
+        "objectType": "Label",
+        "semanticRole": "Numerical proof of how close the post came to going out before aborting.",
+        "relationship": "Reacts to uploadBar fill in real time, counting up then down.",
+        "importance": 4
+      },
+      {
+        "objectType": "Card",
+        "semanticRole": "The unpublished post itself: exists only while the bar is full.",
+        "relationship": "Brightens with rising fill, dims to hollow outline as the fill drains past it.",
+        "importance": 3
+      },
+      {
+        "objectType": "Label",
+        "semanticRole": "Names the cause of the abort: judgment and gossip.",
+        "relationship": "Appears only after the drain completes, explaining the empty bar.",
+        "importance": 3
+      },
+      {
+        "objectType": "Line",
+        "semanticRole": "Four hairline ticks marking 100/75/50/25 so the drain distance is measurable.",
+        "relationship": "Static frame of reference that makes the fill's downward travel legible.",
+        "importance": 2
+      }
+    ],
+    "relationships": [
+      {
+        "from": "uploadBar",
+        "to": "percentLabel",
+        "relationship": "fill level drives counter value (99 counts down to 0 as fill drains)"
+      },
+      {
+        "from": "uploadBar",
+        "to": "ghostDraft",
+        "relationship": "fill passing the card's height toggles it between lit and hollow"
+      },
+      {
+        "from": "ghostDraft",
+        "to": "fearLabels",
+        "relationship": "card going hollow triggers the two fear labels to appear"
+      }
+    ],
+    "typographyPlan": {
+      "headline": "POSTING. HAPUS LAGI.",
+      "emphasisWords": [
+        "HAPUS",
+        "99%"
+      ],
+      "supportingText": [
+        "Takut ada yang ngejudge.",
+        "Takut ada yang ngomongin.",
+        "Nggak jadi terkirim."
+      ]
+    },
+    "subtitlePlan": {
+      "enabled": true,
+      "text": "Posting sesuatu… hapus lagi. Takut ada yang ngejudge. Takut ada yang ngomongin.",
+      "timing": "spans full beat while the bar rises then drains",
+      "role": "spoken line"
+    },
+    "motionBeats": [
+      {
+        "order": 1,
+        "action": "Headline slides in from left, then sub-lines stagger under it.",
+        "purpose": "Establish the thesis before the mechanism runs."
+      },
+      {
+        "order": 2,
+        "action": "Teal fill rises to 99% in three eased stages, counter ticking up.",
+        "purpose": "Build expectation of a completed upload so the reversal can break it."
+      },
+      {
+        "order": 3,
+        "action": "Hold with a single label blink at 99%.",
+        "purpose": "Visualizes hesitation as stillness — the decision point."
+      },
+      {
+        "order": 4,
+        "action": "Fill drains to zero with counter change; ghost card dims as fill passes.",
+        "purpose": "The regression itself: shows the post undoing its own progress."
+      },
+      {
+        "order": 5,
+        "action": "Two fear labels fade in beside the empty bar.",
+        "purpose": "Names the cause only after the effect, so the drain reads as explained."
+      },
+      {
+        "order": 6,
+        "action": "Whole frame settles, faint vignette tighten on the empty bar.",
+        "purpose": "Ends the beat on absence, letting 'hapus lagi' land."
+      }
+    ],
+    "compositionIntent": "leftTextRightObject: headline block locked to the left 8% margin, tall vertical upload bar with tick marks and ghost draft card in the right third, one text block and one dominant object, ~65% negative space between them. Fear labels sit small at the bar's base, never competing with the headline.",
+    "visualEvidence": [
+      "Teal column climbs to just under the bar cap with a gold '99%' label beside it — clearly 'about to send'.",
+      "Same column retreats to the bar base and the label lands on '0%' — the post visibly un-sent.",
+      "Draft card shifts from lit rectangle to hollow outline exactly as the fill passes it.",
+      "Two small uppercase fear labels appear only after the bar is empty, linking cause to result."
+    ],
+    "forbiddenInterpretations": [
+      "No looping upload/retry animation — this is a one-way reversal, not a repeating cycle.",
+      "No phone mockup, social-media UI, or notification icons — keep the abstract bar.",
+      "No red delete button or trash can; erasure is shown by the drain, not a literal icon.",
+      "No crowd of judging faces or pointing arrows at a person.",
+      "No countdown clock, glitch effects, or particle bursts on the drain."
+    ],
+    "noveltyIntent": "Unlike prior progress bars that fill or compare two static bars, this one visibly regresses from 99% to 0% inside one beat, making self-cancellation the motion itself.",
+    "elementBudget": {
+      "min": 6,
+      "max": 7
+    }
+  },
+  "subtitle": {
+    "enabled": true,
+    "role": "spoken line",
+    "phrases": [
+      {
+        "text": "ada yang ngomongin. Padahal…",
+        "start": 0.02,
+        "end": 1.83
+      },
+      {
+        "text": "**mau lu ngapain juga…",
+        "start": 1.83,
+        "end": 3.61
+      }
+    ]
+  }
+}

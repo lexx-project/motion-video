@@ -1,0 +1,88 @@
+{
+  "selections": [
+    {
+      "beatId": "b1",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 8
+      },
+      "selectionRationale": "The ProgressBar pinned at 100% shows addition hitting a ceiling, while Stack cards exiting one by one open the lane the Arrow draws through — removal visibly changes the system. This contrast performs the reframe wordlessly within the 4-element cap."
+    },
+    {
+      "beatId": "b2",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The shared hairline measurement strikes both outlines at identical height while the lone gold badge lands afterward, physically performing superiority as an attached label rather than an inherent trait. That mechanism lets a cold viewer read 'winner was tagged, not built better' before parsing the headline, using only registered primitives in a permitted dualObject composition."
+    },
+    {
+      "beatId": "b3",
+      "selectedCandidateId": "c4",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 8,
+        "novelty": 8,
+        "emotionalFit": 7,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "Its semanticMechanism proves the beat pre-verbally: the erratic MOTIVATION track self-terminates while the even pulse runs unbroken across the full frame, so endurance-through-boredom is shown by which line simply outlasts the other."
+    },
+    {
+      "beatId": "b4",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The semanticMechanism stages the unfair comparison as a simultaneous physical state (barely-started WEEK 1 bar beneath a full YEAR 5 bar), then the gold bar's fade performs 'stop measuring' by removing the reference frame entirely."
+    },
+    {
+      "beatId": "b5",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 9,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The shared vertical axis makes the semanticMechanism physically readable: dim marks accumulate below the hairline and the block's mass above increments only in response, so private input is visibly converted into public weight. The coupling itself proves the beat through stagger plus positionShift, requiring only one subordinate glow and four elements within the design system."
+    },
+    {
+      "beatId": "b6",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 8,
+        "novelty": 8,
+        "emotionalFit": 9,
+        "motionPotential": 9,
+        "technicalFeasibility": 8
+      },
+      "selectionRationale": "The semanticMechanism — illumination physically travels and selects, ignoring what is filled and halting on vacancy — makes the beam's stopping point itself the handoff, so a cold viewer reads 'you're being called up' before any text lands. It maps cleanly onto the allowed motion vocabulary (slide then highlight lock) and the design bible's single-glow, symbolic-object rules."
+    }
+  ]
+}

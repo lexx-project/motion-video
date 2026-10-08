@@ -1,0 +1,19 @@
+{
+  "sceneId": "scene_06",
+  "issue": "Gold dial ring overlaps headline word PENGARUHNYA, the detached diagonal Line reads as a magnifying-glass handle, and the caption sits far below the 34px label size spec.",
+  "rootCause": "Text and object share overlapping bands, the rotated Line anchors at the edge instead of the dial center so the needle never attaches, and Caption renders smaller than Label, breaking hierarchy.",
+  "scope": "minimal",
+  "changesMade": [
+    "Swapped Caption to Label (34px w700 uppercase) and trimmed text to 53 chars: 'OPINI MASUK. LU YANG SETEL SEBESAR NGARUHNYA KE HIDUP.'",
+    "Replaced the free-floating diagonal Line with an Indicator (arrow variant) anchored to the dial center so the pointer attaches to the ring.",
+    "Added a small filled gold hub Circle at the dial center, making ring+pointer+hub read as a control knob, not a magnifying glass.",
+    "Kept text at the left anchor and dial at the right anchor only, enforcing band separation with zero text/object overlap."
+  ],
+  "preserve": [
+    "Typography style: 96px w900 uppercase headline, uppercase label treatment",
+    "Gold as the single dominant accent with one accent word 'ATUR'",
+    "leftTextRightObject composition family and 60-70% negative space",
+    "stagger/highlight/fade motion system and timing 0/1.4/3.2, duration 3.62s"
+  ],
+  "expectedEffect": "The dial now reads as a real knob with an attached pointer in the right band, while headline and label stay cleanly in the left band, so the turn-it-down metaphor is enacted without any collision."
+}

@@ -1,0 +1,739 @@
+{
+  "technical": {
+    "file": "C:\\Users\\Administrator\\Documents\\project\\motion-video\\projects\\proj_muy41mhg\\renders\\preview.mp4",
+    "durationSec": 46.869,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "hasAudio": true,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "errors": []
+  },
+  "visual": {
+    "evaluatorCount": 3,
+    "projectStatus": "needs_repair",
+    "overall": {
+      "scriptRelevance": 8,
+      "visualClarity": 6,
+      "designConsistency": 7,
+      "typography": 7,
+      "composition": 6,
+      "motionQuality": 7,
+      "novelty": 7,
+      "aiSlopSeverity": 4,
+      "technicalCorrectness": "fail",
+      "stats": {
+        "mean": 6.76,
+        "median": 6.57,
+        "variance": 0.073,
+        "confidence": 0.99
+      }
+    },
+    "scenes": [
+      {
+        "sceneId": "scene_01",
+        "scores": {
+          "scriptRelevance": 8,
+          "visualClarity": 6,
+          "designConsistency": 7,
+          "typography": 7,
+          "composition": 6,
+          "motionQuality": 7,
+          "novelty": 6,
+          "aiSlopSeverity": 4
+        },
+        "stats": {
+          "mean": 6.76,
+          "median": 6.71,
+          "variance": 0.005,
+          "confidence": 1
+        },
+        "technicalCorrectness": "pass",
+        "issues": [
+          "Headline wraps to 6 lines (\"LU TAU NGGAK... / HAL / PALING / BIKIN / CAPEK\"), exceeding the 4-line/60-char rule; rag is uneven.",
+          "Speech bubble at right is an empty gray shape with a stray tail — no content, reads as meaningless decoration.",
+          "Person icon is crammed directly beneath the headline with no breathing room; icon and bubble float as disconnected elements.",
+          "Bottom progress bar (~10% gold) is orphaned from the scene's focus; caption text is tiny and low-contrast at 8% margin."
+        ],
+        "recommendedRepair": [
+          "Split: keep \"HAL PALING BIKIN CAPEK\" as 2-3 line headline; demote \"Lu tau nggak...\" to subheadline.",
+          "Fill the bubble with one judging phrase (e.g. \"NGOMONGIN\") or delete it.",
+          "Shift the person icon left into its own column, restoring ~60% negative space.",
+          "Remove the progress bar; keep the caption as a single 34px label line."
+        ]
+      },
+      {
+        "sceneId": "scene_02",
+        "scores": {
+          "scriptRelevance": 9,
+          "visualClarity": 8,
+          "designConsistency": 8,
+          "typography": 8,
+          "composition": 7,
+          "motionQuality": 7,
+          "novelty": 7,
+          "aiSlopSeverity": 3
+        },
+        "stats": {
+          "mean": 7.62,
+          "median": 7.71,
+          "variance": 0.059,
+          "confidence": 0.99
+        },
+        "technicalCorrectness": "pass",
+        "issues": [],
+        "recommendedRepair": []
+      },
+      {
+        "sceneId": "scene_03",
+        "scores": {
+          "scriptRelevance": 9,
+          "visualClarity": 8,
+          "designConsistency": 8,
+          "typography": 7,
+          "composition": 7,
+          "motionQuality": 7,
+          "novelty": 7,
+          "aiSlopSeverity": 3
+        },
+        "stats": {
+          "mean": 7.48,
+          "median": 7.57,
+          "variance": 0.059,
+          "confidence": 0.99
+        },
+        "technicalCorrectness": "pass",
+        "issues": [],
+        "recommendedRepair": []
+      },
+      {
+        "sceneId": "scene_04",
+        "scores": {
+          "scriptRelevance": 7,
+          "visualClarity": 5,
+          "designConsistency": 6,
+          "typography": 6,
+          "composition": 5,
+          "motionQuality": 6,
+          "novelty": 6,
+          "aiSlopSeverity": 5
+        },
+        "stats": {
+          "mean": 5.76,
+          "median": 5.71,
+          "variance": 0.413,
+          "confidence": 0.93
+        },
+        "technicalCorrectness": "fail",
+        "issues": [
+          "Bottom caption \"ada yang ngomongin. Padahal...\" overlaps the NGEJUDGE/NGOMONGIN labels — text is unreadable.",
+          "Teal bar and its vertical cross-line collide with the headline block, cutting through \"HAPUS LAGI.\"",
+          "Two accents compete: teal bar plus gold \"HAPUS\" and gold \"99%\" — spec allows one dominant accent.",
+          "99% (top-right), bar, DRAFT card, and labels sit on no shared axis; leftTextRightObject structure is lost."
+        ],
+        "recommendedRepair": [
+          "Move the caption to one clean bottom line; delete duplicate NGEJUDGE/NGOMONGIN labels or stack them with spacing.",
+          "Shift the bar and cross-line fully into the right column, clearing the headline by ~40px.",
+          "Recolor the bar gold (keep one accent) or drop gold from the headline — accent must be singular.",
+          "Align 99%, bar, and DRAFT card to a single right-column axis."
+        ]
+      },
+      {
+        "sceneId": "scene_05",
+        "scores": {
+          "scriptRelevance": 8,
+          "visualClarity": 8,
+          "designConsistency": 7,
+          "typography": 7,
+          "composition": 7,
+          "motionQuality": 7,
+          "novelty": 7,
+          "aiSlopSeverity": 3
+        },
+        "stats": {
+          "mean": 7.24,
+          "median": 7.29,
+          "variance": 0.168,
+          "confidence": 0.97
+        },
+        "technicalCorrectness": "pass",
+        "issues": [],
+        "recommendedRepair": []
+      },
+      {
+        "sceneId": "scene_06",
+        "scores": {
+          "scriptRelevance": 7,
+          "visualClarity": 5,
+          "designConsistency": 6,
+          "typography": 6,
+          "composition": 5,
+          "motionQuality": 6,
+          "novelty": 6,
+          "aiSlopSeverity": 4
+        },
+        "stats": {
+          "mean": 6.05,
+          "median": 6,
+          "variance": 0.032,
+          "confidence": 0.99
+        },
+        "technicalCorrectness": "fail",
+        "issues": [
+          "Subtitle \"dibilang sombong. Lu sukses...\" overlaps red \"DITERTAWAKAN\" at the bottom — unreadable collision.",
+          "Four red verdict words (PENCITRAAN, SOMBOG, BERUNTUNG, DITERTAWAKAN) exceed the max-2-accent-word rule.",
+          "Label reads \"SOMBOG\" — misspelling of \"SOMBONG\" from the script; labels are scattered diagonally off any tape axis.",
+          "Sub-label \"SLOT INI NGGAK PERNAH BACA STATE LU.\" is cramped and near-illegible under the headline."
+        ],
+        "recommendedRepair": [
+          "Raise the subtitle above the bottom safe margin or remove the overlapping label.",
+          "Keep red only on DITERTAWAKAN; render the first three in secondary #B5B1A7.",
+          "Fix SOMBOG→SOMBONG and align all four labels to one vertical column.",
+          "Delete the sub-label or set it at 34px label size with clear spacing."
+        ]
+      },
+      {
+        "sceneId": "scene_07",
+        "scores": {
+          "scriptRelevance": 8,
+          "visualClarity": 6,
+          "designConsistency": 6,
+          "typography": 6,
+          "composition": 7,
+          "motionQuality": 7,
+          "novelty": 7,
+          "aiSlopSeverity": 3
+        },
+        "stats": {
+          "mean": 6.57,
+          "median": 6.71,
+          "variance": 0.095,
+          "confidence": 0.98
+        },
+        "technicalCorrectness": "pass",
+        "issues": [
+          "Teal headline word \"SEBESAR\" plus gold arrows = two accents in one scene; spec demands one dominant accent.",
+          "The large teal circle overlaps the tail of \"IZINKAN\" — headline/object collision.",
+          "Headline fills 4 full-width lines, pushing negative space well below the 60% target.",
+          "Arrows and circles are unlabelled relative to each other; the aperture metaphor (gap you set) is not visually legible."
+        ],
+        "recommendedRepair": [
+          "Recolor the arrows teal to match the circles; remove gold entirely.",
+          "Nudge the circle ~40px down/right so it clears \"IZINKAN\".",
+          "Move \"SEBESAR\" to subheadline so the headline runs 2-3 lines.",
+          "Open the big circle's gap and point both arrows into it, with the two labels tied to each side."
+        ]
+      },
+      {
+        "sceneId": "scene_08",
+        "scores": {
+          "scriptRelevance": 7,
+          "visualClarity": 7,
+          "designConsistency": 7,
+          "typography": 7,
+          "composition": 7,
+          "motionQuality": 7,
+          "novelty": 7,
+          "aiSlopSeverity": 3
+        },
+        "stats": {
+          "mean": 7,
+          "median": 7,
+          "variance": 0.014,
+          "confidence": 1
+        },
+        "technicalCorrectness": "pass",
+        "issues": [],
+        "recommendedRepair": []
+      },
+      {
+        "sceneId": "scene_09",
+        "scores": {
+          "scriptRelevance": 8,
+          "visualClarity": 7,
+          "designConsistency": 8,
+          "typography": 7,
+          "composition": 7,
+          "motionQuality": 7,
+          "novelty": 7,
+          "aiSlopSeverity": 3
+        },
+        "stats": {
+          "mean": 7.29,
+          "median": 7.57,
+          "variance": 0.163,
+          "confidence": 0.97
+        },
+        "technicalCorrectness": "pass",
+        "issues": [],
+        "recommendedRepair": []
+      }
+    ]
+  },
+  "slop": {
+    "projectSeverity": 7,
+    "verdict": "severe",
+    "findings": [
+      {
+        "sceneId": "scene_01",
+        "type": "bad-typography",
+        "evidence": "headline 'LU TAU NGGAK... HAL PALING BIKIN CAPEK' is set in 6 lines, exceeding the 4-line limit",
+        "severity": 8
+      },
+      {
+        "sceneId": "scene_02",
+        "type": "bad-typography",
+        "evidence": "oversized '0 VIEWS' lockup runs into the right frame edge with the final letter clipped instead of being reflowed",
+        "severity": 7
+      },
+      {
+        "sceneId": "scene_03",
+        "type": "weak-metaphor",
+        "evidence": "concept is 'TWO COLUMNS THAT NEVER ALIGN' but left action rows and right verdict rows sit on identical horizontal baselines, so the frame reads as a plain aligned table",
+        "severity": 6
+      },
+      {
+        "sceneId": "scene_03",
+        "type": "repetitive-layouts",
+        "evidence": "identical red verdict stack (PENCITRAAN/SOMBOG/BERUNTUNG/DITERTAWAKAN) in identical outlined boxes reappears with same composition and color in scene_06",
+        "severity": 5
+      },
+      {
+        "sceneId": "scene_04",
+        "type": "visual-clutter",
+        "evidence": "bottom zone collides: paragraph 'ada yang ngomongin. Padahal...' overlaps the NGEJUDGE and NGOMONGIN labels while headline, 99%, bar and DRAFT card push the scene past 5 elements",
+        "severity": 7
+      },
+      {
+        "sceneId": "scene_05",
+        "type": "bad-typography",
+        "evidence": "'PENGARUH' spans edge-to-edge with no side margin and the aperture circle overlaps the 'IZINKAN' baseline, crowding the 4-line headline",
+        "severity": 7
+      },
+      {
+        "sceneId": "scene_06",
+        "type": "visual-clutter",
+        "evidence": "overlay caption 'dibilang sombong. Lu sukses...' overlaps the DITERTAWAKAN verdict label; scene stacks input label, four scattered verdicts, line, headline, subtitle and caption beyond the 5-element cap",
+        "severity": 7
+      }
+    ]
+  },
+  "novelty": {
+    "results": [
+      {
+        "sceneId": "scene_01",
+        "similarity": 15,
+        "matchedDimensions": [
+          "sameMotionPattern"
+        ],
+        "verdict": "accept",
+        "against": "proj_ref_demo/scene_01"
+      },
+      {
+        "sceneId": "scene_02",
+        "similarity": 15,
+        "matchedDimensions": [
+          "sameMotionPattern"
+        ],
+        "verdict": "accept",
+        "against": "proj_ref_demo/scene_05"
+      },
+      {
+        "sceneId": "scene_03",
+        "similarity": 10,
+        "matchedDimensions": [
+          "sameComposition"
+        ],
+        "verdict": "accept",
+        "against": "proj_ref_demo/scene_01"
+      },
+      {
+        "sceneId": "scene_04",
+        "similarity": 10,
+        "matchedDimensions": [
+          "sameComposition"
+        ],
+        "verdict": "accept",
+        "against": "proj_ref_demo/scene_01"
+      },
+      {
+        "sceneId": "scene_05",
+        "similarity": 35,
+        "matchedDimensions": [
+          "sameComposition",
+          "sameMotionPattern",
+          "sameStorytellingStructure"
+        ],
+        "verdict": "accept",
+        "against": "proj_ref_demo/scene_05"
+      },
+      {
+        "sceneId": "scene_06",
+        "similarity": 35,
+        "matchedDimensions": [
+          "sameComposition",
+          "sameMotionPattern",
+          "sameStorytellingStructure"
+        ],
+        "verdict": "accept",
+        "against": "proj_muwt0aze/scene_06"
+      },
+      {
+        "sceneId": "scene_07",
+        "similarity": 25,
+        "matchedDimensions": [
+          "sameDominantObject",
+          "sameMotionPattern"
+        ],
+        "verdict": "accept",
+        "against": "proj_muwt0aze/scene_01"
+      },
+      {
+        "sceneId": "scene_08",
+        "similarity": 45,
+        "matchedDimensions": [
+          "sameDominantObject",
+          "sameComposition",
+          "sameMotionPattern",
+          "sameStorytellingStructure"
+        ],
+        "verdict": "accept",
+        "against": "proj_p3_demo/scene_03"
+      },
+      {
+        "sceneId": "scene_09",
+        "similarity": 15,
+        "matchedDimensions": [
+          "sameMotionPattern"
+        ],
+        "verdict": "accept",
+        "against": "proj_p3_demo/scene_05"
+      }
+    ],
+    "rejectedSceneIds": [],
+    "status": "pass"
+  },
+  "conformance": {
+    "scenes": [
+      {
+        "sceneId": "scene_01",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 10,
+          "motion": 10,
+          "density": 10,
+          "negativeSpace": 10
+        },
+        "overall": 10,
+        "evidence": [
+          "structure conforms to reference-derived language"
+        ]
+      },
+      {
+        "sceneId": "scene_02",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 10,
+          "motion": 8,
+          "density": 10,
+          "negativeSpace": 10
+        },
+        "overall": 9.7,
+        "evidence": [
+          "motion \"positionShift\" outside reference-preferred set",
+          "1 element delay > 1.4s (reference staggers quickly)"
+        ]
+      },
+      {
+        "sceneId": "scene_03",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 10,
+          "motion": 10,
+          "density": 10,
+          "negativeSpace": 10
+        },
+        "overall": 10,
+        "evidence": [
+          "structure conforms to reference-derived language"
+        ]
+      },
+      {
+        "sceneId": "scene_04",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 7,
+          "composition": 0,
+          "motion": 7,
+          "density": 10,
+          "negativeSpace": 8.5
+        },
+        "overall": 7.5,
+        "evidence": [
+          "distinct accents: teal, gold (one dominant accent rule)",
+          "COLLISION: scene.headline(\"POSTING. HAPUS LAG...\") overlaps ProgressBar[0] (est. 26% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor",
+          "motion \"slide\" outside reference-preferred set",
+          "2 element delay > 1.4s (reference staggers quickly)",
+          "SUBTITLE_COLLISION: subtitle band overlaps Label[4](\"NGEJUDGE...\") (85%) - move content out of the bottom band when subtitles are enabled",
+          "SUBTITLE_COLLISION: subtitle band overlaps Label[5](\"NGOMONGIN...\") (76%) - move content out of the bottom band when subtitles are enabled"
+        ]
+      },
+      {
+        "sceneId": "scene_05",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 6.5,
+          "motion": 9,
+          "density": 6,
+          "negativeSpace": 10
+        },
+        "overall": 8.8,
+        "evidence": [
+          "grammar \"split\" absent from reference shares (allowed by spec, off-language)",
+          "motion \"positionShift\" outside reference-preferred set",
+          "SPARSE: only 2 renderable element(s) - narrative likely under-visualized"
+        ]
+      },
+      {
+        "sceneId": "scene_06",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 6,
+          "motion": 6,
+          "density": 7,
+          "negativeSpace": 7
+        },
+        "overall": 8,
+        "evidence": [
+          "4 element delay > 1.4s (reference staggers quickly)",
+          "9 elements exceeds guideline 8 (readability pressure; hard max 10)",
+          "SUBTITLE_COLLISION: subtitle band overlaps Label[7](\"DITERTAWAKAN...\") (100%) - move content out of the bottom band when subtitles are enabled"
+        ]
+      },
+      {
+        "sceneId": "scene_07",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 9,
+          "color": 10,
+          "composition": 0,
+          "motion": 9,
+          "density": 10,
+          "negativeSpace": 8.5
+        },
+        "overall": 8.1,
+        "evidence": [
+          "WordReveal \"SEBESAR PENGARUH YANG LU...\" estimates 5 lines in top anchor",
+          "grammar \"split\" absent from reference shares (allowed by spec, off-language)",
+          "COLLISION: WordReveal[0](\"SEBESAR PENGARUH Y...\") overlaps Arrow[1] (est. 100% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor",
+          "COLLISION: WordReveal[0](\"SEBESAR PENGARUH Y...\") overlaps Circle[4] (est. 100% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor",
+          "COLLISION: WordReveal[0](\"SEBESAR PENGARUH Y...\") overlaps Circle[5] (est. 46% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor",
+          "1 element delay > 1.4s (reference staggers quickly)"
+        ]
+      },
+      {
+        "sceneId": "scene_08",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 10,
+          "motion": 9,
+          "density": 10,
+          "negativeSpace": 8.5
+        },
+        "overall": 9.6,
+        "evidence": [
+          "1 element delay > 1.4s (reference staggers quickly)"
+        ]
+      },
+      {
+        "sceneId": "scene_09",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 7,
+          "composition": 6.5,
+          "motion": 9,
+          "density": 10,
+          "negativeSpace": 10
+        },
+        "overall": 8.9,
+        "evidence": [
+          "distinct accents: teal, gold (one dominant accent rule)",
+          "grammar \"objectDominant\" absent from reference shares (allowed by spec, off-language)",
+          "1 element delay > 1.4s (reference staggers quickly)"
+        ]
+      }
+    ],
+    "overall": 9,
+    "method": "structural checks against reference-derived design tokens + rendered-frame luma/text/accent stats (no pixel similarity)"
+  },
+  "semantic": {
+    "scenes": [
+      {
+        "sceneId": "scene_01",
+        "semanticRelevance": 8,
+        "visualStorytelling": 6,
+        "evidenceCoverage": 2,
+        "subtitleCoverage": 0,
+        "richness": 3,
+        "source": "vision-judge",
+        "evidenceGaps": [
+          "drained progress bar is tiny and low in frame, easy to miss",
+          "empty speech bubble meaning ambiguous without motion",
+          "person icon small relative to text-heavy headline"
+        ]
+      },
+      {
+        "sceneId": "scene_02",
+        "semanticRelevance": 8,
+        "visualStorytelling": 6.5,
+        "evidenceCoverage": 1.6,
+        "subtitleCoverage": 0,
+        "richness": 3,
+        "source": "vision-judge",
+        "evidenceGaps": [
+          "no mirror/loop element — 'MIRROR RING NEVER SETTLES' not demonstrated",
+          "check repeated self-monitoring shown only as two static bubbles with text"
+        ]
+      },
+      {
+        "sceneId": "scene_03",
+        "semanticRelevance": 8,
+        "visualStorytelling": 5.5,
+        "evidenceCoverage": 1,
+        "subtitleCoverage": 0,
+        "richness": 3,
+        "source": "vision-judge",
+        "evidenceGaps": [
+          "post does not visibly vanish — card still fully present and lit",
+          "no motion cue for dissolution in the still",
+          "0 VIEWS counter carries almost all meaning, layout is text+shape"
+        ]
+      },
+      {
+        "sceneId": "scene_04",
+        "semanticRelevance": 7,
+        "visualStorytelling": 5.5,
+        "evidenceCoverage": 1.8,
+        "subtitleCoverage": 10,
+        "richness": 10,
+        "source": "vision-judge",
+        "evidenceGaps": [
+          "99% label isolated top-right, spatially detached from the bar",
+          "no 0% state shown, regression not readable from the frame",
+          "subtitle collides with NGEJUDGE/NGOMONGIN labels at bottom"
+        ]
+      },
+      {
+        "sceneId": "scene_05",
+        "semanticRelevance": 8.5,
+        "visualStorytelling": 6.5,
+        "evidenceCoverage": 0.4,
+        "subtitleCoverage": 0,
+        "richness": 2.4,
+        "source": "vision-judge",
+        "evidenceGaps": [
+          "left action rows and right verdict rows read as roughly aligned — 'TWO COLUMNS THAT NEVER ALIGN' not visible",
+          "no collision/offset gesture showing meaning being inverted"
+        ]
+      },
+      {
+        "sceneId": "scene_06",
+        "semanticRelevance": 8.5,
+        "visualStorytelling": 6,
+        "evidenceCoverage": 1.8,
+        "subtitleCoverage": 10,
+        "richness": 10,
+        "source": "vision-judge",
+        "evidenceGaps": [
+          "no visible slot/machine feeding the tape — 'one unreading slot' absent",
+          "connector line stops midway, does not link inputs to all four verdicts",
+          "subtitle overlaps DITERTAWAKAN at bottom edge"
+        ]
+      },
+      {
+        "sceneId": "scene_07",
+        "semanticRelevance": 8.5,
+        "visualStorytelling": 6,
+        "evidenceCoverage": 2,
+        "subtitleCoverage": 0,
+        "richness": 3,
+        "source": "vision-judge",
+        "evidenceGaps": [
+          "two circles imply degrees but no aperture/gap visibly widening or restricting flow",
+          "arrows approach but do not pass through a narrowing opening",
+          "mixed teal + gold accents dilute single-accent rule"
+        ]
+      },
+      {
+        "sceneId": "scene_08",
+        "semanticRelevance": 7,
+        "visualStorytelling": 4.5,
+        "evidenceCoverage": 2.7,
+        "subtitleCoverage": 10,
+        "richness": 10,
+        "source": "vision-judge",
+        "evidenceGaps": [
+          "missing: opinion stack flush against wall",
+          "missing: teal thread passing through a narrowing aperture",
+          "grid+line abstract; blocking/passing mechanism not demonstrated",
+          "bottom subtitle clipped/overlined"
+        ]
+      },
+      {
+        "sceneId": "scene_09",
+        "semanticRelevance": 8.5,
+        "visualStorytelling": 6.5,
+        "evidenceCoverage": 0.8,
+        "subtitleCoverage": 0,
+        "richness": 3,
+        "source": "vision-judge",
+        "evidenceGaps": [
+          "SEMUA ORANG label sits beside headline, not on the bullseye",
+          "LU label floats far from target, relabel relationship not decoded from pixels",
+          "center dot unchanged, so the relabel change is not visible in a still"
+        ]
+      }
+    ],
+    "overall": {
+      "semanticRelevance": 8,
+      "visualStorytelling": 5.9,
+      "evidenceCoverage": 1.6,
+      "subtitleCoverage": 3.3,
+      "richness": 5.3
+    },
+    "notes": []
+  },
+  "overallQuality": 6.264052287581698,
+  "confidence": 0.99,
+  "variance": 0.073,
+  "status": "fail",
+  "reasons": [
+    "overall quality 6.3 < 8",
+    "slop severity 7 > 6",
+    "visual storytelling 5.9 < 6.5 (scenes display instead of demonstrate)",
+    "evidence coverage 1.6 < 5 (important narration concepts missing visual evidence)",
+    "subtitle coverage 3.3 < 5 (VO not adequately captioned)",
+    "scene_04: technical correctness fail",
+    "scene_04: severe relevance/clarity issue (median relevance 7, clarity 5, scene median 5.71)",
+    "scene_04: severe readability - Bottom caption \"ada yang ngomongin. Padahal...\" overlaps the NGEJUDGE/NGOMONGIN labels — text is unreadable.",
+    "scene_06: technical correctness fail",
+    "scene_06: severe relevance/clarity issue (median relevance 7, clarity 5, scene median 6)",
+    "scene_06: severe readability - Subtitle \"dibilang sombong. Lu sukses...\" overlaps red \"DITERTAWAKAN\" at the bottom — unreadable collision.",
+    "scene_07: severe readability - The large teal circle overlaps the tail of \"IZINKAN\" — headline/object collision."
+  ]
+}

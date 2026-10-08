@@ -1,0 +1,1 @@
+Every day you say tomorrow you will change. But tomorrow you repeat the same thing. The gap between who you are and who you want to be is built from tiny choices. Discipline is choosing what you want most over what you want now. Start today. Start small. But start.

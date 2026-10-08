@@ -1,0 +1,10 @@
+{
+  "sceneId": "scene_02",
+  "rootCause": "The strike-through Lines carrying the 'already struck' metaphor are not reading in the rendered frame (words appear clean), and the connector uses variant 'line' so the return loop is ambiguous.",
+  "changesMade": [
+    "Re-anchored both red strike Lines onto their TOMORROW words (matched offsetY, thickness 8px, opacity 1, draw at 0.3s/1.0s, emphasis highlight) so both strikes show in the final frame",
+    "Changed return Arrow variant 'line' to 'curve' (direction up) and raised opacity 0.55→0.7 so it reads as a looping return",
+    "Set second strike to land at the emphasis beat (emphasisAt 1.0); exit dissolve at 2.13 unchanged"
+  ],
+  "expectedEffect": "Both TOMORROW words are visibly struck through, linked by a curved return loop, enacting 'tomorrow you repeat the same thing' as a closed loop of stagnation within 2.13s."
+}

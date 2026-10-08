@@ -1,0 +1,42 @@
+{
+  "$comment": "V2 - reference-derived typography (reference/analysis/findings-typography.json, confidence 0.65 on letterforms, 0.75 on behavior). Fonts bundled in public/fonts - deterministic rendering.",
+  "families": {
+    "display": {
+      "name": "Archivo",
+      "src": ["fonts/archivo-latin-400-normal.woff2", "fonts/archivo-latin-700-normal.woff2", "fonts/archivo-latin-800-normal.woff2", "fonts/archivo-latin-900-normal.woff2"],
+      "cssFamily": "Archivo, Arial, sans-serif",
+      "fallback": "Arial, sans-serif",
+      "provenance": { "source": "reference = bold grotesque (vision conf 0.65); Archivo adopted as closest bundled grotesque", "confidence": 0.65 }
+    },
+    "body": {
+      "name": "Inter",
+      "src": ["fonts/inter-latin-400-normal.woff2", "fonts/inter-latin-600-normal.woff2", "fonts/inter-latin-700-normal.woff2"],
+      "cssFamily": "Inter, Arial, sans-serif",
+      "fallback": "Arial, sans-serif",
+      "provenance": { "source": "neutral companion for sublines/labels (reference letterforms unreadable at sample res)", "confidence": 0.5 }
+    }
+  },
+  "scale": {
+    "$comment": "Sizes in px @1080x1920. Reference tiers (landscape 576p): headline ~8% frame height, subline ~3%, micro-label ~1.5%. Portrait short-side mapping: headline 8-9% of 1080 = 86-97px (adopted 96), subline ref 3% = 32px but raised to 52 for phone readability (documented deviation), label ref 1.5% = 16px raised to 34 for legibility (documented deviation).",
+    "headline": { "default": 96, "min": 64, "max": 128, "weight": 900, "lineHeight": 1.08, "letterSpacingEm": -0.02, "uppercase": true, "align": "left", "provenance": { "source": "ref tier1 8% frame height mapped to portrait short side; lineHeight ref ~1.1 tight leading (adopted 1.08)", "confidence": 0.7 } },
+    "subheadline": { "default": 52, "min": 40, "max": 64, "weight": 700, "lineHeight": 1.2, "letterSpacingEm": -0.01, "uppercase": false, "align": "left", "provenance": { "source": "ref tier2 subline regular-weight under headline; size raised vs ref for readability", "confidence": 0.6 } },
+    "label": { "default": 34, "min": 26, "max": 40, "weight": 700, "lineHeight": 1.2, "letterSpacingEm": 0.12, "uppercase": true, "align": "center", "provenance": { "source": "ref micro-labels under objects, center-aligned, slightly wide tracking (conf 0.75); size raised vs ref", "confidence": 0.6 } },
+    "caption": { "default": 30, "min": 24, "max": 36, "weight": 400, "lineHeight": 1.35, "letterSpacingEm": 0.01, "uppercase": false, "align": "left", "provenance": { "source": "ref lighter subtitle tier below subline", "confidence": 0.55 } },
+    "quote": { "default": 64, "min": 48, "max": 84, "weight": 800, "lineHeight": 1.2, "letterSpacingEm": -0.01, "uppercase": false, "align": "left", "provenance": { "source": "derived: between headline and subline tiers for quotation use", "confidence": 0.4 } },
+    "counter": { "default": 140, "min": 88, "max": 200, "weight": 900, "lineHeight": 1, "letterSpacingEm": -0.03, "uppercase": false, "align": "left", "provenance": { "source": "derived: number-led variant of headline tier", "confidence": 0.4 } }
+  },
+  "rules": {
+    "maxHeadlineLines": 4,
+    "maxHeadlineChars": 60,
+    "maxAccentWords": 2,
+    "avoidParagraphsAsPrimaryContent": true,
+    "uppercasePreferredForMajorHeadlines": true,
+    "defaultAlign": "left",
+    "alignmentNote": "Reference blocks are predominantly left-aligned (vision conf 0.75); labels under objects stay centered",
+    "accentEmphasis": "color shift plus weight on key words (reference behavior, conf 0.75)",
+    "textAnimation": "sequential word-by-word reveal, quick fade, left-to-right (reference behavior, conf 0.65) - map to WordReveal",
+    "defaultColor": "text.primary",
+    "neverShrinkToFit": true,
+    "provenance": { "source": "reference/analysis/findings-typography.json + MASTER_SPEC 2.3", "confidence": 0.7 }
+  }
+}

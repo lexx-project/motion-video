@@ -1,0 +1,124 @@
+{
+  "selections": [
+    {
+      "beatId": "b1",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "semanticRelevance": 9,
+        "viewerComprehension": 9,
+        "metaphorStrength": 8,
+        "visualStorytelling": 8,
+        "relationshipClarity": 9,
+        "motionOpportunity": 8,
+        "typographyHierarchy": 8,
+        "subtitleIntegration": 8,
+        "referenceConformance": 9,
+        "compositionQuality": 8,
+        "novelty": 7,
+        "semanticDensity": 8,
+        "antiSlop": 8
+      },
+      "selectionRationale": "The notched vessel makes each landed 'YES' drain exactly one notch, so the depletion mechanism becomes countable rather than merely stated. Its leftTextRightObject layout with one headline and one dominant object fits the reference grammar and the restrained, staged motion budget."
+    },
+    {
+      "beatId": "b2",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "semanticRelevance": 9,
+        "viewerComprehension": 8,
+        "metaphorStrength": 9,
+        "visualStorytelling": 8,
+        "relationshipClarity": 9,
+        "motionOpportunity": 9,
+        "typographyHierarchy": 8,
+        "subtitleIntegration": 8,
+        "referenceConformance": 9,
+        "compositionQuality": 8,
+        "novelty": 9,
+        "semanticDensity": 8,
+        "antiSlop": 8
+      },
+      "selectionRationale": "The answer itself morphs to fit each incoming slot, so self-betrayal is enacted by the object's own transformation rather than described. leftTextRightObject with staggered morphs fits the reference grammar and stays clear of prior flip/repetition solutions."
+    },
+    {
+      "beatId": "b3",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "semanticRelevance": 9,
+        "viewerComprehension": 8,
+        "metaphorStrength": 9,
+        "visualStorytelling": 8,
+        "relationshipClarity": 7,
+        "motionOpportunity": 9,
+        "typographyHierarchy": 9,
+        "subtitleIntegration": 8,
+        "referenceConformance": 8,
+        "compositionQuality": 8,
+        "novelty": 7,
+        "semanticDensity": 7,
+        "antiSlop": 8
+      },
+      "selectionRationale": "c1's semantic satiation mechanism literally performs the narration: three staggered YES lines decay crisp → tight → smear, so the viewer watches repetition itself destroy legibility and meaning. TypographyDominant with a single hairline accent stays inside the bible and avoids memory's strikethrough-loop and meter tropes."
+    },
+    {
+      "beatId": "b4",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "semanticRelevance": 9,
+        "viewerComprehension": 9,
+        "metaphorStrength": 9,
+        "visualStorytelling": 8,
+        "relationshipClarity": 9,
+        "motionOpportunity": 7,
+        "typographyHierarchy": 8,
+        "subtitleIntegration": 8,
+        "referenceConformance": 9,
+        "compositionQuality": 9,
+        "novelty": 9,
+        "semanticDensity": 8,
+        "antiSlop": 9
+      },
+      "selectionRationale": "The contrast mechanism makes the meaning pre-verbal: smeared self-copies ARE accumulated re-editing, while the single crisp teal mark IS the remembered answer — clarity versus dilution, not labeling. Low complexity, split grammar, and restrained stagger keep it on-bible and far from the dial/timeline solutions in memory."
+    },
+    {
+      "beatId": "b5",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "semanticRelevance": 9,
+        "viewerComprehension": 9,
+        "metaphorStrength": 8,
+        "visualStorytelling": 8,
+        "relationshipClarity": 9,
+        "motionOpportunity": 8,
+        "typographyHierarchy": 8,
+        "subtitleIntegration": 8,
+        "referenceConformance": 9,
+        "compositionQuality": 8,
+        "novelty": 8,
+        "semanticDensity": 8,
+        "antiSlop": 9
+      },
+      "selectionRationale": "The counter refuses to increment as edit ticks accumulate, making the input/output asymmetry of unpaid approval instantly readable: effort is logged, payoff stays '00'. Its leftTextRightObject layout and counterChange motion conform to the bible while avoiding the loop and filter-gate solutions already used in project memory."
+    },
+    {
+      "beatId": "b6",
+      "selectedCandidateId": "c5",
+      "scores": {
+        "semanticRelevance": 9,
+        "viewerComprehension": 9,
+        "metaphorStrength": 9,
+        "visualStorytelling": 8,
+        "relationshipClarity": 9,
+        "motionOpportunity": 8,
+        "typographyHierarchy": 8,
+        "subtitleIntegration": 8,
+        "referenceConformance": 9,
+        "compositionQuality": 8,
+        "novelty": 8,
+        "semanticDensity": 8,
+        "antiSlop": 9
+      },
+      "selectionRationale": "Deflected teal arrows striking a plumb gold line make 'hold the decision under pressure' readable without words: opposition arrives, the chosen direction does not bend. It carries the 'stay with it' narration more physically than the gauge lock (needle already used in memory) or the split contrast (same device as an earlier waveform scene), while staying asymmetric, sparse, and semantically single-accent."
+    }
+  ]
+}

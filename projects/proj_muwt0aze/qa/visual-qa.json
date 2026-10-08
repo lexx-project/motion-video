@@ -1,0 +1,231 @@
+{
+  "evaluatorCount": 3,
+  "projectStatus": "needs_repair",
+  "overall": {
+    "scriptRelevance": 7,
+    "visualClarity": 7,
+    "designConsistency": 7,
+    "typography": 7,
+    "composition": 7,
+    "motionQuality": 7,
+    "novelty": 6,
+    "aiSlopSeverity": 3,
+    "technicalCorrectness": "fail",
+    "stats": {
+      "mean": 6.86,
+      "median": 6.86,
+      "variance": 0.014,
+      "confidence": 1
+    }
+  },
+  "scenes": [
+    {
+      "sceneId": "scene_01",
+      "scores": {
+        "scriptRelevance": 7,
+        "visualClarity": 7,
+        "designConsistency": 8,
+        "typography": 7,
+        "composition": 7,
+        "motionQuality": 7,
+        "novelty": 6,
+        "aiSlopSeverity": 3
+      },
+      "stats": {
+        "mean": 6.9,
+        "median": 7,
+        "variance": 0.127,
+        "confidence": 0.98
+      },
+      "technicalCorrectness": "pass",
+      "issues": [],
+      "recommendedRepair": []
+    },
+    {
+      "sceneId": "scene_02",
+      "scores": {
+        "scriptRelevance": 8,
+        "visualClarity": 7,
+        "designConsistency": 6,
+        "typography": 8,
+        "composition": 7,
+        "motionQuality": 7,
+        "novelty": 7,
+        "aiSlopSeverity": 3
+      },
+      "stats": {
+        "mean": 7.19,
+        "median": 7.14,
+        "variance": 0.032,
+        "confidence": 0.99
+      },
+      "technicalCorrectness": "pass",
+      "issues": [],
+      "recommendedRepair": []
+    },
+    {
+      "sceneId": "scene_03",
+      "scores": {
+        "scriptRelevance": 6,
+        "visualClarity": 7,
+        "designConsistency": 8,
+        "typography": 8,
+        "composition": 7,
+        "motionQuality": 6,
+        "novelty": 5,
+        "aiSlopSeverity": 3
+      },
+      "stats": {
+        "mean": 6.57,
+        "median": 6.57,
+        "variance": 0.218,
+        "confidence": 0.96
+      },
+      "technicalCorrectness": "pass",
+      "issues": [
+        "Headline breaks 'NGGAK' and 'SUKA' onto separate lines — 4-line stack with awkward orphan line in frame.",
+        "Concept 'spot returns after every wipe' renders as one static gold dot; no return/residue cue in frame, metaphor weak.",
+        "Label sits ~180px below headline with a large dead gap; gold dot is only ~8% width, so the frame reads empty, not composed."
+      ],
+      "recommendedRepair": [
+        "Rebreak as 2 lines 'PASTI ADA AJA / YANG NGGAK SUKA' at same 96px to remove the orphan.",
+        "Add 2 faint fading ghost dots beside the gold dot to cue the spot reappearing after each wipe.",
+        "Raise label to ~40px under headline and scale dot ~1.5× to tighten the vertical rhythm."
+      ]
+    },
+    {
+      "sceneId": "scene_04",
+      "scores": {
+        "scriptRelevance": 7,
+        "visualClarity": 7,
+        "designConsistency": 8,
+        "typography": 8,
+        "composition": 7,
+        "motionQuality": 6,
+        "novelty": 5,
+        "aiSlopSeverity": 3
+      },
+      "stats": {
+        "mean": 6.76,
+        "median": 6.86,
+        "variance": 0.127,
+        "confidence": 0.98
+      },
+      "technicalCorrectness": "fail",
+      "issues": [
+        "Spec requires two arrows (180° flip pair); frame shows a single up-arrow — the 'selalu dibalik' contradiction has no visual pair.",
+        "Only 2 of 4 verdict pairs shown; 'LU SUKES → BERUNTUNG' and 'LU GAGAL → DITERTAWAKAN' missing from label block.",
+        "Arrow is thin, ~5% of frame height, floating far above headline — reads as decoration, not a gauge needle."
+      ],
+      "recommendedRepair": [
+        "Add mirrored down-arrow next to the up-arrow to show the 180° reversal.",
+        "Stagger in the two missing verdict pairs under the existing label block.",
+        "Enlarge arrow ~1.5× and lower it closer to the headline so it reads as the needle."
+      ]
+    },
+    {
+      "sceneId": "scene_05",
+      "scores": {
+        "scriptRelevance": 7,
+        "visualClarity": 6,
+        "designConsistency": 6,
+        "typography": 8,
+        "composition": 7,
+        "motionQuality": 6,
+        "novelty": 6,
+        "aiSlopSeverity": 3
+      },
+      "stats": {
+        "mean": 6.57,
+        "median": 6.57,
+        "variance": 0.014,
+        "confidence": 1
+      },
+      "technicalCorrectness": "fail",
+      "issues": [
+        "Spec's two Line primitives (the tether slipping from the grip) are absent; frame has only circle+dot, so 'tether slips past the grip' is unreadable.",
+        "Two accents coexist: gold words 'BISA NGONTROL' and teal circle/dot — violates one-dominant-accent rule.",
+        "Indicator dot + 'YANG BISA LU PEGANG' sits at far-left mid-height, disconnected from the circle — reads as a stray caption."
+      ],
+      "recommendedRepair": [
+        "Draw a thin line from dot to circle with its end slid past the dot (visible gap) to show the slip.",
+        "Recolor headline accent words to teal so only teal remains the scene accent.",
+        "Anchor dot+label to the line's loose end near the circle, inside the 8% margin."
+      ]
+    },
+    {
+      "sceneId": "scene_06",
+      "scores": {
+        "scriptRelevance": 8,
+        "visualClarity": 7,
+        "designConsistency": 7,
+        "typography": 7,
+        "composition": 7,
+        "motionQuality": 7,
+        "novelty": 7,
+        "aiSlopSeverity": 3
+      },
+      "stats": {
+        "mean": 6.95,
+        "median": 7.29,
+        "variance": 0.222,
+        "confidence": 0.96
+      },
+      "technicalCorrectness": "pass",
+      "issues": [],
+      "recommendedRepair": []
+    },
+    {
+      "sceneId": "scene_07",
+      "scores": {
+        "scriptRelevance": 9,
+        "visualClarity": 8,
+        "designConsistency": 8,
+        "typography": 8,
+        "composition": 8,
+        "motionQuality": 7,
+        "novelty": 7,
+        "aiSlopSeverity": 2
+      },
+      "stats": {
+        "mean": 7.95,
+        "median": 7.71,
+        "variance": 0.113,
+        "confidence": 0.98
+      },
+      "technicalCorrectness": "pass",
+      "issues": [],
+      "recommendedRepair": []
+    },
+    {
+      "sceneId": "scene_08",
+      "scores": {
+        "scriptRelevance": 7,
+        "visualClarity": 6,
+        "designConsistency": 6,
+        "typography": 5,
+        "composition": 6,
+        "motionQuality": 7,
+        "novelty": 6,
+        "aiSlopSeverity": 4
+      },
+      "stats": {
+        "mean": 6.29,
+        "median": 6.29,
+        "variance": 0.014,
+        "confidence": 1
+      },
+      "technicalCorrectness": "fail",
+      "issues": [
+        "Headline stacks 6 lines ('LU NGGAK'…'ORANG') over the grid tiles, exceeding the max-4-lines rule and overlapping the object.",
+        "Label 'TETAP UTUH — TANPA DIPAKSA' is crammed into 3 short lines in a narrow top-right column, colliding with the headline zone.",
+        "Grid tiles are near-invisible dark and the gold circle overlaps them ambiguously — 'one shape declines the mould' doesn't read."
+      ],
+      "recommendedRepair": [
+        "Rebreak headline to 3 lines: 'LU NGGAK DICIPTAIN / BUAT DISUKAI / SEMUA ORANG' at same 96px.",
+        "Move label to a single-line caption below the circle, clear of the headline column.",
+        "Lighten tiles ~10% and knock out/clear tiles behind the circle so the outlier shape is unmistakable."
+      ]
+    }
+  ]
+}

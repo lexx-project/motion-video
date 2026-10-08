@@ -1,0 +1,83 @@
+{
+ "status": "fail",
+ "overall": "6.16",
+ "conf": 0.99,
+ "conformance": 8.7,
+ "slop": 7,
+ "semantic": {
+  "semanticRelevance": 5.6,
+  "visualStorytelling": 3.7,
+  "evidenceCoverage": 3.3,
+  "subtitleCoverage": 10,
+  "richness": 10
+ },
+ "scenes": [
+  {
+   "id": "scene_01",
+   "med": 6.57,
+   "conf": 0.99,
+   "tech": "pass",
+   "rel": 6,
+   "issues": 4
+  },
+  {
+   "id": "scene_02",
+   "med": 5.86,
+   "conf": 0.97,
+   "tech": "pass",
+   "rel": 6,
+   "issues": 3
+  },
+  {
+   "id": "scene_03",
+   "med": 6,
+   "conf": 0.99,
+   "tech": "fail",
+   "rel": 7,
+   "issues": 4
+  },
+  {
+   "id": "scene_04",
+   "med": 4.29,
+   "conf": 0.97,
+   "tech": "fail",
+   "rel": 3,
+   "issues": 3
+  },
+  {
+   "id": "scene_05",
+   "med": 6.43,
+   "conf": 0.99,
+   "tech": "fail",
+   "rel": 5,
+   "issues": 3
+  },
+  {
+   "id": "scene_06",
+   "med": 6,
+   "conf": 0.99,
+   "tech": "pass",
+   "rel": 6,
+   "issues": 4
+  }
+ ],
+ "reasons": [
+  "overall quality 6.2 < 8",
+  "slop severity 7 > 6",
+  "semantic relevance 5.6 < 6.5 (visuals not carrying the narration's meaning)",
+  "visual storytelling 3.7 < 6.5 (scenes display instead of demonstrate)",
+  "evidence coverage 3.3 < 5 (important narration concepts missing visual evidence)",
+  "scene_04: semantic relevance 4.5 - struck answer hairlines, baseline and surviving teal line all absent GÇö frame is nearly empty; no decay-vs-conviction comparison; only a tiny 'HELD' label floats in negative space",
+  "scene_02: severe relevance/clarity issue (median relevance 6, clarity 5, scene median 5.86)",
+  "scene_02: severe readability - Top two circles overlap into an illegible blob; spec's single rail Line is missing, so 'one YES stretched on a rail' doesn't read.",
+  "scene_03: technical correctness fail",
+  "scene_03: severe relevance/clarity issue (median relevance 7, clarity 5, scene median 6)",
+  "scene_03: severe readability - Giant 'YES' word is clipped hard at the right frame edge GÇö only 'YEs' partially visible, unreadable overflow.",
+  "scene_04: technical correctness fail",
+  "scene_04: severe relevance/clarity issue (median relevance 3, clarity 3, scene median 4.29)",
+  "scene_05: technical correctness fail",
+  "scene_05: severe relevance/clarity issue (median relevance 5, clarity 6, scene median 6.43)",
+  "scene_06: severe relevance/clarity issue (median relevance 6, clarity 5, scene median 6)",
+  "scene_06: severe readability - Headline 'HOLD ONE LINE' overlaps the teal ring's right edge, violating text/object separation and crowding the object."
+ ]
+}

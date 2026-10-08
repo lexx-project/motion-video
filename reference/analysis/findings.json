@@ -1,0 +1,181 @@
+{
+  "identity": {
+    "visualCharacter": "Minimalist flat motion-graphics explainer with bold uppercase kinetic typography over dark, moody backgrounds; calm, typographic, editorial feel with a social-quote branding aesthetic",
+    "backgroundTreatment": "Solid very dark desaturated teal/near-black fields with a soft radial vignette darkening the edges; occasional shift to a dark warm brown variant for contrast; faint texture, otherwise clean and uncluttered",
+    "visualDensity": "moderate",
+    "negativeSpace": "Extremely generous — typically one text block plus a single flat icon per frame, leaving roughly 60-70% of the frame empty; transition frames (image 6) are almost entirely empty negative space with only a fading word",
+    "objectStyle": "Flat vector minimalism: outline clocks with thin tick marks and simple hands, rounded-corner human avatar pictograms, dashed placeholder squares, and a rounded speech-bubble logo; uniform thin-to-medium strokes, no gradients or shadows, muted teal fills with white/yellow accents",
+    "lighting": "Flat, even, non-directional digital lighting with no cast shadows; vignette acts as the only luminance variation, pulling focus toward the bright center",
+    "contrast": "High typographic contrast — bright white or saturated accent text against near-black backgrounds; accents limited to a small palette (magenta/pink, golden yellow, teal) so color itself creates emphasis",
+    "visualHierarchy": "Hierarchy is driven by type size, weight, and accent color: large bold uppercase headline first (white line + colored emphasis line), smaller lighter subtitle beneath, and a small caption/label under the single supporting icon; eye path is left-aligned text block → right-side or lower icon → label",
+    "confidence": 0.88,
+    "evidence": [
+      "Contact sheet shows consistent two-element layouts: bold headline plus one clock/avatar icon across nearly all 25 thumbnails",
+      "Image 2: white bold headline 'KALAU KAMU BENERAN NGGAK KUAT' with pink second line, small subtitle, single teal avatar icon on a dark vignetted teal field",
+      "Image 3: white and golden-yellow headline left, single outline clock right, large empty space around both",
+      "Image 4: three clocks with small labeled tags (RAME/PELAN/BEKU) above a two-line white-and-gold caption — a rare but still evenly spaced, symmetric arrangement",
+      "Image 5: background switches to dark warm brown; pink accent line and dashed-outline square icon with tiny caption",
+      "Image 6: nearly empty dark frame with only faint word 'BUKAN' top-left, demonstrating transition negative space",
+      "Image 7: centered speech-bubble logo, '@talkquote' wordmark, and thin letterspaced tagline — clean end-card composition"
+    ],
+    "lowConfidenceNotes": [
+      "Video is static frames only — actual motion, easing, and transition timing cannot be assessed",
+      "Exact background hue varies between dark teal and dark brown; unclear whether this is a deliberate palette shift or frame-to-frame color grading",
+      "Subtitles and small caption text are too low-resolution to read reliably",
+      "Contrast/lighting behavior during animated states (flashes, glows) cannot be confirmed from stills"
+    ]
+  },
+  "typography": {
+    "fontCategory": "grotesque",
+    "weight": "bold headlines, regular sublines",
+    "casing": "uppercase-preferred",
+    "sizeHierarchy": [
+      "tier1: headline ~8% of frame height",
+      "tier2: subline ~3% of frame height",
+      "tier3: micro-label ~1.5% of frame height"
+    ],
+    "alignment": "left-aligned block",
+    "tracking": "slightly wide tracking on uppercase labels",
+    "wordEmphasis": "color shift (pink/yellow) plus weight on key words",
+    "textDensity": "moderate",
+    "textAnimation": "sequential word-by-word reveal with quick fade-in, left to right",
+    "confidence": 0.65,
+    "evidence": [
+      "Headline 'KALAU KAMU BENERAN' in heavy uppercase, left-aligned",
+      "Second line 'NGGAK KUAT' highlighted in pink/red",
+      "Subline 'HARUSNYA...' builds word by word across frames",
+      "Yellow highlight on 'MINDAHIN JAM' in clock scene",
+      "Small centered labels 'MENIT', 'COBA' under clock"
+    ],
+    "lowConfidenceNotes": [
+      "Exact letterforms hard to judge at low resolution; could be condensed grotesque or geometric",
+      "Some frames contain no text, making animation read partially inferred",
+      "Micro-label text below frame is unreadable"
+    ]
+  },
+  "colors": {
+    "background": {
+      "value": "#0b1313",
+      "confidence": 0.9
+    },
+    "textPrimary": {
+      "value": "#f4f2ed",
+      "confidence": 0.85
+    },
+    "textSecondary": {
+      "value": "#b5b1a7",
+      "confidence": 0.7
+    },
+    "accents": [
+      {
+        "role": "warning",
+        "value": "#e8475f",
+        "semantic": "pink-red used on negative/defeat phrases like 'NGGAK KUAT'",
+        "confidence": 0.65
+      },
+      {
+        "role": "important",
+        "value": "#f5c54d",
+        "semantic": "yellow used to highlight key words 'MINDAHIN JAM' and the clock hand",
+        "confidence": 0.7
+      },
+      {
+        "role": "other",
+        "value": "#7fd1bd",
+        "semantic": "mint-teal brand color for avatar figure, quote-mark logo and @talkquote branding",
+        "confidence": 0.75
+      }
+    ],
+    "warmCoolBalance": "Cool-dominant: dark teal-green background and mint accents carry most frames; warmth appears as accents (yellow, pink-red) and one brown-graded transition frame",
+    "overallLuma": "dark",
+    "reconcileWithSamples": "Background samples (#0a1212/#0b1212/#0a1111) align directly with my #0b1313 estimate; frame 4 adds a teal vignette tint but the base stays near-black. Sampled text primaries (#b5b1a7–#cbbeb2) are 48x27 downscales that blend white glyphs with the near-black background, so true headline white is brighter, ~#f4f2ed. avgFrameLuma 24.8 confirms overall dark exposure.",
+    "confidence": 0.78,
+    "lowConfidenceNotes": [
+      "Accent hexes (#e8475f, #f5c54d, #7fd1bd) were read from full frames, not pixel-sampled; hue/saturation estimates are ±10.",
+      "Frame 3's warm brown background may be a graded transition rather than a true palette color, so it is not counted as the dominant background.",
+      "Exact secondary-text grey is uncertain (0.7) because small subtitle text was diluted in the samples."
+    ]
+  },
+  "composition": {
+    "recurringGrammars": [
+      {
+        "grammar": "leftTextRightObject",
+        "shareEstimate": 0.3,
+        "confidence": 0.85
+      },
+      {
+        "grammar": "centered",
+        "shareEstimate": 0.2,
+        "confidence": 0.8
+      },
+      {
+        "grammar": "topTextBottomObject",
+        "shareEstimate": 0.15,
+        "confidence": 0.7
+      },
+      {
+        "grammar": "bottomTextTopObject",
+        "shareEstimate": 0.15,
+        "confidence": 0.7
+      },
+      {
+        "grammar": "typographyDominant",
+        "shareEstimate": 0.1,
+        "confidence": 0.6
+      },
+      {
+        "grammar": "asymmetric",
+        "shareEstimate": 0.1,
+        "confidence": 0.6
+      }
+    ],
+    "spacingPatterns": [
+      "Text blocks left-align with ~8% side margins; objects sit ~10% from right edge",
+      "Multi-line headlines use tight leading (~1.1x) with larger gaps (~2x line height) to subtitles",
+      "Horizontal gap between text column and object spans roughly 15-20% of frame width",
+      "Labels under objects (e.g. RAME/PELAN/BEKU) center-aligned, small gap ~4% frame height"
+    ],
+    "proportions": "Text occupies the left 40-55% of frame width; single icon/object occupies right 20-30%. Split scenes place objects in top 60% with caption band in bottom 30-35%. Centered end-card stacks symbol (top 40%), handle (middle), tagline (bottom 15%).",
+    "safeMargins": "Keep essential text inside ~8% left/right and ~12% top/bottom margins; icons stay at least 10% from edges; bottom caption band clears edge by ~10%.",
+    "confidence": 0.75,
+    "evidence": [
+      "Frames 1 and 4 show headline text left, clock/figure object right",
+      "Frame 2 places title at top with clock below-left and dashed square right",
+      "Frame 5 shows three clocks top with two-line caption at bottom",
+      "Frame 6 is a centered logo, handle, and tagline stack",
+      "Frame 3 is near-empty dark frame with faint top-left word, likely transition"
+    ],
+    "lowConfidenceNotes": [
+      "Only 6 frames sampled; frame 3 is nearly blank so its grammar is inferred from a faint word",
+      "Share estimates approximate frame clusters rather than full timeline durations",
+      "Frame 2 could read as dualObject instead of topTextBottomObject"
+    ]
+  },
+  "motion": {
+    "entrance": "Elements enter via progressive staged reveal: headline lines appear one after another (first line, then accent-colored second line), and small UI card icons pop in sequentially along a horizontal row; entrances are subtle fades/small positional settles rather than large off-screen travel.",
+    "exit": "Exits are not clearly observable within the sampled frames; scene changes appear to replace content wholesale (cut/dissolve to a new layout) rather than showing individual elements animating out.",
+    "objectMovement": "The simplified human figure and card row are largely static once placed; the figure only changes position between scene layouts (center in one scene, right side in another), indicating layout repositioning across cuts rather than continuous on-screen motion.",
+    "textMovement": "Text appears to reveal progressively left-to-right/top-to-bottom, with later words/lines trailing in as if typed or word-by-word; final resting positions are fixed, with no visible drift after the reveal completes.",
+    "scaleBehavior": "Scale changes are minimal — elements seem to settle at full size with, at most, a slight fade-up or micro scale-in on cards; the overall measured diff (0.0112) implies no dramatic scaling.",
+    "easing": "Smooth, restrained easing with soft settles; no visible bounce or overshoot in the sampled frames, leaning toward ease-out rather than snappy or springy motion.",
+    "transitionBehavior": "Between sequences the background color, layout, and composition change completely (teal → warm brown → teal → brown), suggesting hard cuts or quick cross-dissolves paired with fresh staged text entrances rather than continuous element carryover.",
+    "motionDensity": "restrained",
+    "camera": "Static camera with fixed framing; no panning, zooming, or parallax detectable — motion comes from content reveals within a locked frame.",
+    "emphasis": "Emphasis is achieved typographically and through color: accent lines switch to teal/pink-red, staggered line-by-line reveals draw attention to key phrases rather than through motion accents.",
+    "confidence": 0.65,
+    "evidence": [
+      "Global mean normalized RGB diff = 0.0112 indicates very low frame-to-frame change",
+      "Frame A1 shows only 'KALAU' while A2–A3 show progressively completed two-line headline, indicating staged text reveal",
+      "A3 adds a row of card icons at lower-left that were absent earlier, showing sequential element pop-in",
+      "Frames A4–A5 show a new scene with headline completing and second label 'UDAH KENAL RIBETNYA' appearing, confirming staggered entrances",
+      "Sequence B frames 8–9 show 'HARUSNYA KAMU BERHENTI DI HARI' typing/revealing progressively under a fixed headline",
+      "Sequence-to-sequence changes swap background color (teal ↔ warm brown) and full layout, indicating cut/dissolve transitions"
+    ],
+    "lowConfidenceNotes": [
+      "Sampled frames do not capture any element actually exiting, so exit behavior is inferred only from scene replacement",
+      "No frame pair shows mid-transition blending, so transition type (hard cut vs. cross-dissolve) cannot be confirmed",
+      "Overshoot or spring behavior cannot be ruled out between unsampled frames given the sparse sampling",
+      "Camera motion cannot be definitively excluded if a very slow, subtle push-in exists below the diff threshold"
+    ]
+  }
+}

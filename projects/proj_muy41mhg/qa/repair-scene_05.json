@@ -1,0 +1,21 @@
+{
+  "sceneId": "scene_05",
+  "issue": "Headline merely repeats the Comparison's first row instead of stating the beat's claim, and a caption-like line sits in the bottom VO band narrating rather than the visual enacting 'whatever you do, someone dislikes it'.",
+  "rootCause": "WordReveal duplicates comparison item 1 (no new beat meaning, gaps: pendapat/orang/lain/penilaian), and the bottom Caption both collides with the system VO band and only narrates the question instead of the frame showing it.",
+  "scope": "minimal",
+  "changesMade": [
+    "Replaced WordReveal text with the beat claim 'PASTI ADA YANG NGGAK SUKA', accent words limited to ['NGGAK SUKA']",
+    "Renamed Comparison labels to 'MAU LU NGAPAIN' / 'PASTI DIDENGER ORANG LAIN' to carry beat vocabulary",
+    "Removed the bottom Caption to keep the VO band clear and eliminate narration-only text",
+    "Kept split composition, stagger entrance, positionShift emphasis at 2.44 and all timing unchanged"
+  ],
+  "preserve": [
+    "Split composition grammar",
+    "Red semantic accent (contradiction/defeat) only, max 2 accent words",
+    "Grotesque WordReveal/Comparison typography style",
+    "Comparison primitive with 4 conflicting action/verdict pairs",
+    "Stagger entrance + positionShift emphasis motion family",
+    "Duration 5.42 and all timing values (entranceAt/emphasisAt/exitAt)"
+  ],
+  "expectedEffect": "The frame now states the beat directly in the headline while the two columns physically show every honest action being flipped by a hostile verdict, enacting 'no matter what you do, someone won't like it' with no text left in the VO band."
+}

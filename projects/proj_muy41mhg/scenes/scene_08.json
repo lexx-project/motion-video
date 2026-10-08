@@ -1,0 +1,274 @@
+{
+  "sceneId": "scene_08",
+  "duration": 3.61,
+  "purpose": "Reframe agency: a walled gap lets only a measured thread of others' opinions into HIDUP LU.",
+  "visualConcept": "sluiceGapOnWall — opinion stack blocked, teal thread through a narrowing aperture",
+  "composition": "leftTextRightObject",
+  "headline": {
+    "text": "LU ATUR YANG MASUK",
+    "accentWords": [
+      "LU ATUR"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "Grid",
+      "position": "left",
+      "scale": 0.6,
+      "delay": 0,
+      "role": "semantic",
+      "purpose": "six identical dim opinion rows: real quantity, inert on their side",
+      "entrance": "stagger"
+    },
+    {
+      "primitive": "Label",
+      "position": "left",
+      "text": "PENDAPAT MEREKA",
+      "size": "sm",
+      "accent": "none",
+      "delay": 0.35,
+      "role": "supporting",
+      "purpose": "names the stacked mass as outside judgments, present and neutral",
+      "entrance": "fade"
+    },
+    {
+      "primitive": "Line",
+      "position": "center",
+      "rotation": 90,
+      "scale": 1.4,
+      "delay": 0.6,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "boundary of control; its single gap size is the decision",
+      "entrance": "draw"
+    },
+    {
+      "primitive": "Line",
+      "position": "bottom",
+      "scale": 0.8,
+      "delay": 0.4,
+      "accent": "none",
+      "role": "supporting",
+      "purpose": "shared baseline tying stack, wall and receiving panel to one stage",
+      "entrance": "fade"
+    },
+    {
+      "primitive": "Indicator",
+      "position": "center",
+      "scale": 0.35,
+      "delay": 0.8,
+      "accent": "teal",
+      "role": "semantic",
+      "purpose": "marks the aperture; narrowing it is the act of regulation",
+      "emphasisAt": 2.4,
+      "emphasis": "subtleScale"
+    },
+    {
+      "primitive": "Line",
+      "position": "right",
+      "scale": 0.45,
+      "delay": 1.5,
+      "accent": "teal",
+      "role": "semantic",
+      "purpose": "thread of influence crossing once, thinner than the rows it came from",
+      "entrance": "draw",
+      "emphasisAt": 2.4,
+      "emphasis": "subtleScale"
+    },
+    {
+      "primitive": "Label",
+      "position": "right",
+      "text": "HIDUP LU",
+      "size": "md",
+      "accent": "teal",
+      "delay": 1,
+      "role": "semantic",
+      "purpose": "protected receiving space; stays empty, stable, one step brighter",
+      "entrance": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "fade",
+    "emphasis": "subtleScale",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 2.6,
+    "exitAt": 3.11
+  },
+  "storyboard": {
+    "beatId": "b8",
+    "spokenMeaning": "You cannot stop others' opinions, but you decide how much of them reaches your life.",
+    "viewerTakeaway": "Opinions stay stacked outside my wall; the gap I set is the only thing that lets them in.",
+    "visualMechanism": "sluiceGapOnWall — opinion stack flush at a walled gap",
+    "visualNarrative": [
+      {
+        "order": 1,
+        "action": "Left column holds the headline; beneath it six dim opinion rows stack flush against a vertical hairline wall, labeled PENDAPAT MEREKA.",
+        "meaning": "Others' opinions are a fixed mass that stays on their side — present, neutral, never erased.",
+        "visualEvidence": "Six equal dim rows end exactly at the center wall line; label PENDAPAT MEREKA sits above them, no row highlighted."
+      },
+      {
+        "order": 2,
+        "action": "A full-height hairline wall draws top-to-bottom down the center, leaving one small mid-height aperture; the right panel HIDUP LU fades in as a clean outline.",
+        "meaning": "The boundary of control is constructed, not given: life is a separate room with an opening you own.",
+        "visualEvidence": "Wall is one continuous 1px line with a single visible gap; right side shows only an outlined space labeled HIDUP LU."
+      },
+      {
+        "order": 3,
+        "action": "One thin teal thread leaves the stack, runs to the wall, passes through the aperture, and stops inside HIDUP LU.",
+        "meaning": "Influence still reaches you, but only as much as the opening allows — measured, not silenced.",
+        "visualEvidence": "Single teal hairline crosses the wall once; its width is clearly thinner than the stacked opinion rows."
+      },
+      {
+        "order": 4,
+        "action": "The aperture narrows to a slit while the thread thins and dims; the HIDUP LU outline holds crisp and brightens one step.",
+        "meaning": "You do not fight the source — you shrink the gap, so judgment carries less weight in your life.",
+        "visualEvidence": "Gap closes to a third; thread luminance drops; HIDUP LU outline stays unchanged and sharper."
+      },
+      {
+        "order": 5,
+        "action": "Headline words LU ATUR settle with a small scale emphasis, frame held static.",
+        "meaning": "The agency claim lands exactly as the gap finishes closing.",
+        "visualEvidence": "LU ATUR scales from 1.03 to 1.0 in teal while everything else stays still."
+      }
+    ],
+    "semanticObjects": [
+      {
+        "objectType": "Label",
+        "semanticRole": "The constant, uncontrollable stream of others' judgments — visible and neutral, never deleted.",
+        "relationship": "Source of the thread; stopped flush at the wall",
+        "importance": 4
+      },
+      {
+        "objectType": "Grid",
+        "semanticRole": "Many voices as repeated identical rows: quantity is real but inert on their side.",
+        "relationship": "Stacked under PENDAPAT MEREKA, blocked by the wall",
+        "importance": 4
+      },
+      {
+        "objectType": "Line",
+        "semanticRole": "The boundary of control: its gap size IS the decision of how much influence passes.",
+        "relationship": "Blocks the stack, frames and regulates the thread",
+        "importance": 5
+      },
+      {
+        "objectType": "Line",
+        "semanticRole": "Makes influence a quantity that can be thinned rather than a force to fight.",
+        "relationship": "Crosses the aperture into HIDUP LU",
+        "importance": 5
+      },
+      {
+        "objectType": "Label",
+        "semanticRole": "Your own life as a protected, sovereign receiving space.",
+        "relationship": "Receives the thread, shielded by the wall",
+        "importance": 4
+      },
+      {
+        "objectType": "Subheadline",
+        "semanticRole": "States the agency claim the geometry proves.",
+        "relationship": "Anchored top-left, aligned to the stack column",
+        "importance": 3
+      }
+    ],
+    "relationships": [
+      {
+        "from": "Opinion stack",
+        "to": "Hairline wall",
+        "relationship": "blocked-by (rows end flush at the wall; only one row continues as the thread)"
+      },
+      {
+        "from": "Wall aperture",
+        "to": "Teal thread",
+        "relationship": "regulates (gap width sets thread width and how far it reaches)"
+      },
+      {
+        "from": "Teal thread",
+        "to": "HIDUP LU panel",
+        "relationship": "enters-through (delivers only a measured amount of outside opinion)"
+      }
+    ],
+    "typographyPlan": {
+      "headline": "LU ATUR SEBESAR APA YANG MASUK",
+      "emphasisWords": [
+        "LU ATUR"
+      ],
+      "supportingText": [
+        "PENDAPAT MEREKA — atas tumpukan",
+        "HIDUP LU — ruang kanan",
+        "Yang lewat cuma sebatas celah"
+      ]
+    },
+    "subtitlePlan": {
+      "enabled": true,
+      "text": "Tapi lu bisa ngontrol… seberapa besar pendapat mereka ngaruh ke hidup lu.",
+      "timing": "full beat, 71.32s–74.93s",
+      "role": "spoken line — kept clear of all glow and geometry, full width bottom"
+    },
+    "motionBeats": [
+      {
+        "order": 1,
+        "action": "Staggered fade-in of the six opinion rows, then the label PENDAPAT MEREKA.",
+        "purpose": "Establishes opinions as an existing passive mass before control appears."
+      },
+      {
+        "order": 2,
+        "action": "Wall draws top-to-bottom as one hairline, pausing to leave the aperture open; panel HIDUP LU fades in.",
+        "purpose": "Builds the boundary as a deliberate act — control is constructed."
+      },
+      {
+        "order": 3,
+        "action": "Teal thread extends from the stack, bends at the wall, slides through the aperture into HIDUP LU (ease-out).",
+        "purpose": "Shows influence flowing only through the opening you allow."
+      },
+      {
+        "order": 4,
+        "action": "Aperture narrows while thread thins and dims; HIDUP LU outline brightens a step.",
+        "purpose": "The reframe: shrinking the gap, not fighting the source, is the control."
+      },
+      {
+        "order": 5,
+        "action": "LU ATUR settles with a 1.03→1.0 subtleScale; frame static for the final half-second.",
+        "purpose": "Lands the agency claim as the gap finishes closing."
+      }
+    ],
+    "compositionIntent": "leftTextRightObject: headline and opinion stack anchored left (~8% margin), center a full-height hairline wall with one mid-height aperture, right an outlined HIDUP LU space crossed by a single thin teal thread. One accent (teal) only, glow absent or tiny behind HIDUP LU, ~65% negative space, caption on its own clear bottom band.",
+    "visualEvidence": [
+      "Opinion rows end exactly flush against the wall — only one row continues as a thread.",
+      "Thread is visibly thinner than the rows and dims as the aperture narrows.",
+      "HIDUP LU stays empty and stable: life protected, opinions still present.",
+      "Subtitle band is fully clear of geometry and glow; headline fits within 4 lines."
+    ],
+    "forbiddenInterpretations": [
+      "No gold or second accent anywhere — teal is the only accent, white for all other emphasis.",
+      "No dial, gauge, or rotating knob (repeat of the noise-dial mechanism).",
+      "No glow blob touching the caption; no lens flare, no particles.",
+      "Opinions never deleted, struck out, or shown in red — neutral dim rows only.",
+      "No empty unlabeled card: every panel carries its label.",
+      "No person silhouette, no converging arrows, no extra headline block."
+    ],
+    "noveltyIntent": "Control is staged as sluice-gap sizing on a physical wall — flow limited by aperture width — instead of the dial, spotlight, or grid devices used before.",
+    "elementBudget": {
+      "min": 7,
+      "max": 9
+    }
+  },
+  "subtitle": {
+    "enabled": true,
+    "role": "spoken line — kept clear of all glow and geometry, full width bottom",
+    "phrases": [
+      {
+        "text": "bisa ngontrol apa yang",
+        "start": 0.02,
+        "end": 1.83
+      },
+      {
+        "text": "orang lain pikirin. Tapi",
+        "start": 1.83,
+        "end": 3.61
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$comment": "V2 - reference-derived motion (reference/analysis/findings-motion.json conf 0.65 + deterministic frame-diff 0.0112). SPEC: MASTER_SPEC section 6. Durations in seconds.",
+  "vocabulary": {
+    "entrance": ["fade", "reveal", "slide", "scale", "draw", "stagger"],
+    "emphasis": ["subtleScale", "positionShift", "highlight", "glow", "counterChange", "controlledReveal"],
+    "exit": ["fade", "slide", "dissolve", "maskedTransition"]
+  },
+  "durations": {
+    "entrance": { "min": 0.3, "default": 0.55, "max": 1.0 },
+    "emphasis": { "min": 0.2, "default": 0.4, "max": 0.8 },
+    "exit": { "min": 0.25, "default": 0.45, "max": 0.8 },
+    "staggerStep": { "min": 0.06, "default": 0.09, "max": 0.16 },
+    "scene": { "min": 1.8, "default": 4.0, "max": 9.0 }
+  },
+  "easings": {
+    "entrance": "cubic-bezier(0.22, 1, 0.36, 1)",
+    "exit": "cubic-bezier(0.4, 0, 1, 1)",
+    "emphasis": "cubic-bezier(0.33, 1, 0.68, 1)",
+    "counting": "linear",
+    "$reference": "Reference = smooth ease-out soft settles, no bounce/overshoot (vision conf 0.65); entrance bezier is ease-out quint - matches"
+  },
+  "amplitudes": {
+    "slidePx": { "min": 20, "default": 40, "max": 90 },
+    "scaleFrom": { "min": 0.96, "default": 0.98, "max": 1.0 },
+    "emphasisScaleDelta": { "min": 0.02, "default": 0.04, "max": 0.06 },
+    "fadeFrom": 0,
+    "drawStrokePercent": { "from": 0, "to": 100 },
+    "$reference": "Reference entrances are subtle fades/small positional settles, no large off-screen travel (vision conf 0.65); slide/scale amplitudes reduced from V1"
+  },
+  "preferred": {
+    "entrances": ["fade", "reveal", "stagger"],
+    "exits": ["fade", "dissolve"],
+    "emphasis": ["highlight", "counterChange", "controlledReveal", "subtleScale"],
+    "$reference": "Reference emphasizes typographically (color/reveal) over motion accents; scene changes read as cut/dissolve + fresh staged entrances (conf 0.6-0.65)"
+  },
+  "referenceMeasurement": {
+    "globalFrameDiff": 0.0112,
+    "density": "restrained",
+    "camera": "static - no pan/zoom/parallax detectable",
+    "source": "deterministic 5-frame-per-scene RGB diff on 7 scenes (extract.ts motion analysis)",
+    "confidence": 0.75
+  },
+  "rules": {
+    "motionMustCommunicateHierarchyOrMeaning": true,
+    "noRandomMotion": true,
+    "noConstantCameraShake": true,
+    "noExcessiveZoom": true,
+    "noGratuitousGlitch": true,
+    "noTransitionForItsOwnSake": true,
+    "maxSimultaneousMotionSystems": 2,
+    "maxElementAnimationsPerScene": 6
+  }
+}

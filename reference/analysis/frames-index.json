@@ -1,0 +1,805 @@
+[
+  {
+    "sceneIndex": 0,
+    "role": "start",
+    "time": 0.2,
+    "file": "analysis/frames/scene_00_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 0,
+    "role": "mid",
+    "time": 2.95,
+    "file": "analysis/frames/scene_00_mid.jpg",
+    "textLikeRows": 5,
+    "brightRegion": {
+      "x0": 0.3125,
+      "y0": 0.2222222222222222,
+      "x1": 0.8125,
+      "y1": 0.48148148148148145
+    }
+  },
+  {
+    "sceneIndex": 0,
+    "role": "end",
+    "time": 5.7,
+    "file": "analysis/frames/scene_00_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 1,
+    "role": "start",
+    "time": 6.1,
+    "file": "analysis/frames/scene_01_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 1,
+    "role": "mid",
+    "time": 7.9,
+    "file": "analysis/frames/scene_01_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 1,
+    "role": "end",
+    "time": 9.7,
+    "file": "analysis/frames/scene_01_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 2,
+    "role": "start",
+    "time": 10.1,
+    "file": "analysis/frames/scene_02_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 2,
+    "role": "mid",
+    "time": 11.4,
+    "file": "analysis/frames/scene_02_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 2,
+    "role": "end",
+    "time": 12.7,
+    "file": "analysis/frames/scene_02_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 3,
+    "role": "start",
+    "time": 13.1,
+    "file": "analysis/frames/scene_03_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 3,
+    "role": "mid",
+    "time": 14.9,
+    "file": "analysis/frames/scene_03_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 3,
+    "role": "end",
+    "time": 16.7,
+    "file": "analysis/frames/scene_03_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 4,
+    "role": "start",
+    "time": 17.1,
+    "file": "analysis/frames/scene_04_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 4,
+    "role": "mid",
+    "time": 19.083,
+    "file": "analysis/frames/scene_04_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 4,
+    "role": "end",
+    "time": 21.067,
+    "file": "analysis/frames/scene_04_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 5,
+    "role": "start",
+    "time": 21.467,
+    "file": "analysis/frames/scene_05_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 5,
+    "role": "mid",
+    "time": 22.8,
+    "file": "analysis/frames/scene_05_mid.jpg",
+    "textLikeRows": 2,
+    "brightRegion": {
+      "x0": 0.08333333333333333,
+      "y0": 0.4074074074074074,
+      "x1": 0.4375,
+      "y1": 0.5185185185185185
+    }
+  },
+  {
+    "sceneIndex": 5,
+    "role": "end",
+    "time": 24.133,
+    "file": "analysis/frames/scene_05_end.jpg",
+    "textLikeRows": 2,
+    "brightRegion": {
+      "x0": 0.08333333333333333,
+      "y0": 0.4074074074074074,
+      "x1": 0.4375,
+      "y1": 0.5185185185185185
+    }
+  },
+  {
+    "sceneIndex": 6,
+    "role": "start",
+    "time": 24.533,
+    "file": "analysis/frames/scene_06_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 6,
+    "role": "mid",
+    "time": 26.116,
+    "file": "analysis/frames/scene_06_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 6,
+    "role": "end",
+    "time": 27.7,
+    "file": "analysis/frames/scene_06_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 7,
+    "role": "start",
+    "time": 28.1,
+    "file": "analysis/frames/scene_07_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 7,
+    "role": "mid",
+    "time": 29.816,
+    "file": "analysis/frames/scene_07_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 7,
+    "role": "end",
+    "time": 31.533,
+    "file": "analysis/frames/scene_07_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 8,
+    "role": "start",
+    "time": 31.933,
+    "file": "analysis/frames/scene_08_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 8,
+    "role": "mid",
+    "time": 34.099,
+    "file": "analysis/frames/scene_08_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 8,
+    "role": "end",
+    "time": 36.267,
+    "file": "analysis/frames/scene_08_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 9,
+    "role": "start",
+    "time": 36.667,
+    "file": "analysis/frames/scene_09_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 9,
+    "role": "mid",
+    "time": 39.667,
+    "file": "analysis/frames/scene_09_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 9,
+    "role": "end",
+    "time": 42.667,
+    "file": "analysis/frames/scene_09_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 10,
+    "role": "start",
+    "time": 43.067,
+    "file": "analysis/frames/scene_10_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 10,
+    "role": "mid",
+    "time": 44.817,
+    "file": "analysis/frames/scene_10_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 10,
+    "role": "end",
+    "time": 46.567,
+    "file": "analysis/frames/scene_10_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 11,
+    "role": "start",
+    "time": 46.967,
+    "file": "analysis/frames/scene_11_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 11,
+    "role": "mid",
+    "time": 48.501,
+    "file": "analysis/frames/scene_11_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 11,
+    "role": "end",
+    "time": 50.033,
+    "file": "analysis/frames/scene_11_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 12,
+    "role": "start",
+    "time": 50.433,
+    "file": "analysis/frames/scene_12_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 12,
+    "role": "mid",
+    "time": 52.116,
+    "file": "analysis/frames/scene_12_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 12,
+    "role": "end",
+    "time": 53.8,
+    "file": "analysis/frames/scene_12_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 13,
+    "role": "start",
+    "time": 54.2,
+    "file": "analysis/frames/scene_13_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 13,
+    "role": "mid",
+    "time": 56.834,
+    "file": "analysis/frames/scene_13_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 13,
+    "role": "end",
+    "time": 59.467,
+    "file": "analysis/frames/scene_13_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 14,
+    "role": "start",
+    "time": 59.867,
+    "file": "analysis/frames/scene_14_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 14,
+    "role": "mid",
+    "time": 61.784,
+    "file": "analysis/frames/scene_14_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 14,
+    "role": "end",
+    "time": 63.7,
+    "file": "analysis/frames/scene_14_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 15,
+    "role": "start",
+    "time": 64.1,
+    "file": "analysis/frames/scene_15_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 15,
+    "role": "mid",
+    "time": 65.8,
+    "file": "analysis/frames/scene_15_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 15,
+    "role": "end",
+    "time": 67.5,
+    "file": "analysis/frames/scene_15_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 16,
+    "role": "start",
+    "time": 67.9,
+    "file": "analysis/frames/scene_16_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 16,
+    "role": "mid",
+    "time": 69.934,
+    "file": "analysis/frames/scene_16_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 16,
+    "role": "end",
+    "time": 71.967,
+    "file": "analysis/frames/scene_16_end.jpg",
+    "textLikeRows": 2,
+    "brightRegion": {
+      "x0": 0.2708333333333333,
+      "y0": 0.37037037037037035,
+      "x1": 0.6875,
+      "y1": 0.4074074074074074
+    }
+  },
+  {
+    "sceneIndex": 17,
+    "role": "start",
+    "time": 72.367,
+    "file": "analysis/frames/scene_17_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 17,
+    "role": "mid",
+    "time": 74.517,
+    "file": "analysis/frames/scene_17_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 17,
+    "role": "end",
+    "time": 76.667,
+    "file": "analysis/frames/scene_17_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 18,
+    "role": "start",
+    "time": 77.067,
+    "file": "analysis/frames/scene_18_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 18,
+    "role": "mid",
+    "time": 78.633,
+    "file": "analysis/frames/scene_18_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 18,
+    "role": "end",
+    "time": 80.2,
+    "file": "analysis/frames/scene_18_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 19,
+    "role": "start",
+    "time": 80.6,
+    "file": "analysis/frames/scene_19_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 19,
+    "role": "mid",
+    "time": 82.5,
+    "file": "analysis/frames/scene_19_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 19,
+    "role": "end",
+    "time": 84.4,
+    "file": "analysis/frames/scene_19_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 20,
+    "role": "start",
+    "time": 84.8,
+    "file": "analysis/frames/scene_20_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 20,
+    "role": "mid",
+    "time": 87.183,
+    "file": "analysis/frames/scene_20_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 20,
+    "role": "end",
+    "time": 89.567,
+    "file": "analysis/frames/scene_20_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 21,
+    "role": "start",
+    "time": 89.967,
+    "file": "analysis/frames/scene_21_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 21,
+    "role": "mid",
+    "time": 93.783,
+    "file": "analysis/frames/scene_21_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 21,
+    "role": "end",
+    "time": 97.6,
+    "file": "analysis/frames/scene_21_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 22,
+    "role": "start",
+    "time": 98,
+    "file": "analysis/frames/scene_22_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 22,
+    "role": "mid",
+    "time": 100.65,
+    "file": "analysis/frames/scene_22_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 22,
+    "role": "end",
+    "time": 103.3,
+    "file": "analysis/frames/scene_22_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 23,
+    "role": "start",
+    "time": 103.7,
+    "file": "analysis/frames/scene_23_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 23,
+    "role": "mid",
+    "time": 106.5,
+    "file": "analysis/frames/scene_23_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 23,
+    "role": "end",
+    "time": 109.3,
+    "file": "analysis/frames/scene_23_end.jpg",
+    "textLikeRows": 2,
+    "brightRegion": {
+      "x0": 0.3541666666666667,
+      "y0": 0.2222222222222222,
+      "x1": 0.625,
+      "y1": 0.25925925925925924
+    }
+  },
+  {
+    "sceneIndex": 24,
+    "role": "start",
+    "time": 109.7,
+    "file": "analysis/frames/scene_24_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 24,
+    "role": "mid",
+    "time": 111.25,
+    "file": "analysis/frames/scene_24_mid.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 24,
+    "role": "end",
+    "time": 112.8,
+    "file": "analysis/frames/scene_24_end.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 25,
+    "role": "start",
+    "time": 113.2,
+    "file": "analysis/frames/scene_25_start.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 25,
+    "role": "mid",
+    "time": 115.838,
+    "file": "analysis/frames/scene_25_mid.jpg",
+    "textLikeRows": 2,
+    "brightRegion": {
+      "x0": 0.3541666666666667,
+      "y0": 0.5925925925925926,
+      "x1": 0.6041666666666666,
+      "y1": 0.6296296296296297
+    }
+  },
+  {
+    "sceneIndex": 25,
+    "role": "end",
+    "time": 118.475,
+    "file": "analysis/frames/scene_25_end.jpg",
+    "textLikeRows": 2,
+    "brightRegion": {
+      "x0": 0.3541666666666667,
+      "y0": 0.5925925925925926,
+      "x1": 0.6041666666666666,
+      "y1": 0.6296296296296297
+    }
+  },
+  {
+    "sceneIndex": 1,
+    "role": "before",
+    "time": 5.78,
+    "file": "analysis/frames/scene_01_before.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 1,
+    "role": "after",
+    "time": 6.02,
+    "file": "analysis/frames/scene_01_after.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 4,
+    "role": "before",
+    "time": 16.78,
+    "file": "analysis/frames/scene_04_before.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 4,
+    "role": "after",
+    "time": 17.02,
+    "file": "analysis/frames/scene_04_after.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 7,
+    "role": "before",
+    "time": 27.78,
+    "file": "analysis/frames/scene_07_before.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 7,
+    "role": "after",
+    "time": 28.02,
+    "file": "analysis/frames/scene_07_after.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 10,
+    "role": "before",
+    "time": 42.747,
+    "file": "analysis/frames/scene_10_before.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 10,
+    "role": "after",
+    "time": 42.987,
+    "file": "analysis/frames/scene_10_after.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 13,
+    "role": "before",
+    "time": 53.88,
+    "file": "analysis/frames/scene_13_before.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 13,
+    "role": "after",
+    "time": 54.12,
+    "file": "analysis/frames/scene_13_after.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 16,
+    "role": "before",
+    "time": 67.58,
+    "file": "analysis/frames/scene_16_before.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 16,
+    "role": "after",
+    "time": 67.82,
+    "file": "analysis/frames/scene_16_after.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 19,
+    "role": "before",
+    "time": 80.28,
+    "file": "analysis/frames/scene_19_before.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 19,
+    "role": "after",
+    "time": 80.52,
+    "file": "analysis/frames/scene_19_after.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 22,
+    "role": "before",
+    "time": 97.68,
+    "file": "analysis/frames/scene_22_before.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 22,
+    "role": "after",
+    "time": 97.92,
+    "file": "analysis/frames/scene_22_after.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 25,
+    "role": "before",
+    "time": 112.88,
+    "file": "analysis/frames/scene_25_before.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  },
+  {
+    "sceneIndex": 25,
+    "role": "after",
+    "time": 113.12,
+    "file": "analysis/frames/scene_25_after.jpg",
+    "textLikeRows": 0,
+    "brightRegion": null
+  }
+]

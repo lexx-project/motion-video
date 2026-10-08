@@ -1,0 +1,60 @@
+{
+  "sceneId": "scene_01",
+  "duration": 4.66,
+  "purpose": "Reframe: motivation is already saturated and cannot grow, while removing excuses one by one is what actually opens the path to action.",
+  "visualConcept": "FULL TANK, BLOCKS REMOVED",
+  "composition": "leftTextRightObject",
+  "headline": {
+    "text": "NOT MORE MOTIVATION. FEWER EXCUSES.",
+    "accentWords": [
+      "FEWER",
+      "EXCUSES"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "ProgressBar",
+      "value": 1,
+      "label": "MOTIVATION",
+      "showValue": true,
+      "position": "right",
+      "offsetY": -26,
+      "scale": 1,
+      "opacity": 1,
+      "accent": "none",
+      "entrance": "fade",
+      "emphasis": "subtleScale",
+      "emphasisAt": 1,
+      "delay": 0.2,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Stack",
+      "count": 4,
+      "variant": "cards",
+      "label": "EXCUSES",
+      "position": "right",
+      "offsetX": 8,
+      "offsetY": 16,
+      "scale": 1,
+      "opacity": 1,
+      "accent": "none",
+      "entrance": "stagger",
+      "emphasis": "controlledReveal",
+      "emphasisAt": 2.4,
+      "delay": 0.5,
+      "exit": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "controlledReveal",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 2.4,
+    "exitAt": 4.1
+  }
+}

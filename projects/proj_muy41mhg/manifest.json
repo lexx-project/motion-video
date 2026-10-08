@@ -1,0 +1,82 @@
+{
+  "projectId": "proj_muy41mhg",
+  "createdAt": "2026-10-07T12:55:24.441Z",
+  "updatedAt": "2026-10-07T23:10:35.754Z",
+  "status": "complete",
+  "scriptPreview": "**“Lu tau nggak…\nsalah satu hal yang paling bikin capek?”**\n\nBerusaha…\n\nbiar semua orang suka sama kita.\n\nCara ngomong dijaga.\n\nCara berpakaian dipikirin.\n\nPosting sesuatu…\n\nhapus lagi.\n\nTakut ada yang ngejudge.\n\nTakut ada yang ngomongin.\n\n",
+  "hasAudio": true,
+  "sceneIds": [
+    "scene_06"
+  ],
+  "stages": {
+    "analysis": {
+      "status": "done",
+      "startedAt": "2026-10-07T18:03:04.214Z",
+      "finishedAt": "2026-10-07T21:14:37.566Z"
+    },
+    "beats": {
+      "status": "done",
+      "startedAt": "2026-10-07T18:03:41.751Z",
+      "finishedAt": "2026-10-07T21:14:37.570Z"
+    },
+    "timing": {
+      "status": "done",
+      "startedAt": "2026-10-07T18:04:36.709Z",
+      "finishedAt": "2026-10-07T21:14:37.571Z"
+    },
+    "concepts": {
+      "status": "done",
+      "startedAt": "2026-10-07T20:42:50.706Z",
+      "finishedAt": "2026-10-07T21:14:37.575Z"
+    },
+    "sceneGeneration": {
+      "status": "done",
+      "startedAt": "2026-10-07T22:45:19.089Z",
+      "finishedAt": "2026-10-07T22:51:42.530Z"
+    },
+    "validation": {
+      "status": "done",
+      "finishedAt": "2026-10-07T22:51:42.531Z"
+    },
+    "novelty": {
+      "status": "done",
+      "startedAt": "2026-10-07T22:55:51.419Z",
+      "finishedAt": "2026-10-07T22:55:51.435Z"
+    },
+    "render": {
+      "status": "done",
+      "startedAt": "2026-10-07T22:55:51.437Z",
+      "finishedAt": "2026-10-07T22:57:42.374Z"
+    },
+    "conformance": {
+      "status": "done",
+      "startedAt": "2026-10-07T22:57:51.206Z",
+      "finishedAt": "2026-10-07T22:57:52.678Z"
+    },
+    "visionQa": {
+      "status": "done",
+      "startedAt": "2026-10-07T22:57:52.680Z",
+      "finishedAt": "2026-10-07T23:02:31.201Z"
+    },
+    "slop": {
+      "status": "failed",
+      "startedAt": "2026-10-07T23:02:31.203Z",
+      "finishedAt": "2026-10-07T23:08:32.690Z"
+    },
+    "repair": {
+      "status": "running",
+      "startedAt": "2026-10-07T22:54:53.382Z"
+    },
+    "semanticQa": {
+      "status": "done",
+      "startedAt": "2026-10-07T23:08:32.692Z",
+      "finishedAt": "2026-10-07T23:10:35.724Z"
+    },
+    "final": {
+      "status": "done",
+      "finishedAt": "2026-10-07T23:10:35.752Z"
+    }
+  },
+  "audioDurationSec": 55.066063,
+  "timingSource": "phrase"
+}

@@ -1,0 +1,48 @@
+{
+  "projectSeverity": 7,
+  "verdict": "severe",
+  "findings": [
+    {
+      "sceneId": "scene_01",
+      "type": "bad-typography",
+      "evidence": "headline 'LU TAU NGGAK... HAL PALING BIKIN CAPEK' is set in 6 lines, exceeding the 4-line limit",
+      "severity": 8
+    },
+    {
+      "sceneId": "scene_02",
+      "type": "bad-typography",
+      "evidence": "oversized '0 VIEWS' lockup runs into the right frame edge with the final letter clipped instead of being reflowed",
+      "severity": 7
+    },
+    {
+      "sceneId": "scene_03",
+      "type": "weak-metaphor",
+      "evidence": "concept is 'TWO COLUMNS THAT NEVER ALIGN' but left action rows and right verdict rows sit on identical horizontal baselines, so the frame reads as a plain aligned table",
+      "severity": 6
+    },
+    {
+      "sceneId": "scene_03",
+      "type": "repetitive-layouts",
+      "evidence": "identical red verdict stack (PENCITRAAN/SOMBOG/BERUNTUNG/DITERTAWAKAN) in identical outlined boxes reappears with same composition and color in scene_06",
+      "severity": 5
+    },
+    {
+      "sceneId": "scene_04",
+      "type": "visual-clutter",
+      "evidence": "bottom zone collides: paragraph 'ada yang ngomongin. Padahal...' overlaps the NGEJUDGE and NGOMONGIN labels while headline, 99%, bar and DRAFT card push the scene past 5 elements",
+      "severity": 7
+    },
+    {
+      "sceneId": "scene_05",
+      "type": "bad-typography",
+      "evidence": "'PENGARUH' spans edge-to-edge with no side margin and the aperture circle overlaps the 'IZINKAN' baseline, crowding the 4-line headline",
+      "severity": 7
+    },
+    {
+      "sceneId": "scene_06",
+      "type": "visual-clutter",
+      "evidence": "overlay caption 'dibilang sombong. Lu sukses...' overlaps the DITERTAWAKAN verdict label; scene stacks input label, four scattered verdicts, line, headline, subtitle and caption beyond the 5-element cap",
+      "severity": 7
+    }
+  ]
+}

@@ -1,0 +1,504 @@
+{
+  "technical": {
+    "file": "C:\\Users\\Administrator\\Documents\\project\\motion-video\\projects\\proj_muwt0aze\\renders\\preview.mp4",
+    "durationSec": 41.472,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "hasAudio": true,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "errors": []
+  },
+  "visual": {
+    "evaluatorCount": 3,
+    "projectStatus": "needs_repair",
+    "overall": {
+      "scriptRelevance": 7,
+      "visualClarity": 7,
+      "designConsistency": 7,
+      "typography": 7,
+      "composition": 7,
+      "motionQuality": 7,
+      "novelty": 6,
+      "aiSlopSeverity": 3,
+      "technicalCorrectness": "fail",
+      "stats": {
+        "mean": 6.86,
+        "median": 6.86,
+        "variance": 0.014,
+        "confidence": 1
+      }
+    },
+    "scenes": [
+      {
+        "sceneId": "scene_01",
+        "scores": {
+          "scriptRelevance": 7,
+          "visualClarity": 7,
+          "designConsistency": 8,
+          "typography": 7,
+          "composition": 7,
+          "motionQuality": 7,
+          "novelty": 6,
+          "aiSlopSeverity": 3
+        },
+        "stats": {
+          "mean": 6.9,
+          "median": 7,
+          "variance": 0.127,
+          "confidence": 0.98
+        },
+        "technicalCorrectness": "pass",
+        "issues": [],
+        "recommendedRepair": []
+      },
+      {
+        "sceneId": "scene_02",
+        "scores": {
+          "scriptRelevance": 8,
+          "visualClarity": 7,
+          "designConsistency": 6,
+          "typography": 8,
+          "composition": 7,
+          "motionQuality": 7,
+          "novelty": 7,
+          "aiSlopSeverity": 3
+        },
+        "stats": {
+          "mean": 7.19,
+          "median": 7.14,
+          "variance": 0.032,
+          "confidence": 0.99
+        },
+        "technicalCorrectness": "pass",
+        "issues": [],
+        "recommendedRepair": []
+      },
+      {
+        "sceneId": "scene_03",
+        "scores": {
+          "scriptRelevance": 6,
+          "visualClarity": 7,
+          "designConsistency": 8,
+          "typography": 8,
+          "composition": 7,
+          "motionQuality": 6,
+          "novelty": 5,
+          "aiSlopSeverity": 3
+        },
+        "stats": {
+          "mean": 6.57,
+          "median": 6.57,
+          "variance": 0.218,
+          "confidence": 0.96
+        },
+        "technicalCorrectness": "pass",
+        "issues": [
+          "Headline breaks 'NGGAK' and 'SUKA' onto separate lines — 4-line stack with awkward orphan line in frame.",
+          "Concept 'spot returns after every wipe' renders as one static gold dot; no return/residue cue in frame, metaphor weak.",
+          "Label sits ~180px below headline with a large dead gap; gold dot is only ~8% width, so the frame reads empty, not composed."
+        ],
+        "recommendedRepair": [
+          "Rebreak as 2 lines 'PASTI ADA AJA / YANG NGGAK SUKA' at same 96px to remove the orphan.",
+          "Add 2 faint fading ghost dots beside the gold dot to cue the spot reappearing after each wipe.",
+          "Raise label to ~40px under headline and scale dot ~1.5× to tighten the vertical rhythm."
+        ]
+      },
+      {
+        "sceneId": "scene_04",
+        "scores": {
+          "scriptRelevance": 7,
+          "visualClarity": 7,
+          "designConsistency": 8,
+          "typography": 8,
+          "composition": 7,
+          "motionQuality": 6,
+          "novelty": 5,
+          "aiSlopSeverity": 3
+        },
+        "stats": {
+          "mean": 6.76,
+          "median": 6.86,
+          "variance": 0.127,
+          "confidence": 0.98
+        },
+        "technicalCorrectness": "fail",
+        "issues": [
+          "Spec requires two arrows (180° flip pair); frame shows a single up-arrow — the 'selalu dibalik' contradiction has no visual pair.",
+          "Only 2 of 4 verdict pairs shown; 'LU SUKES → BERUNTUNG' and 'LU GAGAL → DITERTAWAKAN' missing from label block.",
+          "Arrow is thin, ~5% of frame height, floating far above headline — reads as decoration, not a gauge needle."
+        ],
+        "recommendedRepair": [
+          "Add mirrored down-arrow next to the up-arrow to show the 180° reversal.",
+          "Stagger in the two missing verdict pairs under the existing label block.",
+          "Enlarge arrow ~1.5× and lower it closer to the headline so it reads as the needle."
+        ]
+      },
+      {
+        "sceneId": "scene_05",
+        "scores": {
+          "scriptRelevance": 7,
+          "visualClarity": 6,
+          "designConsistency": 6,
+          "typography": 8,
+          "composition": 7,
+          "motionQuality": 6,
+          "novelty": 6,
+          "aiSlopSeverity": 3
+        },
+        "stats": {
+          "mean": 6.57,
+          "median": 6.57,
+          "variance": 0.014,
+          "confidence": 1
+        },
+        "technicalCorrectness": "fail",
+        "issues": [
+          "Spec's two Line primitives (the tether slipping from the grip) are absent; frame has only circle+dot, so 'tether slips past the grip' is unreadable.",
+          "Two accents coexist: gold words 'BISA NGONTROL' and teal circle/dot — violates one-dominant-accent rule.",
+          "Indicator dot + 'YANG BISA LU PEGANG' sits at far-left mid-height, disconnected from the circle — reads as a stray caption."
+        ],
+        "recommendedRepair": [
+          "Draw a thin line from dot to circle with its end slid past the dot (visible gap) to show the slip.",
+          "Recolor headline accent words to teal so only teal remains the scene accent.",
+          "Anchor dot+label to the line's loose end near the circle, inside the 8% margin."
+        ]
+      },
+      {
+        "sceneId": "scene_06",
+        "scores": {
+          "scriptRelevance": 8,
+          "visualClarity": 7,
+          "designConsistency": 7,
+          "typography": 7,
+          "composition": 7,
+          "motionQuality": 7,
+          "novelty": 7,
+          "aiSlopSeverity": 3
+        },
+        "stats": {
+          "mean": 6.95,
+          "median": 7.29,
+          "variance": 0.222,
+          "confidence": 0.96
+        },
+        "technicalCorrectness": "pass",
+        "issues": [],
+        "recommendedRepair": []
+      },
+      {
+        "sceneId": "scene_07",
+        "scores": {
+          "scriptRelevance": 9,
+          "visualClarity": 8,
+          "designConsistency": 8,
+          "typography": 8,
+          "composition": 8,
+          "motionQuality": 7,
+          "novelty": 7,
+          "aiSlopSeverity": 2
+        },
+        "stats": {
+          "mean": 7.95,
+          "median": 7.71,
+          "variance": 0.113,
+          "confidence": 0.98
+        },
+        "technicalCorrectness": "pass",
+        "issues": [],
+        "recommendedRepair": []
+      },
+      {
+        "sceneId": "scene_08",
+        "scores": {
+          "scriptRelevance": 7,
+          "visualClarity": 6,
+          "designConsistency": 6,
+          "typography": 5,
+          "composition": 6,
+          "motionQuality": 7,
+          "novelty": 6,
+          "aiSlopSeverity": 4
+        },
+        "stats": {
+          "mean": 6.29,
+          "median": 6.29,
+          "variance": 0.014,
+          "confidence": 1
+        },
+        "technicalCorrectness": "fail",
+        "issues": [
+          "Headline stacks 6 lines ('LU NGGAK'…'ORANG') over the grid tiles, exceeding the max-4-lines rule and overlapping the object.",
+          "Label 'TETAP UTUH — TANPA DIPAKSA' is crammed into 3 short lines in a narrow top-right column, colliding with the headline zone.",
+          "Grid tiles are near-invisible dark and the gold circle overlaps them ambiguously — 'one shape declines the mould' doesn't read."
+        ],
+        "recommendedRepair": [
+          "Rebreak headline to 3 lines: 'LU NGGAK DICIPTAIN / BUAT DISUKAI / SEMUA ORANG' at same 96px.",
+          "Move label to a single-line caption below the circle, clear of the headline column.",
+          "Lighten tiles ~10% and knock out/clear tiles behind the circle so the outlier shape is unmistakable."
+        ]
+      }
+    ]
+  },
+  "slop": {
+    "projectSeverity": 6,
+    "verdict": "needs_repair",
+    "findings": [
+      {
+        "sceneId": "scene_08",
+        "type": "bad-typography",
+        "evidence": "headline 'LU NGGAK DICIPTAIN BUAT DISUKAI SEMUA ORANG' breaks into 6 lines (LU NGGAK / DICIPTAIN / BUAT / DISUKAI / SEMUA / ORANG), exceeding the 4-line limit instead of being rephrased or set at a consistent size",
+        "severity": 8
+      },
+      {
+        "sceneId": "scene_06",
+        "type": "visual-clutter",
+        "evidence": "dial ring is positioned on top of the headline, its yellow stroke cutting through the letters of 'PENGARUHNYA' — object and type collide instead of occupying separate left/right halves",
+        "severity": 7
+      },
+      {
+        "sceneId": "scene_01",
+        "type": "visual-clutter",
+        "evidence": "the pinned-figure circle's lower arc crosses through the first headline line 'YANG', creating an accidental stack collision rather than clear separation between figure and type",
+        "severity": 6
+      }
+    ]
+  },
+  "novelty": {
+    "results": [
+      {
+        "sceneId": "scene_01",
+        "similarity": 15,
+        "matchedDimensions": [
+          "sameMotionPattern"
+        ],
+        "verdict": "accept",
+        "against": "proj_e2e8/scene_04"
+      },
+      {
+        "sceneId": "scene_02",
+        "similarity": 45,
+        "matchedDimensions": [
+          "sameDominantObject",
+          "sameComposition",
+          "samePrimitiveCombination"
+        ],
+        "verdict": "accept",
+        "against": "proj_ref_demo/scene_03"
+      },
+      {
+        "sceneId": "scene_03",
+        "similarity": 25,
+        "matchedDimensions": [
+          "sameDominantObject",
+          "sameComposition"
+        ],
+        "verdict": "accept",
+        "against": "proj_ref_demo/scene_06"
+      },
+      {
+        "sceneId": "scene_04",
+        "similarity": 10,
+        "matchedDimensions": [
+          "sameComposition"
+        ],
+        "verdict": "accept",
+        "against": "proj_e2e8/scene_05"
+      },
+      {
+        "sceneId": "scene_05",
+        "similarity": 15,
+        "matchedDimensions": [
+          "sameMotionPattern"
+        ],
+        "verdict": "accept",
+        "against": "same-project/scene_04"
+      },
+      {
+        "sceneId": "scene_06",
+        "similarity": 15,
+        "matchedDimensions": [
+          "sameMotionPattern"
+        ],
+        "verdict": "accept",
+        "against": "proj_e2e8/scene_01"
+      },
+      {
+        "sceneId": "scene_07",
+        "similarity": 15,
+        "matchedDimensions": [
+          "sameDominantObject"
+        ],
+        "verdict": "accept",
+        "against": "proj_ref_demo/scene_06"
+      },
+      {
+        "sceneId": "scene_08",
+        "similarity": 15,
+        "matchedDimensions": [
+          "sameMotionPattern"
+        ],
+        "verdict": "accept",
+        "against": "proj_e2e8/scene_04"
+      }
+    ],
+    "rejectedSceneIds": [],
+    "status": "pass"
+  },
+  "conformance": {
+    "scenes": [
+      {
+        "sceneId": "scene_01",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 10,
+          "motion": 10,
+          "density": 4.5,
+          "negativeSpace": 6
+        },
+        "overall": 8.6,
+        "evidence": [
+          "5 renderable elements > 4",
+          "4 objects (reference uses a single dominant object)"
+        ]
+      },
+      {
+        "sceneId": "scene_02",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 6.5,
+          "motion": 9,
+          "density": 7.5,
+          "negativeSpace": 6
+        },
+        "overall": 8.4,
+        "evidence": [
+          "grammar \"split\" absent from reference shares (allowed by spec, off-language)",
+          "1 element delay > 1.4s (reference staggers quickly)",
+          "5 renderable elements > 4"
+        ]
+      },
+      {
+        "sceneId": "scene_03",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 10,
+          "motion": 10,
+          "density": 10,
+          "negativeSpace": 10
+        },
+        "overall": 10,
+        "evidence": [
+          "structure conforms to reference-derived language"
+        ]
+      },
+      {
+        "sceneId": "scene_04",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 10,
+          "motion": 9,
+          "density": 7.5,
+          "negativeSpace": 6
+        },
+        "overall": 8.9,
+        "evidence": [
+          "motion \"positionShift\" outside reference-preferred set",
+          "5 renderable elements > 4"
+        ]
+      },
+      {
+        "sceneId": "scene_05",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 9,
+          "motion": 9,
+          "density": 4.5,
+          "negativeSpace": 6
+        },
+        "overall": 8.4,
+        "evidence": [
+          "motion \"positionShift\" outside reference-preferred set",
+          "5 renderable elements > 4",
+          "4 objects (reference uses a single dominant object)"
+        ]
+      },
+      {
+        "sceneId": "scene_06",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 10,
+          "motion": 10,
+          "density": 6,
+          "negativeSpace": 6
+        },
+        "overall": 8.9,
+        "evidence": [
+          "5 renderable elements > 4",
+          "3 objects (reference uses a single dominant object)"
+        ]
+      },
+      {
+        "sceneId": "scene_07",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 6.5,
+          "motion": 9,
+          "density": 10,
+          "negativeSpace": 8
+        },
+        "overall": 9.1,
+        "evidence": [
+          "grammar \"dualObject\" absent from reference shares (allowed by spec, off-language)",
+          "motion \"slide\" outside reference-preferred set"
+        ]
+      },
+      {
+        "sceneId": "scene_08",
+        "scores": {
+          "visualStyle": 10,
+          "typography": 10,
+          "color": 10,
+          "composition": 2.5,
+          "motion": 10,
+          "density": 10,
+          "negativeSpace": 8
+        },
+        "overall": 8.6,
+        "evidence": [
+          "grammar \"objectDominant\" absent from reference shares (allowed by spec, off-language)",
+          "COLLISION: scene.headline(\"LU NGGAK DICIPTAIN...\") overlaps Label[2](\"TETAP UTUH — TANPA...\") (est. 100% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor"
+        ]
+      }
+    ],
+    "overall": 8.9,
+    "method": "structural checks against reference-derived design tokens + rendered-frame luma/text/accent stats (no pixel similarity)"
+  },
+  "overallQuality": 6.977922077922079,
+  "confidence": 1,
+  "variance": 0.014,
+  "status": "fail",
+  "reasons": [
+    "overall quality 7.0 < 8",
+    "scene_04: technical correctness fail",
+    "scene_05: technical correctness fail",
+    "scene_05: severe readability - Spec's two Line primitives (the tether slipping from the grip) are absent; frame has only circle+dot, so 'tether slips past the grip' is unreadable.",
+    "scene_08: technical correctness fail",
+    "scene_08: severe readability - Headline stacks 6 lines ('LU NGGAK'…'ORANG') over the grid tiles, exceeding the max-4-lines rule and overlapping the object."
+  ]
+}

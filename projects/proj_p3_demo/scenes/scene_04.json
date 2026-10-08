@@ -1,0 +1,319 @@
+{
+  "sceneId": "scene_04",
+  "duration": 4.21,
+  "purpose": "Four struck answer versions dissolve while one teal line locks flush on the shared baseline — conviction is the only thing remembered.",
+  "visualConcept": "STRIKED ANSWERS, ONE HELD LINE",
+  "composition": "topTextBottomObject",
+  "headline": {
+    "text": "NEVER BEND, GET REMEMBERED",
+    "accentWords": [
+      "REMEMBERED"
+    ],
+    "align": "left",
+    "position": "topLeft"
+  },
+  "elements": [
+    {
+      "primitive": "Line",
+      "position": "topRight",
+      "offsetY": 14,
+      "scale": 0.85,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "first answer version in the record, soon struck out",
+      "entrance": "fade",
+      "delay": 0.3
+    },
+    {
+      "primitive": "Line",
+      "position": "right",
+      "offsetY": -12,
+      "scale": 0.85,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "second answer version, cancelled by self-editing",
+      "entrance": "fade",
+      "delay": 0.45
+    },
+    {
+      "primitive": "Line",
+      "position": "right",
+      "offsetY": 8,
+      "scale": 0.85,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "third answer version, cancelled by self-editing",
+      "entrance": "fade",
+      "delay": 0.6
+    },
+    {
+      "primitive": "Label",
+      "position": "bottomRight",
+      "offsetY": -4,
+      "accent": "teal",
+      "role": "semantic",
+      "text": "HELD",
+      "purpose": "names the survivor above the teal line's right end",
+      "entrance": "fade",
+      "delay": 1.2
+    },
+    {
+      "primitive": "Line",
+      "position": "bottomRight",
+      "offsetY": 0,
+      "scale": 0.85,
+      "accent": "teal",
+      "role": "semantic",
+      "purpose": "the one answer never edited; it locks flush on the baseline",
+      "entrance": "fade",
+      "delay": 0.75,
+      "emphasis": "highlight",
+      "emphasisAt": 3
+    },
+    {
+      "primitive": "Line",
+      "position": "bottomRight",
+      "offsetY": 0,
+      "scale": 0.85,
+      "accent": "none",
+      "role": "supporting",
+      "purpose": "shared baseline measure every answer is judged against",
+      "entrance": "draw",
+      "delay": 0.9
+    },
+    {
+      "primitive": "Line",
+      "position": "topRight",
+      "offsetY": 14,
+      "rotation": -15,
+      "scale": 0.7,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "strikes out the first version — editing as visible erasure",
+      "entrance": "draw",
+      "delay": 1.3,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Line",
+      "position": "right",
+      "offsetY": -12,
+      "rotation": -15,
+      "scale": 0.7,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "strikes out the second version — editing as visible erasure",
+      "entrance": "draw",
+      "delay": 1.5,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Line",
+      "position": "right",
+      "offsetY": 8,
+      "rotation": -15,
+      "scale": 0.7,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "strikes out the third version — editing as visible erasure",
+      "entrance": "draw",
+      "delay": 1.7,
+      "exit": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "controlledReveal",
+    "exit": "dissolve"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 3,
+    "exitAt": 3.75
+  },
+  "storyboard": {
+    "beatId": "b4",
+    "spokenMeaning": "People with a fixed stance are the ones remembered — conviction earns recognition while constant self-editing dissolves you.",
+    "viewerTakeaway": "Every re-edit erases a version of your answer; the one answer never struck is the one resting on the line, and the one remembered.",
+    "visualMechanism": "struckDecayVsHeldAnchor",
+    "visualNarrative": [
+      {
+        "order": 1,
+        "action": "Headline staggers in upper-left on two lines — 'NEVER BEND,' over 'GET REMEMBERED' — with 'REMEMBERED' the single teal word; the block never leaves the top band.",
+        "meaning": "The claim is set as structure first, in a clean band no object will ever cross.",
+        "visualEvidence": "Lines at y≈14% and y≈26%, x=8%, each ≤60 chars, cream #F4F2ED; only 'REMEMBERED' in teal #7FD1BD; block ends above y=36%, no accent anywhere else in text."
+      },
+      {
+        "order": 2,
+        "action": "Four answer hairlines fade in stacked right side at topRight, center-right, and bottomRight positions, then a baseline hairline draws left→right at bottomRight beneath them.",
+        "meaning": "A record of your answers appears — four versions measured against one shared line.",
+        "visualEvidence": "Four secondary #B5B1A7 hairlines, 0.15s stagger; baseline draws in 0.4s; nothing overlapping the headline band."
+      },
+      {
+        "order": 3,
+        "action": "Strikes draw across the top three answer lines in quick succession, then those struck lines dim to 12% and dissolve out of frame.",
+        "meaning": "Each time you bend your answer to match the asker, that version is cancelled — compromise shown as visible decay.",
+        "visualEvidence": "Strikes on top three lines in #B5B1A7, 0.15s stagger; struck lines fade toward zero; the bottomRight teal line stays untouched."
+      },
+      {
+        "order": 4,
+        "action": "The surviving line turns teal, thickens and locks with zero sway; label 'HELD' fades in just above its right end.",
+        "meaning": "The answer you never keep editing is the only thing left standing — conviction is what survives to be remembered.",
+        "visualEvidence": "Teal #7FD1BD line at bottomRight, 100% opacity; 'HELD' label in secondary #B5B1A7 directly above the line's end; all struck lines gone."
+      },
+      {
+        "order": 5,
+        "action": "Full caption resolves along the bottom safe margin — 'people who never change their mind are the ones others remember.' — and the frame holds to the cut.",
+        "meaning": "Claim, surviving object and spoken line land on one referent before the cut.",
+        "visualEvidence": "Caption full and unbroken at bottom, clear of baseline, teal line and label; frame holds with 3 objects total."
+      }
+    ],
+    "semanticObjects": [
+      {
+        "objectType": "Headline",
+        "semanticRole": "States the beat's claim as a two-line imperative with one accent word.",
+        "relationship": "Sits entirely in the top band, never overlapping the record stage below.",
+        "importance": 5
+      },
+      {
+        "objectType": "AnswerLine",
+        "semanticRole": "Four versions of your answer in a written record, stacked against one line.",
+        "relationship": "Stacked across right half; three are struck and dissolved, the fourth survives.",
+        "importance": 5
+      },
+      {
+        "objectType": "SolidMark",
+        "semanticRole": "The one answer never edited — the fixed direction that earns memory.",
+        "relationship": "Rests at bottomRight as the only form whose edge touches the baseline.",
+        "importance": 5
+      },
+      {
+        "objectType": "StrikeLine",
+        "semanticRole": "The act of self-editing itself — compromise rendered as decay.",
+        "relationship": "Crosses each AnswerLine in sequence, then leaves with the line it killed.",
+        "importance": 4
+      },
+      {
+        "objectType": "Baseline",
+        "semanticRole": "The shared measure every answer is judged against.",
+        "relationship": "Runs under the whole record; only the SolidMark touches it.",
+        "importance": 4
+      },
+      {
+        "objectType": "Label",
+        "semanticRole": "Names the survivor's quality in one word: HELD.",
+        "relationship": "Floats directly above the SolidMark's right end, secondary tone, no second accent.",
+        "importance": 3
+      }
+    ],
+    "relationships": [
+      {
+        "from": "StrikeLine",
+        "to": "AnswerLine",
+        "relationship": "cancels: each strike visibly kills one version, so editing reads as erasure rather than refinement."
+      },
+      {
+        "from": "SolidMark",
+        "to": "Baseline",
+        "relationship": "rests-on: the teal line is the only form grounded on the shared line, making conviction literally stand on the measure."
+      },
+      {
+        "from": "AnswerLine",
+        "to": "SolidMark",
+        "relationship": "dissolves-away-against: struck versions fade to nothing while the unstruck line stays at full opacity and color."
+      },
+      {
+        "from": "Headline",
+        "to": "SolidMark",
+        "relationship": "claims: 'GET REMEMBERED' finds its only referent in the surviving teal line below it."
+      },
+      {
+        "from": "Label",
+        "to": "SolidMark",
+        "relationship": "names: 'HELD' sits above the mark's end, giving the survivor a word without a second accent."
+      }
+    ],
+    "typographyPlan": {
+      "headline": "NEVER BEND, / GET REMEMBERED",
+      "emphasisWords": [
+        "REMEMBERED"
+      ],
+      "supportingText": [
+        "HELD"
+      ]
+    },
+    "subtitlePlan": {
+      "enabled": true,
+      "text": "Meanwhile the people who never change their mind are the ones others remember.",
+      "timing": "12.74s–16.95s, spoken line across the beat",
+      "role": "spoken line"
+    },
+    "motionBeats": [
+      {
+        "order": 1,
+        "action": "Headline words stagger-reveal on two lines, teal landing last on 'REMEMBERED'.",
+        "purpose": "Builds the claim band first so the record below reads as its proof."
+      },
+      {
+        "order": 2,
+        "action": "Four answer hairlines stagger-fade in across right half (0.15s apart), then the baseline draws left to right.",
+        "purpose": "Establishes record and shared measure before any editing happens to it."
+      },
+      {
+        "order": 3,
+        "action": "Strikes draw across three lines in quick succession; those lines dim and dissolve.",
+        "purpose": "Accumulation of edits is the mechanism — each crossing removes one version of you."
+      },
+      {
+        "order": 4,
+        "action": "The survivor highlights teal and locks with zero sway; 'HELD' fades above it.",
+        "purpose": "Stillness is the payoff: it must arrive after the erasures so the contrast is felt."
+      },
+      {
+        "order": 5,
+        "action": "Full caption resolves along the bottom margin; frame holds to the cut.",
+        "purpose": "Ties claim, spoken line and surviving object to one referent."
+      }
+    ],
+    "compositionIntent": "Top-left text / right-half record. Headline x=8%–58%, y=12%–34%; record stage spans right half: top three answer lines at topRight/right-top/right-bottom, teal line and baseline at bottomRight. 'HELD' above teal line's end. Caption at bottom. ~60% negative space, 8% side margins, teal the sole accent, zero headline/object overlap.",
+    "visualEvidence": [
+      "Three struck answer hairlines visibly dissolve while one teal line sits flush on the drawn baseline — decay vs conviction readable before any text is read.",
+      "Headline band ends above y=36%, every record object starts in the right half — no cross-anchor collision in frame.",
+      "Teal #7FD1BD appears only on 'REMEMBERED' and the surviving line; label and caption are secondary.",
+      "Caption is the full sentence ending '...are the ones others remember.' — no orphan fragment."
+    ],
+    "forbiddenInterpretations": [
+      "Gold, orange or red in this beat — teal is the sole accent, on one word and the surviving line only.",
+      "Twin figures with a winner tag, avatar/crowd icons, applause marks, before/after diagrams.",
+      "Glow halo, spotlight, lens flare, particles, motion blur, glitch or flashy transitions.",
+      "Text-only frames: baseline, struck lines or teal line missing.",
+      "A floating 'HELD' label without the teal line directly beneath it."
+    ],
+    "noveltyIntent": "Four answer hairlines act as a written record: three strike themselves out in quick sequence, dim and dissolve, while the fourth highlights teal and plants flush on the shared baseline beneath 'HELD'. Memory is shown as whatever survives your own editing.",
+    "elementBudget": {
+      "min": 8,
+      "max": 10
+    }
+  },
+  "subtitle": {
+    "enabled": true,
+    "role": "spoken line",
+    "phrases": [
+      {
+        "text": "who never change their",
+        "start": 0,
+        "end": 0.79
+      },
+      {
+        "text": "mind are the ones",
+        "start": 0.79,
+        "end": 2.48
+      },
+      {
+        "text": "others remember. Stop editing",
+        "start": 2.48,
+        "end": 4.17
+      }
+    ]
+  }
+}

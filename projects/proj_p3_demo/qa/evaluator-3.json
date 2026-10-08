@@ -1,0 +1,99 @@
+{
+  "evaluator": {
+    "id": "C",
+    "lens": "cold-viewer skeptic: first-impression clarity, phone-size readability, and sensitivity to AI-slop aesthetics",
+    "temperature": 0.6
+  },
+  "result": {
+    "scenes": [
+      {
+        "sceneId": "scene_01",
+        "scores": {
+          "scriptRelevance": 6,
+          "visualClarity": 6,
+          "designConsistency": 7,
+          "typography": 8,
+          "composition": 7,
+          "motionQuality": 6,
+          "novelty": 6,
+          "aiSlopSeverity": 3
+        }
+      },
+      {
+        "sceneId": "scene_02",
+        "scores": {
+          "scriptRelevance": 5,
+          "visualClarity": 4,
+          "designConsistency": 5,
+          "typography": 6,
+          "composition": 5,
+          "motionQuality": 5,
+          "novelty": 5,
+          "aiSlopSeverity": 5
+        }
+      },
+      {
+        "sceneId": "scene_03",
+        "scores": {
+          "scriptRelevance": 7,
+          "visualClarity": 5,
+          "designConsistency": 6,
+          "typography": 7,
+          "composition": 5,
+          "motionQuality": 6,
+          "novelty": 6,
+          "aiSlopSeverity": 4
+        }
+      },
+      {
+        "sceneId": "scene_04",
+        "scores": {
+          "scriptRelevance": 3,
+          "visualClarity": 3,
+          "designConsistency": 4,
+          "typography": 7,
+          "composition": 3,
+          "motionQuality": 4,
+          "novelty": 3,
+          "aiSlopSeverity": 6
+        }
+      },
+      {
+        "sceneId": "scene_05",
+        "scores": {
+          "scriptRelevance": 6,
+          "visualClarity": 8,
+          "designConsistency": 7,
+          "typography": 7,
+          "composition": 7,
+          "motionQuality": 6,
+          "novelty": 6,
+          "aiSlopSeverity": 3
+        }
+      },
+      {
+        "sceneId": "scene_06",
+        "scores": {
+          "scriptRelevance": 6,
+          "visualClarity": 5,
+          "designConsistency": 5,
+          "typography": 7,
+          "composition": 5,
+          "motionQuality": 5,
+          "novelty": 6,
+          "aiSlopSeverity": 5
+        }
+      }
+    ],
+    "overall": {
+      "scriptRelevance": 6,
+      "visualClarity": 5,
+      "designConsistency": 6,
+      "typography": 7,
+      "composition": 5,
+      "motionQuality": 5,
+      "novelty": 5,
+      "aiSlopSeverity": 4
+    }
+  }
+}

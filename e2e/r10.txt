@@ -1,0 +1,6 @@
+now=10/07/2026 05:29:35
+[22:17:33] qa: technical QA + frame extraction
+[22:17:33] qa: reference conformance
+[22:17:41] qa: vision QA (3 independent evaluators)
+[22:22:59] qa: slop critic
+[22:23:40] repairing: repair round 1 (median-driven): overall quality 6.9 < 8 | scene_02: severe relevance/clarity issue (median relevance 4, clarity 7) | scene_03: severe relevance/clarity issue (median relevance 4, clarity 7) | scene_04: severe relevance/clarity issue (median relevance 4, clarity 7) | scene_06: severe readability - Gold ring overlaps headline letters 'NYA' of PENGARUHNYA — object/text collide instead of honoring leftTextRightObject split. | scene_08: severe readability - Grid tiles are near-invisible against bg (~0 contrast) and the circle overlaps the grid edge — 'one shape vs mould' story is muddy.

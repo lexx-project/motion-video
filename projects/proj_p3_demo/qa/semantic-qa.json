@@ -1,0 +1,101 @@
+{
+  "scenes": [
+    {
+      "sceneId": "scene_01",
+      "semanticRelevance": 7.5,
+      "visualStorytelling": 6.5,
+      "evidenceCoverage": 7.8,
+      "subtitleCoverage": 10,
+      "richness": 10,
+      "source": "vision-judge",
+      "evidenceGaps": [
+        "angle gap between ORIGINAL ANSWER and drifted line too small/subtle to decode cold",
+        "no visible per-badge tilt increment — three YES pills don't demonstrably cause the rotation",
+        "two accents in scene (gold headline/label + three solid teal YES badges)"
+      ]
+    },
+    {
+      "sceneId": "scene_02",
+      "semanticRelevance": 6,
+      "visualStorytelling": 5.5,
+      "evidenceCoverage": 7.2,
+      "subtitleCoverage": 10,
+      "richness": 10,
+      "source": "vision-judge",
+      "evidenceGaps": [
+        "YES pills are identical pills — no visible deformation into the three asker molds",
+        "third YES badge is gold, duplicating accent already used on headline word CHANGE",
+        "ask-to-version mapping ambiguous (one circle lacks an adjacent YES, badge floats between slots)",
+        "ghost/soft deformed YES versions described in intent absent from frame"
+      ]
+    },
+    {
+      "sceneId": "scene_03",
+      "semanticRelevance": 6.5,
+      "visualStorytelling": 5.5,
+      "evidenceCoverage": 8.1,
+      "subtitleCoverage": 10,
+      "richness": 10,
+      "source": "vision-judge",
+      "evidenceGaps": [
+        "hero YES cropped by right frame edge",
+        "grid shows one gold highlighted cell instead of uniform dim copies (contradicts privilege-lost-by-quantity)",
+        "teal value line retraction not measurable across the frame",
+        "no visible audience applause pulse row"
+      ]
+    },
+    {
+      "sceneId": "scene_04",
+      "semanticRelevance": 6,
+      "visualStorytelling": 5,
+      "evidenceCoverage": 7.8,
+      "subtitleCoverage": 10,
+      "richness": 10,
+      "source": "vision-judge",
+      "evidenceGaps": [
+        "struck answer hairlines are extremely faint — decay-vs-conviction not readable before text",
+        "caption truncated to orphan fragment 'mind are the ones'",
+        "no clear shared baseline tying HELD line to the struck records",
+        "REMEMBERED rendered gold, not the teal specified for the surviving-conviction semantic"
+      ]
+    },
+    {
+      "sceneId": "scene_05",
+      "semanticRelevance": 7,
+      "visualStorytelling": 5,
+      "evidenceCoverage": 9.2,
+      "subtitleCoverage": 10,
+      "richness": 10,
+      "source": "vision-judge",
+      "evidenceGaps": [
+        "missing: line losing length at three labeled gates with shedding fragments",
+        "missing: straight uncut stroke crossing gate row and exiting frame right",
+        "missing: stub label 'EVERYONE FED — NOTHING LEFT'; shows RETURN SIGNAL — NONE instead",
+        "returns a static diagram of zero signal rather than demonstrating self-editing cut down"
+      ]
+    },
+    {
+      "sceneId": "scene_06",
+      "semanticRelevance": 6,
+      "visualStorytelling": 4.5,
+      "evidenceCoverage": 8.1,
+      "subtitleCoverage": 10,
+      "richness": 10,
+      "source": "vision-judge",
+      "evidenceGaps": [
+        "fixed-bearing vs rotating-ring contrast is not decodable from a single frame",
+        "two gold arrows point in divergent directions (down vs lower-left), undercutting 'one direction'",
+        "caption truncated at 'choose one direction and'",
+        "muted proof label at the needle tip and the visible ask-rim from the intent are missing"
+      ]
+    }
+  ],
+  "overall": {
+    "semanticRelevance": 6.5,
+    "visualStorytelling": 5.3,
+    "evidenceCoverage": 8,
+    "subtitleCoverage": 10,
+    "richness": 10
+  },
+  "notes": []
+}

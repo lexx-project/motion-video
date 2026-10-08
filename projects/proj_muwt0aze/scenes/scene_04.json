@@ -1,0 +1,78 @@
+{
+  "sceneId": "scene_04",
+  "duration": 1.8,
+  "purpose": "Membuktikan kontradiksi penilaian: alat ukur yang sama dibalik 180° oleh setiap input, sehingga vonis selalu berlawanan dengan yang dinilai.",
+  "visualConcept": "ONE NEEDLE, ALWAYS 180 FLIP",
+  "composition": "centered",
+  "headline": {
+    "text": "SATU VONIS, SELALU DIBALIK",
+    "accentWords": [
+      "VONIS"
+    ],
+    "align": "center"
+  },
+  "elements": [
+    {
+      "primitive": "Arrow",
+      "position": "center",
+      "direction": "up",
+      "variant": "line",
+      "lengthPct": 24,
+      "rotation": 0,
+      "accent": "gold",
+      "entrance": "draw",
+      "exit": "fade",
+      "delay": 0.15
+    },
+    {
+      "primitive": "Arrow",
+      "position": "center",
+      "direction": "down",
+      "variant": "line",
+      "lengthPct": 24,
+      "rotation": 0,
+      "accent": "gold",
+      "entrance": "draw",
+      "emphasis": "positionShift",
+      "emphasisAt": 1.1,
+      "delay": 0.8,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Label",
+      "text": "LU BAIK → PENCITRAAN",
+      "position": "bottom",
+      "offsetY": -8,
+      "align": "center",
+      "accent": "none",
+      "entrance": "fade",
+      "exit": "fade",
+      "delay": 0.45,
+      "emphasis": "counterChange",
+      "emphasisAt": 1.1
+    },
+    {
+      "primitive": "Label",
+      "text": "LU DIEM → SOMBONG",
+      "position": "bottom",
+      "offsetY": -8,
+      "align": "center",
+      "accent": "none",
+      "entrance": "fade",
+      "exit": "fade",
+      "delay": 0.95,
+      "emphasis": "counterChange",
+      "emphasisAt": 1.3
+    }
+  ],
+  "motion": {
+    "entrance": "fade",
+    "emphasis": "positionShift",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 0.8,
+    "exitAt": 1.5
+  }
+}

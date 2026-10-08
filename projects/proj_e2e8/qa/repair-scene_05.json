@@ -1,0 +1,13 @@
+{
+  "sceneId": "scene_05",
+  "rootCause": "Weighing metaphor was illegible (beam rendered as a short upright hairline instead of a tilted bar with weights at its ends), the counterweight used a second full-strength accent that outshone the gold, and the headline wrapped into a 5-line low-sitting stack.",
+  "changesMade": [
+    "Set the large counterweight Circle to accent 'orange' at 0.5 opacity so gold is the single dominant accent and 'small gold beats large dim' hierarchy reads correctly",
+    "Rotated the beam Line to 14deg, lengthened it to 70%, and raised it to offsetY -16 so the tilt visibly dips toward the gold weight",
+    "Repositioned both weight Circles onto the beam ends: dim circle offsetX -30/offsetY -21, gold circle offsetX 30/offsetY -11 (gold side lower = it wins)",
+    "Moved the vertical fulcrum Line to offsetY -10 under the beam center so beam+fulcrum read as a balance scale",
+    "Shortened headline wrapping to a 2-line phrase 'WANT MOST / BEATS WANT NOW' (within 4-line limit) and raised the block via a scene-level placement",
+    "Shifted the gold glow to offsetY -6 to sit behind the balance rather than the text, keeping intensity 0.3 (single subordinate glow)"
+  ],
+  "expectedEffect": "The frame now reads instantly as a tilted balance where a small gold weight outweighs a large dim one, with gold as the only dominant accent and a clean two-line centered headline under the beam."
+}

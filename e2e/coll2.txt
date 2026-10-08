@@ -1,0 +1,8 @@
+scene_01: coll=2 conf=7.5 scene.headline("YANG PALING BIKIN ...") x Arrow[0] (100%) | scene.headline("YANG PALING BIKIN ...") x Arrow[1] (100%)
+scene_02: coll=3 conf=7.5 scene.headline("TAKUT DIJUDGE...") x Line[0] (57%) | scene.headline("TAKUT DIJUDGE...") x Label[1]("JUJUR -+ KERAS -+ LI...") (58%) | scene.headline("TAKUT DIJUDGE...") x Label[2]("AMAN AJA...") (69%)
+scene_03: coll=0 conf=10 
+scene_04: coll=0 conf=8.9 
+scene_05: coll=0 conf=9.2 
+scene_06: coll=0 conf=9.4 
+scene_07: coll=0 conf=9.1 
+scene_08: coll=1 conf=8.6 scene.headline("LU NGGAK DICIPTAIN...") x Grid[0] (100%)

@@ -1,0 +1,299 @@
+{
+  "sceneId": "scene_01",
+  "duration": 5.9,
+  "purpose": "Each YES tilts the answer line off its original heading; gold gap shows drift never recovers.",
+  "visualConcept": "Bearing drift: rigid answer line rotates down under three YES badges",
+  "composition": "leftTextRightObject",
+  "headline": {
+    "text": "PLEASING EVERYONE TIRES YOU",
+    "accentWords": ["TIRES"],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "Label",
+      "text": "ORIGINAL ANSWER",
+      "position": "topRight",
+      "offsetY": 12,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "Names the fixed baseline heading",
+      "delay": 0.1
+    },
+    {
+      "primitive": "Line",
+      "position": "topRight",
+      "offsetY": 18,
+      "accent": "gold",
+      "scale": 1.2,
+      "role": "semantic",
+      "purpose": "Level original heading that never moves — permanent gold reference",
+      "delay": 0.15,
+      "entrance": "draw"
+    },
+    {
+      "primitive": "Line",
+      "position": "right",
+      "offsetY": -8,
+      "accent": "none",
+      "scale": 1.2,
+      "role": "semantic",
+      "purpose": "Your answer; rotation carries the depletion story",
+      "rotation": 10,
+      "delay": 0.45,
+      "entrance": "draw",
+      "emphasisAt": 1.5
+    },
+    {
+      "primitive": "Badge",
+      "text": "YES",
+      "position": "right",
+      "offsetY": -2,
+      "offsetX": -4,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "First compliance, locking the first turn off heading",
+      "delay": 1.15,
+      "entrance": "slide",
+      "emphasisAt": 1.6
+    },
+    {
+      "primitive": "Badge",
+      "text": "YES",
+      "position": "right",
+      "offsetY": 0,
+      "offsetX": -4,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "Second compliance adding drift, not recovery",
+      "delay": 1.95,
+      "entrance": "slide",
+      "emphasisAt": 2.4
+    },
+    {
+      "primitive": "Badge",
+      "text": "YES",
+      "position": "right",
+      "offsetY": 2,
+      "offsetX": -4,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "Third compliance completing the tilted posture",
+      "delay": 2.75,
+      "entrance": "slide",
+      "emphasisAt": 3.3
+    },
+    {
+      "primitive": "Label",
+      "text": "DRIFT — NEVER RECOVERED",
+      "position": "bottomRight",
+      "offsetY": -6,
+      "accent": "gold",
+      "role": "semantic",
+      "purpose": "Names the permanent gap between heading and current tilt",
+      "delay": 3.55,
+      "entrance": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "reveal",
+    "emphasis": "positionShift",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 3.7,
+    "exitAt": 5.7
+  },
+  "storyboard": {
+    "beatId": "b1",
+    "spokenMeaning": "Every time you bend your answer to make everyone happy, you get more tired — and the energy never comes back.",
+    "viewerTakeaway": "Three yeses tilt your answer line off its original heading, and the gold angle gap only widens — it never re-levels.",
+    "visualMechanism": "bearing drift: each YES tilts the answer line off its heading",
+    "visualNarrative": [
+      {
+        "order": 1,
+        "action": "Headline 'PLEASING EVERYONE TIRES YOU' reveals on the left; on the right a gold hairline labelled ORIGINAL ANSWER fades in level at topRight.",
+        "meaning": "Names the cost, then fixes the heading you started from.",
+        "visualEvidence": "Left text block at 8% margins, gold hairline at topRight; label secondary above it; no collisions."
+      },
+      {
+        "order": 2,
+        "action": "A white answer line draws out at center-right, sitting below and angled slightly below the gold hairline — your answer at its starting heading.",
+        "meaning": "The unbent answer exists at full strength before any drift.",
+        "visualEvidence": "Answer line at right anchor, rotation=10 showing initial tilt; parallel to hairline but visibly below it."
+      },
+      {
+        "order": 3,
+        "action": "The first YES badge slides in and attaches at the answer line tip; the drift begins.",
+        "meaning": "First compliance is a deliberate turn away — paid, not bounced back.",
+        "visualEvidence": "Badge in secondary color beside the line tip; gold reference hairline stays fixed and clean."
+      },
+      {
+        "order": 4,
+        "action": "A second YES badge joins; the drift compounds. A third YES follows.",
+        "meaning": "Repetition adds drift instead of returning it — fatigue accumulates.",
+        "visualEvidence": "Three staggered badges on the right side; each arrives lower than the last; single gold accent on the reference hairline."
+      },
+      {
+        "order": 5,
+        "action": "Gold label 'DRIFT — NEVER RECOVERED' fades in bottom-right; frame settles.",
+        "meaning": "The residue is a permanent deficit — the heading does not reset on its own.",
+        "visualEvidence": "Static frame: one gold hairline at top-right, three secondary YES badges, one gold drift label; headline left; clear composition."
+      }
+    ],
+    "semanticObjects": [
+      {
+        "objectType": "Headline",
+        "semanticRole": "States the claim so the tilted line reads as proof, not decoration.",
+        "relationship": "explains the drifting answer line to its right",
+        "importance": 4
+      },
+      {
+        "objectType": "Line (answer line)",
+        "semanticRole": "Your answer/stance; its tilt away from the gold reference carries the depletion story.",
+        "relationship": "drifts away from the gold hairline with each hung YES badge",
+        "importance": 5
+      },
+      {
+        "objectType": "Line (gold reference hairline)",
+        "semanticRole": "The original heading you never return to — makes fatigue countable without numbers.",
+        "relationship": "stays fixed and level at topRight for the whole beat",
+        "importance": 4
+      },
+      {
+        "objectType": "Badge YES",
+        "semanticRole": "Each act of pleasing, rendered as a turn that stays on the frame.",
+        "relationship": "lands on the right side and marks a downward compliance step",
+        "importance": 5
+      },
+      {
+        "objectType": "Label DRIFT—NEVER RECOVERED",
+        "semanticRole": "Measures and names the unrecovered divergence: what pleasing cost and kept.",
+        "relationship": "sits bottomRight as final verdict on the permanent gap",
+        "importance": 4
+      },
+      {
+        "objectType": "Label ORIGINAL ANSWER",
+        "semanticRole": "Names the baseline so the metaphor stays literal, not abstract.",
+        "relationship": "tags the hairline's left end with clearance",
+        "importance": 3
+      }
+    ],
+    "relationships": [
+      {
+        "from": "Badge YES",
+        "to": "Line (answer line)",
+        "relationship": "acts on: each badge marks a permanent downward compliance step"
+      },
+      {
+        "from": "Line (answer line)",
+        "to": "Line (gold reference hairline)",
+        "relationship": "drifts away from: the gap opens with each YES and never closes"
+      },
+      {
+        "from": "Label DRIFT",
+        "to": "Line (gold reference hairline)",
+        "relationship": "measures: names the divergence between start heading and current tilt"
+      },
+      {
+        "from": "Headline",
+        "to": "Line (answer line)",
+        "relationship": "explains: text supplies the claim the rotation proves"
+      }
+    ],
+    "typographyPlan": {
+      "headline": "PLEASING EVERYONE TIRES YOU",
+      "emphasisWords": ["TIRES"],
+      "supportingText": ["ORIGINAL ANSWER", "YES", "DRIFT — NEVER RECOVERED"]
+    },
+    "subtitlePlan": {
+      "enabled": true,
+      "text": "Every time you try to make everyone happy, you get more tired.",
+      "timing": "spoken across the whole beat, 0.00s onward",
+      "role": "spoken line; bottom 18% band reserved for it, all content lives above"
+    },
+    "motionBeats": [
+      {
+        "order": 1,
+        "action": "Headline words reveal in a quick stagger; gold hairline draws top-right, label fades in above it, 0.00-0.55s",
+        "purpose": "Claim and baseline together, so the line reads as evidence."
+      },
+      {
+        "order": 2,
+        "action": "Answer line draws at center-right, angled slightly below hairline, 0.45-1.05s",
+        "purpose": "Full heading exists before any loss."
+      },
+      {
+        "order": 3,
+        "action": "First YES badge slides in at right, 1.15-1.70s",
+        "purpose": "A discrete, deliberate act of compliance."
+      },
+      {
+        "order": 4,
+        "action": "Second YES badge joins lower, 1.95-2.50s",
+        "purpose": "Repetition establishes a countable pattern of drift."
+      },
+      {
+        "order": 5,
+        "action": "Third YES badge lands lowest, 2.75-3.35s",
+        "purpose": "The full posture of exhaustion."
+      },
+      {
+        "order": 6,
+        "action": "Gold DRIFT label fades bottom-right, 3.55-4.05s",
+        "purpose": "Names the residue as quiet, held fatigue."
+      },
+      {
+        "order": 7,
+        "action": "Frame holds static to 5.40s",
+        "purpose": "Lets the gap between gold hairline and drift label sit in silence."
+      }
+    ],
+    "compositionIntent": "Left text, right objects: headline block left-aligned at 8% margin; gold hairline at topRight, answer line at center-right, three YES badges staggered vertically at right, drift label at bottomRight. Bottom 18% reserved for subtitles. ~60% negative space. Gold only on hairline and drift label.",
+    "visualEvidence": [
+      "Gold ORIGINAL ANSWER hairline at topRight stays fixed while answer line drifts below it.",
+      "Three YES badges stacked on the right side — each badge marks a downward compliance step.",
+      "Earlier badges remain visible as later ones arrive; no cost is ever recovered.",
+      "Gold DRIFT label names the permanent gap at bottomRight.",
+      "One gold headline word TIRES, one gold hairline, one gold label; three secondary YES badges; seven elements, single accent."
+    ],
+    "forbiddenInterpretations": [
+      "A person, figure, or slumped character — the line, badges and label carry the fatigue.",
+      "A vessel, liquid level, battery, or percentage progress bar.",
+      "Gold YES labels or teal as a second accent.",
+      "Overlapping text, caption inside the subtitle band."
+    ],
+    "noveltyIntent": "Fatigue is measured as permanent angular drift of a rigid answer line: every YES stays physically on the frame as a badge marking the downward step, and the drift label names the permanent gap — no vessel, bar, grid, loop, or sagging rope.",
+    "elementBudget": {
+      "min": 6,
+      "max": 8
+    }
+  },
+  "subtitle": {
+    "enabled": true,
+    "role": "spoken line; bottom 18% band reserved for it, all content lives above",
+    "phrases": [
+      {
+        "text": "Every time you try",
+        "start": 0,
+        "end": 1.69
+      },
+      {
+        "text": "to make everyone happy,",
+        "start": 1.69,
+        "end": 3.38
+      },
+      {
+        "text": "you get more tired.",
+        "start": 3.38,
+        "end": 5.07
+      },
+      {
+        "text": "You change your answer",
+        "start": 5.07,
+        "end": 5.9
+      }
+    ]
+  }
+}

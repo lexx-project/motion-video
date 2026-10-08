@@ -1,0 +1,78 @@
+{
+  "sceneId": "scene_02",
+  "duration": 3.61,
+  "purpose": "Self-censorship shown as expressive words clipped at a judgment gate; only bland versions pass through, enacting 'hapus lagi'.",
+  "visualConcept": "FILTER GATE BETWEEN SELF AND WORLD",
+  "composition": "split",
+  "headline": {
+    "text": "TAKUT DIJUDGE",
+    "accentWords": [
+      "DIJUDGE"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "Line",
+      "orientation": "vertical",
+      "lengthPct": 50,
+      "thicknessPx": 6,
+      "position": "center",
+      "offsetX": 10,
+      "offsetY": 4,
+      "accent": "teal",
+      "delay": 0.4,
+      "entrance": "draw",
+      "emphasis": "highlight",
+      "emphasisAt": 1.6
+    },
+    {
+      "primitive": "Label",
+      "text": "JUJUR · KERAS · LIAR",
+      "position": "center",
+      "offsetX": -16,
+      "offsetY": 4,
+      "size": "lg",
+      "accent": "teal",
+      "delay": 0.6,
+      "entrance": "slide",
+      "emphasis": "positionShift",
+      "emphasisAt": 1.6,
+      "exit": "dissolve"
+    },
+    {
+      "primitive": "Label",
+      "text": "AMAN AJA",
+      "position": "center",
+      "offsetX": 26,
+      "offsetY": 4,
+      "size": "lg",
+      "accent": "none",
+      "delay": 1.75,
+      "entrance": "fade"
+    },
+    {
+      "primitive": "Label",
+      "text": "HAPUS LAGI",
+      "position": "bottom",
+      "offsetX": 10,
+      "offsetY": -10,
+      "size": "lg",
+      "accent": "none",
+      "delay": 0.8,
+      "entrance": "fade",
+      "emphasis": "highlight",
+      "emphasisAt": 1.6
+    }
+  ],
+  "motion": {
+    "entrance": "reveal",
+    "emphasis": "highlight",
+    "exit": "dissolve"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.6,
+    "exitAt": 3.1
+  }
+}

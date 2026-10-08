@@ -1,0 +1,88 @@
+{
+  "sceneId": "scene_05",
+  "duration": 3.61,
+  "purpose": "Melepaskan ilusi kendali atas pikiran orang lain: benang terlepas dari genggaman, hanya garis milik sendiri yang tetap bertahan.",
+  "visualConcept": "TETHER SLIPS PAST THE GRIP",
+  "composition": "asymmetric",
+  "headline": {
+    "text": "LU NGGAK PERNAH BISA NGONTROL",
+    "accentWords": [
+      "BISA",
+      "NGONTROL"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "Indicator",
+      "variant": "pulse",
+      "label": "YANG BISA LU PEGANG",
+      "position": "left",
+      "offsetX": 10,
+      "offsetY": 0,
+      "accent": "none",
+      "size": "md",
+      "delay": 0,
+      "entrance": "fade",
+      "emphasis": "controlledReveal",
+      "emphasisAt": 1.62,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Line",
+      "orientation": "horizontal",
+      "lengthPct": 12,
+      "thicknessPx": 3,
+      "position": "left",
+      "offsetX": 4,
+      "offsetY": 0,
+      "accent": "gold",
+      "delay": 0.15,
+      "entrance": "fade",
+      "emphasis": "highlight",
+      "emphasisAt": 2,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Line",
+      "orientation": "horizontal",
+      "lengthPct": 40,
+      "thicknessPx": 3,
+      "position": "left",
+      "offsetX": 18,
+      "offsetY": 0,
+      "accent": "none",
+      "delay": 0.3,
+      "entrance": "slide",
+      "emphasis": "positionShift",
+      "emphasisAt": 1.62,
+      "exit": "slide"
+    },
+    {
+      "primitive": "Circle",
+      "variant": "outline",
+      "diameterPct": 26,
+      "label": "PIKIRAN ORANG LAIN",
+      "position": "right",
+      "offsetX": -10,
+      "offsetY": 0,
+      "accent": "none",
+      "size": "lg",
+      "delay": 0.6,
+      "entrance": "fade",
+      "emphasis": "subtleScale",
+      "emphasisAt": 2.1,
+      "exit": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "fade",
+    "emphasis": "positionShift",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.62,
+    "exitAt": 3.01
+  }
+}

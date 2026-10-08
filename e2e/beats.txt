@@ -1,0 +1,15 @@
+[b1] Every day you say tomorrow you will change.
+[b2] But tomorrow you repeat the same thing.
+[b3] The gap between who you are and who you want to be
+[b4] is built from tiny choices.
+[b5] Discipline is choosing what you want most over what you want now.
+[b6] Start today. Start small.
+[b7] But start.
+---
+scene_01: concept=TODAY LEFT BLANK | headline=TOMORROW / IS EASY | els=Subheadline,Timeline
+scene_02: concept=Struck TOMORROW repeats below, already crossed, linked by a looping return arrow | headline= | els=WordReveal,Line,Arrow,WordReveal,Line
+scene_03: concept=TYPE SPLIT BY VOID | headline= | els=WordReveal,WordReveal,Line,GradientGlow
+scene_04: concept=TILE BRIDGE ASSEMBLING | headline=BUILT FROM / TINY CHOICES | els=Line,Line,Line,Indicator
+scene_05: concept=SMALL GOLD BEATS LARGE DIM | headline=WANT MOST / BEATS WANT NOW | els=GradientGlow,Line,Line,Circle,Circle
+scene_06: concept=Single cell ignition | headline=START TODAY. START SMALL. | els=Grid
+scene_07: concept=Dot breaks into a line | headline=BUT START. | els=Circle,Line,GradientGlow,Caption

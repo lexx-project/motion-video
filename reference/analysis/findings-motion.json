@@ -1,0 +1,27 @@
+{
+  "entrance": "Elements enter via progressive staged reveal: headline lines appear one after another (first line, then accent-colored second line), and small UI card icons pop in sequentially along a horizontal row; entrances are subtle fades/small positional settles rather than large off-screen travel.",
+  "exit": "Exits are not clearly observable within the sampled frames; scene changes appear to replace content wholesale (cut/dissolve to a new layout) rather than showing individual elements animating out.",
+  "objectMovement": "The simplified human figure and card row are largely static once placed; the figure only changes position between scene layouts (center in one scene, right side in another), indicating layout repositioning across cuts rather than continuous on-screen motion.",
+  "textMovement": "Text appears to reveal progressively left-to-right/top-to-bottom, with later words/lines trailing in as if typed or word-by-word; final resting positions are fixed, with no visible drift after the reveal completes.",
+  "scaleBehavior": "Scale changes are minimal — elements seem to settle at full size with, at most, a slight fade-up or micro scale-in on cards; the overall measured diff (0.0112) implies no dramatic scaling.",
+  "easing": "Smooth, restrained easing with soft settles; no visible bounce or overshoot in the sampled frames, leaning toward ease-out rather than snappy or springy motion.",
+  "transitionBehavior": "Between sequences the background color, layout, and composition change completely (teal → warm brown → teal → brown), suggesting hard cuts or quick cross-dissolves paired with fresh staged text entrances rather than continuous element carryover.",
+  "motionDensity": "restrained",
+  "camera": "Static camera with fixed framing; no panning, zooming, or parallax detectable — motion comes from content reveals within a locked frame.",
+  "emphasis": "Emphasis is achieved typographically and through color: accent lines switch to teal/pink-red, staggered line-by-line reveals draw attention to key phrases rather than through motion accents.",
+  "confidence": 0.65,
+  "evidence": [
+    "Global mean normalized RGB diff = 0.0112 indicates very low frame-to-frame change",
+    "Frame A1 shows only 'KALAU' while A2–A3 show progressively completed two-line headline, indicating staged text reveal",
+    "A3 adds a row of card icons at lower-left that were absent earlier, showing sequential element pop-in",
+    "Frames A4–A5 show a new scene with headline completing and second label 'UDAH KENAL RIBETNYA' appearing, confirming staggered entrances",
+    "Sequence B frames 8–9 show 'HARUSNYA KAMU BERHENTI DI HARI' typing/revealing progressively under a fixed headline",
+    "Sequence-to-sequence changes swap background color (teal ↔ warm brown) and full layout, indicating cut/dissolve transitions"
+  ],
+  "lowConfidenceNotes": [
+    "Sampled frames do not capture any element actually exiting, so exit behavior is inferred only from scene replacement",
+    "No frame pair shows mid-transition blending, so transition type (hard cut vs. cross-dissolve) cannot be confirmed",
+    "Overshoot or spring behavior cannot be ruled out between unsampled frames given the sparse sampling",
+    "Camera motion cannot be definitively excluded if a very slow, subtle push-in exists below the diff threshold"
+  ]
+}

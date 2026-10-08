@@ -1,0 +1,96 @@
+{
+  "sceneId": "scene_02",
+  "duration": 2.13,
+  "purpose": "Expose the loop: tomorrow's promise is struck out again, identical and unchanged — repetition without change is the mechanism of stagnation.",
+  "visualConcept": "Struck TOMORROW repeats below, already crossed, linked by a looping return arrow",
+  "composition": "typographyDominant",
+  "elements": [
+    {
+      "primitive": "WordReveal",
+      "text": "TOMORROW",
+      "position": "center",
+      "offsetY": -14,
+      "scale": 1,
+      "opacity": 1,
+      "accent": "none",
+      "entrance": "reveal",
+      "delay": 0,
+      "staggerStep": 0.08,
+      "align": "center"
+    },
+    {
+      "primitive": "Line",
+      "orientation": "horizontal",
+      "lengthPct": 62,
+      "thicknessPx": 8,
+      "position": "center",
+      "offsetY": -14,
+      "scale": 1,
+      "opacity": 1,
+      "accent": "red",
+      "entrance": "draw",
+      "delay": 0.3,
+      "emphasis": "highlight",
+      "emphasisAt": 1
+    },
+    {
+      "primitive": "Arrow",
+      "direction": "up",
+      "variant": "curve",
+      "lengthPct": 14,
+      "position": "center",
+      "offsetY": -3,
+      "offsetX": 0,
+      "scale": 1,
+      "opacity": 0.7,
+      "accent": "none",
+      "entrance": "reveal",
+      "delay": 0.7,
+      "emphasis": "positionShift",
+      "emphasisAt": 1.2
+    },
+    {
+      "primitive": "WordReveal",
+      "text": "TOMORROW",
+      "position": "center",
+      "offsetY": 8,
+      "scale": 1,
+      "opacity": 1,
+      "accent": "gold",
+      "accentWords": [
+        "TOMORROW"
+      ],
+      "entrance": "slide",
+      "delay": 0.75,
+      "staggerStep": 0.08,
+      "align": "center",
+      "emphasis": "subtleScale",
+      "emphasisAt": 1
+    },
+    {
+      "primitive": "Line",
+      "orientation": "horizontal",
+      "lengthPct": 62,
+      "thicknessPx": 8,
+      "position": "center",
+      "offsetY": 8,
+      "scale": 1,
+      "opacity": 1,
+      "accent": "red",
+      "entrance": "draw",
+      "delay": 1,
+      "emphasis": "highlight",
+      "emphasisAt": 1
+    }
+  ],
+  "motion": {
+    "entrance": "reveal",
+    "emphasis": "highlight",
+    "exit": "dissolve"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1,
+    "exitAt": 2.13
+  }
+}

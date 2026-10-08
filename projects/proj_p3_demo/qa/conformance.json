@@ -1,0 +1,111 @@
+{
+  "scenes": [
+    {
+      "sceneId": "scene_01",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 10,
+        "motion": 5,
+        "density": 7,
+        "negativeSpace": 7
+      },
+      "overall": 8.4,
+      "evidence": [
+        "motion \"positionShift\" outside reference-preferred set",
+        "4 element delay > 1.4s (reference staggers quickly)",
+        "9 elements exceeds guideline 8 (readability pressure; hard max 10)"
+      ]
+    },
+    {
+      "sceneId": "scene_02",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 6,
+        "motion": 8,
+        "density": 10,
+        "negativeSpace": 8.5
+      },
+      "overall": 8.9,
+      "evidence": [
+        "COLLISION: Label[4](\"YES...\") overlaps Label[6](\"YES...\") (est. 35% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor",
+        "2 element delay > 1.4s (reference staggers quickly)"
+      ]
+    },
+    {
+      "sceneId": "scene_03",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 10,
+        "motion": 10,
+        "density": 10,
+        "negativeSpace": 8.5
+      },
+      "overall": 9.8,
+      "evidence": [
+        "structure conforms to reference-derived language"
+      ]
+    },
+    {
+      "sceneId": "scene_04",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 9,
+        "motion": 7,
+        "density": 7,
+        "negativeSpace": 7
+      },
+      "overall": 8.6,
+      "evidence": [
+        "3 element delay > 1.4s (reference staggers quickly)",
+        "10 elements exceeds guideline 8 (readability pressure; hard max 10)"
+      ]
+    },
+    {
+      "sceneId": "scene_05",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 10,
+        "motion": 6,
+        "density": 10,
+        "negativeSpace": 8.5
+      },
+      "overall": 9.2,
+      "evidence": [
+        "4 element delay > 1.4s (reference staggers quickly)"
+      ]
+    },
+    {
+      "sceneId": "scene_06",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 0,
+        "motion": 6,
+        "density": 7,
+        "negativeSpace": 7
+      },
+      "overall": 7.1,
+      "evidence": [
+        "grammar \"rightTextLeftObject\" absent from reference shares (allowed by spec, off-language)",
+        "COLLISION: scene.headline(\"HOLD ONE LINE...\") overlaps Circle[1] (est. 24% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor",
+        "COLLISION: scene.headline(\"HOLD ONE LINE...\") overlaps Arrow[4] (est. 100% of the smaller text box) - cross-anchor text overlap is unreadable; move one to another band or the same anchor",
+        "4 element delay > 1.4s (reference staggers quickly)",
+        "10 elements exceeds guideline 8 (readability pressure; hard max 10)",
+        "SUBTITLE_COLLISION: subtitle band overlaps Indicator[7] (37%) - move content out of the bottom band when subtitles are enabled"
+      ]
+    }
+  ],
+  "overall": 8.7,
+  "method": "structural checks against reference-derived design tokens + rendered-frame luma/text/accent stats (no pixel similarity)"
+}

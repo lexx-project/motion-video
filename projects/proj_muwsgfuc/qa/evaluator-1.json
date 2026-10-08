@@ -1,0 +1,125 @@
+{
+  "evaluator": {
+    "id": "A",
+    "lens": "script-communication: does each frame express its story beat visually, without relying on the narration?",
+    "temperature": 0.2
+  },
+  "result": {
+    "scenes": [
+      {
+        "sceneId": "scene_01",
+        "scores": {
+          "scriptRelevance": 6,
+          "visualClarity": 6,
+          "designConsistency": 7,
+          "typography": 6,
+          "composition": 7,
+          "motionQuality": 7,
+          "novelty": 6,
+          "aiSlopSeverity": 3
+        }
+      },
+      {
+        "sceneId": "scene_02",
+        "scores": {
+          "scriptRelevance": 5,
+          "visualClarity": 7,
+          "designConsistency": 7,
+          "typography": 8,
+          "composition": 7,
+          "motionQuality": 6,
+          "novelty": 4,
+          "aiSlopSeverity": 3
+        }
+      },
+      {
+        "sceneId": "scene_03",
+        "scores": {
+          "scriptRelevance": 9,
+          "visualClarity": 8,
+          "designConsistency": 7,
+          "typography": 6,
+          "composition": 7,
+          "motionQuality": 7,
+          "novelty": 7,
+          "aiSlopSeverity": 3
+        }
+      },
+      {
+        "sceneId": "scene_04",
+        "scores": {
+          "scriptRelevance": 8,
+          "visualClarity": 6,
+          "designConsistency": 6,
+          "typography": 7,
+          "composition": 6,
+          "motionQuality": 7,
+          "novelty": 7,
+          "aiSlopSeverity": 4
+        }
+      },
+      {
+        "sceneId": "scene_05",
+        "scores": {
+          "scriptRelevance": 6,
+          "visualClarity": 6,
+          "designConsistency": 6,
+          "typography": 7,
+          "composition": 6,
+          "motionQuality": 6,
+          "novelty": 5,
+          "aiSlopSeverity": 5
+        }
+      },
+      {
+        "sceneId": "scene_06",
+        "scores": {
+          "scriptRelevance": 7,
+          "visualClarity": 7,
+          "designConsistency": 7,
+          "typography": 6,
+          "composition": 7,
+          "motionQuality": 7,
+          "novelty": 7,
+          "aiSlopSeverity": 3
+        }
+      },
+      {
+        "sceneId": "scene_07",
+        "scores": {
+          "scriptRelevance": 8,
+          "visualClarity": 6,
+          "designConsistency": 6,
+          "typography": 5,
+          "composition": 6,
+          "motionQuality": 6,
+          "novelty": 7,
+          "aiSlopSeverity": 4
+        }
+      },
+      {
+        "sceneId": "scene_08",
+        "scores": {
+          "scriptRelevance": 7,
+          "visualClarity": 6,
+          "designConsistency": 7,
+          "typography": 5,
+          "composition": 6,
+          "motionQuality": 7,
+          "novelty": 6,
+          "aiSlopSeverity": 4
+        }
+      }
+    ],
+    "overall": {
+      "scriptRelevance": 7,
+      "visualClarity": 6,
+      "designConsistency": 6,
+      "typography": 6,
+      "composition": 6,
+      "motionQuality": 7,
+      "novelty": 6,
+      "aiSlopSeverity": 4
+    }
+  }
+}

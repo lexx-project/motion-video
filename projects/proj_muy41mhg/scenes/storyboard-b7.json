@@ -1,0 +1,158 @@
+{
+  "beatId": "b7",
+  "spokenMeaning": "The effort to control what others think is futile — their judgment stops at a line you own and can never be brought inside.",
+  "viewerTakeaway": "Let judgment arrive, glance off the boundary, and pass — it never gets to enter or move you.",
+  "visualMechanism": "barrier — converging opinion strokes halt at a gold perimeter ring and slide ...",
+  "visualNarrative": [
+    {
+      "order": 1,
+      "action": "Four thin opinion strokes enter from the outer edges, aimed straight at a centered inner disc labelled DIRI LU, and halt one shared radius away against a hairline gold ring.",
+      "meaning": "Others' judgments arrive with force but stop at a boundary that is not theirs to move.",
+      "visualEvidence": "Four converging strokes all end at an identical gap before the gold ring; none touches the disc."
+    },
+    {
+      "order": 2,
+      "action": "Each blocked stroke slides off along the ring's curve, curving away toward the frame edges while the disc and ring stay perfectly still.",
+      "meaning": "Judgment is deflected and dissipates outward — it can pass by, never through.",
+      "visualEvidence": "Stroke tips trace short arcs along the ring's outer edge and exit; ring and disc show zero displacement."
+    },
+    {
+      "order": 3,
+      "action": "Headline lu NGGAK BISA NGONTROL settles above the scene with NGGAK BISA in gold; strokes leave as faint dim tracks.",
+      "meaning": "The pivot: control is named exactly where it ends.",
+      "visualEvidence": "Two-word gold emphasis; residual hairline trails record where opinions passed without entry."
+    }
+  ],
+  "semanticObjects": [
+    {
+      "objectType": "Circle",
+      "semanticRole": "Holds DIRI LU — the sovereign self that stays intact and unmoved.",
+      "relationship": "Defended by the ring; absorbs nothing from outside.",
+      "importance": 5
+    },
+    {
+      "objectType": "Ring",
+      "semanticRole": "The boundary of control — a hard, thin perimeter judgment cannot breach.",
+      "relationship": "Physically stops and deflects every incoming stroke.",
+      "importance": 5
+    },
+    {
+      "objectType": "Line",
+      "semanticRole": "Criticism of looks/words — halts at the ring.",
+      "relationship": "Travels toward the disc, blocked at the ring, slides off along it.",
+      "importance": 4
+    },
+    {
+      "objectType": "Line",
+      "semanticRole": "Criticism of success/failure — halts at the ring.",
+      "relationship": "Travels toward the disc, blocked at the ring, slides off along it.",
+      "importance": 4
+    },
+    {
+      "objectType": "Line",
+      "semanticRole": "Criticism of kindness — halts at the ring.",
+      "relationship": "Travels toward the disc, blocked at the ring, slides off along it.",
+      "importance": 3
+    },
+    {
+      "objectType": "Line",
+      "semanticRole": "Criticism of silence/posting — halts at the ring.",
+      "relationship": "Travels toward the disc, blocked at the ring, slides off along it.",
+      "importance": 3
+    },
+    {
+      "objectType": "Label",
+      "semanticRole": "Names the principle: control simply doesn't extend there.",
+      "relationship": "Anchors the top of the frame above the deflection.",
+      "importance": 4
+    }
+  ],
+  "relationships": [
+    {
+      "from": "OpinionStrokeA",
+      "to": "GoldRing",
+      "relationship": "blocked-by: stroke terminates at ring radius, then deflects along its curve"
+    },
+    {
+      "from": "OpinionStrokeB",
+      "to": "GoldRing",
+      "relationship": "blocked-by: stroke terminates at ring radius, then deflects along its curve"
+    },
+    {
+      "from": "OpinionStrokeC",
+      "to": "GoldRing",
+      "relationship": "blocked-by: stroke terminates at ring radius, then deflects along its curve"
+    },
+    {
+      "from": "OpinionStrokeD",
+      "to": "GoldRing",
+      "relationship": "blocked-by: stroke terminates at ring radius, then deflects along its curve"
+    },
+    {
+      "from": "GoldRing",
+      "to": "InnerDisc",
+      "relationship": "protects: ring holds perimeter, disc remains static inside it"
+    }
+  ],
+  "typographyPlan": {
+    "headline": "LU NGGAK BISA NGONTROL",
+    "emphasisWords": [
+      "NGGAK BISA"
+    ],
+    "supportingText": [
+      "Pendapat orang lain",
+      "berhenti di batas ini"
+    ]
+  },
+  "subtitlePlan": {
+    "enabled": true,
+    "text": "Jadi… buat apa? Lu nggak akan pernah bisa ngontrol apa yang orang lain pikirin.",
+    "timing": "Opening of the beat, over the strokes' approach and block",
+    "role": "spoken line"
+  },
+  "motionBeats": [
+    {
+      "order": 1,
+      "action": "Four strokes slide inward in stagger toward the disc.",
+      "purpose": "Builds the incoming pressure of others' judgment."
+    },
+    {
+      "order": 2,
+      "action": "Each stroke snaps to a halt at the ring with a brief settle.",
+      "purpose": "Performs the boundary as physical — the block is the point."
+    },
+    {
+      "order": 3,
+      "action": "Blocked strokes slide off along the ring's curve and exit frame.",
+      "purpose": "Shows judgment passing by, never in — indifference as motion."
+    },
+    {
+      "order": 4,
+      "action": "Ring gives one restrained gold emphasis pulse on the last deflection.",
+      "purpose": "Confirms the boundary held without glow excess."
+    },
+    {
+      "order": 5,
+      "action": "Headline words reveal in staged fade; strokes dissolve to dim tracks.",
+      "purpose": "Lands the principle after the action has proven it."
+    }
+  ],
+  "compositionIntent": "Centered composition: inner disc at frame center with a thin gold ring, headline set left-aligned in the upper third. Four opinion strokes converge from the diagonals, each stopping short of the ring and deflecting along it; generous dark negative space keeps the perimeter as the single focal structure.",
+  "visualEvidence": [
+    "All four strokes terminate at an identical gap outside the ring; none crosses it.",
+    "Strokes' tips trace arcs along the ring edge while disc and ring remain perfectly static.",
+    "Gold appears only on the ring and two headline words — the boundary and the named limit."
+  ],
+  "forbiddenInterpretations": [
+    "arrows that pass through or pierce the circle",
+    "generic circle-and-arrow diagram without deflection",
+    "a shield, wall, or force-field emoji metaphor",
+    "pulsing glow halo implying the disc is 'protected by energy'",
+    "opinions shrinking or disappearing to suggest they stop existing"
+  ],
+  "noveltyIntent": "Unlike prior boundary and dial scenes, judgment here is an active express motion that visibly halts and slides off a perimeter, so untouchability is performed by the outside element, not asserted by the self.",
+  "elementBudget": {
+    "min": 7,
+    "max": 8
+  }
+}

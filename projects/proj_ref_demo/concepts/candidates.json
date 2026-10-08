@@ -1,0 +1,717 @@
+{
+  "perBeat": [
+    {
+      "beatId": "b1",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "FULL TANK, BLOCKS REMOVED",
+          "metaphor": "The MOTIVATION gauge already sits pinned at max and cannot grow; beside it a stack of dull excuse cards is removed one by one, opening a lane an arrow travels through.",
+          "semanticMechanism": "Addition hits a visible ceiling (bar stays at 100%), while subtraction changes the system (cards vanish, path opens). The frame proves removal is the operative lever.",
+          "whyViewerUnderstandsIt": "A full bar that refuses to move says 'more' is useless; disappearing cards and a route clearing show exactly what fewer excuses buys — forward motion.",
+          "composition": "leftTextRightObject",
+          "objects": [
+            "Stack",
+            "ProgressBar",
+            "Arrow",
+            "Headline"
+          ],
+          "typographyStrategy": "Headline 96px uppercase left; FEWER EXCUSES in gold as the only accent; micro-label EXCUSES under the stack.",
+          "motionOpportunity": "Cards exit staggered/fade like decrements while Arrow draws through the gap; ProgressBar holds static with one subtleScale beat.",
+          "whyItWorks": "It performs the reframe instead of stating it: saturation on one side, actual change on the other, readable even with the text ignored.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Stack",
+            "ProgressBar",
+            "Arrow",
+            "Headline"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "COUNTDOWN: EXCUSES TO ZERO",
+          "metaphor": "A large counter falls from 7 to 0 while faint excuse pills beneath it fade out one at a time into clean negative space.",
+          "semanticMechanism": "Subtraction is enacted as a literally falling number plus objects disappearing in sync, landing on 0 and leaving emptiness where clutter was.",
+          "whyViewerUnderstandsIt": "A number dropping to zero reads instantly as 'this must go down'; the cleared space underneath feels like newly available capacity for action.",
+          "composition": "typographyDominant",
+          "objects": [
+            "CounterText",
+            "Circle",
+            "WordReveal"
+          ],
+          "typographyStrategy": "WordReveal headline top-left with FEWER EXCUSES gold; CounterText at 140px dominates; muted caption EXCUSES LEFT below.",
+          "motionOpportunity": "counterChange on the number, circles exit fade staggered to each decrement, headline word-by-word reveal at ~0.08s step.",
+          "whyItWorks": "Highest legibility at phone size: one dominant number performing the beat's core verb, with typographyPriority satisfied by the reveal.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "WordReveal",
+            "CounterText",
+            "Circle"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "THE JAMMED LANE CLEARED",
+          "metaphor": "Three horizontal bars block a corridor of action; each excuse bar retracts sideways, then an arrow runs through the emptied lane.",
+          "semanticMechanism": "Excuses are shown as literal obstructions in the path of action; removal — not added fuel — is what permits forward travel, and the frame contains no additive object at all.",
+          "whyViewerUnderstandsIt": "Blocked path plus a running arrow equals obstacle removal enables progress; even muted, the retraction explains the sentence wordlessly.",
+          "composition": "topTextBottomObject",
+          "objects": [
+            "Line",
+            "Line",
+            "Line",
+            "Arrow",
+            "Label"
+          ],
+          "typographyStrategy": "Headline top-left, FEWER EXCUSES gold; one muted micro-label per bar: LATE, NOT READY, TOMORROW.",
+          "motionOpportunity": "Bars exit slide staggered 0.5s apart; Arrow draws through after the last bar clears; one subordinate glow at the arrow tip.",
+          "whyItWorks": "Spatial metaphor is universal and needs no narration, while the staggered removal gives the 4.66s beat a clear three-step rhythm.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Line",
+            "Arrow",
+            "Label",
+            "WordReveal"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "BEFORE CROWDED, AFTER CLEAR",
+          "metaphor": "Split frame: the left side crowds five dull excuse chips; the right side holds the same space empty except one clean teal line of intent.",
+          "semanticMechanism": "Same space in two states — the viewer watches quantity drop from cluttered to clear, making 'fewer' a visible before/after event rather than a claim.",
+          "whyViewerUnderstandsIt": "Clutter versus emptiness side by side reads as subtraction instantly; the open right side feels like room to finally move.",
+          "composition": "split",
+          "objects": [
+            "BeforeAfter",
+            "WordReveal",
+            "GradientGlow"
+          ],
+          "typographyStrategy": "Headline above the split; FEWER EXCUSES teal as sole accent; before/after labels and items at caption size, muted except after-side.",
+          "motionOpportunity": "Before items exit fade/slide staggered, after side enters with reveal, divider line draws in first; single low-intensity glow.",
+          "whyItWorks": "Contrast does the arguing: the frame shows the deficit being removal of clutter, matching the emphasis phrase with one dominant accent.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "BeforeAfter",
+            "WordReveal",
+            "GradientGlow"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b2",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "TWIN SILHOUETTES, ONE GOLD TAG",
+          "metaphor": "Two perfectly identical outlined forms stand side by side; a hairline ruler runs across both tops showing the same height. Only one carries a small gold WINNER badge — the difference is a label, not a trait.",
+          "semanticMechanism": "Equality is shown physically: a shared measurement line touches both outlines at exactly the same point, while the only distinguishing element is an attached tag. Superiority is performed as paperwork, not anatomy.",
+          "whyViewerUnderstandsIt": "Seeing the same measuring line hit both shapes and only one badge makes the viewer conclude the winner was labeled, not built better — the myth dies without reading the headline.",
+          "composition": "dualObject",
+          "objects": [
+            "Circle",
+            "Circle",
+            "Badge",
+            "Line"
+          ],
+          "typographyStrategy": "Uppercase Archivo headline left-top, 'SMARTER' in gold; small centered Label under each outline (WINNER / OTHER).",
+          "motionOpportunity": "Both outlines enter together via scale; the measurement Line draws across (draw); badge lands last with subtleScale — one system, sequential.",
+          "whyItWorks": "It enacts the beat's claim: identical raw material, arbitrary distinction. Negative space keeps the single gold tag dominant.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Circle",
+            "Circle",
+            "Badge",
+            "Line"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "TWO COUNTERS END IDENTICAL",
+          "metaphor": "Two counters race upward at the same rate and freeze on the exact same number. A gold badge drops onto the right one only after both have stopped — the tag arrives after the fact.",
+          "semanticMechanism": "Talent myth is quantified and falsified: equal final values prove no measurable advantage, and the badge's late arrival shows the outcome label follows, not causes, the result.",
+          "whyViewerUnderstandsIt": "Identical numbers side by side read instantly as 'no difference'; the badge landing afterward reads as a stamp, not a score — winning wasn't measured in.",
+          "composition": "centered",
+          "objects": [
+            "CounterText",
+            "CounterText",
+            "Badge",
+            "Label"
+          ],
+          "typographyStrategy": "Headline above in uppercase; CounterText values at counter tier, one gold accent on the final digit; Label beneath badge.",
+          "motionOpportunity": "Both counters animate with counterChange on the same duration, then badge entrance scale — emphasis on synchronized freeze.",
+          "whyItWorks": "Numbers are the language of 'who is smarter'; making them tie removes the myth's own measuring stick.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "CounterText",
+            "CounterText",
+            "Badge"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "EQUALS SIGN BETWEEN TWO CLAIMS",
+          "metaphor": "Typography itself is put on trial: the word SMARTER and the word WINNER are set in identical size and weight, joined by a single drawn equals hairline — no word outranks the other.",
+          "semanticMechanism": "The relationship is asserted structurally: identical type metrics plus a literal equals stroke perform 'not smarter' as parity, making the headline the diagram.",
+          "whyViewerUnderstandsIt": "Two words rendered byte-for-byte identical with a line between them reads as an equation: winning equals not-smarter — decoded even with eyes half shut.",
+          "composition": "typographyDominant",
+          "objects": [
+            "WordReveal",
+            "Line",
+            "Label"
+          ],
+          "typographyStrategy": "Two-line uppercase WordReveal, 'SMARTER' gold-accented; drawn equals Line at mid-height; micro-Label 'NOT THE VARIABLE' beneath.",
+          "motionOpportunity": "Word-by-word reveal left-to-right, then equals Line draws (draw), then Label fade — controlled reveal of the argument.",
+          "whyItWorks": "Typographic dominance fits medium typography priority and avoids reusing figure/podium clichés entirely.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "WordReveal",
+            "Line",
+            "Label"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "TWIN PATHS, SAME COMPLETION",
+          "metaphor": "Two identical step tracks fill with done-marks at exactly the same pace to 100%. Only after both complete does one receive a gold pill: WINNER — the paths were indistinguishable in progress.",
+          "semanticMechanism": "Parity is enacted over time rather than shown at rest: simultaneous completion proves equal capability, and the late label exposes the distinction as external attribution.",
+          "whyViewerUnderstandsIt": "Watching both bars fill together and only then seeing a tag appear tells the viewer the tag was applied to an already-identical performance.",
+          "composition": "split",
+          "objects": [
+            "Progress",
+            "Progress",
+            "Badge",
+            "Caption"
+          ],
+          "typographyStrategy": "Uppercase headline top-left with gold 'NOT SMARTER'; Caption tier line at bottom naming the myth being killed.",
+          "motionOpportunity": "Two parallel progress fills (counterChange), badge scale-in at emphasisAt, scene exits with fade.",
+          "whyItWorks": "Temporal demonstration beats static illustration; parallel fills are a fresh solution not present in project memory.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Progress",
+            "Progress",
+            "Badge"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "MAGNIFIER FINDS NO DIFFERENCE",
+          "metaphor": "A large outline lens (ring) scans across two adjacent filled circles; inside the lens both surfaces are the same tone — nothing brighter, nothing richer to find.",
+          "semanticMechanism": "Investigation is performed and returns null: the inspection gesture implies scrutiny, and the unchanged appearance under magnification reports no hidden advantage inside the winner.",
+          "whyViewerUnderstandsIt": "A searching lens that reveals identical texture underneath says 'we looked, there's nothing special there' — the absence of discovery is the message.",
+          "composition": "asymmetric",
+          "objects": [
+            "Circle",
+            "Circle",
+            "Indicator",
+            "Label"
+          ],
+          "typographyStrategy": "Headline left column uppercase, single gold word 'SMARTER'; Label under lens 'NO DIFFERENCE FOUND'.",
+          "motionOpportunity": "Lens enters with slide, shifts via positionShift across both circles (emphasis), label fades in after scan.",
+          "whyItWorks": "Adds a forensic, defiant tone — the myth isn't just denied, it's inspected and found empty.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Circle",
+            "Circle",
+            "Indicator",
+            "Label"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b3",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "FAINT STROKES ACCUMULATE INTO ONE BOLD LINE",
+          "metaphor": "Dozens of identical faint tally strokes rain across a dark field; day after day they stack, and the stack resolves into one continuous bold glowing horizontal line.",
+          "semanticMechanism": "Repetition is literally accumulated: each faint stroke is one boring day, and the merged bold line is the result those days build — quantity becoming quality in front of the viewer.",
+          "whyViewerUnderstandsIt": "The eye sees many small identical marks becoming one strong line; the transformation itself says 'showing up repeatedly equals strength' without reading the headline.",
+          "composition": "topTextBottomObject",
+          "objects": [
+            "Line",
+            "Line",
+            "Grid",
+            "GradientGlow"
+          ],
+          "typographyStrategy": "Headline 'THEY KEEP SHOWING UP' with 'SHOWING UP' gold; small caption 'WHEN IT IS BORING' beneath.",
+          "motionOpportunity": "Stagger entrance of faint strokes, then a single controlledReveal sweep that fuses them into the bold line; glow emphasis at the fusion moment.",
+          "whyItWorks": "It performs the beat's mechanism — compounding — rather than naming it, and the payoff line lands exactly with the emphasis phrase.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Line",
+            "WordReveal",
+            "GradientGlow",
+            "Caption"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "IDENTICAL DAILY MARKS ON AN EMPTY GRID",
+          "metaphor": "A near-empty grid of days: cell after cell receives the same small dot by the same hand, one after another, until a long unbroken row is filled while all other rows stay dark.",
+          "semanticMechanism": "Boredom is shown as monotony (same mark, same place, no variation) while consistency is shown as the growing unbroken row — the visual offers no reward event, only accumulation.",
+          "whyViewerUnderstandsIt": "A filling row of identical marks reads instantly as a streak or habit chain; the absence of any highlight until the row completes signals 'nothing special, just repetition'.",
+          "composition": "leftTextRightObject",
+          "objects": [
+            "Grid",
+            "Indicator",
+            "Headline"
+          ],
+          "typographyStrategy": "Headline 'SHOWING UP IS THE FILTER' left-aligned, 'FILTER' in teal; micro-label under grid 'BOREDOM' as the column header.",
+          "motionOpportunity": "Sequential highlight of grid cells with steady staggerStep, one controlledReveal when the row completes.",
+          "whyItWorks": "Uses a universally decoded habit-chain visual, but reframes it as the filter rather than the reward — matching the beat's 'boredom separates winners'.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Grid",
+            "WordReveal",
+            "Indicator",
+            "Label"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "QUIET CROWD PASSES, ONE FIGURE STAYS",
+          "metaphor": "A vertical timeline of hollow ticks: markers for talent, excitement, motivation light up briefly and burn out in sequence, while one solid tick at the bottom persists and slowly brightens.",
+          "semanticMechanism": "Competing trajectories over time: transient signals decay (fade to nothing) while the boring constant accumulates brightness — persistence wins by outlasting, not by outshining.",
+          "whyViewerUnderstandsIt": "Watching things go out while one stays lit is a universal endurance read; the survivor growing brighter as others die makes the winner obvious pre-verbally.",
+          "composition": "asymmetric",
+          "objects": [
+            "Timeline",
+            "Circle",
+            "Indicator"
+          ],
+          "typographyStrategy": "Headline 'WHEN IT GETS BORING' with 'BOREDOM' emphasized in gold; caption 'ONE STILL SHOWS UP'.",
+          "motionOpportunity": "Sequential fade exits for dying markers, subtleScale + glow on the persistent tick as emphasis.",
+          "whyItWorks": "Adds the emotional core of quiet pride — winning by not stopping — and differs structurally from the accumulation metaphors.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Timeline",
+            "Circle",
+            "WordReveal",
+            "Caption"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "BORING FREQUENCY VS INTERESTING SPIKES",
+          "metaphor": "Two waveform tracks stacked: a jagged bursty line above labeled 'MOTIVATION' collapses to flat dead space, while a perfectly even rhythmic pulse line below runs unbroken across the frame.",
+          "semanticMechanism": "Contrast of trajectories: erratic high-energy input self-terminates while uniform low-excitement input survives full width — consistency is demonstrated as endurance through contrast.",
+          "whyViewerUnderstandsIt": "A broken line vs a continuous line needs no explanation; the steady pulse's evenness visually equals 'boring', its survival equals 'winning'.",
+          "composition": "split",
+          "objects": [
+            "Line",
+            "Line",
+            "Label",
+            "Line"
+          ],
+          "typographyStrategy": "Headline 'BORING WINS' centered above, 'WINS' in teal; small labels 'SPIKES' and 'SHOWING UP' on each track.",
+          "motionOpportunity": "Draw entrance for both tracks; upper track fades to nothing mid-frame while lower track continues with a slow positionShift sweep.",
+          "whyItWorks": "Directly stages the mechanism as competition between two systems, and the split grammar offers a fresh layout in the project.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Line",
+            "Line",
+            "Label",
+            "WordReveal"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "ONE SMALL REPEAT ON A VAST DARK FIELD",
+          "metaphor": "A tiny circle retraces one identical short arc again and again in an enormous empty dark frame; each pass leaves a faint ghost, and the ghosts overlap into a single decisive stroke.",
+          "semanticMechanism": "Scale contrast performs the emotion: the act is small, slow, and joyless against overwhelming negative space, yet the overlapping ghosts prove accumulation is happening unseen.",
+          "whyViewerUnderstandsIt": "The loneliness of the frame reads as boredom instantly, and the growing density of overlapping ghosts shows invisible progress — meaning survives muted audio.",
+          "composition": "objectDominant",
+          "objects": [
+            "Circle",
+            "Line",
+            "GradientGlow"
+          ],
+          "typographyStrategy": "Headline 'KEEP SHOWING UP' bottom-left, 'SHOWING' in gold; single caption 'WHEN IT IS BORING' right of the stroke.",
+          "motionOpportunity": "Repeating subtleScale loop of the circle with stagger-reveal ghost strokes, culminating in one highlight of the fused line.",
+          "whyItWorks": "Foregrounds resolve and quiet pride through restraint and negative space, the most emotionally faithful reading of the beat.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Circle",
+            "Line",
+            "GradientGlow",
+            "Caption"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b4",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "TWO COUNTERS, ONE FADES",
+          "metaphor": "Two stacked progress bars: a small teal bar at WEEK 1 ticks up one notch while a huge gold YEAR 5 bar sits already full above it — then the gold bar dims to nothing.",
+          "semanticMechanism": "Simultaneous counters make the inequality visible as a physical state, not a claim; the fade of the full bar performs the instruction 'stop measuring' by removing the reference frame entirely.",
+          "whyViewerUnderstandsIt": "Seeing one bar barely started and another completely filled reads instantly as unfair comparison; when the filled one vanishes, the message 'that measurement is the problem' lands without narration.",
+          "composition": "leftTextRightObject",
+          "objects": [
+            "ProgressBar",
+            "ProgressBar",
+            "WordReveal",
+            "Caption"
+          ],
+          "typographyStrategy": "Headline 'STOP MEASURING WEEK 1' with gold accent on 'WEEK 1'; caption labels the bars.",
+          "motionOpportunity": "stagger entrance of both bars, counterChange on week-1 value, fade exit for the year-5 bar at emphasisAt.",
+          "whyItWorks": "It enacts both halves of the beat — the distortion of comparison and its removal — in one clean scene with only four elements.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "WordReveal",
+            "ProgressBar",
+            "ProgressBar",
+            "Caption"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "ONE RULER, TWO UNITS",
+          "metaphor": "A single horizontal ruler/timeline runs across the frame; a teal tick marks 'WEEK 1' near the origin while a gold tick sits far right at 'YEAR 5', and the gold tick slides off-frame as the teal tick advances one step.",
+          "semanticMechanism": "Both marks share one scale, physically showing they are incommensurable positions on the same axis; the gold mark's exit collapses the axis back to the viewer's own span.",
+          "whyViewerUnderstandsIt": "A ruler with one mark barely off the start and another far down the line is read as 'different stages', and watching the distant mark leave says the comparison was never useful.",
+          "composition": "typographyDominant",
+          "objects": [
+            "Line",
+            "Indicator",
+            "Indicator",
+            "WordReveal"
+          ],
+          "typographyStrategy": "Headline 'THEIR YEAR 5 ≠ YOUR WEEK 1' with max two accent words; small labels under each tick.",
+          "motionOpportunity": "draw the ruler, stagger the two indicators, positionShift the gold indicator off-frame, fade.",
+          "whyItWorks": "A shared axis makes the abstraction spatial and geometric rather than rhetorical; minimal object count preserves negative space.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Line",
+            "Indicator",
+            "Indicator",
+            "WordReveal"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "SCALE MISMATCH OF FRAMES",
+          "metaphor": "Two photo frames side by side: the left holds a tiny teal dot labeled WEEK 1, the right a dense gold-filled grid labeled YEAR 5 — the right frame is then unmounted and drops away.",
+          "semanticMechanism": "Side-by-side frames stage the comparison as a curated snapshot versus a raw start; removing one frame demonstrates that the pairing, not the progress, was the distortion.",
+          "whyViewerUnderstandsIt": "Two framed images obviously labeled 1 week and 5 years make 'unfair comparison' legible at a glance; the frame being taken down reads as 'stop hanging that up'.",
+          "composition": "split",
+          "objects": [
+            "GenericCard",
+            "Grid",
+            "Label",
+            "Caption"
+          ],
+          "typographyStrategy": "Headline top-left 'DON'T COMPARE THEIR REEL TO YOUR RAW' style, accent on two words max.",
+          "motionOpportunity": "scale entrance of frames, highlight on the week-1 dot, slide/fade exit for the year-5 frame.",
+          "whyItWorks": "Frames are a native metaphor for curated snapshots, which maps directly onto the comparison trap.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "GenericCard",
+            "Grid",
+            "WordReveal",
+            "Caption"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "CLOCK VS CALENDAR",
+          "metaphor": "A small teal analog clock ticks through its first week beside a gold calendar already fully marked for five years; the calendar's pages then dissolve.",
+          "semanticMechanism": "Two different time-keeping objects show the comparison rests on different units of measurement — hours lived versus years survived — and the calendar's dissolve ends the false equivalence.",
+          "whyViewerUnderstandsIt": "A clock at week one next a five-year calendar is understood as two scales of time; one disappearing tells you which to ignore.",
+          "composition": "dualObject",
+          "objects": [
+            "Clock",
+            "Calendar",
+            "Headline",
+            "Caption"
+          ],
+          "typographyStrategy": "Headline 'YOUR CLOCK. THEIR CALENDAR.' with gold accent on 'THEIR'.",
+          "motionOpportunity": "subtleScale on the clock's ticking hand, stagger on calendar marks, dissolve exit.",
+          "whyItWorks": "Time instruments are unambiguous symbols and the mismatch of units performs the semantic relationship literally.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Clock",
+            "Calendar",
+            "Headline",
+            "Caption"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "START LINE VS FINISH TAPE",
+          "metaphor": "A teal runner's-start hairline pulses with a single dot beginning to move, while a gold finish-line chevron waits far ahead already lit — then the gold chevron's glow switches off.",
+          "semanticMechanism": "Two points on one path show the positions are stages of the same race, not opposing statuses; extinguishing the far light forces the eye back to the near dot still in motion.",
+          "whyViewerUnderstandsIt": "Start and finish markers are universally readable as stages; the finish light going dark says 'that's not your line right now'.",
+          "composition": "asymmetric",
+          "objects": [
+            "Line",
+            "Indicator",
+            "Arrow",
+            "WordReveal"
+          ],
+          "typographyStrategy": "Headline 'RACE YOUR OWN CLOCK' with two accent words; micro-labels 'WEEK 1' / 'YEAR 5'.",
+          "motionOpportunity": "draw the path, glow on the start dot, highlight then fade of the finish chevron.",
+          "whyItWorks": "Race-stage metaphor is dynamic and forward-moving, matching the beat's urgency rather than a static comparison.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Line",
+            "Indicator",
+            "Arrow",
+            "WordReveal"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b5",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "QUIET MARKS LIFT THE BLOCK",
+          "metaphor": "Below a hairline horizon, tiny identical marks stack in silence; above it, one heavy block rises a step for every mark added underneath.",
+          "semanticMechanism": "Input and output share one vertical axis: dim small marks accumulate below the line while the block's height above the line increments in direct response — private effort converted into visible public mass.",
+          "whyViewerUnderstandsIt": "The big object only moves when the small marks appear; the shared axis makes cause and effect readable even with the text ignored.",
+          "composition": "split",
+          "objects": [
+            "Line",
+            "Stack",
+            "Headline",
+            "Label"
+          ],
+          "typographyStrategy": "Uppercase headline top-left with 'LOUD RESULTS' in gold; muted micro-label under the block; quiet subline in secondary text.",
+          "motionOpportunity": "stagger marks below, block positionShift upward on each accumulation beat, single subordinate glow under block at peak.",
+          "whyItWorks": "It literally enacts the hint's privacy split: unseen work below, undeniable weight above, with motion proving the coupling.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Line",
+            "Stack",
+            "Headline",
+            "Label"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "WHISPER CROSSES THE THRESHOLD",
+          "metaphor": "Repeated faint pings ripple from one point; each is nearly invisible until their combined amplitude bursts into a single large ring that fills the frame.",
+          "semanticMechanism": "Accumulation is shown as amplitude: identical dim rings overlap below visibility, then cross a threshold where the merged ring becomes the loudest element on screen.",
+          "whyViewerUnderstandsIt": "Many small identical signals visibly add up until one oversized ring appears — the size jump IS the loud result.",
+          "composition": "fullFrameSymbolic",
+          "objects": [
+            "Circle",
+            "GradientGlow",
+            "Headline",
+            "Caption"
+          ],
+          "typographyStrategy": "Centered uppercase headline with 'LOUD RESULTS' gold-accented; one quiet caption beneath the rings in muted tone.",
+          "motionOpportunity": "stagger ring entrances, subtleScale on each pulse, final ring scale reveal with one glow.",
+          "whyItWorks": "Sound is the script's own metaphor ('in silence' vs 'loud'), so a physical amplitude build decodes instantly without narration.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Circle",
+            "Circle",
+            "GradientGlow",
+            "Headline"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "THE NUMBER OUTGROWS ITS INPUTS",
+          "metaphor": "A giant counter climbs while the marks that cause it stay tiny and dim beneath it — the size gap between cause and effect is the message.",
+          "semanticMechanism": "Two scales coexist: input elements remain at minimum legible size while the counter's glyphs grow into the dominant mass, so the viewer measures the ratio rather than reading a claim.",
+          "whyViewerUnderstandsIt": "A huge number rising above almost-invisible daily pulses reads as 'small things became this' with no explanation needed.",
+          "composition": "typographyDominant",
+          "objects": [
+            "CounterText",
+            "Indicator",
+            "Line",
+            "Caption"
+          ],
+          "typographyStrategy": "Counter as hero at 140px gold, uppercase headline above, one muted caption naming the repeated act.",
+          "motionOpportunity": "counterChange on the number, pulse highlight on each indicator, fade for supporting text.",
+          "whyItWorks": "TypographyPriority is served by making the compounding itself typographic, and the contrast ratio performs 'small in, loud out'.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "CounterText",
+            "Indicator",
+            "Caption"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "SMALL NUDGES OVER THE CREST",
+          "metaphor": "A dim ball is nudged up a slope in tiny silent steps; each nudge is unremarkable until cumulative progress carries it over the crest where it finally launches.",
+          "semanticMechanism": "Repeated identical micro-motions accumulate against gravity, then a threshold crossing converts slow silent effort into one fast visible payoff event.",
+          "whyViewerUnderstandsIt": "Watching the slow climb and sudden crest makes compounding physically legible: nothing looked like progress until all of it was.",
+          "composition": "asymmetric",
+          "objects": [
+            "Line",
+            "Circle",
+            "Indicator",
+            "Headline"
+          ],
+          "typographyStrategy": "Left-aligned uppercase headline with 'LOUD RESULTS' gold; small label at the crest marking the payoff point.",
+          "motionOpportunity": "positionShift up the slope per step, highlight at threshold, scale burst on crest crossing.",
+          "whyItWorks": "Kinetic enactment gives the beat an event to root for, and the crest moment supplies the 'loud' without extra elements.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Line",
+            "Circle",
+            "Indicator",
+            "Headline"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "REPEATS CONVERT INTO A FULL BAR",
+          "metaphor": "A row of separate hairline ticks, each one mute, fuses into a single solid bar that fills to completion — discrete silence becoming continuous mass.",
+          "semanticMechanism": "A literal state change between two representations: many small separate marks below, then one unbroken filled bar above; the conversion event, not a caption, defines compounding.",
+          "whyViewerUnderstandsIt": "Seeing individual ticks merge into one solid bar shows repetition becoming result as a transformation the eye can follow.",
+          "composition": "topTextBottomObject",
+          "objects": [
+            "Sequence",
+            "ProgressBar",
+            "Headline",
+            "Label"
+          ],
+          "typographyStrategy": "Uppercase headline top-left with 'SMALL DISCIPLINES' gold; ProgressBar label naming the outcome; no paragraph copy.",
+          "motionOpportunity": "stagger ticks left to right, controlledReveal on the bar fill, subtleScale at 100%.",
+          "whyItWorks": "It gives the beat a before/after mechanism in one frame and stays far from earlier grid, void and bridge solutions.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Sequence",
+            "ProgressBar",
+            "Headline"
+          ]
+        }
+      ]
+    },
+    {
+      "beatId": "b6",
+      "candidates": [
+        {
+          "id": "c1",
+          "concept": "SPOTLIGHT STOPS ON THE EMPTY SEAT",
+          "metaphor": "A hard beam sweeps across a dark stage, passes the taken places, and halts on one empty outlined seat — the only spot still unoccupied, now lit.",
+          "semanticMechanism": "Illumination physically travels and selects: light ignores what is filled and stops on vacancy, so the handoff of opportunity is performed by the beam, not by words.",
+          "whyViewerUnderstandsIt": "A spotlight landing on an empty chair reads as 'you're being called up' before any text is processed — light equals selection.",
+          "composition": "centered",
+          "objects": [
+            "GradientGlow",
+            "LightSweep",
+            "Circle",
+            "Label"
+          ],
+          "typographyStrategy": "Headline YOUR TURN. left of the beam in Archivo 900, accent gold on TURN; small centered label YOUR SEAT under the ring.",
+          "motionOpportunity": "Beam slides across frame then locks (slide + highlight), seat ring highlights on arrival, headline word-by-word reveal.",
+          "whyItWorks": "Turns the hint into enactment: the light's stopping point IS the assignment, and the empty seat holds the viewer's presence as negative space.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "GradientGlow",
+            "LightSweep",
+            "Circle",
+            "Label"
+          ]
+        },
+        {
+          "id": "c2",
+          "concept": "BATON CROSSES THE CENTER LINE",
+          "metaphor": "A glowing baton leaves a fading runner on their side of a divider and slides into the open, empty lane on your side.",
+          "semanticMechanism": "Possession is shown by position: a single object crosses a dividing line into an unoccupied lane, so ownership changes through trajectory rather than statement.",
+          "whyViewerUnderstandsIt": "Anything crossing a boundary toward an empty lane is read as a pass — and an empty lane means nobody has caught it but you.",
+          "composition": "split",
+          "objects": [
+            "Line",
+            "Arrow",
+            "Circle",
+            "WordReveal"
+          ],
+          "typographyStrategy": "Split headline: THEIR SIDE muted above the divider, YOUR TURN revealed on the receiving side, teal accent on YOUR.",
+          "motionOpportunity": "Divider draws first, baton slides across with positionShift, receiving headline staggers in as the baton lands.",
+          "whyItWorks": "The frame holds two trajectories competing; the viewer completes the catch mentally, which is exactly the handoff of responsibility.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Line",
+            "Arrow",
+            "Circle",
+            "WordReveal"
+          ]
+        },
+        {
+          "id": "c3",
+          "concept": "SPLIT-FLAP BOARD SNAPS TO YOUR TURN",
+          "metaphor": "A mechanical status board flips one final panel — THEIR TURN rolls over to YOUR TURN and locks with a hard stop.",
+          "semanticMechanism": "The flip itself performs the transfer: one surface changes owner in an irreversible mechanical motion, so status change and handoff are the same event.",
+          "whyViewerUnderstandsIt": "Boards flip when status changes; a panel settling on YOUR TURN reads instantly as the waiting period being over.",
+          "composition": "typographyDominant",
+          "objects": [
+            "GenericCard",
+            "GenericCard",
+            "WordReveal",
+            "Line"
+          ],
+          "typographyStrategy": "Board cards carry the state text; main headline beneath in uppercase, gold accent on TURN, left-aligned.",
+          "motionOpportunity": "Active card uses controlledReveal flip then highlight; muted card fades back; headline reveals word by word.",
+          "whyItWorks": "Urgency comes from mechanism: the board has already moved, so the only remaining action belongs to the viewer.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "GenericCard",
+            "WordReveal",
+            "Line"
+          ]
+        },
+        {
+          "id": "c4",
+          "concept": "THE TOKEN DROPS INTO YOUR HAND",
+          "metaphor": "A single gold token falls from the top of the frame through darkness; the only receptacle below is an open ring waiting on your side.",
+          "semanticMechanism": "Gravity performs the handoff: the object leaves their space and lands in yours because nothing else sits beneath it — transfer proven by where it stops.",
+          "whyViewerUnderstandsIt": "A falling object caught by an empty container below is decoded as 'this is being given to me' with no narration needed.",
+          "composition": "topTextBottomObject",
+          "objects": [
+            "Circle",
+            "Arrow",
+            "Line",
+            "Caption"
+          ],
+          "typographyStrategy": "Short headline at top YOUR TURN., gold accent on YOUR; quiet caption at the ring: THE ONLY THING LEFT IS YOU.",
+          "motionOpportunity": "Token slides down and settles (slide), receiving ring highlights on impact, caption fades in after landing.",
+          "whyItWorks": "Uses weight instead of instruction — the frame's physics deliver responsibility to the viewer's position.",
+          "complexity": "low",
+          "primitiveSketch": [
+            "Circle",
+            "Arrow",
+            "Line",
+            "Caption"
+          ]
+        },
+        {
+          "id": "c5",
+          "concept": "THE DIAL POINTER ROTATES ONTO YOU",
+          "metaphor": "A machined pointer on a dark circular dial swings past THEIR, past NOONE, and comes to rest on YOU, locking with a final tick.",
+          "semanticMechanism": "Rotation through alternating positions makes 'your turn' a state the mechanism arrives at — inevitability and urgency emerge from selection, not persuasion.",
+          "whyViewerUnderstandsIt": "A dial that stops on you feels like being chosen by a system that has finished checking the other options.",
+          "composition": "objectDominant",
+          "objects": [
+            "Circle",
+            "Arrow",
+            "Indicator",
+            "Label"
+          ],
+          "typographyStrategy": "Headline YOUR TURN. set left in Archivo 900 with gold accent on TURN; tiny dial labels at each pointer stop.",
+          "motionOpportunity": "Pointer rotates to final stop (controlledReveal), locks with subtleScale, then headline highlights.",
+          "whyItWorks": "Empowerment via mechanism: the dial's stop reads as decision already made, leaving only the viewer's action unperformed.",
+          "complexity": "medium",
+          "primitiveSketch": [
+            "Circle",
+            "Arrow",
+            "Indicator",
+            "Label"
+          ]
+        }
+      ]
+    }
+  ]
+}

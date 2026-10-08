@@ -1,0 +1,286 @@
+{
+  "sceneId": "scene_02",
+  "duration": 4.21,
+  "purpose": "Shows self-betrayal as one YES reshaping to fit three contradictory asks, leaving a countable record of conforming versions.",
+  "visualConcept": "Three distinct asker molds, one YES conformed to each",
+  "composition": "leftTextRightObject",
+  "headline": {
+    "text": "YOU CHANGE YOUR ANSWER",
+    "accentWords": [
+      "CHANGE"
+    ],
+    "align": "left",
+    "position": "topLeft"
+  },
+  "elements": [
+    {
+      "primitive": "Circle",
+      "position": "topRight",
+      "offsetX": -8,
+      "scale": 0.55,
+      "accent": "teal",
+      "role": "semantic",
+      "purpose": "slot I: first asker's demand mold",
+      "entrance": "scale",
+      "delay": 0.2
+    },
+    {
+      "primitive": "Badge",
+      "text": "YES",
+      "position": "topRight",
+      "offsetX": -8,
+      "scale": 0.85,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "first conforming YES inside slot I",
+      "entrance": "fade",
+      "delay": 0.5
+    },
+    {
+      "primitive": "Circle",
+      "position": "right",
+      "offsetX": -8,
+      "scale": 0.55,
+      "accent": "teal",
+      "role": "semantic",
+      "purpose": "slot II: second asker's reshaped demand mold",
+      "entrance": "scale",
+      "delay": 0.6
+    },
+    {
+      "primitive": "Badge",
+      "text": "YES",
+      "position": "right",
+      "offsetX": -8,
+      "scale": 0.85,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "second conforming YES reshaped for slot II",
+      "entrance": "fade",
+      "delay": 0.9
+    },
+    {
+      "primitive": "Circle",
+      "position": "bottomRight",
+      "offsetX": -8,
+      "offsetY": -10,
+      "scale": 0.55,
+      "accent": "teal",
+      "role": "semantic",
+      "purpose": "slot III: third asker's demand mold",
+      "entrance": "scale",
+      "delay": 1
+    },
+    {
+      "primitive": "Badge",
+      "text": "YES",
+      "position": "bottomRight",
+      "offsetX": -8,
+      "offsetY": -10,
+      "scale": 0.85,
+      "accent": "gold",
+      "role": "semantic",
+      "purpose": "final conformed answer held in slot III",
+      "entrance": "slide",
+      "delay": 1.3,
+      "emphasis": "highlight"
+    },
+    {
+      "primitive": "Label",
+      "text": "THREE ASKS · THREE VERSIONS",
+      "position": "bottomLeft",
+      "offsetY": -8,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "names the repeating betrayal: answer morphs for whoever asked",
+      "entrance": "fade",
+      "delay": 1.6
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "highlight",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.4,
+    "exitAt": 4
+  },
+  "storyboard": {
+    "beatId": "b2",
+    "spokenMeaning": "You change your answer to match whoever asked — shape-shifting speech as self-betrayal.",
+    "viewerTakeaway": "My 'yes' bends into every asker's shape, so it stops being mine and stops meaning anything.",
+    "visualMechanism": "oneYesStampedThreeAlignedSlots",
+    "visualNarrative": [
+      {
+        "order": 1,
+        "action": "Headline slides in left; on the right a vertical rail draws down and three different-proportion slots snap onto it, evenly spaced, each labelled empty.",
+        "meaning": "Three contradictory asks sit waiting on one line, countable before anything moves.",
+        "visualEvidence": "One rail with three teal outline slots (wide, tall, thin) locked to the same axis, quick 0.2s stagger."
+      },
+      {
+        "order": 2,
+        "action": "The single solid YES slides right and stretches wide to lock edge-to-edge inside slot I.",
+        "meaning": "First asker: the answer takes their shape whole.",
+        "visualEvidence": "The YES text visibly widens to fill slot I; no second YES exists anywhere."
+      },
+      {
+        "order": 3,
+        "action": "YES lifts to slot II and squashes tall, letters condensed but readable; a dim YES ghost stays in slot I.",
+        "meaning": "Second asker, opposite demand — conformity repeats and starts keeping a record.",
+        "visualEvidence": "Slot I holds a faint stretched YES while the solid condensed YES sits in slot II."
+      },
+      {
+        "order": 4,
+        "action": "YES drops into slot III as a thin sliver and holds; slot II keeps its dim tall YES; frame eases to a hold.",
+        "meaning": "Self-betrayal made countable: one word, three readable versions, none of them yours.",
+        "visualEvidence": "Final rail: three readable YES forms — two dim ghosts, one solid and thinned — on one axis."
+      }
+    ],
+    "semanticObjects": [
+      {
+        "objectType": "Block",
+        "semanticRole": "The actor: your actual answer, the one thing that should hold a fixed form.",
+        "relationship": "moves and deforms along the rail into slot I, then II, then III",
+        "importance": 5
+      },
+      {
+        "objectType": "Outline",
+        "semanticRole": "Slot I — first asker's wide demand.",
+        "relationship": "receives the YES first, then keeps its stretched dim ghost",
+        "importance": 4
+      },
+      {
+        "objectType": "Outline",
+        "semanticRole": "Slot II — second, contradictory asker.",
+        "relationship": "receives the YES second, keeps the tall dim ghost after it departs",
+        "importance": 4
+      },
+      {
+        "objectType": "Outline",
+        "semanticRole": "Slot III — final asker, the most diminished version of the answer.",
+        "relationship": "captures the YES last and holds it as the solid final state",
+        "importance": 4
+      },
+      {
+        "objectType": "Line",
+        "semanticRole": "The single axis: proves all three asks belong to one continuous pressure, not floating options.",
+        "relationship": "threads through all three slots and never moves",
+        "importance": 3
+      },
+      {
+        "objectType": "Headline",
+        "semanticRole": "Names the behavior in the viewer's own words.",
+        "relationship": "frames the rail as its literal demonstration",
+        "importance": 3
+      }
+    ],
+    "relationships": [
+      {
+        "from": "Block (YES)",
+        "to": "Slot I (wide)",
+        "relationship": "conforms-into: the YES stretches until its edges lock with the slot interior"
+      },
+      {
+        "from": "Block (YES)",
+        "to": "Slot II (tall)",
+        "relationship": "re-conforms: same word re-forms to an opposite proportion, proving reflex"
+      },
+      {
+        "from": "Rail",
+        "to": "Slot I, II, III",
+        "relationship": "anchors-along: all three demands stay visibly one sequence, countable not scattered"
+      },
+      {
+        "from": "Slot I",
+        "to": "Block (YES)",
+        "relationship": "records: keeps a readable dim YES ghost after the block leaves, stacking evidence"
+      },
+      {
+        "from": "Headline word CHANGE",
+        "to": "Block (YES)",
+        "relationship": "names: gold word points at the very action the block performs"
+      }
+    ],
+    "typographyPlan": {
+      "headline": "YOU CHANGE YOUR ANSWER TO MATCH",
+      "emphasisWords": [
+        "CHANGE"
+      ],
+      "supportingText": []
+    },
+    "subtitlePlan": {
+      "enabled": true,
+      "text": "each time you bend your answer to match the asker, your 'yes' loses all value",
+      "timing": "mid-beat, spoken over the second reshape",
+      "role": "spoken line"
+    },
+    "motionBeats": [
+      {
+        "order": 1,
+        "action": "Headline slides from left; rail draws top-down, three slots snap in at 0.2s intervals, all placed by 1.1s.",
+        "purpose": "Establishes the countable, aligned set of demands before the answer moves."
+      },
+      {
+        "order": 2,
+        "action": "Solid YES scales from 0.9, slides and stretches horizontally into slot I with a brief contact highlight.",
+        "purpose": "Conformity as an active act — the answer moves, the demand does not."
+      },
+      {
+        "order": 3,
+        "action": "YES lifts to slot II with a short ease-out squash; a dim YES ghost fades into slot I.",
+        "purpose": "Proves reshaping is repeatable and starts the readable record."
+      },
+      {
+        "order": 4,
+        "action": "YES settles thinned into slot III, slot II's ghost fades in, frame holds the last half second.",
+        "purpose": "Leaves the rail of three readable YES forms sitting with the viewer."
+      }
+    ],
+    "compositionIntent": "leftTextRightObject on 8% margins: headline anchors the left third, static. Right half holds one vertical rail with three slots on a shared axis, even spacing, all content kept above the subtitle band (bottom 20% clear). 60% negative space, six elements, single accent family on the object, gold only on CHANGE.",
+    "visualEvidence": [
+      "Three differently-proportioned slots sit aligned on one rail with even spacing from step 1 onward.",
+      "One solid YES is seen re-forming into all three slots — never duplicated.",
+      "Ghosts are readable deformed YES words, not abstract shapes.",
+      "Only teal touches the slots; gold appears solely on the word CHANGE.",
+      "Final frame: three readable YES versions stacked on the rail, two dim, one solid."
+    ],
+    "forbiddenInterpretations": [
+      "Scattered or floating slots at uneven heights — all three must sit on one rail at even spacing.",
+      "A gold-outlined slot or gold YES — gold is reserved for the word CHANGE; three separate solid YES copies are also forbidden, only dim readable YES ghosts may remain.",
+      "Slots entering later than 1.4s apart or sliding in one at a time from the frame edge; no content inside the bottom subtitle band.",
+      "Crossed-out or red strike marks, masks, chameleon, faces or costume metaphors for shape-shifting.",
+      "Eyebrow rows, subheads, labels or captions beyond the six elements."
+    ],
+    "noveltyIntent": "Prior beats used struck lines, split type and static grids; here one rail carries the whole argument — the single word's travel down it, stamping readable ghosts of itself, makes conformity countable in a single glance.",
+    "elementBudget": {
+      "min": 6,
+      "max": 7
+    }
+  },
+  "subtitle": {
+    "enabled": true,
+    "role": "spoken line",
+    "phrases": [
+      {
+        "text": "You change your answer",
+        "start": 0,
+        "end": 0.86,
+        "emphasisWords": [
+          "CHANGE"
+        ]
+      },
+      {
+        "text": "to match whoever asked.",
+        "start": 0.86,
+        "end": 2.55
+      },
+      {
+        "text": "Your yes stops meaning",
+        "start": 2.55,
+        "end": 4.21
+      }
+    ]
+  }
+}

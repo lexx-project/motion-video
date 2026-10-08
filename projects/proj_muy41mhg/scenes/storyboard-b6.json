@@ -1,0 +1,156 @@
+{
+  "beatId": "b6",
+  "spokenMeaning": "Whatever state you choose, the verdict is the same — the judge never reads the input.",
+  "viewerTakeaway": "Every possible version of you gets fed into one machine that only ever prints the same red verdict, so stop editing yourself to please it.",
+  "visualMechanism": "fourInputsOneVerdictTape",
+  "visualNarrative": [
+    {
+      "order": 1,
+      "action": "Left column reveals headline plus one small caption; on the right only a bare feed slot and a short blank tape stub exist.",
+      "meaning": "The judge's mouth and its paper are installed before any input exists.",
+      "visualEvidence": "Headline block locked to left 8% margin; slot + 12%-long blank tape stub alone on the right axis."
+    },
+    {
+      "order": 2,
+      "action": "Input slip BAIK slides right into the slot; the tape draws down one segment and prints PENCITRAAN in red.",
+      "meaning": "First state enters, and the machine answers in its own fixed negative language.",
+      "visualEvidence": "Slip stops flush at the slot; first red row appears directly under the slot on the same vertical tape axis."
+    },
+    {
+      "order": 3,
+      "action": "Slip swaps to DIEM and feeds again; a second red row SOMBOG prints beneath the first, tape extending in one continuous strip.",
+      "meaning": "Different input, identical treatment — the verdict class never changes.",
+      "visualEvidence": "Two red rows stacked with equal 40px leading on one unbroken tape line; slot unchanged."
+    },
+    {
+      "order": 4,
+      "action": "Slip cycles SUKSES then GAGAGAL feeding twice more with tightening intervals; BERUNTUNG and DITERTAWAKAN print as rows three and four.",
+      "meaning": "Cumulative frustration: four parallel contradictions, one strip, no exception.",
+      "visualEvidence": "Four red rows in a single column, evenly spaced, all hanging from the same slot."
+    },
+    {
+      "order": 5,
+      "action": "Input slip empties and fades; the four red rows highlight top to bottom while headline and slot stay completely still.",
+      "meaning": "The machine never judged the person — it only ever printed.",
+      "visualEvidence": "Blank slot, four red verdict rows lit in sequence, headline untouched in the left column."
+    }
+  ],
+  "semanticObjects": [
+    {
+      "objectType": "TextBlock",
+      "semanticRole": "States the thesis the tape then proves: outcome is constant regardless of conduct.",
+      "relationship": "left column top, own region, never intersecting slip or tape",
+      "importance": 4
+    },
+    {
+      "objectType": "Label",
+      "semanticRole": "The person's four possible states (BAIK/DIEM/SUKSES/GAGAL) — the only variable in the frame.",
+      "relationship": "left of the slot, swaps text and feeds horizontally each cycle",
+      "importance": 5
+    },
+    {
+      "objectType": "Line",
+      "semanticRole": "The judge's unreading feed slot: fixed mouth that accepts any input without inspecting it.",
+      "relationship": "head of the tape, vertical axis on the right, never moves or adapts",
+      "importance": 5
+    },
+    {
+      "objectType": "Line",
+      "semanticRole": "One continuous verdict tape: the physical record that all four outputs belong to one unchanged mechanism.",
+      "relationship": "hangs from the slot, grows downward, receives every printed row",
+      "importance": 4
+    },
+    {
+      "objectType": "Label",
+      "semanticRole": "Four red verdict rows (PENCITRAAN/SOMBOG/BERUNTUNG/DITERTAWAKAN) — the negative reframing, uniform in color and alignment.",
+      "relationship": "stacked on the tape under the slot, equal leading, all red, all right-aligned to the tape axis",
+      "importance": 5
+    },
+    {
+      "objectType": "TextBlock",
+      "semanticRole": "One short caption naming the mechanism: the slot never reads the state.",
+      "relationship": "left column under the headline, clear of the slip path",
+      "importance": 2
+    }
+  ],
+  "relationships": [
+    {
+      "from": "StateSlip",
+      "to": "FeedSlot",
+      "relationship": "feeds horizontally into the slot, which accepts it without moving or reading its label"
+    },
+    {
+      "from": "FeedSlot",
+      "to": "VerdictTape",
+      "relationship": "prints exactly one red row onto the tape on every pass"
+    },
+    {
+      "from": "VerdictTape",
+      "to": "VerdictRows",
+      "relationship": "holds all four rows in one vertical column so the sameness is structural, not decorative"
+    }
+  ],
+  "typographyPlan": {
+    "headline": "SALAH APA PUN, HASILNYA SAMA",
+    "emphasisWords": [
+      "SALAH",
+      "SAMA"
+    ],
+    "supportingText": [
+      "SLOT INI NGGAK PERNAH BACA STATE LU."
+    ]
+  },
+  "subtitlePlan": {
+    "enabled": true,
+    "text": "Lu baik… dibilang pencitraan. Lu diem… dibilang sombong. Lu sukses… dibilang beruntung. Lu gagal… ditertawain.",
+    "timing": "runs across the whole beat, synced to the four tape prints",
+    "role": "spoken line — verbatim caption of the four parallel contradictions"
+  },
+  "motionBeats": [
+    {
+      "order": 1,
+      "action": "Headline reveals line by line with a short stagger, caption fading under it; tape stub draws in.",
+      "purpose": "Sets the charge before the machine demonstrates it."
+    },
+    {
+      "order": 2,
+      "action": "Input slip slides into the slot with soft ease-out; the tape extends and the first red row reveals.",
+      "purpose": "Presents the current input and its immediate, unread answer."
+    },
+    {
+      "order": 3,
+      "action": "Slip dissolve-swaps to DIEM, feeds again; second red row reveals below the first.",
+      "purpose": "Repetition begins: input varies, response does not."
+    },
+    {
+      "order": 4,
+      "action": "Slip cycles SUKSES and GAGAL with tightening intervals while rows three and four reveal in sequence.",
+      "purpose": "Repetition is the argument: four contradictions, one tape."
+    },
+    {
+      "order": 5,
+      "action": "Final hold: rows highlight top to bottom while headline, slot and tape axis stay completely static.",
+      "purpose": "Hands the viewer the indignation — same machine, four states, one verdict."
+    }
+  ],
+  "compositionIntent": "leftTextRightObject: headline + caption + feeding slip own the left half on an 8% margin; the right half is a single vertical axis where slot sits at ~28% height and the verdict tape hangs down to ~70%, stopping well clear of the bottom subtitle band. Slip travels only through empty space between the columns; nothing crosses axes, right edge stays dark vignette, ~65% negative space.",
+  "visualEvidence": [
+    "Left text column and right tape axis never intersect; slip path runs through empty mid-space.",
+    "Tape grows as one unbroken line from a slot that never shifts position.",
+    "Four red verdict rows in one column with identical color, size and leading."
+  ],
+  "forbiddenInterpretations": [
+    "Rubber-stamp seal press or descending hammer head (prior mechanism)",
+    "Any text row overlapping the headline, the slip path, or the bottom subtitle band",
+    "Struck-out / crossed-through words, rotating dial with needle, uniform grid with one lit cell",
+    "Conveyor belt, assembly line, factory machine housing or gears",
+    "Differently colored verdict rows or more than one accent color on the tape",
+    "A slot or tape that bends, adapts, or reacts to which slip is entering",
+    "Speech bubbles, human figures judging, or top-edge-clipped cards outside the safe frame"
+  ],
+  "noveltyIntent": "A single vertical verdict tape fed by one unreading slot: four state slips enter horizontally, four identical-looking red rows print downward on one continuous strip. Verdict sameness is structural — one tape, one axis, one color — never a stamp, strike, dial or grid.",
+  "elementBudget": {
+    "min": 6,
+    "max": 9
+  }
+}

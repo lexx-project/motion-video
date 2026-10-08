@@ -1,0 +1,19 @@
+{
+  "sceneId": "scene_05",
+  "issue": "Headline wraps to 5 lines, two accent colors compete, the gold block is cropped at the top edge, and two labels push the scene past the 4-element maximum.",
+  "rootCause": "Headline lacks controlled breaks at 96px (wraps to 5 lines); the marks stack renders a competing teal accent beside gold; the gold stack's offsetY:-8 crosses the top safe margin; both stacks carry labels creating a fifth attention element.",
+  "scope": "minimal",
+  "changesMade": [
+    "Headline re-broken to 4 lines: SILENT / DISCIPLINES / BUILD / LOUD RESULTS, single accent kept",
+    "Gold block offset lowered to offsetY 12 so its top edge clears the 8% safe margin",
+    "Removed 'SMALL MARKS' label from bottom stack; stack forced to neutral accent so gold is the only accent",
+    "Moved 'BUILT IN SILENCE' label to center column below the horizon, away from the headline"
+  ],
+  "preserve": [
+    "Split composition with right-hand object column and quiet-marks-lift-block metaphor",
+    "Gold as the single semantic accent for loud results",
+    "Stagger entrance, counterChange/positionShift emphasis at 2.1s, fade exit, duration 4.67s",
+    "Headline typography: 96px weight 900 left-aligned"
+  ],
+  "expectedEffect": "A clean 4-line headline with one gold block lifting into frame above a neutral marks stack; the single label sits in negative space, so the causal image reads instantly within safe margins and element limits."
+}

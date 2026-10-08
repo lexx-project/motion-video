@@ -1,0 +1,218 @@
+{
+  "beats": [
+    {
+      "id": "b1",
+      "text": "Lu tau nggak… salah satu hal yang paling bikin capek?",
+      "why": "Opening hook: names the exhaustion of people-pleasing as the core subject and pulls the listener in with a direct question.",
+      "emotion": "intimate fatigue, quiet frustration",
+      "metaphorHints": [
+        "dim single light in a dark empty room",
+        "a bowed head silhouette",
+        "slow breathing pulse"
+      ],
+      "abstractMeaning": "The weight of performing for others is a bone-deep tiredness, not physical but existential.",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "paling bikin capek",
+      "timing": {
+        "id": "b1",
+        "text": "Lu tau nggak… salah satu hal yang paling bikin capek?",
+        "start": 0,
+        "end": 3.61,
+        "duration": 3.61,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b2",
+      "text": "Berusaha… biar semua orang suka sama kita.",
+      "why": "States the root behavior: bending yourself to win universal approval.",
+      "emotion": "strained striving, self-betrayal",
+      "metaphorHints": [
+        "a figure stretching toward many outstretched hands",
+        "arms trying to embrace a crowd that recedes",
+        "chasing a circle that keeps moving"
+      ],
+      "abstractMeaning": "Approval-seeking is a race with no finish line; the target always keeps receding.",
+      "visualPriority": "high",
+      "typographyPriority": "medium",
+      "important": true,
+      "emphasisPhrase": "semua orang suka",
+      "timing": {
+        "id": "b2",
+        "text": "Berusaha… biar semua orang suka sama kita.",
+        "start": 3.61,
+        "end": 53.26,
+        "duration": 49.65,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b3",
+      "text": "Cara ngomong dijaga. Cara berpakaian dipikirin.",
+      "why": "Shows the first layer of self-monitoring: speech and appearance curated minute by minute.",
+      "emotion": "hypervigilance, tightness",
+      "metaphorHints": [
+        "a mask being adjusted",
+        "mirror shards reflecting different versions of a face",
+        "a collar straightened obsessively"
+      ],
+      "abstractMeaning": "Identity becomes a managed performance — every detail edited before it is seen.",
+      "visualPriority": "medium",
+      "typographyPriority": "high",
+      "important": false,
+      "timing": {
+        "id": "b3",
+        "text": "Cara ngomong dijaga. Cara berpakaian dipikirin.",
+        "start": 53.26,
+        "end": 55.07,
+        "duration": 1.81,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b4",
+      "text": "Posting sesuatu… hapus lagi. Takut ada yang ngejudge. Takut ada yang ngomongin.",
+      "why": "Escalates to the digital ritual of post-and-delete, driven by fear of judgment and gossip.",
+      "emotion": "anxiety, hesitation, shame",
+      "metaphorHints": [
+        "a framed square appearing then dissolving",
+        "a finger hovering over a delete key",
+        "a typed message fading letter by letter"
+      ],
+      "abstractMeaning": "Fear of outside judgment silences self-expression before it ever lands.",
+      "visualPriority": "high",
+      "typographyPriority": "medium",
+      "important": true,
+      "emphasisPhrase": "hapus lagi",
+      "timing": {
+        "id": "b4",
+        "text": "Posting sesuatu… hapus lagi. Takut ada yang ngejudge. Takut ada yang ngomongin.",
+        "start": 55.07,
+        "end": 58.68,
+        "duration": 3.61,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b5",
+      "text": "Padahal… mau lu ngapain juga, pasti ada aja yang nggak suka.",
+      "why": "Delivers the contradiction: no action avoids disapproval, so the whole strategy is rigged.",
+      "emotion": "blunt realization, frustrated clarity",
+      "metaphorHints": [
+        "arrows pointing at a central circle from every side",
+        "a target that shifts whenever aimed at"
+      ],
+      "abstractMeaning": "Criticism is a constant, not a feedback signal — disapproval exists independent of behavior.",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "pasti ada aja yang nggak suka",
+      "timing": {
+        "id": "b5",
+        "text": "Padahal… mau lu ngapain juga, pasti ada aja yang nggak suka.",
+        "start": 58.68,
+        "end": 62.29,
+        "duration": 3.61,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b6",
+      "text": "Lu baik… dibilang pencitraan. Lu diem… dibilang sombong. Lu sukses… dibilang beruntung. Lu gagal… ditertawain.",
+      "why": "Proves the trap with four parallel contradictions: every possible state is reframed negatively.",
+      "emotion": "indignant, ironic, cumulative frustration",
+      "metaphorHints": [
+        "four judgment cards flipping one by one",
+        "a mirrored panel turning every gesture into its opposite",
+        "a scoreboard that always reads 'wrong'"
+      ],
+      "abstractMeaning": "The judgment game has no winning move — meaning is assigned regardless of your input.",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "pencitraan / sombong / beruntung",
+      "timing": {
+        "id": "b6",
+        "text": "Lu baik… dibilang pencitraan. Lu diem… dibilang sombong. Lu sukses… dibilang beruntung. Lu gagal… ditertawain.",
+        "start": 62.29,
+        "end": 67.7,
+        "duration": 5.41,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b7",
+      "text": "Jadi… buat apa? Lu nggak akan pernah bisa ngontrol apa yang orang lain pikirin.",
+      "why": "Pivots from problem to principle: the boundary of control — others' thoughts are untouchable.",
+      "emotion": "defiant release, exhale after tension",
+      "metaphorHints": [
+        "scattered speech lines deflecting off a calm circle",
+        "hands closing on air, then opening",
+        "a dial that will not turn"
+      ],
+      "abstractMeaning": "Sovereignty begins by accepting what is not yours to govern.",
+      "visualPriority": "medium",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "nggak akan pernah bisa ngontrol",
+      "timing": {
+        "id": "b7",
+        "text": "Jadi… buat apa? Lu nggak akan pernah bisa ngontrol apa yang orang lain pikirin.",
+        "start": 67.7,
+        "end": 71.32,
+        "duration": 3.62,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b8",
+      "text": "Tapi lu bisa ngontrol… seberapa besar pendapat mereka ngaruh ke hidup lu.",
+      "why": "Delivers the reframe: you cannot control opinions, but you control how much weight they carry.",
+      "emotion": "empowerment, calm agency",
+      "metaphorHints": [
+        "a volume dial turning down",
+        "a scale tipping toward 'hidup lu'",
+        "a filter letting only some lines through"
+      ],
+      "abstractMeaning": "Influence is a valve, not a wall — regulation over absorption, not denial.",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "seberapa besar pendapat mereka ngaruh ke hidup lu",
+      "timing": {
+        "id": "b8",
+        "text": "Tapi lu bisa ngontrol… seberapa besar pendapat mereka ngaruh ke hidup lu.",
+        "start": 71.32,
+        "end": 74.93,
+        "duration": 3.61,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b9",
+      "text": "Karena pada akhirnya… mereka pulang ke hidup mereka. Dan lu… harus tetap hidup dengan hidup lu sendiri. Jadi nggak apa-apa kalau nggak semua orang suka sama lu — lu juga nggak diciptain buat disukai semua orang.",
+      "why": "Closes with separation and self-acceptance: two diverging lives, and permission to be disliked.",
+      "emotion": "liberation, self-compassion, resolute calm",
+      "metaphorHints": [
+        "two spheres drifting apart",
+        "an open horizon beyond a closing corridor",
+        "a bold typographic final slam"
+      ],
+      "abstractMeaning": "Personal sovereignty: your life is the only one you must live, and universal approval was never the design spec.",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "lu nggak diciptain buat disukai semua orang",
+      "timing": {
+        "id": "b9",
+        "text": "Karena pada akhirnya… mereka pulang ke hidup mereka. Dan lu… harus tetap hidup dengan hidup lu sendiri. Jadi nggak apa-apa kalau nggak semua orang suka sama lu — lu juga nggak diciptain buat disukai semua orang.",
+        "start": 74.93,
+        "end": 124.58,
+        "duration": 49.65,
+        "source": "phrase"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1343 @@
+[
+  {
+    "frame": "analysis/frames/scene_00_start.jpg",
+    "meanLuma": 18.2,
+    "background": "#0c1413",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0c1413",
+        "share": 0.9976851851851852,
+        "luma": 18
+      },
+      {
+        "hex": "#15201c",
+        "share": 0.0023148148148148147,
+        "luma": 29
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_00_mid.jpg",
+    "meanLuma": 27.9,
+    "background": "#0a1212",
+    "textPrimary": "#b5b1a7",
+    "accents": [
+      {
+        "hex": "#6b2c31",
+        "hue": 345,
+        "share": 0.0131
+      }
+    ],
+    "topBuckets": [
+      {
+        "hex": "#0a1212",
+        "share": 0.6442901234567902,
+        "luma": 16
+      },
+      {
+        "hex": "#1a2424",
+        "share": 0.23765432098765432,
+        "luma": 34
+      },
+      {
+        "hex": "#2a3332",
+        "share": 0.029320987654320986,
+        "luma": 49
+      },
+      {
+        "hex": "#6a2a2f",
+        "share": 0.015432098765432098,
+        "luma": 56
+      },
+      {
+        "hex": "#13211e",
+        "share": 0.009259259259259259,
+        "luma": 30
+      },
+      {
+        "hex": "#4d524e",
+        "share": 0.009259259259259259,
+        "luma": 80
+      },
+      {
+        "hex": "#6e6f69",
+        "share": 0.006172839506172839,
+        "luma": 110
+      },
+      {
+        "hex": "#3c4946",
+        "share": 0.006172839506172839,
+        "luma": 70
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_01_start.jpg",
+    "meanLuma": 22.2,
+    "background": "#0b1212",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0b1212",
+        "share": 0.6890432098765432,
+        "luma": 16
+      },
+      {
+        "hex": "#1a2423",
+        "share": 0.27391975308641975,
+        "luma": 34
+      },
+      {
+        "hex": "#16211f",
+        "share": 0.023919753086419752,
+        "luma": 30
+      },
+      {
+        "hex": "#48514e",
+        "share": 0.005401234567901234,
+        "luma": 79
+      },
+      {
+        "hex": "#293433",
+        "share": 0.004629629629629629,
+        "luma": 49
+      },
+      {
+        "hex": "#3d4745",
+        "share": 0.0015432098765432098,
+        "luma": 69
+      },
+      {
+        "hex": "#5d6361",
+        "share": 0.0015432098765432098,
+        "luma": 97
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_01_mid.jpg",
+    "meanLuma": 25,
+    "background": "#0a1212",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0a1212",
+        "share": 0.6851851851851852,
+        "luma": 16
+      },
+      {
+        "hex": "#192423",
+        "share": 0.21682098765432098,
+        "luma": 33
+      },
+      {
+        "hex": "#222e2d",
+        "share": 0.04861111111111111,
+        "luma": 43
+      },
+      {
+        "hex": "#16211f",
+        "share": 0.011574074074074073,
+        "luma": 30
+      },
+      {
+        "hex": "#4c5450",
+        "share": 0.007716049382716049,
+        "luma": 82
+      },
+      {
+        "hex": "#6c716c",
+        "share": 0.006944444444444444,
+        "luma": 112
+      },
+      {
+        "hex": "#909089",
+        "share": 0.005401234567901234,
+        "luma": 144
+      },
+      {
+        "hex": "#50716a",
+        "share": 0.004629629629629629,
+        "luma": 105
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_02_start.jpg",
+    "meanLuma": 22.4,
+    "background": "#0a1312",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0a1312",
+        "share": 0.7021604938271605,
+        "luma": 17
+      },
+      {
+        "hex": "#182524",
+        "share": 0.24151234567901234,
+        "luma": 34
+      },
+      {
+        "hex": "#272a29",
+        "share": 0.02854938271604938,
+        "luma": 41
+      },
+      {
+        "hex": "#15211f",
+        "share": 0.023919753086419752,
+        "luma": 30
+      },
+      {
+        "hex": "#4f534e",
+        "share": 0.0023148148148148147,
+        "luma": 82
+      },
+      {
+        "hex": "#141f20",
+        "share": 0.0015432098765432098,
+        "luma": 29
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_02_mid.jpg",
+    "meanLuma": 25.5,
+    "background": "#0b1212",
+    "textPrimary": "#bbb7ad",
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0b1212",
+        "share": 0.6867283950617284,
+        "luma": 17
+      },
+      {
+        "hex": "#1a2523",
+        "share": 0.1867283950617284,
+        "luma": 34
+      },
+      {
+        "hex": "#2a312f",
+        "share": 0.08256172839506173,
+        "luma": 47
+      },
+      {
+        "hex": "#16211f",
+        "share": 0.014660493827160493,
+        "luma": 30
+      },
+      {
+        "hex": "#515552",
+        "share": 0.007716049382716049,
+        "luma": 84
+      },
+      {
+        "hex": "#696b65",
+        "share": 0.006944444444444444,
+        "luma": 106
+      },
+      {
+        "hex": "#3e4441",
+        "share": 0.0030864197530864196,
+        "luma": 67
+      },
+      {
+        "hex": "#bbb7ad",
+        "share": 0.0030864197530864196,
+        "luma": 183
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_03_start.jpg",
+    "meanLuma": 21.2,
+    "background": "#0b1211",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0b1211",
+        "share": 0.716820987654321,
+        "luma": 17
+      },
+      {
+        "hex": "#192422",
+        "share": 0.23842592592592593,
+        "luma": 33
+      },
+      {
+        "hex": "#16211e",
+        "share": 0.041666666666666664,
+        "luma": 30
+      },
+      {
+        "hex": "#181f20",
+        "share": 0.0015432098765432098,
+        "luma": 30
+      },
+      {
+        "hex": "#212d2b",
+        "share": 0.0015432098765432098,
+        "luma": 42
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_03_mid.jpg",
+    "meanLuma": 19.2,
+    "background": "#0e0b08",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0e0b08",
+        "share": 0.7368827160493827,
+        "luma": 11
+      },
+      {
+        "hex": "#241b13",
+        "share": 0.12808641975308643,
+        "luma": 29
+      },
+      {
+        "hex": "#2c241a",
+        "share": 0.0625,
+        "luma": 37
+      },
+      {
+        "hex": "#352d23",
+        "share": 0.031635802469135804,
+        "luma": 46
+      },
+      {
+        "hex": "#5a5249",
+        "share": 0.010030864197530864,
+        "luma": 83
+      },
+      {
+        "hex": "#453a2b",
+        "share": 0.008487654320987654,
+        "luma": 59
+      },
+      {
+        "hex": "#635b51",
+        "share": 0.008487654320987654,
+        "luma": 92
+      },
+      {
+        "hex": "#7a7268",
+        "share": 0.007716049382716049,
+        "luma": 115
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_04_start.jpg",
+    "meanLuma": 15.6,
+    "background": "#0f0a07",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0f0a07",
+        "share": 0.7646604938271605,
+        "luma": 11
+      },
+      {
+        "hex": "#231b12",
+        "share": 0.16512345679012347,
+        "luma": 28
+      },
+      {
+        "hex": "#2c2219",
+        "share": 0.06558641975308642,
+        "luma": 35
+      },
+      {
+        "hex": "#3a3430",
+        "share": 0.0023148148148148147,
+        "luma": 53
+      },
+      {
+        "hex": "#433c36",
+        "share": 0.0015432098765432098,
+        "luma": 61
+      },
+      {
+        "hex": "#4a423c",
+        "share": 0.0007716049382716049,
+        "luma": 67
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_04_mid.jpg",
+    "meanLuma": 19.5,
+    "background": "#0e0905",
+    "textPrimary": "#cbbeb2",
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0e0905",
+        "share": 0.6959876543209876,
+        "luma": 10
+      },
+      {
+        "hex": "#241b12",
+        "share": 0.13194444444444445,
+        "luma": 28
+      },
+      {
+        "hex": "#2c231a",
+        "share": 0.08333333333333333,
+        "luma": 36
+      },
+      {
+        "hex": "#322e26",
+        "share": 0.033179012345679014,
+        "luma": 46
+      },
+      {
+        "hex": "#692526",
+        "share": 0.017746913580246913,
+        "luma": 52
+      },
+      {
+        "hex": "#767269",
+        "share": 0.009259259259259259,
+        "luma": 114
+      },
+      {
+        "hex": "#562725",
+        "share": 0.006944444444444444,
+        "luma": 49
+      },
+      {
+        "hex": "#48453e",
+        "share": 0.0038580246913580245,
+        "luma": 69
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_05_start.jpg",
+    "meanLuma": 20.2,
+    "background": "#11100c",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#11100c",
+        "share": 0.7638888888888888,
+        "luma": 16
+      },
+      {
+        "hex": "#27221b",
+        "share": 0.13580246913580246,
+        "luma": 35
+      },
+      {
+        "hex": "#221e19",
+        "share": 0.08333333333333333,
+        "luma": 31
+      },
+      {
+        "hex": "#37332f",
+        "share": 0.011574074074074073,
+        "luma": 51
+      },
+      {
+        "hex": "#423433",
+        "share": 0.0023148148148148147,
+        "luma": 55
+      },
+      {
+        "hex": "#3c1f21",
+        "share": 0.0015432098765432098,
+        "luma": 37
+      },
+      {
+        "hex": "#48443e",
+        "share": 0.0015432098765432098,
+        "luma": 68
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_05_mid.jpg",
+    "meanLuma": 36.4,
+    "background": "#162726",
+    "textPrimary": "#b6b2a9",
+    "accents": [
+      {
+        "hex": "#796629",
+        "hue": 45,
+        "share": 0.034
+      }
+    ],
+    "topBuckets": [
+      {
+        "hex": "#162726",
+        "share": 0.44907407407407407,
+        "luma": 35
+      },
+      {
+        "hex": "#0b1515",
+        "share": 0.37114197530864196,
+        "luma": 19
+      },
+      {
+        "hex": "#28342f",
+        "share": 0.05169753086419753,
+        "luma": 49
+      },
+      {
+        "hex": "#12201f",
+        "share": 0.030864197530864196,
+        "luma": 29
+      },
+      {
+        "hex": "#4b5451",
+        "share": 0.02700617283950617,
+        "luma": 82
+      },
+      {
+        "hex": "#5c5429",
+        "share": 0.008487654320987654,
+        "luma": 83
+      },
+      {
+        "hex": "#947627",
+        "share": 0.006944444444444444,
+        "luma": 119
+      },
+      {
+        "hex": "#94948e",
+        "share": 0.006172839506172839,
+        "luma": 148
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_06_start.jpg",
+    "meanLuma": 31.1,
+    "background": "#172928",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#172928",
+        "share": 0.5949074074074074,
+        "luma": 37
+      },
+      {
+        "hex": "#0b1515",
+        "share": 0.34953703703703703,
+        "luma": 19
+      },
+      {
+        "hex": "#263433",
+        "share": 0.03935185185185185,
+        "luma": 49
+      },
+      {
+        "hex": "#15201e",
+        "share": 0.011574074074074073,
+        "luma": 30
+      },
+      {
+        "hex": "#4c5350",
+        "share": 0.0023148148148148147,
+        "luma": 81
+      },
+      {
+        "hex": "#3d4543",
+        "share": 0.0023148148148148147,
+        "luma": 67
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_06_mid.jpg",
+    "meanLuma": 24.2,
+    "background": "#0b1313",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0b1313",
+        "share": 0.6404320987654321,
+        "luma": 17
+      },
+      {
+        "hex": "#182625",
+        "share": 0.29012345679012347,
+        "luma": 35
+      },
+      {
+        "hex": "#293433",
+        "share": 0.05246913580246913,
+        "luma": 50
+      },
+      {
+        "hex": "#16211f",
+        "share": 0.016203703703703703,
+        "luma": 30
+      },
+      {
+        "hex": "#414846",
+        "share": 0.0007716049382716049,
+        "luma": 70
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_07_start.jpg",
+    "meanLuma": 24.2,
+    "background": "#0a1212",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0a1212",
+        "share": 0.6412037037037037,
+        "luma": 16
+      },
+      {
+        "hex": "#192827",
+        "share": 0.2986111111111111,
+        "luma": 36
+      },
+      {
+        "hex": "#253130",
+        "share": 0.05169753086419753,
+        "luma": 46
+      },
+      {
+        "hex": "#4f5351",
+        "share": 0.0038580246913580245,
+        "luma": 82
+      },
+      {
+        "hex": "#15211f",
+        "share": 0.0030864197530864196,
+        "luma": 30
+      },
+      {
+        "hex": "#6a6f6c",
+        "share": 0.0015432098765432098,
+        "luma": 110
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_07_mid.jpg",
+    "meanLuma": 26.5,
+    "background": "#0a1212",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0a1212",
+        "share": 0.6558641975308642,
+        "luma": 16
+      },
+      {
+        "hex": "#182727",
+        "share": 0.22839506172839505,
+        "luma": 36
+      },
+      {
+        "hex": "#273231",
+        "share": 0.06018518518518518,
+        "luma": 47
+      },
+      {
+        "hex": "#4e534e",
+        "share": 0.018518518518518517,
+        "luma": 82
+      },
+      {
+        "hex": "#6c6f6a",
+        "share": 0.011574074074074073,
+        "luma": 110
+      },
+      {
+        "hex": "#15201e",
+        "share": 0.010030864197530864,
+        "luma": 30
+      },
+      {
+        "hex": "#8c8d88",
+        "share": 0.004629629629629629,
+        "luma": 140
+      },
+      {
+        "hex": "#3d4746",
+        "share": 0.0030864197530864196,
+        "luma": 69
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_08_start.jpg",
+    "meanLuma": 23.8,
+    "background": "#0a1211",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0a1211",
+        "share": 0.6450617283950617,
+        "luma": 16
+      },
+      {
+        "hex": "#182827",
+        "share": 0.279320987654321,
+        "luma": 37
+      },
+      {
+        "hex": "#25322e",
+        "share": 0.037037037037037035,
+        "luma": 47
+      },
+      {
+        "hex": "#15211e",
+        "share": 0.031635802469135804,
+        "luma": 30
+      },
+      {
+        "hex": "#494f4a",
+        "share": 0.004629629629629629,
+        "luma": 78
+      },
+      {
+        "hex": "#3f4645",
+        "share": 0.0007716049382716049,
+        "luma": 68
+      },
+      {
+        "hex": "#5d6765",
+        "share": 0.0007716049382716049,
+        "luma": 101
+      },
+      {
+        "hex": "#181f20",
+        "share": 0.0007716049382716049,
+        "luma": 30
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_08_mid.jpg",
+    "meanLuma": 27,
+    "background": "#0a1212",
+    "textPrimary": null,
+    "accents": [
+      {
+        "hex": "#695b25",
+        "hue": 45,
+        "share": 0.0208
+      }
+    ],
+    "topBuckets": [
+      {
+        "hex": "#0a1212",
+        "share": 0.6720679012345679,
+        "luma": 16
+      },
+      {
+        "hex": "#182727",
+        "share": 0.2013888888888889,
+        "luma": 36
+      },
+      {
+        "hex": "#2a3533",
+        "share": 0.04552469135802469,
+        "luma": 50
+      },
+      {
+        "hex": "#16211e",
+        "share": 0.023148148148148147,
+        "luma": 30
+      },
+      {
+        "hex": "#6b6f6b",
+        "share": 0.016975308641975308,
+        "luma": 110
+      },
+      {
+        "hex": "#515551",
+        "share": 0.006944444444444444,
+        "luma": 84
+      },
+      {
+        "hex": "#76682f",
+        "share": 0.006172839506172839,
+        "luma": 103
+      },
+      {
+        "hex": "#695e28",
+        "share": 0.004629629629629629,
+        "luma": 93
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_09_start.jpg",
+    "meanLuma": 24.1,
+    "background": "#0a1212",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0a1212",
+        "share": 0.6450617283950617,
+        "luma": 16
+      },
+      {
+        "hex": "#182827",
+        "share": 0.2816358024691358,
+        "luma": 36
+      },
+      {
+        "hex": "#273332",
+        "share": 0.038580246913580245,
+        "luma": 49
+      },
+      {
+        "hex": "#16211e",
+        "share": 0.024691358024691357,
+        "luma": 30
+      },
+      {
+        "hex": "#535653",
+        "share": 0.004629629629629629,
+        "luma": 85
+      },
+      {
+        "hex": "#6d7270",
+        "share": 0.0015432098765432098,
+        "luma": 112
+      },
+      {
+        "hex": "#3d4745",
+        "share": 0.0015432098765432098,
+        "luma": 68
+      },
+      {
+        "hex": "#3e4234",
+        "share": 0.0007716049382716049,
+        "luma": 64
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_09_mid.jpg",
+    "meanLuma": 26.9,
+    "background": "#0a1212",
+    "textPrimary": null,
+    "accents": [
+      {
+        "hex": "#782f36",
+        "hue": 345,
+        "share": 0.0154
+      }
+    ],
+    "topBuckets": [
+      {
+        "hex": "#0a1212",
+        "share": 0.6527777777777778,
+        "luma": 16
+      },
+      {
+        "hex": "#182827",
+        "share": 0.21682098765432098,
+        "luma": 36
+      },
+      {
+        "hex": "#2b3231",
+        "share": 0.05787037037037037,
+        "luma": 49
+      },
+      {
+        "hex": "#6c6f6a",
+        "share": 0.016203703703703703,
+        "luma": 110
+      },
+      {
+        "hex": "#4d2b2f",
+        "share": 0.012345679012345678,
+        "luma": 51
+      },
+      {
+        "hex": "#772e34",
+        "share": 0.011574074074074073,
+        "luma": 62
+      },
+      {
+        "hex": "#53544e",
+        "share": 0.006172839506172839,
+        "luma": 83
+      },
+      {
+        "hex": "#8a8d87",
+        "share": 0.004629629629629629,
+        "luma": 140
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_10_start.jpg",
+    "meanLuma": 23.6,
+    "background": "#0a1212",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0a1212",
+        "share": 0.6527777777777778,
+        "luma": 16
+      },
+      {
+        "hex": "#182928",
+        "share": 0.33101851851851855,
+        "luma": 37
+      },
+      {
+        "hex": "#212e2d",
+        "share": 0.011574074074074073,
+        "luma": 43
+      },
+      {
+        "hex": "#14201e",
+        "share": 0.004629629629629629,
+        "luma": 30
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_10_mid.jpg",
+    "meanLuma": 29.6,
+    "background": "#0a1111",
+    "textPrimary": null,
+    "accents": [
+      {
+        "hex": "#6a5922",
+        "hue": 45,
+        "share": 0.0424
+      }
+    ],
+    "topBuckets": [
+      {
+        "hex": "#0a1111",
+        "share": 0.6373456790123457,
+        "luma": 16
+      },
+      {
+        "hex": "#182827",
+        "share": 0.20601851851851852,
+        "luma": 37
+      },
+      {
+        "hex": "#25312f",
+        "share": 0.05015432098765432,
+        "luma": 46
+      },
+      {
+        "hex": "#524c2b",
+        "share": 0.020833333333333332,
+        "luma": 75
+      },
+      {
+        "hex": "#48524f",
+        "share": 0.012345679012345678,
+        "luma": 79
+      },
+      {
+        "hex": "#979793",
+        "share": 0.012345679012345678,
+        "luma": 151
+      },
+      {
+        "hex": "#3c4745",
+        "share": 0.010030864197530864,
+        "luma": 68
+      },
+      {
+        "hex": "#8b7025",
+        "share": 0.010030864197530864,
+        "luma": 112
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_11_start.jpg",
+    "meanLuma": 23.8,
+    "background": "#0a1212",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0a1212",
+        "share": 0.6388888888888888,
+        "luma": 16
+      },
+      {
+        "hex": "#182625",
+        "share": 0.30478395061728397,
+        "luma": 35
+      },
+      {
+        "hex": "#263332",
+        "share": 0.05015432098765432,
+        "luma": 48
+      },
+      {
+        "hex": "#4a5452",
+        "share": 0.0030864197530864196,
+        "luma": 82
+      },
+      {
+        "hex": "#141f20",
+        "share": 0.0007716049382716049,
+        "luma": 29
+      },
+      {
+        "hex": "#14201e",
+        "share": 0.0007716049382716049,
+        "luma": 29
+      },
+      {
+        "hex": "#586260",
+        "share": 0.0007716049382716049,
+        "luma": 96
+      },
+      {
+        "hex": "#3f4a48",
+        "share": 0.0007716049382716049,
+        "luma": 72
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_11_mid.jpg",
+    "meanLuma": 23.3,
+    "background": "#0a1111",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0a1111",
+        "share": 0.6435185185185185,
+        "luma": 16
+      },
+      {
+        "hex": "#172625",
+        "share": 0.30864197530864196,
+        "luma": 35
+      },
+      {
+        "hex": "#243432",
+        "share": 0.038580246913580245,
+        "luma": 48
+      },
+      {
+        "hex": "#15211f",
+        "share": 0.004629629629629629,
+        "luma": 30
+      },
+      {
+        "hex": "#3d4845",
+        "share": 0.0023148148148148147,
+        "luma": 69
+      },
+      {
+        "hex": "#4c5855",
+        "share": 0.0015432098765432098,
+        "luma": 85
+      },
+      {
+        "hex": "#56605e",
+        "share": 0.0007716049382716049,
+        "luma": 94
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_12_start.jpg",
+    "meanLuma": 23.4,
+    "background": "#0b1212",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0b1212",
+        "share": 0.6674382716049383,
+        "luma": 16
+      },
+      {
+        "hex": "#182625",
+        "share": 0.2777777777777778,
+        "luma": 35
+      },
+      {
+        "hex": "#263333",
+        "share": 0.05092592592592592,
+        "luma": 49
+      },
+      {
+        "hex": "#16201e",
+        "share": 0.0023148148148148147,
+        "luma": 30
+      },
+      {
+        "hex": "#3c4644",
+        "share": 0.0007716049382716049,
+        "luma": 68
+      },
+      {
+        "hex": "#4b5253",
+        "share": 0.0007716049382716049,
+        "luma": 81
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_12_mid.jpg",
+    "meanLuma": 25.7,
+    "background": "#0a1212",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0a1212",
+        "share": 0.654320987654321,
+        "luma": 16
+      },
+      {
+        "hex": "#172625",
+        "share": 0.2353395061728395,
+        "luma": 35
+      },
+      {
+        "hex": "#283332",
+        "share": 0.06712962962962964,
+        "luma": 49
+      },
+      {
+        "hex": "#545654",
+        "share": 0.015432098765432098,
+        "luma": 86
+      },
+      {
+        "hex": "#737570",
+        "share": 0.007716049382716049,
+        "luma": 116
+      },
+      {
+        "hex": "#291719",
+        "share": 0.005401234567901234,
+        "luma": 27
+      },
+      {
+        "hex": "#4b1e21",
+        "share": 0.0030864197530864196,
+        "luma": 40
+      },
+      {
+        "hex": "#3b4343",
+        "share": 0.0023148148148148147,
+        "luma": 66
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_13_start.jpg",
+    "meanLuma": 24,
+    "background": "#0b1212",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0b1212",
+        "share": 0.6435185185185185,
+        "luma": 16
+      },
+      {
+        "hex": "#192625",
+        "share": 0.2816358024691358,
+        "luma": 35
+      },
+      {
+        "hex": "#25312e",
+        "share": 0.06558641975308642,
+        "luma": 46
+      },
+      {
+        "hex": "#17211e",
+        "share": 0.0030864197530864196,
+        "luma": 31
+      },
+      {
+        "hex": "#3b4232",
+        "share": 0.0023148148148148147,
+        "luma": 63
+      },
+      {
+        "hex": "#4d5651",
+        "share": 0.0023148148148148147,
+        "luma": 84
+      },
+      {
+        "hex": "#222a1e",
+        "share": 0.0015432098765432098,
+        "luma": 39
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_13_mid.jpg",
+    "meanLuma": 23.6,
+    "background": "#0b1212",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0b1212",
+        "share": 0.6427469135802469,
+        "luma": 16
+      },
+      {
+        "hex": "#182726",
+        "share": 0.31712962962962965,
+        "luma": 36
+      },
+      {
+        "hex": "#232e2a",
+        "share": 0.023919753086419752,
+        "luma": 44
+      },
+      {
+        "hex": "#16221e",
+        "share": 0.006944444444444444,
+        "luma": 31
+      },
+      {
+        "hex": "#22291e",
+        "share": 0.005401234567901234,
+        "luma": 39
+      },
+      {
+        "hex": "#181f20",
+        "share": 0.0030864197530864196,
+        "luma": 30
+      },
+      {
+        "hex": "#314543",
+        "share": 0.0007716049382716049,
+        "luma": 65
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_14_start.jpg",
+    "meanLuma": 32.1,
+    "background": "#0e1415",
+    "textPrimary": null,
+    "accents": [],
+    "topBuckets": [
+      {
+        "hex": "#0e1415",
+        "share": 0.39197530864197533,
+        "luma": 19
+      },
+      {
+        "hex": "#272f2d",
+        "share": 0.3557098765432099,
+        "luma": 45
+      },
+      {
+        "hex": "#1b2524",
+        "share": 0.22685185185185186,
+        "luma": 35
+      },
+      {
+        "hex": "#16201e",
+        "share": 0.016975308641975308,
+        "luma": 30
+      },
+      {
+        "hex": "#181f20",
+        "share": 0.004629629629629629,
+        "luma": 30
+      },
+      {
+        "hex": "#454744",
+        "share": 0.0038580246913580245,
+        "luma": 70
+      }
+    ]
+  },
+  {
+    "frame": "analysis/frames/scene_14_mid.jpg",
+    "meanLuma": 35.1,
+    "background": "#14100b",
+    "textPrimary": null,
+    "accents": [
+      {
+        "hex": "#61491d",
+        "hue": 45,
+        "share": 0.034
+      }
+    ],
+    "topBuckets": [
+      {
+        "hex": "#14100b",
+        "share": 0.3734567901234568,
+        "luma": 17
+      },
+      {
+        "hex": "#30251b",
+        "share": 0.1882716049382716,
+        "luma": 39
+      },
+      {
+        "hex": "#3b2e24",
+        "share": 0.17978395061728394,
+        "luma": 48
+      },
+      {
+        "hex": "#231c14",
+        "share": 0.12191358024691358,
+        "luma": 29
+      },
+      {
+        "hex": "#364343",
+        "share": 0.04243827160493827,
+        "luma": 64
+      },
+      {
+        "hex": "#43352a",
+        "share": 0.035493827160493825,
+        "luma": 55
+      },
+      {
+        "hex": "#493718",
+        "share": 0.014660493827160493,
+        "luma": 57
+      },
+      {
+        "hex": "#6e5018",
+        "share": 0.007716049382716049,
+        "luma": 82
+      }
+    ]
+  }
+]

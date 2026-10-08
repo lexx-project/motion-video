@@ -1,0 +1,10 @@
+{
+  "sceneId": "scene_03",
+  "rootCause": "The bridging Line was too short/thin/low-contrast to read across the void, and the gold glow competed with the accent word 'WANT'.",
+  "changesMade": [
+    "Line: lengthPct 60->96, thicknessPx 2->3, opacity 0.85, accent none, so the hairline visibly spans the gap as the sole bridge",
+    "Line delay 0.6->0.4 so the bridge draws before the emphasis beat",
+    "GradientGlow: intensity 0.3->0.22, diameterPct 80->70, keeping it subordinate to the type"
+  ],
+  "expectedEffect": "A single muted hairline now visibly spans the void between the two headlines, literalizing the gap-and-bridge metaphor, while reduced glow leaves 'WANT' as the focal accent."
+}

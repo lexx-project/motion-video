@@ -1,0 +1,21 @@
+{
+  "$comment": "Forbidden patterns (MASTER_SPEC section 1 rule 12 + 6). The Slop Critic scores scenes against these ids; the renderer never applies them.",
+  "patterns": [
+    { "id": "excessive-particles", "label": "Excessive particle spam", "severity": 8, "rule": "No particle fields unless a beat explicitly means diffusion/decay, max one system, density <= 0.4" },
+    { "id": "random-camera-shake", "label": "Random camera shake", "severity": 9, "rule": "Camera never shakes; motion only via defined entrance/emphasis/exit" },
+    { "id": "gratuitous-zoom", "label": "Gratuitous zoom", "severity": 7, "rule": "No full-scene zoom unless emphasis vocabulary 'subtleScale' with delta <= 0.08" },
+    { "id": "unnecessary-glow", "label": "Unnecessary glow", "severity": 6, "rule": "Max 1 background glow per scene, intensity <= 0.4, must be subordinate to content" },
+    { "id": "random-glitch", "label": "Random glitch effects", "severity": 9, "rule": "Glitch is never used" },
+    { "id": "flashy-transitions", "label": "Transition for transition's sake", "severity": 7, "rule": "Exits limited to fade/slide/dissolve/maskedTransition vocabulary" },
+    { "id": "rainbow-palette", "label": "Rainbow / multi-hue palette", "severity": 8, "rule": "One dominant accent per scene; max 2 accents ever" },
+    { "id": "visual-clutter", "label": "Visual clutter", "severity": 7, "rule": "Max 5 elements per scene; negative space preserved" },
+    { "id": "repetitive-layouts", "label": "Repetitive layouts across scenes", "severity": 5, "rule": "No identical composition+primitive+motion combo for same semantic purpose twice in a project" },
+    { "id": "bad-typography", "label": "Bad typography", "severity": 8, "rule": "Headline <= 4 lines, <= 60 chars, never shrunk below min size to fit" },
+    { "id": "meaningless-decoration", "label": "Meaningless decoration", "severity": 7, "rule": "Every element must serve the beat's metaphor or hierarchy" },
+    { "id": "over-animation", "label": "Over-animation", "severity": 7, "rule": "Max 2 simultaneous motion systems, max 6 element animations per scene" },
+    { "id": "weak-metaphor", "label": "Weak / literal metaphor", "severity": 6, "rule": "Visual must communicate the beat without narration" },
+    { "id": "generic-ai-aesthetics", "label": "Generic AI aesthetic (stock gradients, glassmorphism, blob UI)", "severity": 6, "rule": "Use design-system palette and geometry only" },
+    { "id": "every-word-highlighted", "label": "Highlighting every word", "severity": 6, "rule": "Max 2 accent words per headline" },
+    { "id": "meaningless-3d", "label": "Meaningless 3D objects", "severity": 8, "rule": "No 3D transforms beyond controlled parallax-free scale" }
+  ]
+}

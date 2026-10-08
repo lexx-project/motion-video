@@ -1,0 +1,12 @@
+now=10/07/2026 22:41:59
+[10:43:05] repairing: scene_01: storyboard + scene regenerated (semantic root cause)
+[10:47:27] repairing: scene_02: storyboard + scene regenerated (semantic root cause)
+[10:51:48] repairing: scene_04: storyboard + scene regenerated (semantic root cause)
+[10:55:02] repairing: scene_03: storyboard + scene regenerated (semantic root cause)
+[11:06:55] repairing: scene_05 semantic repair failed, falling back to scene repair: [llm]: LLM call failed after retries: HTTP 524: <!DOCTYPE html>
+[11:17:56] repairing: scene scene_05 repair skipped: [llm]: LLM call failed after retries: HTTP 524: <!DOCTYPE html>
+[11:24:35] repairing: scene_06: storyboard + scene regenerated (semantic root cause)
+[11:24:35] rendering: re-rendering preview after repair round 2
+[11:32:41] qa: finalizing
+[11:32:41] complete: project proj_p3_demo complete (fail)
+alive=0

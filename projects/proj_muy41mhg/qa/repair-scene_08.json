@@ -1,0 +1,19 @@
+{
+  "sceneId": "scene_08",
+  "issue": "The teal label 'HIDUP LU SENDIRI' collides with the gold headline word 'SENDIRI', the horizontal path strikes through 'PULANG.', the teal circle is clipped at the right frame edge, and two accents compete in one frame.",
+  "rootCause": "Headline and label share the same vertical anchor band with redundant copy; the path line is anchored at the center band the headline occupies; the circle's positive right offset pushes it past the 8% safe margin; gold and teal both act as dominant accents.",
+  "scope": "minimal",
+  "changesMade": [
+    "Dropped the redundant label 'HIDUP LU SENDIRI' — the headline already carries the phrase, removing the overlap entirely.",
+    "Anchored the headline to the top safe area and moved the horizontal path to offsetY 4 so it sits in negative space, not through 'PULANG.'",
+    "Pulled the circle fully inside the 8% margin (offsetX -6) and aligned it with the path so it reads as the point continuing straight.",
+    "Kept gold as the single accent (headline keyword + light point); dimmed the descending branch to opacity 0.5 as the receding trail."
+  ],
+  "preserve": [
+    "Concept 'ONE JUNCTION, TWO DIVERGING TRAILS' and split composition",
+    "Headline copy, uppercase grotesque typography style",
+    "draw → highlight → fade motion family and timings (0 / 2.4 / 4.62), duration 5.42s",
+    "The dim descending diagonal branch as the 'mereka' path"
+  ],
+  "expectedEffect": "Three clean zones — headline in top negative space, shared path with a single gold light point, dim branch falling bottom-left — with no overlaps, no edge clipping, and one semantic accent explaining the beat at a glance."
+}

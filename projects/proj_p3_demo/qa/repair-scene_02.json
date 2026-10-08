@@ -1,0 +1,23 @@
+{
+  "sceneId": "scene_02",
+  "issue": "Only two slots are labeled and the three cards float unaligned, a loose YES tag reads ambiguously, and the headline/labels jam together ('YOURYES') while a bottom text fragment overlaps the VO band.",
+  "rootCause": "YES was a separate right-anchored Label drifting between cards instead of being bound to the block; SLOT 3 had no label; the three cards at different anchors/scales never formed one column; the extra supporting Label drifted toward the bottom subtitle band causing the caption collision.",
+  "scope": "minimal",
+  "changesMade": [
+    "Removed the loose 'YES' Label and bound 'YES' to the Stack block itself so the block is always labeled.",
+    "Added label 'SLOT 3' to the third card, accent gold, matching the other two card labels.",
+    "Placed Stack + all three GenericCards on the same right anchor with staggered delays so they stack as one aligned column of three persisting silhouettes.",
+    "Kept all text on the left anchor only so the system subtitle renders without overlap.",
+    "Updated storyboard visualNarrative/semanticObjects/relationships to match: one labeled block, three aligned persistent outline slots as countable proof."
+  ],
+  "preserve": [
+    "sceneId scene_02 and duration 4.21",
+    "leftTextRightObject composition family",
+    "headline text and single accent word 'CHANGE'",
+    "gold-only accent discipline",
+    "stagger/highlight motion family and timing",
+    "subtitle phrases and VO timing",
+    "forbiddenInterpretations"
+  ],
+  "expectedEffect": "The final frame shows one YES block with three aligned, labeled outline slots of clearly different proportions, with no floating tag and no text collisions — countable proof of self-betrayal as the beat intends."
+}

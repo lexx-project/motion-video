@@ -1,0 +1,20 @@
+{
+  "sceneId": "scene_01",
+  "issue": "The right-column Stack collides with the headline's 'MOTIVATION.' line, and with bar + label + arrow the frame hits the 5-element ceiling leaving no negative space.",
+  "rootCause": "Three right-column objects stacked at overlapping offsets crowd the full-width headline; the gold Arrow is decorative (serves no beat) and pushes the frame past the clutter budget.",
+  "scope": "minimal",
+  "changesMade": [
+    "Removed the decorative Arrow element (meaningless decoration, off-beat).",
+    "Moved Stack lower/right (offsetX 8, offsetY 16) so it clears the headline's baseline.",
+    "Raised ProgressBar to offsetY -26 to restore column separation and negative space."
+  ],
+  "preserve": [
+    "leftTextRightObject composition",
+    "FULL TANK, BLOCKS REMOVED visual concept",
+    "headline text and its 2 accent words",
+    "ProgressBar and Stack primitives",
+    "motion vocabulary (stagger/controlledReveal/fade)",
+    "duration 4.66 and all timing marks"
+  ],
+  "expectedEffect": "Only two symbolic objects remain in the right column, vertically stacked and clear of the headline, so the full tank vs. excuse stack reads instantly with breathing room around the type."
+}

@@ -1,0 +1,63 @@
+{
+  "results": [
+    {
+      "sceneId": "scene_01",
+      "similarity": 10,
+      "matchedDimensions": [
+        "sameComposition"
+      ],
+      "verdict": "accept",
+      "against": "proj_ref_demo/scene_01"
+    },
+    {
+      "sceneId": "scene_02",
+      "similarity": 35,
+      "matchedDimensions": [
+        "sameComposition",
+        "sameMotionPattern",
+        "sameStorytellingStructure"
+      ],
+      "verdict": "accept",
+      "against": "proj_muwt0aze/scene_06"
+    },
+    {
+      "sceneId": "scene_03",
+      "similarity": 10,
+      "matchedDimensions": [
+        "sameComposition"
+      ],
+      "verdict": "accept",
+      "against": "proj_ref_demo/scene_01"
+    },
+    {
+      "sceneId": "scene_04",
+      "similarity": 25,
+      "matchedDimensions": [
+        "sameDominantObject",
+        "samePrimitiveCombination"
+      ],
+      "verdict": "accept",
+      "against": "proj_ref_demo/scene_03"
+    },
+    {
+      "sceneId": "scene_05",
+      "similarity": 10,
+      "matchedDimensions": [
+        "sameComposition"
+      ],
+      "verdict": "accept",
+      "against": "proj_ref_demo/scene_01"
+    },
+    {
+      "sceneId": "scene_06",
+      "similarity": 15,
+      "matchedDimensions": [
+        "sameMotionPattern"
+      ],
+      "verdict": "accept",
+      "against": "proj_e2e8/scene_04"
+    }
+  ],
+  "rejectedSceneIds": [],
+  "status": "pass"
+}

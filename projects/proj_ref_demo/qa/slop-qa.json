@@ -1,0 +1,18 @@
+{
+  "projectSeverity": 7,
+  "verdict": "severe",
+  "findings": [
+    {
+      "sceneId": "scene_03",
+      "type": "weak-metaphor",
+      "evidence": "rendered frame contains only the headline 'BORING WINS' plus a small caption; the split waveform tracks that carry the 'spikes collapse, pulse endures' mechanism never appear, so the beat reads as a generic motivational card rather than communicating the contrast without narration",
+      "severity": 6
+    },
+    {
+      "sceneId": "scene_05",
+      "type": "bad-typography",
+      "evidence": "headline 'SILENT DISCIPLINES BUILD LOUD RESULTS' is set across five lines (SILENT / DISCIPLINES / BUILD / LOUD / RESULTS), exceeding the four-line headline cap",
+      "severity": 8
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+[20:22:17] repairing: repair round 1 (median-driven): overall quality 7.0 < 8 | slop severity 8 > 6 | scene_01: severe readability - Headline overlaps the gold circle: 'YANG' crosses the ring's bottom arc, so text and figure collide instead of reading as one block + one object. | scene_08: severe readability - Circle overlaps the headline's right edge at 'SEMUA ORANG' — object and text block intersect instead of staying dominant-separate.
+[20:23:18] repairing: scene scene_08 repair skipped: [repair] project=proj_muwt0aze: LLM produced invalid structured output after 2 attempts: [
+[20:26:09] repairing: scene scene_06 repair skipped: [repair] project=proj_muwt0aze: LLM produced invalid structured output after 2 attempts: [
+[20:26:09] rendering: re-rendering preview after repair round 1
+[20:30:39] repairing: repair round 2 (median-driven): overall quality 7.0 < 8 | slop severity 8 > 6 | scene_08: technical correctness fail | scene_08: severe readability - Grid tiles overlap 'DISUKAI' and 'SEMUA ORANG' — object collides with headline text.
+[20:31:54] rendering: re-rendering preview after repair round 2

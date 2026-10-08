@@ -1,0 +1,117 @@
+{
+  "$comment": "V2 - reference-derived composition (reference/analysis/findings-composition.json, confidence 0.75). SPEC: MASTER_SPEC 2.4-2.5. Positions are % of the 1080x1920 canvas.",
+  "grammars": [
+    "centered",
+    "leftTextRightObject",
+    "rightTextLeftObject",
+    "objectDominant",
+    "typographyDominant",
+    "asymmetric",
+    "split",
+    "topTextBottomObject",
+    "bottomTextTopObject",
+    "dualObject",
+    "fullFrameSymbolic"
+  ],
+  "referenceShares": {
+    "leftTextRightObject": {
+      "share": 0.3,
+      "confidence": 0.85
+    },
+    "centered": {
+      "share": 0.2,
+      "confidence": 0.8
+    },
+    "topTextBottomObject": {
+      "share": 0.15,
+      "confidence": 0.7
+    },
+    "bottomTextTopObject": {
+      "share": 0.15,
+      "confidence": 0.7
+    },
+    "typographyDominant": {
+      "share": 0.1,
+      "confidence": 0.6
+    },
+    "asymmetric": {
+      "share": 0.1,
+      "confidence": 0.6
+    },
+    "$note": "Reference frame clusters, not duration-weighted; rightTextLeftObject/split/dualObject/fullFrameSymbolic are allowed by spec but absent or rare in the reference sample"
+  },
+  "positions": [
+    "topLeft",
+    "topCenter",
+    "topRight",
+    "centerLeft",
+    "center",
+    "centerRight",
+    "bottomLeft",
+    "bottomCenter",
+    "bottomRight"
+  ],
+  "elementPositions": [
+    "center",
+    "left",
+    "right",
+    "top",
+    "bottom",
+    "topLeft",
+    "topRight",
+    "bottomLeft",
+    "bottomRight"
+  ],
+  "safeArea": {
+    "marginXPercent": 8,
+    "marginTopPercent": 10,
+    "marginBottomPercent": 14,
+    "$comment": "Reference safe margins ~8% x / ~12% y (conf 0.75); bottom kept at 14% to clear platform UI (TikTok/Reels/Shorts chrome) - documented deviation"
+  },
+  "spacingPatterns": {
+    "textBlockWidthPercent": "40-55",
+    "objectWidthPercent": "20-30",
+    "textObjectGapPercent": "15-20",
+    "labelGapPercentHeight": 4,
+    "tightHeadlineLeading": 1.1,
+    "subtitleGapMultiples": 2,
+    "provenance": {
+      "source": "reference/analysis/findings-composition.json spacingPatterns",
+      "confidence": 0.7
+    }
+  },
+  "maxElementsPerScene": 10,
+  "maxSimultaneousMotionSystems": 2,
+  "negativeSpaceRules": {
+    "preserveHeadlineBreathingRoomPx": 48,
+    "avoidOverlapOfTypeAndObjects": true,
+    "sparseScenesAllowed": true,
+    "fillEmptySpaceIsForbidden": true,
+    "minSceneElementCount": 1,
+    "$reference": "Reference keeps 60-70% of frame empty: one text block + one object (identity finding, conf 0.88); maxElementsPerScene lowered 5 -> 4 to enforce this density"
+  },
+  "hierarchy": {
+    "primaryFocalRequired": true,
+    "$reference": "Hierarchy via type size/weight/accent first, single supporting icon second (reference identity, conf 0.88)"
+  },
+  "maxElementsPerSceneV2": {
+    "hardMax": 10,
+    "dynamicBudget": true,
+    "guidelines": {
+      "simpleConcept": [
+        3,
+        5
+      ],
+      "normal": [
+        5,
+        8
+      ],
+      "complexRelational": [
+        7,
+        10
+      ]
+    },
+    "principle": "Dynamic semantic density (Phase 3): budget depends on semantic complexity, relationships, mechanism, narration density and duration. More elements is NOT automatically better - 3 meaningful elements beat 10 decorative ones. Deterministic readability caps still apply (collision detection, safe areas, text limits).",
+    "v1History": "Phase 2 enforced a flat max of 4 (reference 60-70% empty); Phase 3 keeps the reference's restraint as a guideline while allowing complex relational beats to reach 10 with documented semantic roles."
+  }
+}

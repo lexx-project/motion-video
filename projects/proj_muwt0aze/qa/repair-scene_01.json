@@ -1,0 +1,19 @@
+{
+  "sceneId": "scene_01",
+  "issue": "Frame shows only one vertical arrow plus a gold rule colliding with the headline, so 'converging arrows pin one figure' reads as a single pointer instead of converging pressure.",
+  "rootCause": "The two horizontal arrows are anchored at frame edges (position left/right, offsetX ±14) where they sit on the headline row and never visually reach the circle, while the top arrow is long enough that its head clips the circle stroke; the headline block has no vertical clearance from its gold rule.",
+  "scope": "minimal",
+  "changesMade": [
+    "Re-anchored both horizontal arrows to position center with offsetX ±30 / offsetY 6 so their shafts sit on the circle's row and all three arrows visibly aim at the figure",
+    "Shortened all arrows (lengthPct 45 → 28-30) so each tip stops with a small gap off the circle stroke instead of clipping it",
+    "Removed headline's extra keys and relied on element spacing so the gold rule clears the glyphs of 'YANG' with a visible gap",
+    "Kept emphasis positionShift at 3.6 on all three arrows so they shift inward together, enacting the converging pressure"
+  ],
+  "preserve": [
+    "Composition family (centered) and visualConcept 'CONVERGING ARROWS PIN ONE FIGURE'",
+    "Primitive set Arrow×3 + Circle and gold-only accent on the circle",
+    "Accent words 'BIKIN CAPEK' and headline typography style",
+    "9s duration and entrance/emphasis/exit timing (entranceAt 0, emphasisAt 4.2, exitAt 8.1)"
+  ],
+  "expectedEffect": "Three arrows now visibly converge from top, left and right onto the gold circle with clean gaps, making 'beban tak terlihat menekan satu figur' legible in a single glance, while the headline clears its rule and reads cleanly."
+}

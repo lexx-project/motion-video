@@ -1,0 +1,35 @@
+{
+  "projectId": "proj_muyjtsj9",
+  "createdAt": "2026-10-07T20:17:12.893Z",
+  "updatedAt": "2026-10-07T20:38:20.693Z",
+  "status": "failed",
+  "scriptPreview": "**“Lu tau nggak…\nsalah satu hal yang paling bikin capek?”**\n\nBerusaha…\n\nbiar semua orang suka sama kita.\n\nCara ngomong dijaga.\n\nCara berpakaian dipikirin.\n\nPosting sesuatu…\n\nhapus lagi.\n\nTakut ada yang ngejudge.\n\nTakut ada yang ngomongin.\n\n",
+  "hasAudio": true,
+  "sceneIds": [],
+  "stages": {
+    "analysis": {
+      "status": "done",
+      "startedAt": "2026-10-07T20:17:12.969Z",
+      "finishedAt": "2026-10-07T20:17:54.668Z"
+    },
+    "beats": {
+      "status": "done",
+      "startedAt": "2026-10-07T20:17:54.671Z",
+      "finishedAt": "2026-10-07T20:18:54.695Z"
+    },
+    "timing": {
+      "status": "done",
+      "startedAt": "2026-10-07T20:18:54.697Z",
+      "finishedAt": "2026-10-07T20:19:07.475Z"
+    },
+    "concepts": {
+      "status": "failed",
+      "startedAt": "2026-10-07T20:19:07.476Z",
+      "finishedAt": "2026-10-07T20:38:20.691Z",
+      "error": "StudioError: [artDirection] project=proj_muyjtsj9: LLM produced invalid structured output after 2 attempts: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"selections\",\n      0,\n      \"scores\",\n      \"emotionalFit\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"otionalFit\"\n    ],\n    \"path\": [\n      \"selections\",\n      0,\n      \"scores\"\n    ],\n    \"message\": \"Unrecognized key(s) in object: 'otionalFit'\"\n  }\n]"
+    }
+  },
+  "audioDurationSec": 55.066063,
+  "timingSource": "phrase",
+  "lastError": "[artDirection] project=proj_muyjtsj9: LLM produced invalid structured output after 2 attempts: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"selections\",\n      0,\n      \"scores\",\n      \"emotionalFit\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"otionalFit\"\n    ],\n    \"path\": [\n      \"selections\",\n      0,\n      \"scores\"\n    ],\n    \"message\": \"Unrecognized key(s) in object: 'otionalFit'\"\n  }\n]"
+}

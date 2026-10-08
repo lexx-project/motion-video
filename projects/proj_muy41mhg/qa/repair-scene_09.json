@@ -1,0 +1,22 @@
+{
+  "sceneId": "scene_09",
+  "issue": "Left-aligned gold headline overlaps the 'SEMUA ORANG' label at center, two 'LU' labels confuse the relabel, red ring/dot creates a second accent, and a detached gold arrow points at empty space.",
+  "rootCause": "The Target sits at center under a left-aligned headline, so text bands collide; the relabel was split across Target-label + duplicate Label + a decorative Arrow, and Target's default red ring render breaks single-accent discipline.",
+  "scope": "minimal",
+  "changesMade": [
+    "Moved Target to right band (offsetX -16) so headline left band is fully clear; kept objectDominant scale/hierarchy",
+    "Removed duplicate 'LU' Label and removed the detached Arrow; scene reduced to 3 elements",
+    "Old label 'SEMUA ORANG' placed at ring top (offsetY -28), fades out at 3.6s before new label lands",
+    "Single gold 'LU' Label enters at ring center (delay 4) as the only relabel target",
+    "Target accent set to teal so rings/center read neutral grey-teal; gold remains the sole accent",
+    "Added role/purpose to every element for conformance"
+  ],
+  "preserve": [
+    "Headline text, two accent words (BUKAN, MEREKA) and left alignment",
+    "Gold as the sole semantic accent; teal only for the neutral bullseye",
+    "Duration 9s and timing (emphasisAt 4.05, exitAt 8.2)",
+    "Reveal → highlight → fade motion family",
+    "BULLSEYE RELABELS FROM SEMUA ORANG TO LU concept and objectDominant family"
+  ],
+  "expectedEffect": "Headline occupies the left band and bullseye the right band with zero overlap; one clear old→new label sequence at 3.6–4.0s enacts the relabel; neutral rings + gold LU keep one dominant accent; negative space restored."
+}

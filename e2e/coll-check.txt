@@ -1,0 +1,15 @@
+proj_muwt0aze scene_01: collisions=0 conf=8.6 
+proj_muwt0aze scene_02: collisions=2 conf=7.5 scene.headline("TAKUT DIJUDGE...") x Label[1]("JUJUR -+ KERAS -+ LI...") (58%) | scene.headline("TAKUT DIJUDGE...") x Label[2]("AMAN AJA...") (69%)
+proj_muwt0aze scene_03: collisions=0 conf=10 
+proj_muwt0aze scene_04: collisions=0 conf=8.9 
+proj_muwt0aze scene_05: collisions=0 conf=9.2 
+proj_muwt0aze scene_06: collisions=0 conf=9.4 
+proj_muwt0aze scene_07: collisions=0 conf=9.1 
+proj_muwt0aze scene_08: collisions=0 conf=9.2 
+proj_ref_demo scene_01: collisions=0 conf=9.8 
+proj_ref_demo scene_02: collisions=0 conf=8 
+proj_ref_demo scene_03: collisions=0 conf=8.3 
+proj_ref_demo scene_04: collisions=0 conf=9.7 
+proj_ref_demo scene_05: collisions=1 conf=7.2 scene.headline("SILENT
+DISCIPLINES...") x Label[3]("BUILT IN SILENCE...") (63%)
+proj_ref_demo scene_06: collisions=0 conf=8.9 

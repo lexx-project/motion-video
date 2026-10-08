@@ -1,0 +1,137 @@
+{
+  "beats": [
+    {
+      "id": "b1",
+      "text": "You do not need more motivation. You need fewer excuses.",
+      "why": "Reframes the viewer's problem: the deficit isn't inspiration, it's the excuses blocking action.",
+      "emotion": "defiance, self-honesty",
+      "metaphorHints": [
+        "two levers: MOTIVATION bright but untouched, EXCUSES dull but jammed",
+        "faded excuse pills removed one by one into clean negative space"
+      ],
+      "abstractMeaning": "intention vs action — removal, not addition",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "fewer excuses",
+      "timing": {
+        "id": "b1",
+        "text": "You do not need more motivation. You need fewer excuses.",
+        "start": 0,
+        "end": 4.66,
+        "duration": 4.66,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b2",
+      "text": "The people who win are not smarter.",
+      "why": "Kills the talent myth so the real differentiator can land in the next beat.",
+      "emotion": "defiance",
+      "metaphorHints": [
+        "two identical outlines, one merely labeled WINNER — no visual superiority"
+      ],
+      "abstractMeaning": "talent is not the variable",
+      "visualPriority": "medium",
+      "typographyPriority": "medium",
+      "important": false,
+      "timing": {
+        "id": "b2",
+        "text": "The people who win are not smarter.",
+        "start": 4.66,
+        "end": 7.4,
+        "duration": 2.74,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b3",
+      "text": "They just keep showing up when it is boring.",
+      "why": "The core mechanism: consistency through boredom is the filter that separates winners.",
+      "emotion": "resolve, quiet pride",
+      "metaphorHints": [
+        "a lone figure repeating one identical stroke on an empty grid",
+        "faint repeated strokes in a dark field slowly forming one bold glowing line"
+      ],
+      "abstractMeaning": "boredom as the filter; repetition as proof",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "keep showing up when it is boring",
+      "timing": {
+        "id": "b3",
+        "text": "They just keep showing up when it is boring.",
+        "start": 7.4,
+        "end": 10.14,
+        "duration": 2.74,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b4",
+      "text": "Stop measuring your week one against someone else year five.",
+      "why": "Confronts the comparison trap that drains resolve and distorts progress.",
+      "emotion": "self-honesty, urgency",
+      "metaphorHints": [
+        "two counters: 'YOU · WEEK 1' ticking slowly against 'THEM · YEAR 5' already full, then THEM fades out"
+      ],
+      "abstractMeaning": "internal timeline vs external snapshot",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "week one vs year five",
+      "timing": {
+        "id": "b4",
+        "text": "Stop measuring your week one against someone else year five.",
+        "start": 10.14,
+        "end": 14.8,
+        "duration": 4.66,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b5",
+      "text": "Small disciplines repeated in silence build loud results.",
+      "why": "The compounding promise: private, unglamorous practice produces undeniable outcomes.",
+      "emotion": "quiet pride, empowerment",
+      "metaphorHints": [
+        "tiny repeated marks below a horizon accumulate until a heavy block lifts above it"
+      ],
+      "abstractMeaning": "compound effect; privacy of practice",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "small disciplines repeated in silence",
+      "timing": {
+        "id": "b5",
+        "text": "Small disciplines repeated in silence build loud results.",
+        "start": 14.8,
+        "end": 19.47,
+        "duration": 4.67,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b6",
+      "text": "Your turn.",
+      "why": "Hands responsibility directly to the viewer — the call to act now.",
+      "emotion": "urgency, empowerment",
+      "metaphorHints": [
+        "a spotlight swinging onto an empty chair labeled YOUR TURN"
+      ],
+      "abstractMeaning": "ownership of opportunity",
+      "visualPriority": "medium",
+      "typographyPriority": "high",
+      "important": false,
+      "emphasisPhrase": "your turn",
+      "timing": {
+        "id": "b6",
+        "text": "Your turn.",
+        "start": 19.47,
+        "end": 22.09,
+        "duration": 2.62,
+        "source": "phrase"
+      }
+    }
+  ]
+}

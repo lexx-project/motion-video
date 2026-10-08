@@ -1,0 +1,213 @@
+{
+  "beatId": "b3",
+  "spokenMeaning": "Cara ngomong dijaga. Cara berpakaian dipikirin. You curate your words and your clothes minute by minute so nobody can judge them.",
+  "viewerTakeaway": "Watching the true word get struck and replaced shows how exhausting self-monitoring is: the safe version stands, but the scar of what you erased never leaves.",
+  "visualMechanism": "In-place word swap: the honest word in a real sentence is struck by a gold ha...",
+  "visualNarrative": [
+    {
+      "order": 1,
+      "action": "Headline 'LU JAGA DUA HAL TIAP DETIK' fades up left; below it the first row label NGOMONG and the phrase 'gue bilang susah' reveal, SUSAH set in gold.",
+      "meaning": "The honest version exists first — speech is still true before the monitoring kicks in.",
+      "visualEvidence": "Gold word SUSAH sits solid at the end of an otherwise plain sentence under a small uppercase NGOMONG label."
+    },
+    {
+      "order": 2,
+      "action": "A gold hairline draws left-to-right across SUSAH and the word dims to 35% opacity, staying on screen as a ghost.",
+      "meaning": "Self-monitoring strikes the true word before it lands; the deletion leaves a visible scar, not a clean erase.",
+      "visualEvidence": "Gold strike line crosses SUSAH while the struck word remains faintly readable beneath it."
+    },
+    {
+      "order": 3,
+      "action": "The bland word 'oke' slides into the same slot on the same baseline; the struck 'susah' stays as a dim ghost behind the strike.",
+      "meaning": "The safe version stands in the position of truth — the sentence now reads curated, and the record of what was removed persists.",
+      "visualEvidence": "One slot holds both words: solid white 'oke' in front, gold struck ghost 'susah' behind it."
+    },
+    {
+      "order": 4,
+      "action": "Second row BERPAKAIAN reveals with 'gue pake berani', then repeats the identical action: strike draws across BERANI, it ghosts, 'biasa' slides into the slot.",
+      "meaning": "Appearance is curated by the exact same mechanism — repetition proves it is habitual hypervigilance, not a one-off edit.",
+      "visualEvidence": "Two parallel rows each ending in an identical gold strike scar, both slots now holding bland white words."
+    },
+    {
+      "order": 5,
+      "action": "Both rows hold with a small inward position shift (rows tighten toward the headline) while the gold scars stay lit.",
+      "meaning": "The frame tightens physically: performed identity is comfortable for no one, and the record of editing is permanent.",
+      "visualEvidence": "Static final frame: headline, two labels, two bland sentences, two gold strike scars, dark empty right third."
+    }
+  ],
+  "semanticObjects": [
+    {
+      "objectType": "Typography",
+      "semanticRole": "States the claim being proven: two things guarded constantly",
+      "relationship": "frames both rows beneath it",
+      "importance": 3
+    },
+    {
+      "objectType": "Label",
+      "semanticRole": "Names the first monitored domain: speech",
+      "relationship": "labels the speech row",
+      "importance": 2
+    },
+    {
+      "objectType": "WordReveal",
+      "semanticRole": "The true word SUSAH — the value being surrendered",
+      "relationship": "gets struck by StrikeSpeech, then displaced by SafeWordSpeech",
+      "importance": 4
+    },
+    {
+      "objectType": "Line",
+      "semanticRole": "The act of self-censorship itself, drawn as a hairline",
+      "relationship": "crosses and dims HonestWordSpeech",
+      "importance": 4
+    },
+    {
+      "objectType": "WordReveal",
+      "semanticRole": "The bland replacement OKE that survives",
+      "relationship": "slides into the slot vacated by HonestWordSpeech",
+      "importance": 4
+    },
+    {
+      "objectType": "Label",
+      "semanticRole": "Names the second monitored domain: appearance",
+      "relationship": "labels the clothing row",
+      "importance": 2
+    },
+    {
+      "objectType": "WordReveal",
+      "semanticRole": "The distinct choice BERANI being erased",
+      "relationship": "gets struck by StrikeClothing, then displaced by SafeWordClothing",
+      "importance": 4
+    },
+    {
+      "objectType": "Line",
+      "semanticRole": "Second identical act of curation — repetition as habit",
+      "relationship": "crosses and dims HonestWordClothing",
+      "importance": 3
+    },
+    {
+      "objectType": "WordReveal",
+      "semanticRole": "The plain replacement BIASA that survives",
+      "relationship": "slides into the slot vacated by HonestWordClothing",
+      "importance": 3
+    },
+    {
+      "objectType": "Label",
+      "semanticRole": "Fixed words 'gue bilang' / 'gue pake' making each slot a real sentence, not a diagram",
+      "relationship": "holds each swappable slot in place",
+      "importance": 3
+    }
+  ],
+  "relationships": [
+    {
+      "from": "StrikeSpeech",
+      "to": "HonestWordSpeech",
+      "relationship": "crosses out and dims to a retained ghost"
+    },
+    {
+      "from": "SafeWordSpeech",
+      "to": "HonestWordSpeech",
+      "relationship": "displaces into the same slot on the same baseline"
+    },
+    {
+      "from": "StrikeClothing",
+      "to": "HonestWordClothing",
+      "relationship": "crosses out and dims to a retained ghost"
+    },
+    {
+      "from": "SafeWordClothing",
+      "to": "HonestWordClothing",
+      "relationship": "displaces into the same slot on the same baseline"
+    },
+    {
+      "from": "Headline",
+      "to": "SentenceFrame",
+      "relationship": "frames and is proven by both rows"
+    },
+    {
+      "from": "Label NGOMONG",
+      "to": "SentenceFrame",
+      "relationship": "names the domain of the first row"
+    },
+    {
+      "from": "Label BERPAKAIAN",
+      "to": "SentenceFrame",
+      "relationship": "names the domain of the second row"
+    }
+  ],
+  "typographyPlan": {
+    "headline": "LU JAGA DUA HAL TIAP DETIK",
+    "emphasisWords": [
+      "SUSAH",
+      "BERANI"
+    ],
+    "supportingText": [
+      "NGOMONG",
+      "gue bilang susah → oke",
+      "BERPAKAIAN",
+      "gue pake berani → biasa"
+    ]
+  },
+  "subtitlePlan": {
+    "enabled": true,
+    "text": "Cara ngomong dijaga. Cara berpakaian dipikirin.",
+    "timing": "full beat, 53.26s–55.07s",
+    "role": "spoken line"
+  },
+  "motionBeats": [
+    {
+      "order": 1,
+      "action": "Headline fades up left, soft ease-out",
+      "purpose": "Anchors the claim before the frame proves it"
+    },
+    {
+      "order": 2,
+      "action": "NGOMONG label and 'gue bilang susah' stagger in",
+      "purpose": "Establishes the honest sentence as the starting truth"
+    },
+    {
+      "order": 3,
+      "action": "Gold hairline draws across SUSAH",
+      "purpose": "Performs the monitoring act — someone editing you mid-sentence"
+    },
+    {
+      "order": 4,
+      "action": "SUSAH dissolves to a 35% ghost while 'oke' slides into the slot",
+      "purpose": "Shows replacement, not disappearance: the safe word stands, the scar stays"
+    },
+    {
+      "order": 5,
+      "action": "BERPAKAIAN label and 'gue pake berani' stagger in",
+      "purpose": "Extends the same scrutiny from voice to body"
+    },
+    {
+      "order": 6,
+      "action": "Second strike draws across BERANI, then 'biasa' slides in",
+      "purpose": "Repetition proves this is a habitual loop, not one incident"
+    },
+    {
+      "order": 7,
+      "action": "Both rows shift slightly inward and hold",
+      "purpose": "Physicalizes tightness — the frame compresses around the curated lines"
+    }
+  ],
+  "compositionIntent": "Typography-dominant frame, left-aligned at the 8% margin: 96px headline top-left, two stacked rows beneath, each a 34px uppercase label plus one 52px sentence whose final slot word is the animated element. The right third stays empty dark vignette so the two gold scars read alone.",
+  "visualEvidence": [
+    "Gold word SUSAH sits solid in a real sentence before any strike appears",
+    "Gold hairline crosses SUSAH while the struck word stays readable at low opacity",
+    "Solid white 'oke' occupies the exact baseline slot with the struck ghost behind it",
+    "Two parallel rows each ending in an identical gold strike scar after the swap",
+    "Final frame shows bland white words standing where the two gold words used to be"
+  ],
+  "forbiddenInterpretations": [
+    "Mouth, speech-bubble or clothing illustrations",
+    "Filter-gate, lock or mask icons (already used in proj_muwt0aze)",
+    "Striking out the whole sentence instead of swapping one slot word",
+    "Slider, dial or arrow-diagram explanation of self-censorship",
+    "More than two gold words, glow bloom, glitch or camera shake"
+  ],
+  "noveltyIntent": "Self-censorship is performed by editing two real sentence slots in place, keeping each deleted honest word visible as a gold scar, unlike prior struck-answer grids or filter-gate diagrams.",
+  "elementBudget": {
+    "min": 8,
+    "max": 10
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "summary": "Sisanya adalah pengakuan bahwa berusaha menyenangkan semua orang itu melelahkan dan sia-sia: apa pun yang kita lakukan, selalu ada yang tidak suka. Kendali kita bukan pada pikiran orang lain, melainkan pada sejauh mana pendapat mereka memengaruhi hidup kita. Akhirnya, setiap orang kembali ke hidupnya sendiri, dan kita harus tetap menjalani hidup kita — tidak apa-apa tidak disukai semua orang, karena memang tidak diciptakan untuk disukai semua orang.",
+  "themes": [
+    "kelelahan menjadi yang menyenangkan semua orang",
+    "penghakiman dan opini orang lain yang tak terhindarkan",
+    "batas antara yang bisa dan tak bisa dikontrol",
+    "otonomi diri dan kemandirian emosional",
+    "penerimaan diri: tidak wajib disukai semua orang"
+  ],
+  "emotions": [
+    "lelah mental",
+    "cemas akan penilaian",
+    "frustrasi karena ketidakadilan penilaian",
+    "kepasrahan",
+    "lega dan penerimaan diri",
+    "kemandirian yang tenang"
+  ],
+  "keyNouns": [
+    "pendapat orang lain",
+    "hidup kita",
+    "hidup mereka",
+    "penilaian",
+    "cara ngomong",
+    "cara berpakaian",
+    "postingan",
+    "diri sendiri"
+  ],
+  "keyVerbs": [
+    "berusaha menyenangkan",
+    "menjaga",
+    "menghapus",
+    "menilai",
+    "mengontrol",
+    "menertawakan",
+    "pulang",
+    "disukai"
+  ],
+  "abstractConcepts": [
+    "kontrol vs. ketidakberdayaan",
+    "cermin penilaian sosial yang selalu memutarbalikkan",
+    "dinding opinion yang tak bisa dibungkam",
+    "perjalanan pulang ke hidup masing-masing",
+    "otonomi sebagai pagar pelindung diri",
+    "kenyataan universal: selalu ada yang tak suka"
+  ],
+  "importantPhrases": [
+    "paling bikin capek",
+    "biar semua orang suka sama kita",
+    "posting sesuatu… hapus lagi",
+    "pasti ada aja yang nggak suka",
+    "dibilang pencitraan / sombong / beruntung",
+    "seberapa besar pendapat mereka ngaruh ke hidup lu",
+    "harus tetap hidup dengan hidup lu sendiri",
+    "nggak diciptain buat disukai semua orang"
+  ],
+  "emphasisCandidates": [
+    "paling bikin capek",
+    "semua orang suka",
+    "pasti ada aja yang nggak suka",
+    "pencitraan",
+    "sombong",
+    "ngontrol",
+    "hidup lu sendiri",
+    "nggak diciptain buat disukai semua orang"
+  ],
+  "visualOpportunities": [
+    "tangan mengetik postingan lalu menghapusnya — siklus tulis/hapus berulang",
+    "sosok dikelilingi siluet penilai yang menunjuk dari segala arah",
+    "cermin memantulkan versi berbeda dari sosok yang sama",
+    "mulut, postur, dan pakaian dijaga seperti armour yang menahan napas",
+    "garis batas menahan panah-panah kata dari luar",
+    "dua jalur pulang: kerumunan berbalik, satu sosok berjalan lurus",
+    "centang dan silang yang selalu bertukar posisi berapa pun hasilnya",
+    "sosok melepas armor dan berdiri tenang di ruang kosong lega"
+  ]
+}

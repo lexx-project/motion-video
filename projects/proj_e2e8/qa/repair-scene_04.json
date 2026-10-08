@@ -1,0 +1,11 @@
+{
+  "sceneId": "scene_04",
+  "rootCause": "The bridge metaphor collapsed: the three plank Lines rendered invisibly (leaving an empty middle canvas), and the headline wrapped into 4 awkward lines, so beat b4 was carried only by text (weak-methaphor, severity 6).",
+  "changesMade": [
+    "Rebalanced headline to two explicit lines 'BUILT FROM / TINY CHOICES' keeping TINY CHOICES as the 2 accent words at full size",
+    "Rebuilt the three Line planks as thicker, longer, clearly offset staggered segments (lengthPct 34, thicknessPx 18) spanning the void with visible left→right accumulation delays 0 / 0.35 / 0.7",
+    "Softened plank offset spread (offsetX -34/0/34) so segments read as one continuous accumulating span",
+    "Extended duration to 2.8s with exit at 2.45s so all three planks and the indicator land before the fade"
+  ],
+  "expectedEffect": "The frame now visibly shows a span assembling plank by plank across the dark void beneath a clean two-line headline, so 'built from tiny choices' is enacted by the image rather than narrated by it."
+}

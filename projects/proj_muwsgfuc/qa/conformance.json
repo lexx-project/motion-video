@@ -1,0 +1,147 @@
+{
+  "scenes": [
+    {
+      "sceneId": "scene_01",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 7,
+        "color": 10,
+        "composition": 6.5,
+        "motion": 9,
+        "density": 6,
+        "negativeSpace": 6
+      },
+      "overall": 7.8,
+      "evidence": [
+        "headline estimates 6 rendered lines in its left anchor > 4",
+        "grammar \"split\" absent from reference shares (allowed by spec, off-language)",
+        "1 element delay > 1.4s (reference staggers quickly)",
+        "5 renderable elements > 4",
+        "3 objects (reference uses a single dominant object)"
+      ]
+    },
+    {
+      "sceneId": "scene_02",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 10,
+        "motion": 8,
+        "density": 10,
+        "negativeSpace": 8
+      },
+      "overall": 9.4,
+      "evidence": [
+        "motion \"scale\" outside reference-preferred set",
+        "motion \"positionShift\" outside reference-preferred set"
+      ]
+    },
+    {
+      "sceneId": "scene_03",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 8.5,
+        "color": 10,
+        "composition": 6.5,
+        "motion": 10,
+        "density": 10,
+        "negativeSpace": 8
+      },
+      "overall": 9,
+      "evidence": [
+        "headline estimates 5 rendered lines in its left anchor > 4",
+        "grammar \"split\" absent from reference shares (allowed by spec, off-language)"
+      ]
+    },
+    {
+      "sceneId": "scene_04",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 9,
+        "motion": 9,
+        "density": 10,
+        "negativeSpace": 8
+      },
+      "overall": 9.4,
+      "evidence": [
+        "motion \"draw\" outside reference-preferred set"
+      ]
+    },
+    {
+      "sceneId": "scene_05",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 6.5,
+        "motion": 9,
+        "density": 8.5,
+        "negativeSpace": 8
+      },
+      "overall": 8.9,
+      "evidence": [
+        "grammar \"objectDominant\" absent from reference shares (allowed by spec, off-language)",
+        "motion \"positionShift\" outside reference-preferred set",
+        "3 objects (reference uses a single dominant object)"
+      ]
+    },
+    {
+      "sceneId": "scene_06",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 10,
+        "motion": 9,
+        "density": 6,
+        "negativeSpace": 6
+      },
+      "overall": 8.7,
+      "evidence": [
+        "motion \"positionShift\" outside reference-preferred set",
+        "5 renderable elements > 4",
+        "3 objects (reference uses a single dominant object)"
+      ]
+    },
+    {
+      "sceneId": "scene_07",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 6.5,
+        "motion": 9,
+        "density": 7.5,
+        "negativeSpace": 6
+      },
+      "overall": 8.4,
+      "evidence": [
+        "grammar \"dualObject\" absent from reference shares (allowed by spec, off-language)",
+        "motion \"glow\" outside reference-preferred set",
+        "5 renderable elements > 4"
+      ]
+    },
+    {
+      "sceneId": "scene_08",
+      "scores": {
+        "visualStyle": 10,
+        "typography": 10,
+        "color": 10,
+        "composition": 10,
+        "motion": 9,
+        "density": 7.5,
+        "negativeSpace": 6
+      },
+      "overall": 8.9,
+      "evidence": [
+        "motion \"scale\" outside reference-preferred set",
+        "5 renderable elements > 4"
+      ]
+    }
+  ],
+  "overall": 8.8,
+  "method": "structural checks against reference-derived design tokens + rendered-frame luma/text/accent stats (no pixel similarity)"
+}

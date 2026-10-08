@@ -1,0 +1,87 @@
+{
+  "sceneId": "scene_07",
+  "duration": 7.22,
+  "purpose": "Judgment is temporary noise: they return to their own lives while the viewer must keep tending their own — separate stakes, separate light.",
+  "visualConcept": "TWO LAMPS, ONE STILL BURNING",
+  "composition": "dualObject",
+  "headline": {
+    "text": "TETAP HIDUP DENGAN HIDUP LU SENDIRI",
+    "accentWords": [
+      "HIDUP",
+      "SENDIRI"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "Circle",
+      "variant": "outline",
+      "diameterPct": 46,
+      "position": "left",
+      "offsetX": -24,
+      "offsetY": -8,
+      "scale": 1,
+      "opacity": 1,
+      "accent": "none",
+      "delay": 0,
+      "entrance": "fade",
+      "emphasis": "positionShift",
+      "emphasisAt": 3,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Circle",
+      "variant": "outline",
+      "diameterPct": 46,
+      "position": "right",
+      "offsetX": 24,
+      "offsetY": -8,
+      "scale": 1,
+      "opacity": 1,
+      "accent": "gold",
+      "delay": 0.15,
+      "entrance": "fade",
+      "emphasis": "glow",
+      "emphasisAt": 3.4
+    },
+    {
+      "primitive": "GradientGlow",
+      "intensity": 0.36,
+      "diameterPct": 70,
+      "position": "right",
+      "offsetX": 24,
+      "offsetY": -8,
+      "opacity": 1,
+      "accent": "gold",
+      "delay": 0.35,
+      "entrance": "fade",
+      "emphasis": "subtleScale",
+      "emphasisAt": 3.4
+    },
+    {
+      "primitive": "Label",
+      "text": "MEREKA PULANG",
+      "align": "center",
+      "position": "left",
+      "offsetX": -24,
+      "offsetY": 20,
+      "opacity": 0.9,
+      "accent": "none",
+      "delay": 0.55,
+      "entrance": "fade",
+      "emphasis": "controlledReveal",
+      "emphasisAt": 2.4,
+      "exit": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "fade",
+    "emphasis": "glow",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 3.25,
+    "exitAt": 6.7
+  }
+}

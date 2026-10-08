@@ -1,0 +1,193 @@
+{
+  "beats": [
+    {
+      "id": "b1",
+      "text": "Salah satu hal yang paling bikin capek… berusaha biar semua orang suka sama kita.",
+      "why": "Opens by naming the listener's exact exhaustion instead of lecturing — the hook that makes people feel seen before any argument begins.",
+      "emotion": "exhaustion, quiet resignation",
+      "metaphorHints": [
+        "a heavy mask held up by tired hands",
+        "a figure carrying other people's expectations like a physical burden",
+        "a spotlight of selfhood slowly dimming"
+      ],
+      "abstractMeaning": "external validation as self-exhaustion",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "paling bikin capek",
+      "timing": {
+        "id": "b1",
+        "text": "Salah satu hal yang paling bikin capek… berusaha biar semua orang suka sama kita.",
+        "start": 0,
+        "end": 53.26,
+        "duration": 53.26,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b2",
+      "text": "Cara ngomong dijaga. Cara berpakaian dipikirin. Posting sesuatu… hapus lagi. Takut dijudge, takut diomongin.",
+      "why": "Turns the abstraction into the audience's own daily behavior — three concrete self-monitoring acts so the problem lands in real life, not theory.",
+      "emotion": "anxiety, self-censorship",
+      "metaphorHints": [
+        "a mirror adjusting a mask",
+        "fingers hovering over a glowing post, then withdrawing",
+        "a figure pulled by invisible strings in four directions"
+      ],
+      "abstractMeaning": "constant self-monitoring and suppression of authentic expression",
+      "visualPriority": "high",
+      "typographyPriority": "medium",
+      "important": true,
+      "emphasisPhrase": "hapus lagi",
+      "timing": {
+        "id": "b2",
+        "text": "Cara ngomong dijaga. Cara berpakaian dipikirin. Posting sesuatu… hapus lagi. Takut dijudge, takut diomongin.",
+        "start": 53.26,
+        "end": 56.87,
+        "duration": 3.61,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b3",
+      "text": "Mau lu ngapain juga… pasti ada aja yang nggak suka.",
+      "why": "The first hard truth — approval is structurally impossible, which dissolves the premise of the entire effort.",
+      "emotion": "defiance, bleak clarity",
+      "metaphorHints": [
+        "faceless silhouettes shaking their heads in every direction",
+        "a target that cannot be hit from any angle",
+        "a ring of judges closing in with no center"
+      ],
+      "abstractMeaning": "the unattainability of universal approval",
+      "visualPriority": "medium",
+      "typographyPriority": "high",
+      "important": false,
+      "emphasisPhrase": "pasti ada aja yang nggak suka",
+      "timing": {
+        "id": "b3",
+        "text": "Mau lu ngapain juga… pasti ada aja yang nggak suka.",
+        "start": 56.87,
+        "end": 60.48,
+        "duration": 3.61,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b4",
+      "text": "Lu baik dibilang pencitraan. Lu diem dibilang sombong. Lu sukses dibilang beruntung. Lu gagal ditertawain.",
+      "why": "The double bind — four contradictory verdicts prove no behavior satisfies everyone, making the problem structural rather than personal.",
+      "emotion": "frustration, sense of unfairness",
+      "metaphorHints": [
+        "four verdict cards slamming down onto the same figure",
+        "two-faced signs reading opposite judgments",
+        "one person lit from four unflattering angles"
+      ],
+      "abstractMeaning": "contradictory social judgments — the double bind",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "timing": {
+        "id": "b4",
+        "text": "Lu baik dibilang pencitraan. Lu diem dibilang sombong. Lu sukses dibilang beruntung. Lu gagal ditertawain.",
+        "start": 60.48,
+        "end": 65.9,
+        "duration": 5.42,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b5",
+      "text": "Jadi… buat apa?",
+      "why": "The pivot — a three-word question that converts exhaustion into agency by exposing the whole approval-seeking strategy as pointless.",
+      "emotion": "defiant exhaustion, turning point",
+      "metaphorHints": [
+        "strings snapping and going slack",
+        "a mask dropping to the floor"
+      ],
+      "abstractMeaning": "the emptiness of the approval-seeking strategy",
+      "visualPriority": "medium",
+      "typographyPriority": "high",
+      "important": false,
+      "timing": {
+        "id": "b5",
+        "text": "Jadi… buat apa?",
+        "start": 65.9,
+        "end": 67.7,
+        "duration": 1.8,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b6",
+      "text": "Lu nggak akan pernah bisa ngontrol apa yang orang lain pikirin. Tapi lu bisa ngontrol… seberapa besar pendapat mereka ngaruh ke hidup lu.",
+      "why": "The core teaching — splits the world into the uncontrollable and the controllable, moving the audience from helplessness to agency.",
+      "emotion": "relief, focused empowerment",
+      "metaphorHints": [
+        "a volume dial turning down the noise of a crowd",
+        "a boundary line drawn around a private space",
+        "a shield that deflects noise instead of blocking it"
+      ],
+      "abstractMeaning": "locus of control — you cannot govern opinion, only its influence",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "seberapa besar",
+      "timing": {
+        "id": "b6",
+        "text": "Lu nggak akan pernah bisa ngontrol apa yang orang lain pikirin. Tapi lu bisa ngontrol… seberapa besar pendapat mereka ngaruh ke hidup lu.",
+        "start": 67.7,
+        "end": 76.73,
+        "duration": 9.03,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b7",
+      "text": "Karena pada akhirnya mereka pulang ke hidup mereka. Dan lu… harus tetap hidup dengan hidup lu sendiri.",
+      "why": "Returns the listener to the ground — judgment is temporary noise, but their own life is the permanent stake.",
+      "emotion": "calm resolve, groundedness",
+      "metaphorHints": [
+        "two separate houses lighting up as people return to their own lives",
+        "a single figure walking out of a circular crowd into open dark negative space",
+        "a path that splits into two directions"
+      ],
+      "abstractMeaning": "collective noise versus private life, autonomy of identity",
+      "visualPriority": "high",
+      "typographyPriority": "high",
+      "important": true,
+      "emphasisPhrase": "hidup lu sendiri",
+      "timing": {
+        "id": "b7",
+        "text": "Karena pada akhirnya mereka pulang ke hidup mereka. Dan lu… harus tetap hidup dengan hidup lu sendiri.",
+        "start": 76.73,
+        "end": 83.95,
+        "duration": 7.22,
+        "source": "phrase"
+      }
+    },
+    {
+      "id": "b8",
+      "text": "Jadi nggak apa-apa kalau nggak semua orang suka sama lu. Lu juga nggak diciptain buat disukai semua orang.",
+      "why": "The closing affirmation — reframes rejection as design rather than defect, and leaves the listener with self-compassion instead of more tactics.",
+      "emotion": "self-compassion, quiet freedom",
+      "metaphorHints": [
+        "an unbreakable seal or stamp reading 'not made for everyone'",
+        "a single figure standing whole in negative space",
+        "a completed circle that needs no external validation"
+      ],
+      "abstractMeaning": "identity autonomy and self-acceptance over approval",
+      "visualPriority": "medium",
+      "typographyPriority": "high",
+      "important": false,
+      "emphasisPhrase": "nggak diciptain buat disukai semua orang",
+      "timing": {
+        "id": "b8",
+        "text": "Jadi nggak apa-apa kalau nggak semua orang suka sama lu. Lu juga nggak diciptain buat disukai semua orang.",
+        "start": 83.95,
+        "end": 133.6,
+        "duration": 49.65,
+        "source": "phrase"
+      }
+    }
+  ]
+}

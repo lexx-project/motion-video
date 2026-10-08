@@ -1,0 +1,22 @@
+{
+  "sceneId": "scene_01",
+  "issue": "The frame shows only a generic draining bar: the beat's actual cause — other people's opinions and judgment exhausting you — never appears, the ProgressBar has no semantic role, and element delays exceed reference stagger.",
+  "rootCause": "Visual mechanism (empty energy bar) narrates generic tiredness instead of enacting 'pendapat orang lain' crowding the self; ProgressBar lacks role/purpose and delays run past 1.4s.",
+  "scope": "minimal",
+  "changesMade": [
+    "Replaced generic setup: added Person (the self) with a SpeechBubble pushing in from the side to enact others' opinions pressing on you.",
+    "Labeled the ProgressBar 'PENDAPAT ORANG LAIN NGEHABISIN DIRI LU' (covers pendapat/orang/lain/diri) and gave every element role+purpose.",
+    "Moved all objects to the center anchor stacked under the top headline; removed the bottom-band Caption so the VO band stays clear.",
+    "Tightened delays to 0 / 0.4 / 0.8 / 1.2 (all ≤1.4s) per reference quick stagger; kept gold as the single accent.",
+    "Kept headline text, gold accent on 'BIKIN CAPEK', composition=centered, motion family, duration 3.61 and timing 0/1.6/3.1 untouched."
+  ],
+  "preserve": [
+    "Headline wording and gold accentWords on 'BIKIN CAPEK'",
+    "centered composition family and negative space",
+    "single dominant gold accent color",
+    "motion family stagger/controlledReveal/fade with timing 0/1.6/3.1",
+    "duration 3.61s (VO timing unchanged)",
+    "typography hierarchy (headline top, no bottom-band caption)"
+  ],
+  "expectedEffect": "The opening frame now visually states the answer's direction — opinions of other people crowd the self while energy sits near empty — so the question lands with its subject present, semantics documented, and reference-conformant stagger."
+}

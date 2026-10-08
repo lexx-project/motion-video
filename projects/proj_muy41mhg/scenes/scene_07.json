@@ -1,0 +1,120 @@
+{
+  "sceneId": "scene_07",
+  "duration": 3.61,
+  "purpose": "Pivot ke kuasa diri: suara tetap masuk, tapi lu sendiri yang mengatur seberapa besar pengaruhnya sampai ke hidup lu.",
+  "visualConcept": "APERTURE: THE GAP YOU SET",
+  "composition": "split",
+  "elements": [
+    {
+      "primitive": "WordReveal",
+      "text": "SEBESAR PENGARUH YANG LU IZINKAN",
+      "accentWords": [
+        "SEBESAR"
+      ],
+      "align": "center",
+      "position": "top",
+      "offsetY": 6,
+      "accent": "teal",
+      "entrance": "stagger",
+      "delay": 0,
+      "staggerStep": 0.08,
+      "size": "xl",
+      "role": "semantic",
+      "purpose": "Headline: the influence scale is set by your own permission"
+    },
+    {
+      "primitive": "Arrow",
+      "position": "bottomLeft",
+      "offsetX": 4,
+      "offsetY": -22,
+      "rotation": -15,
+      "scale": 0.9,
+      "size": "md",
+      "accent": "none",
+      "entrance": "slide",
+      "delay": 1,
+      "role": "semantic",
+      "purpose": "Opinion voice 1 travelling toward your life boundary"
+    },
+    {
+      "primitive": "Arrow",
+      "position": "bottomLeft",
+      "offsetX": 4,
+      "offsetY": -14,
+      "rotation": -25,
+      "scale": 0.9,
+      "size": "md",
+      "accent": "none",
+      "entrance": "slide",
+      "delay": 1.25,
+      "role": "semantic",
+      "purpose": "Opinion voice 2 converging on the same aperture"
+    },
+    {
+      "primitive": "Label",
+      "text": "SUARA ORANG LAIN",
+      "align": "left",
+      "position": "bottomLeft",
+      "offsetX": 0,
+      "offsetY": -6,
+      "size": "lg",
+      "accent": "none",
+      "entrance": "fade",
+      "delay": 1.5,
+      "role": "semantic",
+      "purpose": "Names the incoming external voices the arrows represent; anchors lower-left band"
+    },
+    {
+      "primitive": "Circle",
+      "variant": "outline",
+      "diameterPct": 30,
+      "position": "bottom",
+      "offsetX": 20,
+      "offsetY": -18,
+      "accent": "teal",
+      "entrance": "fade",
+      "delay": 0.85,
+      "role": "semantic",
+      "purpose": "Boundary of your life — how far outside voices are allowed to reach"
+    },
+    {
+      "primitive": "Circle",
+      "variant": "ring",
+      "diameterPct": 12,
+      "position": "bottom",
+      "offsetX": 20,
+      "offsetY": -18,
+      "accent": "teal",
+      "entrance": "scale",
+      "delay": 1.35,
+      "emphasis": "subtleScale",
+      "emphasisAt": 1.6,
+      "role": "semantic",
+      "purpose": "The aperture itself: the gap size you actively set"
+    },
+    {
+      "primitive": "Label",
+      "text": "HIDUP LU",
+      "align": "center",
+      "position": "bottom",
+      "offsetX": 20,
+      "offsetY": -5,
+      "size": "lg",
+      "accent": "teal",
+      "entrance": "fade",
+      "delay": 1.05,
+      "role": "semantic",
+      "purpose": "Labels the protected inner space inside the aperture"
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "subtleScale",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.6,
+    "exitAt": 3.11
+  }
+}

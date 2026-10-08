@@ -1,0 +1,189 @@
+{
+  "beatId": "b1",
+  "spokenMeaning": "Every time you bend your answer to make everyone happy, you get more tired — and the energy never comes back.",
+  "viewerTakeaway": "Three yeses tilt your answer line off its original heading, and the gold angle gap only widens — it never re-levels.",
+  "visualMechanism": "bearing drift: each YES tilts the answer line off its heading",
+  "visualNarrative": [
+    {
+      "order": 1,
+      "action": "Headline 'TRYING TO PLEASE EVERYONE TIRES YOU' reveals word-by-word on the left; on the right a gold hairline labelled ORIGINAL ANSWER fades in level, with a pivot dot at its left end.",
+      "meaning": "Names the cost, then fixes the heading you started from.",
+      "visualEvidence": "Left text block at 8% margins, gauge on the right 46%; gold hairline horizontal at 48% height, label secondary #B5B1A7 with 24px clearance."
+    },
+    {
+      "order": 2,
+      "action": "A white answer line draws out from the pivot, sitting just under and parallel to the hairline — your answer at its true heading.",
+      "meaning": "The unbent answer exists at full strength, so later drift is measurable.",
+      "visualEvidence": "Answer line 8px below the gold hairline, parallel, small neutral tick at its tip; no text overlaps anywhere."
+    },
+    {
+      "order": 3,
+      "action": "The first 'YES' badge lands at the line's tip; the line rotates down about 12° and holds there, the badge staying attached.",
+      "meaning": "First compliance is a deliberate turn away — paid, not bounced back.",
+      "visualEvidence": "Badge label in secondary #B5B1A7, one small gold arc opens between hairline and line, rigid line, no elastic overshoot."
+    },
+    {
+      "order": 4,
+      "action": "A second 'YES' badge joins at mid-line; the line rotates further down while the first angle and badge keep their exact positions.",
+      "meaning": "Repetition adds drift instead of returning it — fatigue accumulates.",
+      "visualEvidence": "Total tilt now visibly below the untouched hairline, both badges riding the same rigid line, single gold accent."
+    },
+    {
+      "order": 5,
+      "action": "The third 'YES' badge lands; the whole line sits far off heading while the gold hairline never moves.",
+      "meaning": "Quiet resentment: exhaustion reads as posture, not alarm.",
+      "visualEvidence": "Three equal secondary badges on one angled line, hairline fixed and clean, no warning color anywhere."
+    },
+    {
+      "order": 6,
+      "action": "A gold angle-arc measures hairline-to-line divergence, the word TIRES shifts gold, caption 'IT NEVER COMES BACK' fades top-right; frame settles.",
+      "meaning": "The residue is a permanent deficit — the heading does not reset on its own.",
+      "visualEvidence": "Static frame: one gold hairline, one gold arc, one gold headline word; caption in the top band, clear of subtitles."
+    }
+  ],
+  "semanticObjects": [
+    {
+      "objectType": "Headline",
+      "semanticRole": "States the claim so the tilted line reads as proof, not decoration.",
+      "relationship": "explains the drifting answer line to its right",
+      "importance": 4
+    },
+    {
+      "objectType": "Line (answer line)",
+      "semanticRole": "Your answer/stance; its angle carries the whole depletion story.",
+      "relationship": "pivots away from the gold hairline with each hung YES",
+      "importance": 5
+    },
+    {
+      "objectType": "Line (gold reference hairline)",
+      "semanticRole": "The original heading you never return to — makes fatigue countable without numbers.",
+      "relationship": "stays fixed and level above the tilted line for the whole beat",
+      "importance": 4
+    },
+    {
+      "objectType": "Badge('YES')",
+      "semanticRole": "Each act of pleasing, rendered as a turn that stays on the frame.",
+      "relationship": "lands on the answer line and forces a lasting rotation",
+      "importance": 5
+    },
+    {
+      "objectType": "Indicator (gold angle-arc)",
+      "semanticRole": "Measures the unrecovered divergence: what pleasing cost and kept.",
+      "relationship": "spans hairline to tilted line at the pivot side",
+      "importance": 4
+    },
+    {
+      "objectType": "Label('ORIGINAL ANSWER')",
+      "semanticRole": "Names the baseline so the metaphor stays literal, not abstract.",
+      "relationship": "tags the hairline's left end with clearance",
+      "importance": 3
+    },
+    {
+      "objectType": "Label('IT NEVER COMES BACK')",
+      "semanticRole": "Closing caption of residue: fatigue as a held state, not an alarm.",
+      "relationship": "sits top-right, annotating the arc away from subtitles",
+      "importance": 3
+    }
+  ],
+  "relationships": [
+    {
+      "from": "Badge('YES')",
+      "to": "Line (answer line)",
+      "relationship": "acts on: forces a permanent rotation where it lands"
+    },
+    {
+      "from": "Line (answer line)",
+      "to": "Line (gold reference hairline)",
+      "relationship": "turns away from: the angle opens and never closes"
+    },
+    {
+      "from": "Indicator (gold angle-arc)",
+      "to": "Line (gold reference hairline)",
+      "relationship": "measures: divergence between start heading and current tilt"
+    },
+    {
+      "from": "Headline",
+      "to": "Line (answer line)",
+      "relationship": "explains: text supplies the claim the rotation proves"
+    },
+    {
+      "from": "Label('IT NEVER COMES BACK')",
+      "to": "Indicator (gold angle-arc)",
+      "relationship": "annotates: names the residue the arc quantifies"
+    }
+  ],
+  "typographyPlan": {
+    "headline": "TRYING TO PLEASE EVERYONE TIRES YOU",
+    "emphasisWords": [
+      "TIRES"
+    ],
+    "supportingText": [
+      "ORIGINAL ANSWER",
+      "YES",
+      "IT NEVER COMES BACK"
+    ]
+  },
+  "subtitlePlan": {
+    "enabled": true,
+    "text": "Every time you try to make everyone happy, you get more tired.",
+    "timing": "spoken across the whole beat, 0.00s onward",
+    "role": "spoken line; bottom 18% band reserved for it, all content lives above"
+  },
+  "motionBeats": [
+    {
+      "order": 1,
+      "action": "Headline words reveal in a quick stagger; hairline, label and pivot fade in, 0.00-0.55s",
+      "purpose": "Claim and baseline together, so the line reads as evidence."
+    },
+    {
+      "order": 2,
+      "action": "Answer line draws outward from the pivot, level under the hairline, 0.45-1.05s",
+      "purpose": "Full straight heading exists before any loss."
+    },
+    {
+      "order": 3,
+      "action": "First YES badge lowers onto the tip; line rotates down and settles, 1.15-1.70s",
+      "purpose": "A discrete, deliberate act of compliance — stagger stays tight."
+    },
+    {
+      "order": 4,
+      "action": "Second YES badge joins; line rotates deeper while badge one holds, 1.95-2.50s",
+      "purpose": "Repetition establishes a countable pattern of drift."
+    },
+    {
+      "order": 5,
+      "action": "Third YES badge lands; whole line far off heading, 2.75-3.35s",
+      "purpose": "The full posture of exhaustion, no warning color."
+    },
+    {
+      "order": 6,
+      "action": "Gold angle-arc draws, TIRES shifts gold, caption fades top-right, 3.55-4.05s",
+      "purpose": "Names the residue as quiet, held fatigue."
+    },
+    {
+      "order": 7,
+      "action": "Frame holds static to 5.40s",
+      "purpose": "Lets the hairline-to-line angle sit in silence."
+    }
+  ],
+  "compositionIntent": "Left text, right object: headline block left-aligned at 8% margin in the top 60% of the left 44%, caption on that same band; pivot and gauge occupy the right 46% with the hairline at 48% height, leaving a blank line under the headline block. Bottom 18% reserved for subtitles; ~62% negative space; gold only on hairline, arc and the word TIRES, all YES labels secondary.",
+  "visualEvidence": [
+    "Answer line tilts ever further below the untouched gold ORIGINAL ANSWER hairline.",
+    "Each turn appears only when its YES badge lands — the line is rigid, so drift accumulates straight to angled.",
+    "Earlier badges keep their exact positions as later ones arrive; no cost is ever recovered.",
+    "Gold angle-arc quantifies the divergence near the pivot; no text collisions, caption in the top band.",
+    "One gold headline word, one gold hairline, one gold arc; three secondary YES badges; seven elements, single accent."
+  ],
+  "forbiddenInterpretations": [
+    "A person, figure, or slumped character — the line, badges and arc carry the fatigue.",
+    "A vessel, liquid level, battery, or percentage progress bar — that repeats the prior depletion device.",
+    "A sagging rope, spring, elastic bounce, or wobble — the line rotates rigidly and never springs back.",
+    "Gold YES labels or teal as a second accent; two accent words maximum in the frame.",
+    "Overlapping or struck-through text, caption inside the subtitle band, camera zoom, shake, or glow."
+  ],
+  "noveltyIntent": "Fatigue is measured as permanent angular drift of a rigid answer line: every YES stays physically on the frame as a badge that turns the line off its gold original heading, and the arc gap never re-levels — no vessel, bar, grid, loop, sagging rope, or bounce as in prior projects.",
+  "elementBudget": {
+    "min": 7,
+    "max": 9
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "sceneId": "scene_06",
+  "duration": 3.62,
+  "purpose": "Memberi kuasa kembali: pendapat tetap masuk, tapi penonton yang mengatur seberapa besar pengaruhnya ke hidup.",
+  "visualConcept": "DIAL TURNS THE NOISE DOWN",
+  "composition": "leftTextRightObject",
+  "headline": {
+    "text": "LU ATUR PENGARUHNYA",
+    "accentWords": [
+      "ATUR"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "Label",
+      "text": "OPINI MASUK. LU YANG SETEL SEBESAR NGARUHNYA KE HIDUP.",
+      "position": "left",
+      "offsetX": 0,
+      "offsetY": 0,
+      "align": "left",
+      "accent": "none",
+      "delay": 0.5,
+      "entrance": "stagger",
+      "emphasis": "highlight",
+      "emphasisAt": 1.6,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Circle",
+      "position": "right",
+      "offsetX": 0,
+      "offsetY": 15,
+      "variant": "outline",
+      "diameterPct": 26,
+      "accent": "gold",
+      "delay": 0.3,
+      "entrance": "scale",
+      "emphasis": "highlight",
+      "emphasisAt": 1.4,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Indicator",
+      "position": "right",
+      "offsetX": 0,
+      "offsetY": 15,
+      "variant": "arrow",
+      "size": "md",
+      "accent": "gold",
+      "delay": 1.1,
+      "entrance": "draw",
+      "emphasis": "highlight",
+      "emphasisAt": 1.4,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Circle",
+      "position": "right",
+      "offsetX": 0,
+      "offsetY": 15,
+      "variant": "filled",
+      "diameterPct": 6,
+      "accent": "gold",
+      "delay": 1.3,
+      "entrance": "scale",
+      "emphasis": "highlight",
+      "emphasisAt": 1.4,
+      "exit": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "highlight",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.4,
+    "exitAt": 3.2
+  }
+}

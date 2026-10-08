@@ -1,0 +1,76 @@
+{
+  "sceneId": "scene_06",
+  "duration": 2.62,
+  "purpose": "A hard beam sweeps the dark stage and halts on one empty outlined seat, handing the viewer the call to act now.",
+  "visualConcept": "SPOTLIGHT STOPS ON THE EMPTY SEAT",
+  "composition": "centered",
+  "headline": {
+    "text": "YOUR TURN.",
+    "accentWords": [
+      "TURN"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "GradientGlow",
+      "position": "center",
+      "accent": "none",
+      "opacity": 0.35,
+      "intensity": 0.3,
+      "diameterPct": 70,
+      "delay": 0,
+      "entrance": "fade",
+      "emphasis": "glow",
+      "emphasisAt": 1.2
+    },
+    {
+      "primitive": "LightSweep",
+      "position": "center",
+      "accent": "gold",
+      "intensity": 0.8,
+      "angleDeg": -24,
+      "duration": 1.1,
+      "delay": 0,
+      "entrance": "slide",
+      "emphasis": "controlledReveal",
+      "emphasisAt": 1.2,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Circle",
+      "position": "center",
+      "variant": "outline",
+      "diameterPct": 34,
+      "label": "",
+      "scale": 1,
+      "delay": 0.9,
+      "entrance": "scale",
+      "emphasis": "highlight",
+      "emphasisAt": 1.35,
+      "accent": "gold"
+    },
+    {
+      "primitive": "Label",
+      "text": "YOUR SEAT",
+      "position": "bottom",
+      "offsetY": -6,
+      "align": "center",
+      "delay": 1.3,
+      "entrance": "fade",
+      "emphasis": "highlight",
+      "emphasisAt": 1.5,
+      "accent": "gold"
+    }
+  ],
+  "motion": {
+    "entrance": "slide",
+    "emphasis": "highlight",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.2,
+    "exitAt": 2.2
+  }
+}

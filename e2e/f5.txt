@@ -1,0 +1,14 @@
+status=needs_repair overall=6.96 conf=0.99 conformance=8.9 slop=8
+scene_01: q=7.14 rel=8 clar=7 typo=7 comp=7 tech=pass
+scene_02: q=7.14 rel=8 clar=7 typo=8 comp=7 tech=pass
+scene_03: q=7.57 rel=8 clar=8 typo=8 comp=8 tech=pass
+scene_04: q=6.57 rel=6 clar=6 typo=8 comp=6 tech=pass
+scene_05: q=6.86 rel=7 clar=7 typo=7 comp=7 tech=pass
+scene_06: q=6.57 rel=7 clar=6 typo=7 comp=6 tech=pass
+scene_07: q=7.71 rel=9 clar=8 typo=8 comp=8 tech=pass
+scene_08: q=6.57 rel=9 clar=6 typo=5 comp=6 tech=pass
+reasons:
+  - overall quality 7.0 < 8
+  - slop severity 8 > 6
+  - scene_06: severe readability - Headline line 'PENGARUHNYA' runs into the ring's left arc GÇö text and circle overlap.
+  - scene_08: severe readability - Last line 'ORANG' overlaps the first row of the background grid.

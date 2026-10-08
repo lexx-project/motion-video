@@ -1,0 +1,55 @@
+{
+  "recurringGrammars": [
+    {
+      "grammar": "leftTextRightObject",
+      "shareEstimate": 0.3,
+      "confidence": 0.85
+    },
+    {
+      "grammar": "centered",
+      "shareEstimate": 0.2,
+      "confidence": 0.8
+    },
+    {
+      "grammar": "topTextBottomObject",
+      "shareEstimate": 0.15,
+      "confidence": 0.7
+    },
+    {
+      "grammar": "bottomTextTopObject",
+      "shareEstimate": 0.15,
+      "confidence": 0.7
+    },
+    {
+      "grammar": "typographyDominant",
+      "shareEstimate": 0.1,
+      "confidence": 0.6
+    },
+    {
+      "grammar": "asymmetric",
+      "shareEstimate": 0.1,
+      "confidence": 0.6
+    }
+  ],
+  "spacingPatterns": [
+    "Text blocks left-align with ~8% side margins; objects sit ~10% from right edge",
+    "Multi-line headlines use tight leading (~1.1x) with larger gaps (~2x line height) to subtitles",
+    "Horizontal gap between text column and object spans roughly 15-20% of frame width",
+    "Labels under objects (e.g. RAME/PELAN/BEKU) center-aligned, small gap ~4% frame height"
+  ],
+  "proportions": "Text occupies the left 40-55% of frame width; single icon/object occupies right 20-30%. Split scenes place objects in top 60% with caption band in bottom 30-35%. Centered end-card stacks symbol (top 40%), handle (middle), tagline (bottom 15%).",
+  "safeMargins": "Keep essential text inside ~8% left/right and ~12% top/bottom margins; icons stay at least 10% from edges; bottom caption band clears edge by ~10%.",
+  "confidence": 0.75,
+  "evidence": [
+    "Frames 1 and 4 show headline text left, clock/figure object right",
+    "Frame 2 places title at top with clock below-left and dashed square right",
+    "Frame 5 shows three clocks top with two-line caption at bottom",
+    "Frame 6 is a centered logo, handle, and tagline stack",
+    "Frame 3 is near-empty dark frame with faint top-left word, likely transition"
+  ],
+  "lowConfidenceNotes": [
+    "Only 6 frames sampled; frame 3 is nearly blank so its grammar is inferred from a faint word",
+    "Share estimates approximate frame clusters rather than full timeline durations",
+    "Frame 2 could read as dualObject instead of topTextBottomObject"
+  ]
+}

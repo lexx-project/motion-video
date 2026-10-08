@@ -1,0 +1,20 @@
+{
+  "sceneId": "scene_04",
+  "issue": "The down-arrow's tip overlaps the bottom verdict label 'LU BAIK → PENCITRAAN' (23%), while the mirrored flip and second verdict pair must remain visible.",
+  "rootCause": "Both arrows extend too far down from the center band into the bottom band where the verdict labels are anchored; labels had offsetY 0 (glued to the edge) giving no separation.",
+  "scope": "minimal",
+  "changesMade": [
+    "Arrow lengthPct 32->24 and removed offsetY 18 so arrows stay fully in the center band",
+    "Verdict labels: offsetY -8 (lifted from the bottom edge) to clear the arrow band",
+    "Kept direction:'down' flip, second verdict pair, gold accent and all timing unchanged"
+  ],
+  "preserve": [
+    "centered composition family",
+    "gold accent discipline on arrows and VONIS",
+    "headline text and typography",
+    "1.8s duration and timing values",
+    "draw/fade/positionShift motion character",
+    "dark #0B1313 stage"
+  ],
+  "expectedEffect": "Arrow pair sits cleanly in the center band and verdict labels in the bottom band with clear separation, so the 180 flip and accumulating verdicts read without overlap."
+}

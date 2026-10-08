@@ -1,0 +1,19 @@
+{
+  "sceneId": "scene_05",
+  "issue": "Frame shows only a dot, a line and a circle — no tether slipping out of a grip and no owned line remaining, so the concept reads only via labels.",
+  "rootCause": "The tether Line sits detached mid-frame with no grip anchor, and no owned line stays behind — the slip is narrated by text instead of enacted by changing states.",
+  "scope": "minimal",
+  "changesMade": [
+    "Re-anchored tether Line to the grip (left, offsetX 18) so it starts held, then positionShift at 1.62 opens a visible gap as it slips.",
+    "Tether exit changed to slide so it slips past the Circle and out of reach by exitAt 3.01.",
+    "Added one short owned Line (lengthPct 12) locked at the grip with highlight at 2.0 — the only line that stays.",
+    "Single accent retained: owned line + headline accent words gold; other elements accent none."
+  ],
+  "preserve": [
+    "Asymmetric composition and grip/Circle placements",
+    "Headline typography and accent words BISA, NGONTROL",
+    "3.61s duration and timing marks 0 / 1.62 / 3.01",
+    "fade-slide motion family, restrained motion"
+  ],
+  "expectedEffect": "The tether visibly attaches to the grip, detaches and slides past the other's circle while a short owned line stays behind — the beat is enacted on screen, not explained by caption."
+}

@@ -1,0 +1,130 @@
+{
+  "selections": [
+    {
+      "beatId": "b1",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 8,
+        "novelty": 5,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The ProgressBar draining top-to-bottom in the same frame as the headline enacts depletion rather than naming it, so a cold viewer reads the question as the thing costing energy."
+    },
+    {
+      "beatId": "b2",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 8,
+        "clarity": 8,
+        "designConsistency": 9,
+        "novelty": 7,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The Circle redrawing at three diameters while the verdict label flips performs self-rechecking itself: the unsettled check is the subject, readable instantly as appearance anxiety. It fits the centered grammar with one object and restrained motion."
+    },
+    {
+      "beatId": "b3",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "The counter holds at 0 while the card dissolves, so nothing was ever seen: the deletion came from inside, not from judgment. Countable evidence enacts the beat in the Bible's leftTextRightObject grammar, distinct from prior audience metaphors."
+    },
+    {
+      "beatId": "b4",
+      "selectedCandidateId": "c3",
+      "scores": {
+        "scriptRelevance": 8,
+        "clarity": 8,
+        "designConsistency": 8,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 9,
+        "technicalFeasibility": 8
+      },
+      "selectionRationale": "The mark relocates each time effort corrects toward it, so distance never closes — proving the success condition belongs to the judge, not the actor. LeftTextRightObject grammar, standard primitives, no overlap with prior memories."
+    },
+    {
+      "beatId": "b5",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 8,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "Its semanticMechanism makes the offset the argument: four honest causes on the left, four hostile verdicts on the right, none level — misalignment IS the injustice, visible before any word is read. The split grammar keeps typography primary with red reserved for verdict words only."
+    },
+    {
+      "beatId": "b6",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 8,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "Its semanticMechanism — levers animate through full travel while the needle's displacement stays exactly zero — enacts 'cannot control others' thoughts' as measurable input without coupling. A cold viewer instantly decodes force applied with no result across the line."
+    },
+    {
+      "beatId": "b7",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "Its semanticMechanism makes the gap width literally equal 'seberapa besar': opinion lines stay present while the narrowing slit cuts the flow reaching the HIDUP LU circle, enacting control as adjustable flow, not silencing. Split composition with Line/Circle fits the Bible and stays distinct from prior dial/door metaphors."
+    },
+    {
+      "beatId": "b8",
+      "selectedCandidateId": "c1",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 9,
+        "designConsistency": 9,
+        "novelty": 8,
+        "emotionalFit": 8,
+        "motionPotential": 9,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "Its semanticMechanism splits one shared trunk into two trajectories that never rejoin, so the widening gap enacts 'they go home, you continue' as geometry. The draw-then-diverge motion reads instantly while the single lit dot avoids the door/grid/split motifs in memory."
+    },
+    {
+      "beatId": "b9",
+      "selectedCandidateId": "c5",
+      "scores": {
+        "scriptRelevance": 9,
+        "clarity": 8,
+        "designConsistency": 9,
+        "novelty": 9,
+        "emotionalFit": 9,
+        "motionPotential": 8,
+        "technicalFeasibility": 9
+      },
+      "selectionRationale": "Its semanticMechanism — relabeling an unmoving bullseye from 'SEMUA ORANG' to 'LU' — shows nothing in the world shifts, only what counts as the center. One decodable event, fresh aim/goal metaphor absent from memory, Bible-consistent."
+    }
+  ]
+}

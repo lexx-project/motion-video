@@ -1,0 +1,11 @@
+[13:37:26] repairing: repair round 1 (median-driven): overall quality 6.8 < 8 | slop severity 7 > 6 | scene_03: technical correctness fail | scene_03: severe relevance/clarity issue (median relevance 4, clarity 3) | scene_05: severe readability - The gold block is cropped hard by the top edge of the frame (its rounded top corners are cut off above y=0), so it reads as a rendering bleed rather than an intentional entrance state.
+[13:42:26] repairing: scene scene_03 repair skipped: [repair] project=proj_ref_demo: LLM produced invalid structured output after 2 attempts: [
+[13:48:25] repairing: scene scene_01 repair skipped: [llm]: LLM call failed after retries: empty completion content
+[13:54:24] repairing: scene scene_05 repair skipped: [llm]: LLM call failed after retries: empty completion content
+[13:54:24] rendering: re-rendering preview after repair round 1
+[13:59:04] repairing: repair round 2 (median-driven): overall quality 6.9 < 8 | slop severity 7 > 6 | scene_03: technical correctness fail | scene_03: severe relevance/clarity issue (median relevance 4, clarity 4) | scene_03: severe readability - Scene purpose 'spikes collapse while pulse runs unbroken' is not evidenced anywhere in the rendered frame; contrast mechanism is unreadable without the two tracks. | scene_05: severe relevance/clarity issue (median relevance 6, clarity 5)
+[14:03:49] repairing: scene scene_03 repair skipped: [llm]: LLM call failed after retries: empty completion content
+[14:04:36] repairing: scene scene_05 repair skipped: [repair] project=proj_ref_demo: LLM produced invalid structured output after 2 attempts: [
+[14:06:36] rendering: re-rendering preview after repair round 2
+[14:13:04] complete: project proj_ref_demo complete (fail)
+  "status": "complete",

@@ -1,0 +1,10 @@
+SUMMARY: status=fail overall=6.16 conf=0.99 conformance=8.7 slop=7
+semantic: rel=5.6 story=3.7 cover=3.3 rich=10 sub=10
+  scene_01: med=6.57 conf=0.99 tech=pass issues=4
+  scene_02: med=5.86 conf=0.97 tech=pass issues=3
+  scene_03: med=6 conf=0.99 tech=fail issues=4
+  scene_04: med=4.29 conf=0.97 tech=fail issues=3
+  scene_05: med=6.43 conf=0.99 tech=fail issues=3
+  scene_06: med=6 conf=0.99 tech=pass issues=4
+repair reports: 1 (repair-scene_02.json)
+storyboards: 6 (updated today: 6)

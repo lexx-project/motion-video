@@ -1,0 +1,7 @@
+[14:55:24] analysis: analyzing script
+[14:55:24] beats: extracting semantic beats
+[14:55:24] timing: using stored VO timing
+[14:55:24] concepts: generating visual concepts
+run6: 
+[14:34:45] rendering: re-rendering preview after repair round 1
+[14:41:34] repairing: repair round 2 (median-driven): overall quality 6.9 < 8 | scene_03: technical correctness fail | scene_03: severe relevance/clarity issue (median relevance 6, clarity 4) | scene_05: severe relevance/clarity issue (median relevance 6, clarity 5)

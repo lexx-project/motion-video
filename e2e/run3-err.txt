@@ -1,0 +1,13 @@
+[sceneGeneration] project=proj_muwt0aze: LLM produced invalid structured output after 2 attempts: [
+  {
+    "code": "custom",
+    "path": [
+      "scenes",
+      0,
+      "elements",
+      2,
+      "offsetX"
+    ],
+    "message": "offsetY -8 pushes a top-anchored element past the top safe margin (content would be clipped) - use offsetY >= 0"
+  }
+]

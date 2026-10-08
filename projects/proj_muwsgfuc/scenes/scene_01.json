@@ -1,0 +1,71 @@
+{
+  "sceneId": "scene_01",
+  "duration": 9,
+  "purpose": "Names the hook exhaustion: every approval mark that fills the pleasing gauge visibly drains the personal energy gauge beneath it.",
+  "visualConcept": "THE APPLAUSE GAUGE THAT NEVER FILLS",
+  "composition": "split",
+  "headline": {
+    "text": "PALING BIKIN CAPEK: MENCARI SUKA SEMUA ORANG",
+    "accentWords": [
+      "CAPEK",
+      "SUKA"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "ProgressBar",
+      "label": "PUJIAN ORANG",
+      "value": 0.9,
+      "position": "top",
+      "accent": "gold",
+      "entrance": "reveal",
+      "delay": 0.2,
+      "emphasis": "counterChange",
+      "emphasisAt": 4.05
+    },
+    {
+      "primitive": "Line",
+      "orientation": "horizontal",
+      "lengthPct": 84,
+      "thicknessPx": 2,
+      "position": "center",
+      "accent": "none",
+      "entrance": "draw",
+      "delay": 0.6,
+      "emphasis": "controlledReveal",
+      "emphasisAt": 3.5
+    },
+    {
+      "primitive": "ProgressBar",
+      "label": "ENERGI DIRI",
+      "value": 0.12,
+      "position": "bottom",
+      "accent": "none",
+      "entrance": "reveal",
+      "delay": 0.4,
+      "emphasis": "counterChange",
+      "emphasisAt": 4.05
+    },
+    {
+      "primitive": "Label",
+      "text": "MENCARI SUKA = MENGURAS DIRI",
+      "position": "bottomRight",
+      "accent": "none",
+      "entrance": "fade",
+      "delay": 5.2,
+      "emphasis": "highlight",
+      "emphasisAt": 6.2
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "counterChange",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 4.05,
+    "exitAt": 8.1
+  }
+}

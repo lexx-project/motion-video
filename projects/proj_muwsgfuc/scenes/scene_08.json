@@ -1,0 +1,82 @@
+{
+  "sceneId": "scene_08",
+  "duration": 9,
+  "purpose": "Closing affirmation: the seal lands and locks — you were never built for universal approval; rejection is design, not defect.",
+  "visualConcept": "IMMUTABLE SEAL — NOT MADE FOR EVERYONE",
+  "composition": "centered",
+  "headline": {
+    "text": "NGGAK APA-APA",
+    "align": "center"
+  },
+  "elements": [
+    {
+      "primitive": "GradientGlow",
+      "position": "center",
+      "accent": "none",
+      "intensity": 0.3,
+      "diameterPct": 80,
+      "scale": 1,
+      "opacity": 1,
+      "delay": 0,
+      "entrance": "fade"
+    },
+    {
+      "primitive": "Circle",
+      "position": "center",
+      "variant": "ring",
+      "diameterPct": 52,
+      "accent": "gold",
+      "scale": 1.9,
+      "opacity": 0,
+      "delay": 0.2,
+      "entrance": "scale",
+      "emphasis": "subtleScale",
+      "emphasisAt": 4,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Badge",
+      "text": "BUAT SEMUA ORANG",
+      "position": "center",
+      "variant": "outline",
+      "accent": "none",
+      "offsetY": 6,
+      "scale": 1,
+      "opacity": 0,
+      "delay": 0.7,
+      "entrance": "reveal",
+      "emphasis": "highlight",
+      "emphasisAt": 4,
+      "exit": "fade"
+    },
+    {
+      "primitive": "WordReveal",
+      "text": "LU NGGAK DICIPTAIN BUAT DISUKAI SEMUA ORANG",
+      "position": "bottom",
+      "accentWords": [
+        "DICIPTAIN",
+        "DISUKAI"
+      ],
+      "align": "center",
+      "accent": "gold",
+      "offsetY": -4,
+      "scale": 1,
+      "opacity": 1,
+      "delay": 1,
+      "entrance": "stagger",
+      "emphasis": "controlledReveal",
+      "emphasisAt": 4.2,
+      "exit": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "scale",
+    "emphasis": "subtleScale",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 4,
+    "exitAt": 8.2
+  }
+}

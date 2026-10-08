@@ -1,0 +1,172 @@
+{
+  "evaluatorCount": 3,
+  "projectStatus": "needs_repair",
+  "overall": {
+    "scriptRelevance": 7,
+    "visualClarity": 7,
+    "designConsistency": 7,
+    "typography": 7,
+    "composition": 7,
+    "motionQuality": 7,
+    "novelty": 6,
+    "aiSlopSeverity": 3,
+    "technicalCorrectness": "fail",
+    "stats": {
+      "mean": 6.9,
+      "median": 6.86,
+      "variance": 0.032,
+      "confidence": 0.99
+    }
+  },
+  "scenes": [
+    {
+      "sceneId": "scene_01",
+      "scores": {
+        "scriptRelevance": 8,
+        "visualClarity": 7,
+        "designConsistency": 7,
+        "typography": 8,
+        "composition": 6,
+        "motionQuality": 7,
+        "novelty": 6,
+        "aiSlopSeverity": 3
+      },
+      "stats": {
+        "mean": 6.95,
+        "median": 7,
+        "variance": 0.086,
+        "confidence": 0.99
+      },
+      "technicalCorrectness": "pass",
+      "issues": [],
+      "recommendedRepair": []
+    },
+    {
+      "sceneId": "scene_02",
+      "scores": {
+        "scriptRelevance": 8,
+        "visualClarity": 8,
+        "designConsistency": 8,
+        "typography": 8,
+        "composition": 8,
+        "motionQuality": 7,
+        "novelty": 6,
+        "aiSlopSeverity": 3
+      },
+      "stats": {
+        "mean": 7.48,
+        "median": 7.43,
+        "variance": 0.005,
+        "confidence": 1
+      },
+      "technicalCorrectness": "pass",
+      "issues": [],
+      "recommendedRepair": []
+    },
+    {
+      "sceneId": "scene_03",
+      "scores": {
+        "scriptRelevance": 5,
+        "visualClarity": 4,
+        "designConsistency": 6,
+        "typography": 6,
+        "composition": 5,
+        "motionQuality": 5,
+        "novelty": 4,
+        "aiSlopSeverity": 4
+      },
+      "stats": {
+        "mean": 4.9,
+        "median": 4.86,
+        "variance": 0.032,
+        "confidence": 0.99
+      },
+      "technicalCorrectness": "fail",
+      "issues": [
+        "No waveform or line primitives anywhere in the frame: both Line primitives (erratic spikes vs. even pulse) are missing, so the split-track contrast that is the scene's entire mechanism is absent.",
+        "Right ~55% of the frame is empty dark space with no dominant object; the split composition and its shared reference proportion are unfulfilled.",
+        "Label 'SHOWING UP' is set in undersized type on the same baseline cluster as 'WINS', reading as a cramped suffix to the headline rather than a distinct label element.",
+        "Only one text block exists while headline 'BORING WINS' occupies ~40% width at roughly the left 8% margin, leaving the 2.74s draw/positionShift motion with no visible subject."
+      ],
+      "recommendedRepair": [
+        "Restore both waveform Line primitives: draw a red-outlined erratic spike track on the left half that terminates mid-frame, and a teal steady pulse track on the right half running to the frame edge.",
+        "Keep 'BORING WINS' as-is on the left; move 'SHOWING UP' to the right track's end as a 34px w700 uppercase label, resolving the cramped adjacency and filling the empty right half."
+      ]
+    },
+    {
+      "sceneId": "scene_04",
+      "scores": {
+        "scriptRelevance": 8,
+        "visualClarity": 8,
+        "designConsistency": 8,
+        "typography": 8,
+        "composition": 7,
+        "motionQuality": 7,
+        "novelty": 7,
+        "aiSlopSeverity": 3
+      },
+      "stats": {
+        "mean": 7.48,
+        "median": 7.43,
+        "variance": 0.005,
+        "confidence": 1
+      },
+      "technicalCorrectness": "pass",
+      "issues": [],
+      "recommendedRepair": []
+    },
+    {
+      "sceneId": "scene_05",
+      "scores": {
+        "scriptRelevance": 7,
+        "visualClarity": 6,
+        "designConsistency": 6,
+        "typography": 6,
+        "composition": 6,
+        "motionQuality": 7,
+        "novelty": 6,
+        "aiSlopSeverity": 4
+      },
+      "stats": {
+        "mean": 6.43,
+        "median": 6.14,
+        "variance": 0.163,
+        "confidence": 0.97
+      },
+      "technicalCorrectness": "pass",
+      "issues": [
+        "Two accent colors are used simultaneously (gold top block and teal bottom block), violating the one-dominant-accent-per-scene rule; gold and teal compete for the 'important semantic emphasis' read.",
+        "Headline renders as five lines ('SILENT / DISCIPLINES / BUILD / LOUD / RESULTS'), exceeding the 4-line / 60-char headline limit despite matching the spec's intended 4-line break.",
+        "The 'dim marks accumulate under a horizon' half of the concept is not visible: no accumulating Line marks or horizon element appears beneath the gold block, weakening the 'quiet practice converts to weight' causality.",
+        "Label 'BUILT IN SILENCE' sits directly under the headline's last line with minimal gap, crowding the text block instead of reading as an independent caption."
+      ],
+      "recommendedRepair": [
+        "Drop the teal block to secondary #B5B1A7 (or remove it), leaving gold as the single dominant accent for the lifted block.",
+        "Rebreak the headline to four lines, e.g. 'SILENT / DISCIPLINES / BUILD / LOUD RESULTS'.",
+        "Add 3-4 dim small tick marks along a faint horizon line under the gold block, staggering them in before the lift, and increase the gap above 'BUILT IN SILENCE' to ~1.5x line-height."
+      ]
+    },
+    {
+      "sceneId": "scene_06",
+      "scores": {
+        "scriptRelevance": 8,
+        "visualClarity": 8,
+        "designConsistency": 8,
+        "typography": 8,
+        "composition": 7,
+        "motionQuality": 7,
+        "novelty": 6,
+        "aiSlopSeverity": 3
+      },
+      "stats": {
+        "mean": 7.57,
+        "median": 7.57,
+        "variance": 0.054,
+        "confidence": 0.99
+      },
+      "technicalCorrectness": "pass",
+      "issues": [],
+      "recommendedRepair": []
+    }
+  ]
+}

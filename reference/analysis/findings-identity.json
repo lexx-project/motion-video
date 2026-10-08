@@ -1,0 +1,26 @@
+{
+  "visualCharacter": "Minimalist flat motion-graphics explainer with bold uppercase kinetic typography over dark, moody backgrounds; calm, typographic, editorial feel with a social-quote branding aesthetic",
+  "backgroundTreatment": "Solid very dark desaturated teal/near-black fields with a soft radial vignette darkening the edges; occasional shift to a dark warm brown variant for contrast; faint texture, otherwise clean and uncluttered",
+  "visualDensity": "moderate",
+  "negativeSpace": "Extremely generous — typically one text block plus a single flat icon per frame, leaving roughly 60-70% of the frame empty; transition frames (image 6) are almost entirely empty negative space with only a fading word",
+  "objectStyle": "Flat vector minimalism: outline clocks with thin tick marks and simple hands, rounded-corner human avatar pictograms, dashed placeholder squares, and a rounded speech-bubble logo; uniform thin-to-medium strokes, no gradients or shadows, muted teal fills with white/yellow accents",
+  "lighting": "Flat, even, non-directional digital lighting with no cast shadows; vignette acts as the only luminance variation, pulling focus toward the bright center",
+  "contrast": "High typographic contrast — bright white or saturated accent text against near-black backgrounds; accents limited to a small palette (magenta/pink, golden yellow, teal) so color itself creates emphasis",
+  "visualHierarchy": "Hierarchy is driven by type size, weight, and accent color: large bold uppercase headline first (white line + colored emphasis line), smaller lighter subtitle beneath, and a small caption/label under the single supporting icon; eye path is left-aligned text block → right-side or lower icon → label",
+  "confidence": 0.88,
+  "evidence": [
+    "Contact sheet shows consistent two-element layouts: bold headline plus one clock/avatar icon across nearly all 25 thumbnails",
+    "Image 2: white bold headline 'KALAU KAMU BENERAN NGGAK KUAT' with pink second line, small subtitle, single teal avatar icon on a dark vignetted teal field",
+    "Image 3: white and golden-yellow headline left, single outline clock right, large empty space around both",
+    "Image 4: three clocks with small labeled tags (RAME/PELAN/BEKU) above a two-line white-and-gold caption — a rare but still evenly spaced, symmetric arrangement",
+    "Image 5: background switches to dark warm brown; pink accent line and dashed-outline square icon with tiny caption",
+    "Image 6: nearly empty dark frame with only faint word 'BUKAN' top-left, demonstrating transition negative space",
+    "Image 7: centered speech-bubble logo, '@talkquote' wordmark, and thin letterspaced tagline — clean end-card composition"
+  ],
+  "lowConfidenceNotes": [
+    "Video is static frames only — actual motion, easing, and transition timing cannot be assessed",
+    "Exact background hue varies between dark teal and dark brown; unclear whether this is a deliberate palette shift or frame-to-frame color grading",
+    "Subtitles and small caption text are too low-resolution to read reliably",
+    "Contrast/lighting behavior during animated states (flashes, glows) cannot be confirmed from stills"
+  ]
+}

@@ -1,0 +1,8 @@
+storyboards: 6
+  b1: mech=depletion | objs=Headline,Vessel (Line outline),Liquid level,Label('YES'),Notch ticks (Line),Label('PATIENCE'),Caption slot | rel=4 | narr=5 | motion=7 | budget=7-9 | sub=Y "Every time you try to make everyone happ"
+  b2: mech=transformation | objs=Block,Outline,Outline,Outline,Label,Headline | rel=4 | narr=4 | motion=5 | budget=6-7 | sub=Y "each time you bend your answer to match "
+  b3: mech=repetition satiation | objs=WordReveal:firstYES,WordReveal:secondYES,WordReveal:thirdYES,Line:underline | rel=3 | narr=5 | motion=5 | budget=6-8 | sub=Y "each time you bend your answer to match "
+  b4: mech=contrast | objs=OutlineCopy,SolidMark,Hairline,Headline,Label,Caption | rel=3 | narr=4 | motion=5 | budget=7-9 | sub=Y "Meanwhile the people who never change th"
+  b5: mech=inputOutput | objs=Headline,Counter,Tick,TickStack,Label,AudienceRow | rel=5 | narr=5 | motion=6 | budget=6-8 | sub=Y "stop reshaping yourself for an audience "
+  b6: mech=pressure | objs=Line,Arrow,Arrow,Indicator,Headline,Caption | rel=3 | narr=5 | motion=6 | budget=6-8 | sub=Y "pick one direction and hold it."
+candidates total=30 uniqueMechanisms=21: depletion, accumulation, repetition, progression, separation, transformation, socialPressure, contrast, repetition satiation, depletion drain, shape morph match, expectation reality, erosion reduction, choice, triggerResponse, inputOutput, loop, comparison, barrier, control, pressure

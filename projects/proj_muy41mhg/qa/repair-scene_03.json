@@ -1,0 +1,21 @@
+{
+  "sceneId": "scene_03",
+  "issue": "The gold '0 VIEWS' renders oversized and clipped past the right frame edge, collides with the headline's 'HAPUS' line, inverts hierarchy over the 96px headline, and the caption is stranded away from the counter it explains.",
+  "rootCause": "Number was set to size 'lg' inside the narrow right column, overflowing the 8% safe margin, while offsets stacked it into the left headline band and the explanatory label sat detached far below.",
+  "scope": "minimal",
+  "changesMade": [
+    "Number size 'lg' -> 'md', placed at right column center offsetY 4 so it clears the headline band and fits inside the safe margin",
+    "Label moved directly beneath the numeral (offsetY 14, same right anchor) so it reads as the counter's caption",
+    "GenericCard pinned to top-right margin (offsetY -20) to anchor the top of the right column",
+    "Label reworded to 'SEBELUM ADA YANG MENILAI' to voice the feared judgment from the beat",
+    "Card emphasis subtleScale added at 1.2 before its dissolve exit"
+  ],
+  "preserve": [
+    "Headline text, accent words and left anchor",
+    "leftTextRightObject composition family",
+    "Dissolve exit on the card and VO timing with 3.61s duration",
+    "Gold semantic accent limited to the zero counter",
+    "Dark background and headline as the dominant typographic hierarchy"
+  ],
+  "expectedEffect": "The right column reads top-to-bottom as card -> zero counter -> caption, fully inside the safe margin, with the headline left and untouched; the counter no longer outranks or collides with the headline, and the caption explains the zero in place."
+}

@@ -1,0 +1,268 @@
+{
+  "sceneId": "scene_03",
+  "duration": 2.63,
+  "purpose": "Show sincere YES losing value: hero word multiplies into a uniform dim grid while its teal credibility line retracts to a stub.",
+  "visualConcept": "HERO YES ABSORBED INTO ECHO GRID",
+  "composition": "leftTextRightObject",
+  "headline": {
+    "text": "YOUR YES MEANS NOTHING",
+    "accentWords": [
+      "YES",
+      "NOTHING"
+    ],
+    "align": "left"
+  },
+  "elements": [
+    {
+      "primitive": "WordReveal",
+      "text": "YES",
+      "position": "right",
+      "scale": 2.2,
+      "accent": "teal",
+      "role": "semantic",
+      "purpose": "the one sincere answer carrying full credibility",
+      "delay": 0,
+      "entrance": "fade",
+      "emphasis": "subtleScale",
+      "emphasisAt": 1.05
+    },
+    {
+      "primitive": "Line",
+      "position": "right",
+      "accent": "teal",
+      "role": "semantic",
+      "purpose": "credibility meter: full-width, retracting to a stub as copies multiply",
+      "delay": 0.15,
+      "entrance": "draw",
+      "emphasis": "positionShift",
+      "emphasisAt": 0.75
+    },
+    {
+      "primitive": "WordReveal",
+      "text": "YES   YES   YES",
+      "position": "right",
+      "scale": 0.7,
+      "opacity": 0.45,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "first three echoes that visibly cost the word its value",
+      "delay": 0.45,
+      "entrance": "stagger",
+      "exit": "fade"
+    },
+    {
+      "primitive": "Grid",
+      "position": "right",
+      "scale": 0.9,
+      "opacity": 0.55,
+      "accent": "none",
+      "role": "semantic",
+      "purpose": "crowd of identical dim YES marks turning the answer into texture",
+      "delay": 0.75,
+      "entrance": "stagger"
+    },
+    {
+      "primitive": "Indicator",
+      "position": "right",
+      "scale": 0.4,
+      "opacity": 0.4,
+      "accent": "none",
+      "role": "supporting",
+      "purpose": "the one open cell the hero slides into, completing the grid",
+      "delay": 0.75,
+      "emphasis": "highlight",
+      "emphasisAt": 1.05
+    },
+    {
+      "primitive": "Line",
+      "position": "bottom",
+      "opacity": 0.35,
+      "accent": "none",
+      "role": "supporting",
+      "purpose": "audience row giving one restrained applause pulse, then staying dim",
+      "delay": 0.75,
+      "emphasis": "subtleScale",
+      "emphasisAt": 0.85
+    }
+  ],
+  "motion": {
+    "entrance": "fade",
+    "emphasis": "subtleScale",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.05
+  },
+  "storyboard": {
+    "beatId": "b3",
+    "spokenMeaning": "Repeating 'yes' for everyone drains its value until the word becomes noise with no meaning left.",
+    "viewerTakeaway": "Watch the one sincere YES get copied into a grid for everyone, lose its privilege, and join the crowd while its teal value line retracts to a stub.",
+    "visualMechanism": "singular word diluted into crowd grid",
+    "visualNarrative": [
+      {
+        "order": 1,
+        "action": "Headline 'YOUR YES STOPS MEANING ANYTHING' fades up left; one large crisp YES sits right with a full-width teal value line drawing beneath it; a dim row of audience dots waits along the bottom.",
+        "meaning": "The first yes serves one asker and carries full credibility.",
+        "visualEvidence": "Left headline + subtitle band, right oversized sharp YES, edge-to-edge teal line, faint audience dot row, ~65% empty dark space."
+      },
+      {
+        "order": 2,
+        "action": "Three smaller dim YES copies fan out beside the hero at 0.45s; the teal line retracts to two-thirds width in the same frame.",
+        "meaning": "Saying it again to more people already costs measurable value.",
+        "visualEvidence": "Hero YES still dominant but now flanked by 3 reduced, dimmer echoes; teal line visibly shorter the moment they land."
+      },
+      {
+        "order": 3,
+        "action": "Echoes multiply into a compact grid of identical dim YES marks at 0.75s; the teal line retracts to a short stub; the audience dots lift once in applause and settle.",
+        "meaning": "Quantity turns the answer into interchangeable texture for everyone asked.",
+        "visualEvidence": "Uniform grid of six equal YES cells, short teal stub beneath the hero position, one restrained pulse of the dot row."
+      },
+      {
+        "order": 4,
+        "action": "At 1.05s the hero YES scales down and slides into the one empty grid cell, matching the others in size and brightness; the stub holds.",
+        "meaning": "The singular answer joins the crowd — its privilege and identity erode.",
+        "visualEvidence": "No YES is larger than any other after the merge; grid complete; teal stub unchanged and diminished."
+      },
+      {
+        "order": 5,
+        "action": "Frame settles static with soft ease-out: uniform dim grid, teal stub, headline and subtitle still perfectly legible.",
+        "meaning": "Hollowness — the word survives, the value underneath it is gone; the emotional low point.",
+        "visualEvidence": "Equalized YES grid, short stub, one crisp headline, one subtitle line, heavy negative space."
+      }
+    ],
+    "semanticObjects": [
+      {
+        "objectType": "WordReveal:heroYES",
+        "semanticRole": "The one sincere answer — the baseline of value the rest of the beat measures against.",
+        "relationship": "anchors the full-width teal line, then merges into the echo grid",
+        "importance": 5
+      },
+      {
+        "objectType": "Grid:echoYES",
+        "semanticRole": "Everyone asked — identical copies that turn the answer into interchangeable texture.",
+        "relationship": "grows from three echoes into a full grid and receives the hero YES as its last cell",
+        "importance": 5
+      },
+      {
+        "objectType": "Line:credibilityMeter",
+        "semanticRole": "The value of the word: full-width teal when sincere, retracting to a stub as copies multiply.",
+        "relationship": "shortens with each multiplication and stops as a stub once the hero merges",
+        "importance": 5
+      },
+      {
+        "objectType": "Row:audienceDots",
+        "semanticRole": "The audience whose applause the bending was for — present, dim, unimpressed beyond one pulse.",
+        "relationship": "sits below the grid, lifts once at peak quantity, then settles back to dim",
+        "importance": 3
+      },
+      {
+        "objectType": "Headline",
+        "semanticRole": "The verdict stated once and fixed while the right side decays.",
+        "relationship": "holds the left column, clear of the right grid and bottom subtitle",
+        "importance": 3
+      },
+      {
+        "objectType": "Subtitle",
+        "semanticRole": "The spoken explanation of the decay as it performs itself.",
+        "relationship": "sits in the bottom-left band, never touching headline or grid",
+        "importance": 2
+      }
+    ],
+    "relationships": [
+      {
+        "from": "Grid:echoYES",
+        "to": "WordReveal:heroYES",
+        "relationship": "absorbs it — echoes multiply, then the hero scales down and slides into the last open cell"
+      },
+      {
+        "from": "Line:credibilityMeter",
+        "to": "Grid:echoYES",
+        "relationship": "measures then withdraws — shortens with each added copy and holds as a stub after the merge"
+      },
+      {
+        "from": "Row:audienceDots",
+        "to": "Grid:echoYES",
+        "relationship": "answers once — a single restrained applause pulse when the grid completes, then dim again"
+      }
+    ],
+    "typographyPlan": {
+      "headline": "YOUR YES STOPS MEANING ANYTHING",
+      "emphasisWords": [
+        "YES",
+        "ANYTHING"
+      ],
+      "supportingText": []
+    },
+    "subtitlePlan": {
+      "enabled": true,
+      "text": "each time you bend your answer to match the asker, your 'yes' loses all value",
+      "timing": "during the echo and grid entrances",
+      "role": "spoken line explaining the decay as it is performed"
+    },
+    "motionBeats": [
+      {
+        "order": 1,
+        "action": "Headline fade-up, hero YES fade-in plus left-to-right teal line draw (0–0.35s)",
+        "purpose": "Establish the sincere baseline and its full-value measure."
+      },
+      {
+        "order": 2,
+        "action": "Three echoes stagger in fast at 0.45s while the teal line retracts and dims simultaneously",
+        "purpose": "Repetition visibly costs value in the same frame it arrives."
+      },
+      {
+        "order": 3,
+        "action": "Grid cells stagger open at 0.75s, line retracts to stub, audience row gives one soft pulse",
+        "purpose": "Quantity crowds meaning out; the applause is present but unimpressed."
+      },
+      {
+        "order": 4,
+        "action": "Hero YES subtleScale-down plus positionShift into the empty cell at 1.05s",
+        "purpose": "The privileged answer loses its distinction and joins the crowd."
+      },
+      {
+        "order": 5,
+        "action": "Block settles static with soft ease-out by 1.3s over the stub",
+        "purpose": "Final hollowness beat — the measure quits, leaving answers with no value."
+      }
+    ],
+    "compositionIntent": "leftTextRightObject: headline top-left with subtitle in the bottom-left band; hero YES and its echo grid fill the right column over one teal value line; audience dots run along the bottom-right baseline. No caption label anywhere. ~65% empty dark; only the right column is lit action.",
+    "visualEvidence": [
+      "One large YES shrinks into a uniform grid of identical dim copies — privilege lost by quantity alone.",
+      "Teal value line measurably shortens with each multiplication and ends as a short stub.",
+      "Audience dot row gives exactly one restrained applause pulse, then stays dim."
+    ],
+    "forbiddenInterpretations": [
+      "No side caption such as 'THREE ANSWERS. ONE VOICE.' — any extra label collides with the headline anchor.",
+      "No blur or semantic-satiation dissolve — that decay path was used in the previous version.",
+      "No strike-throughs, crossed-out words, droplets, cracks or particles; decay stays geometric and typographic.",
+      "No glowing or red-warning treatment; teal is the only accent, no second accent word.",
+      "No evenly spaced YES copies before the grid forms — echoes must visibly shrink and dim toward equality, max nine instances."
+    ],
+    "noveltyIntent": "Value dies by equalization, not by blur: the one sincere YES is copied for everyone, the copies mass into a grid, the teal meter retracts to a stub, and the hero itself scales down and merges into the last cell — the answer survives only as one indistinguishable cell among many.",
+    "elementBudget": {
+      "min": 6,
+      "max": 7
+    }
+  },
+  "subtitle": {
+    "enabled": true,
+    "role": "spoken line explaining the decay as it is performed",
+    "phrases": [
+      {
+        "text": "anything. Meanwhile the people",
+        "start": 0.04,
+        "end": 1.73,
+        "emphasisWords": [
+          "ANYTHING"
+        ]
+      },
+      {
+        "text": "who never change their",
+        "start": 1.73,
+        "end": 2.63
+      }
+    ]
+  }
+}

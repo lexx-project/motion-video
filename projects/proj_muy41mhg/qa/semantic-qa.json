@@ -1,0 +1,137 @@
+{
+  "scenes": [
+    {
+      "sceneId": "scene_01",
+      "semanticRelevance": 8,
+      "visualStorytelling": 6,
+      "evidenceCoverage": 2,
+      "subtitleCoverage": 0,
+      "richness": 3,
+      "source": "vision-judge",
+      "evidenceGaps": [
+        "drained progress bar is tiny and low in frame, easy to miss",
+        "empty speech bubble meaning ambiguous without motion",
+        "person icon small relative to text-heavy headline"
+      ]
+    },
+    {
+      "sceneId": "scene_02",
+      "semanticRelevance": 8,
+      "visualStorytelling": 6.5,
+      "evidenceCoverage": 1.6,
+      "subtitleCoverage": 0,
+      "richness": 3,
+      "source": "vision-judge",
+      "evidenceGaps": [
+        "no mirror/loop element — 'MIRROR RING NEVER SETTLES' not demonstrated",
+        "check repeated self-monitoring shown only as two static bubbles with text"
+      ]
+    },
+    {
+      "sceneId": "scene_03",
+      "semanticRelevance": 8,
+      "visualStorytelling": 5.5,
+      "evidenceCoverage": 1,
+      "subtitleCoverage": 0,
+      "richness": 3,
+      "source": "vision-judge",
+      "evidenceGaps": [
+        "post does not visibly vanish — card still fully present and lit",
+        "no motion cue for dissolution in the still",
+        "0 VIEWS counter carries almost all meaning, layout is text+shape"
+      ]
+    },
+    {
+      "sceneId": "scene_04",
+      "semanticRelevance": 7,
+      "visualStorytelling": 5.5,
+      "evidenceCoverage": 1.8,
+      "subtitleCoverage": 10,
+      "richness": 10,
+      "source": "vision-judge",
+      "evidenceGaps": [
+        "99% label isolated top-right, spatially detached from the bar",
+        "no 0% state shown, regression not readable from the frame",
+        "subtitle collides with NGEJUDGE/NGOMONGIN labels at bottom"
+      ]
+    },
+    {
+      "sceneId": "scene_05",
+      "semanticRelevance": 8.5,
+      "visualStorytelling": 6.5,
+      "evidenceCoverage": 0.4,
+      "subtitleCoverage": 0,
+      "richness": 2.4,
+      "source": "vision-judge",
+      "evidenceGaps": [
+        "left action rows and right verdict rows read as roughly aligned — 'TWO COLUMNS THAT NEVER ALIGN' not visible",
+        "no collision/offset gesture showing meaning being inverted"
+      ]
+    },
+    {
+      "sceneId": "scene_06",
+      "semanticRelevance": 8.5,
+      "visualStorytelling": 6,
+      "evidenceCoverage": 1.8,
+      "subtitleCoverage": 10,
+      "richness": 10,
+      "source": "vision-judge",
+      "evidenceGaps": [
+        "no visible slot/machine feeding the tape — 'one unreading slot' absent",
+        "connector line stops midway, does not link inputs to all four verdicts",
+        "subtitle overlaps DITERTAWAKAN at bottom edge"
+      ]
+    },
+    {
+      "sceneId": "scene_07",
+      "semanticRelevance": 8.5,
+      "visualStorytelling": 6,
+      "evidenceCoverage": 2,
+      "subtitleCoverage": 0,
+      "richness": 3,
+      "source": "vision-judge",
+      "evidenceGaps": [
+        "two circles imply degrees but no aperture/gap visibly widening or restricting flow",
+        "arrows approach but do not pass through a narrowing opening",
+        "mixed teal + gold accents dilute single-accent rule"
+      ]
+    },
+    {
+      "sceneId": "scene_08",
+      "semanticRelevance": 7,
+      "visualStorytelling": 4.5,
+      "evidenceCoverage": 2.7,
+      "subtitleCoverage": 10,
+      "richness": 10,
+      "source": "vision-judge",
+      "evidenceGaps": [
+        "missing: opinion stack flush against wall",
+        "missing: teal thread passing through a narrowing aperture",
+        "grid+line abstract; blocking/passing mechanism not demonstrated",
+        "bottom subtitle clipped/overlined"
+      ]
+    },
+    {
+      "sceneId": "scene_09",
+      "semanticRelevance": 8.5,
+      "visualStorytelling": 6.5,
+      "evidenceCoverage": 0.8,
+      "subtitleCoverage": 0,
+      "richness": 3,
+      "source": "vision-judge",
+      "evidenceGaps": [
+        "SEMUA ORANG label sits beside headline, not on the bullseye",
+        "LU label floats far from target, relabel relationship not decoded from pixels",
+        "center dot unchanged, so the relabel change is not visible in a still"
+      ]
+    }
+  ],
+  "overall": {
+    "semanticRelevance": 8,
+    "visualStorytelling": 5.9,
+    "evidenceCoverage": 1.6,
+    "subtitleCoverage": 3.3,
+    "richness": 5.3
+  },
+  "notes": []
+}

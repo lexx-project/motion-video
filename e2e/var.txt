@@ -1,0 +1,11 @@
+scene_01: rel=7 (med=7.14 var=0.122 conf=0.98)
+scene_02: rel=4 (med=6.86 var=0.168 conf=0.97)
+scene_03: rel=4 (med=6.57 var=0.358 conf=0.94)
+scene_04: rel=4 (med=6.57 var=0.168 conf=0.97)
+scene_05: rel=7 (med=6.71 var=0.095 conf=0.98)
+scene_06: rel=7 (med=6.71 var=0.127 conf=0.98)
+scene_07: rel=8 (med=7.57 var=0.127 conf=0.98)
+scene_08: rel=7 (med=6.29 var=0.059 conf=0.99)
+eval1: 01:7 02:2 03:2 04:2 05:7 06:6 07:8 08:7
+eval2: 01:8 02:8 03:8 04:7 05:8 06:8 07:9 08:9
+eval3: 01:7 02:4 03:4 04:4 05:6 06:7 07:8 08:7

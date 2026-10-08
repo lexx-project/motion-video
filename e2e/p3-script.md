@@ -1,0 +1,1 @@
+Every time you try to make everyone happy, you get more tired. You change your answer to match whoever asked. Your yes stops meaning anything. Meanwhile the people who never change their mind are the ones others remember. Stop editing yourself for an audience that will not applaud anyway. Your turn to choose one direction and stay with it.

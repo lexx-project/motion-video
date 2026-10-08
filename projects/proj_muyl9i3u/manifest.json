@@ -1,0 +1,35 @@
+{
+  "projectId": "proj_muyl9i3u",
+  "createdAt": "2026-10-07T20:57:25.485Z",
+  "updatedAt": "2026-10-07T21:03:35.109Z",
+  "status": "failed",
+  "scriptPreview": "**“Lu tau nggak…\nsalah satu hal yang paling bikin capek?”**\n\nBerusaha…\n\nbiar semua orang suka sama kita.\n\nCara ngomong dijaga.\n\nCara berpakaian dipikirin.\n\nPosting sesuatu…\n\nhapus lagi.\n\nTakut ada yang ngejudge.\n\nTakut ada yang ngomongin.\n\n",
+  "hasAudio": true,
+  "sceneIds": [],
+  "stages": {
+    "analysis": {
+      "status": "done",
+      "startedAt": "2026-10-07T20:57:25.543Z",
+      "finishedAt": "2026-10-07T20:58:03.988Z"
+    },
+    "beats": {
+      "status": "done",
+      "startedAt": "2026-10-07T20:58:03.990Z",
+      "finishedAt": "2026-10-07T20:59:15.411Z"
+    },
+    "timing": {
+      "status": "done",
+      "startedAt": "2026-10-07T20:59:15.412Z",
+      "finishedAt": "2026-10-07T20:59:17.874Z"
+    },
+    "concepts": {
+      "status": "failed",
+      "startedAt": "2026-10-07T20:59:17.875Z",
+      "finishedAt": "2026-10-07T21:03:35.106Z",
+      "error": "StudioError: [artDirection] project=proj_muyl9i3u: LLM produced invalid structured output after 2 attempts: [\n  {\n    \"code\": \"too_big\",\n    \"maximum\": 400,\n    \"type\": \"string\",\n    \"inclusive\": true,\n    \"exact\": false,\n    \"message\": \"String must contain at most 400 character(s)\",\n    \"path\": [\n      \"selections\",\n      0,\n      \"selectionRationale\"\n    ]\n  }\n]"
+    }
+  },
+  "audioDurationSec": 55.066063,
+  "timingSource": "phrase",
+  "lastError": "[artDirection] project=proj_muyl9i3u: LLM produced invalid structured output after 2 attempts: [\n  {\n    \"code\": \"too_big\",\n    \"maximum\": 400,\n    \"type\": \"string\",\n    \"inclusive\": true,\n    \"exact\": false,\n    \"message\": \"String must contain at most 400 character(s)\",\n    \"path\": [\n      \"selections\",\n      0,\n      \"selectionRationale\"\n    ]\n  }\n]"
+}

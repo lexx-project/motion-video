@@ -1,0 +1,25 @@
+status=fail
+overall=6.34
+slop=6 (needs_repair)
+reasons:
+overall quality 6.3 < 8
+scene_02: technical correctness fail
+scene_02: severe relevance/clarity issue
+scene_03: technical correctness fail
+scene_03: severe relevance/clarity issue
+scene_04: technical correctness fail
+scene_04: severe relevance/clarity issue
+scene_05: technical correctness fail
+scene_05: severe relevance/clarity issue
+scene_06: technical correctness fail
+scene_06: severe relevance/clarity issue
+scene_06: severe readability - Two accents active simultaneously: orange #E07A3F circle top-left plus gold #F2C14E circle and gold glow — violates oneDominantAccentPerScene, and the beam/fulcrum metaphor is unreadable (only a faint hairline fragment at top center).
+scene_07: technical correctness fail
+scene_07: severe relevance/clarity issue
+scene_01: rel=9 vis=9 des=9 typo=9 comp=8 mot=7 nov=8 slop=1
+scene_02: rel=2 vis=8 des=6 typo=8 comp=7 mot=6 nov=7 slop=3
+scene_03: rel=2 vis=6 des=6 typo=8 comp=6 mot=6 nov=6 slop=4
+scene_04: rel=2 vis=7 des=6 typo=8 comp=7 mot=6 nov=6 slop=3
+scene_05: rel=3 vis=8 des=6 typo=8 comp=7 mot=6 nov=6 slop=3
+scene_06: rel=2 vis=7 des=5 typo=5 comp=6 mot=6 nov=6 slop=4
+scene_07: rel=3 vis=9 des=8 typo=8 comp=8 mot=7 nov=7 slop=2

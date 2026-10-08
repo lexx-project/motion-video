@@ -1,0 +1,20 @@
+{
+  "sceneId": "scene_07",
+  "issue": "Two competing headline blocks overlap the left circle's label 'RUANG MEREKA', pushing the scene past the 4/5 element cap and mixing teal + gold accents so 'one door closes' isn't communicated.",
+  "rootCause": "A redundant bottom WordReveal restated the headline and collided with the left circle's label; both rings shared identical accent/weight, giving no closed-vs-open differentiation and a dual-accent violation.",
+  "scope": "minimal",
+  "changesMade": [
+    "Deleted the secondary WordReveal block 'HARUS TETAP HIDUP DENGAN HIDUP LU SENDIRI' — the headline alone carries the beat's emphasis phrase meaning.",
+    "Reduced to 4 elements (headline + 2 circles + glow), restoring 60-70% negative space.",
+    "Left circle shrunk to 26% and dimmed to opacity 0.3 with accent none so it visibly recedes as the closing door.",
+    "Consolidated to one dominant accent (gold) on right ring, glow, and headline word HIDUP; removed teal accent conflict.",
+    "Circles offset down (+8) so labels clear the headline zone with no text/object overlap."
+  ],
+  "preserve": [
+    "dualObject composition and TWO DOORS, ONE CLOSES concept",
+    "headline copy with single accent word HIDUP, left align, typography style",
+    "slide entrance, subtleScale/glow emphasis at 3.25s, fade exit",
+    "full 7.22s duration and timing keys (entranceAt 0, emphasisAt 3.25, exitAt 6.5)"
+  ],
+  "expectedEffect": "One clean headline sits above two clearly differentiated circles: the dim neutral left ring reads as the closed door, the gold-lit right ring as the door that stays open — the beat is enacted through contrast with no overlap or accent conflict."
+}

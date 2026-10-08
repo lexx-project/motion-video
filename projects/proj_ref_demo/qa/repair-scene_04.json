@@ -1,0 +1,23 @@
+{
+  "sceneId": "scene_04",
+  "issue": "The gold YEAR 5 progress bar occludes the headline's first word, two accents (gold and teal) compete in one frame, and the stacked labels/bars/caption crowd the layout into six cluttered elements.",
+  "rootCause": "The xl/1.1 gold bar anchored at offsetY -14 shares the headline's vertical band at offsetY -8 and extends left into the text column, causing a headline-anchor/object-anchor collision, while the WEEK 1 bar's teal accent introduces a second hue beside the dominant gold and the single-line headline plus labels pile into the same zone.",
+  "scope": "minimal",
+  "changesMade": [
+    "Split the headline into two explicit lines 'STOP MEASURING / WEEK 1' and moved it up to offsetY -24 for clearance above the object column",
+    "Reduced the gold bar from size xl/scale 1.1 to size lg/scale 1 and shifted it to offsetX 8/offsetY 0 so it sits fully right of the headline",
+    "Recolored the WEEK 1 bar to accent none (neutral track) so gold is the only accent, and shifted it to offsetX 8/offsetY 14 for separation",
+    "Set the headline accent to gold with accentWords ['WEEK 1'] so one accent color carries the comparison subject consistently",
+    "Added exit fade to the WEEK 1 bar and kept exit fade on the gold bar so both bars resolve at the final beat",
+    "Kept the caption as the fourth and final element to preserve hierarchy and negative space"
+  ],
+  "preserve": [
+    "Concept 'TWO COUNTERS, ONE FADES' and the two-ProgressBar comparison metaphor",
+    "leftTextRightObject composition family",
+    "duration 4.66 and timing (entranceAt 0, emphasisAt 2.1, exitAt 3.2)",
+    "motion family stagger + counterChange + fade",
+    "typography style: Archivo 96px uppercase left-aligned headline",
+    "gold-only accent discipline and caption text"
+  ],
+  "expectedEffect": "The headline renders fully readable with guaranteed negative space between text and object columns, a single gold accent carries the week one vs year five emphasis, hierarchy reads headline then bars then caption, and the gold reference bar fades out completely on the exit beat."
+}

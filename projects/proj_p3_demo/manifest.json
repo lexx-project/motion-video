@@ -1,0 +1,89 @@
+{
+  "projectId": "proj_p3_demo",
+  "createdAt": "2026-10-07T00:49:58.530Z",
+  "updatedAt": "2026-10-07T12:46:53.807Z",
+  "status": "complete",
+  "title": "Fewer Yes",
+  "scriptPreview": "Every time you try to make everyone happy, you get more tired. You change your answer to match whoever asked. Your yes stops meaning anything. Meanwhile the people who never change their mind are the ones others remember. Stop editing yours",
+  "hasAudio": true,
+  "sceneIds": [
+    "scene_01",
+    "scene_02",
+    "scene_03",
+    "scene_04",
+    "scene_05",
+    "scene_06"
+  ],
+  "stages": {
+    "analysis": {
+      "status": "done",
+      "startedAt": "2026-10-07T00:49:58.536Z",
+      "finishedAt": "2026-10-07T09:27:25.314Z"
+    },
+    "beats": {
+      "status": "done",
+      "startedAt": "2026-10-07T00:50:19.223Z",
+      "finishedAt": "2026-10-07T09:27:25.317Z"
+    },
+    "timing": {
+      "status": "done",
+      "startedAt": "2026-10-07T00:50:43.369Z",
+      "finishedAt": "2026-10-07T09:27:25.318Z"
+    },
+    "concepts": {
+      "status": "done",
+      "startedAt": "2026-10-07T02:07:44.944Z",
+      "finishedAt": "2026-10-07T09:27:25.321Z"
+    },
+    "sceneGeneration": {
+      "status": "done",
+      "startedAt": "2026-10-07T11:19:11.144Z",
+      "finishedAt": "2026-10-07T11:24:35.397Z"
+    },
+    "validation": {
+      "status": "done",
+      "finishedAt": "2026-10-07T11:24:35.398Z"
+    },
+    "repair": {
+      "status": "failed",
+      "finishedAt": "2026-10-07T11:17:56.569Z",
+      "error": "StudioError: [llm]: LLM call failed after retries: HTTP 524: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>lexxproject.web.id | 524: A timeout occurred</title>\n<meta charset=\"UT"
+    },
+    "novelty": {
+      "status": "done",
+      "startedAt": "2026-10-07T12:45:09.928Z",
+      "finishedAt": "2026-10-07T12:45:09.962Z"
+    },
+    "render": {
+      "status": "done",
+      "startedAt": "2026-10-07T11:24:35.417Z",
+      "finishedAt": "2026-10-07T11:25:49.090Z"
+    },
+    "conformance": {
+      "status": "done",
+      "startedAt": "2026-10-07T11:25:58.251Z",
+      "finishedAt": "2026-10-07T11:25:59.599Z"
+    },
+    "visionQa": {
+      "status": "done",
+      "startedAt": "2026-10-07T11:25:59.600Z",
+      "finishedAt": "2026-10-07T11:28:06.412Z"
+    },
+    "slop": {
+      "status": "failed",
+      "startedAt": "2026-10-07T11:28:06.415Z",
+      "finishedAt": "2026-10-07T11:30:20.325Z"
+    },
+    "semanticQa": {
+      "status": "done",
+      "startedAt": "2026-10-07T12:45:09.966Z",
+      "finishedAt": "2026-10-07T12:46:53.807Z"
+    },
+    "final": {
+      "status": "done",
+      "finishedAt": "2026-10-07T11:32:41.438Z"
+    }
+  },
+  "audioDurationSec": 24.94059,
+  "timingSource": "phrase"
+}

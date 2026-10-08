@@ -1,0 +1,25 @@
+{
+  "selections": [
+    {
+      "beatId": "b9",
+      "selectedCandidateId": "c1",
+      "rejected": false,
+      "scores": {
+        "semanticRelevance": 9,
+        "viewerComprehension": 9,
+        "metaphorStrength": 8,
+        "visualStorytelling": 8,
+        "relationshipClarity": 9,
+        "motionOpportunity": 7,
+        "typographyHierarchy": 7,
+        "subtitleIntegration": 8,
+        "referenceConformance": 9,
+        "compositionQuality": 8,
+        "novelty": 8,
+        "semanticDensity": 8,
+        "antiSlop": 8
+      },
+      "selectionRationale": "The diverging-trails mechanism literally enacts 'mereka pulang' vs 'your life is yours': one origin, two paths, the dim one ending at their houses while the gold one exits the frame — separation readable without narration. It stays clear, low-clutter, and avoids repeating the blocked-vs-passing or counter motifs already in memory."
+    }
+  ]
+}

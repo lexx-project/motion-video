@@ -1,0 +1,10 @@
+{
+  "sceneId": "scene_06",
+  "rootCause": "The lone Circle floats half-clipped and disconnected from the grid, duplicating the lit cell without adding meaning — the beat is fully carried by the single igniting cell. Grid emphasis 'counterChange' is invalid for a grid with no counter, so ignition reads weakly; dormant cells also lack contrast for bright-light viewing.",
+  "changesMade": [
+    "Removed the floating clipped Circle element (redundant duplicate of the grid's active cell)",
+    "Changed Grid emphasis from 'counterChange' to 'highlight' so the cell ignition reads as the emphasis beat",
+    "Set Grid density to 1 so dormant cells stay visible in bright conditions"
+  ],
+  "expectedEffect": "One unambiguous image: an empty grid with a single gold cell lighting up — 'today' and 'small' in one glance — with no clipped floating object competing for attention and a legible grid in bright light."
+}

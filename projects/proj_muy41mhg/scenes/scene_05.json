@@ -1,0 +1,61 @@
+{
+  "sceneId": "scene_05",
+  "duration": 5.42,
+  "purpose": "Empat tindakan jujur dipasangkan dengan empat vonis yang saling bertabrakan — kolom kiri dan kanan tidak pernah sejajar, membuktikan makna selalu dibalik.",
+  "visualConcept": "TWO COLUMNS THAT NEVER ALIGN",
+  "composition": "split",
+  "elements": [
+    {
+      "primitive": "WordReveal",
+      "text": "PASTI ADA YANG NGGAK SUKA",
+      "accentWords": [
+        "NGGAK SUKA"
+      ],
+      "align": "left",
+      "position": "top",
+      "accent": "red",
+      "entrance": "reveal",
+      "delay": 0,
+      "opacity": 1,
+      "role": "semantic",
+      "purpose": "States the beat claim: no matter the action, disapproval already exists."
+    },
+    {
+      "primitive": "Comparison",
+      "leftLabel": "MAU LU NGAPAIN",
+      "rightLabel": "PASTI DIDENGER ORANG LAIN",
+      "leftItems": [
+        "LU BAIK",
+        "LU DIEM",
+        "LU SUKSES",
+        "LU GAGAL"
+      ],
+      "rightItems": [
+        "PENCITRAAN",
+        "SOMBOG",
+        "BERUNTUNG",
+        "DITERTAWAKAN"
+      ],
+      "accentSide": "right",
+      "position": "center",
+      "accent": "red",
+      "entrance": "stagger",
+      "emphasis": "positionShift",
+      "emphasisAt": 2.44,
+      "delay": 0.35,
+      "offsetY": 4,
+      "role": "semantic",
+      "purpose": "Every honest action paired with a contradictory verdict — columns never align."
+    }
+  ],
+  "motion": {
+    "entrance": "stagger",
+    "emphasis": "positionShift",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 2.44,
+    "exitAt": 4.7
+  }
+}

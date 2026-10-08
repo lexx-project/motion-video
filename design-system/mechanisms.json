@@ -1,0 +1,19 @@
+{
+  "$comment": "Controlled visual-mechanism taxonomy for the Visual Storyboard Director (Phase 3). The director may select an existing mechanism or a clearly justified equivalent NOT in this list (schema allows any string; this list is the vocabulary embedded in prompts).",
+  "mechanisms": [
+    "transformation", "comparison", "contrast", "causeEffect", "progression", "regression",
+    "countdown", "accumulation", "depletion", "escalation", "reduction", "journey", "barrier",
+    "breakthrough", "loop", "repetition", "choice", "tradeoff", "hierarchy", "scale", "pressure",
+    "socialPressure", "isolation", "connection", "separation", "relationship", "beforeAfter",
+    "timeline", "process", "cycle", "expectationReality", "problemSolution", "inputOutput",
+    "triggerResponse", "decisionConsequence", "attention", "distraction", "overload", "focus",
+    "uncertainty", "control", "loss", "gain", "risk", "reward", "invisibleCause", "hiddenMechanism"
+  ],
+  "roles": ["semantic", "supporting", "decorative"],
+  "densityGuidelines": {
+    "simpleConcept": [3, 5],
+    "normal": [5, 8],
+    "complexRelational": [7, 10],
+    "$note": "guidelines, not mandatory counts; more elements is NOT automatically better - 3 meaningful > 10 decorative"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "sceneId": "scene_03",
+  "duration": 2.74,
+  "purpose": "Contrast proves the mechanism: the erratic motivation track dies mid-frame while the even boring pulse runs unbroken.",
+  "visualConcept": "Split waveform tracks: spikes collapse, pulse endures",
+  "composition": "split",
+  "headline": {
+    "text": "BORING WINS",
+    "accentWords": [
+      "WINS"
+    ],
+    "align": "center"
+  },
+  "elements": [
+    {
+      "primitive": "Label",
+      "text": "SPIKES",
+      "position": "top",
+      "offsetY": -30,
+      "align": "center",
+      "accent": "none",
+      "delay": 0.1,
+      "entrance": "fade",
+      "exit": "fade"
+    },
+    {
+      "primitive": "Line",
+      "position": "top",
+      "offsetY": -14,
+      "offsetX": -6,
+      "orientation": "horizontal",
+      "lengthPct": 46,
+      "thicknessPx": 6,
+      "variant": "spike",
+      "accent": "none",
+      "delay": 0.2,
+      "entrance": "draw",
+      "emphasisAt": 1.2,
+      "exit": "dissolve"
+    },
+    {
+      "primitive": "Line",
+      "position": "bottom",
+      "offsetY": -18,
+      "offsetX": 4,
+      "orientation": "horizontal",
+      "lengthPct": 92,
+      "thicknessPx": 6,
+      "variant": "pulse",
+      "accent": "teal",
+      "delay": 0.35,
+      "entrance": "draw",
+      "emphasis": "positionShift",
+      "emphasisAt": 1.3,
+      "exit": "fade"
+    },
+    {
+      "primitive": "Label",
+      "text": "SHOWING UP",
+      "position": "bottom",
+      "offsetY": -30,
+      "align": "center",
+      "accent": "none",
+      "delay": 0.5,
+      "entrance": "fade",
+      "exit": "fade"
+    }
+  ],
+  "motion": {
+    "entrance": "draw",
+    "emphasis": "positionShift",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1.3,
+    "exitAt": 2.3
+  }
+}

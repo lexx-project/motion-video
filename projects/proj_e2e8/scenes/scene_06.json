@@ -1,0 +1,45 @@
+{
+  "sceneId": "scene_06",
+  "duration": 2.12,
+  "purpose": "Turns both objections into one image: an empty dormant grid broken by a single lit cell — now, and tiny.",
+  "visualConcept": "Single cell ignition",
+  "composition": "topTextBottomObject",
+  "headline": {
+    "text": "START TODAY. START SMALL.",
+    "accentWords": [
+      "TODAY",
+      "SMALL"
+    ],
+    "align": "center"
+  },
+  "elements": [
+    {
+      "primitive": "Grid",
+      "cols": 6,
+      "rows": 4,
+      "activeCells": [
+        "15"
+      ],
+      "variant": "cells",
+      "position": "bottom",
+      "offsetY": -8,
+      "scale": 1.15,
+      "accent": "gold",
+      "delay": 0.3,
+      "entrance": "fade",
+      "emphasis": "highlight",
+      "emphasisAt": 1,
+      "density": 1
+    }
+  ],
+  "motion": {
+    "entrance": "fade",
+    "emphasis": "highlight",
+    "exit": "fade"
+  },
+  "timing": {
+    "entranceAt": 0,
+    "emphasisAt": 1,
+    "exitAt": 1.92
+  }
+}
