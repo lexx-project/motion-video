@@ -3,6 +3,12 @@ import os from "os";
 import path from "path";
 import { stageError, StudioError, type ErrorStage } from "../core/errors";
 import { PIPELINE } from "../core/output";
+import {
+  activeGenerationBudget,
+  BudgetExhaustedError,
+  isBudgetExhausted,
+  type LlmCallOutcome,
+} from "../core/generationBudget";
 
 export interface LlmConfig {
   baseURL: string;
@@ -184,10 +190,15 @@ async function executeChat(
   const cfg = llmConfig();
   let lastError = "";
   let consecutive524 = 0;
-  // 12 attempts for 524s: the proxy has a hard 100-second Cloudflare timeout.
-  // We abort at 85s to fail fast and retry. 12 attempts * (5-20s backoff) = ~2 min window.
-  const transientAttempts = 12;
+  // Batch E / Phase 1: bounded retries. Was 12 (a single logical call could burn ~17 min);
+  // now 4 attempts x 85s abort + backoff = a hard ~6 min ceiling per call, and the active
+  // generation budget re-checks the deadline before every attempt.
+  const transientAttempts = 4;
   for (let attempt = 1; attempt <= Math.max(transientAttempts, PIPELINE.llmAttemptsMax + 1); attempt++) {
+    const budget = activeGenerationBudget();
+    if (budget && budget.remainingMs() < budget.config.minCallMs) {
+      throw new BudgetExhaustedError("llm", `call abandoned mid-retry (deadline reached after ${attempt - 1} attempt(s))`);
+    }
     try {
       const res = await fetch(`${cfg.baseURL.replace(/\/$/, "")}/chat/completions`, {
         method: "POST",
@@ -230,8 +241,15 @@ async function executeChat(
           continue;
         }
         if (upstreamTransient) {
-          // exponential backoff with jitter;429 (free tier) needs a real window
-          const base = res.status === 429 ? Math.min(60_000, 15_000 * attempt) : attempt * 1500;
+          // exponential backoff with jitter; 429 (free tier) needs a real window and
+          // gateway blips (5xx/502) get a longer inter-attempt pause so a brief provider
+          // outage does not kill an entire generation (Batch E - still bounded: 4 attempts).
+          const base =
+            res.status === 429
+              ? Math.min(60_000, 15_000 * attempt)
+              : res.status >= 500
+                ? attempt * 5_000
+                : attempt * 1500;
           const wait = base + Math.floor(Math.random() * 2500);
           await new Promise((r) => setTimeout(r, wait));
           continue;
@@ -275,8 +293,26 @@ async function executeChat(
 
 export async function chatRaw(
   messages: ChatMessage[],
-  opts: { temperature?: number; maxTokens?: number; reasoningEffort?: "low" | "medium" | "high" | "none" | "minimal"; jsonMode?: boolean } = {},
+  opts: { temperature?: number; maxTokens?: number; reasoningEffort?: "low" | "medium" | "high" | "none" | "minimal"; jsonMode?: boolean; stage?: string } = {},
 ): Promise<string> {
+  const stage = opts.stage ?? "llm";
+  const budget = activeGenerationBudget();
+  const startedAt = new Date().toISOString();
+  const t0 = Date.now();
+
+  // Batch E / Phase 1: the generation budget gates EVERY logical call - checked BEFORE any
+  // provider config/network work so refusal is deterministic and cheap.
+  if (budget && !budget.allowLlmCall()) {
+    budget.recordLlmCall({
+      stage,
+      startedAt,
+      ms: 0,
+      outcome: "budget_refused",
+      detail: `calls=${budget.llmCalls}/${budget.config.maxLlmCalls} remaining=${Math.round(budget.remainingMs() / 1000)}s`,
+    });
+    throw new BudgetExhaustedError("llm", `call "${stage}" refused (calls=${budget.llmCalls}/${budget.config.maxLlmCalls}, ${Math.round(budget.remainingMs() / 1000)}s left)`);
+  }
+
   const cfg = llmConfig();
   const body: Record<string, unknown> = {
     model: cfg.model,
@@ -286,7 +322,21 @@ export async function chatRaw(
     ...(opts.reasoningEffort ? { reasoning_effort: opts.reasoningEffort } : {}),
     ...(opts.jsonMode ? { response_format: { type: "json_object" } } : {}),
   };
-  return enqueueLlm(() => executeChat(body));
+
+  try {
+    const out = await enqueueLlm(() => executeChat(body));
+    budget?.recordLlmCall({ stage, startedAt, ms: Date.now() - t0, outcome: "ok" });
+    return out;
+  } catch (e) {
+    const msg = e instanceof Error ? e.message : String(e);
+    const outcome: LlmCallOutcome = isBudgetExhausted(e)
+      ? "budget_refused"
+      : /timed out|timeout|aborted/i.test(msg)
+        ? "timeout"
+        : "error";
+    budget?.recordLlmCall({ stage, startedAt, ms: Date.now() - t0, outcome, detail: msg.slice(0, 160) });
+    throw e;
+  }
 }
 
 /** Parse JSON tolerating trailing commas (a common model slip); downstream Zod stays strict. */
@@ -426,6 +476,18 @@ export async function completeJson<T>(opts: CompleteJsonOptions<T>): Promise<T> 
   let lastErr = "";
   const attempts = opts.attempts ?? PIPELINE.llmAttemptsMax;
   for (let attempt = 1; attempt <= attempts; attempt++) {
+    // Batch E / Phase 1: no repeated identical STRUCTURED prompt inside one generation
+    // (generation + repair calls are byte-different after a corrective re-ask, so a repeat
+    // means "no new evidence" - refused instead of silently re-spending the budget).
+    const budget = activeGenerationBudget();
+    if (budget && attempt === 1 && !budget.recordPrompt(JSON.stringify(messages))) {
+      budget.duplicatePromptsRefused += 1;
+      throw stageError(opts.stage, `duplicate prompt refused by the generation budget (stage "${opts.stage}") - no new evidence, will not repeat`, {
+        projectId: opts.projectId,
+        recoverable: false,
+        data: { duplicatePrompt: true, stage: opts.stage },
+      });
+    }
     const raw = await chatRaw(messages, {
       temperature: opts.temperature,
       // Default 4000 instead of 8000: cuts generation time ~50%, keeps responses
@@ -435,6 +497,7 @@ export async function completeJson<T>(opts: CompleteJsonOptions<T>): Promise<T> 
       // finish_reason=length both stem from thinking consuming the whole budget)
       reasoningEffort: opts.reasoningEffort ?? "low",
       jsonMode: true,
+      stage: opts.stage,
     });
     try {
       const obj = extractJson(raw);
@@ -467,7 +530,7 @@ function sniffImageMime(b64: string): string {
 export async function chatVision(
   text: string,
   imagesBase64: string[],
-  opts: { temperature?: number; maxTokens?: number; reasoningEffort?: "low" | "medium" | "high" | "none" | "minimal" } = {},
+  opts: { temperature?: number; maxTokens?: number; reasoningEffort?: "low" | "medium" | "high" | "none" | "minimal"; stage?: string } = {},
 ): Promise<string> {
   const content: ContentPart[] = [{ type: "text", text }];
   for (const b64 of imagesBase64) {

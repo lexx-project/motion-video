@@ -1,11 +1,13 @@
 import fs from "fs";
 import { z } from "zod";
 import { completeJson, chatVision, extractJson } from "./llm";
+import { isBudgetExhausted } from "../core/generationBudget";
 import { designBibleCompactPrompt } from "./context";
 import { markStage, writeJson } from "../core/projectStore";
 import { stageError } from "../core/errors";
 import { semanticRichness } from "../reference/conformance";
 import { shrinkFrames, sceneSummaries, type BeatContext } from "./qa";
+import { enactmentEvidenceLines, type SemanticEnactmentReport } from "../validation/semanticEnactment";
 import type { SceneSpec } from "../validation/schema";
 import type { Analysis } from "./schemas";
 
@@ -173,6 +175,7 @@ async function oneJudge(
   beats: BeatContext[],
   lens: string,
   temperature: number,
+  enactmentLines: string[],
 ): Promise<z.infer<typeof judgeSchema>> {
   const prompt = [
     `You are a SEMANTIC VISUAL QA judge (Phase 3). Lens: ${lens}`,
@@ -194,10 +197,18 @@ async function oneJudge(
       )
       .join("\n"),
     "",
+    ...(enactmentLines.length
+      ? [
+          "# Deterministic semantic execution evidence (Batch D - measured state, not a visual opinion)",
+          enactmentLines.join("\n"),
+          "These lines tell you WHICH promised events the animation performed. Score from the IMAGES; use the lines only to notice a promised action that never happens on screen.",
+          "",
+        ]
+      : []),
     "Score per scene: semanticRelevance (0-10, does the frame show the narration's meaning), visualStorytelling (0-10, does it DEMONSTRATE a change/relationship rather than merely display text+shape). A frame that is almost entirely text scores <=4 unless typography itself performs the meaning.",
     'Output ONLY JSON {"scenes":[{"sceneId":"scene_01","semanticRelevance":8,"visualStorytelling":7,"evidenceGaps":["missing: comparison"]}]} - every scene exactly once, no prose.',
   ].join("\n\n");
-  const raw = await chatVision(prompt, images, { temperature, maxTokens: 6000 });
+  const raw = await chatVision(prompt, images, { temperature, maxTokens: 6000, stage: "semanticQa" });
   if (/VISION_UNAVAILABLE/i.test(raw)) throw new Error("vision unavailable");
   return judgeSchema.parse(extractJson(raw));
 }
@@ -208,12 +219,13 @@ async function judgeScenes(
   scenes: SceneSpec[],
   beats: BeatContext[],
   frames: string[],
+  enactmentLines: string[],
 ): Promise<z.infer<typeof judgeSchema> | null> {
   try {
     const images = frames.map((f) => fs.readFileSync(f).toString("base64"));
     const [a, b] = await Promise.all([
-      oneJudge(images, scenes, beats, "cold-viewer decoding: what does a first-time viewer actually understand from the pixels?", 0.2),
-      oneJudge(images, scenes, beats, "narrative fidelity: does each frame demonstrate the beat's stated meaning and change?", 0.6),
+      oneJudge(images, scenes, beats, "cold-viewer decoding: what does a first-time viewer actually understand from the pixels?", 0.2, enactmentLines),
+      oneJudge(images, scenes, beats, "narrative fidelity: does each frame demonstrate the beat's stated meaning and change?", 0.6, enactmentLines),
     ]);
     const merged = scenes.map((s) => {
       const ra = a.scenes.find((x) => x.sceneId === s.sceneId);
@@ -229,7 +241,10 @@ async function judgeScenes(
       };
     });
     return { scenes: merged };
-  } catch {
+  } catch (e) {
+    // Batch E: budget exhaustion must surface as a structured failure - never fall back
+    // to deterministic scores (that would claim PASS because a stage was skipped).
+    if (isBudgetExhausted(e)) throw e;
     return null;
   }
 }
@@ -241,11 +256,13 @@ export async function runSemanticQa(
   analysis: Analysis,
   frameFiles: string[],
   hasAudio: boolean,
+  enactment?: SemanticEnactmentReport | null,
 ): Promise<SemanticQaReport> {
   markStage(projectId, "semanticQa", "running");
   try {
     const frames = await shrinkFrames(frameFiles);
-    const judged = await judgeScenes(projectId, scenes, beats, frames);
+    const enactmentLines = enactmentEvidenceLines(enactment);
+    const judged = await judgeScenes(projectId, scenes, beats, frames, enactmentLines);
     const notes: string[] = [];
     if (!judged) {
       notes.push(

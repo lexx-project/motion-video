@@ -5,6 +5,7 @@ import motionJson from "../../design-system/motion.json";
 import primitivesJson from "../../design-system/primitives.json";
 import forbiddenJson from "../../design-system/forbidden-patterns.json";
 import mechanismsJson from "../../design-system/mechanisms.json";
+import semanticCategoriesJson from "../../design-system/semantic-categories.json";
 
 export const colors = colorsJson as unknown as {
   background: { base: string; deep: string; elevated: string; hairline: string };
@@ -70,6 +71,13 @@ export const mechanisms = mechanismsJson as unknown as {
   mechanisms: string[];
   roles: string[];
   densityGuidelines: Record<string, number[] | string>;
+};
+
+/** Batch E Phase 3: finite semantic category map (data-driven, over registered primitives). */
+export const semanticCategories = semanticCategoriesJson as unknown as {
+  primitiveCategories: Record<string, string[]>;
+  categoryKeywords: Record<string, string[]>;
+  standinPrimitives: Record<string, string[] | { $comment?: string }>;
 };
 
 export const PRIMITIVE_NAMES = Object.keys(primitives.primitives);

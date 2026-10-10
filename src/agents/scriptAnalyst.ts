@@ -3,6 +3,7 @@ import { designBiblePrompt, readScript } from "./context";
 import { analysisSchema, beatsSchema, type Analysis, type Beats } from "./schemas";
 import { markStage, writeJson, updateManifest, wrapUnknown } from "../core/projectStore";
 import type { ErrorStage } from "../core/errors";
+import type { BoundaryEvidence, SpeechGap, SpeechSegment, TimingSource } from "../core/timing";
 
 export interface TimingBeat {
   id: string;
@@ -10,13 +11,20 @@ export interface TimingBeat {
   start: number;
   end: number;
   duration: number;
-  source: "word" | "phrase" | "estimated";
+  source: TimingSource;
+  /** Batch B / B1: where this scene's boundary actually came from (never fabricated) */
+  evidence?: BoundaryEvidence;
 }
 
 export interface Timestamps {
-  source: "word" | "phrase" | "estimated" | "provided";
+  source: TimingSource;
   audioDurationSec?: number;
   phrases: { text: string; start: number; end: number }[];
+  /** Batch B / B1: measured speech pauses (present only when silence was detected) */
+  gaps?: SpeechGap[];
+  /** Batch B / B1: measured speech spans (complement of the pauses) */
+  segments?: SpeechSegment[];
+  snapToleranceSec?: number;
 }
 
 /** Stage 1a: meaning extraction (not sentence splitting). */
@@ -63,7 +71,8 @@ export async function runBeatGeneration(
       system: `You are the Story Beat Director (MASTER_SPEC section 4).
 ${designBiblePrompt()}
 
-Split the script into SEMANTIC story beats - meaning units, not sentences. One sentence can be 2-3 beats (e.g. desire / repetition / contradiction). Produce 3-9 beats for a short script.
+Split the script into SEMANTIC story beats - meaning units, not sentences. One sentence can be 2-3 beats (e.g. desire / repetition / contradiction).
+Produce 3-9 beats for a short script, but size them to the script: scripts under ~60 words get 3-4 dense beats (fewer, stronger units), longer scripts may use up to 9. Padding a tiny script into many beats is wrong.
 Each beat must stand alone as a communication unit: what is said, why it matters, emotion, abstract meaning, metaphor hints, priorities.
 Mark beats that need multiple visual concepts with "important": true (the most meaning-dense 40-70%).
 Output ONLY JSON: {"beats":[{id:"b1",text,why,emotion,metaphorHints[],abstractMeaning,visualPriority,typographyPriority,important,emphasisPhrase?}...]}.

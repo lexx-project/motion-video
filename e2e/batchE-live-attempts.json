@@ -1,0 +1,21 @@
+[
+  {
+    "attempt": 1,
+    "at": "2026-10-09T11:30:06.087Z",
+    "wallMs": 1222380,
+    "status": "failed",
+    "error": "generation budget exhausted: call abandoned mid-retry (deadline reached after 1 attempt(s))",
+    "exhausted": true,
+    "llmCalls": 15,
+    "failedStage": "sceneGeneration"
+  },
+  {
+    "attempt": 2,
+    "at": "2026-10-09T11:51:03.596Z",
+    "wallMs": 1210685,
+    "status": "partial",
+    "exhausted": true,
+    "llmCalls": 16,
+    "failedStage": null
+  }
+]

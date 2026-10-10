@@ -1,0 +1,14 @@
+[
+  {
+    "attempt": 1,
+    "at": "2026-10-09T20:17:12.037Z",
+    "wallMs": 1105383,
+    "status": "partial",
+    "exhausted": true,
+    "llmCalls": 16,
+    "headlineGapsRepaired": 2,
+    "missingHeadlineBefore": 2,
+    "missingHeadlineAfter": 0,
+    "failedStage": null
+  }
+]

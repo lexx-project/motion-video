@@ -4,6 +4,7 @@ import { repairReportSchema, normalizeScenes, type RepairReport, type VisualQa, 
 import { markStage, writeJson, readJson } from "../core/projectStore";
 import { stageError, type ErrorStage } from "../core/errors";
 import { validateScene } from "../validation/validate";
+import { compileExecutionPlan } from "../validation/executionPlan";
 import { textCollisions } from "../reference/conformance";
 import type { SceneSpec } from "../validation/schema";
 import type { NoveltyReport } from "./novelty";
@@ -115,6 +116,11 @@ A "minimal" scope that changes composition AND primitive set AND visualConcept s
         }
         const report = repairReportSchema.parse(raw);
         report.scene.sceneId = ctx.scene.sceneId;
+        // Batch D: the legacy repair must never drop the semantic contract or the plan
+        // (the model echoes only what it was shown - these are deterministic embeds).
+        if (!report.scene.storyboard) report.scene.storyboard = ctx.scene.storyboard;
+        if (!report.scene.subtitle) report.scene.subtitle = ctx.scene.subtitle;
+        report.scene.executionPlan = compileExecutionPlan(report.scene);
         const check = validateScene(report.scene, ctx.scene.sceneId);
         if (!check.success) {
           throw stageError(

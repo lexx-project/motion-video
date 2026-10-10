@@ -70,10 +70,58 @@ const narrativeStep = z
 
 const semanticObject = z
   .object({
+    /**
+     * Batch D: stable semantic id (e.g. `person_01`). Optional for backward compatibility,
+     * but only objects WITH an id become part of the executable semantic contract
+     * (required-object validation, event targets, relationship endpoints).
+     */
+    id: z
+      .string()
+      .min(2)
+      .max(40)
+      .regex(/^[A-Za-z][A-Za-z0-9_]*$/, "semantic object id must be snake/camel identifier like person_01")
+      .optional(),
     objectType: z.string().min(2).max(60),
     semanticRole: z.string().min(3).max(250),
     relationship: z.string().min(3).max(200),
     importance: z.number().min(1).max(5),
+  })
+  .strip();
+
+/**
+ * Batch D event taxonomy (supported = deterministically executable AND detectable).
+ * An eventType outside this set is kept as a promise and surfaced by the semantic
+ * enactment gate as `unsupported_event` - never silently executed, never faked.
+ */
+export const SUPPORTED_MOTION_EVENT_TYPES = [
+  "enter",
+  "exit",
+  "move",
+  "scale",
+  "rotate",
+  "fade",
+  "replace",
+  "reveal",
+  "progress",
+  "attach",
+  "detach",
+] as const;
+
+export type SupportedMotionEventType = (typeof SUPPORTED_MOTION_EVENT_TYPES)[number];
+
+/** Structured expectation of a motion beat: what state the event must reach. */
+const motionBeatExpected = z
+  .object({
+    /** numeric start value (scale/opacity/progress) - evidence only */
+    from: z.number().min(-1000).max(1000).optional(),
+    /** numeric end value the post-event state must reach (tolerance-checked) */
+    to: z.number().min(-1000).max(1000).optional(),
+    /** move target: semantic id of the destination object (moves toward) */
+    toward: z.string().max(40).optional(),
+    /** replace: semantic id of the object that becomes visible */
+    with: z.string().max(40).optional(),
+    /** attach: semantic id of the parent object this one becomes attached to */
+    parent: z.string().max(40).optional(),
   })
   .strip();
 
@@ -83,6 +131,43 @@ const motionBeat = z
     action: z.string().min(3).max(200),
     purpose: z.string().min(3).max(200),
     atSeconds: z.number().min(0).max(60).optional(),
+    /** Batch D: stable event id (defaults to `event_<index>` when omitted) */
+    id: z
+      .string()
+      .min(2)
+      .max(40)
+      .regex(/^event_[A-Za-z0-9_]+$/, "event id must look like event_01")
+      .optional(),
+    /** Batch D: semantic id of the object this event acts on */
+    target: z.string().max(40).optional(),
+    /**
+     * Batch D: event type. Free string (not an enum) on purpose: an unknown/unsupported
+     * type must survive validation and surface as a structured `unsupported_event`
+     * failure instead of failing the whole storyboard parse.
+     */
+    eventType: z.string().min(2).max(24).optional(),
+    expected: motionBeatExpected.optional(),
+  })
+  .strip();
+
+/** Batch D relationship contract types (structured, small - no graph database). */
+export const RELATIONSHIP_TYPES = [
+  "attachedTo",
+  "near",
+  "pointsTo",
+  "movesToward",
+  "overlapsIntentionally",
+] as const;
+
+export type RelationshipType = (typeof RELATIONSHIP_TYPES)[number];
+
+const storyboardRelationship = z
+  .object({
+    from: z.string().min(1).max(60),
+    to: z.string().min(1).max(60),
+    relationship: z.string().min(2).max(120),
+    /** Batch D: structured type; free-text `relationship` remains the human description */
+    type: z.enum(RELATIONSHIP_TYPES).optional(),
   })
   .strip();
 
@@ -95,17 +180,7 @@ export const storyboardSchema = z
     visualMechanism: z.string().min(3).max(80),
     visualNarrative: z.array(narrativeStep).min(1).max(8),
     semanticObjects: z.array(semanticObject).min(1).max(10),
-    relationships: z
-      .array(
-        z
-          .object({
-            from: z.string().min(1).max(60),
-            to: z.string().min(1).max(60),
-            relationship: z.string().min(2).max(120),
-          })
-          .strip(),
-      )
-      .max(8),
+    relationships: z.array(storyboardRelationship).max(8),
     typographyPlan: z
       .object({
         headline: z.string().min(1).max(120),

@@ -31,7 +31,7 @@ export interface Manifest {
   scriptPreview: string;
   hasAudio: boolean;
   audioDurationSec?: number;
-  timingSource?: "word" | "phrase" | "estimated";
+  timingSource?: "word" | "phrase" | "silence" | "proportional" | "estimated" | "provided";
   sceneIds: string[];
   stages: Record<string, StageRecord>;
   lastError?: string;
@@ -130,16 +130,30 @@ export function markStage(
 }
 
 export function writeJson(projectId: string, relPath: string, data: unknown): string {
-  const target = path.join(projectDir(projectId), relPath);
+  return writeJsonAt(projectDir(projectId), relPath, data);
+}
+
+/** Directory-based JSON write (used by Batch A modules that take an explicit project dir). */
+export function writeJsonAt(dir: string, relPath: string, data: unknown): string {
+  const target = path.join(dir, relPath);
   ensure(path.dirname(target));
   fs.writeFileSync(target, JSON.stringify(data, null, 2), "utf8");
   return target;
 }
 
 export function readJson<T>(projectId: string, relPath: string): T | null {
-  const target = path.join(projectDir(projectId), relPath);
+  return readJsonAt<T>(projectDir(projectId), relPath);
+}
+
+/** Directory-based JSON read (mirror of writeJsonAt). */
+export function readJsonAt<T>(dir: string, relPath: string): T | null {
+  const target = path.join(dir, relPath);
   if (!fs.existsSync(target)) return null;
-  return JSON.parse(fs.readFileSync(target, "utf8")) as T;
+  try {
+    return JSON.parse(fs.readFileSync(target, "utf8")) as T;
+  } catch {
+    return null;
+  }
 }
 
 export function writeText(projectId: string, relPath: string, text: string): string {
@@ -166,17 +180,26 @@ export function listProjects(): Manifest[] {
 }
 
 export function listScenes(projectId: string): { sceneId: string; file: string; data: unknown }[] {
-  const dir = path.join(projectDir(projectId), "scenes");
-  if (!fs.existsSync(dir)) return [];
+  return listSceneFilesAt(projectDir(projectId));
+}
+
+/** Directory-based scene listing (mirror of listScenes). */
+export function listSceneFilesAt(dir: string): { sceneId: string; file: string; data: unknown }[] {
+  const scenesDir = path.join(dir, "scenes");
+  if (!fs.existsSync(scenesDir)) return [];
   return fs
-    .readdirSync(dir)
+    .readdirSync(scenesDir)
     .filter((f) => /^scene_\d+\.json$/.test(f))
     .sort()
-    .map((f) => ({
-      sceneId: f.replace(/\.json$/, ""),
-      file: path.join(dir, f),
-      data: JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")),
-    }));
+    .map((f) => {
+      const file = path.join(scenesDir, f);
+      try {
+        return { sceneId: f.replace(/\.json$/, ""), file, data: JSON.parse(fs.readFileSync(file, "utf8")) };
+      } catch {
+        return null;
+      }
+    })
+    .filter((x): x is { sceneId: string; file: string; data: unknown } => x !== null);
 }
 
 /** Project memory used by the Novelty Checker (MASTER_SPEC section 10/13). Re-committing the
@@ -209,6 +232,8 @@ export function readGlobalMemory(): MemoryEntry[] {
 }
 
 export function wrapUnknown(e: unknown, stage: StudioError["stage"], projectId?: string): StudioError {
+  // StudioError instances pass through unchanged, so structured outcomes
+  // (budget exhaustion, duplicate-prompt refusal) survive stage wrapping.
   if (e instanceof StudioError) return e;
   return stageError(stage, e instanceof Error ? e.message : String(e), {
     projectId,

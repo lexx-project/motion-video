@@ -74,6 +74,8 @@ export interface RenderOptions {
   audioPath?: string;
   outputName: string;
   onProgress?: (progress: number) => void;
+  /** Batch E / Phase 4: isolated-object render (per-object pixel evidence) */
+  isolateSemanticId?: string;
 }
 
 /** Programmatic render: 1080x1920 @30fps, H.264 + AAC (OUTPUT is the single source). */
@@ -81,7 +83,11 @@ export async function renderProject(opts: RenderOptions): Promise<string> {
   return withStaleBundleRetry(async () => {
     await ensureBrowser();
     const serveUrl = await getBundle();
-    const inputProps = { scenes: opts.scenes, audioPath: opts.audioPath };
+    const inputProps = {
+      scenes: opts.scenes,
+      audioPath: opts.audioPath,
+      ...(opts.isolateSemanticId ? { isolateSemanticId: opts.isolateSemanticId } : {}),
+    };
     const composition = await selectComposition({
       serveUrl,
       id: "Project",
@@ -103,6 +109,38 @@ export async function renderProject(opts: RenderOptions): Promise<string> {
   });
 }
 
+export type StillRenderer = (frame: number, output: string) => Promise<void>;
+
+/**
+ * One bundle + one composition, N stills. Shared by the judge-frame extractor (below) and the
+ * frame-evidence collector so both render from the exact same inputProps (Batch A / A1).
+ */
+export async function createStillRenderer(
+  scenes: SceneSpec[],
+  audioPath?: string,
+  opts: { isolateSemanticId?: string } = {},
+): Promise<StillRenderer> {
+  await ensureBrowser();
+  const serveUrl = await getBundle();
+  const inputProps = {
+    scenes,
+    audioPath,
+    ...(opts.isolateSemanticId ? { isolateSemanticId: opts.isolateSemanticId } : {}),
+  };
+  const composition = await selectComposition({ serveUrl, id: "Project", inputProps });
+  return async (frame: number, output: string): Promise<void> => {
+    fs.mkdirSync(path.dirname(output), { recursive: true });
+    await renderStill({
+      composition,
+      serveUrl,
+      output,
+      frame,
+      inputProps,
+      timeoutInMilliseconds: 120000,
+    });
+  };
+}
+
 /** Extract one representative still per scene (used by Vision QA / Slop Critic). */
 export async function extractSceneFrames(
   scenes: SceneSpec[],
@@ -112,25 +150,15 @@ export async function extractSceneFrames(
 ): Promise<{ sceneId: string; file: string; atSec: number }[]> {
   fs.mkdirSync(targetDir, { recursive: true });
   return withStaleBundleRetry(async () => {
-    await ensureBrowser();
-    const serveUrl = await getBundle();
-    const inputProps = { scenes, audioPath };
-    const composition = await selectComposition({ serveUrl, id: "Project", inputProps });
+    const renderStillAt = await createStillRenderer(scenes, audioPath);
     const results: { sceneId: string; file: string; atSec: number }[] = [];
-  let cursor = 0;
-  for (const scene of scenes) {
-    const mid = cursor + scene.duration * 0.55;
-    cursor += scene.duration;
-    const file = path.join(targetDir, `${prefix}_${scene.sceneId}.png`);
-    await renderStill({
-      composition,
-      serveUrl,
-      output: file,
-      frame: Math.round(mid * OUTPUT.fps),
-      inputProps,
-      timeoutInMilliseconds: 120000,
-    });
-    results.push({ sceneId: scene.sceneId, file, atSec: mid });
+    let cursor = 0;
+    for (const scene of scenes) {
+      const mid = cursor + scene.duration * 0.55;
+      cursor += scene.duration;
+      const file = path.join(targetDir, `${prefix}_${scene.sceneId}.png`);
+      await renderStillAt(Math.round(mid * OUTPUT.fps), file);
+      results.push({ sceneId: scene.sceneId, file, atSec: mid });
     }
     return results;
   });

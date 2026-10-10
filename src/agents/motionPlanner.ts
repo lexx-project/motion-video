@@ -8,6 +8,7 @@ import { textCollisions } from "../reference/conformance";
 import { motion } from "../core/designSystem";
 import type { SceneSpec } from "../validation/schema";
 import type { Storyboard } from "../validation/storyboardSchema";
+import { compileExecutionPlan } from "../validation/executionPlan";
 import type { TimingBeat, Timestamps } from "./scriptAnalyst";
 
 export interface ScenePlanContext {
@@ -121,8 +122,9 @@ Compile ONE visual storyboard into ONE scene JSON. AI decides WHAT it means (the
 already did that); YOU decide how the primitives realize it deterministically.
 
 Rules:
-- Structure ONLY - never JSX/Remotion code. Do NOT output "storyboard" or "subtitle" fields -
-  the system embeds the storyboard verbatim and injects subtitle timing from VO data.
+- Structure ONLY - never JSX/Remotion code. Do NOT output "storyboard", "subtitle" or
+  "executionPlan" fields - the system embeds the storyboard verbatim, injects subtitle timing
+  from VO data and compiles the execution plan from motionBeats.
 - Fields: sceneId, duration (EXACT value given), purpose (<=200), visualConcept (<=80),
   composition (grammar that BEST serves storyboard.compositionIntent), headline
   (optional, from typographyPlan.headline; if the grammar puts the headline at a LEFT/RIGHT anchor keep it <=28 chars - only ~8 chars fit per rendered line there), elements[], motion, timing{entranceAt:0,...}.
@@ -133,10 +135,18 @@ Rules:
   "to make it look interesting" is invalid). Text elements should also carry role when they do
   more than headline duty (subtitle-like caption text is FORBIDDEN - the system renders the VO
   subtitle band separately).
+- SEMANTIC IDS (hard contract): every element compiled from a storyboard semanticObject MUST
+  carry semanticId exactly matching that object's id (e.g. person_01, gate_01). The semantic
+  gate fails the scene when a promised id has no element. Elements without a storyboard source
+  must NOT carry a semanticId.
+- ATTACHMENT/RELATIONSHIPS: when storyboard relationships are STRUCTURED (type attachedTo),
+  set attachTo="<parentId>" on the child element. For overlapsIntentionally set
+  collisionIntent="intentional" on one of the two elements.
 - Relationships from storyboard must be VISIBLE: interacting objects placed to show their
   relationship (facing, linking, containing, opposing) - not merely adjacent.
 - Compile motionBeats into element delays/emphasisAt (staggered 0-1.2s; emphasisAt ~ the beat's
-  emphasis moment); scene entrance/exit from vocabulary.
+  emphasis moment); scene entrance/exit from vocabulary. The system separately embeds the
+  deterministic execution plan (executionPlan) from motionBeats - you never write that field.
 - ONE dominant accent; max 4 elements may carry an accent.
 - If scene.headline present, never duplicate it as an element.
 OUTPUT DISCIPLINE: purpose/role strings <= 80 chars; keep every string terse; write the scene
@@ -160,6 +170,8 @@ Example shape (real values for THIS scene):
           // deterministic embed: storyboard travels with the scene (never model-echoed)
           scene.storyboard = storyboard;
           scene.subtitle = buildSubtitle(storyboard, ctx.timestamps, windowStart, duration);
+          // Batch D: deterministic temporal execution plan compiled from motionBeats
+          scene.executionPlan = compileExecutionPlan(scene);
           let check = validateScene(scene, sceneId);
           if (!check.success && scene.headline) {
             // Deterministic narrow-column fallback: if the ONLY failures are headline
@@ -268,6 +280,8 @@ Structure only - no code. Output ONLY JSON {"scenes":[sceneObject]}.`,
       scene.duration = existing.duration;
       if (!scene.storyboard) scene.storyboard = existing.storyboard; // keep semantic source unless revised
       if (!scene.subtitle) scene.subtitle = existing.subtitle;
+      // Batch D: deterministic execution plan follows the (possibly revised) storyboard
+      scene.executionPlan = compileExecutionPlan(scene);
       const check = validateScene(scene, sceneId);
       if (!check.success) {
         throw stageError("validation", `Regenerated scene invalid:\n- ${check.errors.join("\n- ")}`, {

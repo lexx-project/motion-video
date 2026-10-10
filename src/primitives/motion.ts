@@ -33,18 +33,8 @@ export const accentGlow = (accent: AccentName | string | undefined): string => {
   return a ? a.glow : "rgba(244,241,234,0.2)";
 };
 
-export const sizeScale = (size?: string): number => {
-  switch (size) {
-    case "sm":
-      return 0.7;
-    case "lg":
-      return 1.35;
-    case "xl":
-      return 1.8;
-    default:
-      return 1;
-  }
-};
+/** Re-exported from ./sizing so node-side geometry and the render bundle share one definition. */
+export { sizeScale } from "./sizing";
 
 export interface MotionInput {
   clock: SceneClock;

@@ -132,9 +132,30 @@
       ],
       "optional": true
     },
+    "collisionIntent": {
+      "type": "enum",
+      "values": [
+        "none",
+        "intentional"
+      ],
+      "default": "none",
+      "optional": true
+    },
     "purpose": {
       "type": "string",
       "max": 140,
+      "optional": true
+    },
+    "semanticId": {
+      "$comment": "Batch D: stable semantic id binding this element to a storyboard semanticObject (e.g. person_01). Resolved by the semantic enactment gate; never used for free-text matching.",
+      "type": "string",
+      "max": 40,
+      "optional": true
+    },
+    "attachTo": {
+      "$comment": "Batch D: semanticId of the parent element this element is attached to (child follows the parent's execution transform, keeps its local offset).",
+      "type": "string",
+      "max": 40,
       "optional": true
     }
   },

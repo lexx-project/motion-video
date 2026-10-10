@@ -748,5 +748,211 @@
     ],
     "motionPattern": "reveal/highlight/fade",
     "semanticPurpose": "Resolusi akhir: pusat sasaran tidak berubah, hanya labelnya — dari 'SEMUA ORANG' menjadi 'LU', melepas kelelahan mencari persetujuan kolektif."
+  },
+  {
+    "projectId": "_batche_live",
+    "sceneId": "scene_01",
+    "visualConcept": "THREE DROPS PIERCE ONE SLAB",
+    "metaphor": "Three identical drops wear through one silent stone slab, proving tiny repeated disciplines produce the visible breakthrough.",
+    "composition": "topTextBottomObject",
+    "dominantObjects": [
+      "GenericCard",
+      "Circle",
+      "Line",
+      "Circle",
+      "Circle",
+      "Circle"
+    ],
+    "primitiveCombination": [
+      "GenericCard",
+      "Circle",
+      "Line",
+      "Circle",
+      "Circle",
+      "Circle",
+      "GradientGlow"
+    ],
+    "motionPattern": "fade/subtleScale/fade",
+    "semanticPurpose": "Three identical drops wear through one silent stone slab, proving tiny repeated disciplines produce the visible breakthrough.",
+    "visualMechanism": "causeEffect"
+  },
+  {
+    "projectId": "_batche_live",
+    "sceneId": "scene_02",
+    "visualConcept": "RINGS DIE AT THE WALL, STACK KEEPS RISING",
+    "metaphor": "Show that repetition accumulates in private while every outward signal dies at the wall.",
+    "composition": "leftTextRightObject",
+    "dominantObjects": [
+      "Line",
+      "Line",
+      "Stack",
+      "Circle",
+      "Circle"
+    ],
+    "primitiveCombination": [
+      "Label",
+      "Line",
+      "Line",
+      "Stack",
+      "Label",
+      "Circle",
+      "Circle"
+    ],
+    "motionPattern": "fade/positionShift/fade",
+    "semanticPurpose": "Show that repetition accumulates in private while every outward signal dies at the wall.",
+    "visualMechanism": "barrier — repetition's outward signal flattens and dies at a wall while the inte"
+  },
+  {
+    "projectId": "_batche_live",
+    "sceneId": "scene_03",
+    "visualConcept": "GOLD DROP CUTS A CANYON THROUGH ONE SLAB",
+    "metaphor": "Five identical gold strikes deepen one notch until the slab splits open — repetition as accumulated force, named by the hinge verb BUILD.",
+    "composition": "objectDominant",
+    "dominantObjects": [
+      "Stack",
+      "Circle",
+      "ProgressBar",
+      "Line"
+    ],
+    "primitiveCombination": [
+      "Stack",
+      "Circle",
+      "ProgressBar",
+      "Line",
+      "Label",
+      "Label"
+    ],
+    "motionPattern": "fade/highlight/fade",
+    "semanticPurpose": "Five identical gold strikes deepen one notch until the slab splits open — repetition as accumulated force, named by the hinge verb BUILD.",
+    "visualMechanism": "repetition"
+  },
+  {
+    "projectId": "_batche_live",
+    "sceneId": "scene_04",
+    "visualConcept": "Gold outcome step capping an escalating staircase",
+    "metaphor": "Prove the payoff: a four-step staircase grows from a shared baseline until the gold top step alone outweighs the dim steps beneath, naming OUTCOME.",
+    "composition": "leftTextRightObject",
+    "dominantObjects": [
+      "Line",
+      "Stack",
+      "Stack",
+      "Stack",
+      "Stack"
+    ],
+    "primitiveCombination": [
+      "Line",
+      "Stack",
+      "Stack",
+      "Stack",
+      "Stack",
+      "Label",
+      "Label"
+    ],
+    "motionPattern": "reveal/subtleScale/fade",
+    "semanticPurpose": "Prove the payoff: a four-step staircase grows from a shared baseline until the gold top step alone outweighs the dim steps beneath, naming OUTCOME.",
+    "visualMechanism": "escalation"
+  },
+  {
+    "projectId": "_batchf_live",
+    "sceneId": "scene_01",
+    "visualConcept": "THREE DROPS PIERCE ONE SLAB",
+    "metaphor": "Three identical drops wear through one silent stone slab, proving tiny repeated disciplines produce the visible breakthrough.",
+    "composition": "topTextBottomObject",
+    "dominantObjects": [
+      "GenericCard",
+      "Circle",
+      "Line",
+      "Circle",
+      "Circle",
+      "Circle"
+    ],
+    "primitiveCombination": [
+      "GenericCard",
+      "Circle",
+      "Line",
+      "Circle",
+      "Circle",
+      "Circle",
+      "GradientGlow"
+    ],
+    "motionPattern": "fade/subtleScale/fade",
+    "semanticPurpose": "Three identical drops wear through one silent stone slab, proving tiny repeated disciplines produce the visible breakthrough.",
+    "visualMechanism": "causeEffect"
+  },
+  {
+    "projectId": "_batchf_live",
+    "sceneId": "scene_02",
+    "visualConcept": "RINGS DIE AT THE WALL, STACK KEEPS RISING",
+    "metaphor": "Show that repetition accumulates in private while every outward signal dies at the wall.",
+    "composition": "leftTextRightObject",
+    "dominantObjects": [
+      "Line",
+      "Line",
+      "Stack",
+      "Circle",
+      "Circle"
+    ],
+    "primitiveCombination": [
+      "Label",
+      "Line",
+      "Line",
+      "Stack",
+      "Label",
+      "Circle",
+      "Circle"
+    ],
+    "motionPattern": "fade/positionShift/fade",
+    "semanticPurpose": "Show that repetition accumulates in private while every outward signal dies at the wall.",
+    "visualMechanism": "barrier — repetition's outward signal flattens and dies at a wall while the inte"
+  },
+  {
+    "projectId": "_batchf_live",
+    "sceneId": "scene_03",
+    "visualConcept": "GOLD DROP CUTS A CANYON THROUGH ONE SLAB",
+    "metaphor": "Five identical gold strikes deepen one notch until the slab splits open — repetition as accumulated force, named by the hinge verb BUILD.",
+    "composition": "objectDominant",
+    "dominantObjects": [
+      "Stack",
+      "Circle",
+      "ProgressBar",
+      "Line"
+    ],
+    "primitiveCombination": [
+      "Stack",
+      "Circle",
+      "ProgressBar",
+      "Line",
+      "Label",
+      "Label"
+    ],
+    "motionPattern": "fade/highlight/fade",
+    "semanticPurpose": "Five identical gold strikes deepen one notch until the slab splits open — repetition as accumulated force, named by the hinge verb BUILD.",
+    "visualMechanism": "repetition"
+  },
+  {
+    "projectId": "_batchf_live",
+    "sceneId": "scene_04",
+    "visualConcept": "Gold outcome step capping an escalating staircase",
+    "metaphor": "Prove the payoff: a four-step staircase grows from a shared baseline until the gold top step alone outweighs the dim steps beneath, naming OUTCOME.",
+    "composition": "leftTextRightObject",
+    "dominantObjects": [
+      "Line",
+      "Stack",
+      "Stack",
+      "Stack",
+      "Stack"
+    ],
+    "primitiveCombination": [
+      "Line",
+      "Stack",
+      "Stack",
+      "Stack",
+      "Stack",
+      "Label",
+      "Label"
+    ],
+    "motionPattern": "reveal/subtleScale/fade",
+    "semanticPurpose": "Prove the payoff: a four-step staircase grows from a shared baseline until the gold top step alone outweighs the dim steps beneath, naming OUTCOME.",
+    "visualMechanism": "escalation"
   }
 ]

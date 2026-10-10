@@ -114,13 +114,25 @@ export function similarityScore(dims: NoveltyDimension[]): number {
 const verdictFor = (score: number): NoveltyResult["verdict"] =>
   score > 70 ? "reject" : score >= 50 ? "revise" : "accept";
 
+export interface NoveltyOptions {
+  /**
+   * Fixture provenance (Batch C / §16): project ids whose history must NOT be compared against.
+   * Used ONLY when a test/E2E project was copied from an existing one - otherwise the copy
+   * would score ~100 against its own source and trigger expensive production repair.
+   * Production runs pass nothing: every other project is still compared, thresholds unchanged.
+   */
+  excludeProjects?: string[];
+}
+
 /** Compare every scene against project history + the other scenes of this project. */
 export function runNoveltyCheck(
   projectId: string,
   scenes: SceneSpec[],
   history: MemoryEntry[] = readGlobalMemory(),
+  opts: NoveltyOptions = {},
 ): NoveltyResult[] {
-  const external = history.filter((h) => h.projectId !== projectId);
+  const excluded = new Set(opts.excludeProjects ?? []);
+  const external = history.filter((h) => h.projectId !== projectId && !excluded.has(h.projectId));
   const ownEntries = scenes.map((s) => entryFromScene(projectId, s));
   const results: NoveltyResult[] = [];
 
@@ -174,9 +186,9 @@ export interface NoveltyReport {
   status: "pass" | "needs_repair";
 }
 
-export function noveltyStage(projectId: string, scenes: SceneSpec[]): NoveltyReport {
+export function noveltyStage(projectId: string, scenes: SceneSpec[], opts: NoveltyOptions = {}): NoveltyReport {
   markStage(projectId, "novelty", "running");
-  const results = runNoveltyCheck(projectId, scenes);
+  const results = runNoveltyCheck(projectId, scenes, readGlobalMemory(), opts);
   const rejectedSceneIds = results
     .filter((r) => r.verdict === "reject" && r.similarity > QA_THRESHOLDS.noveltySimilarityMax)
     .map((r) => r.sceneId);

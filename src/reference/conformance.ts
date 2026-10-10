@@ -8,7 +8,9 @@ import {
   motion,
   typography,
 } from "../core/designSystem";
-import { headlinePositionFor, availableWidthPx, textBoxFor, horizontalTextBoxFor, overlapArea, maxWidthFor, type TextBox } from "../scenes/layout";
+import { headlinePositionFor, availableWidthPx, textBoxFor, overlapArea, type TextBox } from "../scenes/layout";
+import { sceneRenderedGeometry } from "../scenes/rendererGeometry";
+import { subtitleBandRect } from "../scenes/bounds";
 import type { SceneSpec } from "../validation/schema";
 import { markStage, writeJson } from "../core/projectStore";
 
@@ -87,163 +89,22 @@ const GENERIC_SHAPES = new Set([
   "Circle", "Arrow", "Line", "Grid", "Indicator", "Number", "Stack", "ProgressBar",
 ]);
 
-/** Base visual sizes (px @ scale 1) of object/diagram primitives for layout collision math. */
-const OBJECT_BOX: Record<string, [number, number]> = {
-  Clock: [380, 380],
-  Calendar: [440, 440],
-  ProfileCard: [460, 170],
-  GenericCard: [380, 160],
-  Target: [400, 400],
-  ProgressBar: [560, 90],
-  Checkbox: [420, 90],
-  Arrow: [320, 48],
-  Line: [640, 12],
-  Circle: [368, 368],
-  Stack: [340, 260],
-  Grid: [340, 340],
-  Indicator: [260, 60],
-  Number: [320, 180],
-  Badge: [220, 70],
-  Timeline: [700, 480],
-  Comparison: [900, 500],
-  BeforeAfter: [920, 380],
-  Flow: [940, 140],
-  Branch: [860, 340],
-  Relationship: [760, 760],
-  Progress: [940, 100],
-  Sequence: [820, 440],
-  Person: [170, 300],
-  SpeechBubble: [340, 210],
-};
-
-interface FlowItem {
-  id: string;
-  isText: boolean;
-  x0: number;
-  x1: number;
-  h: number;
-  ox: number;
-  oy: number;
-}
-
-/** Horizontal extent of an object/diagram at its anchor (width capped by the column). */
-function objectHorizontal(
-  position: string,
-  primitive: string,
-  el: { size?: string; scale?: number; orientation?: string; lengthPct?: number; thicknessPx?: number; diameterPct?: number; direction?: string },
-  base: [number, number],
-): { x0: number; x1: number; h: number } {
-  const scale = sizeScaleOf(el.size) * (typeof el.scale === "number" ? el.scale : 1);
-  let wBase = base[0];
-  let hBase = base[1];
-  if (primitive === "Circle" && typeof el.diameterPct === "number") {
-    wBase = (el.diameterPct / 100) * 1080;
-    hBase = wBase;
-  }
-  if (primitive === "Line") {
-    const vertical = el.orientation === "vertical";
-    const lenPct = typeof el.lengthPct === "number" ? el.lengthPct : 60;
-    const th = typeof el.thicknessPx === "number" ? el.thicknessPx : 3;
-    wBase = vertical ? th : (lenPct / 100) * 1080;
-    hBase = vertical ? Math.max(160, lenPct * 8) : th;
-  }
-  if (primitive === "Arrow") {
-    const len = (typeof el.lengthPct === "number" ? el.lengthPct : 50) * 5.6;
-    const vertical = el.direction === "up" || el.direction === "down";
-    wBase = vertical ? 48 : len;
-    hBase = vertical ? len : 48;
-  }
-  const colCap = (parseFloat(maxWidthFor(position)) / 100) * 1080;
-  const w = Math.min(colCap, wBase * scale);
-  const h = hBase * scale;
-  const mx = (composition.safeArea.marginXPercent / 100) * 1080;
-  let x0: number;
-  if (position === "left" || position === "topLeft" || position === "bottomLeft") x0 = mx;
-  else if (position === "right" || position === "topRight" || position === "bottomRight") x0 = 1080 - mx - w;
-  else x0 = 540 - w / 2;
-  return { x0, x1: x0 + w, h };
-}
-
 /**
- * Deterministic layout model mirroring the renderer's GROUP-FLOW (Phase 3 export):
- * items sharing an anchor are flex-stacked (gap 44px); offsets applied; boxes returned
- * for collision checks (textCollisions, subtitle band) and semantic scoring.
+ * Deterministic layout boxes for collision scoring + semantic checks.
+ *
+ * Batch B: this now DELEGATES to the renderer-aware geometry (src/scenes/rendererGeometry.ts)
+ * so there is exactly one layout model in the repository - the one that mirrors the transform
+ * chain the renderer applies (shrink-to-fit group, unscaled layout box, scale-around-centre,
+ * rotation AABB, measured text). Boxes returned are the PAINTED (rendered) extents, which is
+ * what collision and safe-area questions must answer.
  */
 export function sceneLayoutBoxes(scene: SceneSpec): { id: string; pos: string; box: TextBox; isText: boolean }[] {
-  const groups = new Map<string, FlowItem[]>();
-  const addItem = (pos: string, item: FlowItem): void => {
-    const list = groups.get(pos);
-    if (list) list.push(item);
-    else groups.set(pos, [item]);
-  };
-
-  if (scene.headline) {
-    const pos = scene.headline.position ?? headlinePositionFor(scene.composition);
-    const t = horizontalTextBoxFor(
-      scene.headline.text,
-      pos,
-      typography.scale.headline.default,
-      (scene.headline.align as "left" | "center" | "right") ?? "center",
-      typography.scale.headline.lineHeight,
-    );
-    addItem(pos, {
-      id: `scene.headline("${scene.headline.text.replace(/\s+/g, " ").slice(0, 18)}...")`,
-      isText: true,
-      ox: 0,
-      oy: 0,
-      ...t,
-    });
-  }
-  scene.elements.forEach((el, i) => {
-    const textBase = TEXT_FONT_SIZE[el.primitive];
-    const objBase = OBJECT_BOX[el.primitive];
-    const pos = (el.position as string) ?? "center";
-    if (textBase !== undefined) {
-      const text = typeof el.text === "string" ? el.text : "";
-      if (!text.trim()) return;
-      const alignRaw = typeof el.align === "string" ? el.align : "center";
-      const align = alignRaw === "left" || alignRaw === "right" ? alignRaw : "center";
-      const scale = sizeScaleOf(el.size) * (typeof el.scale === "number" ? el.scale : 1);
-      const t = horizontalTextBoxFor(text, pos, textBase * scale, align, 1.2);
-      const oxT = typeof el.offsetX === "number" ? el.offsetX : 0;
-      const oyT = typeof el.offsetY === "number" ? el.offsetY : 0;
-      addItem(pos, { id: `${el.primitive}[${i}]("${text.replace(/\s+/g, " ").slice(0, 18)}...")`, isText: true, ox: oxT, oy: oyT, ...t });
-      return;
-    }
-    if (objBase === undefined) return; // atmospheric glow behind content is by design
-    const o = objectHorizontal(pos, el.primitive, el as { size?: string; scale?: number; orientation?: string; lengthPct?: number; thicknessPx?: number; diameterPct?: number; direction?: string }, objBase);
-    const oxO = typeof el.offsetX === "number" ? el.offsetX : 0;
-    const oyO = typeof el.offsetY === "number" ? el.offsetY : 0;
-    addItem(pos, { id: `${el.primitive}[${i}]`, isText: false, ox: oxO, oy: oyO, ...o });
-  });
-
-  // group flow: flex column, gap 44, justify start(top)/center/end(bottom) - mirrors renderer
-  const GAP = 44;
-  const mt = (composition.safeArea.marginTopPercent / 100) * 1920;
-  const mb = ((100 - composition.safeArea.marginBottomPercent) / 100) * 1920;
-  const boxes: { id: string; pos: string; box: TextBox; isText: boolean }[] = [];
-  for (const [pos, items] of groups) {
-    const H = items.reduce((a, it) => a + it.h, 0) + GAP * Math.max(0, items.length - 1);
-    let y =
-      pos === "top" || pos === "topLeft" || pos === "topRight"
-        ? mt
-        : pos === "bottom" || pos === "bottomLeft" || pos === "bottomRight"
-          ? mb - H
-          : 960 - H / 2;
-    for (const it of items) {
-      // offsets are % of canvas: x -> % of 1080, y -> % of 1920 (mirrors ElementInner transform)
-      const dx = it.ox * 10.8;
-      const dy = it.oy * 19.2;
-      boxes.push({
-        id: it.id,
-        pos,
-        isText: it.isText,
-        box: { x0: it.x0 + dx, y0: y + dy, x1: it.x1 + dx, y1: y + dy + it.h },
-      });
-      y += it.h + GAP;
-    }
-  }
-  return boxes;
+  return sceneRenderedGeometry(scene).items.map((i) => ({
+    id: i.id,
+    pos: i.pos,
+    box: { x0: i.rendered.x0, y0: i.rendered.y0, x1: i.rendered.x1, y1: i.rendered.y1 },
+    isText: i.isText,
+  }));
 }
 
 /**
@@ -271,13 +132,16 @@ export function textCollisions(scene: SceneSpec): { a: string; b: string; ratio:
   return out;
 }
 
-/** Subtitle band box (renderer: left/right 8%, bottom 14.5%, ~2 lines of 34px text). */
+/**
+ * Subtitle band box. Geometry is single-sourced in `scenes/bounds.ts` (Batch A / A3) so the
+ * collision model and the rendered-frame metrics can never drift; the numbers are unchanged
+ * (7% side margins, bottom 14.5%, 110px tall) - narrowing them would lower an existing threshold.
+ */
 export function subtitleBoxFor(scene: SceneSpec): TextBox | null {
   const sub = scene.subtitle;
   if (!sub?.enabled || sub.phrases.length === 0) return null;
-  const y1 = 1920 * (1 - 0.145);
-  const y0 = y1 - 110; // up to 2 lines @34px lh1.3 + padding
-  return { x0: 1080 * 0.07, x1: 1080 * 0.93, y0, y1 };
+  const b = subtitleBandRect("validate");
+  return { x0: b.x0, x1: b.x1, y0: b.y0, y1: b.y1 };
 }
 
 /** Subtitles must not fight any content in the lower band (separate layer, own timing). */

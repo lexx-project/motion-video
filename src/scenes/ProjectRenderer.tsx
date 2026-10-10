@@ -67,13 +67,18 @@ export interface ProjectVideoProps {
   scenes: SceneSpec[];
   /** path relative to public/ (e.g. "proj_123/vo.mp3"); omit for silent render */
   audioPath?: string;
+  /**
+   * Batch E / Phase 4: isolated-object render (opt-in). Only the element bound to this
+   * semanticId paints - used for deterministic per-object pixel evidence.
+   */
+  isolateSemanticId?: string | null;
 }
 
 /**
  * ProjectRenderer: sequences of validated scenes on one timeline + VO audio.
  * Scene boundaries are hard cuts animated by each scene's own exit/entrance.
  */
-export const ProjectRenderer: React.FC<ProjectVideoProps> = ({ scenes, audioPath }) => {
+export const ProjectRenderer: React.FC<ProjectVideoProps> = ({ scenes, audioPath, isolateSemanticId }) => {
   const { fps } = useVideoConfig();
   let cursor = 0;
   const sequences = scenes.map((scene) => {
@@ -89,7 +94,7 @@ export const ProjectRenderer: React.FC<ProjectVideoProps> = ({ scenes, audioPath
       {audioPath ? <Audio src={staticFile(audioPath)} /> : null}
       {sequences.map(({ scene, from, durationInFrames }) => (
         <Sequence key={scene.sceneId} from={from} durationInFrames={durationInFrames} name={scene.sceneId}>
-          <SceneRenderer scene={scene} />
+          <SceneRenderer scene={scene} isolate={isolateSemanticId ?? null} />
         </Sequence>
       ))}
     </AbsoluteFill>

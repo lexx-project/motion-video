@@ -1,4 +1,4 @@
-import { completeJson } from "./llm";
+﻿import { completeJson } from "./llm";
 import { designBibleCompactPrompt, memoryPrompt, primitiveSpecsFor } from "./context";
 import { markStage, writeJson, readJson } from "../core/projectStore";
 import { stageError, type ErrorStage } from "../core/errors";
@@ -15,9 +15,9 @@ import type { Analysis, Beats } from "./schemas";
 import type { TimingBeat, Timestamps } from "./scriptAnalyst";
 
 /**
- * VISUAL STORYBOARD DIRECTOR (Phase 3 §6).
- * Designs semantic intent BEFORE primitive compilation: what is said → what the viewer must
- * understand → the strongest visual mechanism → objects/relationships/narrative/motion beats →
+ * VISUAL STORYBOARD DIRECTOR (Phase 3 Â§6).
+ * Designs semantic intent BEFORE primitive compilation: what is said â†’ what the viewer must
+ * understand â†’ the strongest visual mechanism â†’ objects/relationships/narrative/motion beats â†’
  * typography + subtitle plan. Candidates differ by MECHANISM, not by shape variants.
  */
 
@@ -36,11 +36,37 @@ const storyboardFrame = (beat: { id: string; text: string; why?: string; emotion
     .filter(Boolean)
     .join("\n");
 
+/**
+ * Batch E: deterministic field capping for candidates (same precedent as normalizeStoryboard).
+ * A model that rambles in `visualMechanism` must fail neither the schema nor the budget -
+ * the string is capped to the contract, then Zod still validates the structure.
+ */
+export function normalizeStoryboardCandidates(obj: unknown): unknown {
+  if (!obj || typeof obj !== "object") return obj;
+  const o = { ...(obj as Record<string, unknown>) };
+  const list = Array.isArray(o.candidates) ? (o.candidates as Record<string, unknown>[]) : null;
+  if (!list) return o;
+  o.candidates = list.map((c) => {
+    const cand = { ...c };
+    if (typeof cand.visualMechanism === "string") cand.visualMechanism = cand.visualMechanism.slice(0, 80);
+    if (typeof cand.concept === "string") cand.concept = cand.concept.slice(0, 160);
+    if (typeof cand.compositionSketch === "string") cand.compositionSketch = cand.compositionSketch.slice(0, 200);
+    if (typeof cand.whyDifferent === "string") cand.whyDifferent = cand.whyDifferent.slice(0, 240);
+    if (typeof cand.strength === "string") cand.strength = cand.strength.slice(0, 240);
+    if (Array.isArray(cand.objects)) cand.objects = cand.objects.map((s) => String(s).slice(0, 50)).slice(0, 8);
+    return cand;
+  });
+  return o;
+}
+
 /** Step 1: 3-5 mechanism-differentiated storyboard candidates. */
 export async function runStoryboardCandidates(
   projectId: string,
   analysis: Analysis,
   beat: { id: string; text: string; why?: string; emotion?: string; abstractMeaning?: string },
+  /** Batch E: rejection feedback from the previous round - required so the retry is NEW
+   *  evidence (the generation budget refuses byte-identical repeat prompts). */
+  direction?: string,
 ): Promise<StoryboardCandidates> {
   return completeJson<StoryboardCandidates>({
     stage: "concepts" as ErrorStage,
@@ -69,14 +95,14 @@ RULES:
 - Sparse composition does NOT mean sparse storytelling: plan the relationships the scene needs;
   density budget comes later.
 Output ONLY JSON {"beatId":"${beat.id}","candidates":[...]}.`,
-    user: storyboardFrame(beat, analysis),
+    user: `${storyboardFrame(beat, analysis)}${direction ? `\n\n# Previous round was REJECTED - direction for new candidates\n${direction}` : ""}`,
     parse: (obj) => {
       const raw = Array.isArray((obj as { candidates?: unknown[] }).candidates)
         ? obj
         : Array.isArray(obj)
           ? { beatId: beat.id, candidates: obj }
           : { ...(obj as object), beatId: beat.id };
-      const parsed = storyboardCandidatesSchema.parse(raw);
+      const parsed = storyboardCandidatesSchema.parse(normalizeStoryboardCandidates(raw));
       const mechs = new Set(parsed.candidates.map((c) => c.visualMechanism));
       if (parsed.candidates.length >= 3 && mechs.size < 3) {
         throw stageError(
@@ -174,8 +200,9 @@ export function normalizeStoryboard(obj: unknown, beatId?: string): unknown {
   if (typeof o.viewerTakeaway === "string" && o.viewerTakeaway.length > 450) {
     o.viewerTakeaway = o.viewerTakeaway.slice(0, 447) + "...";
   }
-  if (typeof o.visualMechanism === "string" && o.visualMechanism.length > 110) {
-    o.visualMechanism = o.visualMechanism.slice(0, 107) + "...";
+  if (typeof o.visualMechanism === "string" && o.visualMechanism.length > 80) {
+    // storyboardSchema caps visualMechanism at 80 - cap deterministically (Batch E reliability)
+    o.visualMechanism = o.visualMechanism.slice(0, 80);
   }
   if (typeof o.compositionIntent === "string" && o.compositionIntent.length > 750) {
     o.compositionIntent = o.compositionIntent.slice(0, 747) + "...";
@@ -223,24 +250,48 @@ export function normalizeStoryboard(obj: unknown, beatId?: string): unknown {
   }
   if (Array.isArray(o.semanticObjects)) {
     o.semanticObjects = o.semanticObjects.slice(0, 10).map((item) => {
-      const ob = typeof item === "object" && item ? { ...(item as Record<string, unknown>) } : { objectType: "Actor", semanticRole: "role", relationship: "relationship", importance: 3 };
-      return {
-        objectType: String(ob.objectType ?? "Actor").slice(0, 55),
+      const ob: Record<string, unknown> =
+        typeof item === "object" && item
+          ? { ...(item as Record<string, unknown>) }
+          : { objectType: "object", semanticRole: "role", relationship: "relationship", importance: 3 };
+      const out: Record<string, unknown> = {
+        // Batch F: neutral placeholder - "Actor" collided with the person keyword and
+        // turned every untyped object into a false person promise (live-run root cause).
+        // "object" maps to no category -> honest not_verified until a real type arrives.
+        objectType: String(ob.objectType ?? "object").slice(0, 55),
         semanticRole: String(ob.semanticRole ?? "role").slice(0, 240),
         relationship: String(ob.relationship ?? "rel").slice(0, 190),
         importance: typeof ob.importance === "number" ? Math.max(1, Math.min(5, Math.round(ob.importance))) : 3,
       };
+      // Batch D: stable semantic id (only kept when it is a clean identifier)
+      if (typeof ob.id === "string" && /^[A-Za-z][A-Za-z0-9_]{1,39}$/.test(ob.id)) out.id = ob.id;
+      return out;
     });
   }
   if (Array.isArray(o.motionBeats)) {
     o.motionBeats = o.motionBeats.slice(0, 10).map((mb, idx) => {
       const m = (typeof mb === "object" && mb ? mb : {}) as Record<string, unknown>;
-      return {
+      const out: Record<string, unknown> = {
         order: typeof m.order === "number" ? Math.max(1, Math.min(12, Math.round(m.order))) : idx + 1,
         action: String(m.action ?? "motion").slice(0, 190),
         purpose: String(m.purpose ?? "purpose").slice(0, 190),
         atSeconds: typeof m.atSeconds === "number" ? m.atSeconds : undefined,
       };
+      // Batch D: executable motion beat fields (event id / target / type / expected state)
+      if (typeof m.id === "string" && /^event_[A-Za-z0-9_]{1,38}$/.test(m.id)) out.id = m.id;
+      if (typeof m.target === "string" && m.target.trim()) out.target = String(m.target).trim().slice(0, 40);
+      if (typeof m.eventType === "string" && m.eventType.trim().length >= 2) out.eventType = m.eventType.trim().slice(0, 24);
+      if (m.expected && typeof m.expected === "object" && !Array.isArray(m.expected)) {
+        const e = m.expected as Record<string, unknown>;
+        const expected: Record<string, unknown> = {};
+        if (typeof e.from === "number") expected.from = e.from;
+        if (typeof e.to === "number") expected.to = e.to;
+        if (typeof e.toward === "string" && e.toward) expected.toward = String(e.toward).slice(0, 40);
+        if (typeof e.with === "string" && e.with) expected.with = String(e.with).slice(0, 40);
+        if (typeof e.parent === "string" && e.parent) expected.parent = String(e.parent).slice(0, 40);
+        if (Object.keys(expected).length) out.expected = expected;
+      }
+      return out;
     });
   }
   if (Array.isArray(o.visualEvidence)) {
@@ -262,8 +313,19 @@ export function normalizeStoryboard(obj: unknown, beatId?: string): unknown {
     }
     o.elementBudget = { min, max };
   }
-  if (Array.isArray(o.relationships) && o.relationships.length > 8) {
-    o.relationships = o.relationships.slice(0, 8);
+  if (Array.isArray(o.relationships)) {
+    o.relationships = o.relationships.slice(0, 8).map((r) => {
+      const ob = typeof r === "object" && r ? { ...(r as Record<string, unknown>) } : {};
+      const out: Record<string, unknown> = {
+        from: String(ob.from ?? "").slice(0, 60),
+        to: String(ob.to ?? "").slice(0, 60),
+        relationship: String(ob.relationship ?? "rel").slice(0, 120),
+      };
+      // Batch D: structured relationship type (dropped when not in the taxonomy)
+      const known = ["attachedTo", "near", "pointsTo", "movesToward", "overlapsIntentionally"];
+      if (typeof ob.type === "string" && known.includes(ob.type)) out.type = ob.type;
+      return out;
+    });
   }
   return o;
 }
@@ -311,6 +373,8 @@ export async function runStoryboardExpansion(
   return completeJson<Storyboard>({
     stage: "concepts" as ErrorStage,
     projectId,
+    // Batch E: one extra corrective re-ask - a dropped required field used to kill the run
+    attempts: 3,
     temperature: 0.5,
     maxTokens: 12000,
     system: `You are the VISUAL STORYBOARD DIRECTOR expanding a selected storyboard (Phase 3).
@@ -324,14 +388,29 @@ specificity, NOT "person + arrows".
 
 Requirements:
 - visualNarrative: ordered steps {order, action, meaning, visualEvidence} - what happens and why.
-- semanticObjects: each needed actor/object with semanticRole (why it exists), relationship,
-  importance 1-5. At least one relationship should ACT (interact), not merely coexist.
-- relationships: from/to/relationship triples for interacting pairs.
+- semanticObjects: each needed actor/object with a STABLE id (snake_case like person_01, gate_01,
+  clock_01 - used by the renderer to bind elements and by the semantic gate to verify existence),
+  objectType (the concrete physical kind of thing, e.g. "stone slab", "water drop", "clock",
+  "text label" - NEVER a generic word like "Actor", "Object", "Thing" or a category name),
+  semanticRole (why it exists), relationship, importance 1-5. At least one relationship should
+  ACT (interact), not merely coexist.
+- relationships: from/to (use the semantic OBJECT ids) plus a structured type from
+  [attachedTo, near, pointsTo, movesToward, overlapsIntentionally] + the free-text relationship.
 - typographyPlan: headline (<=48 chars, fits the composition), emphasisWords (<=2), supportingText (<=4 short lines).
 - subtitlePlan: enabled=true when the VO should be captioned (typical), text = a VERBATIM spoken
   fragment for this beat (<=160 chars - do not invent words), timing = which part of the beat,
   role = what the caption does (e.g. "spoken line", "punchline echo").
-- motionBeats: ordered {order, action, purpose} - each motion answers "why is this moving?".
+- motionBeats: ordered executable events {order, action, purpose, id, target, eventType, atSeconds,
+  expected} - these BECOME the temporal execution plan, so make them precise:
+  * id: event_01, event_02, ... (unique, stable)
+  * target: semantic object id this event acts on (e.g. person_01)
+  * eventType: one of enter|exit|move|scale|rotate|fade|replace|reveal|progress|attach|detach
+    (ONLY these - anything else is reported as an unsupported event; do NOT promise what the
+    renderer cannot execute)
+  * atSeconds: when the change LANDS, inside this beat's time window (seconds, scene-local)
+  * expected: the resulting state - {from,to} for scale/fade/progress, {toward:<objectId>} for
+    move, {with:<objectId>} for replace, {parent:<objectId>} for attach
+  * each motion answers "why is this moving?" (keep the prose fields short)
 - compositionIntent: ONE OR TWO SENTENCES (max 500 chars) - how the frame should be composed.
 - visualEvidence: what in the frame proves the meaning (each <= 250 chars).
 - forbiddenInterpretations: what this must NOT degenerate into (e.g. "generic circle diagram").
@@ -345,7 +424,67 @@ generation fails. Output ONLY JSON matching the storyboard contract (strict keys
   });
 }
 
-/** Full storyboard stage: candidates → selection (reject loop) → expansion, per beat. */
+/* --------------------- Batch F: per-beat validated-step cache --------------------- */
+
+interface BeatStepsFile {
+  schema: "storyboard-beat-steps/1";
+  /** hash of the exact inputs (beat + analysis) - a mismatch invalidates the whole file */
+  inputHash: string;
+  rounds: {
+    direction: string | null;
+    candidates: StoryboardCandidates;
+    selection: StoryboardSelections["selections"][number];
+  }[];
+}
+
+/** Deterministic input fingerprint - same inputs -> same key; any change -> cache miss. */
+function beatInputHash(analysis: Analysis, beat: { id: string; text: string; why?: string; emotion?: string }): string {
+  const payload = JSON.stringify({
+    id: beat.id,
+    text: beat.text,
+    why: beat.why ?? "",
+    emotion: beat.emotion ?? "",
+    summary: analysis.summary,
+    nouns: analysis.keyNouns,
+    verbs: analysis.keyVerbs,
+    concepts: analysis.abstractConcepts,
+  });
+  let h = 5381;
+  for (let i = 0; i < payload.length; i++) h = ((Math.imul(31, h) + payload.charCodeAt(i)) | 0) >>> 0;
+  return `b${h.toString(36)}:${payload.length}`;
+}
+
+export function loadBeatSteps(
+  projectId: string,
+  analysis: Analysis,
+  beat: { id: string; text: string; why?: string; emotion?: string },
+): BeatStepsFile {
+  const empty: BeatStepsFile = { schema: "storyboard-beat-steps/1", inputHash: beatInputHash(analysis, beat), rounds: [] };
+  const file = readJson<BeatStepsFile>(projectId, `concepts/beat-steps-${beat.id}.json`);
+  if (!file || file.schema !== "storyboard-beat-steps/1") return empty;
+  if (file.inputHash !== empty.inputHash) return empty; // different script/beat - never reuse
+  return { ...file, rounds: Array.isArray(file.rounds) ? file.rounds : [] };
+}
+
+export function saveBeatSteps(
+  projectId: string,
+  analysis: Analysis,
+  beat: { id: string; text: string; why?: string; emotion?: string },
+  direction: string | null,
+  candidates: StoryboardCandidates,
+  selection: StoryboardSelections["selections"][number],
+): void {
+  const current = loadBeatSteps(projectId, analysis, beat);
+  const rounds = current.rounds.filter((r) => r.direction !== direction);
+  rounds.push({ direction, candidates, selection });
+  writeJson(projectId, `concepts/beat-steps-${beat.id}.json`, {
+    schema: "storyboard-beat-steps/1",
+    inputHash: current.inputHash,
+    rounds,
+  } satisfies BeatStepsFile);
+}
+
+/** Full storyboard stage: candidates â†’ selection (reject loop) â†’ expansion, per beat. */
 export async function runStoryboardStage(
   projectId: string,
   analysis: Analysis,
@@ -367,17 +506,40 @@ export async function runStoryboardStage(
         storyboards.push(existingSb);
         continue;
       }
+      // Batch F (latency): per-beat validated-step cache. Batch E attempts repeatedly died
+      // mid-stage and re-paid candidates+selection for the in-flight beat on every resume.
+      // The cache is keyed by the exact beat+analysis inputs, so it can never serve a
+      // stale result for a different beat or script; only schema-valid steps are written.
+      const steps = loadBeatSteps(projectId, analysis, beat);
       let direction: string | undefined;
       let chosen: StoryboardCandidates["candidates"][number] | null = null;
       for (let round = 1; round <= 2 && !chosen; round++) {
-        const cands = await runStoryboardCandidates(projectId, analysis, beat);
+        const cached = steps.rounds.find((r) => r.direction === (direction ?? null));
+        if (cached) {
+          // Batch F: a cached round (accepted OR rejected) replays deterministically -
+          // identical inputs already produced this validated outcome, re-paying the calls
+          // is pure waste on a resume.
+          allCandidates.push(cached.candidates);
+          allSelections.push(cached.selection);
+          if (cached.selection.rejected !== true && cached.selection.selectedCandidateId) {
+            chosen = cached.candidates.candidates.find((c) => c.id === cached.selection.selectedCandidateId) ?? null;
+          } else {
+            direction = [...(cached.selection.rejectionReasons ?? []), cached.selection.directionForAlternatives ?? ""].join("; ");
+          }
+          if (!chosen && round === 2) chosen = cached.candidates.candidates[0];
+          continue;
+        }
+        const cands = await runStoryboardCandidates(projectId, analysis, beat, direction);
         allCandidates.push(cands);
         const sel = await runStoryboardSelection(projectId, beat.id, cands.candidates);
         const s = sel.selections[0];
         allSelections.push(s);
         if (s && s.rejected !== true && s.selectedCandidateId) {
           chosen = cands.candidates.find((c) => c.id === s.selectedCandidateId) ?? null;
+          if (chosen) saveBeatSteps(projectId, analysis, beat, direction ?? null, cands, s);
         } else {
+          // rejected rounds are cached too: same inputs -> same rejection on resume
+          saveBeatSteps(projectId, analysis, beat, direction ?? null, cands, s);
           direction = [...(s?.rejectionReasons ?? []), s?.directionForAlternatives ?? ""].join("; ");
         }
         if (!chosen && round === 2) chosen = cands.candidates[0]; // budget fallback + note
@@ -419,7 +581,7 @@ export function loadStoryboards(projectId: string): Storyboard[] | null {
   return data?.storyboards ?? null;
 }
 
-/** Regenerate the storyboard for one beat (semantic-level repair, Phase 3 §41). */
+/** Regenerate the storyboard for one beat (semantic-level repair, Phase 3 Â§41). */
 export async function regenerateStoryboard(
   projectId: string,
   analysis: Analysis,
@@ -455,7 +617,7 @@ Output ONLY JSON.`,
   return sb;
 }
 
-/** Dynamic semantic-density budget (Phase 3 §11): complexity-driven guidelines. */
+/** Dynamic semantic-density budget (Phase 3 Â§11): complexity-driven guidelines. */
 export function densityBudgetFor(analysis: Analysis, beat: { important?: boolean; abstractMeaning?: string }): { min: number; max: number } {
   const complex =
     (beat.important ?? false) ||

@@ -18,8 +18,20 @@ yarn-error.log*
 projects/*/renders/
 projects/*/qa/frames/
 projects/*/renders-preview/
+projects/_*/
+!projects/_memory/
 public/proj_*/
+public/_*/
 referenceanalysisall-scores.txt
+
+# Ephemeral e2e debug, logs and scratch
+e2e/*.txt
+e2e/*.log
+e2e/*.err
+e2e/g-diag*.ts
+e2e/zz-*.ts
+e2e/repair-probe.ts
+e2e/llm-probe.*
 
 # Media renders except reference video
 *.mp4

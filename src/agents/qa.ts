@@ -1,7 +1,9 @@
 import fs from "fs";
+import path from "path";
 import { execFile } from "child_process";
 import { promisify } from "util";
 import { chatVision, extractJson } from "./llm";
+import { isBudgetExhausted } from "../core/generationBudget";
 import { designBibleCompactPrompt } from "./context";
 import {
   visualQaSchema,
@@ -13,11 +15,22 @@ import {
   type EvaluatorResult,
   type ScoreStats,
 } from "./schemas";
-import { markStage, writeJson } from "../core/projectStore";
+import { markStage, writeJson, writeJsonAt, projectDir } from "../core/projectStore";
 import { stageError } from "../core/errors";
 import { forbiddenPatterns } from "../core/designSystem";
 import { QA_THRESHOLDS } from "../core/output";
 import { extractSceneFrames, probeRender, type TechnicalQaResult } from "../render/renderProject";
+import {
+  buildFrameEvidence,
+  createStillRenderer,
+  planProjectSamples,
+  type FrameEvidenceReport,
+} from "../render/frameEvidence";
+import { readRenderRecord } from "../core/artifacts";
+import { scenesFingerprint } from "../core/identity";
+import type { LayoutGateReport } from "../validation/layoutGate";
+import type { VisualGateReport } from "../validation/visualGates";
+import type { SemanticEnactmentReport } from "../validation/semanticEnactment";
 import type { SceneSpec } from "../validation/schema";
 import type { NoveltyReport } from "./novelty";
 import type { ConformanceReport } from "../reference/conformance";
@@ -92,6 +105,16 @@ export interface QaBundle {
   variance: number;
   status: "pass" | "needs_repair" | "fail";
   reasons: string[];
+  /** Batch B: deterministic evidence stored NEXT TO the LLM scores, never instead of them */
+  layoutGate?: LayoutGateReport | null;
+  visualGates?: VisualGateReport | null;
+  /** Batch D: deterministic semantic enactment evidence (storyboard promises vs state) */
+  enactment?: SemanticEnactmentReport | null;
+  frameEvidence?: {
+    label: string;
+    sampleCount: number;
+    sceneRollup: FrameEvidenceReport["sceneRollup"];
+  } | null;
 }
 
 /** Technical QA - deterministic (MASTER_SPEC 11). */
@@ -113,6 +136,7 @@ async function visionJsonCall<T>(
   parse: (obj: unknown) => T,
   temperature = 0.3,
   maxTokens = 10000,
+  stage = "visionQa",
 ): Promise<T> {
   let lastErr = "";
   let visionUnavailable = 0;
@@ -124,8 +148,10 @@ async function visionJsonCall<T>(
         : `${prompt}\n\nYour previous response was invalid:\n${lastErr}\nRespond again with ONLY the corrected JSON object.`;
     let raw: string;
     try {
-      raw = await chatVision(text, images, { temperature, maxTokens });
+      raw = await chatVision(text, images, { temperature, maxTokens, stage });
     } catch (e) {
+      // Batch E: budget exhaustion is final - never retried, never silently faked
+      if (isBudgetExhausted(e)) throw e;
       // transient provider failures: outer loop retries with backoff
       lastErr = e instanceof Error ? e.message : String(e);
       continue;
@@ -178,11 +204,49 @@ export function statsOf(values: number[]): ScoreStats {
 const qualityMean = (scores: Record<QualityDim, number>): number =>
   mean(QUALITY_DIMS.map((d) => scores[d]));
 
+/** Batch B / B6: one compact evidence line per scene for the judge prompts.
+ * Deliberately short - judges still have to LOOK at the images. */
+export function compactEvidenceLines(
+  scenes: SceneSpec[],
+  evidence?: FrameEvidenceReport | null,
+  layoutGate?: LayoutGateReport | null,
+  visualGates?: VisualGateReport | null,
+): string[] {
+  const lines: string[] = [];
+  for (const scene of scenes) {
+    const roll = evidence?.sceneRollup.find((r) => r.sceneId === scene.sceneId);
+    const layout = layoutGate?.findings.find((f) => f.sceneId === scene.sceneId);
+    const visual = visualGates?.scenes.find((s) => s.sceneId === scene.sceneId);
+    const parts = [
+      roll
+        ? `occ=${(((roll.minOccupancy ?? 0)) * 100).toFixed(1)}% edgeInk=${roll.maxEdgeInk} safeOvf=${roll.maxSafeAreaOverflowPx}px motion=${roll.motionDelta ?? "n/a"}`
+        : "no frame metrics",
+    ];
+    if (layout) {
+      const flags = [
+        ...layout.hard.slice(0, 2).map((h) => h.replace(`${scene.sceneId}: `, "").slice(0, 110)),
+        ...(layout.agreement.frame === "model-only" || layout.agreement.frame === "rendered-only"
+          ? [`model/pixels disagree (${layout.agreement.frame})`]
+          : []),
+      ];
+      if (layout.hard.length > 2) flags.push(`+${layout.hard.length - 2} more`);
+      parts.push(flags.length ? `layout: ${flags.join("; ")}` : "layout: clean");
+    }
+    if (visual) {
+      parts.push(`empty=${visual.empty.status}${visual.empty.status !== "ok" ? ` (${visual.empty.reason.slice(0, 80)})` : ""}`);
+      if (visual.readability.status !== "ok") parts.push(`readability=${visual.readability.status}`);
+    }
+    lines.push(`${scene.sceneId}: ${parts.join(" | ")}`.slice(0, 400));
+  }
+  return lines;
+}
+
 function buildEvaluatorPrompt(
   scenes: SceneSpec[],
   beats: BeatContext[],
   frameCount: number,
   evaluator: { id: string; lens: string },
+  evidenceLines: string[],
 ): string {
   return [
     `You are Vision QA Evaluator ${evaluator.id} of a motion-design studio (MASTER_SPEC section 11). Your assigned lens: ${evaluator.lens}`,
@@ -197,6 +261,15 @@ function buildEvaluatorPrompt(
     "",
     "# Scene specs",
     sceneSummaries(scenes),
+    ...(evidenceLines.length
+      ? [
+          "",
+          "# Deterministic frame evidence (measured from the rendered pixels)",
+          "These are measurements, not opinions: occupancy, edge ink, safe-area overflow, motion.",
+          "Use them to CHECK what you see in the images - never score from them alone.",
+          ...evidenceLines,
+        ]
+      : []),
     "",
     "Score EVERY scene 0-10 on: scriptRelevance, visualClarity, designConsistency, typography, composition, motionQuality, novelty, aiSlopSeverity (LOWER=better).",
     "Calibration: 8-10 = would ship; 6-7 = minor issues; 4-5 = noticeable problems; 0-3 = fails your lens. Be decisive - use the full range; do not cluster everything at 7.",
@@ -212,6 +285,7 @@ function buildIssuesPrompt(
   scenes: SceneSpec[],
   beats: BeatContext[],
   frameCount: number,
+  evidenceLines: string[],
 ): string {
   const flaggedIds = new Set(flagged.map((f) => f.sceneId));
   return [
@@ -227,6 +301,14 @@ function buildIssuesPrompt(
     "",
     "# Scene specs",
     sceneSummaries(scenes),
+    ...(evidenceLines.length
+      ? [
+          "",
+          "# Deterministic frame evidence (measured from the rendered pixels)",
+          "Check your findings against these measurements and against the images.",
+          ...evidenceLines.filter((l) => flaggedIds.has(l.split(":")[0])),
+        ]
+      : []),
     "",
     "# Flagged scenes (median scores across evaluators)",
     flagged.map((f) => `${f.sceneId}: ${JSON.stringify(f.scores)}`).join("\n"),
@@ -244,15 +326,26 @@ export async function visionQa(
   scenes: SceneSpec[],
   beats: BeatContext[],
   frameFiles: string[],
+  deterministic?: {
+    frameEvidence?: FrameEvidenceReport | null;
+    layoutGate?: LayoutGateReport | null;
+    visualGates?: VisualGateReport | null;
+  },
 ): Promise<VisualQa> {
   markStage(projectId, "visionQa", "running");
   try {
     const frames = await shrinkFrames(frameFiles);
     const images = frames.map(b64);
+    const evidenceLines = compactEvidenceLines(
+      scenes,
+      deterministic?.frameEvidence ?? null,
+      deterministic?.layoutGate ?? null,
+      deterministic?.visualGates ?? null,
+    );
 
     const rawResults: EvaluatorResult[] = [];
     for (const [i, ev] of QA_EVALUATORS.entries()) {
-      const prompt = buildEvaluatorPrompt(scenes, beats, frames.length, ev);
+      const prompt = buildEvaluatorPrompt(scenes, beats, frames.length, ev, evidenceLines);
       const result = await visionJsonCall<EvaluatorResult>(
         prompt,
         images,
@@ -335,6 +428,7 @@ export async function visionQa(
             flaggedScenes,
             beats,
             flaggedImages.length,
+            evidenceLines,
           ),
           flaggedImages,
           (obj) => qaIssuesSchema.parse(obj),
@@ -409,10 +503,12 @@ export async function slopCritic(
   projectId: string,
   scenes: SceneSpec[],
   frameFiles: string[],
+  deterministic?: { frameEvidence?: FrameEvidenceReport | null; visualGates?: VisualGateReport | null },
 ): Promise<SlopQa> {
   markStage(projectId, "slop", "running");
   try {
     const frames = await shrinkFrames(frameFiles);
+    const evidenceLines = compactEvidenceLines(scenes, deterministic?.frameEvidence ?? null, null, deterministic?.visualGates ?? null);
     const prompt = [
       "You are the Slop Critic of a motion-design studio (MASTER_SPEC section 1, rule 12).",
       "# Forbidden patterns (score against these ids)",
@@ -423,6 +519,9 @@ export async function slopCritic(
       "",
       "# Scene specs",
       sceneSummaries(scenes),
+      ...(evidenceLines.length
+        ? ["", "# Deterministic frame evidence (measured pixels - check findings against it)", ...evidenceLines]
+        : []),
       "",
       "Hunt for: generic AI aesthetics, meaningless decoration, visual clutter, random effects, repetitive layouts, unnecessary glow, bad typography, weak metaphor, over-animation, rainbow palettes.",
       "Do NOT flag restrained atmospheric use the design language allows (single subordinate glow, low-opacity grain).",
@@ -434,6 +533,8 @@ export async function slopCritic(
       frames.map(b64),
       (obj) => slopQaSchema.parse(obj),
       0.4,
+      10000,
+      "slop",
     );
     writeJson(projectId, "qa/slop-qa.json", slop);
     markStage(projectId, "slop", slop.verdict === "acceptable" ? "done" : "failed");
@@ -445,7 +546,12 @@ export async function slopCritic(
   }
 }
 
-/** Aggregate all QA dimensions into the Master Spec scoring result (scene-level medians first). */
+/** Aggregate all QA dimensions into the Master Spec scoring result (scene-level medians first).
+ *
+ * Batch B / B5+B7: deterministic frame/layout evidence is accepted here as a first-class input
+ * so a scene can never be reported as fine while its rendered pixels say otherwise. Hard
+ * findings become status="fail"; warnings become repairable reasons; nothing is hidden behind
+ * the LLM scores. */
 export function aggregateQa(
   technical: TechnicalQaResult,
   visual: VisualQa,
@@ -453,8 +559,15 @@ export function aggregateQa(
   novelty: NoveltyReport,
   conformance?: ConformanceReport,
   semantic?: SemanticQaReport,
+  deterministic?: {
+    layoutGate?: LayoutGateReport | null;
+    visualGates?: VisualGateReport | null;
+    /** Batch D: semantic enactment gate - a missing promised event can never be "looks fine" */
+    enactment?: SemanticEnactmentReport | null;
+  },
 ): Pick<QaBundle, "overallQuality" | "confidence" | "variance" | "status" | "reasons"> {
   const reasons: string[] = [];
+  const hardReasons: string[] = [];
   const sceneScores = visual.scenes.map((s) => qualityMean(s.scores as Record<QualityDim, number>));
   const qualityParts = [
     ...sceneScores,
@@ -476,6 +589,44 @@ export function aggregateQa(
   const variance = visual.overall.stats.variance;
 
   if (technical.errors.length > 0) reasons.push(`technical: ${technical.errors.join("; ")}`);
+
+  // --- deterministic rendered evidence (Batch B) ---------------------------------
+  const hardScenes = new Set<string>();
+  if (deterministic?.layoutGate) {
+    hardReasons.push(...deterministic.layoutGate.hard);
+    for (const w of deterministic.layoutGate.warnings) reasons.push(w);
+    if (deterministic.layoutGate.disagreements > 0) {
+      reasons.push(
+        `layout evidence: model and rendered pixels disagree on ${deterministic.layoutGate.disagreements} scene(s) (see qa/layout-gate.json)`,
+      );
+    }
+    for (const f of deterministic.layoutGate.findings) if (f.hard.length) hardScenes.add(f.sceneId);
+  }
+  if (deterministic?.visualGates) {
+    hardReasons.push(...deterministic.visualGates.hard);
+    for (const w of deterministic.visualGates.warnings) reasons.push(w);
+    for (const s of deterministic.visualGates.scenes) if (s.empty.status === "fail" || s.readability.status === "fail") hardScenes.add(s.sceneId);
+  }
+  if (deterministic?.enactment && !deterministic.enactment.ok) {
+    for (const f of deterministic.enactment.failures) {
+      hardReasons.push(`${f.sceneId}: semantic/${f.type}: ${f.evidence}`);
+      hardScenes.add(f.sceneId);
+    }
+  }
+  reasons.push(...hardReasons);
+
+  // scene JSON / vision scores look fine while the rendered evidence does not
+  for (const s of visual.scenes) {
+    if (!hardScenes.has(s.sceneId)) continue;
+    const clarity = s.scores.visualClarity;
+    const relevance = s.scores.scriptRelevance;
+    if (clarity >= 6 && relevance >= 6) {
+      reasons.push(
+        `${s.sceneId}: rendered frame evidence contradicts a passing vision score (clarity ${clarity}, relevance ${relevance}) - deterministic evidence wins`,
+      );
+    }
+  }
+
   if (overallQuality < QA_THRESHOLDS.overallQualityMin)
     reasons.push(`overall quality ${overallQuality.toFixed(1)} < ${QA_THRESHOLDS.overallQualityMin}`);
   if (slop.projectSeverity > QA_THRESHOLDS.slopSeverityMax)
@@ -517,7 +668,7 @@ export function aggregateQa(
   const technicalFail =
     technical.errors.filter((e) => !e.includes("silent render")).length > 0 ||
     visual.overall.technicalCorrectness === "fail";
-  if (technicalFail) {
+  if (technicalFail || hardReasons.length > 0) {
     return { overallQuality, confidence, variance, status: "fail", reasons };
   }
   return { overallQuality, confidence, variance, status: reasons.length > 0 ? "needs_repair" : "pass", reasons };
@@ -532,6 +683,56 @@ export async function collectFrames(
   const dir = path_join(projectId, "qa", "frames", label);
   const frames = await extractSceneFrames(scenes, audioPath, dir, label);
   return frames.map((f) => f.file);
+}
+
+/**
+ * Batch A / A1+A2: deterministic diagnostic frames + pixel metrics for one render/QA cycle.
+ *
+ * Distinct from `collectFrames` (which feeds the LLM judges one mid-scene still per scene):
+ * this captures the fixed early/mid/late (+motion event) sample plan, measures every sample and
+ * writes `qa/frame-evidence-<label>.json` plus the latest `qa/frame-evidence.json`.
+ * Both are rendered from the same bundle/inputProps, so the evidence describes exactly the
+ * artifact that QA is scoring.
+ */
+export async function collectFrameEvidence(
+  projectId: string,
+  scenes: SceneSpec[],
+  audioPath: string | undefined,
+  label: string,
+): Promise<FrameEvidenceReport> {
+  const dir = projectDir(projectId);
+  const plan = planProjectSamples(scenes);
+  const renderStill = await createStillRenderer(scenes, audioPath);
+
+  const pending: Omit<FrameEvidenceReport["samples"][number], "metrics" | "sha256">[] = [];
+  for (const s of plan) {
+    const frameTag = String(s.absoluteFrame).padStart(6, "0");
+    // slash-separated so the evidence file stays portable across OSes
+    const rel = `qa/frames/${label}/${label}_${s.sceneId}_f${frameTag}_${s.reason}.png`;
+    await renderStill(s.absoluteFrame, path.join(dir, rel));
+    pending.push({
+      sceneId: s.sceneId,
+      sampleIndex: s.index,
+      reason: s.reason,
+      timeSec: s.timeSec,
+      sceneFrame: s.frame,
+      absoluteFrame: s.absoluteFrame,
+      file: rel,
+    });
+  }
+
+  const render = readRenderRecord(dir);
+  const report = await buildFrameEvidence({
+    label,
+    samples: pending,
+    resolve: (rel) => path.join(dir, rel),
+    sourceRender: render ? { file: render.file, sha256: render.sha256 } : null,
+    scenesHash: render?.scenesHash ?? scenesFingerprint(scenes).scenesHash,
+  });
+
+  writeJsonAt(dir, `qa/frame-evidence-${label}.json`, report);
+  writeJsonAt(dir, "qa/frame-evidence.json", report);
+  return report;
 }
 
 const path_join = (...parts: string[]): string =>

@@ -7,6 +7,7 @@ import { promisify } from "util";
 import { selectComposition, renderStill } from "@remotion/renderer";
 import { getBundle } from "../src/render/renderProject";
 import { frameStats, conformanceScores } from "../src/reference/conformance";
+import { analyzeFrame, createStillRenderer, frameDiff, planFrameSamples } from "../src/render/frameEvidence";
 import { validateScene } from "../src/validation/validate";
 import type { SceneSpec } from "../src/validation/schema";
 
@@ -183,4 +184,41 @@ describe("golden visual tests", () => {
       expect(conf.overall, `${scene.sceneId}: ${conf.evidence.join("; ")}`).toBeGreaterThanOrEqual(8);
     }
   });
+});
+
+/**
+ * Batch A / A1+A2: the diagnostic sample plan actually renders and measures.
+ * Determinism is asserted by re-rendering the same frame and comparing metrics.
+ */
+describe("frame evidence (early/mid/late)", () => {
+  it("samples, renders and measures a real scene deterministically", async () => {
+    const samples = planFrameSamples(golden.motion);
+    expect(samples.length).toBeGreaterThanOrEqual(3);
+    expect(samples.map((s) => s.reason)).toEqual(expect.arrayContaining(["early", "mid", "late"]));
+    expect(planFrameSamples(golden.motion)).toEqual(samples);
+
+    const render = await createStillRenderer([golden.motion]);
+    const files: string[] = [];
+    for (const s of samples) {
+      const out = path.join(os.tmpdir(), `evidence_${s.reason}_${s.frame}.png`);
+      await render(s.frame, out);
+      files.push(out);
+    }
+
+    const metrics = await analyzeFrame(files[0]);
+    expect(metrics).not.toBeNull();
+    expect(metrics!.width).toBe(1080);
+    expect(metrics!.height).toBe(1920);
+    expect(metrics!.occupancy).toBeGreaterThan(0.0005);
+    const edges = metrics!.edgeInk.left + metrics!.edgeInk.right + metrics!.edgeInk.top + metrics!.edgeInk.bottom;
+    expect(edges).toBe(0);
+
+    const delta = await frameDiff(files[0], files[files.length - 1]);
+    expect(delta).not.toBeNull();
+    expect(delta!).toBeGreaterThan(0.0005);
+
+    const again = path.join(os.tmpdir(), `evidence_repeat_${samples[0].frame}.png`);
+    await render(samples[0].frame, again);
+    expect(await analyzeFrame(again)).toEqual(metrics);
+  }, 240000);
 });

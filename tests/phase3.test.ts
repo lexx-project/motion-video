@@ -6,7 +6,7 @@ import {
   subtitleSchema,
 } from "../src/validation/storyboardSchema";
 import { validateScene } from "../src/validation/validate";
-import { densityBudgetFor, normalizeStoryboardSelections } from "../src/agents/storyboard";
+import { densityBudgetFor, normalizeStoryboardSelections, normalizeStoryboardCandidates, normalizeStoryboard } from "../src/agents/storyboard";
 import { subtitleCoverage, evidenceCoverage } from "../src/agents/semanticQa";
 import { textCollisions, subtitleCollisions, semanticRichness } from "../src/reference/conformance";
 import { buildRepairPlan } from "../src/agents/repair";
@@ -321,5 +321,40 @@ describe("richness, collisions, repair routing, novelty mechanisms", () => {
     const dimsB = compareNovelty(a, b);
     expect(dimsB.find((d) => d.dimension === "sameMechanism")?.matched).toBe(false);
     expect(similarityScore(dimsA)).toBeGreaterThan(similarityScore(dimsB));
+  });
+});
+
+describe("Batch E: deterministic candidate/storyboard normalization caps", () => {
+  it("caps over-long candidate fields to the storyboard contract (model ramble != failure)", () => {
+    const one = {
+      id: "c1",
+      visualMechanism: "x".repeat(300),
+      concept: "c".repeat(400),
+      compositionSketch: "s".repeat(400),
+      objects: Array.from({ length: 12 }, (_, i) => `object-${i}`.padEnd(60, "-")),
+      whyDifferent: "d".repeat(400),
+      strength: "f".repeat(400),
+      complexity: "low",
+    };
+    const raw = {
+      beatId: "b1",
+      candidates: [one, { ...one, id: "c2" }, { ...one, id: "c3" }],
+    };
+    const normalized = normalizeStoryboardCandidates(raw) as { candidates: Record<string, unknown>[] };
+    expect(normalized.candidates[0].visualMechanism).toHaveLength(80);
+    expect(normalized.candidates[0].concept).toHaveLength(160);
+    expect(normalized.candidates[0].compositionSketch).toHaveLength(200);
+    expect(normalized.candidates[0].whyDifferent).toHaveLength(240);
+    expect(normalized.candidates[0].strength).toHaveLength(240);
+    expect((normalized.candidates[0].objects as string[]).every((o) => o.length <= 50)).toBe(true);
+    expect((normalized.candidates[0].objects as string[]).length).toBeLessThanOrEqual(8);
+    // and the result now satisfies the schema
+    expect(() => storyboardCandidatesSchema.parse(normalized)).not.toThrow();
+  });
+
+  it("caps storyboard.visualMechanism at the schema limit (80), not an older limit", () => {
+    const long = normalizeStoryboard({ visualMechanism: "m".repeat(120), beatId: "b1" }) as { visualMechanism: string };
+    expect(long.visualMechanism.length).toBeLessThanOrEqual(80);
+    expect(() => storyboardSchema.parse({ ...storyboard(), visualMechanism: long.visualMechanism })).not.toThrow();
   });
 });

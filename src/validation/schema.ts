@@ -3,6 +3,7 @@ import { composition, motion, primitives, colors, typography } from "../core/des
 import { isKnownPrimitive } from "../core/designSystem";
 import { headlinePositionFor, availableWidthPx, wrapLines } from "../scenes/layout";
 import { storyboardSchema, subtitleSchema } from "./storyboardSchema";
+import { executionPlanSchema } from "./executionPlan";
 
 /** Max headline chars in a narrow (left/right) anchor column before wrapping past 4 lines. */
 export const NARROW_HEADLINE_MAX = 34;
@@ -100,6 +101,7 @@ export const elementSchema = z
 export const headlineSchema = z
   .object({
     text: z.string().min(1).max(typography.rules.maxHeadlineChars * 3),
+    semanticId: z.string().min(2).max(40).regex(/^[A-Za-z][A-Za-z0-9_]*$/).optional(),
     accentWords: z.array(z.string().max(60)).max(colors.rules.maxAccentWordsPerHeadline).optional(),
     // reference DNA: predominantly left-aligned blocks (V2)
     align: z.enum(["left", "center", "right"]).default("left"),
@@ -150,6 +152,8 @@ export const sceneSchema = z
     storyboard: storyboardSchema.optional(),
     /** Phase 3: VO-synced subtitle band (phrase-level timing; deterministic injection). */
     subtitle: subtitleSchema.optional(),
+    /** Batch D: deterministic temporal execution plan (compiled from storyboard.motionBeats). */
+    executionPlan: executionPlanSchema.optional(),
   })
   .strict()
   .superRefine((scene, ctx) => {
@@ -292,6 +296,71 @@ export const sceneSchema = z
       if (typeof el.emphasisAt === "number" && el.emphasisAt > scene.duration) {
         ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["elements", i, "emphasisAt"], message: "emphasisAt exceeds scene duration" });
       }
+      // Batch D: stable semantic identity contract (resolved by the semantic enactment gate)
+      const ID_RE = /^[A-Za-z][A-Za-z0-9_]*$/;
+      if (typeof el.semanticId === "string" && !ID_RE.test(el.semanticId)) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          path: ["elements", i, "semanticId"],
+          message: `semanticId "${el.semanticId}" must be a stable identifier like person_01 (letters/digits/underscore, starting with a letter)`,
+        });
+      }
+      if (typeof el.attachTo === "string") {
+        if (!ID_RE.test(el.attachTo)) {
+          ctx.addIssue({
+            code: z.ZodIssueCode.custom,
+            path: ["elements", i, "attachTo"],
+            message: `attachTo "${el.attachTo}" must be a semantic id like card_01`,
+          });
+        } else if (el.attachTo === el.semanticId) {
+          ctx.addIssue({
+            code: z.ZodIssueCode.custom,
+            path: ["elements", i, "attachTo"],
+            message: "attachTo must reference a DIFFERENT element (an element cannot attach to itself)",
+          });
+        }
+      }
+    }
+    // semanticIds must be unique: resolution would otherwise be ambiguous
+    const seenIds = new Map<string, number>();
+    if (scene.headline?.semanticId) seenIds.set(scene.headline.semanticId, -1);
+    scene.elements.forEach((el, i) => {
+      if (typeof el.semanticId !== "string") return;
+      if (seenIds.has(el.semanticId)) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          path: ["elements", i, "semanticId"],
+          message: `duplicate semanticId "${el.semanticId}" (already used by element ${seenIds.get(el.semanticId)}) - semantic ids must be unique`,
+        });
+      } else seenIds.set(el.semanticId, i);
+    });
+    // Batch D execution plan: events must fit the scene window and carry unique stable ids
+    if (scene.executionPlan) {
+      const seenEvents = new Set<string>();
+      scene.executionPlan.events.forEach((ev, i) => {
+        if (seenEvents.has(ev.id)) {
+          ctx.addIssue({
+            code: z.ZodIssueCode.custom,
+            path: ["executionPlan", "events", i, "id"],
+            message: `duplicate execution event id "${ev.id}"`,
+          });
+        }
+        seenEvents.add(ev.id);
+        if (ev.atSeconds > scene.duration) {
+          ctx.addIssue({
+            code: z.ZodIssueCode.custom,
+            path: ["executionPlan", "events", i, "atSeconds"],
+            message: `execution event ${ev.id} atSeconds ${ev.atSeconds} exceeds scene duration ${scene.duration}s (event must happen inside the scene window)`,
+          });
+        }
+        if (typeof ev.target !== "string" || !ev.target.trim()) {
+          ctx.addIssue({
+            code: z.ZodIssueCode.custom,
+            path: ["executionPlan", "events", i, "target"],
+            message: `execution event ${ev.id} needs a target semantic id`,
+          });
+        }
+      });
     }
   });
 
@@ -318,6 +387,10 @@ export interface SceneElement {
   exit?: string;
   emphasisAt?: number;
   density?: number;
+  /** Batch D: stable semantic id binding the element to a storyboard semanticObject */
+  semanticId?: string;
+  /** Batch D: semantic id of the parent element this one is attached to */
+  attachTo?: string;
   [param: string]: unknown;
 }
 

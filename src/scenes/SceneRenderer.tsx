@@ -4,6 +4,7 @@ import { colors } from "../core/designSystem";
 import { resolvePrimitive } from "../primitives/registry";
 import { SceneClockProvider } from "../primitives/sceneClock";
 import { sizeScale } from "../primitives/motion";
+import { elementExecutionAt, headlineElementFor, type ExecutionState } from "./execution";
 import {
   anchor,
   headlinePositionFor,
@@ -20,6 +21,8 @@ interface ElementItem {
   element: SceneElement;
   zIndex: number;
   key: string;
+  /** index in scene.elements (-1 for the synthetic headline) - binds the execution plan */
+  index: number;
 }
 
 interface GroupItem {
@@ -105,20 +108,34 @@ const ElementInner: React.FC<{
   scene: SceneSpec;
   clock: Clock;
 }> = ({ item, scene, clock }) => {
-  const entry = resolvePrimitive(item.element.primitive);
+  // Batch D: the execution plan performs the storyboard's motion beats on the WRAPPER
+  // (position/scale/rotation/opacity/clip). Primitives keep their own entrance/emphasis
+  // motion - the two compose multiplicatively, exactly as src/scenes/state.ts measures.
+  const exec: ExecutionState =
+    elementExecutionAt(scene, item.index, clock.time);
+  // progress events drive the primitive's numeric value channel when it has one
+  const el: SceneElement =
+    exec.progress !== null && typeof item.element.value === "number"
+      ? { ...item.element, value: exec.progress }
+      : item.element;
+  const entry = resolvePrimitive(el.primitive);
   const Component = entry.component;
-  const el = item.element;
-  const offsetX = typeof el.offsetX === "number" ? el.offsetX : 0;
-  const offsetY = typeof el.offsetY === "number" ? el.offsetY : 0;
-  const rotation = typeof el.rotation === "number" ? el.rotation : 0;
+  const offsetX = (typeof el.offsetX === "number" ? el.offsetX : 0) + exec.dx;
+  const offsetY = (typeof el.offsetY === "number" ? el.offsetY : 0) + exec.dy;
+  const rotation = (typeof el.rotation === "number" ? el.rotation : 0) + exec.rotation;
   const scaleParam = typeof el.scale === "number" ? el.scale : 1;
   const sizeMul = sizeScale(el.size as string | undefined);
-  const scale = scaleParam * sizeMul;
+  const scale = scaleParam * sizeMul * exec.scaleMul;
   const fullscreen = FULLSCREEN_ATMOSPHERIC.has(el.primitive);
+
+  // neutral execution adds NO style (plan-less scenes render byte-identically)
+  const execStyle: React.CSSProperties = {};
+  if (exec.opacity !== 1) execStyle.opacity = exec.opacity;
+  if (exec.reveal < 1) execStyle.clipPath = `inset(0 0 ${Math.round((1 - exec.reveal) * 100)}% 0)`;
 
   if (fullscreen) {
     return (
-      <div style={{ position: "absolute", inset: 0, zIndex: item.zIndex }}>
+      <div style={{ position: "absolute", inset: 0, zIndex: item.zIndex, ...execStyle }}>
         <Component element={el} sceneMotion={scene.motion} clock={clock} />
       </div>
     );
@@ -131,6 +148,7 @@ const ElementInner: React.FC<{
         zIndex: item.zIndex,
         display: "flex",
         maxWidth: "100%",
+        ...execStyle,
       }}
     >
       <Component element={el} sceneMotion={scene.motion} clock={clock} />
@@ -171,6 +189,14 @@ const AnchorGroup: React.FC<{
 
 export interface SceneRendererProps {
   scene: SceneSpec;
+  /**
+   * Batch E / Phase 4: opt-in isolated-object mode. When set to a semanticId, ONLY the
+   * element bound to that id renders (headline, subtitle band and every other element are
+   * hidden). The resulting pixels are attributable to that semantic id BY CONSTRUCTION of
+   * the isolation - no segmentation is claimed. Default (null/undefined) renders exactly
+   * as before.
+   */
+  isolate?: string | null;
 }
 
 /**
@@ -178,7 +204,7 @@ export interface SceneRendererProps {
  * Elements sharing an anchor stack inside one flex group so typography/objects never overlap.
  * Pure function of (scene, frame) - no randomness, no network (AGENTS.md rule 5).
  */
-export const SceneRenderer: React.FC<SceneRendererProps> = ({ scene }) => {
+export const SceneRenderer: React.FC<SceneRendererProps> = ({ scene, isolate }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const durationFrames = Math.max(1, Math.round(scene.duration * fps));
@@ -189,25 +215,20 @@ export const SceneRenderer: React.FC<SceneRendererProps> = ({ scene }) => {
     durationSec: scene.duration,
     durationFrames,
   };
+  const isolated = typeof isolate === "string" && isolate.length > 0;
+  const elements = isolated ? scene.elements.filter((el) => el.semanticId === isolate) : scene.elements;
 
-  const headlineElement: SceneElement | null = scene.headline
-    ? ({
-        primitive: "Headline",
-        text: scene.headline.text,
-        accentWords: scene.headline.accentWords ?? [],
-        align: scene.headline.align,
-        position: scene.headline.position ?? headlinePositionFor(scene.composition),
-        accent: "none",
-        opacity: 1,
-        scale: 1,
-      } as unknown as SceneElement)
-    : null;
+  const headlineElement: SceneElement | null =
+    scene.headline && (!isolated || scene.headline.semanticId === isolate)
+      ? headlineElementFor(scene)
+      : null;
 
   const all: ElementItem[] = [
-    ...scene.elements.map((el, i) => ({
+    ...elements.map((el, i) => ({
       element: el,
       zIndex: i + 1,
       key: `${el.primitive}-${i}`,
+      index: isolated ? scene.elements.indexOf(el) : i,
     })),
     ...(headlineElement
       ? [
@@ -215,6 +236,7 @@ export const SceneRenderer: React.FC<SceneRendererProps> = ({ scene }) => {
             element: headlineElement,
             zIndex: 90,
             key: "scene-headline",
+            index: -1,
           },
         ]
       : []),
@@ -239,7 +261,7 @@ export const SceneRenderer: React.FC<SceneRendererProps> = ({ scene }) => {
         {groups.map((g) => (
           <AnchorGroup key={g.position} group={g} scene={scene} clock={clock} />
         ))}
-        <SubtitleBand clock={clock} subtitle={scene.subtitle} />
+        {!isolated && <SubtitleBand clock={clock} subtitle={scene.subtitle} />}
       </SceneClockProvider>
     </AbsoluteFill>
   );
